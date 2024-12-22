@@ -1,0 +1,159 @@
+
+    /* body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #f5f5f5;
+    } */
+    /**FORM CONTACTA grande*/
+    .contact-form-1 {
+      background: #ffffff;
+      padding: 24px !important;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 400px;
+    }
+    .contact-form-1 h1 {
+      margin-bottom: 15px;
+    }
+      .contact-form-1 label {
+      display: block;
+      margin: 0px 0 8px 0;
+      font-size: 16px;
+    } 
+    /* .contact-form input, */
+    .contact-form-1 textarea {
+      width: 100% !important;
+      padding: 8px !important;
+      
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .contact-form-1 select {
+      padding:5px;
+      font-size: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-bottom: 16px;
+    }
+    .contact-form-1 button {
+      width: 100%;
+      padding: 8px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .contact-form-1 button:hover {
+      background-color: #0056b3;
+    }
+    .whatsapp-link {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .whatsapp-link a {
+      color: #25D366;
+      font-weight: bold;
+      text-decoration: none;
+    }
+/**PLACEHOLDER CON LABEL */
+    .form-input {
+    position: relative;
+    margin: 20px 0;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    padding-top: 20px; /* Espacio para el label flotante */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    
+  }
+
+  input:focus {
+    border-color: #007BFF;
+  }
+
+ .accesible {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);  /* Centra verticalmente */
+    font-size: 16px;
+    color: #666;
+    
+    pointer-events: none;  /* El label no interfiere con los clics */
+    transition: 0.2s ease all;  /* Transición para efectos de cambio */
+}
+
+
+  input:focus + label,
+  input:not(:placeholder-shown) + label {
+    top: 10px;
+    left: 10px;
+    font-size: 13px;
+    color: #007BFF;
+  }
+ 
+  /**FORM CONTACTA pequeño*/
+  .text-btn{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:16px;
+}
+     .contact-form-2 {
+      background: #303031;
+      padding: 16px 32px 0px 32px !important;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      width: 100%;
+     
+      gap:16px;
+    }
+      .contact-form-2 input{
+        border-radius: 5px 0 0 5px;
+        min-width: 300px;
+         background-color: #e0e0e0;
+         
+      }
+      .contact-form-2 button {
+     
+      height: 34px;
+      background-color: #41474e;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 0 5px 5px 0px;
+      padding: 8px 32px;
+    }
+    .contact-form-2 h2{
+      color: #e0e0e0;
+      
+    }
+    .container-input{
+        display: flex;
+        
+        align-items: center;
+       
+    }
+   
+    /* .form-input input {
+       color: #25D366;
+        
+    }  */
+    /* .contact-form-2 input {
+     display: flex;
+     flex-direction: row;
+     gap:8px;
+    } */

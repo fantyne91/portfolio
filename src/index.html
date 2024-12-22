@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portafolio</title>
+
+    <!-- CDN vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>    
+    <!-- import fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/global.css">
+
+    <!-- Widget translate  -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+            pageLanguage: 'en',  // Idioma original (puedes cambiarlo según el idioma principal de tu página)
+            includedLanguages: 'es,en',  // Idiomas disponibles (español e inglés en este caso)
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE  // Configuración del diseño
+            }, 'google_translate_element');
+        }
+</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+
+
+
+<body>
+    <div id="app">
+        <header class="header">
+
+            <section class="logo">Imagen
+                <!-- <a href="/">
+                     <img src="logo.png" alt="Logo del sitio">
+                </a> -->
+            </section>
+
+
+            <!-- llamado onclick a script vue -->
+            <nav :class="menuOpen ? 'nav-menu open' : 'nav-menu'">
+                <button @click="loadPage('Landing')">Inicio</button>
+                <button @click="loadPage('Uxui')">UX/UI</button>
+                <button @click="loadPage('Programming')">Programación</button>
+                <button @click="loadPage('Games')">Diseño videojuegos</button>         
+                <button @click="loadPage('Unreal')">Unreal Engine</button>
+            </nav>
+
+            <!-- Botón hamburguesa -->
+            <button v-if="isMobileOrTablet" class="menu-toggle" @click="toggleMenu">
+                 <!-- Ícono de hamburguesa -->
+                <span :class="{ open: menuOpen }" class="hamburger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    </span>
+            </button>
+
+           
+
+        </header>
+        <!-- Reflejo de script-->
+        <main :class="currentPageClassComputed">
+                <component :is="currentPage"></component>
+        </main>
+  
+    </div>
+
+    <footer class="footer">
+        <p>Desarrollado con amor 
+        </p>
+    </footer>
+
+    <script type="module" src="scripts.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+{
+  "type": "module",
+  "name": "web_maria",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.16.0",
+    "eslint": "^9.16.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-vue": "^9.32.0",
+    "globals": "^15.13.0",
+    "prettier": "^3.4.2",
+    "prettier-plugin-vue": "^1.1.6"
+  },
+  "dependencies": {
+    "jspdf": "^2.5.2"
+  }
+}
