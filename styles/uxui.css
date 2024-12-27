@@ -1,0 +1,26 @@
+.uxui{
+ background: #070707;   
+ position: relative;
+ color: #FFF;
+ 
+}
+
+.uxui h1,h2 {
+    color: #FFC35C;
+
+}
+.uxui h2{
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+} 
+.uxui h3{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.uxui img{
+    width: 250px;
+    height: fit-content;
+}

@@ -2,6 +2,9 @@
 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 120, 
 128, 136, 144, 152, 160, 168, 176, 184, 192, 200
 */
+
+ @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap');
+
 *,
 *::before,
 *::after {
@@ -9,21 +12,30 @@
 }
 
 /* Asegurarte de que el body y el html no tengan márgenes */
-html,main {
+html {
     max-width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: Barlow;
-    font-size: 15px;
-    letter-spacing: 0.4px;
+    /* font-family: Barlow; */
+    
+    
 }
 body {
     margin: 0px;
-    max-width: 100%; 
+    max-width: 100%;     
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    font-size: 15px;
+    letter-spacing: 0.4px;
+    font-family: Barlow;
 }
 
-
+main{
+    margin-top: 55px;
+}
 
 
 /* Diseño responsivo */
@@ -65,16 +77,17 @@ button:hover{
 }
 .btn0{
     border-radius: 5px;
-    border: 1.5px solid rgb(255, 255, 255);
-    background-color: #070E15;
+    border: 1.5px solid rgb(53, 53, 53);
+    background-color: #fffbec;
     padding: 8px 16px;
-    color:#E0E0E0;
+    color:#1a1a1a;
     text-decoration: none;
-    box-shadow:   0px 0px 3px 0px #E0E0E0;
+    box-shadow:   1px 1px 3px 0px #000000;
     font-weight: 700;
-    height: fit-content;
-
-   
+    height: fit-content;   
+}
+.btn0:hover{
+ background-color: rgb(240, 209, 148);
 }
 .btn1{
     border-radius: 5px;
@@ -100,18 +113,23 @@ button:hover{
 /** TEXT */
 h1,h2,h3,h4,h5,h6 {
     margin: 0;
+     line-height: 1.3; 
 }
 
 h1{
        font-size: 32px;
        font-style: normal;
        font-weight: 800;
-       line-height: 130.302%; /* 39.091px */
+       width: 100%;
        letter-spacing: 3px;
-       text-transform: uppercase;    
+       text-transform: uppercase;   
+       display: flex; 
+       justify-content: center;
+       padding: 70px;
+       
 }
 h2{
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 400;
 }
 h3{
@@ -132,6 +150,8 @@ h6{
 p{
     font-size: 15px;
     margin: 0px;
+     line-height: 1.5;
+     max-width: 650px;
 }
 
 ul{
@@ -140,6 +160,34 @@ ul{
 }
 li{
     margin-top: 10px;
+}
+/**FORMAT*/
+.tittle{
+
+}
+.p-column{
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+}
+
+.container-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    align-items: center;
+    justify-content: center;
+    gap:48px;
+    padding: 24px;
+}
+.container-column{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:32px;
+    padding: 32px;
+    justify-content: center;
 }
 
 /**FOOTER*/

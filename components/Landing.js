@@ -2,8 +2,8 @@
 export const Landing = {
   template: ` 
   <link rel="stylesheet" href="../styles/landing.css">
-  <link rel="stylesheet" href="../styles/forms.css">
-        <section class="landing">
+  
+        <section>
 
             <div class= "intro-container">
                     <img class= "maria" src="../img/maria3.png" alt="imagen presentación">
@@ -13,7 +13,7 @@ export const Landing = {
             <div class= "list-container">
                             
                             <div><strong>Servicios</strong></div>
-                            <h1>Experiencia de usuario, desarrollo web <br>y Unreal Engine</h1>
+                            <h1>Experiencias de usuario, desarrollo web <br>y Unreal Engine</h1>
                            
 
                             <div class= "group-list">
@@ -106,62 +106,44 @@ export const Landing = {
                                                                     
                                                  
                             </div>
-                            
-                            <div class="container-list-footer">
-                               
-                                <p class="list-footer">CADA PROYECTO ES ÚNICO! </p>
-                                <h6>Cuéntame tus necesidades o agenda una llamada, trabajemos juntos para ajustarme a tu presupuesto <br>y hacer realidad tu visión.</h6>
-                                
-                                <div class="text-btn">       
-                                        <div class="contact-form-2" >
-                                            <h2>Solicitar videollamada:</h2>
-                                            <form action="https://formsubmit.co/mjortiz93@gmail.com" method="POST" >
-                                                <div class="container-input">
-                                                    <div class="form-input" >
-                                                        <input 
-                                                        type="email" 
-                                                        id="email" 
-                                                        name="email" 
-                                                        placeholder=" " 
-                                                        required 
-                                                        aria-labelledby="name-label"
-                                                        autocomplete="on">
-                                                        <label class="accesible" for="email" id="email-label">Correo electrónico</label>                                   
-                                                    </div>
-                                                    <button  type="submit">Enviar</button>
-                                                </div>
-                                            </form>
-                                        </div>
-                                </div>
-                            </div>
-            
+                                        
             </div>
+            <div class= "container-proyecto-unico">
+                <div class="container-list-footer">                               
+                                <p> CADA PROYECTO ES ÚNICO! </p>                                 
+                </div>
+                <div>
+                                    <h6>Cuéntame tus necesidades o agenda una llamada!</h6>
+                                    <h6> Ajustándome a tu presupuesto trabajaremos juntos para hacer realidad tu visión.</h6>
+                 </div>
+                <div class="btn-footer">
+                                    <a class="btn0" href="contacta.html" target="_blank" rel="noopener noreferrer">CONTACTAR </a>
+                </div>                   
+            </div> 
+
             <div class="exito-container">
-                <div class="container">
+                <div class="container-row">
                 
                     <div class="exito-div">                        
                         <p class= "texto-exito"> El éxito de cualquier empresa nace de la satisfacción de sus usuarios </p>
-                        <div>
+                        <div class="p-column">
                             <p>Ya sea un servicio, un sitio web o videojuego, el éxito dependerá de una comprensión de las necesidades del usuario.</p> 
                             <p>   Tener una plataforma visualmente atractiva es solo parte del desafío, lo vital es asegurar que los usuarios puedan interactuar con facilidad, sin obstáculos que generen frustración o abandono.</p>
                             <p>   Identificar y corregir esos puntos de fricción es clave para aumentar la satisfacción del usuario y el éxito del negocio a largo plazo. </p>
                         </div>
-                        <div>
+                        <div >
                             <h6> <a href="uxui.js" target="_blank" rel="noopener noreferrer"> Casos de estudio UX/UI  </a> </h6>
                             <h6>Casos de estudio Videojuegos   </h6>
                         </div>
                     </div>
-                    <div> 
+                    
                         <img src="../img/psico-ux.svg" alt="imagen usabilidad,empativa y psicologia en ux/ui" width="290px"/>
-                    </div>
+                    
                 </div>
 
-                
-                   
-                            <div class="btn-footer">
-                                    <a class="btn0" href="contacta.html" target="_blank" rel="noopener noreferrer">CONTACTAR </a>
-                            </div>
-                    
+                      
+                               
+                                           
 
                 
             </div>
@@ -204,9 +186,30 @@ export const Landing = {
                         <img class= "gamerhouse" src="../img/bag.png" alt="diseño ux/ui" />
                     </div>
                 </div>
+                 <div class="contact-form-2" >
+                                            <h2> Obtén tu diseño personalizado desde 300€! </h2>
+                                            <h4>Solicitar información:</h4>
+                                            <form class="container-input" action="https://formsubmit.co/mjortiz93@gmail.com" method="POST" >
+                                                
+                                                    <div class="form-input" >
+                                                        <input 
+                                                        type="email" 
+                                                        id="email" 
+                                                        name="email" 
+                                                        placeholder=" " 
+                                                        required 
+                                                        aria-labelledby="email-label"
+                                                        autocomplete="on">
+                                                        <label class="accesible" for="email" id="email-label">Correo electrónico</label>                                   
+                                                    </div>
+                                                    <button  type="submit">Enviar</button>
+                                               
+                                            </form>
+                                        </div>
             </div>
            
             
+                                       
             
         </section>
     `,

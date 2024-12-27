@@ -13,17 +13,21 @@
    
 } */
 
-.landing .intro-container {
+.intro-container {
     width: 100%;
     height: auto;
     display: flex;
     position: relative; 
+    border-left:  60px solid #000;
+    border-right:  60px solid #000;
+    border-bottom: 60px solid #000;
+    
     
     
 }
 .intro-container .maria {
     width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor con responsive */
-    height: 780px ; /* Mantiene las proporciones */
+    height: 720px ; /* Mantiene las proporciones */
     object-fit: cover;
     object-position: center !important;
     
@@ -35,15 +39,15 @@
     line-height: 1.1; /* Altura de línea relativa al tamaño del texto */
     display: flex;
     position: absolute;
-    top:600px;
-    right: 126px;
+    top:560px;
+    right: 40px;
     margin: 10px;
 
     color: #04182A;
     text-shadow: 4px 4px 10px rgba(2, 2, 2, 0.809); /* Sombra difusa alrededor del texto */
-    -webkit-text-stroke-width: 2.8px;
+    -webkit-text-stroke-width: 2.5px;
     -webkit-text-stroke-color: #E0E0E0;
-    font-size: clamp(1.3rem, 3vw, 2.3rem);
+    font-size: clamp(1.3rem, 2.1vw, 2.3rem);
     font-style: normal;
     font-weight: 800;
     
@@ -53,21 +57,26 @@
        
 }
  /* SERVICIOS -LANDING */
-.landing .list-container{
+.list-container{
     display: flex;
-    padding: 92px ;
+    padding: 136px ;
     width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 56px;
     align-self: stretch;
-    border: 2px solid #FFF;
+    border-top: 2px solid #FFF;
     /* background: url(<path-to-image>) rgb(24, 17, 17) 50% / cover no-repeat, #1C2035; */
     background-color: #1a1818;
     color: #E0E0E0;
     box-shadow: 0px -8px 4px 0px rgba(0, 0, 0, 0.25);
 }
+.list-container h1{
+    justify-content: flex-start;
+    padding:0px;
+}
+
 .group-list {
     
     display: flex;
@@ -76,6 +85,7 @@
     justify-content: center;
     gap: 40px !important;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .list {
@@ -83,8 +93,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 10px;
-    background: #303031;
+    border-radius: 7px;
+    background: #2e2e2e;
     box-shadow: 0px 1px 7.3px 0px #545454 inset,
     1px 1px 7px rgb(0, 0, 0);
     
@@ -95,6 +105,9 @@
     flex-direction: column;
     align-items: center;
     gap:8px;
+    border-radius: 0 0 7px 7px;
+    
+    background-color: #2e2e2e;
 }
 
 .list-ux-title{
@@ -151,31 +164,52 @@
     box-shadow: 0px 1px 3.3px 0px #98E402 inset;
     border-radius: 7px 7px 0 0;
 }
+
+/* *PROYECTO UNICO*/
+.container-proyecto-unico{
+    /* background-color: #969b8d; */
+    padding: 184px 75px;
+     background-color: #b1ac9b;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap:32px;
+
+}
 .container-list-footer{
+   
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    gap:32px;
-    background-color: #0d0d0d;
-    padding: 64px;
-
-}
-.container-list-footer h6{
-    line-height: 1.5;
-    color: #f1d5ae;
-    text-align: center;
+    height: 290px;
+    
+    gap:24px;
+    background-image: url('../img/backg-service-footer.svg');
+    background-size: cover;
+    padding: 48px;
+    
+    /*box-shadow: 6px 3px 23px 0px #a17e31;*/   
 }
 .container-list-footer p{
     display: flex;
     justify-content: center;
-    letter-spacing: 2px;
-    font-size: 22px;
+    letter-spacing: 1.7px;
+    font-size: 40px;
     font-weight: bold;
-    color: #f1d5ae;
+    color: #fffbec;
+    text-align: center;
+    text-shadow: 2px 2px #000;
 }
-
+.container-proyecto-unico h6{
+    line-height: 1.5;
+    
+    text-align: center;
+    width: 100%;
+     /* text-shadow: 2px 2px #000; */
+     font-size: 17px;
+}
 
 
 .btn-footer{
@@ -185,37 +219,27 @@
 }
 /*EXITO LANDING*/
 .exito-container{
-    background-color: #E0E0E0;
+    background-color: #f7f7f7;
     display: flex;
     flex-direction: column;
-    padding: 80px ;
+    padding: 136px ;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 80px;
     align-self: stretch;
 }
-.container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    max-width: 1000px;
-    justify-content: center;
-}
+
 .exito-div{
     min-width: 420px;
     display: flex;
-    padding: 0px 40px 0 60px;
+    
     flex-direction: column;
     justify-content: center;
     
     gap: 24px;
     flex: 1 0 0;
 }
-.exito-div div{
-    display: flex;
-    flex-direction: column;
-    gap:3px;
-}
+
 .texto-exito{
     align-self: stretch;
     color: #1E1E1E;

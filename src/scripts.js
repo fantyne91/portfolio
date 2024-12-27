@@ -7,6 +7,10 @@ import { Uxui } from '../components/Uxui.js';
 //import { Games } from './components/Games.js';
 //import { Unreal } from './components/Unreal.js';
 
+// import '../styles/forms.css'
+// import '../styles/global.css'
+
+
 
 
 //Instanciar vue al hacer click o eventos
@@ -21,17 +25,17 @@ const app = Vue.createApp({
     }
   },
 
-  // computed: {
-  //   // Computed property para generar la clase dinámica según la página actual
-  //   currentPageClassComputed() {
-  //     return `page-${this.currentPage.toLowerCase()}`
-  //   },
-  // },
+   computed: {
+  //  Computed property para generar la clase dinámica según la página actual
+     currentPageClassComputed() {
+      return `page-${this.currentPage.toLowerCase()}`
+    },
+   },
 
   //funciones que hacen reaccion
   methods: {
     loadPage(page) {
-      console.log('Cambiando a la página:', page) // Verifica que el valor sea correcto
+      
 
       this.currentPage = page // Cambia el valor de currentPage
       this.menuOpen = false
@@ -40,7 +44,7 @@ const app = Vue.createApp({
       this.menuOpen = !this.menuOpen
     },
     updateScreenSize() {
-      this.isMobileOrTablet = window.innerWidth < 800 // Detecta si es menor a 768px
+      this.isMobileOrTablet = window.innerWidth < 800 // Detecta si es menor a 800px
       if (!this.isMobileOrTablet) {
         this.menuOpen = false // Cierra el menú si cambia a escritorio
       }
