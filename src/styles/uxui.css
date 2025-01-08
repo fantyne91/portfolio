@@ -1,0 +1,243 @@
+.uxui{
+ background: #ffffff;   
+ position: relative;
+ color: #1e1e1e;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+
+ 
+}
+
+.uxui h1{
+    color: #ff7707;
+    /* text-shadow: 0px 1px 0px #4e4e4e; */
+
+}
+.uxui h2{
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+} 
+.uxui h3{
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+   
+}
+
+.uxui h4{
+    display: flex;
+   font-weight:500;
+}
+
+.uxui .img-pc{
+    width: 250px;
+    height: fit-content;
+    position: relative;
+}
+/**CONTAINER IMPORTANCIA*/
+.container-importancia{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 550px;
+    padding: 0 24px 0 24px;
+}
+.container-importancia p{
+    font-weight: 500;
+}
+/**CONTAINER MOTIVOS*/
+.container-motivos-ux{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #3E3B35;
+    box-shadow: 0px 1px 3.3px 0px #35240a;
+    
+    gap:24px;
+    margin: 96px 0 96px 0;
+    border-radius: 15px;
+    padding: 24px;
+     /* width: min-content;  */
+}
+
+.container-motivos-ux div{
+    box-shadow: 0px 1px 3.3px 0px #35240a;
+    padding: 30px 60px;
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    background-color: #ffffff;
+    color: #1e1e1e;
+    border-radius: 10px;
+    width: 760px;
+    
+}
+.text-left{
+    align-items: flex-start;
+    padding: 8px !important;
+    width: 680px !important;
+    box-shadow: none !important;
+    gap:16px !important;
+}
+.text-left div{
+    width: auto;
+    box-shadow: none;
+    gap: 4px;
+    padding: 0px;
+}
+/**CONTAINER SERVICIOS*/
+.dark-back{
+    background-color: #c9beac;
+width: 100%;
+display: flex;
+justify-content: center;
+padding: 96px 0px;
+}
+.container-servicios-ux{
+display: flex;
+padding: 48px 100px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 16px;
+background-color: #ffffff;
+border-radius: 15px;
+border: 5px solid #3E3B35;
+max-width: 808px;
+}
+.container-servicios-ux h2{
+    color: #ff7707;
+    font-size: 1.6em;
+   
+    /* text-shadow: 0.5px 0.5px 1px #102960; */
+}
+.container-servicios-ux ul h4{
+    color: #1e1e1e;
+    justify-content:flex-start;
+    text-shadow: 0 1px 0.5px #ffc876;
+}
+.container-servicios-ux .p-column{
+    text-align: center;
+    color: #1e1e1e;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+ 
+}
+/**CONTAINER CASOS UX*/
+.full-width-div{
+    width: 100%;
+    
+    background-color: rgb(15, 15, 15);
+    padding: 168px 0px 136px 0px;
+    display: flex;
+    justify-content: center;
+}
+.container-casos-ux{
+    display: flex;
+    padding: 16px 0px 10px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+        
+    color: #868686;
+    border-radius: 15px;
+    background: #3E3B35;
+    width:1200px;
+    border: 14px solid #3E3B35;
+    font-weight: 500;
+
+}
+.container-casos-ux h2{
+   color: #FFC35C;
+     
+}
+
+.black-background{
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(15, 15, 15);
+}
+.black-background video{
+
+    border-radius: 10px;
+   
+}
+.black-background .video-bank{
+    object-fit: cover ;
+    height: 350px
+}
+ 
+.container-casos-ux .container-row{
+    width: 100%;   
+    padding: 0px 16px 0 16px ;
+}
+.container-casos-ux .container-column{
+    width: 100%;   
+   align-items: center;
+   gap:8px;
+   padding: 0px;
+
+}
+.container-casos-ux .p-column{
+     padding: 40px 0px;
+}
+.container-column-pdd{
+   display: flex;   
+    justify-content: center;
+    padding-top: 40px ;
+    flex-direction: column;
+    align-items: center;
+
+}
+.container-casos-ux  h3{
+    justify-content: flex-start;
+    font-weight: 500;
+    color: #FFC35C;
+}
+.container-casos-ux  h4{
+    color: #afafaf;
+    font-weight: 500;
+}     
+
+
+/**FOCUS-IMG*/
+.container-img-focus {
+  
+  display: inline-block;
+  overflow: visible; /* Permite que la imagen se amplíe fuera del contenedor */
+  width: 350px; /* Tamaño inicial igual al de la imagen */
+  height: auto;
+  position: relative; /* Asegura un posicionamiento adecuado */
+}
+
+.img-focus {
+
+  width: 100%;
+  height: auto;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  will-change: transform, box-shadow;
+  transform-origin: center center; /* Asegura que la imagen se amplíe desde el centro */
+}
+
+.container-img-focus:hover .img-focus {
+  transform: scale(1.7); /* Amplía la imagen desde el centro */
+  z-index: 999;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+  max-width: 600px; /* Limita el ancho máximo al 90% del viewport */
+  max-height: 600px; /* Limita la altura máxima al 90% del viewport */
+  object-fit: contain; /* Asegura que la imagen no se recorte */
+}
+
+.container-img-focus:not(:hover) .img-focus {
+  transform: scale(1); /* Vuelve a su tamaño original */
+  position: relative; /* Recupera su posición en el flujo del documento */
+  box-shadow: none; /* Elimina la sombra */
+  transition: transform 0.4s ease, box-shadow 0.4s ease; /* Agrega la transición de vuelta */
+}

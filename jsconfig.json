@@ -4,5 +4,5 @@
     "module": "ESNext",
     "jsx": "preserve"
   },
-  "include": ["src/**/*.js", "src/**/*.vue"]
+  "include": ["src/**/*.js", "src/**/*.vue", "vite.config.js"]
 }

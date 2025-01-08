@@ -1,0 +1,357 @@
+/* Asegúrate de eliminar márgenes y rellenos por defecto 
+8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 120, 
+128, 136, 144, 152, 160, 168, 176, 184, 192, 200
+*/
+
+ @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Asegurarte de que el body y el html no tengan márgenes */
+html {
+    max-width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /* font-family: Barlow; */
+    line-height: 1.5; 
+    
+}
+body {
+    margin: 0px;
+    max-width: 100%;     
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    letter-spacing: 0.4px;
+    font-family: Barlow;
+}
+
+main{
+    margin-top: 55px;
+}
+
+
+/* Diseño responsivo */
+/** Estilo base (para pantallas grandes por defecto) */
+.header {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    height: 55px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: fixed;
+    background: #04030E;
+    box-shadow: 0px 2px 4px 0px #62626F;
+    top:0;
+    left: 0;
+    z-index: 1000;    /* Asegura que esté por encima del contenido */
+    padding: 24px 72px;
+}
+.nav-menu {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 32px;
+    font-size: 16px;
+    align-items: center;
+}
+
+.header a{
+    box-shadow: none !important;
+    font-weight: 400;
+}
+
+/**BUTTONS */
+a{
+
+all:unset;
+cursor: pointer;
+padding: 8px 16px;
+box-shadow:   1px 1px 3px 0px #4c4545;
+ height: fit-content; 
+    width: fit-content; 
+    font-size: 16px;
+    font-weight: 500;
+}
+/**UNSET BUTTON*/
+button {
+    all: unset;
+    background: none;
+    cursor: pointer;
+    padding:  8px 16px;
+}
+button:hover{    
+    text-decoration: underline;    
+}
+
+/**BUTTONS*/
+.container-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.btn0{
+    border-radius: 5px;
+    border: 1.5px solid rgb(53, 53, 53);
+    background-color: #ffffff;    
+    color:#1a1a1a; 
+    font-weight: 600;  
+   
+}
+
+.btn0:hover{
+ background-color: rgb(58, 86, 121);
+ color: #E0E0E0;
+}
+
+.btn1{
+    border-radius: 5px;
+    background-color: #E65100;
+    color: #FFF;
+    
+
+}
+.btn2{
+    border-radius: 5px;
+    background-color: rgb(187, 169, 156);
+
+}
+.btn3{
+    border-radius: 5px;
+    background-color: rgb(122, 33, 57);
+
+}
+.btn4{
+    border-radius: 5px;
+    background-color: rgb(32, 99, 14);
+
+}
+
+/** TEXT */
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    
+     
+}
+
+h1{
+       font-size: 32px;
+       font-style: normal;
+       font-weight: 800;
+       width: 100%;
+       letter-spacing: 3px;
+       text-transform: uppercase;   
+       display: flex; 
+       justify-content: center;
+       padding: 60px;
+       
+}
+h2{
+    font-size: 22px;
+    font-weight: 400;
+}
+h3{
+    font-size: 20px;
+    font-weight: 400;
+}
+h4{
+    font-size: 17px;
+}
+h5{
+    font-weight: lighter;
+    font-size: 15px;
+}
+h6{
+ font-size: 16px;
+
+}
+p{
+    
+    margin: 0px;
+     line-height: 1.5;
+     max-width: 650px;
+}
+
+ul{
+    margin: 0px;
+    padding-left: 20px;
+}
+li{
+    margin-top: 10px;
+}
+
+
+/**FORMAT*/
+.tittle{
+
+}
+.p-column{
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+}
+
+.container-row{
+    display: flex;
+   flex-flow: row wrap;
+    
+    align-items: center;
+    justify-content: center;
+    gap:24px;
+    padding: 24px;
+}
+.container-column{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:24px;
+    padding: 32px;
+    justify-content: center;
+}
+
+/**FOOTER*/
+footer {
+    background-color: #04030E;
+    color: #ffed76;
+    font-weight: 800;
+    padding: 15px;
+}
+
+
+
+/* Pantallas mayores a 1200px (diseño para desktop grandes) */
+@media (min-width: 1200px) {
+      
+   
+      
+
+/* Pantallas entre 820px y 1200px (diseño para desktop normales) */
+@media (min-width: 800px) and (max-width: 1199px) {
+    .header {
+        padding: 30px 24px !important;
+    }
+   
+}
+}
+
+
+/** Pantallas entre 600px y 819px (TABLETS en horizontal o dispositivos medianos) */
+@media (min-width: 600px) and (max-width: 799px) {
+   
+    /* Ocultar el menú por defecto en pantallas pequeñas */
+    .header {
+    display: flex;
+    gap: 56px;
+    width: 100%;
+    height: auto;    
+    background: #04030E;
+    align-items: start;
+    }
+
+    .hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    cursor: pointer;
+    }
+
+    .hamburger-icon span {
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    
+    /* Animación para el menú abierto */
+    .hamburger-icon.open span:nth-child(1) {
+    transform: translateY(7.5px) rotate(45deg);
+    }
+
+    .hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+    }
+
+    .hamburger-icon.open span:nth-child(3) {
+    transform: translateY(-7.5px) rotate(-45deg);
+    }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+
+        
+  }
+
+  .nav-menu.open {
+    display: flex; 
+    color: #E0E0E0;
+
+  }
+
+}
+
+/** Pantallas menores a 600px (diseño para MÓVILES pequeños) */
+@media (max-width: 599px) {
+    /* Ocultar el menú por defecto en pantallas pequeñas */
+    .header {
+    display: flex;
+    padding: 16px 48px;
+    width: 100%;
+    height: auto;    
+    background: #04030E;
+    align-items: start;
+    }
+
+    .hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    cursor: pointer;
+    }
+
+    .hamburger-icon span {
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    
+    /* Animación para el menú abierto */
+    .hamburger-icon.open span:nth-child(1) {
+    transform: translateY(7.5px) rotate(45deg);
+    }
+
+    .hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+    }
+
+    .hamburger-icon.open span:nth-child(3) {
+    transform: translateY(-7.5px) rotate(-45deg);
+    }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    
+        
+  }
+
+  .nav-menu.open {
+    display: flex; 
+    color: #E0E0E0;
+
+  }
+
+}
