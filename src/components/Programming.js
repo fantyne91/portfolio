@@ -43,7 +43,7 @@ export default {
                         </div>
                     </div>
             </div>
-
+    
             <div class="container-proyect" >
             <div class="p-column">
                 <h2>Mi primer proyecto personal</h2>
