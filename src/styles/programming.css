@@ -1,61 +1,96 @@
-.programming{
+.header-programming{
     display: flex;
     flex-direction: column;
     align-items: center;
     
 }
-
-.programming h1{
+/*text*/
+.header-programming h1{
     width: 800px !important;
     text-align: center;
 }
-.programming h2{
+.header-programming h2, .container-proyect h2{
     font-weight: 600;
     text-align: center;
+    font-size: 1.3rem;
+    max-width: 600px;
+    
 }
- .p-short{
-    width: 500px;
-    font-weight: 500;
-    font-size: 20px;
-    text-align: center;
-    color: white;
+.header-programming h3{
+    font-size: 18px;
+    font-weight: 600;
+    color:var(--color-secondary);
+}
+ .header-programming .p-short{
+    color: var(--color-white);
+    font-size: 1.1rem;
  }
 
-
-.programming .container-row{
+ 
+.header-programming .container-row{
     gap:50px;
     width: 100%;
     margin: 32px 0 80px 0;
     padding: 0;
-    background-color:rgb(0, 100, 140);
+    background-color:rgb(14, 69, 92);
+}
+/*Beneficios */
+.beneficios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:24px;
+}
+.beneficios > p:nth-child(2) {
+    text-align: center;
+}
+.beneficios > p:nth-child(3) {
+    text-align: left;
+    width: 100%;
 }
 
-.programming .container-column{
-background-color: rgb(0, 100, 140);
-margin: 80px 0px;
-padding: 60px 80px;
-box-shadow: 0px 2px 6px 0px #292929;
-border-radius: 5px;
-color: rgb(255, 255, 255);
-font-weight: 500;
 
-/* box-shadow: 0 1px 3px #35240a; */
+.header-programming .container-column{
+    background-color: rgb(14, 69, 92);
+    margin: 80px 0px;
+    padding: 60px 80px;
+    box-shadow: 0px 2px 6px 0px var(--color-shadow-dark-grey);
+    border-radius: 5px;
+    color: var(--color-white);
 }
-.programming .container-column h2,.programming .container-column h4{
+/* .header-programming .container-column h2,.programming .container-column h4{
 text-shadow: 0 1px 1px #35240a;
-}
-.img-pc{ border-radius: 5px;
-
+} */
+.img-proyect-pg{
+    border-radius: 5px;
+    object-fit: cover;
+   
 }
 
 /**CONTAINER PROYECTO*/
-.container-proyect{
-background-color: rgb(1, 52, 72);
-margin: 80px 0px;
-padding: 60px 80px;
-border-radius: 5px;
-gap:32px;
-display: flex;
-color:white;
 
+.section-proyect{
+    background-color: rgb(14, 69, 92);
+    margin: 80px 0px;
+    padding: 120px 80px;
+    border-radius: 5px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.container-proyect{
+    gap:48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:var(--color-white);
+}
+
+.container-proyect>div{
+    gap:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+     
 }

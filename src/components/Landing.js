@@ -7,122 +7,138 @@ export default {
  
   
         <section>
-
             <div class= "intro-container">
                     <img class= "maria" src="../img/maria3.png" alt="imagen presentación">
                     <p class= "texto-entrada"> SOLUCIONES CREATIVAS Y TECNOLÓGICAS PARA EMPRESAS Y VIDEOJUEGOS</p>
             </div>
+        </section>
 
-            <div class= "list-container">
-                            
-                            <div><strong>Servicios</strong></div>
-                            <h1>Experiencias de usuario, desarrollo web <br>y Unreal Engine</h1>
-                           
+        <section lang="es">
+                <div class="list-container" itemscope itemtype="https://schema.org/ItemList" aria-labelledby="encabezado-servicios">
+                 <p><strong>Servicios</strong></p>
+                    <h1 id="encabezado-servicios" itemprop="name" tabindex="0">
+                        Experiencias de usuario, desarrollo web y Unreal Engine
+                    </h1>
+                   
 
-                            <div class= "group-list">
-                                
-                                    <div class= "list">
-
-                                        <div class= "list-ux-title">
-                                            <h2>DISEÑO WEB UX/UI</h2>
-                                            <h3> Auditorías y Diseños</h3>
-                                        </div>
-                                        
-                                        <div class= "list-text"> 
-                                            <h4> Optimizar la experiencia de tus usuarios  aumenta las conversiones y ventas, reduciendo costos, puedo ayudarte con: </h4>
-                                            <ul type= "circle">
-                                                <li> 
-                                                    <h5> <strong>Diseño de página web, CMS ( Wordpress, shoppify) o Ionos</strong> con foco en el éxito de tu empresa y <strong> posicionamiento  SEO</strong>. Obtendrás un diseño interactivo para mostrar a desarrolladores o inversores.</h5>
-                                                </li>
-                                                <li> 
-                                                    <h5><strong>Auditorías o análisis heurístico </strong> de tu sitio web y un posterior rediseño ajustándome a tus necesidades. </h5>
-                                                </li>                                            
-                                            </ul>                                                                                    
-                                        </div>
-                                                                         
-                                    </div>
-                
-                                    <div class= "list">
-
-                                        <div class= "list-programming-title">
-                                            <h2>DESARROLLO WEB </h2>
-                                            <h3>Interfaz y bases de datos</h3>
-                                        </div>
-                                        
-                                        <div class= "list-text">
-                                            <h4 style="text-align: center; font-weight: bold">Trabajar con JavaScript, Vue, PHP y CSS me permite crear soluciones completas y personalizadas incluyendo CMS: </h4>
-                                            <ul type= "circle">
-                                                <li> 
-                                                    <h5> <strong>Front-end: </strong> Creación de interfaces visuales atractivas e intuitivas que los usuarios ven e interactúan, como botones, menús y el diseño general.</h5>
-                                                </li>
-                                                <li> 
-                                                    <h5> <strong> Back-end: </strong>Trabajo en la estructura que hace que el sitio web funcione, incluyendo bases de datos y servidores. Esto permite que las tiendas online gestionen información crítica, como datos de  usuarios y productos.</h5>
-                                                </li>                                            
-                                            </ul>                                                                                    
-                                        </div>
-
-                                    </div>
-                                
-
-                                
-                                    <div class= "list">
-
-                                        <div class= "list-games-title">
-                                            <h2>DISEÑO DE VIDEOJUEGOS</h2>
-                                            <h3>Auditorías, GDD, pitch’s</h3>
-                                        </div>
-                                        
-                                        <div class= "list-text"> 
-                                            <h4 style="text-align: center; font-weight: bold">Evaluar cómo los jugadores interactúan con el juego y qué obstáculos enfrentan, desde la navegación en menús hasta las mecánicas de juego y la presentación visual: </h4>
-                                            <ul type= "circle">
-                                                <li> 
-                                                    <h5> Auditorías UX, Play test, análisis de jugabilidad y usabilidad con foco en la interacción intuitiva, para videojuegos existentes o en desarrollo.</h5>
-                                                </li>
-                                                <li> 
-                                                    <h5>Diseño de interfaces y HUD minimalistas y funcionales, que mantengan al jugador inmerso en la experiencia de un nuevo videojuego</h5>
-                                                </li>                                            
-                                            </ul>                                                                                    
-                                        </div>
-
-                                    </div>
-                    
-                                    <div class= "list">
-
-                                        <div class= "list-unreal-title">
-                                            <h2>UNREAL ENGINE</h2>
-                                            <h3>Cinemáticas y videojuegos</h3>
-                                        </div>
-                                        
-                                        <div class= "list-text"> 
-                                            <h4 style="text-align: center; font-weight: bold"> El uso de Unreal Engine  añade una nueva dimensión de inmersión y detalle, tanto en videojuegos como en soluciones empresariales. </h4>
-                                            <ul type= "circle">
-                                                <li>    
-                                                    <h5>Creación de escenarios, mapas, programación con blueprints, tiggers... para videojuegos.</h5>
-                                                </li>
-                                                <li> 
-                                                    <h5> En una era donde la narrativa visual es clave para captar la atención, Unreal Engine ofrece herramientas para crear presentaciones más dinámicas e interactivas fortaleciendo la interacción y la experiencia visual para los usuarios, ya sean jugadores o clientes corporativos.</h5>
-                                                </li>                                            
-                                            </ul>                                                                                    
-                                        </div>
-
-                                    </div>
-                                                                    
-                                                 
+                    <div class="group-list" role="list">
+                        <!-- Diseño Web UX/UI -->
+                        <div class="list" itemprop="itemListElement" itemscope itemtype="https://schema.org/Service" role="listitem" aria-labelledby="titulo-ux">
+                            <div class="list-ux-title">
+                                <h2 id="titulo-ux" itemprop="name" tabindex="0">Diseño Web UX/UI</h2>
+                                <h3 itemprop="serviceType" tabindex="0">Auditorías y Diseños</h3>
                             </div>
-                                        
-            </div>
-            <div class= "container-proyecto-unico">
-                <div class="container-list-footer">                               
-                                <p> CADA PROYECTO ES ÚNICO! </p>                                 
+                            <div class="list-text" aria-describedby="descripcion-ux">
+                                <h4 id="descripcion-ux" tabindex="0">Optimizar la experiencia de tus usuarios aumenta las conversiones y ventas. Puedo ayudarte con:</h4>
+                                <ul type="circle" role="list">
+                                    <li role="listitem">
+                                        <h5>
+                                            <strong itemprop="description">Diseño de página web o CMS (WordPress, Shopify, Ionos)</strong> con un enfoque en el éxito de tu empresa y <strong>posicionamiento SEO</strong>. Obtendrás un diseño interactivo para mostrar a desarrolladores o inversores.
+                                        </h5>
+                                    </li>
+                                    <li role="listitem">
+                                        <h5>
+                                            <strong itemprop="description">Auditorías y análisis heurístico</strong> para mejorar la experiencia del usuario y aumentar tus resultados.
+                                        </h5>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Desarrollo Web -->
+                        <div class="list" itemprop="itemListElement" itemscope itemtype="https://schema.org/Service" role="listitem" aria-labelledby="titulo-web">
+                            <div class="list-programming-title">
+                                <h2 id="titulo-web" itemprop="name" tabindex="0">Desarrollo Web</h2>
+                                <h3 itemprop="serviceType" tabindex="0">Interfaz y bases de datos</h3>
+                            </div>
+                            <div class="list-text" aria-describedby="descripcion-web">
+                                <h4 id="descripcion-web" tabindex="0">Creación de soluciones personalizadas con JavaScript, Vue, PHP y CSS:</h4>
+                                <ul type="circle" role="list">
+                                    <li role="listitem">
+                                        <h5>
+                                            <strong itemprop="description">Front-end:</strong> Diseño visual interactivo y atractivo que los usuarios ven e interactúan, como botones y menús.
+                                        </h5>
+                                    </li>
+                                    <li role="listitem">
+                                        <h5>
+                                            <strong itemprop="description">Back-end:</strong> Gestión de bases de datos y servidores para optimizar la funcionalidad de tiendas online.
+                                        </h5>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Diseño de Videojuegos -->
+                        <div class="list" itemprop="itemListElement" itemscope itemtype="https://schema.org/Service" role="listitem" aria-labelledby="titulo-videojuegos">
+                            <div class="list-games-title">
+                                <h2 id="titulo-videojuegos" itemprop="name" tabindex="0">Diseño de Videojuegos</h2>
+                                <h3 itemprop="serviceType" tabindex="0">Auditorías, GDD, pitch’s</h3>
+                            </div>
+                            <div class="list-text" aria-describedby="descripcion-videojuegos">
+                                <h4 id="descripcion-videojuegos" tabindex="0">Mejoro la experiencia de los jugadores evaluando la jugabilidad, navegación y diseño visual:</h4>
+                                <ul type="circle" role="list">
+                                    <li role="listitem">
+                                        <h5>
+                                            Auditorías UX y pruebas de jugabilidad para optimizar la interacción intuitiva.
+                                        </h5>
+                                    </li>
+                                    <li role="listitem">
+                                        <h5>
+                                            Diseño de interfaces y HUD que prioricen la inmersión del jugador.
+                                        </h5>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Unreal Engine -->
+                        <div class="list" itemprop="itemListElement" itemscope itemtype="https://schema.org/Service" role="listitem" aria-labelledby="titulo-unreal">
+                            <div class="list-unreal-title">
+                                <h2 id="titulo-unreal" itemprop="name" tabindex="0">Unreal Engine</h2>
+                                <h3 itemprop="serviceType" tabindex="0">Cinemáticas y videojuegos</h3>
+                            </div>
+                            <div class="list-text" aria-describedby="descripcion-unreal">
+                                <h4 id="descripcion-unreal" tabindex="0">Uso de Unreal Engine para crear experiencias visuales y narrativas inmersivas:</h4>
+                                <ul type="circle" role="list">
+                                    <li role="listitem">
+                                        <h5>
+                                            Creación de escenarios y programación de videojuegos usando Blueprints.
+                                        </h5>
+                                    </li>
+                                    <li role="listitem">
+                                        <h5>
+                                            Desarrollo de presentaciones visuales dinámicas para clientes corporativos.
+                                        </h5>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="btn-footer">
-                                    <h3>Cuéntame tus necesidades o agenda una llamada!</h3>
-                                    <h3> Ajustándome a tu presupuesto trabajaremos juntos para hacer realidad tu visión.</h3>
-                                     
-                 </div>
-                 <a class="btn0" href="contacta.html" target="_blank" rel="noopener noreferrer">CONTACTAR </a>
-                              
-            </div> 
+        </section>
+
+
+
+            <section>
+                <div class= "container-proyecto-unico">
+                    <div class="container-list-footer">                               
+                                    <p > CADA </p>
+                                    <p >PROYECTO  </p>
+                                    <p > ES ÚNICO!</p>                          
+                    </div>
+                    <div class="btn-footer">
+                                    <div>
+                                        <h3>Cuéntame tus necesidades o agenda una llamada!</h3>
+                                        <h3> Ajustándome a tu presupuesto trabajaremos juntos para hacer realidad tu visión.</h3>
+                                    </div>
+                                    <div>
+                                            <router-link to="/contacta" class="btn0" rel="noopener noreferrer">CONTACTAR</router-link>
+                                    </div>
+                    </div>
+                    
+                                
+                </div>
+            
 
             <div class="exito-container">
                 <div class="container-row">
@@ -135,66 +151,100 @@ export default {
                             <p>   Identificar y corregir esos puntos de fricción es clave para aumentar la satisfacción del usuario y el éxito del negocio a largo plazo. </p>
                         </div>
                         <div >
-                            <h6> <router-link to="/uxui"> Casos de estudio UX/UI</router-link>  </h6>
-                            <h6>Casos de estudio Videojuegos   </h6>
+                            <h6> <router-link to="/uxui"> Casos de estudio UX/UI </router-link>  </h6>
+                            <h6><router-link to="/games"> Casos de estudio Videojuegos </router-link></h6>
                         </div>
                     </div>
                     
-                        <img src="../img/psico-ux.png" alt="imagen usabilidad,empativa y psicologia en ux/ui" width="300px"/>
+                        <img src="../img/psico-ux.png" loading="lazy" alt="imagen usabilidad,empativa y psicologia en ux/ui" width="300px"/>
                     
-                </div>
-
-                      
-                               
-                                           
+                </div>              
 
                 
             </div>
             
-           
+           </section>
+           <section> 
                              
-            <div class= "portfolio">
-                <h2 class="texto-portfolio"> DISEÑOS UX/UI</h2>
-                <div class="imgs">
-                    <video class= ""  autoplay loop muted playsinline>
-                        <source src="../img/photofolio.mp4" type="video/mp4" >                       
-                    </video>
-                    <div class= "img-portfolio">
-                        <img class= "homes" src="../img/casa.svg" alt="diseño ux/ui" />
-                    </div>
-                    <div class= "img-portfolio">
-                        <img class= "lollipop" src="../img/plant.svg" alt="diseño ux/ui" />
-                    </div>
-                    <div class= "img-portfolio">
-                        <img class= "gamerhouse" src="../img/games.svg" alt="diseño ux/ui" />
-                    </div>
-                    <div class= "img-portfolio">
-                        <img class= "gamerhouse" src="../img/zen.png" alt="diseño ux/ui" />
-                    </div>
-                    <div class= "img-portfolio">
-                        <img class= "gamerhouse" src="../img/lolli.svg" alt="diseño ux/ui" />
-                    </div>
-                    <div class= "img-portfolio">
-                        <img class= "gamerhouse" src="../img/mind.svg" alt="diseño ux/ui" />
-                    </div>
+            <div class="portfolio" itemscope itemtype="https://schema.org/ItemList">
+                <h2 class="texto-portfolio" itemprop="name">DISEÑOS UX/UI</h2>
+                <div class="imgs" itemprop="itemListElement" itemscope itemtype="https://schema.org/ImageGallery">
                     
-                    <video class= "video-omega"  autoplay loop muted playsinline>
-                        <source src="../img/2024122022181.mp4" type="video/mp4" >                       
+                    <!-- Video Cupcake -->
+                    <video class="cupcake" autoplay loop muted playsinline itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
+                        <source src="../img/cupcake.mp4" type="video/mp4">
+                        <meta itemprop="name" content="Diseño UX/UI de Cupcake" />
+                        <meta itemprop="description" content="Video de diseño UX/UI para una tienda de cupcakes." />
                     </video>
-                    <video class= ""  autoplay loop muted playsinline>
-                        <source src="../img/dogfinder.mp4" type="video/mp4" >                       
+                    
+                    <!-- Imagen Casas -->
+                    <div class="img-portfolio">
+                        <img src="../img/casa.svg" loading="lazy" alt="Diseño UX/UI casas" itemprop="image" />
+                    </div>
+
+                    <!-- Imagen Plantas -->
+                    <div class="img-portfolio">
+                        <img src="../img/plant.svg" loading="lazy" alt="Diseño UX/UI tienda plantas" itemprop="image" />
+                    </div>
+
+                    <!-- Imagen Juegos -->
+                    <div class="img-portfolio">
+                        <img src="../img/games.svg" loading="lazy" alt="Diseño UX/UI tienda gamer" itemprop="image" />
+                    </div>
+
+                    <!-- Video Photofolio -->
+                    <video autoplay loop muted playsinline itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
+                        <source src="../img/photofolio.mp4" type="video/mp4">
+                        <meta itemprop="name" content="Diseño UX/UI Photofolio" />
+                        <meta itemprop="description" content="Video interactivo de un diseño UX/UI para Photofolio." />
                     </video>
-                     <div class= "img-portfolio">
-                        <img class= "gamerhouse" src="../img/hotel.svg" alt="diseño ux/ui"  />
+
+                    <!-- Imagen Zen -->
+                    <div class="img-portfolio">
+                        <img src="../img/zen.png" loading="lazy" alt="Diseño UX/UI app Zen" itemprop="image" />
                     </div>
-                     <div class= "img-portfolio">
-                        <img class= "gamerhouse" src="../img/bank.svg" alt="diseño ux/ui" />
+
+                    <!-- Imagen Lolli -->
+                    <div class="img-portfolio">
+                        <img src="../img/lolli.svg" loading="lazy" alt="Diseño UX/UI landing Lolli" itemprop="image" />
                     </div>
-                     <div class= "img-portfolio">
-                        <img class= "gamerhouse" src="../img/bag.png" alt="diseño ux/ui" />
+
+                    <!-- Imagen Mind -->
+                    <div class="img-portfolio">
+                        <img src="../img/mind.svg" loading="lazy" alt="Diseño UX/UI app Mind" itemprop="image" />
+                    </div>
+
+                    <!-- Video Omega -->
+                    <video class="video-omega" autoplay loop muted playsinline itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
+                        <source src="../img/2024122022181.mp4" type="video/mp4">
+                        <meta itemprop="name" content="Diseño UX/UI Omega Jewelry" />
+                        <meta itemprop="description" content="Video mostrando el diseño UX/UI de Omega Jewelry." />
+                    </video>
+
+                    <!-- Video DogFinder -->
+                    <video autoplay loop muted playsinline itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
+                        <source src="../img/dogfinder.mp4" type="video/mp4">
+                        <meta itemprop="name" content="Diseño UX/UI DogFinder" />
+                        <meta itemprop="description" content="Video de diseño UX/UI para una app de adopción de perros." />
+                    </video>
+
+                    <!-- Imagen Hotel -->
+                    <div class="img-portfolio">
+                        <img src="../img/hotel.svg" loading="lazy" alt="Diseño UX/UI hotel" itemprop="image" />
+                    </div>
+
+                    <!-- Imagen Bancaria -->
+                    <div class="img-portfolio">
+                        <img src="../img/bank.svg" loading="lazy" alt="Diseño UX/UI app bancaria" itemprop="image" />
+                    </div>
+
+                    <!-- Imagen Tienda -->
+                    <div class="img-portfolio">
+                        <img src="../img/bag.png" loading="lazy" alt="Diseño UX/UI" itemprop="image" />
                     </div>
                 </div>
             </div>
+
             
             <div class="contact-form-2" >
                 <h2> Obtén tu diseño personalizado desde 300€! </h2>

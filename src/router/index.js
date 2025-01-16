@@ -6,6 +6,7 @@ import UXUI from '../components/Uxui.js'
  import Programming from '../components/Programming.js'
  import Unreal from '../components/Unreal.js'
  import Games from '../components/Games.js'
+import Forms from '../components/Forms.js'
 
 // Define las rutas
 const routes = [
@@ -19,20 +20,25 @@ const routes = [
     name: 'UXUI',
     component: UXUI,
   },
-   {
-     path: '/programming',
-     name: 'Programming',
-     component: Programming,
-   },
-   {
-     path: '/unreal',
-     name: 'Unreal',
-     component: Unreal,
-   },
-   {
-     path: '/games',
-     name: 'Games',
-     component: Games,
+  {
+    path: '/programming',
+    name: 'Programming',
+    component: Programming,
+  },
+  {
+    path: '/unrealEngine',
+    name: 'Unreal',
+    component: Unreal,
+  },
+  {
+    path: '/games',
+    name: 'Games',
+    component: Games,
+  },
+  {
+    path: '/contacta',
+    name: 'Contacta',
+    component: Forms,
   },
 ]
 

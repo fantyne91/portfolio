@@ -29,7 +29,7 @@
     object-position: center !important;
     
 }
-
+/**todo: color-shadow black?*/
 .intro-container .texto-entrada {
     width: 50%;
     height: auto;
@@ -41,9 +41,9 @@
     margin: 10px;
 
     color: #04182A;
-    text-shadow: 4px 4px 10px rgba(2, 2, 2, 0.809); /* Sombra difusa alrededor del texto */
+    text-shadow: 4px 4px 10px var(--color-shadow-dark-grey); /* Sombra difusa alrededor del texto */
     -webkit-text-stroke-width: 2.5px;
-    -webkit-text-stroke-color: #E0E0E0;
+    -webkit-text-stroke-color: var(--color-primary);
     font-size: clamp(1.3rem, 2.1vw, 2.3rem);
     font-style: normal;
     font-weight: 800;
@@ -54,6 +54,9 @@
        
 }
  /* SERVICIOS -LANDING */
+ #encabezado-servicios{
+    max-width: 60vw;
+ }
 .list-container{
     display: flex;
     padding: 136px ;
@@ -63,12 +66,12 @@
     align-items: flex-start;
     gap: 56px;
     align-self: stretch;
-    border-top: 2px solid #423b3b;
-    border-bottom: 2px solid #423b3b;
+    border-top: 2px solid var(--color-grey);
+    border-bottom: 2px solid var(--color-grey);
     /* background: url(<path-to-image>) rgb(24, 17, 17) 50% / cover no-repeat, #1C2035; */
-    background-color: #1a1818;
-    color: #E0E0E0;
-    box-shadow: 0px -8px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    box-shadow: 0px -8px 4px 0px var(--color-shadow-dark-grey);
 }
 .list-container h1{
     justify-content: flex-start;
@@ -93,9 +96,8 @@
     align-items: center;
     border-radius: 10px;
     background: #2e2e2e;
-    box-shadow: 0px 1px 7.3px 0px #545454 inset,
-    1px 1px 7px rgb(0, 0, 0);
-    
+    box-shadow: 0px 1px 7.3px 0px inset var(--color-shadow-middle-gray),
+    1px 1px 7px var(--color-blue-black);    
 }
 .list-text{
     display: flex;
@@ -116,7 +118,7 @@
     align-items: center;
     gap: 8px;
     align-self: stretch;
-    border-bottom: 1px solid #535357;
+    border-bottom: 1px solid var(--color-shadow-middle-gray);
    
     box-shadow: 0px 1px 3.3px 0px #fac47a inset;
     border: 1px solid #fac47a;
@@ -131,7 +133,7 @@
     align-items: center;
     gap: 8px;
     align-self: stretch;
-    border-bottom: 1px solid #535357;
+    border-bottom: 1px solid var(--color-shadow-middle-gray);
     border: 1px solid #68FFF6;
     box-shadow: 0px 1px 3.3px 0px #68FFF6 inset;
     border-radius:7px 7px 0 0;
@@ -144,7 +146,7 @@
     align-items: center;
     gap: 8px;
     align-self: stretch;
-    border-bottom: 1px solid #535357;
+    border-bottom: 1px solid var(--color-shadow-middle-gray);
     border: 1px solid #B276FF;
     box-shadow: 0px 1px 3.3px 0px #B276FF inset;
     border-radius: 7px 7px 0 0;
@@ -157,7 +159,7 @@
     align-items: center;
     gap: 8px;
     align-self: stretch;
-    border-bottom: 1px solid #535357;
+    border-bottom: 1px solid var(--color-shadow-middle-gray);
     border: 1px solid #98E402;
     box-shadow: 0px 1px 3.3px 0px #98E402 inset;
     border-radius: 7px 7px 0 0;
@@ -167,38 +169,63 @@
 .container-proyecto-unico{
     
     padding: 166px 0px 144px 0;
-     background-color: #19232c;
+     /* background-color: #433e40; */
      display: flex;
      flex-direction: column;
      align-items: center;
      gap:32px;
+     background: linear-gradient(0deg, #614f46 0.16%, #2c2121 56.87%);
 
 }
 .container-list-footer{
-   
+   position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100%;
+    /* align-items: center; */
+    width: 90%;
     height: 290px;
-    background-image: url('../img/backg-service-footer-2.svg');
+    background-image: url('../img/backg-service-footer-2.png');
     background-size: cover;
     /*box-shadow: 6px 3px 23px 0px #a17e31;*/   
 }
+
+
+
+.container-list-footer p.fade-in {
+  opacity: 1;
+  
+  transition: opacity 1s ease-in, transform 0.7s ease-in; /* Palabra aparece con suavidad */
+}
+
+.container-list-footer p.fade-in-big {
+  opacity: 1;
+  top: 74px;
+  
+  font-size: 90px; /* Mayor tamaño de fuente para el tercer mensaje */
+  transition: opacity 1s ease-in, transform 0.7s ease-in; /* Palabra aparece con suavidad */
+}
+
+
 .container-list-footer p{
-    display: flex;
-    justify-content: center;
+    position: absolute;
+    top:90px;
+    opacity: 0;
+ -webkit-text-stroke-width: 2.5px;
+    -webkit-text-stroke-color: #2f1616;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    /* display: flex; */
+    /* justify-content: center; */
     letter-spacing: 1.7px;
-    font-size: 50px;
+    font-size: 60px;
     font-weight: bold;
-    color: #fffbec;
-    text-align: center;
-    text-shadow: 1px 1px 2px  #000;
+    color: var(--color-white);
+    /* text-align: center; */
+    text-shadow: 1px 1px 10px   #400f0f;
 }
 .container-proyecto-unico h3{
     line-height: 1.5;
-    color:#E0E0E0;
-    text-shadow: 1px 1px 4px rgb(45, 38, 38);
+    color:var(--color-primary);
+    text-shadow: 1px 1px 4px var(--color-shadow-dark-grey);;
     font-size: 17px;
     text-align: center;
     width: 100%;
@@ -212,13 +239,21 @@
     flex-direction: column;
     align-items: center;
     margin-top: 16px;
-    gap: 8px;
-    
+    padding: 32px;
+    gap: 16px;
+    border-radius: 10px;
+    background-color: #2d1f18 ;
+    /* box-shadow: 0 1px 6px #927156; */
+    /* border: 2px solid  #7e7873; */
 
 }
+ .btn-footer> div{
+    height: auto;
+    padding: 1px;
+ }
 /*EXITO LANDING*/
 .exito-container{
-    background-color: #eaeaea;
+    background-color: var(--color-white-grey);
     display: flex;
     flex-direction: column;
     padding: 136px ;
@@ -238,10 +273,14 @@
     gap: 24px;
     flex: 1 0 0;
 }
+.exito-div a{
+    padding: 8px;
+
+}
 
 .texto-exito{
     align-self: stretch;
-    color: #1E1E1E;
+    color: var(--color-secondary);
     font-size: 28px;
     font-style: normal;
     font-weight: 700;
@@ -257,8 +296,8 @@
 
 /**PORTFOLIO*/
 .portfolio{
-    border-top: 2px solid #878787 ;    
-    background-color: #ffffff;
+    border-top: 2px solid var(--color-light-grey);
+    background-color: var(--color-white); 
     display: flex;
     gap: 80px;
     flex-direction: column;
@@ -304,6 +343,7 @@ video{
     object-fit: contain;
 }
 
+
 /* .img-portfolio img{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -314,7 +354,9 @@ video{
     border-radius: 15px;
     padding: 24px;
 }  */
-
+@media (min-width: 1400px) {
+    
+}
 @media (min-width: 600px) and (max-width: 799px) {
     .intro-container .texto-entrada {
     width: 70%;    

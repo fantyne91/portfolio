@@ -3,7 +3,7 @@ import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
   plugins: [vue()],
-  base: './', // Ruta relativa para servidores locales como XAMPP
+  base: '/', // Ruta relativa para servidores locales como XAMPP
   server: {
     host: 'localhost',
     port: 3000,
