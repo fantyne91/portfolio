@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="preload" href="./src/styles/global.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <!-- <link rel="stylesheet" href="./src/styles/global.css"> -->
+    <link rel="stylesheet" href="./src/styles/forms.css">
+ 
+    <base href="/" /> <!--llamado vite-->
     <!--SEO-->
     <meta name="description" content="Desarrollo de aplicaciones web, diseño ux/ui, diseño de videojuegos y playtest">
-    <meta property="og:description" content="Desarrollo web y diseño ux/ui">
-    <meta property="keywords" content="Desarrollo web, programador, diseño ux/ui ">
+    <meta property="og:description" content="Desarrollo web, diseño ux/ui y desarrollo videojuegos">
+    <meta property="keywords" content="Desarrollo web, programador, diseño ux/ui, videojuegos, unreal engine ">
     <!--<meta property="og:image" content="https://ejemplo.com/imagen.jpg">-->
  
     <meta name="author" content="Maria Ortiz">
@@ -16,8 +21,7 @@
     
     <!-- CDN vue -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>     --> 
-    <link rel="stylesheet" href="./src/styles/global.css">
-    <link rel="stylesheet" href="./src/styles/forms.css">
+ 
     <base href="/" /> <!--llamado vite-->
         <!-- Widget translate  -->
     <!-- <script type="text/javascript">
@@ -36,13 +40,15 @@
 
 <body>
     <div id="app">
-        <header class="header">
+        <header class="header" >
 
-            <section class="logo">Imagen
-                <!-- <a href="/">
-                     <img src="logo.png" alt="Logo del sitio">
-                </a> -->
-            </section>
+            <div class="logo">
+                <router-link to="/">
+                    <img src="/img/logo.svg" alt="Logo del sitio" width="150px">
+                </router-link>
+                     
+                
+            </div>
 
             <!-- llamado onclick a script vue -->
             <!-- <nav :class="menuOpen ? 'nav-menu open' : 'nav-menu'">
@@ -57,20 +63,21 @@
             <router-link to="/">Inicio</router-link>
             <router-link to="/uxui">UX/UI</router-link>
             <router-link to="/programming">Programación</router-link>
-            <router-link to="/games">Diseño videojuegos</router-link>
-            <router-link to="/unrealEngine">Unreal Engine</router-link>
+            <router-link to="/games">Videojuegos</router-link>
+            <router-link to="/sobreMi">Sobre mí</router-link>
             </nav>
 
             <!-- Botón hamburguesa -->
-            <button v-if="isMobileOrTablet" class="menu-toggle" @click="toggleMenu">
-                 <!-- Ícono de hamburguesa -->
-                <span :class="{ open: menuOpen }" class="hamburger-icon">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </span>
-            </button>           
-
+            <div>
+                <button v-if="isMobileOrTablet" class="menu-toggle" @click="toggleMenu">
+                    <!-- Ícono de hamburguesa -->
+                    <span :class="{ open: menuOpen }" class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>           
+            </div>
         </header>
         <!-- Reflejo de script-->
         <!-- <main :class="currentPageClassComputed">

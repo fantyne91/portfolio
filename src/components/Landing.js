@@ -3,6 +3,7 @@ import '../styles/landing.css';
 
 export default {
   name: 'Landing',
+
   template: ` 
  
   
@@ -32,13 +33,13 @@ export default {
                                 <h4 id="descripcion-ux" tabindex="0">Optimizar la experiencia de tus usuarios aumenta las conversiones y ventas. Puedo ayudarte con:</h4>
                                 <ul type="circle" role="list">
                                     <li role="listitem">
-                                        <h5>
-                                            <strong itemprop="description">Diseño de página web o CMS (WordPress, Shopify, Ionos)</strong> con un enfoque en el éxito de tu empresa y <strong>posicionamiento SEO</strong>. Obtendrás un diseño interactivo para mostrar a desarrolladores o inversores.
+                                        <h5 itemprop="description">
+                                            <span>Diseño de página web o CMS </span>(WordPress, Shopify, Ionos) con un enfoque en el éxito de tu empresa y <span> posicionamiento SEO</span>. Obtendrás un diseño interactivo para mostrar a desarrolladores o inversores.
                                         </h5>
                                     </li>
                                     <li role="listitem">
                                         <h5>
-                                            <strong itemprop="description">Auditorías y análisis heurístico</strong> para mejorar la experiencia del usuario y aumentar tus resultados.
+                                            <span itemprop="description">Auditorías y análisis heurístico</span> para mejorar la experiencia del usuario y aumentar tus resultados.
                                         </h5>
                                     </li>
                                 </ul>
@@ -56,12 +57,12 @@ export default {
                                 <ul type="circle" role="list">
                                     <li role="listitem">
                                         <h5>
-                                            <strong itemprop="description">Front-end:</strong> Diseño visual interactivo y atractivo que los usuarios ven e interactúan, como botones y menús.
+                                            <span itemprop="description">Front-end:</span> Diseño visual interactivo y atractivo que los usuarios ven e interactúan, como botones y menús.
                                         </h5>
                                     </li>
                                     <li role="listitem">
                                         <h5>
-                                            <strong itemprop="description">Back-end:</strong> Gestión de bases de datos y servidores para optimizar la funcionalidad de tiendas online.
+                                            <span itemprop="description">Back-end:</span> Gestión de bases de datos y servidores para optimizar la funcionalidad de tiendas online.
                                         </h5>
                                     </li>
                                 </ul>
@@ -79,12 +80,12 @@ export default {
                                 <ul type="circle" role="list">
                                     <li role="listitem">
                                         <h5>
-                                            Auditorías UX y pruebas de jugabilidad para optimizar la interacción intuitiva.
+                                            <span>Auditorías UX y pruebas de jugabilidad</span> para optimizar la interacción intuitiva, eliminando frustraciones del jugador.
                                         </h5>
                                     </li>
                                     <li role="listitem">
                                         <h5>
-                                            Diseño de interfaces y HUD que prioricen la inmersión del jugador.
+                                            <span>Diseño de interfaces y HUD</span> que prioricen la inmersión del jugador, colaboración en creación de Documentación como Pitchs y GDD.
                                         </h5>
                                     </li>
                                 </ul>
@@ -102,7 +103,7 @@ export default {
                                 <ul type="circle" role="list">
                                     <li role="listitem">
                                         <h5>
-                                            Creación de escenarios y programación de videojuegos usando Blueprints.
+                                            Creación de escenarios, Metahumans, Blueprints y programación, diseño, creación y progrmación de HUDs o interfaces.
                                         </h5>
                                     </li>
                                     <li role="listitem">
@@ -271,4 +272,46 @@ export default {
             
         </section>
     `,
+  methods: {
+    animateMessages() {
+      // Seleccionamos los párrafos por su contenedor
+      const messages = document.querySelectorAll('.container-list-footer p')
+
+      messages.forEach((msg, index) => {
+        setTimeout(() => {
+          // Quitar la clase fade-in de todos los mensajes
+          messages.forEach((m) => m.classList.remove('fade-in', 'fade-in-big'))
+          // Esperar un poco para dar la sensación de "espacio limpio"
+          setTimeout(() => {
+            if (index === 2) {
+              // Si es el tercer mensaje (índice 2)
+              msg.classList.add('fade-in-big')
+            } else {
+              // Para los demás mensajes
+              msg.classList.add('fade-in')
+            }
+          }, 500) // Tiempo para que desaparezca la palabra anterior
+        }, index * 2400) // Cada mensaje aparece con un retraso
+      })
+    },
+  },
+  mounted() {
+    setTimeout(() => {
+      const container = document.querySelector('.container-list-footer')
+
+      if (container) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              this.animateMessages() // Llama a la animación al entrar en pantalla
+            }
+          })
+        })
+
+        observer.observe(container)
+      }
+    }, 100) // Ajusta el retraso si es necesario
+  },
 }
+
+

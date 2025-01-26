@@ -4,7 +4,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Landing from '../components/Landing.js'
 import UXUI from '../components/Uxui.js'
  import Programming from '../components/Programming.js'
- import Unreal from '../components/Unreal.js'
+ import SobreMi from '../components/SobreMi.js'
  import Games from '../components/Games.js'
 import Forms from '../components/Forms.js'
 
@@ -25,15 +25,16 @@ const routes = [
     name: 'Programming',
     component: Programming,
   },
-  {
-    path: '/unrealEngine',
-    name: 'Unreal',
-    component: Unreal,
-  },
+
   {
     path: '/games',
     name: 'Games',
     component: Games,
+  },
+  {
+    path: '/sobreMi',
+    name: 'SobreMi',
+    component: SobreMi,
   },
   {
     path: '/contacta',

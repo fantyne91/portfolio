@@ -43,33 +43,13 @@ const app = createApp({
     },
 
     updateScreenSize() {
-      this.isMobileOrTablet = window.innerWidth < 800 // Detecta si es menor a 800px
+      this.isMobileOrTablet = window.innerWidth < 801 // Detecta si es menor a 800px
       if (!this.isMobileOrTablet) {
         this.menuOpen = false // Cierra el menú si cambia a escritorio
       }
     },
 
-    animateMessages() {
-      // Seleccionamos los párrafos por su contenedor
-      const messages = document.querySelectorAll('.container-list-footer p')
-      
-      messages.forEach((msg, index) => {
-        setTimeout(() => {
-          // Quitar la clase fade-in de todos los mensajes
-          messages.forEach((m) => m.classList.remove('fade-in', 'fade-in-big'))
-          // Esperar un poco para dar la sensación de "espacio limpio"
-          setTimeout(() => {
-            if (index === 2) {
-              // Si es el tercer mensaje (índice 2)
-              msg.classList.add('fade-in-big')
-            } else {
-              // Para los demás mensajes
-              msg.classList.add('fade-in')
-            }
-          }, 500) // Tiempo para que desaparezca la palabra anterior
-        }, index * 2700) // Cada mensaje aparece con un retraso de 800ms
-      })
-    },
+    
 
   },
 
@@ -77,30 +57,18 @@ const app = createApp({
     // Similar a "created" pero en createApp
     this.updateScreenSize() // Comprobamos el tamaño al iniciar
     window.addEventListener('resize', this.updateScreenSize) // Detectamos cambios
+  
+     document.body.classList.add('ready');
 
-    setTimeout(() => {
-      const container = document.querySelector('.container-list-footer')
 
-      if (container) {
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              this.animateMessages() // Llama a la animación al entrar en pantalla
-              
-            }
-          })
-        })
-
-        observer.observe(container)
-      }
-      
-    }, 100) // Ajusta el retraso si es necesario
+    
   },
-
+  
   beforeUnmount() {
-    // Similar a "beforeDestroy"
-    window.removeEventListener('resize', this.updateScreenSize) // Limpiamos el evento
-  },
+      // Similar a "beforeDestroy"
+      window.removeEventListener('resize', this.updateScreenSize) // Limpiamos el evento
+    }
+  
 })
 
 // Registrar los componentes
