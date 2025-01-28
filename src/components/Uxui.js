@@ -94,7 +94,7 @@ export default {
                                 </div>
                             </div>
                             <div>                      
-                                <video class= ""  autoplay loop muted playsinline>
+                                <video class= "video"  autoplay loop muted playsinline>
                                 <source src="../img/video-omega.mp4" type="video/mp4" >                       
                                 </video>
                             </div>

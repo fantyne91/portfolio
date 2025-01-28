@@ -1,5 +1,7 @@
 //creacion páginas
 import '../styles/landing.css';
+import '../styles/forms.css';
+
 
 export default {
   name: 'Landing',
@@ -9,7 +11,7 @@ export default {
   
         <section>
             <div class= "intro-container">
-                    <img class= "maria" src="../img/maria3.png" alt="imagen presentación">
+                    <img class= "maria" src="../img/portfolio-img.webp" alt="imagen presentación">
                     <p class= "texto-entrada"> SOLUCIONES CREATIVAS Y TECNOLÓGICAS PARA EMPRESAS Y VIDEOJUEGOS</p>
             </div>
         </section>
@@ -140,7 +142,7 @@ export default {
                                 
                 </div>
             
-
+            <!--
             <div class="exito-container">
                 <div class="container-row">
                 
@@ -159,10 +161,9 @@ export default {
                     
                         <img src="../img/psico-ux.png" loading="lazy" alt="imagen usabilidad,empativa y psicologia en ux/ui" width="300px"/>
                     
-                </div>              
-
-                
+                </div>
             </div>
+            -->
             
            </section>
            <section> 
@@ -172,7 +173,7 @@ export default {
                 <div class="imgs" itemprop="itemListElement" itemscope itemtype="https://schema.org/ImageGallery">
                     
                     <!-- Video Cupcake -->
-                    <video class="cupcake" autoplay loop muted playsinline itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
+                    <video class="video" preload="none" loading="lazy" autoplay loop muted playsinline itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
                         <source src="../img/cupcake.mp4" type="video/mp4">
                         <meta itemprop="name" content="Diseño UX/UI de Cupcake" />
                         <meta itemprop="description" content="Video de diseño UX/UI para una tienda de cupcakes." />
@@ -193,12 +194,12 @@ export default {
                         <img src="../img/games.svg" loading="lazy" alt="Diseño UX/UI tienda gamer" itemprop="image" />
                     </div>
 
-                    <!-- Video Photofolio -->
-                    <video autoplay loop muted playsinline itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
+                    <!-- Video Photofolio 
+                    <video class="video" preload="none" loading="lazy"autoplay loop muted playsinline itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
                         <source src="../img/photofolio.mp4" type="video/mp4">
                         <meta itemprop="name" content="Diseño UX/UI Photofolio" />
                         <meta itemprop="description" content="Video interactivo de un diseño UX/UI para Photofolio." />
-                    </video>
+                    </video>-->
 
                     <!-- Imagen Zen -->
                     <div class="img-portfolio">
@@ -216,14 +217,14 @@ export default {
                     </div>
 
                     <!-- Video Omega -->
-                    <video class="video-omega" autoplay loop muted playsinline itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
+                    <video class="video-omega" preload="none" loading="lazy" autoplay loop muted playsinline itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
                         <source src="../img/2024122022181.mp4" type="video/mp4">
                         <meta itemprop="name" content="Diseño UX/UI Omega Jewelry" />
                         <meta itemprop="description" content="Video mostrando el diseño UX/UI de Omega Jewelry." />
                     </video>
 
                     <!-- Video DogFinder -->
-                    <video autoplay loop muted playsinline itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
+                    <video class="video" preload="none" loading="lazy" autoplay loop muted playsinline itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
                         <source src="../img/dogfinder.mp4" type="video/mp4">
                         <meta itemprop="name" content="Diseño UX/UI DogFinder" />
                         <meta itemprop="description" content="Video de diseño UX/UI para una app de adopción de perros." />
@@ -311,6 +312,24 @@ export default {
         observer.observe(container)
       }
     }, 100) // Ajusta el retraso si es necesario
+    document.addEventListener('DOMContentLoaded', () => {
+      const videos = document.querySelectorAll('.lazy-video')
+
+      const videoObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const video = entry.target
+            video.load() // Carga el video
+            video.play() // Reproduce automáticamente
+            observer.unobserve(video) // Deja de observar el video una vez cargado
+          }
+        })
+      })
+
+      videos.forEach((video) => {
+        videoObserver.observe(video)
+      })
+    })
   },
 }
 

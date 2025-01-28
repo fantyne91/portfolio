@@ -40,6 +40,7 @@ const app = createApp({
     // },
     toggleMenu() {
       this.menuOpen = !this.menuOpen
+      
     },
 
     updateScreenSize() {
@@ -58,9 +59,9 @@ const app = createApp({
     this.updateScreenSize() // Comprobamos el tamaño al iniciar
     window.addEventListener('resize', this.updateScreenSize) // Detectamos cambios
   
-     document.body.classList.add('ready');
+    //  document.body.classList.add('ready');
 
-
+    document.getElementById('app').style.display = 'block'
     
   },
   

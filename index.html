@@ -3,26 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <link rel="preload" href="./src/styles/global.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <!-- <link rel="stylesheet" href="./src/styles/global.css"> -->
-    <link rel="stylesheet" href="./src/styles/forms.css">
- 
+
+     <link rel="preload" href="./public/fonts/Barlow/Barlow-Regular.ttf" as="font" type="font/ttf"  crossorigin="anonymous">
+     <link rel="stylesheet" href="./src/styles/global.css"> 
+     <script type="module" src="./src/scripts.js" defer></script> 
     <base href="/" /> <!--llamado vite-->
+     <!--fonts-->
+    <!-- <link rel="preload" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Dancing+Script:wght@400..700&display=swap" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Dancing+Script:wght@400..700&display=swap"> -->
+    <!-- <link rel="preload" href="./src/fonts/Barlow/Barlow-Regular.ttf" as="font" type="font/ttf"  crossorigin="anonymous"> -->
+
     <!--SEO-->
     <meta name="description" content="Desarrollo de aplicaciones web, diseño ux/ui, diseño de videojuegos y playtest">
     <meta property="og:description" content="Desarrollo web, diseño ux/ui y desarrollo videojuegos">
     <meta property="keywords" content="Desarrollo web, programador, diseño ux/ui, videojuegos, unreal engine ">
-    <!--<meta property="og:image" content="https://ejemplo.com/imagen.jpg">-->
- 
+    <!--<meta property="og:image" content="https://ejemplo.com/imagen.jpg">--> 
     <meta name="author" content="Maria Ortiz">
     <meta name="robots" content="index, follow">
 
     <title>Portafolio</title>
-    
+
+    <style>     
+            @font-face {
+        font-family: 'Barlow';
+        src:  url('./public/fonts/Barlow/Barlow-Regular.ttf') format('truetype');
+           
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+        }
+              @font-face {
+        font-family: 'Barlow';
+        src:  url('./public/fonts/Barlow/Barlow-SemiBold.ttf') format('truetype');
+           
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+        }
+              @font-face {
+        font-family: 'Barlow';
+        src:  url('./public/fonts/Barlow/Barlow-Bold.ttf') format('truetype');
+           
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+        }
+
+         
+        [v-cloak] {
+             display: none;
+        }  
+    </style> 
+
     <!-- CDN vue -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>     --> 
  
-    <base href="/" /> <!--llamado vite-->
         <!-- Widget translate  -->
     <!-- <script type="text/javascript">
         function googleTranslateElementInit() {
@@ -39,26 +74,17 @@
 
 
 <body>
-    <div id="app">
+    <div id="app" v-cloak>
         <header class="header" >
 
             <div class="logo">
                 <router-link to="/">
-                    <img src="/img/logo.svg" alt="Logo del sitio" width="150px">
-                </router-link>
-                     
-                
+                    <img src="/img/logo.svg" alt="Logo del sitio" width="150px" height="auto">
+                </router-link>                  
+            
             </div>
 
-            <!-- llamado onclick a script vue -->
-            <!-- <nav :class="menuOpen ? 'nav-menu open' : 'nav-menu'">
-                <button @click="loadPage('Landing')">Inicio</button>
-                <button @click="loadPage('Uxui')">UX/UI</button>
-                <button @click="loadPage('Programming')">Programación</button>
-                <button @click="loadPage('Games')">Diseño videojuegos</button>         
-                <button @click="loadPage('Unreal')">Unreal Engine</button>
-            </nav> -->
-
+            <!-- llamado  router script vue -->
             <nav :class="menuOpen ? 'nav-menu open' : 'nav-menu'">
             <router-link to="/">Inicio</router-link>
             <router-link to="/uxui">UX/UI</router-link>
@@ -87,16 +113,10 @@
         <main>
             <router-view></router-view>
         </main>
-
+        <footer class="footer">
+            <p>Desarrollado con amor 
+            </p>
+        </footer>
     </div>
-
-    <footer class="footer">
-        <p>Desarrollado con amor 
-        </p>
-    </footer>
-
-    <script type="module" src="./src/scripts.js"></script>
-    
 </body>
-
 </html>
