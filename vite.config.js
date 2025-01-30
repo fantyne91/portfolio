@@ -7,6 +7,9 @@ export default defineConfig({
   server: {
     host: 'localhost',
     port: 3000,
+    headers: {
+      'Cache-Control': 'public, max-age=31536000, immutable',
+    },
   },
   define: {
     __VUE_OPTIONS_API__: true,

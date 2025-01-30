@@ -15,57 +15,65 @@
 
 .intro-container {
     width: 100%;
-    height: auto;
+    max-height: 650px;   
     display: flex;
-    position: relative; 
-    border-left:  60px solid #000;
-    border-right:  60px solid #000;
-    border-bottom: 60px solid #000;    
+    position: relative;      
 }
-.intro-container .maria {
+.intro-container> img{
     width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor con responsive */
-    height: 720px ; /* Mantiene las proporciones */
+    min-height: 500px; /* Mantiene las proporciones */
     object-fit: cover;
     object-position: center !important;
     
 }
 /**todo: color-shadow black?*, flexgrow img,responsive spcebetwen, revisar html main n template*/
-.intro-container .texto-entrada {
+.intro-container> .texto-entrada {
     width: 50%;
     height: auto;
     line-height: 1.1; /* Altura de línea relativa al tamaño del texto */
     display: flex;
     position: absolute;
-    top:560px;
-    right: 40px;
+    bottom:30px;
+    right: 50px;
     margin: 10px;
-
-    color: #04182A;
-    text-shadow: 4px 4px 10px var(--color-shadow-dark-grey); /* Sombra difusa alrededor del texto */
-    -webkit-text-stroke-width: 2.5px;
-    -webkit-text-stroke-color: var(--color-primary);
-    font-size: clamp(1.3rem, 2.1vw, 2.3rem);
-    font-style: normal;
-    font-weight: 800;
-    
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    text-align: right;
-       
+    font-size: clamp(1.4rem, 6vw, 2.8rem);
+    font-weight: 800;    
+     /* text-shadow: 4px 4px 20px var(--color-shadow-dark-grey);  */
+    text-align: right;   
+   
+   
 }
+@supports (-webkit-text-stroke: 1px black) {
+    .texto-entrada {
+        color: black;
+        letter-spacing: 1px;
+        -webkit-text-stroke-width: 1.7px;
+        -webkit-text-stroke-color: rgb(146, 125, 97);
+    }
+}
+
+@supports not (-webkit-text-stroke: 1px black) {
+    .texto-entrada {
+        text-shadow: 
+            -2px -2px 0 var(--color-primary),  
+             2px -2px 0 var(--color-primary),  
+            -2px  2px 0 var(--color-primary),  
+             2px  2px 0 var(--color-primary);
+    }
+}    
+       
+
  /* SERVICIOS -LANDING */
- #encabezado-servicios{
-    max-width: 60vw;
- }
+
 .list-container{
     display: flex;
-    padding: 136px ;
+    padding: clamp(var(--space-xs), 10vw, var(--space-2xl));
     width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 56px;
-    align-self: stretch;
+    
     border-top: 2px solid var(--color-grey);
     border-bottom: 2px solid var(--color-grey);
     /* background: url(<path-to-image>) rgb(24, 17, 17) 50% / cover no-repeat, #1C2035; */
@@ -75,7 +83,8 @@
 }
 .list-container h1{
     justify-content: flex-start;
-    padding:0px;
+    padding:0px;    
+    max-width: 60vw; 
 }
 
 .group-list {
@@ -189,7 +198,7 @@
     /* align-items: center; */
     width: 90%;
     height: 290px;
-    background-image: url('../img/backg-service-footer-2.png');
+    background-image: url('/images/backg-service-footer-2.png');
     background-size: cover;
     /*box-shadow: 6px 3px 23px 0px #a17e31;*/   
 }
@@ -333,6 +342,7 @@
 }
 .imgs img{
     width:400px;
+    
 }
 
 video{
@@ -349,21 +359,16 @@ video{
 }
 
 
-/* .img-portfolio img{
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    background: #3f3f3f 20%;
-    border-radius: 15px;
-    padding: 24px;
-}  */
+.img-portfolio img{
+    height:290.81px;
+    object-fit: cover;
+      border-radius: 5px;
+}  
 @media (min-width: 1400px) {
     
 }
 @media (min-width: 600px) and (max-width: 799px) {
-    .intro-container .texto-entrada {
+    /* .intro-container .texto-entrada {
     width: 70%;    
   
     display: flex;
@@ -377,10 +382,10 @@ video{
 
     .list {
     width: auto !important;
-    }
+    } */
 }
 @media (max-width: 600px) {
-    .intro-container .texto-entrada {
+    /* .intro-container .texto-entrada {
     width: 70%;    
  
     display: flex;
@@ -393,5 +398,5 @@ video{
     }   
     .list {
     width: auto !important;
-    }
+    } */
 }

@@ -39,9 +39,11 @@ const app = createApp({
     //   this.menuOpen = false
     // },
     toggleMenu() {
-      this.menuOpen = !this.menuOpen
-      
+      this.menuOpen = !this.menuOpen      
     },
+    // clickOption() {
+    //   this.menuOpen = !this.menuOpen
+    // },
 
     updateScreenSize() {
       this.isMobileOrTablet = window.innerWidth < 801 // Detecta si es menor a 800px
@@ -61,7 +63,7 @@ const app = createApp({
   
     //  document.body.classList.add('ready');
 
-    document.getElementById('app').style.display = 'block'
+    // document.getElementById('app').style.display = 'block'
     
   },
   

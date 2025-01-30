@@ -9,20 +9,18 @@ export default {
   template: ` 
  
   
-        <section>
-            <div class= "intro-container">
-                    <img class= "maria" src="../img/portfolio-img.webp" alt="imagen presentación">
-                    <p class= "texto-entrada"> SOLUCIONES CREATIVAS Y TECNOLÓGICAS PARA EMPRESAS Y VIDEOJUEGOS</p>
-            </div>
+        <section class= "intro-container">            
+                    <img src="/images/portfolio-img.webp" alt="imagen presentación">
+                   <p class= "texto-entrada"> Soluciones creativas y tecnológicas para empresas y videojuegos</p>                 
+            
         </section>
 
-        <section lang="es">
-                <div class="list-container" itemscope itemtype="https://schema.org/ItemList" aria-labelledby="encabezado-servicios">
-                 <p><strong>Servicios</strong></p>
+        <section lang="es" class="list-container" itemscope itemtype="https://schema.org/ItemList" aria-labelledby="encabezado-servicios">
+                
+                    <p><strong>Servicios</strong></p>
                     <h1 id="encabezado-servicios" itemprop="name" tabindex="0">
                         Experiencias de usuario, desarrollo web y Unreal Engine
-                    </h1>
-                   
+                    </h1>                   
 
                     <div class="group-list" role="list">
                         <!-- Diseño Web UX/UI -->
@@ -117,7 +115,7 @@ export default {
                             </div>
                         </div>
                     </div>
-                </div>
+                
         </section>
 
 
@@ -159,7 +157,7 @@ export default {
                         </div>
                     </div>
                     
-                        <img src="../img/psico-ux.png" loading="lazy" alt="imagen usabilidad,empativa y psicologia en ux/ui" width="300px"/>
+                        <img src="/images/psico-ux.png" loading="lazy" alt="imagen usabilidad,empativa y psicologia en ux/ui" width="300px"/>
                     
                 </div>
             </div>
@@ -174,76 +172,79 @@ export default {
                     
                     <!-- Video Cupcake -->
                     <video class="video" preload="none" loading="lazy" autoplay loop muted playsinline itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
-                        <source src="../img/cupcake.mp4" type="video/mp4">
+                        <source src="/images/cupcake.mp4" type="video/mp4">
                         <meta itemprop="name" content="Diseño UX/UI de Cupcake" />
                         <meta itemprop="description" content="Video de diseño UX/UI para una tienda de cupcakes." />
                     </video>
-                    
-                    <!-- Imagen Casas -->
+
+                    <!-- Imagen Tienda -->
                     <div class="img-portfolio">
-                        <img src="../img/casa.svg" loading="lazy" alt="Diseño UX/UI casas" itemprop="image" />
+                        <img src="/images/bag.webp" loading="lazy" alt="Diseño UX/UI" itemprop="image" />
+                    </div>
+
+                    <!-- Imagen Casas -->
+                    <div class="">
+                        <img src="/images/casa.svg" loading="lazy" alt="Diseño UX/UI casas" itemprop="image" />
+                    </div>
+
+                     <!-- Imagen Juegos -->
+                    <div class="img-portfolio">
+                        <img src="/images/games.webp" loading="lazy" alt="Diseño UX/UI tienda gamer" itemprop="image" />
                     </div>
 
                     <!-- Imagen Plantas -->
                     <div class="img-portfolio">
-                        <img src="../img/plant.svg" loading="lazy" alt="Diseño UX/UI tienda plantas" itemprop="image" />
+                        <img src="/images/plant.webp" loading="lazy" alt="Diseño UX/UI tienda plantas" itemprop="image" />
                     </div>
-
-                    <!-- Imagen Juegos -->
-                    <div class="img-portfolio">
-                        <img src="../img/games.svg" loading="lazy" alt="Diseño UX/UI tienda gamer" itemprop="image" />
-                    </div>
-
+                   
                     <!-- Video Photofolio 
                     <video class="video" preload="none" loading="lazy"autoplay loop muted playsinline itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
-                        <source src="../img/photofolio.mp4" type="video/mp4">
+                        <source src="/images/photofolio.mp4" type="video/mp4">
                         <meta itemprop="name" content="Diseño UX/UI Photofolio" />
                         <meta itemprop="description" content="Video interactivo de un diseño UX/UI para Photofolio." />
                     </video>-->
 
+                    <!-- Imagen Bancaria -->
+                    <div class="img-portfolio">
+                        <img src="/images/bank.webp" loading="lazy" alt="Diseño UX/UI app bancaria" itemprop="image" />
+                    </div>
+
                     <!-- Imagen Zen -->
                     <div class="img-portfolio">
-                        <img src="../img/zen.png" loading="lazy" alt="Diseño UX/UI app Zen" itemprop="image" />
+                        <img src="/images/zen.webp" loading="lazy" alt="Diseño UX/UI app Zen" itemprop="image" />
                     </div>
 
                     <!-- Imagen Lolli -->
                     <div class="img-portfolio">
-                        <img src="../img/lolli.svg" loading="lazy" alt="Diseño UX/UI landing Lolli" itemprop="image" />
+                        <img src="/images/lolli.webp" loading="lazy" alt="Diseño UX/UI landing Lolli" itemprop="image" />
                     </div>
 
                     <!-- Imagen Mind -->
                     <div class="img-portfolio">
-                        <img src="../img/mind.svg" loading="lazy" alt="Diseño UX/UI app Mind" itemprop="image" />
+                        <img src="/images/mind.webp" loading="lazy" alt="Diseño UX/UI app Mind" itemprop="image" />
                     </div>
 
                     <!-- Video Omega -->
                     <video class="video-omega" preload="none" loading="lazy" autoplay loop muted playsinline itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
-                        <source src="../img/2024122022181.mp4" type="video/mp4">
+                        <source src="/images/2024122022181.mp4" type="video/mp4">
                         <meta itemprop="name" content="Diseño UX/UI Omega Jewelry" />
                         <meta itemprop="description" content="Video mostrando el diseño UX/UI de Omega Jewelry." />
                     </video>
 
                     <!-- Video DogFinder -->
-                    <video class="video" preload="none" loading="lazy" autoplay loop muted playsinline itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
-                        <source src="../img/dogfinder.mp4" type="video/mp4">
+                    <!--<video class="video" preload="none" loading="lazy" autoplay loop muted playsinline itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
+                        <source src="/images/dogfinder.mp4" type="video/mp4">
                         <meta itemprop="name" content="Diseño UX/UI DogFinder" />
                         <meta itemprop="description" content="Video de diseño UX/UI para una app de adopción de perros." />
-                    </video>
+                    </video>-->
 
                     <!-- Imagen Hotel -->
                     <div class="img-portfolio">
-                        <img src="../img/hotel.svg" loading="lazy" alt="Diseño UX/UI hotel" itemprop="image" />
+                        <img src="/images/hotel.webp" loading="lazy" alt="Diseño UX/UI hotel" itemprop="image" />
                     </div>
 
-                    <!-- Imagen Bancaria -->
-                    <div class="img-portfolio">
-                        <img src="../img/bank.svg" loading="lazy" alt="Diseño UX/UI app bancaria" itemprop="image" />
-                    </div>
-
-                    <!-- Imagen Tienda -->
-                    <div class="img-portfolio">
-                        <img src="../img/bag.png" loading="lazy" alt="Diseño UX/UI" itemprop="image" />
-                    </div>
+                    
+                    
                 </div>
             </div>
 
