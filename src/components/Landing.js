@@ -248,7 +248,7 @@ export default {
                 </div>
             </div>
 
-            
+            <!--
             <div class="contact-form-2" >
                 <h2> Obtén tu diseño personalizado desde 300€! </h2>
                 <h4>Solicitar información:</h4>
@@ -269,7 +269,7 @@ export default {
                                                
                         </form>  
                                                                               
-                </div>
+                </div>-->
                                        
             
         </section>
