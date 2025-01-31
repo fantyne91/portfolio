@@ -45,6 +45,10 @@ const app = createApp({
     //   this.menuOpen = !this.menuOpen
     // },
 
+    // openForm() {
+      
+    // }
+
     updateScreenSize() {
       this.isMobileOrTablet = window.innerWidth < 801 // Detecta si es menor a 800px
       if (!this.isMobileOrTablet) {
