@@ -31,14 +31,12 @@ export default {
                                 <h3 id="descripcion-ux" tabindex="0">Optimizar la experiencia de tus usuarios aumenta las conversiones y ventas:</h3>
                                 <ul type="circle" role="list">
                                     <li role="listitem">
-                                        <h4 itemprop="description">
-                                            <span>Diseño de aplicaciones web o CMS</span> como WordPress, Shopify, Ionos... con un enfoque en el éxito de tu empresa y <span> posicionamiento SEO</span>. Obtendrás un diseño interactivo para mostrar a desarrolladores o inversores.
-                                        </h4>
+                                        <h4 > Diseño aplicaciones web o CMS </h4>
+                                        <p> como WordPress, Shopify, Ionos... con un enfoque en el éxito de tu empresa y <span> posicionamiento SEO</span>. Obtendrás un diseño interactivo para mostrar a desarrolladores o inversores.</p>
                                     </li>
                                     <li role="listitem">
-                                        <h4>
-                                            <span itemprop="description">Auditorías y análisis heurístico</span> para mejorar la experiencia del usuario de tu web y aumentar tus resultados.
-                                        </h4>
+                                        <h4> Auditorías y análisis heurístico  </h4>
+                                        <p> para mejorar la experiencia del usuario de tu web y aumentar tus resultados.</p>
                                     </li>
                                 </ul>
                            
@@ -51,14 +49,12 @@ export default {
                                 <h3 id="descripcion-web" tabindex="0">Creación de soluciones personalizadas con JavaScript, Vue, PHP y CSS:</h3>
                                 <ul type="circle" role="list">
                                     <li role="listitem">
-                                        <h4>
-                                            Trabajo en el <span itemprop="description"> Front-end, el diseño visual interactivo</span> y atractivo que los usuarios ven e interactúan, como botones y menús.
-                                        </h4>
+                                        <h4> Trabajo en el  Front-end, </h4>
+                                        <p> el diseño visual interactivo y atractivo que los usuarios ven e interactúan, como botones y menús.</p>
                                     </li>
                                     <li role="listitem">
-                                        <h4>
-                                            <span itemprop="description">Back-end,</span> gestión y programación interna de la aplicación web, <span>bases de datos y servidores</span> para optimizar la funcionalidad de tiendas online.
-                                        </h4>
+                                        <h4>Back-end,</h4>
+                                        <p> gestión y programación interna de la aplicación web, <span>bases de datos y servidores</span> para optimizar la funcionalidad de tiendas online.</p>
                                     </li>
                                 </ul>                            
                         </div>
@@ -70,14 +66,12 @@ export default {
                                 <h3 id="descripcion-videojuegos" tabindex="0">Mejoro la experiencia de los jugadores evaluando la jugabilidad, navegación y diseño visual:</h3>
                                 <ul type="circle" role="list">
                                     <li role="listitem">
-                                        <h4>
-                                            <span>Auditorías UX y pruebas de jugabilidad</span> para optimizar la interacción intuitiva, eliminando frustraciones del jugador.
-                                        </h4>
+                                        <h4>Auditorías UX y pruebas de jugabilidad</h4>
+                                        <p> para optimizar la interacción intuitiva, eliminando frustraciones del jugador.</p>
                                     </li>
                                     <li role="listitem">
-                                        <h4>
-                                            <span>Diseño de interfaces y HUD</span> que prioricen la jugabilidad y inmersión del jugador. Colaboración en creación de Documentación como <span>Pitchs y GDD</span>.
-                                        </h4>
+                                        <h4> Diseño de interfaces y HUD</h4>
+                                        <p> que prioricen la jugabilidad y inmersión del jugador. Colaboración en creación de Documentación como <span>Pitchs y GDD</span>.</p>
                                     </li>
                                 </ul>                            
                         </div>
@@ -90,27 +84,29 @@ export default {
                                 <ul type="circle" role="list">
                                     <li role="listitem">
                                         <h4>
-                                            <span>Desarrollo de videojuegos,</span> desde creación de escenarios, Metahumans, y programación de Blueprints, a diseño, creación y programación de HUDs o interfaces.
+                                            Desarrollo de videojuegos, 
                                         </h4>
+                                        <p> desde creación de escenarios, Metahumans, y programación de Blueprints, a diseño, creación y programación de HUDs o interfaces.</p>
                                     </li>
                                     <li role="listitem">
-                                        <h4>
-                                            <span>Desarrollo de presentaciones visuales dinámicas</span> para clientes corporativos.
-                                        </h4>
+                                        <h4> Desarrollo de presentaciones visuales dinámicas </h4>
+                                        <p> para clientes corporativos.</p>
                                     </li>
                                 </ul>
-                        </div>
-                        
+                        </div>                        
                     </div>
-                    <p><span>Cada proyecto es único!</span> Cuéntame tus necesidades o agenda una llamada!</p>
-                    <router-link to="/contacta" class="emergency-btn">
-                     🚨    ¡Contactar Ahora!
-                    </router-link>            
+                    <div class="contacta">
+                            <p><span>Cada proyecto es único!</span> Cuéntame tus necesidades o agenda una llamada:</p>
+                            <router-link to="/contacta" class="big-btn" aria-label="Solicitar servicios UX">
+                                Contactar Ahora
+                            </router-link>
+                    </div>
+                       
         </section>
    
 
 
-        <section>
+        <section class="exito-container">
              
                 <!--<div class= "container-proyecto-unico">
                     <div class="container-list-footer">                               
@@ -131,10 +127,7 @@ export default {
                                 
                 </div>-->
             
-            
-            <div class="exito-container">
-                <div class="container-row">
-                
+     
                     <div class="exito-div">                        
                         <p class= "texto-exito"> El éxito de cualquier empresa nace de la satisfacción de sus usuarios </p>
                         <div class="p-column">
@@ -143,23 +136,16 @@ export default {
                             <p>   Identificar y corregir esos puntos de fricción es clave para aumentar la satisfacción del usuario y el éxito del negocio a largo plazo. </p>
                         </div>
                         <div >
-                            <h6> <router-link to="/uxui"> Casos de estudio UX/UI </router-link>  </h6>
-                            <h6><router-link to="/games"> Casos de estudio Videojuegos </router-link></h6>
+                            <router-link to="/uxui"> Casos de estudio UX/UI </router-link>  
+                            <router-link to="/games"> Casos de estudio Videojuegos </router-link>
                         </div>
                     </div>
                     
                     <img src="/images/psico-ux.png" loading="lazy" alt="imagen usabilidad,empativa y psicologia en ux/ui" width="300px"/>
-                    
-                </div>
-
-                
-            </div>
            
-            
            </section> 
-           <section> 
+           <section class="portfolio" itemscope itemtype="https://schema.org/ItemList"> 
                              
-            <div class="portfolio" itemscope itemtype="https://schema.org/ItemList">
                 <h2 class="texto-portfolio" itemprop="name">DISEÑOS UX/UI</h2>
                 <div class="imgs" itemprop="itemListElement" itemscope itemtype="https://schema.org/ImageGallery">
                     
@@ -176,8 +162,8 @@ export default {
                     </div>
 
                     <!-- Imagen Casas -->
-                    <div class="">
-                        <img src="/images/casa.svg" loading="lazy" alt="Diseño UX/UI casas" itemprop="image" />
+                    <div >
+                        <img class="casa" src="/images/casa.svg" loading="lazy" alt="Diseño UX/UI casas" itemprop="image" />
                     </div>
 
                      <!-- Imagen Juegos -->
@@ -239,7 +225,7 @@ export default {
                     
                     
                 </div>
-            </div>
+           
 
             <!--
             <div class="contact-form-2" >

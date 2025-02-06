@@ -17,10 +17,10 @@
     justify-content: end;
     padding: 24px;
 }
-form .unset-btn{
-  color: #666 !important;
-  font-size: 14px !important;
-}
+    form .unset-btn{
+      color: #666 !important;
+      font-size: 14px !important;
+    }
     /**FORM CONTACTA grande*/
   
      .container-form{
@@ -28,7 +28,7 @@ form .unset-btn{
     box-sizing: border-box;
     height: 100%;
     padding: 40px;
-    background-color: var(--color-primary);
+    background-color: var(--color-white-grey);
      }
     .contact-form-1 {
       background: var(--color-white); 
