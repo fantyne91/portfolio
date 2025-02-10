@@ -104,7 +104,12 @@ export default {
                        
         </section>
    
+<!--<div class="wave-container">
+<svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+  <path fill="#5b5141" d="M0,40 C180,60 360,70 540,50 C720,30 900,10 1080,20 C1260,30 1440,60 1440,60 L1440,100 L0,100 Z"></path>
+</svg>-->
 
+</div>
 
         <section class="exito-container">
              
@@ -143,7 +148,12 @@ export default {
                     
                     <img src="/images/psico-ux.png" loading="lazy" alt="imagen usabilidad,empativa y psicologia en ux/ui" width="300px"/>
            
-           </section> 
+           </section>
+            <div class="wave-container">
+              <svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path fill="#ffffff" d="M0,40 C180,60 360,70 540,50 C720,30 900,10 1080,20 C1260,30 1440,60 1440,60 L1440,100 L0,100 Z"></path>
+              </svg>
+           </div>
            <section class="portfolio" itemscope itemtype="https://schema.org/ItemList"> 
                              
                 <h2 class="texto-portfolio" itemprop="name">DISEÑOS UX/UI</h2>

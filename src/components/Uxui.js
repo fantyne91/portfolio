@@ -12,15 +12,16 @@ export default {
                 <div class="container-row">
                         
                         <div class="container-importancia">
-                            <h2>La importancia del UX</h2>
-                           
+                            <h2>La importancia del UX</h2>                           
                             <p>La experiencia del usuario es un factor decisivo que puede determinar el éxito o el fracaso de una tienda online.</p>
                             <p> Un buen diseño tiene un impacto directo en el crecimiento de las ventas y la eficiencia operativa, incrementando sus ingresos al mismo tiempo que reduce costes y necesidad de personal.</p>
                            
                             <h3>El equilibrio perfecto entre eficiencia y escalabilidad</h3>
                         </div>
-                        <img class="img-pc"src="/images/pexels-photo-by-fauxels.png" alt="foto-pc-slogan" >
+                        <img class="img-pc zoomed" src="/images/Designers5.png" alt="foto-pc-slogan" >
                 </div>
+        </section>
+        <section class="benefits">
 
                 <div class="container-motivos-ux">
                     <div>
@@ -47,7 +48,9 @@ export default {
                             <li>
                                 <h3>Automatización de procesos:</h3><p> Un diseño UX eficiente puede reducir la dependencia de personal de atención al cliente al ofrecer herramientas donde los clientes resuelven sus problemas facilmente.</p>
                             </li>
-                        </ul>                      
+                        </ul>
+                       
+                        <img class="gif" src="/images/gif2.gif" alt="Animación en movimiento" >                     
                     </div>
                     
                 </div>
@@ -90,14 +93,17 @@ export default {
                                     <img class="img-focus" src="/images/bank.webp" loading="lazy" alt="imagen inicio sesión proyecto tienda"> 
                                 </div>
                                 
+                                
                                 <div>
-                                    <h4>Componentes clave del diseño </h4>
-                                    <p>Se utiliza una tipografía sans-serif moderna y limpia que facilita la legibilidad, con tamaños definidos para cada sección, garantizando que tanto los datos financieros como los elementos interactivos sean fáciles de leer en cualquier dispositivo.</p>
+                                        <h4>Componentes del diseño </h4>
+                                        <p>Se utiliza una tipografía sans-serif moderna y limpia que facilita la legibilidad, con tamaños definidos para cada sección, garantizando que tanto los datos financieros como los elementos interactivos sean fáciles de leer en cualquier dispositivo.</p>
                                 </div>
-                                                                             
+                                                                                
                                 <video class= "video-bank"  autoplay loop muted playsinline>
-                                    <source src="/images/bank.mp4" type="video/mp4" >                       
+                                        <source src="/images/bank.mp4" type="video/mp4" >                       
                                 </video>
+                                
+                                
                                 
                                 <div>
                                     <h4>Organización Visual y Jerarquía</h4> 
@@ -115,20 +121,22 @@ export default {
                     <div class="black-background">  
                                                            
                             <div class="column-left-16">
-                                <h3>Análisis y propuesta de rediseño Tiendanimal  </h3>
+                                    <h3>Análisis y propuesta de rediseño Tiendanimal  </h3>
                                     <div>
                                         <h4>Conflictos UX/UI actuales:</h4>                                                                          
                                         <p>Como usuaria de esta plataforma y otras similares, me encuentro con una problemática recurrente relacionada con la intención y el resultado final del diseño y la usabilidad. </p>
                                         <p>Al analizar la web original de Tiendanimal, uno de los principales desafíos que identifiqué fue el exceso de banners e imágenes de gran tamaño, que sobrecargan visualmente al usuario. A esto se suma la complejidad de la barra de navegación superior (topbar), la cual presenta un menú desplegable muy extenso que ocupa demasiado espacio en pantalla, interrumpiendo la experiencia de navegación y sobrecargando la carga cognitiva y la toma de decisiones. </p>
-                                        <p>Los iconos principales, tienen diferentes tamaños y formatos, y el banner más relevante para el usuario, que contiene la información clave (como detalles de envíos y precios), es parte del cuerpo de la web perdiéndose en el scroll y pasando totalmente desapercibido. </p>                                        
+                                        <p>Los iconos principales, tienen diferentes tamaños y formatos, y el banner más relevante para el usuario, que contiene la información clave (como detalles de envíos y precios), es parte del cuerpo de la web perdiéndose en el scroll y pasando totalmente desapercibido. </p>
+                                    
+                                     </div>
+                                    <div class="container-row">
+                                            <div class="container-img-focus">
+                                                <img class="img-focus" src="/images/menu-tien.png"  alt="imagen inicio sesión proyecto tienda">
+                                            </div>            
+                                            <div class="container-img-focus">
+                                                 <img class="img-focus" src="/images/tianimal-foto.png"  alt="imagen inicio sesión proyecto tienda">                                        
+                                            </div>              
                                     </div>
-                                
-                                <div class="container-img-focus">
-                                    <img class="img-focus" src="/images/menu-tien.png" loading="lazy" alt="imagen inicio sesión proyecto tienda">
-                                </div>            
-                                <div class="container-img-focus">
-                                    <img class="img-focus" src="/images/tianimal-foto.png" loading="lazy" alt="imagen inicio sesión proyecto tienda">                                        
-                                </div>
 
                                 <p class="align"><strong>Estos conflictos radican en que, aunque los elementos gráficos de los banners están bien diseñados, su implementación y organización desde una perspectiva UX/UI no es óptima. En términos de navegación, resulta difícil encontrar un equilibrio entre la cantidad de información que se desea mostrar y la fluidez con la que el usuario puede interactuar con la interfaz.</strong></p>                              
                                 <div>
