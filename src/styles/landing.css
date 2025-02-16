@@ -76,27 +76,19 @@
  /* SERVICIOS -LANDING */
 
 .list-container{
-    display: flex;
-    /* padding: clamp(var(--space-lg), 8vw, var(--space-2xl)) clamp(var(--space-sm), 8vw, var(--space-2xl)); */
+    display: flex;    
     width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: clamp(var(--space-md),4vw, var(--space-xxl));
     position: relative;
-    border-top: 2px solid var(--color-grey);
-   
+    border-top: 2px solid var(--color-grey);   
     background-color: var(--color-blue-black);
     color: var(--color-light-grey-1);    
 }
-.list-container>p{
-    font-weight: 600;
-}
-.list-container> h1{
-    justify-content: flex-start;
-    padding:0px;  
-    color: var(--color-primary);
-}
+
+
 .list-container> .group-list {    
     display: flex;
     padding-top: clamp(var(--space-xs), 4vw, var(--space-lg));    
@@ -123,6 +115,11 @@
     font-weight: 500;
     
     
+}
+.list-container> h1{
+    justify-content: flex-start;
+    padding:0px;  
+    color: var(--color-primary);
 }
 .list h2{
     text-align: center;
@@ -248,7 +245,7 @@
  } */
 
  .wave-container{
-    background-color: #0d0202;
+    background-color: #5b5141;
    /* svg{
     display: block;
     height: 100px;
@@ -263,8 +260,7 @@
 /*EXITO LANDING*/
 .exito-container{
      background: #5b5141; 
-    display: flex;   
-    /* padding: clamp(var(--space-lg), 8vw, var(--space-2xl)) clamp(var(--space-sm), 8vw, var(--space-2xl))  ; */
+    display: flex;       
     justify-content: center;
     align-items: center;
     gap: clamp(var(--space-md), 8vw, var(--space-lg));

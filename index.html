@@ -81,9 +81,8 @@
 
 
 <body>
-    <div id="app" v-cloak>
+    <div id="app" class="" v-cloak>
         <header class="header" >
-
             
                 <router-link to="/" class="logo">
                     <img src="/images/logo.png" alt="Logo del sitio"  height="auto">
@@ -117,7 +116,7 @@
                 <component :is="currentPage"></component>
         </main> -->
         <!-- Reflejo de vue-router-->
-        <main>
+        <main :class="currentPageClassComputed">
             <router-view></router-view>
         </main>
         <footer class="footer">
