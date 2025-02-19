@@ -1,29 +1,17 @@
 /**LANDING*/
-/* .page-landing {
-    position: relative;
-    display: flex;
-    height: auto;
-    width: 100%;
-    top:0;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-self: stretch;
-    border-bottom: 8px solid #FFF;
-   
-} */
+
 
 .intro-container {
     width: 100%;
     max-height: 650px;   
-    display: flex;
+    
     position: relative; 
     padding: 0px;      
 
 }
 .intro-container> img{
-    width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor con responsive */
-    min-height: 500px; /* Mantiene las proporciones */
+    width: 100%; 
+    min-height: 500px; 
     object-fit: cover;
     object-position: center !important;
 }
@@ -38,18 +26,16 @@
     pointer-events: none; 
 } 
 .intro-container> .texto-entrada {
-    width: 50vw;
-    height: auto;
-    line-height: 1.1; /* Altura de línea relativa al tamaño del texto */
-    display: flex;
+    width: 50vw;    
+    line-height: 1.1; 
+   
     position: absolute;
-    bottom:40px;
-    right: 50px;
-    margin: 10px;
+    bottom: clamp(var(--space-xs), 5vw, var(--space-xxl));
+    right: clamp(var(--space-xs), 5vw, var(--space-xxl));
+    text-align: right;
     font-size: clamp(1.6rem, 5vw, 2.8rem);
     font-weight: 800;    
-    
-    text-align: right;    
+    text-shadow: 0 0 3px var(--color-primary) ;
     z-index: 1;
    
 }
@@ -75,19 +61,13 @@
 
  /* SERVICIOS -LANDING */
 
-.list-container{
-    display: flex;    
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: clamp(var(--space-md),4vw, var(--space-xxl));
-    position: relative;
+.list-container{     
+    align-items: flex-start;    
+    /* position: relative; */
     border-top: 2px solid var(--color-grey);   
     background-color: var(--color-blue-black);
     color: var(--color-light-grey-1);    
 }
-
 
 .list-container> .group-list {    
     display: flex;
@@ -100,10 +80,7 @@
 
 /*List*/
 .group-list > .list {
-    max-width: clamp(700px, 1.2vw, 900px) ;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    max-width: clamp(700px, 1.2vw, 900px) ;    
     border-radius: 10px;
     gap:var(--space-xs);
     background: var(--color-secondary);
@@ -113,22 +90,12 @@
  .list li * {
     display:inline !important;
     font-weight: 500;
-    
-    
 }
-.list-container> h1{
-    justify-content: flex-start;
-    padding:0px;  
-    color: var(--color-primary);
-}
-.list h2{
-    text-align: center;
-}
+
 .list h3{     
-    text-align: center;
-    color: var(--color-primary);
+    text-align: center;    
 }
-.list h4{  font-size: clamp(1rem, 1.1vw, 1.5rem);  }
+
 .list p { color: var(--color-light-grey) }
 
 
@@ -150,24 +117,19 @@
 .list:nth-child(4){
     box-shadow: 0px 0px 4px 1px #91d606 inset;
     h2, h4{  color: #8ac610; }
-    
 }
+
 /*boton contacta*/
 .list-container .contacta{
-    align-self: center;
-    display: flex;
-    gap:var(--space-md);
-    flex-direction: column;
-    align-items: center;
+    align-self: center;    
     p{
-        font-size: clamp(1.2rem, 1.2vw, 1.5rem);
+        color:var(--color-primary);
+        font-size: clamp(1.4rem, 4vw, 1.9rem);  
         text-align: center;
-        font-weight: 500;
+        font-weight: 600;
+        text-transform: uppercase;
     }
-    span{
-        color:var(--color-orange);
-        font-size: clamp(1.4rem, 1.2vw, 1.7rem);       
-    }
+    
 }
 
 
@@ -245,7 +207,7 @@
  } */
 
  .wave-container{
-    background-color: #5b5141;
+    background-color: var(--color-blue-black);
    /* svg{
     display: block;
     height: 100px;
@@ -255,78 +217,51 @@
   display: block;
   width: 100%;
   height: 60px; /* Ajusta la altura según necesites */
-  
 }
+
 /*EXITO LANDING*/
 .exito-container{
-     background: #5b5141; 
-    display: flex;       
-    justify-content: center;
-    align-items: center;
-    gap: clamp(var(--space-md), 8vw, var(--space-lg));
-    flex-wrap: wrap;
-    color: var(--color-primary);
-    
-    /* Altura de la transición */
-}
-
-.exito-div{
-    max-width: 600px;
-    min-width: 280px;
-    display: flex;    
-    flex-direction: column;
-    justify-content: center;    
-    gap: var(--space-sm);
-    flex: 1 0 0;
-}
-.exito-div a{
-    /* text-shadow: 0 0px 1px rgb(255, 226, 41); */
-    color: var(--color-orange);
-    display: block;
+    background: var(--color-soft-orange-grey); 
+   
     font-weight: 500;
 }
-.exito-div a:hover{
+
+.exito-container a{
+    /* text-shadow: 0 0px 1px rgb(255, 226, 41); */
+    color: var(--color-white-grey);
+    display: block;
+    background-color: var(--color-secondary);
+    border-radius: 15px;
+    text-align: center;    
+    padding: var(--space-xxs)var(--space-xs);
+}
+.exito-container a:hover{
     transform: scale(1.1);
 }
-
-
 .texto-exito{
-    align-self: stretch;
-  
-    font-size: clamp(1.4rem, 3vw, 2.3rem); 
-    font-style: normal;
+    font-size: clamp(1.4rem, 3vw, 2.3rem);
     font-weight: 600;
-    line-height: normal;
-    width: 100%;
-    text-shadow: 0 1px 2px var(--color-secondary);
-    text-align: center;    
+    color: var(--color-secondary);   
+    /* text-shadow: 0 0 3px var(--color-grey); */
 }
 
 
 /**PORTFOLIO*/
 .portfolio{
-
-    background-color: var(--color-white); 
-    display: flex;
-    gap: clamp(var(--space-sm), 6vw, var(--space-2xl));
-    flex-direction: column;
-    height: auto;
     /* padding: clamp(var(--space-lg), 8vw, var(--space-2xl)) clamp(var(--space-sm), 8vw, var(--space-2xl)); */
     
 }
 
 .texto-portfolio{
     
-    /* -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #3f4b54; */
     color: #c2c1c1;
     font-size: 38px;
     font-style: normal;
     font-weight: 800;
-    /* padding-right: 80px; */
+    
     letter-spacing: 5px;
     text-transform: uppercase;
-    text-align: right;
+    align-self: flex-end;
 }
 @supports (-webkit-text-stroke: 1px black) {
     .texto-portfolio {

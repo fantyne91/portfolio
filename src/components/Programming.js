@@ -2,31 +2,29 @@ import '../styles/programming.css'
 
 export default {
   name: 'Programming',
-  template: ` 
+  template: /*html*/ ` 
    
-        <section class="header-programming">            
+        <section class="header-programming p-align">            
                 <h1> Desarrollo web y Personalización de Plataformas CMS.</h1>
-                <div class="container-row">                    
-                    <img class="img-pc" src="/images/seo.webp" alt="foto seo" >
-                   
-                    <h2 class="p-short">Contar con una web optimizada no solo mejora la experiencia del usuario, sino que también ayuda a posicionar tu marca y fidelizar clientes.</h2>
-                      
+                <div class="flex-row">                    
+                    <img class="img-pc" src="/images/seo.webp" alt="foto seo" >                   
+                    <h2 class="p-med padding-sm"> Contar con una web optimizada no solo mejora la experiencia del usuario, sino que también ayuda a posicionar tu marca y fidelizar clientes.</h2>
                 </div>
         </section>
-        <section class="beneficios">        
+
+        <section class="beneficios p-align">        
                 
                         <h2>Beneficios de contratar un desarrollador para tu web o CMS</h2>
                         <p>Si bien los CMS como WordPress o Shopify ofrecen soluciones rápidas, sus limitaciones pueden afectar la escalabilidad y personalización de tu proyecto. Al tener un programador, obtienes:</p>    
                         
-                        <ul>
+                        <ul class=" full-width">
                                 <li><h3>Personalización avanzada:</h3> <p>Puedes realizar modificaciones avanzadas y ajustar funcionalidades que no están disponibles de manera predeterminada en el CMS.</p></li>
                                 <li><h3> Mejor rendimiento:</h3><p>Un desarrollador puede optimizar la velocidad y eficiencia de tu web, mejorando la experiencia del usuario y el SEO, vitales para cualquier negocio.</p></li>
                                 <li><h3>  Integraciones personalizadas:</h3> <p> Conectar tu CMS a sistemas externos como CRMs, pasarelas de pago o servicios específicos de tu empresa.</p></li>
                                 <li><h3> Mayor seguridad:</h3> <p>Implementar medidas de seguridad específicas para proteger tu sitio y los datos de tus usuarios.</p></li>
                                 <li><h3> Escalabilidad: </h3> <p>Adaptar el sitio a medida que tu empresa crece o cambia sus necesidades. </p></li>
-                        </ul>
-                                    
-            </section>
+                        </ul>                                    
+        </section>
             <section class=" services-programming ">     
                             <h2>Servicios de desarrollo web y CMS</h2>
                         
@@ -35,22 +33,22 @@ export default {
                                 <li><h3>Personalización de CMS:</h3><p> Si usas WordPress, Shopify u otro CMS, puedo realizar modificaciones avanzadas para que tu sitio no se limite a las funciones estándar. Desde agregar integraciones personalizadas y modificar la apariencia hasta optimizar la gestión de contenido, adapto la plataforma para que cumpla exactamente con lo que necesitas.</p></li>
                                 <!--<li><h4>Integración de sistemas externos:</h4> <p> Conexión de tu web o tienda online con CRMs, pasarelas de pago, y otros servicios.</p></li>-->
                                 <li><h3>Optimización de rendimiento:</h3> <p>Un sitio web rápido y optimizado es clave para mejorar la experiencia del usuario y el posicionamiento en buscadores (SEO). Me encargo de:</p>
-                                    <span class="p-column">
+                                    
                                         <p>✔️ Reducir tiempos de carga mediante optimización de código, imágenes y recursos.</p>
                                         <p>✔️ Mejorar la usabilidad, asegurando que la navegación sea intuitiva y accesible.</p>
-                                        <p>✔️ Optimización SEO, para que tu web aparezca mejor posicionada en Google.</p></span> </li>
+                                        <p>✔️ Optimización SEO, para que tu web aparezca mejor posicionada en Google.</p> </li>
                                 <li><h3>Mantenimiento y soporte:</h3> <p> Actualizaciones, correcciones y mejoras continuas para garantizar que tu web funcione sin problemas.</p></li>
                             </ul>
-                            <div class="container-btn">
+                            
                                 <router-link to="/contacta" class="big-btn1" target= "_blank" rel="noopener noreferrer" aria-label="Solicitar servicios y contactar">CONTACTAR</router-link>
-                            </div>  
+                            
             </section>
 
             <section class="section-proyect">
-                <div class="container-row">
+                <div class="flex-row">
                             
-                    <div class="container-proyect container-column">                    
-                        <div class="p-column">
+                    <div class="container-proyect container-column-sm flex">                    
+                        <div class="p-column-sm flex">
                             <h2>Mi primer proyecto personal</h2>
                             <p >Mi primer proyecto web surgió de una experiencia personal:<span> las acogidas temporales de animales en situación de vulnerabilidad.</span> A lo largo de los años, he dado hogar a perros con historias complejas, lo que me enseñó la importancia de un sistema eficiente para gestionar acogidas y adopciones</p>
                             <p >Este proyecto tiene como objetivo optimizar y agilizar el proceso de acogida y adopción de animales que requieren una segunda oportunidad. La plataforma facilita la conexión entre rescatistas, familias de acogida y adoptantes mediante una experiencia de usuario intuitiva y accesible.</p>
@@ -69,23 +67,23 @@ export default {
                             <img class="img-focus" src="/images/foto-dogfinder.webp" loading="lazy" alt="img app animal" width="500px">
                         </div>
                     </div>
-                    <div class="container-bubble container-column">
+                    <div class="container-bubble container-column-sm flex">
                         <p> Algunos de mis pequeños acogidos </p>
                         <img class="bubble" src="/images/duke.webp" loading="lazy" alt=" acogido duke">
                         <img class="bubble" src="/images/luna.webp" loading="lazy" alt=" acogida luna">                
                         <img class="bubble" src="/images/baby.webp" loading="lazy" alt=" acogido baby">               
-                        <img class="bubble" src="/images/boni.webp" loading="lazy" alt=" acogido boni">
-                        <img class="bubble" src="/images/bebes.webp" loading="lazy" alt=" acogido bebes">
+                        <img class="bubble" src="/images/boni.webp" loading="lazy" alt=" acogida boni">
+                        <img class="bubble" src="/images/bebes.webp" loading="lazy" alt="acogido duke y boni">
 
-                        <img class="bubble" src="/images/bebeses.webp" loading="lazy" alt=" acogido duke y boni">               
+                        <img class="bubble" src="/images/bebeses.webp" loading="lazy" alt="  acogidos bebes">               
                         <img class="bubble" src="/images/toby.webp" loading="lazy" alt=" acogido toby">
-                        <img class="bubble" src="/images/bali.webp" loading="lazy" alt=" acogido bali">
+                        <img class="bubble" src="/images/bali.webp" loading="lazy" alt=" acogida bali">
                         <img class="bubble" src="/images/bruce.webp" loading="lazy" alt=" acogido bruce">                
-                        <img class="bubble" src="/images/gorda.webp" loading="lazy" alt=" acogido gorda">
+                        <img class="bubble" src="/images/gorda.webp" loading="lazy" alt=" acogida gorda">
                     </div>
                 </div>
-                   <div class="container-row">
-                        <div class="container-column">
+                   <div class="flex-row padding-sm">
+                        <div class="p-column-sm flex">
                             <h3>Arquitectura y Tecnologías Utilizadas</h3>
                             <ul>
                                 <li><h4>Base de Datos (SQL - MySQL)</h4>
@@ -107,7 +105,7 @@ export default {
                             </ul>
                         </div>                         
                         
-                        <div class="container-column">
+                        <div class="p-column-sm flex">
                             <div class="container-img-focus">
                                 <img class="img-focus" src="/images/cod3.webp" loading="lazy" alt="img codigo php" width="500px">
                             </div>
