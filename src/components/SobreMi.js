@@ -4,21 +4,53 @@ export default {
   name: 'SobreMi',
   template: /*html*/ `
   <section class="about-me">
-       <img src="/images/arcoiris.webp" alt="Imagen 2" class="scroll-item">
-       
-      <img src="/images/medano.webp" alt="Imagen 1" class="scroll-item">
-    <div class="text scroll-item">Texto sobre mí, parte 1...</div>
-    <img src="/images/munich.jpg" alt="Imagen 3" class="scroll-item">  
+      <img src="/images/maria.webp" alt="Imagen 2" class="scroll-item">
+      <div class="text scroll-item">Amo fotografíar el cielo y la luna. Dibujar con lápiz y pintar en acrílico.
+      </div>
+    <img src="/images/avion.webp" alt="Imagen 3" class="scroll-item">
+     <div class="text scroll-item">
+      La sencillez, la lógica, y los videojuegos.
+    </div>
+      <img src="/images/clouds.webp" alt="Imagen 3" class="scroll-item">
     
       
+        
+   <div class="text scroll-item">
+      Desde pequeña he sido curiosa y he amado los videojuegos de estrategia y los retos lógicos.
+      
+    </div>
+    <img src="/images/chian-temple.webp" alt="Imagen 3" class="scroll-item">
     
+    <div class="text scroll-item">
+      Con los años he desarrollado una gran apreciación por las interfaces bien diseñadas y la usabilidad efectiva.<br> Esta pasión también me ha convertido en una crítica atenta a los detalles.
+    </div>
+    <img src="/images/medano.webp" alt="Imagen 1" class="scroll-item">
+     
+     <div class="text scroll-item">
+      Disfruto estudiando el porqué de las cosas. Me encanta la programación donde vuelan las horas superando retos.
+      
+    </div>
+    <img src="/images/srilanka.webp" alt="Imagen 3" class="scroll-item">
+     <div class="text scroll-item">
+      Final Fantasy, World of Warcraft, Skyrim, Half-Life y Frostpunk1  han inspirado mi enfoque, mostrándome la importancia de las comunidades y la conexión significativa entre usuarios y experiencias.
+
+    </div>
+     <img src="/images/tene.webp" alt="Imagen 3" class="scroll-item">
+     <div class="text scroll-item">
+      Diseño y desarrollo aplicaciones webs y videojuegos.
+    </div>
+   
     
     
      
+     <img src="/images/chian.webp" alt="Imagen 2" class="scroll-item">
+     
+    
+     <img src="/images/munich.jpg" alt="Imagen 3" class="scroll-item">
        
-      <div class="text scroll-item">Texto sobre mí, parte 1...</div>
+  
    
-      <img src="/images/munich.jpg" alt="Imagen 3" class="scroll-item">      
+            
     
   </section>
   `,
@@ -35,21 +67,17 @@ export default {
         const itemCenter = rect.top + rect.height / 2
         const distance = itemCenter - centerScreen
 
-        // Progreso de la animación basado en la distancia al centro (valor de -1 a 1)
-        const progress = 1 - Math.abs(distance / (vh / 2))
+        // Normalizar el progreso (0 al centro, 1 en los laterales)
+        const progress = Math.min(1, Math.abs(distance / (vh / 2)))
 
-        // Asegurar que progress está entre 0 y 1
-        const clampedProgress = Math.max(0, Math.min(1, progress))
+        // Escala: comienza en 0.5 y crece hasta 1.3
+        const scale = 0.9 + progress * 0.8
 
-        // Escala basada en el progreso
-        // const scale = 0.3 + clampedProgress * 1 // Escala entre 0.5 y 1.5
-        const scale = 0.2 + Math.max(progress, 0) * 1; // Crece más en lugar de reducirse
+        // Movimiento lateral: hacia la izquierda o derecha
+        const translateX = progress * 300 * (distance > 0 ? 1 : -1)
 
-        // Movimiento lateral basado en el progreso: se mueve más cuando está casi fuera
-        const translateX = (1 - clampedProgress) * 300 * (distance > 0 ? 1 : -1)
-
-        // Opacidad también basada en el progreso (1 en el centro, 0 al salir)
-        const opacity = clampedProgress
+        // Opacidad: 1 en el centro, 0 cuando está en los márgenes
+        const opacity = 1.15 - progress
 
         // Aplicar transformaciones
         item.style.transform = `scale(${scale}) translateX(${translateX}px)`
