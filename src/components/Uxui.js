@@ -83,13 +83,13 @@ export default {
                                 <p>El proyecto App bancaria se centra en optimizar la accesibilidad a información financiera en un entorno de dark mode. El objetivo principal fue reducir la carga cognitiva de los usuarios, permitiendo que accedan a sus productos financieros, saldos y gastos de forma rápida y clara.</p>
                                 <div>
                                     <h4>Estética visual</h4>
-                                    <p>La interfaz tiene un enfoque minimalista con un diseño oscuro para reducir la fatiga visual especialmente en sesiones prolongadas, mientras que los colores de acento en naranja resaltan la información más relevante. Este contraste permite una rápida identificación de los elementos interactivos y destaca gráficos o botones clave sin saturar la vista del usuario.</p>
+                                    <p>La interfaz tiene un enfoque minimalista con un diseño oscuro para reducir la fatiga visual especialmente en sesiones prolongadas, mientras que los colores de acento en naranja resaltan la información más relevante. Este contraste destaca gráficos o botones clave sinturar la vista del usuario.</p>
                                 </div>
                             </div>
                             <img class="container-img" src="/images/bank.webp" loading="lazy" alt="imagen inicio sesión proyecto tienda" >
                         </div>
 
-                        <div class=" p-column-xs flex p-align padding-xs">
+                        <div class=" p-column-xs flex p-align padding-Y-xs">
                             <h4>Componentes del diseño </h4>
                             <p>Se emplea una tipografía sans-serif con una jerarquía clara de tamaños para asegurar la legibilidad de los datos financieros y los elementos interactivos en cualquier dispositivo. La estructura está optimizada mediante Auto Layout en Figma y Flexbox en CSS, permitiendo una adaptación fluida a diferentes pantallas. Además, las imágenes y los elementos interactivos cuentan con transiciones suaves, mejorando la experiencia de navegación.</p>
                         </div>
@@ -97,15 +97,14 @@ export default {
                         <div class="flex-row">
                             <ul>
                                     <h4>Organización Visual y Jerarquía</h4>
-                                    <li> <p> Tus productos: La parte superior de la pantalla agrupa de manera clara las cuentas y tarjetas del usuario, presentando la información más importante de manera inmediata: saldo, estado y detalles rápidos de cada producto financiero.</p> </li>
+                                    <li> <p> Tus productos: La parte superior de la pantalla agrupa las cuentas y tarjetas del usuario, presentando la información más importante de manera inmediata: saldo, estado y detalles rápidos de cada producto financiero.</p> </li>
                                     <li> <p> Tu saldo total: El saldo total del usuario se muestra de forma prominente con un gráfico para resaltar la evolución mensual de los fondos. Este enfoque visual ayuda al usuario a interpretar rápidamente los cambios sin necesidad de leer datos numéricos extensos.</p> </li>
                                     <li> <p> Controla tus gastos: Los gastos se dividen en categorías simples como suscripciones y recibos, con colores asignados a cada categoría. Esto permite una fácil comprensión de los gastos mensuales y su seguimiento a lo largo del tiempo.</p> </li>
-                                    <li> <p> Navegación simple e intuitiva: El menú inferior fijo proporciona un acceso rápido a las secciones más importantes: productos, transacciones, resumen financiero y contacto. Este diseño facilita la navegación rápida entre las funciones sin saturar la pantalla principal.</p> </li>
+                                    <li> <p> Navegación simple e intuitiva: El menú inferior fijo proporciona un acceso rápido a las secciones más importantes: home, transacciones, productos y resumen financiero. Este diseño facilita la navegación rápida entre las funciones sin saturar la pantalla principal.</p> </li>
                                     <li> <p> Accesibilidad: El diseño sigue principios de accesibilidad, asegurando que los contrastes entre el texto y el fondo cumplen con los estándares AA y AAA de accesibilidad, lo que lo hace más usable para personas con baja visión o sensibilidad a la luz. </p> </li>
                             </ul>
-                            <video class= "video-bank"  autoplay loop muted playsinline>
-                                <source src="/images/bank.mp4" type="video/mp4" >
-                            </video>
+                           
+                            <img class="video-bank" src="/images/bank-video.webp" loading="lazy" alt="imagen inicio sesión proyecto tienda" >
                         </div>
                     </div>
 
@@ -158,12 +157,13 @@ export default {
                                     </div>
                     </div>
 
-                    <div class="dark-background flex container-column-sm">
+                    <div class="dark-background flex container-column-sm ">
+                        <h3>Diseño de tienda online </h3>
+                                <p >En el desarrollo de la experiencia digital, mi enfoque fue crear una plataforma que transmita exclusividad. Este proyecto busca combinar elementos visuales elegantes con una navegación intuitiva. </p>
                         <div class="flex-row">
                         
                             <div class="flex p-column-sm">                                
-                                <h3>Diseño de tienda online </h3>
-                                <p>En el desarrollo de la experiencia digital, mi enfoque fue crear una plataforma que transmita exclusividad. Este proyecto busca combinar elementos visuales elegantes con una navegación intuitiva. </p>
+                                
                                 
                                 <div>
                                     <h4>Estética visual y Componentes del Diseño</h4>
@@ -174,9 +174,7 @@ export default {
                                     <p>La organización de los elementos está pensada para proporcionar una experiencia de navegación fluida y jerárquica, donde cada sección guía al usuario hacia la siguiente sin distracciones. Los elementos visuales están diseñados para reducir la carga cognitiva, asegurando que el usuario pueda encontrar rápidamente lo que busca.</p>
                                 </div>
                             </div>
-                            <video class= "video"  autoplay loop muted playsinline>
-                                <source src="/images/video-omega.mp4" type="video/mp4" >                       
-                            </video>
+                            <img src="/images/video-omega.webp" loading="lazy" alt="video tienda omega">
                         </div>                                
                         <div>
                                     <h4> Página de Inicio</h4>

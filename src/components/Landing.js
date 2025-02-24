@@ -152,18 +152,18 @@ export default {
               </svg>
            </div>-->
 
-           <section class="flex" itemscope itemtype="https://schema.org/ItemList"> 
+           <section  itemscope itemtype="https://schema.org/ItemList"> 
                              
                 <h2 class="texto-portfolio" itemprop="name">DISEÑOS UX/UI</h2>
                 <div class="imgs" itemprop="itemListElement" itemscope itemtype="https://schema.org/ImageGallery">
                     
                     <!-- Video Cupcake -->
-                    <video class="video" preload="none" loading="lazy" autoplay loop muted playsinline itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
-                        <source src="/images/cupcake.mp4" type="video/mp4">
-                        <meta itemprop="name" content="Diseño UX/UI de Cupcake" />
-                        <meta itemprop="description" content="Video de diseño UX/UI para una tienda de cupcakes." />
+                   <video class="video" preload="none" loading="lazy"autoplay loop muted playsinline itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
+                        <source src="/images/cupcakes.mp4" type="video/mp4">
+                        <meta itemprop="name" content="Diseño UX/UI tienda joyeria" />
+                        <meta itemprop="description" content="Video interactivo de un diseño UX/UI para Photofolio." />
                     </video>
-
+                   
                     <!-- Imagen Tienda -->
                     <div class="img-portfolio">
                         <img src="/images/bag.webp" loading="lazy" alt="Diseño UX/UI" itemprop="image" />
@@ -171,7 +171,7 @@ export default {
 
                     <!-- Imagen Casas -->
                     <div >
-                        <img class="casa" src="/images/casa.svg" loading="lazy" alt="Diseño UX/UI casas" itemprop="image" />
+                        <img class="casa" src="/images/casa.webp" loading="lazy" alt="Diseño UX/UI casas" itemprop="image" />
                     </div>
 
                      <!-- Imagen Juegos -->
@@ -190,7 +190,9 @@ export default {
                         <meta itemprop="name" content="Diseño UX/UI Photofolio" />
                         <meta itemprop="description" content="Video interactivo de un diseño UX/UI para Photofolio." />
                     </video>-->
-
+                    <div class="img-portfolio">
+                        <img src="/images/photofolio.webp" loading="lazy" alt="Diseño UX/UI app bancaria" itemprop="image" />
+                    </div>
                     <!-- Imagen Bancaria -->
                     <div class="img-portfolio">
                         <img src="/images/bank.webp" loading="lazy" alt="Diseño UX/UI app bancaria" itemprop="image" />
@@ -212,12 +214,12 @@ export default {
                     </div>
 
                     <!-- Video Omega -->
-                    <video class="video-omega" preload="none" loading="lazy" autoplay loop muted playsinline itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
-                        <source src="/images/2024122022181.mp4" type="video/mp4">
-                        <meta itemprop="name" content="Diseño UX/UI Omega Jewelry" />
-                        <meta itemprop="description" content="Video mostrando el diseño UX/UI de Omega Jewelry." />
+                    <video class="video" preload="none" loading="lazy"autoplay loop muted playsinline itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
+                        <source src="/images/intro-omega.mp4" type="video/mp4">
+                        <meta itemprop="name" content="Diseño UX/UI tienda joyeria" />
+                        <meta itemprop="description" content="Video interactivo de un diseño UX/UI para Photofolio." />
                     </video>
-
+                 
                     <!-- Video DogFinder -->
                     <!--<video class="video" preload="none" loading="lazy" autoplay loop muted playsinline itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
                         <source src="/images/dogfinder.mp4" type="video/mp4">

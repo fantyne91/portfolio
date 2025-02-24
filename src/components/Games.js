@@ -2,14 +2,14 @@ import '../styles/games.css'
 
 export default {
   name: 'Games',
-    template: /*html*/ `
+  template: /*html*/ `
   
     <section class="header-games">
       <h1>Unreal engine, desarrollo y UX/UI para videojuegos</h1>
       <div class="container-header container-column-sm flex">
 
         <h2>El UX/UI en videojuegos es el vestíbulo del jugador.</h2>        
-        <div class="p-column-sm flex padding-xs">
+        <div class="p-column-sm flex padding-sm">
           <!--<h3>Por qué es importante?</h3>-->
           <p>
             Mostrar la información correcta en el momento adecuado en
@@ -32,7 +32,7 @@ export default {
           </p>
         </div>
 
-        <div class="p-column-sm flex padding-xs">
+        <div class="p-column-sm flex padding-sm">
           <h2>Que puedes hacer con Unreal Engine?</h2>
           <ul>
             <li>
@@ -132,7 +132,7 @@ export default {
       <div class="container-casos-games flex">
         <h2>Análisis y diseño de videojuegos</h2>
 
-        <div class="dark-background container-column-sm flex">
+        <div class="dark-background container-column-md flex">
           <h3>
             Cities Skylines: Secuela muy esperada que decepcionó a sus fans.
           </h3>
@@ -168,25 +168,25 @@ export default {
             <h5>Puntos positivos:</h5>
             <ul>
               <li>
-                Me gusta su simulación de agentes y sistemas de gestión, la
+                <p>Me gusta su simulación de agentes y sistemas de gestión, la
                 calidad visual y las texturas del juego. Estos elementos tienen
                 un realismo atractivo para quienes disfrutan de la microgestión
-                y el diseño urbano.
+                y el diseño urbano.</p>
               </li>
               <li>
-                El concepto del tiempo, un sistema donde 24 horas equivalen a 1
+                <p>El concepto del tiempo, un sistema donde 24 horas equivalen a 1
                 mes, permitiendo un ritmo más controlado, favoreciendo la
                 planificación estratégica y proporcionando un cambio natural
-                entre el día y la noche que enriquece la ambientación.
+                entre el día y la noche que enriquece la ambientación.</p>
               </li>
               <li>
-                Control de tráfico, me resulta muy interesante como la gestión
+                <p>Control de tráfico, me resulta muy interesante como la gestión
                 del tráfico se convierte en algo entretenido y vital en el
-                juego.
+                juego.</p>
               </li>
             </ul>
           </div>
-          <div class="flex-row">
+          <div class="flex-row padding-Y-xs ">
             <div>
               <h5>Puntos de mejora:</h5>
               <ul class="p-short">
@@ -220,13 +220,12 @@ export default {
             <p>
               Para un juego de estrategia o simulación hay claras herramientas,
               como controles avanzados y objetivos que son necesarios, pero el
-              juego no las facilita, más bien entorpece la experiencia con su
-              UI.
+              juego no las facilita.
             </p>
             <p>
               Desde la primera interfaz te muestran la multitud de "escenarios
               disponibles" pero todos de pago (unos 14€ cada uno), creando la
-              sensación de juego "vacío" al darte cuenta que el juego base
+              sensación de juego "vacío" al ver que el juego base
               realmente solo ofrece unos pocos mapas sin objetivos ni retos
               claros y limitados encuanto a estrategia, donde la mayor
               estrategia es entender el funcionamiento juego.
@@ -240,7 +239,7 @@ export default {
             </p>
           </div>
 
-          <div class="flex-row">
+          <div class="flex-row padding-Y-xs">
             <div class="p-column-sm flex align-left">
               <h4>
                 Análisis Cities Skylines 2 - Mejoras Visuales, Retos en
@@ -249,8 +248,8 @@ export default {
               <p>
                 Analizando la secuela un año después de su lanzamiento, he
                 encontrado inconsistencias en el diseño, bugs y errores en capas
-                o construcción, sin ambargo ya hay DLC de pago -discrepo en la
-                estratégia-.
+                o construcción y sin ambargo ya hay DLC de pago. 
+              
               </p>
               <div>
                 <h5>HUD y UI:</h5>
