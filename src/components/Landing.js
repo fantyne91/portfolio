@@ -10,7 +10,7 @@ export default {
  
   
         <section class= "intro-container">
-                    <img src="/images/portfolio-img.webp" alt="imagen presentación">
+                    <img src="/images/portfolio-img.webp" alt="imagen nubes presentación Maria" fetchpriority="high">
                     <p class= "texto-entrada">Diseño y programación<br> para empresas y videojuegos</p>
         </section>
 

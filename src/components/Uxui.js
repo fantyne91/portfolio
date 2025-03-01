@@ -7,7 +7,7 @@ export default {
         <section class="header-ux">
                 <h1> Diseño web UX/UI </h1>
                 <div class="flex-row padding-xs">
-                        <div class="container-importancia container-column-sm flex p-align p-med ">
+                        <div class="p-column-sm flex p-align p-med ">
                             <h2>La importancia del UX</h2>
                             <p>La experiencia del usuario es un factor decisivo que puede determinar el éxito o el fracaso de una tienda online, cuando no se cumple con las expectativas del usuario, el impacto se traduce directamente en la pérdida de ventas y en la deterioración de la reputación de la marca.</p>
                             <p> Un buen diseño tiene un impacto directo en el crecimiento de las ventas y la eficiencia operativa, incrementando sus ingresos al mismo tiempo que reduce costes y necesidad de personal.</p>
@@ -49,7 +49,7 @@ export default {
                                 <h3>Diseño eficiente:</h3><p>Un diseño eficiente agiliza procesos y reduce errores del usuario. Esto se traduce en menos consultas de soporte, mayor conversión y fidelización, maximizando el retorno de inversión.</p>
                             </li>
                         </ul>
-                        <img class="gif" src="/images/gif2.gif" alt="Animación en movimiento" >
+                        <!--<img class="gif" src="/images/gif2.gif" alt="Animación en movimiento" >-->
                     </div>
                     
                 </div>
@@ -179,12 +179,12 @@ export default {
                         <div>
                                     <h4> Página de Inicio</h4>
                                     <ul>                                
-                                        <li> La disposición en el encabezado busca simplificar el acceso a las categorías sin sobrecargar visualmente, favoreciendo una experiencia de navegación clara y directa, organizada en dos secciones principales y facilitando que los usuarios accedan directamente a la sección que les interesan. </li>
-                                        <li> Se muestra una selección de productos icónicos de Omega Jewelry en tarjetas individuales, cada una de ellas destacando el nombre de la joya. La disposición de estos elementos ayuda al usuario a explorar las opciones de forma visual y rápida. </li>
-                                        <li> Especial Regalos: Esta sección está pensada para captar el interés de usuarios que buscan ideas de regalo, destacando productos más accesibles y económicos. </li>
-                                        <li> Las fotografías de producto con modelos en uso, ayuda a los usuarios a visualizar el look final de las joyas, transmitiendo aspiración. </li>
-                                        <li> Se dedica un espacio destacado a "Gold Collection", una de las líneas premium de la marca. La sección cuenta con un diseño que resalta el color dorado y la exclusividad de esta colección, acompañada por un botón de llamada a la acción que invita a explorar. </li>
-                                        <li> Productos Destacados dinámicos: Imagenes en alta resolución y el diseño centrado permitiendo que el usuario lo observe en detalle. </li>
+                                        <li><p> La disposición en el encabezado busca simplificar el acceso a las categorías sin sobrecargar visualmente, favoreciendo una experiencia de navegación clara y directa, organizada en dos secciones principales y facilitando que los usuarios accedan directamente a la sección que les interesan.</p> </li>
+                                        <li><p> Se muestra una selección de productos icónicos de Omega Jewelry en tarjetas individuales, cada una de ellas destacando el nombre de la joya. La disposición de estos elementos ayuda al usuario a explorar las opciones de forma visual y rápida. </p></li>
+                                        <li><p> Especial Regalos: Esta sección está pensada para captar el interés de usuarios que buscan ideas de regalo, destacando productos más accesibles y económicos. </p></li>
+                                        <li><p> Las fotografías de producto con modelos en uso, ayuda a los usuarios a visualizar el look final de las joyas, transmitiendo aspiración. </p></li>
+                                        <li><p> Se dedica un espacio destacado a "Gold Collection", una de las líneas premium de la marca. La sección cuenta con un diseño que resalta el color dorado y la exclusividad de esta colección, acompañada por un botón de llamada a la acción que invita a explorar. </p></li>
+                                        <li><p> Productos Destacados dinámicos: Imagenes en alta resolución y el diseño centrado permitiendo que el usuario lo observe en detalle. </p></li>
                                     </ul>                           
                         </div>
                         <div class="flex-row">

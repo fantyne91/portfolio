@@ -25,7 +25,7 @@ export default {
                                 <li><h3> Escalabilidad: </h3> <p>Adaptar el sitio a medida que tu empresa crece o cambia sus necesidades. </p></li>
                         </ul>                                    
         </section>
-            <section class=" services-programming ">     
+            <section class="services-programming">     
                             <h2>Servicios de desarrollo web y CMS</h2>
                         
                             <ul>

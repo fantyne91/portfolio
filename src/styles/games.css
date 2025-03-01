@@ -20,7 +20,7 @@
 .container-header .p-column-sm{
     background-color: var(--color-calid-purple);    
     border-radius: 15px;
-    box-shadow: 1px 1px 5px var(--color-shadow-dark-grey);
+    box-shadow: 1px 1px 5px var(--color-grey-5);
 }
 
 
@@ -34,11 +34,11 @@
 .container-casos-games{
     padding: var(--space-xs) 0; 
     gap: var(--space-md);
-    color:var(--color-light-grey);
+    color:var(--color-grey-2);
     border-radius: 15px;
     background: var(--color-calid-purple);    
     border: 14px solid var(--color-calid-purple);
-    h5{color: var(--color-light-grey-1);}
+    h5{color: var(--color-grey-1);}
     h2,h3,h4{font-weight: 500; color: var(--color-soft-purple); }
 }
 

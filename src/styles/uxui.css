@@ -1,16 +1,9 @@
 .page-uxui{
-    color: var(--color-light-grey);
+    color: var(--color-grey-2);
 }
-.header-ux{
-    background: var(--color-secondary);  
-    border-bottom: 1px solid var(--color-soft-orange-grey);
-}
-.header-ux h1{  
-    color: var(--color-orange);
-    text-align: center; 
-}
-.page-uxui h2{
-    font-weight: 600;
+
+
+.page-uxui h1, .page-uxui h2{    
     text-align: center; 
     color: var(--color-orange);
 } 
@@ -18,27 +11,23 @@
     font-weight: 500; 
     color: var(--color-soft-orange-grey);
 }
-
-/**CONTAINER IMPORTANCIA*/
-.container-importancia{ 
-    color: var(--color-light-grey);   
-    padding: 0;     
-   p{
+/**HEADER*/
+.header-ux{
+    background: var(--color-secondary);  
+    border-bottom: 1px solid var(--color-soft-orange-grey);
+    p{
      font-weight: 500; 
    }
-   h2{
-    font-weight: 600;
-    color: var(--color-orange);
-   }
 }
+
 
 /**CONTAINER MOTIVOS*/
 .benefits{
-    background-color: var(--color-grey);
+    background-color: var(--color-grey-4);
 }
 .container-motivos-ux{   
     background-color: var(--color-sat-orange);
-    box-shadow: 0 1px 5px var(--color-shadow-dark-grey);
+    box-shadow: 0 1px 5px var(--color-grey-5);
     border-radius: 15px;
     align-items: normal;
     gap:var(--space-sm)
@@ -46,21 +35,20 @@
 
 .container-motivos-ux> div{ 
     background-color: var(--color-secondary); 
-    color: var(--color-light-grey);
     border-radius: 10px;    
-    box-shadow: 0 1px 5px var(--color-shadow-dark-grey);
+    box-shadow: 0 1px 5px var(--color-grey-5);
 }
 .container-motivos-ux ul{
     list-style: none;
     padding: 0;
 }
-.gif{
+/* .gif{
     position:absolute;
     width:200px;
     bottom: 5px;
     right: 15px;
     border-radius: 60px;
-}
+} */
 
 /**CONTAINER SERVICIOS*/
 
@@ -70,78 +58,24 @@
 .services-ux-container{    
     background-color: var(--color-secondary); 
     border-radius: 15px;
-    box-shadow: 0 1px 5px var(--color-shadow-dark-grey);
-    color: var(--color-light-grey);
+    box-shadow: 0 1px 5px var(--color-grey-5);   
 }
 .services-ux-container h4{      
     color:var(--color-orange);
     text-align: center;    
 } 
- /* .container-servicios-ux::before{
-    content: "";
-    position: absolute;
-    width: clamp( 20px,7vw,50px);
-    height: clamp( 20px,7vw,50px);
-    border-radius: 5px;
-    border: clamp(2px, 1vw, 6px) solid var(--color-soft-orange-grey); 
-    box-shadow: 0px 0px 4px var(--color-shadow-dark-grey);
-    top: clamp(-50px, 1vw, 30px);
-    right: clamp(10px, 2vw, 100px);
-     animation: subtle-move-reverse 5s infinite linear; 
-      
-}  */
-/*segundo marco*/
- /* .container-servicios-ux  h2::before{
-  content: "";
-    position: absolute;
-    width: clamp( 15px,5vw,30px);
-    height: clamp( 15px,5vw,30px);
-    border-radius: 5px;
-    border: clamp(2px, 1vw, 6px) solid var(--color-soft-orange-grey);
-    box-shadow: 0px 0px 4px var(--color-shadow-dark-grey); 
-    top: clamp(10px, 4vw, 100px);
-    right: clamp(30px, 4vw, 130px);
-     animation: subtle-move 5s infinite linear ;  
-} */
 
-
-/* @keyframes subtle-move {
-    0% {transform: scale(1) rotate(0deg); }
-    50% {transform:   scale(1.2) rotate(-180deg);} 
-    100% {transform:  scale(1) rotate(-360deg)  ;}
-}
- @keyframes subtle-move-reverse {
-    0% {transform: scale(1) rotate(0deg);}
-    50%{transform:   scale(1.2) rotate(180deg);} 
-    100% {transform:  scale(1) rotate(360deg);}
-}  */
-
-/* .container-servicios-ux ul h4{
-    color: var(--color-secondary);
-    justify-content:flex-start;
-    text-shadow: 0 1px 0.5px #ffc876;
-} */
-/* .container-servicios-ux .p-column{
-    text-align: center;
-    color: var(--color-secondary);
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
- 
-} */
 /**CONTAINER CASOS UX*/
 
 .container-casos-ux{    
     padding: var(--space-xs) 0;
-    gap:var(--space-sm);    
+    gap:var(--space-md);    
     width: 100%;
     border-radius: 15px;
-    background: var(--color-grey); 
-    border: clamp(5px, 4vh, 14px) solid var(--color-grey);
+    background: var(--color-grey-4); 
+    border: clamp(5px, 4vh, 14px) solid var(--color-grey-4);
     max-width: 1100px;
 } 
-
-
 
 video, img{
     border-radius: 5px;
@@ -154,7 +88,7 @@ video, img{
      font-weight: 600; 
 }
 .container-casos-ux  h4{
-    color: #afafaf;  
+    color: var(--color-grey-1);  
 } 
 .dark-background:nth-child(3)  .p-align{
     font-weight: 600;

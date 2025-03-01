@@ -4,19 +4,20 @@ export default {
   name: 'SobreMi',
   template: /*html*/ `
   <section class="about-me">
-      <h1>Un poco de mi:</h1>
+      <h1>Un poco de mi</h1>
       <img src="/images/maria.webp" alt="Imagen 2" class="scroll-item">
       <div class="text scroll-item">
         <p>Hola!</p>
         <p>Soy María.</p>
       </div>
-      <img src="/images/avion.webp" alt="Imagen 3" class="scroll-item">
+      <img src="/images/chian.webp" alt="Imagen 2" class="scroll-item">
+      
       <div class="text scroll-item">
         <p>Me encanta fotografíar el cielo y la luna, dibujar a lápiz y pintar en acrílico.</p>
       </div>
       <img src="/images/clouds.webp" alt="Imagen 3" class="scroll-item">
       <div class="text scroll-item">
-        <p>Disfruto estudiando el porqué de las cosas, y programando no tengo horarios, me vuelan las horas superando retos.</p>      
+        <p>Disfruto estudiando el porqué de las cosas, y programando pierdo la noción del tiempo.</p>      
       </div>
       
     <img src="/images/chian-temple.webp" alt="Imagen 3" class="scroll-item">
@@ -40,8 +41,7 @@ export default {
      <div class="text scroll-item">
       <p>Hoy, diseño y desarrollo aplicaciones web y videojuegos, combinando arte y tecnología.</p>
     </div>
-   
-     <img src="/images/chian.webp" alt="Imagen 2" class="scroll-item">
+    
      <div></div>
        
   </section>
@@ -50,7 +50,7 @@ export default {
   mounted() {
     const items = document.querySelectorAll('.scroll-item')
 
-    window.addEventListener('scroll', () => {
+    const applyScrollEffect = () => {
       const vh = window.innerHeight // Altura de la pantalla
       const centerScreen = vh / 2 // Centro de la pantalla
 
@@ -59,8 +59,8 @@ export default {
         const itemCenter = rect.top + rect.height / 2
         const distance = itemCenter - centerScreen
 
-        // Normalizar el progreso (0 al centro, 1 en los laterales)
-        const progress = Math.min(1, Math.abs(distance / (vh / 2)))
+        // Normalizar el progreso (0 en el centro, 1 en los laterales)
+        const progress = Math.min(1, Math.abs(distance / (vh / 3)))
 
         // Escala: comienza en 0.5 y crece hasta 1.3
         const scale = 0.9 + progress * 0.8
@@ -75,6 +75,12 @@ export default {
         item.style.transform = `scale(${scale}) translateX(${translateX}px)`
         item.style.opacity = opacity
       })
-    })
+    }
+
+    // Aplicar efecto al cargar la página
+    applyScrollEffect()
+
+    // Agregar el evento de scroll
+    window.addEventListener('scroll', applyScrollEffect)
   },
 }

@@ -8,7 +8,7 @@ export default {
       <h1>Unreal engine, desarrollo y UX/UI para videojuegos</h1>
       <div class="container-header container-column-sm flex">
 
-        <h2>El UX/UI en videojuegos es el vestíbulo del jugador.</h2>        
+        <h2>El UX/UI en videojuegos es el vestíbulo del jugador.</h2>
         <div class="p-column-sm flex padding-sm">
           <!--<h3>Por qué es importante?</h3>-->
           <p>
@@ -248,7 +248,7 @@ export default {
               <p>
                 Analizando la secuela un año después de su lanzamiento, he
                 encontrado inconsistencias en el diseño, bugs y errores en capas
-                o construcción y sin ambargo ya hay DLC de pago. 
+                o construcción y sin ambargo ya hay DLC de pago.
               
               </p>
               <div>
@@ -324,8 +324,72 @@ export default {
             />
           </div>
           <!--<video class= "video-bank"  autoplay loop muted playsinline>
-                                        <source src="/images/bank.mp4" type="video/mp4" >                       
+                                        <source src="/images/bank.mp4" type="video/mp4" >
                                 </video>-->
+          <div class="p-column-xs flex padding-Y-xs">
+            <h4>Rediseñando la Experiencia: Propuesta UX/UI y jugabilidad para Cities: Skylines</h4>
+            <p>Tras analizar los puntos débiles y aciertos propongo una versión que corrige los errores y que implementa nuevas funcionalidades para crear una experiencia de usuario más fluida. El objetivo de este rediseño es ofrecer al jugador un mayor control estratégico, mejorar la claridad de la información y reducir la sobrecarga cognitiva para garantizar una interacción más eficiente y agradable.</p>
+            <h5>Propuesta de rediseño Head-up Display general:</h5>
+            <div class="flex-row">
+              <div class="p-short flex p-column-xxs padding-Y-xs">
+                <ul>
+                  <li>
+                    <p>Interfaz modular y paneles dinámicos:</p>
+                    <p>Introducción de un sistema modular en la interfaz, con paneles dinámicos que el jugador puede minimizar según sus necesidades. Los paneles clave estarán siempre accesibles, esto eliminará los problemas de menús mal distribuidos. Encontramos en la barra superior la zona de control, en la barra inferior la zona de construcción y en el lateral las ventanas de información o misiones.               </p>
+                    <p>Las ventanas de información serán dinámicas y aparecerán al seleccionar un edificio o botón de construcción para apoyar al desarrollo.</p>
+                    <p>Los botones más relevantes como tráfico y demoledora se encuentran en el lateral derecho de la pantalla donde los usuarios al jugar usan más el ratón y no al revés.</p>
+                  </li>
+                </ul>
+              </div>
+              <img
+                class="container-img"
+                src="/images/skylines.webp"
+                loading="lazy"
+                alt="rediseño citiesSkylines2"
+              />
+            </div>
+            <ul>
+                  <li>
+                    <p>Información crítica siempre visible:</p>
+                    <p>Para mejorar la accesibilidad de la información crítica, como los recursos de ”agua” y “luz” , estos estarán permanentemente visibles en una barra superior junto con el objetivo o propósito de la partida que según la estrategia será el estado de la “felicidad de la población”.</p>
+                    <p>Las misiones tendrían un indicador visual atractivo que incentive al jugador a cumplir objetivos a corto y largo plazo, evitando que se pierdan en el micromanagement.
+                        Las “misiones activas” estarán en una barra de progreso lateral que se actualiza en tiempo real y se puede minimizar. Esto evitará la necesidad de abrir menús adicionales solo para ver el estado de la ciudad. También tendremos acceso a datos vitales de la población como motivos de fallecimiento.</p>
+                    
+                  </li>
+                  <li>
+                    <p>Control total sobre los sistemas de tráfico y construcción:</p>
+                    <p>Mediante un nuevo *modo de tráfico* que se activa desde un botón fijo, el jugador ahora tendrá mayor control sobre el tráfico y la gestión de infraestructuras. Se implementará un sistema que permita al jugador definir dónde colocar “señales de tráfico”, “cedas” y “stops”, personalizando el flujo vial de la ciudad. Además, se agregarán “flechas direccionales” que indicarán claramente la conexión entre edificios y carreteras. </p>
+                    
+                    
+                  </li>
+                </ul>
+            <div class="flex-row">
+              <img
+                class="container-img"
+                src="/images/skylines1.webp"
+                loading="lazy"
+                alt="rediseño citiesSkylines2"
+              />
+              <div class="p-short flex p-column-xxs padding-Y-xs">
+                <ul>
+                  <li>
+                    <p>Gestión avanzada de presupuestos y estadísticas asincrónicas:</p>
+                    <p>El sistema de presupuesto será más visual y menos intrusivo. En lugar de una ventana en pantalla completa, se abrirá un panel lateral con gráficos interactivos que muestren cómo afectan los cambios a recursos clave como la energía y el agua. Las estadísticas se actualizarán en tiempo real, sin interrumpir la jugabilidad.</p>
+                  </li>
+                   <li>
+                    <p> Mayor interacción del jugador:</p>
+                    <p>Se dará al jugador más herramientas para intervenir y ajustar sus decisiones estratégicas de la ciudad, como  leyes, establecer zonas de emergencia o controlar detalles de las infraestructuras.</p>
+                  </li>
+                  <li>
+                    <p>Mapas temáticos con mejor contraste</p>
+                    <p>El mapa de recursos será rediseñado para mostrar los diferentes elementos con colores lógicos y bien diferenciados, el contraste se mejorará para que los edificios ya ubicados sean fáciles de distinguir del entorno.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+                  
+
+          </div>
         </div>
       </div>
     </section>

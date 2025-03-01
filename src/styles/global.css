@@ -38,14 +38,13 @@ p{    font-size:1.3rem;  }
     --color-secondary: #1E1E1E;
 
     /**todo: change greys 1-2-3*/
-    --color-white: #ffffff;
-    --color-white-grey: #f1f1f1;
-    --color-light-grey-1:  #bbbbbb;   
-    --color-light-grey: #959595;
-    --color-grey: #413f3b;
-
-    --color-shadow-middle-grey:#62626F;
-    --color-shadow-dark-grey:#232323;
+    
+    --color-grey-0: #f1f1f1;
+    --color-grey-1:  #bbbbbb;   
+    --color-grey-2: #959595;
+    --color-grey-3:#62626F;
+    --color-grey-4: #413f3b;    
+    --color-grey-5:#232323;
 
     --color-blue-black:#02020d;
     /*orange*/
@@ -54,8 +53,8 @@ p{    font-size:1.3rem;  }
     --color-sat-orange:#796337;
     /*blue*/
     --color-white-blue:#8ADCFF;    
-    --color-dark-blue: #0A526E;
-    --color-grey-blue: #1C2833;
+    --color-med-blue: #0A526E;
+    --color-dark-blue: #1C2833;
     /*purple*/
     --color-soft-purple:#cf8dce;
     --color-calid-purple: #410c46;
@@ -97,7 +96,7 @@ div:not([class]){
 /** TEXT */
 h1,h2,h3,h4,h5,h6 {
     margin: 0; 
-    max-width: 700px;
+   max-width: 60vw; 
 }
 
 h1{
@@ -105,19 +104,19 @@ h1{
        font-weight: 600; 
        letter-spacing: 3px;
        text-transform: uppercase;
-       max-width: 60vw; 
+        
 }
 h2{
     font-size: clamp(1.3rem, 1.8vw, 2rem);
-    font-weight: 500;
+    font-weight: 600;
 }
 h3{
     font-size: clamp(1.2rem, 1.4vw, 1.6rem);
-    font-weight: 400;
+    font-weight: 500;
 }
 h4{
     
-    font-weight: 600;
+    font-weight: 500;
     font-size: clamp(1rem, 1.2vw, 1.4rem); 
 } 
 h5{
@@ -141,7 +140,7 @@ ul{
     gap: var(--space-xs);
     padding-left: 20px;    
     max-width: 700px; 
-    font-size: clamp(1rem, 1.1vw, 1.5rem);    
+    /* font-size: clamp(1rem, 1.1vw, 1.5rem);     */
 }
 li *:not(:last-child){
       margin-bottom: 4px; 
@@ -236,7 +235,7 @@ a {
     cursor: pointer;
     padding: var(--space-xs) var(--space-sm);
     font-size: clamp(1rem, 1.1vw , 2rem);   
-    display: inline-block;
+    /* display: inline-block; */
 }
     
 /*btn general*/
@@ -253,16 +252,12 @@ a {
     animation: border-move-2 5s infinite linear ;   
 }
 .big-btn:hover{
-    border: 3px solid  var(--color-light-grey-1); 
+    border: 3px solid  var(--color-grey-1); 
 }
-.big-btn1 {
- 
+.big-btn1 { 
     font-size: 1.2rem;
-    font-weight: 700;
-    padding: var(--space-xxs) var(--space-xs);
-    border-radius: 50px;
-   
-    
+    font-weight: 700;    
+    border-radius: 50px; 
     text-transform: uppercase;  
     border: 3px solid  var(--color-white-blue); 
     animation: border-move 5s infinite linear ; 
@@ -307,8 +302,7 @@ a {
 .big-btn2 {
     
     font-size: 1.2rem;
-    font-weight: 700;
-    padding: var(--space-xxs) var(--space-xs);
+    font-weight: 700;    
     border-radius: 50px;
     box-shadow: 0 0 10px var(--color-sat-orange);
     text-transform: uppercase;  
@@ -347,7 +341,7 @@ a {
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   cursor: zoom-in;
   
-  z-index: 1;
+  z-index: 100;
  
   will-change: transform, box-shadow;
   transform-origin: center center; /* Asegura que la imagen se amplíe desde el centro */
@@ -357,7 +351,7 @@ a {
 .container-img-focus:hover .img-focus {
   transform: scale(1.6); /* Amplía la imagen desde el centro */
   z-index: 999;
-  box-shadow: 0 1px 24px var(--color-shadow-dark-grey);
+  box-shadow: 0 1px 24px var(--color-grey-5);
   /* max-width: 600px; 
   max-height: 600px;  */
   object-fit: contain; /* Asegura que la imagen no se recorte */
@@ -377,7 +371,7 @@ a {
     width: 100%;
     border-radius: 15px;
     height: auto;
-    /* box-shadow: 0 1px 5px var(--color-shadow-dark-grey);  */
+    /* box-shadow: 0 1px 5px var(--color-grey-5);  */
 }
 figure{
     margin:0;
@@ -400,7 +394,7 @@ figure{
     z-index: 1000;
 
     background: var(--color-blue-black);
-    box-shadow: 0px 1px 3px  var(--color-shadow-middle-grey);
+    box-shadow: 0px 1px 3px  var(--color-grey-3);
    
     color: var(--color-primary);
 }
