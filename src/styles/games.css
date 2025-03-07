@@ -3,7 +3,8 @@
     color: var(--color-primary);
 }
 
-.header-games h3, .services-games h3 { color: var(--color-soft-purple);}
+.header-games h3, .container-casos-games h2, .services-games h3 { 
+    color: var(--color-soft-purple);}
 
 .header-games .container-header{    
     border:4px solid #8d448b;    
@@ -11,7 +12,7 @@
 }
 
 
-.container-header  .p-short { 
+.container-header  .p-games { 
      color:var(--color-soft-purple)    ;
      font-size: 1.4rem;   
      
@@ -20,12 +21,17 @@
 .container-header .p-column-sm{
     background-color: var(--color-calid-purple);    
     border-radius: 15px;
-    box-shadow: 1px 1px 5px var(--color-grey-5);
+    box-shadow: 1px 1px 3px var(--color-grey-5);
 }
 
-
+.cinematica{
+    max-width: 600px;
+    width: 100%;
+}
 /**Services*/
 .services-games{
+    padding-top: clamp(var(--space-sm), 3vw, var(--space-md));
+    /* border-top: 1px solid var(--color-secondary); */
     background:linear-gradient(0deg,var(--color-calid-purple), #130721);
     color: var(--color-primary);
     h3{ font-weight: 500;}
@@ -39,15 +45,37 @@
     background: var(--color-calid-purple);    
     border: 14px solid var(--color-calid-purple);
     h5{color: var(--color-grey-1);}
-    h2,h3,h4{font-weight: 500; color: var(--color-soft-purple); }
+    h3,h4{font-weight: 500; color: var(--color-soft-purple); }
 }
 
-.page-games span {
-       
+.container-casos-games span {
+     color: var(--color-soft-purple);   
+}
+
+ .analisis ul li{
+  list-style: none;
+  border-radius: 5px;
+  border: 3px solid var(--color-calid-purple);
+   *{
+    margin:0;
+  }
+} 
+.text-red{
+    background-color: rgb(34, 3, 13);
+     border-radius: 10px 10px 0 0 ;
+    
+}
+.text-green{
+    background-color: rgb(6, 43, 27);
+    border-radius: 0 0 10px 10px;
 }
 
 @media (max-width: 540px) {
     .container-row{
         padding: 0;
     }
+    .container-casos-games h4, .container-casos-games h5{
+    
+    align-self: start;
+}
 } 

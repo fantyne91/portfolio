@@ -84,16 +84,18 @@ video, img{
     object-fit: contain ;
     max-width: 300px;
 }   
-.container-casos-ux  h3{    
-     font-weight: 600; 
-}
+
 .container-casos-ux  h4{
     color: var(--color-grey-1);  
 } 
+.container-casos-ux span{
+    color: var(--color-soft-orange-grey)
+}
 .dark-background:nth-child(3)  .p-align{
-    font-weight: 600;
+    font-weight: 500;
     color: var(--color-soft-orange-grey);
-}    
+}  
+
 
 @media (max-width: 768px) {
     /* .container-motivos-ux{

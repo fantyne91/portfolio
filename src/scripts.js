@@ -4,7 +4,7 @@ import { createApp } from 'vue';
 import router from './router/index.js';
 
 
-//Instanciar vue al hacer click o eventos
+//Instanciar vue 
 const app = createApp({
   //Datos que van a ser reactivos
   data() {
@@ -30,9 +30,9 @@ const app = createApp({
     },
    
     updateScreenSize() {
-      this.isMobileOrTablet = window.innerWidth < 801 // Detecta si es menor a 800px
+      this.isMobileOrTablet = window.innerWidth < 799 
       if (!this.isMobileOrTablet) {
-        this.menuOpen = false // Cierra el menú si cambia a escritorio
+        this.menuOpen = false 
       }
     },
 
@@ -43,7 +43,7 @@ const app = createApp({
       this.currentPage = to.name || 'Landing'
     },
   },
-  mounted() { // Similar a "created" pero en createApp
+  mounted() { 
     
     this.updateScreenSize() // Comprobamos el tamaño al iniciar
     window.addEventListener('resize', this.updateScreenSize) // Detectamos cambios
@@ -53,7 +53,7 @@ const app = createApp({
   },
 
   beforeUnmount() {
-    // Similar a "beforeDestroy"
+    
     window.removeEventListener('resize', this.updateScreenSize) // Limpiamos el evento
   },
 })

@@ -11,14 +11,14 @@ export default {
   
         <section class= "intro-container">
                     <img src="/images/portfolio-img.webp" alt="imagen nubes presentación Maria" fetchpriority="high">
-                    <p class= "texto-entrada">Diseño y programación<br> para empresas y videojuegos</p>
+                    <!--<p class= "texto-entrada">Diseño y programación<br> para empresas y videojuegos</p>-->
         </section>
 
-        <section lang="es" class="list-container flex" itemscope itemtype="https://schema.org/ItemList" aria-labelledby="encabezado-servicios">
+        <section lang="es" class="list-container" itemscope itemtype="https://schema.org/ItemList" aria-labelledby="encabezado-servicios">
                 
-                    <p>Servicios</p>
+                    <!--<p>Servicios</p>-->
                     <h1 id="encabezado-servicios" itemprop="name" tabindex="0">
-                        Experiencias de usuario, desarrollo web y Unreal Engine
+                        UX/UI & Product design, desarrollo web y Unreal Engine
                     </h1>
 
                     <div class="group-list  " role="list">
@@ -103,12 +103,11 @@ export default {
                        
         </section>
    
-<div class="wave-container">
+<!--<div class="wave-container">
 <svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
   <path fill="#be8d4e" d="M0,40 C180,60 360,70 540,50 C720,30 900,10 1080,20 C1260,30 1440,60 1440,60 L1440,100 L0,100 Z"></path>
 </svg>
-
-</div>
+</div>-->
 
         <section class= "exito-container">
              
@@ -146,15 +145,15 @@ export default {
                 </div>
            </section>
 
-           <!--<div class="wave-container">
+           <div class="wave-container">
               <svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
                 <path fill="#ffffff" d="M0,40 C180,60 360,70 540,50 C720,30 900,10 1080,20 C1260,30 1440,60 1440,60 L1440,100 L0,100 Z"></path>
               </svg>
-           </div>-->
+           </div>
 
            <section  itemscope itemtype="https://schema.org/ItemList"> 
                              
-                <h2 class="texto-portfolio" itemprop="name">DISEÑOS UX/UI</h2>
+                <h2 class="texto-portfolio" itemprop="name">PORTFOLIO</h2>
                 <div class="imgs" itemprop="itemListElement" itemscope itemtype="https://schema.org/ImageGallery">
                     
                     <!-- Video Cupcake -->
@@ -184,12 +183,7 @@ export default {
                         <img src="/images/plant.webp" loading="lazy" alt="Diseño UX/UI tienda plantas" itemprop="image" />
                     </div>
                    
-                    <!-- Video Photofolio 
-                    <video class="video" preload="none" loading="lazy"autoplay loop muted playsinline itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
-                        <source src="/images/photofolio.mp4" type="video/mp4">
-                        <meta itemprop="name" content="Diseño UX/UI Photofolio" />
-                        <meta itemprop="description" content="Video interactivo de un diseño UX/UI para Photofolio." />
-                    </video>-->
+                    <!-- Video Photofolio -->                    
                     <div class="img-portfolio">
                         <img src="/images/photofolio.webp" loading="lazy" alt="Diseño UX/UI app bancaria" itemprop="image" />
                     </div>
@@ -220,13 +214,6 @@ export default {
                         <meta itemprop="description" content="Video interactivo de un diseño UX/UI para Photofolio." />
                     </video>
                  
-                    <!-- Video DogFinder -->
-                    <!--<video class="video" preload="none" loading="lazy" autoplay loop muted playsinline itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
-                        <source src="/images/dogfinder.mp4" type="video/mp4">
-                        <meta itemprop="name" content="Diseño UX/UI DogFinder" />
-                        <meta itemprop="description" content="Video de diseño UX/UI para una app de adopción de perros." />
-                    </video>-->
-
                     <!-- Imagen Hotel -->
                     <div class="img-portfolio">
                         <img src="/images/hotel.webp" loading="lazy" alt="Diseño UX/UI hotel" itemprop="image" />

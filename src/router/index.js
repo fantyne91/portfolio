@@ -7,6 +7,7 @@ import UXUI from '../components/Uxui.js'
  import SobreMi from '../components/SobreMi.js'
  import Games from '../components/Games.js'
 import Forms from '../components/Forms.js'
+import Thanks from '../components/Thanks.js' 
 
 // Define las rutas
 const routes = [
@@ -41,15 +42,20 @@ const routes = [
     name: 'Contacta',
     component: Forms,
   },
+  {
+    path: '/thanks',
+    name: 'Thanks',
+    component: Thanks,
+  },
 ]
 
 // Configura el router
 const router = createRouter({
   history: createWebHistory(),
   routes,
-  // scrollBehavior(to, from, savedPosition) {
-  //   return { top: 0, behavior: 'smooth' } // Siempre inicia en el top con scroll suave
-  // },
+    scrollBehavior(to, from, savedPosition) {
+      return { top: 0, behavior: 'smooth' } // Siempre inicia en el top con scroll suave
+    },
 })
 
 export default router

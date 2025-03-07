@@ -1,186 +1,123 @@
 
-    /* body {
-      
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      background-color: #f5f5f5;
-    } */
-     /**todo: flecha atras dentro form, abrir form pagina nueva,patterns y size input */
-     .container-btn-form{
-    width: 100%;
-    display: flex;
-    justify-content: end;
-    padding: 24px;
-}
-    form .unset-btn{
-      color: #666 !important;
-      font-size: 14px !important;
-    }
-    /**FORM CONTACTA grande*/
-  
-     .container-form{
-
-    box-sizing: border-box;
+  .background-form{
+    background-color: var(--color-grey-1);
     height: 100%;
-    padding: 40px;
-    background-color: var(--color-white-grey);
-     }
-    .contact-form-1 {
-      background: var(--color-white); 
-      padding: 24px !important;
+  }
+  
+  
+  .contact-form-1 {
+      background: white;       
       border-radius: 10px;
-      box-shadow: 0 2px 5px var(--color-shadow-dark-grey);
-      width: 100%;
-     font-weight: 500 !important;
-      max-width: 400px;
-      margin: 40px auto;
-           
-    }
-    .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap; /* Evita el salto de línea */
-  border: 0;
-}
-    
-    
-     .contact-form-1 h2 {
-      font-weight: 500 ;
-      padding: 8px;
-    
-      text-align: center;
-    }
-
-
-    /* components inputs*/
-    .contact-form-1 select, .contact-form-1 input,.contact-form-1  textarea{
-      border: 1px solid var(--color-light-grey);
-    }
-      .contact-form-1 label {
-      display: block;
-      margin: 0px 0 8px 0;
-      font-size: 16px;
-    } 
-    
-    .contact-form-1 textarea {
-      width: 100% !important;
-      padding: 8px !important;
-      font-size: 15px;
-      
-      border-radius: 5px;
-    }
-    .contact-form-1 select {
-      padding:5px;
-      font-size: 15px;
-      border-radius: 5px;
-    }
-
-    /* checkbox*/
-    .contact-form-1 .call {
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-      gap:8px;
-      padding: 8px 0;
-      align-items: flex-start;
-      
-    }
-    .contact-form-1 .call input{
-      width: 16px;
-     margin-top: 6px;
-           
-    }
-    .contact-form-1 .call label{
-      width:100%;
-      font-size: 15px;
-    }
-    /*Buttons*/
-    .contact-form-1 button {
-      text-align: center;
-      padding: 8px;
-      background-color: #007bff;
-      color: var(--color-white);
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      min-width: 100px;
-    }
-    .contact-form-1 button:hover {
-      background-color: #0056b3;
-    }
-    .whatsapp-link {
-      margin-top: 20px;
-      text-align: center;
-    }
-    .whatsapp-link a {
-      color: #25D366;
-      font-weight: bold !important;
-      text-decoration: none;
-      box-shadow: none;
-    }
-/**PLACEHOLDER CON LABEL */
-    .form-input {
-    position: relative;
-    margin: 15px 0;
+      box-shadow: 0 1px 5px var(--color-grey-3);      
+      font-weight: 500 ; 
   }
-
-  input {
+   
+  .visually-hidden {
+      position: absolute;
+      width: 1px;
+      margin: -1px;
+      overflow: hidden;
+      white-space: nowrap;   
+  }
+  .contact-form-1 select, .contact-form-1 input,.contact-form-1  textarea{
+      border: 2px solid var(--color-grey-2);  
+       width: 100%;    
+  }
+  .contact-form-1 select:focus, .contact-form-1 input:focus,.contact-form-1  textarea:focus{
+     border:  2px  solid  #5e83aa ;     
+  }
+  /*parte1*/
+  .form-input {
+    position: relative; 
     width: 100%;
-    padding: 10px;
-    padding-top: 20px; /* Espacio para el label flotante */
-    font-size: 16px;
-    border: 1px solid var(--color-primary);
-    border-radius: 4px;
-    outline: none;
+  }
+ 
+  input { 
+    padding: var(--space-xs);
+    border-radius: 5px;
+     outline: none; 
     
   }
-
-  input:focus {
-    border-color: #007BFF;
-  }
-
  .accesible {
     position: absolute;
     top: 50%;
-    left: 10px;
-    transform: translateY(-50%);  /* Centra verticalmente */
+    left: 15px;
+    transform: translateY(-50%);
     font-size: 16px;
     color: #666;
-    
-    pointer-events: none;  /* El label no interfiere con los clics */
-    transition: 0.2s ease all;  /* Transición para efectos de cambio */
+    pointer-events: none;  
+    transition: 0.2s ease all;  
 }
-
 
   input:focus + label,
   input:not(:placeholder-shown) + label {
     top: 10px;
-    left: 10px;
+    left: 15px;
     font-size: 13px;
     color: #007BFF;
   }
+.contact-form-1 button {      
+      padding: var(--space-xxs) var(--space-xs);
+      background-color: #007bff;
+      color: var(--color-grey-0);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;      
+    }
+    .contact-form-1 button:hover {
+      background-color: #0056b3;
+    }
+  .whatsapp-link a {
+      color: #14bc51;
+      font-weight: bold !important;
+      text-decoration: none;
+      box-shadow: none;
+      padding: 0;
+    }
+    /*parte2*/
+    .second-part .form-input *{
+      margin-top: var(--space-xs);
+    }
+    .back-btn{
+      background-color: #5e83aa !important;
+      align-self: flex-start;
+    }
+    .div-specific-interest{
+      background-color: #5e83aa;
+      border-radius: 5px;    
+      color: var(--color-grey-0);
+    }
+    
+    .contact-form-1 select {
+      padding:8px; 
+      border-radius: 5px;
+    } 
+    /*text area*/
+       .contact-form-1 textarea {     
+      padding: var(--space-xs);
+      font-size: 15px;
+      border-radius: 5px;
+    }
+  
+      .contact-form-1 .call {
+      display: flex;
+      flex-direction: row;
+    }
+    .contact-form-1 .call input{
+      width: 16px;   
+    }
+    .contact-form-1 .call label{      
+      font-size: 16px;
+    } 
+  /**todo: flecha atras dentro form, abrir form pagina nueva,patterns y size input */
+    
+
  
-  /**FORM CONTACTA pequeño*/
-  /* .text-btn{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap:16px;
-} */
+/*
      .contact-form-2 {
       background: var(--color-white); 
-      /*padding: 16px 32px 0px 32px !important;*/
-      border-radius: 10px;
+      padding: 16px 32px 0px 32px !important;*/
+      /*border-radius: 10px;
       box-shadow: 0 2px 5px var(--color-shadow-dark-grey);
       width: 600px;
       margin: 20px;
@@ -222,9 +159,7 @@
       
     }
   
-    /* .form-input{
-      width: 100%;
-    } */
+    
     .contact-form-2 input{
         border-radius: 5px 0 0 5px;
         font-weight: bold;
@@ -232,12 +167,4 @@
          
       }
    
-    /* .form-input input {
-       color: #25D366;
-        
-    }  */
-    /* .contact-form-2 input {
-     display: flex;
-     flex-direction: row;
-     gap:8px;
-    } */
+     */

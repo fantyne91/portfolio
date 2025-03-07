@@ -13,7 +13,7 @@ export default {
       <img src="/images/chian.webp" alt="Imagen 2" class="scroll-item">
       
       <div class="text scroll-item">
-        <p>Me encanta fotografíar el cielo y la luna, dibujar a lápiz y pintar en acrílico.</p>
+        <p>Me encanta fotografíar el cielo y la luna, dibujar a lápiz, pintar en acrílico y los animales.</p>
       </div>
       <img src="/images/clouds.webp" alt="Imagen 3" class="scroll-item">
       <div class="text scroll-item">
