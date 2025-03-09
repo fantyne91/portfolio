@@ -17,13 +17,11 @@
 
 /**Beneficios */
 .beneficios{   
+    background-color: var(--color-grey-0);
     h2{  color:var(--color-med-blue)} ; 
     h3{ color: var(--color-white-blue); };   
 }
 
-/* .beneficios > p{
-     font-weight: 500;    
-} */
 .beneficios ul{
    align-items: normal;
    justify-content: center;
@@ -42,7 +40,7 @@
 }
 /**Servicios*/
  .services-programming{
-       
+    user-select: none;  
     background-color: var(--color-dark-blue);  
     color: var(--color-grey-1);
     h2, h3{

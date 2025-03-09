@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>María Ortiz</title>
+    <title>María Ortiz PortFolio -Diseño UX/UI, Desarrollo Web, y Videojuegos-</title>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" >
@@ -14,7 +14,7 @@
      <script type="module" src="/src/scripts.js"></script> 
     
     <!--SEO-->
-    <meta name="description" content="Desarrollo de aplicaciones web, diseño UX/UI y diseño y desarrollo de videojuegos profesionales">
+    <meta name="description" content="Desarrollo de aplicaciones web, diseño UX/UI, diseño y desarrollo de videojuegos con Unreal Engine">
     <meta property="og:title" content="Portafolio de María Ortiz - Desarrollo Web y Diseño">
     <meta property="og:type" content="website">    
     <meta property="og:description" content="Desarrollo web, diseño ux/ui y desarrollo videojuegos">
@@ -28,11 +28,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/images/og_image_180.png">
     <!-- PRELOAD -->
    
-<link rel="preload" href="/images/portfolio-img.webp" as="image" type="image/webp" fetchpriority="high">
-
-
-
-    
+    <link rel="preload" href="/images/portfolio-img.webp" as="image" type="image/webp" fetchpriority="high">
 
     <style>     
          
@@ -65,43 +61,42 @@
         [v-cloak] {
              display: none;
         }  
-    </style> 
-
-   
+    </style>    
 </head>
 
 
 
 <body>
     <div id="app" class="" v-cloak>
-        <header class="header" >
+        <header class="header" role="banner">
             
-                <router-link to="/" class="logo">
+            <router-link to="/" class="logo" aria-label="Ir al inicio">
                     <img src="/images/logo.webp" alt="Logo del sitio"  height="auto">
-                </router-link>                  
+            </router-link>                  
             
             
-
-            <!-- llamado  router script vue -->
-            <nav :class="menuOpen ? 'nav-menu open' : 'nav-menu'" @click="toggleMenu" >
-            <router-link  to="/" tabindex="0">Inicio</router-link>
-            <router-link  to="/uxui" tabindex="0">Ux/ui</router-link>
-            <router-link  to="/programming" tabindex="0">Programación</router-link>
-            <router-link  to="/games" tabindex="0">Videojuegos</router-link>
-            <router-link  to="/sobreMi" tabindex="0">Sobre mí</router-link>
-            </nav>
-
             <!-- Botón hamburguesa -->
             <div>
-                <button v-if="isMobileOrTablet" class="menu-toggle" @click="toggleMenu">
+                <button v-show="isMobileOrTablet" class="menu-toggle" @click="toggleMenu" :aria-label="menuOpen ? 'Cerrar el menú' : 'Abrir el menú'">
                     <!-- Ícono de hamburguesa -->
-                    <span :class="{ open: menuOpen }" class="hamburger-icon">
+                    <span :class="{ open: menuOpen }" class="hamburger-icon" :aria-hidden="menuOpen ? 'false' : 'true'">
                         <span></span>
                         <span></span>
                         <span></span>
                     </span>
                 </button>           
             </div>
+            
+            <!-- llamado  router script vue -->
+            <nav :class="menuOpen ? 'nav-menu open' : 'nav-menu'" @click="toggleMenu" aria-label="Menú principal" >
+            <router-link  to="/" tabindex="0" aria-label="Ir a la página de inicio">Inicio</router-link>
+            <router-link  to="/uxui" tabindex="0" aria-label="Ir a la sección UX/UI">Ux/ui</router-link>
+            <router-link  to="/programming" tabindex="0" aria-label="Ir a la sección de Programación">Programación</router-link>
+            <router-link  to="/games" tabindex="0" aria-label="Ir a la sección de Videojuegos">Videojuegos</router-link>
+            <router-link  to="/sobreMi" tabindex="0" aria-label="Ir a la sección Sobre mí">Sobre mí</router-link>
+            </nav>
+
+            
         </header>
         <!-- Reflejo de script-->
         <!-- <main :class="currentPageClassComputed">

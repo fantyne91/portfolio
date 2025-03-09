@@ -3,11 +3,9 @@
 
 .intro-container {
     width: 100%;
-    max-height: 700px;   
-    
+    max-height: 700px;       
     position: relative; 
     padding: 0px;      
-
 }
 .intro-container> img{
     width: 100%; 
@@ -68,6 +66,7 @@
     background-color: var(--color-blue-black);
     color: var(--color-grey-1);    
 }
+.list-container [hidden] { display: none !important; }
 
 .list-container> .group-list {    
     display: flex;
@@ -75,6 +74,7 @@
     justify-content: center;
     gap: clamp(var(--space-md), 2vw,var(--space-lg));
     flex-wrap: wrap;
+    align-items: center;
     width: 100%;
 }
 
@@ -87,36 +87,61 @@
     padding: clamp(var(--space-sm), 3vw, var(--space-md)) clamp(var(--space-sm), 4vw, var(--space-xxl));
     
 }
- .list li * {
+.list > p{
+    text-align: center;
+}
+
+  .features-list h3 {
     display:inline !important;
-    font-weight: 500;
+    font-size: clamp(1rem, 1.2vw, 1.4rem);
+    margin-right: 0.3em;
 }
+.features-list p { color: var(--color-grey-2);
+    display:inline !important;
+ } 
 
-.list h3{     
+/* .list h3{     
     text-align: center;    
+} */
+
+ 
+
+/* .list .features-list div h3,
+.list .features-list div p {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    
 }
 
-.list p { color: var(--color-grey-2) }
+.list .features-list div h3 { 
+    font-size: clamp(1rem, 1.2vw, 1.4rem);    
+    font-weight: 500px; 
+    margin-right: 0.3em;      
+} */
+
+
+
 
 
 .list:first-child{
     box-shadow: 0px 0px 4px 1px var(--color-orange) inset;
-    h2,h4, span{  color: var(--color-orange);  }
+    h2,h3, span{  color: var(--color-orange);  }
 }
 
 .list:nth-child(2){
     box-shadow: 0px 0px 4px 1px #50c9c1 inset;
-        h2, h4, span{  color: #50c9c1; }
+        h2, h3, span{  color: #50c9c1; }
 }
 
 .list:nth-child(3){
     box-shadow: 0px 0px 4px 1px #B276FF inset;
-     h2, h4, span{  color: #B276FF; }
+     h2, h3, span{  color: #B276FF; }
 }
 
 .list:nth-child(4){
     box-shadow: 0px 0px 4px 1px #91d606 inset;
-    h2, h4{  color: #8ac610; }
+    h2, h3{  color: #8ac610; }
 }
 
 /*boton contacta*/
@@ -238,16 +263,12 @@
 .texto-exito{
     font-size: clamp(1.4rem, 3vw, 2.3rem);
     font-weight: 600;
-    color: var(--color-secondary);   
-    
+    color: var(--color-secondary);       
 }
-
 
 /**PORTFOLIO*/
 
-
-.texto-portfolio{
-    
+.texto-portfolio{    
     color: #c2c1c1;
     font-size: 38px;
     font-style: normal;
@@ -299,14 +320,15 @@ video{
     
 }
 @media (max-width: 799px) {
-    .intro-container> img{
-        width: 120%; 
-    }
-}
-@media (max-width: 400px) {
     .intro-container{
         overflow-x: hidden;
     }
+    .intro-container> img{
+        width: 130%; 
+    }
+}
+@media (max-width: 400px) {
+    
    .intro-container> img{
         width: 170%; 
         max-height: 400px;

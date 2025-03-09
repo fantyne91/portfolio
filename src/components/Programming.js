@@ -15,7 +15,8 @@ export default {
         <section class="beneficios p-align">
                 
                         <h2>Beneficios de contratar un desarrollador para tu web o CMS</h2>
-                        <p>Si bien los CMS como WordPress o Shopify ofrecen soluciones rápidas, sus limitaciones pueden afectar la escalabilidad y personalización de tu proyecto. Al tener un programador, obtienes:</p>
+                        <p>Si bien los CMS como WordPress o Shopify ofrecen soluciones rápidas, sus limitaciones pueden afectar la escalabilidad y personalización de tu proyecto.</p>
+                        <p> Al tener un programador, obtienes:</p>
                         
                         <ul class=" full-width">
                                 <li><h3>Personalización avanzada:</h3> <p>Puedes realizar modificaciones avanzadas y ajustar funcionalidades que no están disponibles de manera predeterminada en el CMS.</p></li>
@@ -105,13 +106,13 @@ export default {
                             </ul>
                         </div>
                         
-                        <div class="p-column-sm flex">
-                            <div class="container-img-focus">
+                        <div class="p-column-sm flex">                                
                                 <img class="img-focus" src="/images/cod-error.webp" loading="lazy" alt="img errores" width="500px">
-                            </div>
+                                <p>Casos de prueba</p>
                         </div>
                         
                     </div>
+                    <h4>Diagrama de Flujo: </h4>
                     <img class="img-focus" src="/images/happypath.webp" loading="lazy" alt="img happypath" >
                              <!--   
                                 
@@ -119,7 +120,7 @@ export default {
                                 <img class="img-focus" src="/images/cod3.webp" loading="lazy" alt="img codigo php" width="500px">
                             </div>
                             <div class="container-img-focus">
-                                <img class="img-focus" src="/images/cod2.webp" loading="lazy" alt="img codigo php" width="100">
+                                <img class="img-focus" src="/images/cod2.webp" loading="lazy" alt="img codigo php" width="100">-->
                    
             </section>
     `,

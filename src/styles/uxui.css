@@ -7,14 +7,12 @@
     text-align: center; 
     color: var(--color-orange);
 } 
-.page-uxui h3{
-    font-weight: 500; 
+.page-uxui h3{    
     color: var(--color-soft-orange-grey);
 }
 /**HEADER*/
 .header-ux{
-    background: var(--color-secondary);  
-    border-bottom: 1px solid var(--color-soft-orange-grey);
+    background: var(--color-secondary);     
     p{
      font-weight: 500; 
    }
@@ -24,24 +22,40 @@
 /**CONTAINER MOTIVOS*/
 .benefits{
     background-color: var(--color-grey-4);
+   
 }
 .container-motivos-ux{   
     background-color: var(--color-sat-orange);
     box-shadow: 0 1px 5px var(--color-grey-5);
     border-radius: 15px;
     align-items: normal;
-    gap:var(--space-sm)
+    gap:var(--space-xs);
+    
 }
 
 .container-motivos-ux> div{ 
     background-color: var(--color-secondary); 
     border-radius: 10px;    
     box-shadow: 0 1px 5px var(--color-grey-5);
+   
 }
 .container-motivos-ux ul{
     list-style: none;
     padding: 0;
+    height: 100%;
 }
+/*cards*/
+.container-motivos-ux li{  
+    position: relative;  
+    display: flex;
+    flex-direction: column;  
+    padding: var(--space-sm);
+    background-color: var(--color-grey-5);
+    border-radius: 5px;
+    height: 100%;
+}
+
+
 /* .gif{
     position:absolute;
     width:200px;
@@ -54,6 +68,7 @@
 
 .services-ux-background{
     background: #89713f;
+    user-select: none;
 }
 .services-ux-container{    
     background-color: var(--color-secondary); 
@@ -91,16 +106,78 @@ video, img{
 .container-casos-ux span{
     color: var(--color-soft-orange-grey)
 }
-.dark-background:nth-child(3)  .p-align{
-    font-weight: 500;
-    color: var(--color-soft-orange-grey);
-}  
 
 
-@media (max-width: 768px) {
-    /* .container-motivos-ux{
-        flex-direction: column;
+
+@media (hover: hover)  {
+   
+    .container-motivos-ux h3{
+        position: absolute;            
+        font-size: 1.2rem;    
+        text-align: center;
+        padding: 0 var(--space-sm) ;       
+        
+    }
+    .container-motivos-ux ul {
+        height: 550px; 
+        justify-content: space-evenly;       
+    } 
+    .container-motivos-ux li{
+        height: 100px;  
+        padding: var(--space-xs);
+        align-items: center;   
+        justify-content: center;    
+    } 
+    .container-motivos-ux p{
+        opacity: 0;
+        visibility: hidden;
+        color: var(--color-secondary);
+    }
+
+    .container-motivos-ux li:hover{
+        background-color: #89713f;
+        border-radius: 30px;
+        height: auto;
+        transition: all 1.5s ease; 
+        user-select: none;
+        
+    }
+    .container-motivos-ux li:hover p{
+        opacity: 1;
+        visibility: visible;    
+        
+        color: var(--color-secondary);
+        font-weight: 500;
+    }
+    .container-motivos-ux li:hover h3{
+        font-size: 1rem;
+       transition: all 1s ease;
+        position: relative;
+       padding: 0;
+       align-self: flex-start;
+        text-align: unset;
+        color: var(--color-orange);
+    }
+
+}
+/* Versión móvil/tablet corregida */
+@media (max-width: 799px) {
+   
+    .container-motivos-ux {        
+        flex-direction: column;        
+    }
+    .container-motivos-ux ul{    
+        height: auto;
+    }
+    /*
+    .container-motivos-ux h3, .container-motivos-ux p{
+        position: relative;    
+        font-size: initial;  
+         opacity: 1;
+        visibility: visible;   
     } */
+    
+
     .gif{
         position: relative;
         right: auto;

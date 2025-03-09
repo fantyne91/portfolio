@@ -495,11 +495,10 @@ footer {
         background: var(--color-blue-black);
         flex-direction: column;
         gap: 0;
-        box-shadow: 0 2px 3px var(--color-shadow-middle-gray);
-        /* transform: translateY(-20px);  */
+        box-shadow: 0 2px 3px var(--color-shadow-middle-gray);        
         opacity: 0; 
-/*        
-        transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;    */
+        z-index: 9999;
+
     }
     .nav-menu.open {
         /* width: 100%; */

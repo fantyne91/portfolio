@@ -1,8 +1,8 @@
 import '../styles/uxui.css';
 
 export default {
-  name: 'Uxui',
-  template: /*html*/ `
+    name: 'Uxui',
+    template: /*html*/ `
   
         <section class="header-ux">
                 <h1> Diseño web UX/UI </h1>
@@ -21,32 +21,32 @@ export default {
 
                 <div class="container-motivos-ux flex-row padding-xs">
                 
-                    <div class="container-column-sm flex">
+                    <div class="container-column-md flex">
                         <h2>¿Cómo ayuda el UX a crecer las ventas? </h2>
                         <ul>
                             <li>
-                                <h3>Mejora la conversión:</h3> <p> Simplifica procesos, reduciendo fricciones que pueden llevar a la pérdida de clientes. Con una navegación intuitiva, los usuarios tienen menos probabilidades de abandonar sus carritos y más probabilidades de completar la compra. </p>
+                                <h3>Mejora la conversión 🢖</h3> <p> Simplifica procesos, reduciendo fricciones que pueden llevar a la pérdida de clientes. Con una navegación intuitiva, los usuarios tienen menos probabilidades de abandonar sus carritos y más probabilidades de completar la compra. </p>
                             </li>
                             <li>
-                                <h3>Aumenta la retención de clientes:</h3> <p>Una experiencia positiva hace que los usuarios regresen. La retención de clientes es clave para el crecimiento sostenible de las ventas, y es mucho más económico mantener a un cliente que adquirir uno nuevo.</p>
+                                <h3>Aumenta la retención de clientes 🢖</h3> <p >Una experiencia positiva hace que los usuarios regresen. La retención de clientes es clave para el crecimiento sostenible de las ventas, y es mucho más económico mantener a un cliente que adquirir uno nuevo.</p>
                             </li>
                             <li>
-                                <h3>Optimiza la personalización:</h3> <p>Aprovechar el análisis de datos y ofrecer una experiencia de compra personalizada para cada cliente, aumenta el ticket promedio por cliente sin necesidad de ampliar tu catálogo de productos. </p>
+                                <h3>Optimiza la personalización 🢖</h3> <p>Aprovechar el análisis de datos y ofrecer una experiencia de compra personalizada para cada cliente, aumenta el ticket promedio por cliente sin necesidad de ampliar tu catálogo de productos. </p>
                             </li>
                         </ul>
                     </div>
 
-                    <div class="container-column-sm flex">
-                        <h2>Reducción de costes a través de UX: </h2>
+                    <div class="container-column-md flex">
+                        <h2>Reducción de costes a través de UX/UI </h2>
                         <ul>
                             <li>
-                                <h3>Optimización del flujo de trabajo interno:</h3><p> Tener interfaces administrativas claras y procesos automatizados de gestión de inventarios, pedidos y envíos permiten que el personal trabaje de manera más eficiente, evitando duplicación de tareas y posibles errores humanos.</p>
+                                <h3>Optimización del flujo de trabajo interno 🢖</h3><p> Tener interfaces administrativas claras y procesos automatizados de gestión de inventarios, pedidos y envíos permiten que el personal trabaje de manera más eficiente, evitando duplicación de tareas y posibles errores humanos.</p>
                             </li>
                             <li>
-                                <h3>Automatización de procesos:</h3><p> Un diseño UX eficiente puede reducir la dependencia de personal de atención al cliente al ofrecer herramientas donde los clientes resuelven sus problemas o consultas fácilmente.</p>
+                                <h3>Automatización de procesos 🢖</h3><p> Un diseño UX eficiente puede reducir la dependencia de personal de atención al cliente al ofrecer herramientas donde los clientes resuelven sus problemas o consultas fácilmente.</p>
                             </li>
                             <li>
-                                <h3>Diseño eficiente:</h3><p>Un diseño eficiente agiliza procesos y reduce errores del usuario. Esto se traduce en menos consultas de soporte, mayor conversión y fidelización, maximizando el retorno de inversión.</p>
+                                <h3>Diseño eficiente 🢖</h3><p>Un diseño eficiente agiliza procesos y reduce errores del usuario. Esto se traduce en menos consultas de soporte, mayor conversión y fidelización, maximizando el retorno de inversión.</p>
                             </li>
                         </ul>
                         <!--<img class="gif" src="/images/gif2.gif" alt="Animación en movimiento" >-->
@@ -206,4 +206,6 @@ export default {
                 </div>
         </section>
     `,
+  
+    
 }

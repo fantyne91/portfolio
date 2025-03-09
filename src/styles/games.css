@@ -51,22 +51,24 @@
 .container-casos-games span {
      color: var(--color-soft-purple);   
 }
-
- .analisis ul li{
+ .analisis-frost  ul{
+    gap: var(--space-md);
+ }
+ .analisis-frost  li{
   list-style: none;
-  border-radius: 5px;
-  border: 3px solid var(--color-calid-purple);
+  border-radius: 5px;    
    *{
     margin:0;
   }
 } 
 .text-red{
-    background-color: rgb(34, 3, 13);
+    
+    border: 1px solid rgb(123, 19, 52);
      border-radius: 10px 10px 0 0 ;
     
 }
 .text-green{
-    background-color: rgb(6, 43, 27);
+    background-color: var(--color-calid-purple);
     border-radius: 0 0 10px 10px;
 }
 

@@ -7,7 +7,6 @@ export default {
   name: 'Landing',
 
   template: /*html*/ `
- 
   
         <section class= "intro-container">
                     <img src="/images/portfolio-img.webp" alt="imagen nubes presentación Maria" fetchpriority="high">
@@ -15,93 +14,88 @@ export default {
         </section>
 
         <section lang="es" class="list-container" itemscope itemtype="https://schema.org/ItemList" aria-labelledby="encabezado-servicios">
-                
-                    <!--<p>Servicios</p>-->
-                    <h1 id="encabezado-servicios" itemprop="name" tabindex="0">
-                        UX/UI & Product design, desarrollo web y Unreal Engine
-                    </h1>
+    <h1 id="encabezado-servicios" itemprop="name">Diseño UX/UI, desarrollo web y Unreal Engine</h1>
 
-                    <div class="group-list  " role="list">
-                        <!-- Diseño Web UX/UI -->
+    <ul class="group-list full-width" itemprop="mainEntity">
+        <!-- Diseño Web UX/UI -->
+        <li class="list flex" itemprop="itemListElement" itemscope itemtype="https://schema.org/Service" aria-labelledby="titulo-ux">
+            <h2 id="titulo-ux" itemprop="name">Diseño Web UX/UI</h2>
+            <p class="p-align" id="descripcion-ux" itemprop="description">El diseño UX/UI optimiza la experiencia del usuario aumentando conversiones y ventas:</p>
+            <ul class="features-list flex p-column-xs" aria-label="Características de diseño web">
+                <li itemscope itemprop="hasOfferCatalog" itemtype="https://schema.org/OfferCatalog">
+                    <h3 itemprop="name">Diseño aplicaciones web o CMS</h3>
+                    <p itemprop="description">como WordPress, Shopify, Ionos... con un enfoque en el éxito de tu empresa y <span itemprop="keywords">posicionamiento SEO.</span> Obtendrás un diseño interactivo para mostrar a desarrolladores o inversores.</p>
+                </li>
+                <li>
+                    <h3 itemprop="name">Auditorías y análisis heurístico</h3>
+                    <p itemprop="description">para mejorar la experiencia del usuario de tu web y aumentar tus resultados.</p>
+                </li>
+            </ul>
+        </li>
 
-                        <div class="list flex" itemprop="itemListElement" itemscope itemtype="https://schema.org/Service" role="listitem" aria-labelledby="titulo-ux">
-                            
-                                <h2 id="titulo-ux" itemprop="name" tabindex="0"> Diseño Web UX/UI</h2>
-                                <h3 id="descripcion-ux" tabindex="0">Optimizar la experiencia de tus usuarios aumenta las conversiones y ventas:</h3>
-                                <ul type="circle" role="list">
-                                    <li role="listitem">
-                                        <h4 > Diseño aplicaciones web o CMS </h4>
-                                        <p> como WordPress, Shopify, Ionos... con un enfoque en el éxito de tu empresa y <span> posicionamiento SEO</span>. Obtendrás un diseño interactivo para mostrar a desarrolladores o inversores.</p>
-                                    </li>
-                                    <li role="listitem">
-                                        <h4> Auditorías y análisis heurístico  </h4>
-                                        <p> para mejorar la experiencia del usuario de tu web y aumentar tus resultados.</p>
-                                    </li>
-                                </ul>
-                           
-                        </div>
+        <!-- Desarrollo Web -->
+        <li class="list flex" itemprop="itemListElement" itemscope itemtype="https://schema.org/Service" aria-labelledby="titulo-web">
+            <h2 id="titulo-web" itemprop="name">Desarrollo Web</h2>
+            <p id="descripcion-web" itemprop="description">Creación de soluciones personalizadas con JavaScript, Vue, PHP y CSS:</p>
+            <ul class="features-list flex p-column-xs" aria-label="Detalles de desarrollo">
+                <li>
+                    <h3 itemprop="name">Trabajo en el Front-end</h3>
+                    <p itemprop="description">el diseño visual interactivo y atractivo que los usuarios ven e interactúan, como botones y menús.</p>
+                </li>
+                <li itemscope itemprop="hasOfferCatalog" itemtype="https://schema.org/OfferCatalog">
+                    <h3 itemprop="name">Back-end</h3>
+                    <p itemprop="description">gestión y programación interna de la aplicación web, <span itemprop="keywords">bases de datos y servidores</span> para optimizar la funcionalidad de tiendas online.</p>
+                </li>
+            </ul>
+        </li>
 
-                        <!-- Desarrollo Web -->
-                        <div class="list flex" itemprop="itemListElement" itemscope itemtype="https://schema.org/Service" role="listitem" aria-labelledby="titulo-web">
-                            
-                                <h2 id="titulo-web" itemprop="name" tabindex="0">Desarrollo Web</h2>
-                                <h3 id="descripcion-web" tabindex="0">Creación de soluciones personalizadas con JavaScript, Vue, PHP y CSS:</h3>
-                                <ul type="circle" role="list">
-                                    <li role="listitem">
-                                        <h4> Trabajo en el  Front-end, </h4>
-                                        <p> el diseño visual interactivo y atractivo que los usuarios ven e interactúan, como botones y menús.</p>
-                                    </li>
-                                    <li role="listitem">
-                                        <h4>Back-end,</h4>
-                                        <p> gestión y programación interna de la aplicación web, <span>bases de datos y servidores</span> para optimizar la funcionalidad de tiendas online.</p>
-                                    </li>
-                                </ul>
-                        </div>
+        <!-- Diseño de Videojuegos -->
+        <li class="list flex" itemprop="itemListElement" itemscope itemtype="https://schema.org/Service" aria-labelledby="titulo-videojuegos">
+            <h2 id="titulo-videojuegos" itemprop="name">Diseño de Videojuegos</h2>
+            <p id="descripcion-videojuegos" itemprop="description">Mejoro la experiencia de los jugadores evaluando la jugabilidad, navegación y diseño visual:</p>
+            <ul class="features-list flex p-column-xs" aria-label="Elementos de videojuegos">
+                <li>
+                    <h3 itemprop="name">Auditorías UX y pruebas de jugabilidad</h3>
+                    <p itemprop="description">para optimizar la interacción intuitiva, eliminando frustraciones del jugador.</p>
+                </li>
+                <li itemscope itemprop="hasOfferCatalog" itemtype="https://schema.org/OfferCatalog">
+                    <h3 itemprop="name">Diseño de interfaces y HUD</h3>
+                    <p itemprop="description">que prioricen la jugabilidad y inmersión del jugador. Colaboración en la creación de documentación como <span itemprop="keywords">Pitchs y GDD.</span></p>
+                </li>
+            </ul>
+        </li>
 
-                        <!-- Diseño de Videojuegos -->
-                        <div class="list flex" itemprop="itemListElement" itemscope itemtype="https://schema.org/Service" role="listitem" aria-labelledby="titulo-videojuegos">
-                          
-                                <h2 id="titulo-videojuegos" itemprop="name" tabindex="0">Diseño de Videojuegos</h2>
-                                <h3 id="descripcion-videojuegos" tabindex="0">Mejoro la experiencia de los jugadores evaluando la jugabilidad, navegación y diseño visual:</h3>
-                                <ul type="circle" role="list">
-                                    <li role="listitem">
-                                        <h4>Auditorías UX y pruebas de jugabilidad</h4>
-                                        <p> para optimizar la interacción intuitiva, eliminando frustraciones del jugador.</p>
-                                    </li>
-                                    <li role="listitem">
-                                        <h4> Diseño de interfaces y HUD</h4>
-                                        <p> que prioricen la jugabilidad y inmersión del jugador. Colaboración en creación de Documentación como <span>Pitchs y GDD</span>.</p>
-                                    </li>
-                                </ul>
-                        </div>
+        <!-- Unreal Engine -->
+        <li class="list flex" itemprop="itemListElement" itemscope itemtype="https://schema.org/Service" aria-labelledby="titulo-unreal">
+            <h2 id="titulo-unreal" itemprop="name">Unreal Engine</h2>
+            <p id="descripcion-unreal" itemprop="description">Uso de Unreal Engine para crear experiencias visuales y narrativas inmersivas:</p>
+            <ul class="features-list flex p-column-xs" aria-label="Características Unreal Engine">
+                <li itemscope itemprop="hasOfferCatalog" itemtype="https://schema.org/OfferCatalog">
+                    <h3 itemprop="name">Desarrollo de videojuegos</h3>
+                    <p itemprop="description">desde creación de escenarios, Metahumans, y programación de Blueprints, a diseño, creación y programación de HUDs o interfaces.</p>
+                </li>
+                <li>
+                    <h3>Desarrollo de presentaciones visuales dinámicas o cinemáticas</h3>
+                    <p itemprop="description">para clientes corporativos.</p>
+                </li>
+            </ul>
+        </li>
+    </ul>
 
-                        <!-- Unreal Engine -->
-                        <div class="list flex" itemprop="itemListElement" itemscope itemtype="https://schema.org/Service" role="listitem" aria-labelledby="titulo-unreal">
-                            
-                                <h2 id="titulo-unreal" itemprop="name" tabindex="0">Unreal Engine</h2>
-                                <h3 id="descripcion-unreal" tabindex="0">Uso de Unreal Engine para crear experiencias visuales y narrativas inmersivas:</h3>
-                                <ul type="circle" role="list">
-                                    <li role="listitem">
-                                        <h4>
-                                            Desarrollo de videojuegos,
-                                        </h4>
-                                        <p> desde creación de escenarios, Metahumans, y programación de Blueprints, a diseño, creación y programación de HUDs o interfaces.</p>
-                                    </li>
-                                    <li role="listitem">
-                                        <h4> Desarrollo de presentaciones visuales dinámicas </h4>
-                                        <p> para clientes corporativos.</p>
-                                    </li>
-                                </ul>
-                        </div>
-                    </div>
-                    <div class="contacta container-column-sm flex">
-                            <p>Cada proyecto es único!</p>
-                            <router-link to="/contacta" class="big-btn" aria-label="Solicitar servicios y contactar" target= "_blank">
-                                Contactar Ahora
-                            </router-link>
-                    </div>
-                       
-        </section>
+    <div class="contacta container-column-sm flex" role="region" aria-label="Sección de contacto" itemscope itemtype="https://schema.org/ContactPoint">
+        <p role="alert">¡Cada proyecto es único!</p>
+        <router-link 
+            to="/contacta" 
+            class="big-btn" 
+            aria-label="Contactar para servicios de desarrollo web y diseño" 
+            itemprop="url"
+        >
+            Contactar Ahora
+        </router-link>
+        <span hidden itemprop="email">contacto@tudominio.com</span>
+        <meta itemprop="contactType" content="technical support">
+    </div>
+</section>
    
 <!--<div class="wave-container">
 <svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">

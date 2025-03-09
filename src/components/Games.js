@@ -145,7 +145,7 @@ export default {
             <p>
               Para mí, Frostpunk 1 es más que un juego; es una obra de arte.
             </p>
-            <p>Como amante de la estrategia, acumulé cientos de horas explorando sus mecánicas y conté los minutos hasta el lanzamiento de Frostpunk 2, una secuela largamente esperada. Tras algunos retrasos llegó el gran día, y como en el primero, el impresionante diseño visual me fascinó, pero a medida que pasaban los minutos mi entusiasmo se iba desvaneciendo...y como a mí, a muchos de sus fans.
+            <p>Como amante de la estrategia, acumulé cientos de horas explorando sus mecánicas y conté los minutos hasta el lanzamiento de Frostpunk 2, una secuela muy esperada. Tras algunos retrasos llegó el gran día, y como en el primero, el impresionante diseño visual me fascinó, pero a medida que pasaban los minutos mi entusiasmo se iba desvaneciendo...y como a mí, a muchos de sus fans.
             </p>
           
           </div>
@@ -176,7 +176,7 @@ export default {
           <div>
             <h4>Datos</h4>
             <p> 4 meses después del lanzamiento de Frostpunk2, en Game Pass tiene  3.2*, y FrostPunk1 tiene un 4.3*. En Steam: Frostpunk2 tiene 15mil comentarios positivos y 5mil comentarios negativos, frente a 120mil comentarios positivos y 9mil negativos de FrostPunk1. En Steam Spy, Frostpunk1 sigue teniendo más jugadores diarios que FrostPunk2.</p>
-            <p> Comentar que 11bit Studios valora enormemente a sus usuarios, y algunos de los problemas detectados han sido rectificados en sus actualizaciones.</p>
+            <p> Comentar que 11bit Studios valora enormemente a sus usuarios, y algunos de los problemas detectados han sido rectificados posteriormente en sus actualizaciones.</p>
           </div>
           <div>
             <h4>Analisis jugabilidad y usabilidad del lanzamiento de Frostpunk 2</h4>
@@ -199,7 +199,7 @@ export default {
             </ul>
              <p>Una vez conoces el juego o desarrollas el arbol de ideas puedes tomar otras estrategias, expandir distritos o construir edificios, y aqui es donde entra el conflicto de diseño y experiencia de usuario.</p>
           </div>
-          <div class=" analisis flex p-column-xs">
+          <div class=" analisis-frost flex p-column-xs">
               <h4>Análisis UX/UI Frostpunk 2:</h4>
               <p>Como ya he comentado el diseño artístico y visual del juego es impresionante, las animaciones realmente aportan vida a los personajes, y la historia sigue siendo increíble, pero enfocándome en la experiencia de usuario y tras analizar tanto el juego, los datos y las opiniones puedo decir que hay mejoras o enfoques que se podrían implementar:</p>
               <ul class="padding-Y-xs">
@@ -218,17 +218,25 @@ export default {
                 <li><p class="text-red padding-xs">Problema: El árbol de desarrollo es difícil de entender, algunos conceptos no se encuentran donde se esperan, no muestran un camino claro llevándote cometer errores, y no se muestra claramente qué elemento está en desarrollo.</p>
                     <p class="text-green padding-xs">Solución UX/UI: Usar un color predominante para destacar claramente los elementos que están en desarrollo. Agrupaciones que permitan al jugador ver las tecnologías o mejoras relevantes según categorías y recursos, y ajustar con mejoras más proporcionales según el tipo de recurso.                </p>
                 </li>
-                <li class="text-red padding-xs"><p> Problemas adicionales: </p>
+                <li class="text-red p-column-xs flex padding-xs align-left"><p> Problemas adicionales: </p>
                     <p>- Actualmente al expandir un edificio industrial, el producto que se está produciendo cambia automáticamente al valor por defecto, perdiendo tiempo de juego vital hasta que te das cuenta de ello.</p>
                     <p>- En modo expedición no se puede hacer Zoom lo que dificulta la identificación y búsqueda de zonas específicas. *Solucionado</p>
                     <p>- En los mapas de calor, aparecen datos de consumo de edificios apagados. *Solucionado </p>
                 </li>
               </ul>
-              <p>Mejoras sugeridas: Dados los nuevos tiempos de construcción, sugiero implementar una lista de “tareas pendientes” de construcción o acciones.</p>
-              <p>
-              En resumen, ambos son juegos increíbles, pero como fan de Frostpunk1 entiendo las reacciones frente su secuela, y espero que lancen más DLC de lo que para mi siempre será y repito, una obra maestra.
-              </p>
           </div>
+              <h4>Rediseño sugerido "Arbol de ideas":</h4>
+              <div class="flex-row padding-Y-xs">
+                <div class="p-short p-column-xs flex">
+                  <p>Sugiero cambiar a nombres más intuitivos y jerárquicos para las ideas generales en la pantalla principal (ej. Invernaderos avanzados II) y mostrar el tipo de contrucción (edificio o distrito) incluyendo el área de constucción para facilitar la organización.</p>
+                  <p > Se incluye un icono que marca la idea que se encuentra en desarrollo.  Se agrupan visualmente las ideas compartidas entre facciones.</p>
+                </div>  
+                <img class="container-img"src="/images/diseño-frost.webp" alt="Rediseño arbol ideas Frostpunk2">
+              </div>
+              <p>
+              En resumen, ambos son juegos increíbles, y valoro enormemente la intención del estudio que proporciona entornos de juego muy completos, pero como fan de Frostpunk1 entiendo las reacciones frente su secuela, y espero que lancen más DLC de lo que para mi siempre será una obra maestra.
+              </p>
+          
 
         </div>
 
@@ -356,22 +364,22 @@ export default {
               <div>
                 <h5>HUD y UI:</h5>
                 <ul>
-                  <li>
+                  <li><p>
                     Aunque el HUD y la interfaz general han mejorado
                     visualmente, la usabilidad sigue siendo una barrera
                     importante. El nuevo diseño resulta en una interfaz elegante
                     pero poco funcional, sobrecargada de ventanas, capas y
                     colores que dificultan la visibilidad y generan confusión en
-                    lugar de claridad.
+                    lugar de claridad.</p>
                   </li>
-                  <li>
+                  <li><p>
                     La incorporación de múltiples ventanas emergentes por
                     edificio -cuatro de promedio- intenta suplir la falta de
                     información del primer juego, pero estas son poco prácticas
                     y no del todo útiles para el usuario. Esto refleja la
                     importancia de diseñar experiencias que simplifiquen la
                     navegación, en lugar de saturar con ayudas o ventanas
-                    innecesarias.
+                    innecesarias.</p>
                   </li>
                 </ul>
               </div>
