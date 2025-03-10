@@ -9,7 +9,17 @@ export default {
   template: /*html*/ `
   
         <section class= "intro-container">
-                    <img src="/images/portfolio-img.webp" alt="imagen nubes presentación Maria" fetchpriority="high">
+                 <img 
+      v-show="imageLoaded" 
+      :src="cachedImage" 
+      alt="imagen nubes presentación Maria" 
+      @load="onImageLoad"
+    >
+    <!-- Se muestra el loading-screen mientras imageLoaded es false -->
+    <div v-if="!imageLoaded" id="loading-screen">
+      <img class="gif" src="/images/gif-carga.webp" alt="Animación en movimiento carga" width="140px">
+      <p>Cargando...</p>
+    </div>
                     <!--<p class= "texto-entrada">Diseño y programación<br> para empresas y videojuegos</p>-->
         </section>
 
@@ -244,45 +254,69 @@ export default {
             
         </section>
     `,
+  data() {
+    return {
+      // Define la propiedad imageLoaded para controlar el estado de la imagen
+      imageLoaded: false,
+      // Define la URL de la imagen; incluye ?v=1 para cache busting (cámbialo cuando actualices la imagen)
+      cachedImage: '/images/portfolio-img.webp?v=1',
+    }
+  },
   methods: {
-    animateMessages() {
-      // Seleccionamos los párrafos por su contenedor
-      const messages = document.querySelectorAll('.container-list-footer p')
+    // animateMessages() {
+    //   const messages = document.querySelectorAll('.container-list-footer p')
 
-      messages.forEach((msg, index) => {
+    //   messages.forEach((msg, index) => {
+    //     setTimeout(() => {
+
+    //       messages.forEach((m) => m.classList.remove('fade-in', 'fade-in-big'))
+    //       setTimeout(() => {
+    //         if (index === 2) {
+
+    //           msg.classList.add('fade-in-big')
+    //         } else {
+
+    //           msg.classList.add('fade-in')
+    //         }
+    //       }, 500)
+    //     }, index * 2400)
+    //   })
+    // },
+    onImageLoad() {
+      console.log('Imagen cargada')
+      this.imageLoaded = true
+      // Oculta el loading screen una vez que la imagen está cargada
+      const loadingScreen = document.getElementById('loading-screen')
+      if (loadingScreen) {
+        loadingScreen.style.opacity = '0'
         setTimeout(() => {
-          // Quitar la clase fade-in de todos los mensajes
-          messages.forEach((m) => m.classList.remove('fade-in', 'fade-in-big'))
-          // Esperar un poco para dar la sensación de "espacio limpio"
-          setTimeout(() => {
-            if (index === 2) {
-              // Si es el tercer mensaje (índice 2)
-              msg.classList.add('fade-in-big')
-            } else {
-              // Para los demás mensajes
-              msg.classList.add('fade-in')
-            }
-          }, 500) // Tiempo para que desaparezca la palabra anterior
-        }, index * 2400) // Cada mensaje aparece con un retraso
-      })
+          loadingScreen.style.display = 'none'
+        }, 1000)
+      }
     },
   },
   mounted() {
-    setTimeout(() => {
-      const container = document.querySelector('.container-list-footer')
+    // setTimeout(() => {
+    //   const container = document.querySelector('.container-list-footer')
 
-      if (container) {
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              this.animateMessages() // Llama a la animación al entrar en pantalla
-            }
-          })
-        })
+    //   if (container) {
+    //     const observer = new IntersectionObserver((entries) => {
+    //       entries.forEach((entry) => {
+    //         if (entry.isIntersecting) {
+    //           this.animateMessages()
+    //         }
+    //       })
+    //     })
 
-        observer.observe(container)
-      }
-    }, 100) // Ajusta el retraso si es necesario
+    //     observer.observe(container)
+    //   }
+    // }, 100)
+
+    const img = new Image()
+    img.src = this.cachedImage
+    img.onload = () => {
+      this.imageLoaded = true
+    }
 
     document.addEventListener('DOMContentLoaded', () => {
       const videos = document.querySelectorAll('.lazy-video')

@@ -11,13 +11,22 @@ export default defineConfig({
       'Cache-Control': 'public, max-age=31536000, immutable',
     },
   },
-  define: {
-    __VUE_OPTIONS_API__: true,
-    __VUE_PROD_DEVTOOLS__: true,
+  build: {
+    assetsInlineLimit: 0, // Evita que Vite convierta imágenes pequeñas en base64
+    rollupOptions: {
+      output: {
+        assetFileNames: (assetInfo) => {
+          if (/\.(png|jpe?g|webp|svg|gif)$/.test(assetInfo.name)) {
+            return 'assets/[name]-[hash][extname]' // Evita problemas de caché con nombres únicos
+          }
+          return 'assets/[name][extname]'
+        },
+      },
+    },
   },
   resolve: {
     alias: {
-      vue: 'vue/dist/vue.esm-bundler.js', // Alias para usar la versión que soporta la compilación en tiempo de ejecución
+      vue: 'vue/dist/vue.esm-bundler.js',
     },
   },
 })

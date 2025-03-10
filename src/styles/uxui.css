@@ -56,13 +56,6 @@
 }
 
 
-/* .gif{
-    position:absolute;
-    width:200px;
-    bottom: 5px;
-    right: 15px;
-    border-radius: 60px;
-} */
 
 /**CONTAINER SERVICIOS*/
 
@@ -138,7 +131,7 @@ video, img{
         background-color: #89713f;
         border-radius: 30px;
         height: auto;
-        transition: all 1.5s ease; 
+        transition: all 1s ease; 
         user-select: none;
         
     }

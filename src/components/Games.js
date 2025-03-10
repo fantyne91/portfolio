@@ -231,7 +231,7 @@ export default {
                   <p>Sugiero cambiar a nombres más intuitivos y jerárquicos para las ideas generales en la pantalla principal (ej. Invernaderos avanzados II) y mostrar el tipo de contrucción (edificio o distrito) incluyendo el área de constucción para facilitar la organización.</p>
                   <p > Se incluye un icono que marca la idea que se encuentra en desarrollo.  Se agrupan visualmente las ideas compartidas entre facciones.</p>
                 </div>  
-                <img class="container-img"src="/images/diseño-frost.webp" alt="Rediseño arbol ideas Frostpunk2">
+                <img class="container-img"src="/images/diseño-frost.webp" loading="lazy" alt="Rediseño arbol ideas Frostpunk2">
               </div>
               <p>
               En resumen, ambos son juegos increíbles, y valoro enormemente la intención del estudio que proporciona entornos de juego muy completos, pero como fan de Frostpunk1 entiendo las reacciones frente su secuela, y espero que lancen más DLC de lo que para mi siempre será una obra maestra.

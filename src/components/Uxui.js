@@ -49,7 +49,7 @@ export default {
                                 <h3>Diseño eficiente 🢖</h3><p>Un diseño eficiente agiliza procesos y reduce errores del usuario. Esto se traduce en menos consultas de soporte, mayor conversión y fidelización, maximizando el retorno de inversión.</p>
                             </li>
                         </ul>
-                        <!--<img class="gif" src="/images/gif2.gif" alt="Animación en movimiento" >-->
+                        
                     </div>
                     
                 </div>
