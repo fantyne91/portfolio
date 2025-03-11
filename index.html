@@ -72,15 +72,15 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            z-index: 99999; /* Más alto que cualquier otro elemento */
+            z-index: 99999; 
             color: var(--color-primary);    
             opacity: 1;
-            transition: opacity 1s ease-in-out;          
+            transition: opacity 0.3s ease-in-out;          
         }
         #loading-screen * {
             opacity: 0;
             transform: translateY(20px);
-            animation: fadeIn 1s ease-in-out forwards;
+            animation: fadeIn 0.3s ease-in-out forwards;
         }
         @keyframes fadeIn {
             from {
@@ -106,6 +106,8 @@
        
         .gif{
              border-radius: 60%;
+             position: absolute;
+             top:60%;
         }  
        
 
@@ -169,6 +171,14 @@
             </p>
         </footer>
     </div>
-    <img style="position:absolute; width:1px; height:1px; opacity:0; display:block" src="/images/portfolio-img.webp" loading="eager">
+    <div id="image-container" style="position: absolute; width: 100vw; height: 700; opacity: 0;">
+    <img 
+        id="preloaded-image"
+        src="/images/portfolio-img.webp" 
+        width="1920" height="700" 
+        loading="eager"
+        alt="Imagen principal"
+    >
+</div>
 </body>
 </html>

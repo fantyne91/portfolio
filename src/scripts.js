@@ -50,13 +50,13 @@ const app = createApp({
     this.currentPage = this.$route.name || 'Landing'
 
     /*carga-preload*/
-     setTimeout(() => {
-       const loadingScreen = document.getElementById('loading-screen')
-       if (loadingScreen) {
-         loadingScreen.style.opacity = '0'
-         setTimeout(() => loadingScreen.remove(), 500) // Se elimina después de la animación
-       }
-     }, 500) // Un pequeño delay para suavizar la transición
+    //  setTimeout(() => {
+    //    const loadingScreen = document.getElementById('loading-screen')
+    //    if (loadingScreen) {
+    //      loadingScreen.style.opacity = '0'
+    //      setTimeout(() => loadingScreen.remove(), 500) // Se elimina después de la animación
+    //    }
+    //  }, 500) // Un pequeño delay para suavizar la transición
   },
 
   beforeUnmount() {

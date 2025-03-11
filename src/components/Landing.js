@@ -8,20 +8,16 @@ export default {
 
   template: /*html*/ `
   
-        <section class= "intro-container">
-                 <img 
-      v-show="imageLoaded" 
-      :src="cachedImage" 
-      alt="imagen nubes presentación Maria" 
+        <div class= "intro-container">
+                 <img
+      v-show="imageLoaded"
+      :src="cachedImage"
+      alt="imagen nubes presentación Maria"
       @load="onImageLoad"
+       width="1920" height="700"
     >
-    <!-- Se muestra el loading-screen mientras imageLoaded es false -->
-    <div v-if="!imageLoaded" id="loading-screen">
-      <img class="gif" src="/images/gif-carga.webp" alt="Animación en movimiento carga" width="140px">
-      <p>Cargando...</p>
-    </div>
                     <!--<p class= "texto-entrada">Diseño y programación<br> para empresas y videojuegos</p>-->
-        </section>
+        </div>
 
         <section lang="es" class="list-container" itemscope itemtype="https://schema.org/ItemList" aria-labelledby="encabezado-servicios">
     <h1 id="encabezado-servicios" itemprop="name">Diseño UX/UI, desarrollo web y Unreal Engine</h1>
@@ -106,12 +102,7 @@ export default {
         <meta itemprop="contactType" content="technical support">
     </div>
 </section>
-   
-<!--<div class="wave-container">
-<svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-  <path fill="#be8d4e" d="M0,40 C180,60 360,70 540,50 C720,30 900,10 1080,20 C1260,30 1440,60 1440,60 L1440,100 L0,100 Z"></path>
-</svg>
-</div>-->
+
 
         <section class= "exito-container">
              
@@ -285,13 +276,12 @@ export default {
     onImageLoad() {
       console.log('Imagen cargada')
       this.imageLoaded = true
-      // Oculta el loading screen una vez que la imagen está cargada
+     
       const loadingScreen = document.getElementById('loading-screen')
       if (loadingScreen) {
         loadingScreen.style.opacity = '0'
-        setTimeout(() => {
-          loadingScreen.style.display = 'none'
-        }, 1000)
+        setTimeout(() => loadingScreen.remove(), 500) 
+        //    } 1000)
       }
     },
   },
