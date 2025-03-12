@@ -91,7 +91,7 @@ body {
     line-height: 1.5; 
 }
 section{
-    padding: clamp(var(--space-lg), 8vw, var(--space-2xl)) clamp(var(--space-xxs), 7vw, var(--space-xxl))  ;
+    padding: clamp(var(--space-lg), 8vw, var(--space-2xl)) clamp(var(--space-xxs), 5vw, var(--space-xxl))  ;
     display: flex;
     flex-direction: column;
     align-items: center;    
@@ -128,7 +128,7 @@ h3{
 h4{
     
     font-weight: 500;
-    font-size: clamp(1rem, 1.2vw, 1.4rem); 
+    font-size: clamp(1.1rem, 1.3vw, 1.4rem); 
 } 
 h5{
     font-weight: 500;
@@ -198,7 +198,7 @@ li *:not(:last-child){
 .flex{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;    
 }
 
 .p-column-xxs{    
@@ -208,8 +208,9 @@ li *:not(:last-child){
     gap:var(--space-xs) ;    
 } 
  .p-column-sm{    
-    gap:clamp(var(--space-xs), 3vw, var(--space-sm) );    
+    gap:clamp(var(--space-sm), 3vw, var(--space-md) );    
 }
+
 
 /*flex containers*/
 .container-column-xxs{   
@@ -234,11 +235,12 @@ li *:not(:last-child){
     align-items: center;
     justify-content: space-evenly;
     gap:var(--space-lg);
-    
+   
 }
 .flex-row>*{
     flex: 1 1;
-    min-width: 280px; 
+    min-width: 250px; 
+    width: 100%;
 }
 /**BUTTONS */
 
@@ -330,8 +332,8 @@ a {
 
 /**IMG*/
 .container-img {    
-  max-width: 500px; 
-  min-width: 300px;
+  max-width: 450px; 
+  /* min-width: 260px; */
   width:100%;
   height: auto;
   /* overflow: visible; */
@@ -341,7 +343,7 @@ a {
   display: inline-block;
   overflow: visible; /* Permite que la imagen se amplíe fuera del contenedor */
   max-width: 450px; 
-  min-width: 300px;
+  min-width: 260px;
   
 }
 
@@ -552,6 +554,9 @@ footer {
     h1,h2,h3,h4,h5,h6 {     
         max-width: 70vw; 
         
+    }
+    .flex{
+        width: 100%;    
     }
   
 

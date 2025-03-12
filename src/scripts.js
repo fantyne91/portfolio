@@ -1,6 +1,6 @@
 /**IMPORT vue y vue router */
-import { createApp } from 'vue'
-
+import { createApp, watchEffect } from 'vue'
+import { hideLoadingScreen } from './utils/hideLoadingScreen.js'
 import router from './router/index.js';
 
 
@@ -12,7 +12,7 @@ const app = createApp({
       currentPage: 'Landing',
       menuOpen: false,
       isMobileOrTablet: false,
-      isLoading: true,      
+      isLoading: true,
     }
   },
   computed: {
@@ -35,13 +35,24 @@ const app = createApp({
         this.menuOpen = false
       }
     },
-    
+    // hideLoadingScreen() {
+    //   const loadingScreen = document.getElementById('loading-screen')
+    //   if (loadingScreen) {
+    //     loadingScreen.style.opacity = '0'
+    //     setTimeout(() => loadingScreen.remove(), 500) // Se elimina después de la animación
+    //   }
+    // },
   },
   watch: {
     $route(to, from) {
       // Asegúrate de que cada ruta tenga un nombre definido
       this.currentPage = to.name || 'Landing'
+
+      if (this.currentPage !== 'Landing') {
+        setTimeout(hideLoadingScreen, 500)
+      }
     },
+    
   },
   mounted() {
     console.log('vue montado')
@@ -50,13 +61,15 @@ const app = createApp({
     this.currentPage = this.$route.name || 'Landing'
 
     /*carga-preload*/
-    //  setTimeout(() => {
-    //    const loadingScreen = document.getElementById('loading-screen')
-    //    if (loadingScreen) {
-    //      loadingScreen.style.opacity = '0'
-    //      setTimeout(() => loadingScreen.remove(), 500) // Se elimina después de la animación
-    //    }
-    //  }, 500) // Un pequeño delay para suavizar la transición
+    // if (this.currentPage != 'Landing') {
+    //   setTimeout(() => {
+    //     const loadingScreen = document.getElementById('loading-screen')
+    //     if (loadingScreen) {
+    //       loadingScreen.style.opacity = '0'
+    //       setTimeout(() => loadingScreen.remove(), 500) // Se elimina después de la animación
+    //     }
+    //   }, 500) 
+    // }
   },
 
   beforeUnmount() {

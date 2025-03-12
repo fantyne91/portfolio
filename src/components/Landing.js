@@ -1,6 +1,7 @@
 //creacion páginas
 import '../styles/landing.css';
 import '../styles/forms.css';
+import { hideLoadingScreen } from '../utils/hideLoadingScreen.js'
 
 
 export default {
@@ -8,7 +9,12 @@ export default {
 
   template: /*html*/ `
   
-        <div class= "intro-container">
+        <div class= "intro-container" >
+        <div v-if="!imageLoaded" id="loading-screen">
+            <img class="gif" src="/images/gif-carga.webp" alt="Animación en movimiento carga" width="140px">
+            <p>Cargando...</p>
+        </div>
+        <div v-if="!imageLoaded" class="image-placeholder"> </div>
                  <img
       v-show="imageLoaded"
       :src="cachedImage"
@@ -276,13 +282,8 @@ export default {
     onImageLoad() {
       console.log('Imagen cargada')
       this.imageLoaded = true
-     
-      const loadingScreen = document.getElementById('loading-screen')
-      if (loadingScreen) {
-        loadingScreen.style.opacity = '0'
-        setTimeout(() => loadingScreen.remove(), 500) 
-        //    } 1000)
-      }
+      hideLoadingScreen()
+      //    } 1000)
     },
   },
   mounted() {
