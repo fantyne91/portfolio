@@ -1,33 +1,31 @@
 //creacion páginas
-import '../styles/landing.css';
-import '../styles/forms.css';
-import { hideLoadingScreen } from '../utils/hideLoadingScreen.js'
 
+import '../styles/forms.css'
+import { hideLoadingScreen } from '../utils/hideLoadingScreen.js'
 
 export default {
   name: 'Landing',
 
   template: /*html*/ `
-  
-        <div class= "intro-container" >
-        <div v-if="!imageLoaded" id="loading-screen">
-            <img class="gif" src="/images/gif-carga.webp" alt="Animación en movimiento carga" width="140px">
+<div class="intro-container">
+    <div v-if="!imageLoaded" id="loading-screen">
+        <div class="gif-container flex">
+            <img class="gif" src="/images/gif-carga.webp" alt="Animación en movimiento carga" width="140" height="140">
             <p>Cargando...</p>
         </div>
-        <div v-if="!imageLoaded" class="image-placeholder"> </div>
-                 <img
-      v-show="imageLoaded"
-      :src="cachedImage"
-      alt="imagen nubes presentación Maria"
-      @load="onImageLoad"
-       width="1920" height="700"
-    >
-                    <!--<p class= "texto-entrada">Diseño y programación<br> para empresas y videojuegos</p>-->
-        </div>
+    </div>
+    <div v-if="!imageLoaded" class="image-placeholder"> </div>
+    <!--Img cargada-->
+    <img v-show="imageLoaded" :src="cachedImage" class="portfolio-img" alt="imagen nubes presentación Maria" @load="onImageLoad" width="1920"
+        height="700" >
+    <img  class="portfolio-img2" src="/images/portfolio-img2.webp" alt="imagen nubes presentación Maria"  width="1920"
+        height="700" >
+    <!--<p class= "texto-entrada">Diseño y programación<br> para empresas y videojuegos</p>-->
+</div>
 
-        <section lang="es" class="list-container" itemscope itemtype="https://schema.org/ItemList" aria-labelledby="encabezado-servicios">
+<section lang="es" class="list-container" itemscope itemtype="https://schema.org/ItemList"
+    aria-labelledby="encabezado-servicios">
     <h1 id="encabezado-servicios" itemprop="name">Diseño UX/UI, desarrollo web y Unreal Engine</h1>
-
     <ul class="group-list full-width" itemprop="mainEntity">
         <!-- Diseño Web UX/UI -->
         <li class="list flex" itemprop="itemListElement" itemscope itemtype="https://schema.org/Service" aria-labelledby="titulo-ux">
@@ -131,18 +129,22 @@ export default {
             
                 <div class="flex-row">
                     <div class=" p-column-sm flex">
-                        <p class= "texto-exito"> El éxito de cualquier empresa nace de la satisfacción de sus usuarios </p>
+                        <p class="texto-exito"> El éxito de cualquier empresa nace de la satisfacción de sus usuarios </p>
                         <div>
-                        <p> Ya sea un servicio, un sitio web o videojuego, el éxito dependerá de una comprensión de las necesidades del usuario.</p>
-                        <p>   Tener una plataforma visualmente atractiva es solo parte del desafío, lo vital es asegurar que los usuarios puedan interactuar con facilidad, sin obstáculos que generen frustración o abandono.</p>
-                        <p>   Identificar y corregir esos puntos de fricción es clave para aumentar la satisfacción del usuario y el éxito del negocio a largo plazo. </p>
+                            <p> Ya sea un servicio, un sitio web o videojuego, el éxito dependerá de una comprensión de las necesidades
+                                del usuario.</p>
+                            <p> Tener una plataforma visualmente atractiva es solo parte del desafío, lo vital es asegurar que los
+                                usuarios puedan interactuar con facilidad, sin obstáculos que generen frustración o abandono.</p>
+                            <p> Identificar y corregir esos puntos de fricción es clave para aumentar la satisfacción del usuario y el
+                                éxito del negocio a largo plazo. </p>
                         </div>
                         <div>
-                            <router-link to="/uxui"> Casos de estudio UX/UI </router-link>  
+                            <router-link to="/uxui"> Casos de estudio UX/UI </router-link>
                             <router-link to="/games"> Casos de estudio Videojuegos </router-link>
                         </div>
-                    </div>                    
-                    <img class="img-pc" src="/images/psico-ux.png" loading="lazy" alt="imagen usabilidad,empativa y psicologia en ux/ui" width="300px"/>
+                    </div>
+                    <img class="img-pc" src="/images/psico-ux.png" loading="lazy" alt="imagen usabilidad,empativa y psicologia en ux/ui"
+                        width="300px" />
                 </div>
            </section>
 
@@ -308,7 +310,61 @@ export default {
     img.onload = () => {
       this.imageLoaded = true
     }
+      /*setTime intro animation*/
+      document.addEventListener('DOMContentLoaded', () => {
+          const imgElement = document.querySelector('.portfolio-img2')
+          const imgElement1 = document.querySelector('.portfolio-img')
+          const introContainer = document.querySelector('.intro-container')
 
+          window.addEventListener('scroll', () => {
+            const containerRect = imgElement.getBoundingClientRect() // Obtiene la posición del contenedor en relación con la ventana
+            const windowHeight = window.innerHeight
+            const distance = Math.max(0, windowHeight - containerRect.top)
+            const progress = Math.min(
+              1,
+              Math.abs(distance / (windowHeight / 8))
+            ) // Se asegura de no pasar de 1
+            const opacity = 1.15 - progress // Calcula la opacidad en base al progreso del scroll
+              
+            imgElement1.classList.add('inactive')
+              imgElement1.style.opacity = opacity.toFixed()
+              introContainer.style.setProperty('--after-opacity', 0.3)
+            setTimeout(() => {
+              imgElement.classList.add('active'), 2000
+              
+            })
+          })
+          
+        // const observer = new IntersectionObserver(
+        //   (entries) => {
+        //     entries.forEach((entry) => {
+        //       if (entry.isIntersecting) {
+        //           setTimeout(() => {
+                      
+        //                const progress = Math.min(
+        //                  1,
+        //                  Math.abs(distance / (vh / 3))
+        //                )
+        //               const opacity = 1.15 - progress
+        //             imgElement.classList.add('active')
+        //             imgElement1.classList.add('inactive')
+        //         }, 2000) 
+        //         observer.unobserve(imgElement) 
+        //       }
+        //     })
+        //   },         
+        // )
+
+        // observer.observe(imgElement)
+      })
+
+    // window.addEventListener('load', () => {
+    //   setTimeout(() => {
+    //     document.querySelector('.portfolio-img2').classList.add('active')
+    //   }, 3000) 
+    // })
+
+    /*lazy video*/
     document.addEventListener('DOMContentLoaded', () => {
       const videos = document.querySelectorAll('.lazy-video')
 
@@ -322,12 +378,9 @@ export default {
           }
         })
       })
-
       videos.forEach((video) => {
         videoObserver.observe(video)
       })
     })
   },
 }
-
-

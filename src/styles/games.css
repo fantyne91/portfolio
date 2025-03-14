@@ -34,9 +34,12 @@
     /* border-top: 1px solid var(--color-secondary); */
     background:linear-gradient(0deg,var(--color-calid-purple), #130721);
     color: var(--color-primary);
-    h3{ font-weight: 500;}
+    p{color:var(--color-grey-1)}    
 }
 /**Casos*/
+.page-games .black-background h2{
+    color: var(--color-soft-purple);
+}
 .container-casos-games{
     padding: var(--space-xs) 0; 
     gap: var(--space-md);

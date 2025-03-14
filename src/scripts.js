@@ -30,7 +30,7 @@ const app = createApp({
     },
 
     updateScreenSize() {
-      this.isMobileOrTablet = window.innerWidth < 799
+      this.isMobileOrTablet = window.innerWidth <= 950
       if (!this.isMobileOrTablet) {
         this.menuOpen = false
       }

@@ -74,7 +74,17 @@
 } 
 
 /**CONTAINER CASOS UX*/
-
+.black-background h2{
+    align-self: flex-start;
+    padding-left: 10%;
+    font-size: 2rem;
+}
+.black-background h3{
+    color: var(--color-orange);
+}
+.container-casos-ux  h4{
+    color: var(--color-grey-1);  
+} 
 .container-casos-ux{    
     padding: var(--space-xs) 0;
     gap:var(--space-md);    
@@ -84,7 +94,6 @@
     border: clamp(5px, 4vh, 14px) solid var(--color-grey-4);
     max-width: 1100px;
 } 
-
 video, img{
     border-radius: 5px;
 }
@@ -93,9 +102,7 @@ video, img{
     max-width: 300px;
 }   
 
-.container-casos-ux  h4{
-    color: var(--color-grey-1);  
-} 
+
 .container-casos-ux span{
     color: var(--color-soft-orange-grey)
 }
@@ -112,11 +119,13 @@ video, img{
         
     }
     .container-motivos-ux ul {
-        height: 550px; 
+        height: 450px; 
+        display:block;
         justify-content: space-evenly;       
     } 
     .container-motivos-ux li{
         height: 100px;  
+        margin: 5%;
         padding: var(--space-xs);
         align-items: center;   
         justify-content: center;    
@@ -130,21 +139,22 @@ video, img{
     .container-motivos-ux li:hover{
         background-color: #89713f;
         border-radius: 30px;
-        height: auto;
-        transition: all 1s ease; 
-        user-select: none;
         
+        height: auto;
+        margin: 0;
+        transition: border-radius 1s linear; 
+        user-select: none;        
     }
     .container-motivos-ux li:hover p{
         opacity: 1;
-        visibility: visible;    
-        
+        visibility: visible;           
         color: var(--color-secondary);
         font-weight: 500;
+        transition: all 1.5s ease; 
     }
     .container-motivos-ux li:hover h3{
         font-size: 1rem;
-       transition: all 1s ease;
+       transition: all 0.3s ease;
         position: relative;
        padding: 0;
        align-self: flex-start;
@@ -153,33 +163,18 @@ video, img{
     }
 
 }
-/* Versión móvil/tablet corregida */
-@media (max-width: 799px) {
-   
-    .container-motivos-ux {        
-        flex-direction: column;        
-    }
-    .container-motivos-ux ul{    
-        height: auto;
-    }
-    /*
-    .container-motivos-ux h3, .container-motivos-ux p{
-        position: relative;    
-        font-size: initial;  
-         opacity: 1;
-        visibility: visible;   
-    } */
-    
 
-    .gif{
-        position: relative;
-        right: auto;
-    }
+
+/* Versión móvil/tablet corregida */
+@media (max-width: 799px) {   
+   
+    /* .container-motivos-ux ul{    
+        height: auto;
+    } */
+       
 }
 @media (max-width: 400px) {
-   /* .black-background > div{
-    padding: 0; 
-   } */
+  
    .container-casos-ux{
      padding-top: 17px; 
      

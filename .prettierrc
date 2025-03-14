@@ -2,5 +2,11 @@
   "singleQuote": true,
   "trailingComma": "es5",
   "semi": false,
-  "tabWidth": 2
+  "tabWidth": 2,
+   "plugins": [ "prettier-plugin-vue"],
+  "vueIndentScriptAndStyle": true,
+  "embeddedLanguageFormatting": "auto",
+
+ "htmlWhitespaceSensitivity": "ignore"
+  
 }

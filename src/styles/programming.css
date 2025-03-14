@@ -242,7 +242,7 @@
 }
 
 
-@media (max-width: 740px) {
+@media (max-width: 950px) {
 
 
 /* .section-proyect {
@@ -252,7 +252,7 @@
     margin-top: var(--space-md) ;
 } */
 .section-proyect .container-bubble{
-    height: 500px;    
+    min-height: 500px;    
 }
 
 @keyframes bubble{

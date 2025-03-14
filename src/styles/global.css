@@ -3,16 +3,6 @@
 128, 136, 144, 152, 160, 168, 176, 184, 192, 200
 */
 
-/* Pantallas mayores a 1200px (diseño para desktop grandes) */
-/* @media (min-width: 1600px) {      
-h1{       font-size: 2rem;       }
-h2{    font-size: 32px;    }
-h3{    font-size: 24px;    }
-h4{    font-size: 20px;}
-h5{    font-weight: lighter;    font-size:1.3rem;}
-h6{ font-size: 16px;}
-p{    font-size:1.3rem;  }      
-} */
 .loading-screen{
       position: fixed;
   top: 0;
@@ -70,10 +60,8 @@ p{    font-size:1.3rem;  }
     --color-soft-purple:#cf8dce;
     --color-calid-purple: #401e52;
     --color-med-purple: #351e52;
-    
-    
+        
 }
-
 
 /* Asegurar de que el body y el html no tengan márgenes */
 html, body {
@@ -150,8 +138,7 @@ ul{
     flex-direction: column;
     gap: var(--space-xs);
     padding-left: 20px;    
-    max-width: 750px; 
-    /* font-size: clamp(1rem, 1.1vw, 1.5rem);     */
+    max-width: 750px;     
 }
 li *:not(:last-child){
       margin-bottom: 4px; 
@@ -238,8 +225,8 @@ li *:not(:last-child){
    
 }
 .flex-row>*{
-    flex: 1 1;
-    min-width: 250px; 
+    flex: 1 0.5;
+    min-width: 280px; 
     width: 100%;
 }
 /**BUTTONS */
@@ -248,13 +235,11 @@ a {
     all:unset;
     cursor: pointer;
     padding: var(--space-xs) var(--space-sm);
-    font-size: clamp(1rem, 1.1vw , 2rem);   
-    /* display: inline-block; */
+    font-size: clamp(1rem, 1.1vw , 2rem); 
 }
     
 /*btn general*/
 .big-btn {
-
     color: var(--color-primary);
     font-size: 1.2rem;
     font-weight: 700;
@@ -323,8 +308,7 @@ a {
     box-shadow: 0 0 10px var(--color-sat-orange);
     text-transform: uppercase;  
     border: 3px solid  var(--color-soft-orange-grey);
-    color: var(--color-primary); 
-    
+    color: var(--color-primary);     
 }
 .big-btn2:hover{
     border: 3px solid var(--color-sat-orange) ; 
@@ -335,46 +319,37 @@ a {
   max-width: 450px; 
   /* min-width: 260px; */
   width:100%;
-  height: auto;
-  /* overflow: visible; */
+  height: auto;  
 }
-
 .container-img-focus {  
   display: inline-block;
-  overflow: visible; /* Permite que la imagen se amplíe fuera del contenedor */
+  overflow: visible; 
   max-width: 450px; 
-  min-width: 260px;
-  
+  min-width: 280px;  
 }
-
 .img-focus {
  border-radius: 5px;
   width: 100%;
   height: auto;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   cursor: zoom-in;
-  
-  
- 
+   flex: 0;
   will-change: transform, box-shadow;
   transform-origin: center center; /* Asegura que la imagen se amplíe desde el centro */
 }
-
-
 .container-img-focus:hover .img-focus {
-  transform: scale(1.6); /* Amplía la imagen desde el centro */
+  transform: scale(1.6); 
   z-index: 999;
   box-shadow: 0 1px 24px var(--color-grey-5);
   /* max-width: 600px; 
   max-height: 600px;  */
   object-fit: contain; /* Asegura que la imagen no se recorte */
 }
-
 .container-img-focus:not(:hover) .img-focus {
-  transform: scale(1); /* Vuelve a su tamaño original */
-  position: relative; /* Recupera su posición en el flujo del documento */
-  box-shadow: none; /* Elimina la sombra */
-  transition: transform 0.4s ease, box-shadow 0.4s ease; /* Agrega la transición de vuelta */
+  transform: scale(1); 
+  position: relative; 
+  box-shadow: none; 
+  transition: transform 0.4s ease, box-shadow 0.4s ease; 
 }
 
 /**IMG ROW*/
@@ -383,15 +358,13 @@ a {
     max-width: 300px;
     width: 100%;
     border-radius: 15px;
-    height: auto;
-    /* box-shadow: 0 1px 5px var(--color-grey-5);  */
+    height: auto;    
 }
 figure{
     margin:0;
 }
 
 /** HEADER */
-
 
  header {
     top: 0;
@@ -405,26 +378,21 @@ figure{
     transform: translateZ(0); /* Fuerza capa GPU */    
     left: 0;
     z-index: 1000;
-
     background: var(--color-blue-black);
-    box-shadow: 0px 1px 3px  var(--color-grey-3);
-   
+    box-shadow: 0px 1px 3px  var(--color-grey-3);   
     color: var(--color-primary);
 }
-
 .logo {
     all:unset; 
     display: flex;
     justify-content: center;  
     cursor: pointer    
 }
-
 .logo img {
     width: 150px;
     height: auto;
     flex-shrink: 0;
 }
-
 .nav-menu {
     display: flex;
      gap: clamp(var(--space-xs), 2vw, var(--space-md))  ; 
@@ -432,16 +400,16 @@ figure{
     width: 100%;
     justify-content: end;
 }
-
 .nav-menu a {
     padding: var(--space-xxs) var(--space-xs);
     white-space: nowrap;
     transition: color 0.5s ease;
 }
-.nav-menu a:hover, .nav-menu a:focus{
+.nav-menu a:hover{
     color: #f8d06a;
     transform: scale(1.1);
 }
+.nav-menu a:focus{  color: #f8d06a; }
 
 .menu-toggle {
     display: none;
@@ -491,12 +459,7 @@ footer {
     padding: 15px;
     z-index: 1;
 }
-
-
-@media (min-width: 800px) and (max-width: 1199px) {}
-
-/** Pantallas entre 600px y 819px (TABLETS en horizontal o dispositivos medianos) */
-@media (max-width: 799px) {
+@media (max-width: 950px) {
  
     .nav-menu {
         /* display: none; */
@@ -511,7 +474,6 @@ footer {
         box-shadow: 0 2px 3px var(--color-shadow-middle-gray);        
         opacity: 0; 
         z-index: 9999;
-
     }
     .nav-menu.open {
         /* width: 100%; */
@@ -521,28 +483,26 @@ footer {
         transform: translateY(0);
         transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease; 
         padding-bottom: var(--space-xxs);
-    }
-    
+    }    
     .nav-menu a {
         width: 100%; 
         padding: var(--space-xxs) 0  ;    
         text-align: center;
-    }
-    
+    }    
     .menu-toggle {
         display: block;
     }
-   
+   .flex-row{
+    flex-direction: column;
+   }
 }
 
 
 
 @media (max-width: 400px) {
-    .header{
-     
+    .header{     
         position: fixed;
-        top: env(safe-area-inset-top);  
-        /* padding-top: constant(safe-area-inset-top); */
+        top: env(safe-area-inset-top);         
         padding-top: env(safe-area-inset-top);         
     }
     main{
@@ -558,8 +518,6 @@ footer {
     .flex{
         width: 100%;    
     }
-  
-
 }
 
  /* Elimina vibración por eventos touch */

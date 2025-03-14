@@ -3,7 +3,7 @@ import '../styles/games.css'
 export default {
   name: 'Games',
   template: /*html*/ `
-  
+
     <section class="header-games">
       <h1 class="p-align">Unreal engine, desarrollo y UX/UI para videojuegos</h1>
       <div class="container-header container-column-md flex">
@@ -134,21 +134,26 @@ export default {
     </section>
 
     <section class="black-background">
+      <h2>Análisis y diseño de videojuegos</h2>
       <div class="container-casos-games flex ">
-        <h2 class="p-align">Análisis y diseño de videojuegos</h2>
-        
-        <div class="dark-background container-column-md flex">
           <h3>
-            Análisis de Frostpunk
+           El esperado lanzamiento de Frostpunk 2
           </h3>
+
+        <div class="dark-background container-column-md flex">
+
           <div>
-            <p>
-              Para mí, Frostpunk 1 es más que un juego; es una obra de arte.
-            </p>
-            <p>Como amante de la estrategia, acumulé cientos de horas explorando sus mecánicas y conté los minutos hasta el lanzamiento de Frostpunk 2, una secuela muy esperada. Tras algunos retrasos llegó el gran día, y como en el primero, el impresionante diseño visual me fascinó, pero a medida que pasaban los minutos mi entusiasmo se iba desvaneciendo...y como a mí, a muchos de sus fans.
-            </p>
-          
+              <h4>Contexto</h4>
+              <p>
+                Para mí, Frostpunk 1 es más que un juego; es una obra de arte.
+              </p>
+              <p>Como amante de la estrategia, acumulé cientos de horas explorando las mecánicas y conté los minutos hasta el
+                lanzamiento de Frostpunk 2, una secuela muy esperada. Tras algunos retrasos llegó el gran día, y como en el primero,
+                el impresionante diseño visual me fascinó, pero a medida que pasaban los minutos mi entusiasmo se iba
+                desvaneciendo...y como a mí, a muchos de sus fans.
+              </p>
           </div>
+
           <div class="flex-row padding-Y-xs">
               <p class="p-short">Frostpunk 1 es un juego en un ambiente apocalíptico donde la estrategia gira entorno a los minutos, una estrategia difícil y milimétrica que da una sensación adictiva de acción constante controlada, esa acción-reacción necesaria en el cual habia consecuencias inmediatas visibles en tu comunidad, eso te adentraba en las sensaciones aportando realidad, resultando en un juego emocional y que deja una impresión duradera.</p>
               <div class="container-img-focus">
@@ -160,9 +165,10 @@ export default {
                 />
               </div>
           </div>
+
           <p>En contraste, Frostpunk 2 se siente más como un simulador político. Las facciones se convierten en el eje principal de la estrategia, diluyendo la urgencia y la conexión emocional del original. El enfoque se centra en equilibrar intereses y esperar largos periodos para que algo significativo ocurra, lo que rompe la dinámica de "acción-reacción" que tanto disfruté en el primer juego.</p>
+          
           <div class="flex-row padding-Y-xs">
-            
             <p class="p-short" >El resultado es un juego con un ritmo completamente distinto, que obliga al jugador a adelantar el tiempo, dejando atrás la intensidad estratégica que definió a su predecesor.<span> Si bien la dirección visual sigue siendo magnífica, el cambio de enfoque transforma radicalmente la experiencia, alejándola de lo que hizo al original tan memorable.</span></p>
              <div class="container-img-focus">
                 <img
@@ -173,32 +179,53 @@ export default {
                 />
               </div>
           </div>
-          <div>
-            <h4>Datos</h4>
-            <p> 4 meses después del lanzamiento de Frostpunk2, en Game Pass tiene  3.2*, y FrostPunk1 tiene un 4.3*. En Steam: Frostpunk2 tiene 15mil comentarios positivos y 5mil comentarios negativos, frente a 120mil comentarios positivos y 9mil negativos de FrostPunk1. En Steam Spy, Frostpunk1 sigue teniendo más jugadores diarios que FrostPunk2.</p>
-            <p> Comentar que 11bit Studios valora enormemente a sus usuarios, y algunos de los problemas detectados han sido rectificados posteriormente en sus actualizaciones.</p>
+          <div class="p-column-xs flex" >
+                <h4>Datos 4 meses después del lanzamiento</h4>
+                <p> En Gamepass Frostpunk2 tiene una puntuación de 3.2* vs FrostPunk1 con un 4.3*.</p>
+                <p>En Steam Frostpunk2 tiene 15mil comentarios positivos y 5mil comentarios negativos(25%), frente a 120mil comentarios positivos y
+                  9mil negativos(6.98%) de FrostPunk1.</p>
+                <p> En Steam Spy, Frostpunk1 sigue teniendo más jugadores diarios que FrostPunk2.</p>
+                <p> Comentar que 11bit Studios valora enormemente a sus usuarios, y algunos de los problemas detectados han sido
+                  rectificados posteriormente en sus actualizaciones.</p>
+                  <img
+                  src="/images/opinion-frost2.webp"
+                  loading="lazy"
+                  alt=" opinion Frostpunk2"
+                  width="300"
+                />
           </div>
+        </div>
+        <div class="dark-background container-column-md flex">
           <div>
-            <h4>Analisis jugabilidad y usabilidad del lanzamiento de Frostpunk 2</h4>
-            <p>
-              Para un jugador que conoce el juego anterior, la curva de aprendizaje es mucho más lenta de lo esperado. Aunque es comprensible dada la complejidad del juego, el diseño podría haber sido más amigable en la transición. Conceptos básicos que eran intuitivos en Frostpunk 1 como los recursos, los ciclos de día y noche con las operativas y estrategias específicas de cada turno o el uso estratégico de autómatas, han cambiado completamente o desaparecido.
-            </p>
-            <p>Quiero desarrollar el concepto de los autómatas porque esa sensación se refleja en el resto del juego a pesar de ser un detalle insignificante en la grandiosidad del juego: Un autómata en Frostpunk1 -y en la mayoría de videojuegos- es un robot que puede hacer trabajos de humano con ciertas características, es decir una herramienta que juega con unas normas propias y según la estrategia te puede interesar, o no. Qué es un autómata en Frostpunk2? Un autómata = 800 habitantes.</p>
-            <h5>Tiempos de Construcción y Recursos Desproporcionados:</h5>
-            <p>Una partida que comienza con 8000 habitantes, de los cuales pueden trabajar 4800 (adultos), temperatura exterior a menos -20º en un ambiente apocalíptico.</p>
-            <ul>
-              <li>
-                <p> Un distrito de viviendas básico requiere 200 trabajadores fijos y produce 20 viviendas.</p>
-              </li>
-              <li>
-                <p>Distrito de comidas requiere 600 trabajadores fijos y produce 50 alimentos.</p>
-              </li>
-              <li>
-                <p>Impacto: Con un tiempo de construcción medio de 7.2 meses -quitar hielo: 3,2 meses + construir distrito 4 meses-, aparece la necesidad constante de adelantar el tiempo, combinados con la falta de consecuencias inmediatas, rompen la inmersión. En un apocalipsis donde el tiempo es vital, pasar meses sin comida, calor o techo debería tener un impacto significativo en la población, pero en Frostpunk 2, estas decisiones parecen carecer de peso real, además de la sensación de desproporción en el % de empleados y recursos obtenidos.</p>
-              </li>
-            </ul>
-             <p>Una vez conoces el juego o desarrollas el arbol de ideas puedes tomar otras estrategias, expandir distritos o construir edificios, y aqui es donde entra el conflicto de diseño y experiencia de usuario.</p>
+                <h4>Analisis jugabilidad y usabilidad del lanzamiento de Frostpunk 2</h4>
+                <p>
+                  Para un jugador que conoce el juego anterior, la curva de aprendizaje es mucho más lenta de lo esperado. Aunque es
+                  comprensible dada la complejidad del juego, el diseño podría haber sido más amigable en la transición. Conceptos
+                  básicos que eran intuitivos en Frostpunk 1 como los recursos, los ciclos de día y noche con las operativas y
+                  estrategias específicas de cada turno o el uso estratégico de autómatas, han cambiado completamente o desaparecido.
+                </p>
+                <p>Quiero desarrollar el concepto de los autómatas porque esa sensación se refleja en el resto del juego a pesar de ser
+                  un detalle insignificante en la grandiosidad del juego: Un autómata en Frostpunk1 -y en la mayoría de videojuegos- es
+                  un robot que puede hacer trabajos de humano con ciertas características, es decir una herramienta que juega con unas
+                  normas propias y según la estrategia te puede interesar, o no. Qué es un autómata en Frostpunk2? Un autómata = 800
+                  habitantes.</p>
+                <h5>Tiempos de Construcción y Recursos Desproporcionados:</h5>
+                <p>Una partida que comienza con 8000 habitantes, de los cuales pueden trabajar 4800 (adultos), temperatura exterior a
+                  menos -20º en un ambiente apocalíptico.</p>
+                <ul>
+                    <li>
+                        <p> Un distrito de viviendas básico requiere 200 trabajadores fijos y produce 20 viviendas.</p>
+                    </li>
+                    <li>
+                        <p>Distrito de comidas requiere 600 trabajadores fijos y produce 50 alimentos.</p>
+                    </li>
+                    <li>
+                        <p>Impacto: Con un tiempo de construcción medio de 7.2 meses -quitar hielo: 3,2 meses + construir distrito 4 meses-, aparece la necesidad constante de adelantar el tiempo, combinados con la falta de consecuencias inmediatas, rompen la inmersión. En un apocalipsis donde el tiempo es vital, pasar meses sin comida, calor o techo debería tener un impacto significativo en la población, pero en Frostpunk 2, estas decisiones parecen carecer de peso real, además de la sensación de desproporción en el % de empleados y recursos obtenidos.</p>
+                    </li>
+                </ul>
+                <p>Una vez conoces el juego o desarrollas el arbol de ideas puedes tomar otras estrategias, expandir distritos o construir edificios, y aqui es donde entra el conflicto de diseño y experiencia de usuario.</p>
           </div>
+      
           <div class=" analisis-frost flex p-column-xs">
               <h4>Análisis UX/UI Frostpunk 2:</h4>
               <p>Como ya he comentado el diseño artístico y visual del juego es impresionante, las animaciones realmente aportan vida a los personajes, y la historia sigue siendo increíble, pero enfocándome en la experiencia de usuario y tras analizar tanto el juego, los datos y las opiniones puedo decir que hay mejoras o enfoques que se podrían implementar:</p>
@@ -225,27 +252,30 @@ export default {
                 </li>
               </ul>
           </div>
-              <h4>Rediseño sugerido "Arbol de ideas":</h4>
-              <div class="flex-row padding-Y-xs">
+
+          <h4>Rediseño sugerido "Arbol de ideas":</h4>
+
+          <div class="flex-row padding-Y-xs">
                 <div class="p-short p-column-xs flex">
-                  <p>Sugiero cambiar a nombres más intuitivos y jerárquicos para las ideas generales en la pantalla principal (ej. Invernaderos avanzados II) y mostrar el tipo de contrucción (edificio o distrito) incluyendo el área de constucción para facilitar la organización.</p>
-                  <p > Se incluye un icono que marca la idea que se encuentra en desarrollo.  Se agrupan visualmente las ideas compartidas entre facciones.</p>
-                </div>  
+                    <p>Sugiero cambiar a nombres más intuitivos y jerárquicos para las ideas generales en la pantalla principal (ej. Invernaderos avanzados II), y posteriormente incluir los nombres específicos según facción, además mostrar el tipo de contrucción (edificio o distrito) incluyendo el área de constucción correspondiente, en conjunto estos cambios facilitan la organización y el espacio visual de las opciones.</p>
+                    <p > Se incluye un icono que marca la idea que se encuentra en desarrollo.  Se agrupan visualmente las ideas compartidas entre facciones.</p>
+                </div>
                 <img class="container-img"src="/images/diseño-frost.webp" loading="lazy" alt="Rediseño arbol ideas Frostpunk2">
-              </div>
-              <p>
+          </div>
+          <p>
               En resumen, ambos son juegos increíbles, y valoro enormemente la intención del estudio que proporciona entornos de juego muy completos, pero como fan de Frostpunk1 entiendo las reacciones frente su secuela, y espero que lancen más DLC de lo que para mi siempre será una obra maestra.
-              </p>
+          </p>
           
 
         </div>
 
-      
-
-        <div class="dark-background container-column-md flex">
-          <h3>
+      </div>
+      <div class="container-casos-games flex ">
+           <h3>
             Cities Skylines: Secuela muy esperada que decepcionó a sus fans.
           </h3>
+        <div class="dark-background container-column-md flex">
+         
           <div>
             <p>
               City Skylines 1, lanzado en 2015 es un juego de simulación de
@@ -437,7 +467,7 @@ export default {
                                         <source src="/images/bank.mp4" type="video/mp4" >
                                 </video>-->
           <div class="p-column-xs flex padding-Y-xs">
-            <h4>Rediseñando la Experiencia: Propuesta UX/UI y jugabilidad para Cities: Skylines</h4>
+            <h4>Rediseñando la Experiencia: Propuesta UX/UI y jugabilidad para Cities: Skylines 2</h4>
             <p>Tras analizar los puntos débiles y aciertos propongo una versión que corrige los errores y que implementa nuevas funcionalidades para crear una experiencia de usuario más fluida. El objetivo de este rediseño es ofrecer al jugador un mayor control estratégico, mejorar la claridad de la información y reducir la sobrecarga cognitiva para garantizar una interacción más eficiente y agradable.</p>
             
             <div class="flex-row">

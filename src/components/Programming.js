@@ -52,7 +52,7 @@ export default {
                         <div class="p-column-sm flex">
                             <h2>Mi primer proyecto personal</h2>
                             <p >Mi primer proyecto web surgió de una experiencia personal:<span> las acogidas temporales de animales en situación de vulnerabilidad.</span> A lo largo de los años, he dado hogar a perros con historias complejas, lo que me enseñó la importancia de un sistema eficiente para gestionar acogidas y adopciones</p>
-                            <p >Este proyecto en desarrollo tiene como objetivo optimizar y agilizar el proceso de acogida y adopción de animales que requieren una segunda oportunidad. La plataforma facilita la conexión entre rescatistas, familias de acogida y adoptantes mediante una experiencia de usuario intuitiva y accesible.</p>
+                            <p >Este proyecto en desarrollo tiene como objetivo optimizar y agilizar el proceso de acogida y adopción de animales. La plataforma facilita la conexión entre rescatistas, familias de acogida y adoptantes, ayudando a evitar estafas en propias de redes sociales, mediante verificación de perfiles y una experiencia de usuario intuitiva y accesible.</p>
                             <h3> Contexto y Necesidad </h3>
                             <p>En el mundo del rescate animal, muchas organizaciones y particulares enfrentan dificultades para gestionar acogidas temporales, especialmente en casos de animales con necesidades especiales. He vivido de primera mano múltiples situaciones con final feliz como la de:</p>
                             <ul>
