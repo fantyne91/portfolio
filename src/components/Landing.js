@@ -4,6 +4,7 @@ import '../styles/forms.css'
 import { hideLoadingScreen } from '../utils/hideLoadingScreen.js'
 
 
+
 export default {
   name: 'Landing',
 
@@ -118,10 +119,10 @@ export default {
         <div class="contacta container-column-sm flex align-center" role="region" aria-label="Sección de contacto" itemscope
             itemtype="https://schema.org/ContactPoint">
             <p role="alert">¡Cada proyecto es único!</p>
-            <router-link to="/contacta" class="big-btn" aria-label="Contactar para servicios de desarrollo web y diseño"
+            <button class="big-btn contact-btn" aria-label="Contactar para servicios de desarrollo web y diseño"
                 itemprop="url" >
                 Contactar Ahora
-            </router-link>
+            </button>
             <span hidden itemprop="email">contacto@tudominio.com</span>
             <meta itemprop="contactType" content="technical support">
         </div>
@@ -281,15 +282,17 @@ export default {
     return {
       imageLoaded: false,
       cachedImage: '/images/portfolio-img.webp?v=1',
+     
     }
   },
   methods: {
+    /*carga img landing*/
     onImageLoad() {
       console.log('Imagen cargada')
       this.imageLoaded = true
       hideLoadingScreen()
     },
-
+    /*efecto img animation */
     moverImagen(event) {
       if (this.$refs.imgHover) {
         this.$refs.imgHover.style.left = `${event.pageX + 10}px`
@@ -298,7 +301,7 @@ export default {
     },
     mostrarImagen(event) {
       if (this.$refs.imgHover) {
-        console.log('Mostrar')
+       
         const nuevaImagen = event.target.getAttribute('data-img')
         this.$refs.imgHover.src = nuevaImagen
         this.$refs.imgHover.style.display = 'block'
@@ -313,7 +316,9 @@ export default {
         this.$refs.imgHover.style.display = 'none'
       }
     },
+ 
   },
+
   mounted() {
     const img = new Image()
     img.src = this.cachedImage

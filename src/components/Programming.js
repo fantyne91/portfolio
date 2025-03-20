@@ -40,7 +40,7 @@ export default {
                                 <li><h3>Mantenimiento y soporte:</h3> <p> Actualizaciones, correcciones y mejoras continuas para garantizar que tu web funcione sin problemas.</p></li>
                             </ul>
                             
-                                <router-link to="/contacta" class="big-btn1" target= "_blank" rel="noopener noreferrer" aria-label="Solicitar servicios y contactar">CONTACTAR</router-link>
+                                <button class="big-btn1 contact-btn"  aria-label="Solicitar servicios y contactar">CONTACTAR</button>
                             
             </section>
 

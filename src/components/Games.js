@@ -142,13 +142,10 @@ export default {
           </p>
         </li>
       </ul>
-      <router-link
-        to="/contacta"
-        class="big-btn1"
-        target="_blank"
-        rel="noopener noreferrer"
+      <button        
+        class="big-btn1 contact-btn" 
         aria-label="Solicitar servicios y contactar"
-        >CONTACTAR</router-link
+        >CONTACTAR</button
       >
     </section>
 

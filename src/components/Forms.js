@@ -1,5 +1,5 @@
 // Contacta.js
-import { ref, computed } from 'vue'
+import { ref, onMounted, computed } from 'vue'
 
 export default {
   name: 'Contacta',
@@ -12,11 +12,15 @@ export default {
       interes: '',
       tipoProyecto: '',
       tamanoProyecto: '',
-
       tipoServicio: '',
       mensaje: '',
       tamanoJuego: '',
       help: false,
+      fromPage: '',
+    })
+
+    onMounted(() => {
+      form.value.fromPage = localStorage.getItem('fromPage') || 'Desconocido'
     })
     const currentStep = ref(1) // Estado para controlar el paso actual
 
@@ -51,7 +55,7 @@ export default {
           }
         case 'games':
           return {
-            tipoServicio: [
+            tipoProyecto: [
               'Documentación, spitch, GDD',
               'Diseño HUD (prototipado Figma)',
               'Creación HUD Unreal',
@@ -60,18 +64,22 @@ export default {
           }
         case 'unreal':
           return {
-            tipoServicio: ['Cinemáticas corporativas', 'Videojuegos'],
+            tipoProyecto: ['Cinemáticas corporativas', 'Videojuegos'],
           }
         default:
           return {}
       }
     })
+    // const submitB = () => {
+    //   console.log(form.value) 
+    // }
 
     return {
       form,
       currentStep,
       nextStep,
       opcionesDinamicas,
+      // submitB,
       // enviarFormulario,
     }
   },
@@ -126,14 +134,15 @@ export default {
         
       </form>
 
-      <!-- Formulario paso 2 (Me interesa, dinámico, mensaje) -->
+      <!-- Formulario paso 2 (Me interesa, dinámico, mensaje)    -->
       
-      <form class="second-part p-column-sm flex align-center" v-if="currentStep === 2" action="https://formsubmit.co/a551f70ca89a851c4a5030450f868f87" method="POST">
+      <form class="second-part p-column-sm flex align-center" v-if="currentStep === 2"  action="https://formsubmit.co/a551f70ca89a851c4a5030450f868f87" method="POST">
      
           <!-- Campos ocultos del primer paso -->
           <input type="hidden" name="nombre" :value="form.nombre">
           <input type="hidden" name="email" :value="form.email">
           <input type="hidden" name="telefono" :value="form.telefono">
+          <input type="hidden" v-model="form.fromPage" />
 
           <div class="full-width align-center flex">
             <button type="button" class="back-btn" @click="currentStep--">
@@ -167,18 +176,6 @@ export default {
                   </select>
                 </div>
 
-                <div v-if="form.interes === 'games' && opcionesDinamicas.tipoServicio" class="form-input">
-                  <label for="tipoServicio">Tipo de servicio:</label>
-                  <select id="tipoServicio" v-model="form.tipoServicio">
-                    <option v-for="servicio in opcionesDinamicas.tipoServicio" :key="servicio" :value="servicio">{{ servicio }}</option>
-                  </select>
-                </div>
-                <div v-if="form.interes === 'unreal' && opcionesDinamicas.tipoServicio" class="form-input">
-                  <label for="tipoServicio">Tipo de servicio:</label>
-                  <select id="tipoServicio" v-model="form.tipoServicio">
-                    <option v-for="servicio in opcionesDinamicas.tipoServicio" :key="servicio" :value="servicio">{{ servicio }}</option>
-                  </select>
-                </div>
             </div>
           
             <div>

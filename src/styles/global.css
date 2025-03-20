@@ -258,7 +258,7 @@ a, button {
     bottom:30px;
     right: 20px;
     padding: 8px 16px;
-    opacity: 0;
+   
  }
  .btn:hover{
     transform:scale(1.2);

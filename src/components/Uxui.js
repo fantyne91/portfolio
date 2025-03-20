@@ -128,8 +128,8 @@ export default {
                 </ul>
                 <h4> Optimiza tu presencia online con soluciones personalizadas. </h4>
 
-                <router-link to="/contacta" class="big-btn2" target="_blank" aria-label="Solicitar servicios y contactar"
-                    rel="noopener noreferrer">CONTACTAR</router-link>
+                <button class="big-btn2 contact-btn" aria-label="Solicitar servicios y contactar"
+                    >CONTACTAR</button>
             </div>
         </section>
 
@@ -333,5 +333,4 @@ export default {
                 </div>
         </section>
     `,
-    
 }
