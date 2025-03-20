@@ -5,33 +5,51 @@ export default {
   template: /*html*/ `
 
     <section class="header-games">
-      <h1 class="p-align">Unreal engine, desarrollo y UX/UI para videojuegos</h1>
-      <div class="container-header container-column-md flex">
+      <h1 class="p-align">Unreal engine y UX/UI <br>para videojuegos</h1>
+      <div class="container-header container-column-md flex align-center">
 
         <h2>El UX/UI en videojuegos es el vestíbulo del jugador.</h2>
-        <div class="p-column-sm flex padding-sm">
-          <!--<h3>Por qué es importante?</h3>-->
-          <p class= "p-align">
-            Mostrar la información correcta en el momento adecuado en
-            videojuegos es vital, impacta directamente en la experiencia
-            del jugador y su capacidad para tomar decisiones de manera efectiva.
+        <div class="p-column-sm flex p-align padding-sm">
+          <p class="p-games">
+            Los videojuegos no solo divierten, también estimulan la memoria, la creatividad y la toma de decisiones.
+          </p>
+          <p>
+            La neurociencia confirma su impacto positivo en todas las edades: desde mejorar el aprendizaje en niños hasta
+            retrasar el deterioro cognitivo en mayores. Además, son clave en accesibilidad, con experiencias adaptadas para personas con necesidades especiales. Más que ocio,
+            los videojuegos son una herramienta para el desarrollo y la inclusión.
           </p>
         </div>
-
+          <iframe  height="315" 
+          src="https://www.youtube.com/embed/ZCwlZc-WG48" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
         <div class="flex-row padding-Y-xs">
           <img
             class="img-pc"
             src="/images/control-game.webp"
             alt="img control consola"
           />
-          <p class=" p-games p-short p-align">
+          <div class="p-short flex p-column-xs p-align">
+          <p class=" p-games">
             La neurociencia es fundamental en este contexto, ya que proporciona
             una comprensión más profunda de cómo los jugadores procesan la
             información, toman decisiones y experimentan emociones durante el
             juego.
           </p>
+           <p>
+            Mostrar la información correcta en el momento adecuado en
+            videojuegos es vital, impacta directamente en la experiencia
+            del jugador y su capacidad para tomar decisiones de manera efectiva.
+          </p>
+          </div>
         </div>
-
+      
+      </div>
+    </section>
+    <section class="unreal-games">
         <div class="p-column-sm flex padding-sm">
           <h2>Que puedes hacer con Unreal Engine?</h2>
           <ul>
@@ -52,11 +70,12 @@ export default {
             </li>
           </ul>
         </div>
-      </div>
-      <video class="cinematica" loading="lazy" controls muted playsinline itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
-                        <source src="/images/short-cinematik.mp4" type="video/mp4">
-                        <meta itemprop="name" content="Diseño UX/UI tienda joyeria" />
-                        <meta itemprop="description" content="Video interactivo de un diseño UX/UI para Photofolio." />
+     
+      <video class="cinematica" loading="lazy" controls muted playsinline itemprop="video" itemscope
+        itemtype="https://schema.org/VideoObject">
+        <source src="/images/short-cinematik.mp4" type="video/mp4">
+        <meta itemprop="name" content="Diseño UX/UI tienda joyeria" />
+        <meta itemprop="description" content="Video interactivo de un diseño UX/UI para Photofolio." />
       </video>
     </section>
     <section class="services-games">
@@ -135,27 +154,27 @@ export default {
 
     <section class="black-background">
       <h2>Análisis y diseño de videojuegos</h2>
-      <div class="container-casos-games flex ">
+      <div class="container-casos-games flex">
           <h3>
            El esperado lanzamiento de Frostpunk 2
           </h3>
 
-        <div class="dark-background container-column-md flex">
+        <div class="dark-background container-column-md flex ">
 
           <div>
               <h4>Contexto</h4>
               <p>
-                Para mí, Frostpunk 1 es más que un juego; es una obra de arte.
+                Para mí, Frostpunk 1 no es solo un juego, es una obra de arte.
               </p>
               <p>Como amante de la estrategia, acumulé cientos de horas explorando las mecánicas y conté los minutos hasta el
-                lanzamiento de Frostpunk 2, una secuela muy esperada. Tras algunos retrasos llegó el gran día, y como en el primero,
+                lanzamiento de Frostpunk 2. Tras algunos retrasos llegó el gran día, y como en el primero
                 el impresionante diseño visual me fascinó, pero a medida que pasaban los minutos mi entusiasmo se iba
                 desvaneciendo...y como a mí, a muchos de sus fans.
               </p>
           </div>
 
           <div class="flex-row padding-Y-xs">
-              <p class="p-short">Frostpunk 1 es un juego en un ambiente apocalíptico donde la estrategia gira entorno a los minutos, una estrategia difícil y milimétrica que da una sensación adictiva de acción constante controlada, esa acción-reacción necesaria en el cual habia consecuencias inmediatas visibles en tu comunidad, eso te adentraba en las sensaciones aportando realidad, resultando en un juego emocional y que deja una impresión duradera.</p>
+              <p class="p-short">Frostpunk 1 es un juego en un ambiente apocalíptico donde la estrategia gira entorno a los minutos, una estrategia milimétrica que da una sensación adictiva de acción constante controlada, esa acción-reacción necesaria en el cual habia consecuencias inmediatas visibles en tu comunidad aportando realidad, y resultando en un juego emocional.</p>
               <div class="container-img-focus">
                 <img
                   class="img-focus"
@@ -187,17 +206,17 @@ export default {
                 <p> En Steam Spy, Frostpunk1 sigue teniendo más jugadores diarios que FrostPunk2.</p>
                 <p> Comentar que 11bit Studios valora enormemente a sus usuarios, y algunos de los problemas detectados han sido
                   rectificados posteriormente en sus actualizaciones.</p>
-                  <img
+          </div>
+             <img 
                   src="/images/opinion-frost2.webp"
                   loading="lazy"
                   alt=" opinion Frostpunk2"
                   width="300"
-                />
-          </div>
-        </div>
-        <div class="dark-background container-column-md flex">
+             />
+        
+        
           <div>
-                <h4>Analisis jugabilidad y usabilidad del lanzamiento de Frostpunk 2</h4>
+                <h4>Analisis jugabilidad y usabilidad de Frostpunk 2</h4>
                 <p>
                   Para un jugador que conoce el juego anterior, la curva de aprendizaje es mucho más lenta de lo esperado. Aunque es
                   comprensible dada la complejidad del juego, el diseño podría haber sido más amigable en la transición. Conceptos
@@ -232,18 +251,18 @@ export default {
               <ul class="padding-Y-xs">
                 <li>
                   <p class="text-red padding-xs">Problema: Confusión visual en el sistema de distritos. La falta de tamaños fijos o organización clara en los distritos dificulta la planificación y expansión, obligando al jugador a seleccionar edificio por edificio para verificar su nivel de expansión, o buscar edificios vitales como hospitales, lo que ralentiza la toma de decisiones.</p>
-                  <p class="text-green padding-xs">Solución UX/UI: Mejorar la visibilidad de los distritos, estableciendo tamaños fijos o formas claras que permitan al jugador identificar rápidamente los niveles de expansión y disposición de los edificios sin necesidad de inspeccionarlos individualmente.</p>
+                  <p class="text-green padding-xs">Solución: Mejorar la visibilidad de los distritos, estableciendo tamaños fijos o formas claras que permitan al jugador identificar rápidamente los niveles de expansión y disposición de los edificios sin necesidad de inspeccionarlos individualmente.</p>
                 </li>
                 <li>
                   <p class="text-red padding-xs">Problema: Al hacer clic en un edificio, la cámara se desplaza y acerca a cámara lenta hacia él, provocando tiempos de espera y rompiendo la fluidez de la interacción al gestionar múltiples edificios.                  </p>
-                  <p class="text-green padding-xs">Solución UX/UI: Resaltar  el edificio seleccionado sin moverse de la vista actual, mostrando una miniatura del edificio seleccionado en la interfaz junto a la información. </p>
+                  <p class="text-green padding-xs">Solución: Resaltar  el edificio seleccionado sin moverse de la vista actual, mostrando una miniatura del edificio seleccionado en la interfaz junto a la información. </p>
                 </li>
                 <li>
                   <p class="text-red padding-xs">Problema: Los íconos relacionados con los enfermos y otros estados críticos (hambre, criminalidad) solo muestra información imprecisa como "leve" o "moderada", lo que genera una sensación de falta de detalle y realismo.</p>
-                  <p class="text-green padding-xs">Solución  UX/UI: Evitar términos genéricos como "leve" o "moderada", ofreciendo información más concreta (por ejemplo, porcentaje de personas afectadas o número exacto de casos) para mejorar la interacción y la toma de decisiones del jugador</p>
+                  <p class="text-green padding-xs">Solución: Evitar términos genéricos como "leve" o "moderada", ofreciendo información más concreta (por ejemplo, porcentaje de personas afectadas o número exacto de casos) para difuminar la sensación  para mejorar la interacción y la toma de decisiones del jugador.</p>
                 </li>
                 <li><p class="text-red padding-xs">Problema: El árbol de desarrollo es difícil de entender, algunos conceptos no se encuentran donde se esperan, no muestran un camino claro llevándote cometer errores, y no se muestra claramente qué elemento está en desarrollo.</p>
-                    <p class="text-green padding-xs">Solución UX/UI: Usar un color predominante para destacar claramente los elementos que están en desarrollo. Agrupaciones que permitan al jugador ver las tecnologías o mejoras relevantes según categorías y recursos, y ajustar con mejoras más proporcionales según el tipo de recurso.                </p>
+                    <p class="text-green padding-xs">Solución: Usar un color predominante para destacar claramente los elementos que están en desarrollo. Agrupaciones que permitan al jugador ver las tecnologías o mejoras relevantes según categorías y recursos, y ajustar con mejoras más proporcionales según el tipo de recurso.                </p>
                 </li>
                 <li class="text-red p-column-xs flex padding-xs align-left"><p> Problemas adicionales: </p>
                     <p>- Actualmente al expandir un edificio industrial, el producto que se está produciendo cambia automáticamente al valor por defecto, perdiendo tiempo de juego vital hasta que te das cuenta de ello.</p>
@@ -253,7 +272,7 @@ export default {
               </ul>
           </div>
 
-          <h4>Rediseño sugerido "Arbol de ideas":</h4>
+          <h4>Rediseño sugerido "Arbol de ideas"</h4>
 
           <div class="flex-row padding-Y-xs">
                 <div class="p-short p-column-xs flex">
@@ -378,12 +397,10 @@ export default {
               distintas tácticas sin necesidad de comprar expansiones.
             </p>
           </div>
-
-          <div class="flex-row padding-Y-xs">
-            <div class="p-column-sm flex align-left">
-              <h4>
+          <div>
+            <h4>
                 Análisis Cities Skylines 2 - Mejoras Visuales y Retos en
-                Usabilidad 
+                Usabilidad
               </h4>
               <p>
                 Analizando la secuela un año después de su lanzamiento, he
@@ -391,9 +408,13 @@ export default {
                 o construcción y sin ambargo ya hay DLC de pago.
               
               </p>
+          </div>
+          <div class="flex-row padding-Y-xs">
+            <div class="p-column-sm flex align-left">
+            
               <div>
                 <h5>HUD y UI:</h5>
-                <ul>
+                <ul class="p-med">
                   <li><p>
                     Aunque el HUD y la interfaz general han mejorado
                     visualmente, la usabilidad sigue siendo una barrera
@@ -422,8 +443,8 @@ export default {
             />
           </div>
 
-          <div class="flex-row">
-            <div class="p-column-xs flex">
+          <div class="flex-row ">
+            <div class="p-med flex p-column-xs">
               <h5>La importancia del propósito y del modelo Kano:</h5>
               <p>
                 Otra decisión cuestionable es la eliminación de algunas métricas
@@ -466,7 +487,7 @@ export default {
           <!--<video class= "video-bank"  autoplay loop muted playsinline>
                                         <source src="/images/bank.mp4" type="video/mp4" >
                                 </video>-->
-          <div class="p-column-xs flex padding-Y-xs">
+          <div class="p-column-xs flex padding-Y-xs align-center">
             <h4>Rediseñando la Experiencia: Propuesta UX/UI y jugabilidad para Cities: Skylines 2</h4>
             <p>Tras analizar los puntos débiles y aciertos propongo una versión que corrige los errores y que implementa nuevas funcionalidades para crear una experiencia de usuario más fluida. El objetivo de este rediseño es ofrecer al jugador un mayor control estratégico, mejorar la claridad de la información y reducir la sobrecarga cognitiva para garantizar una interacción más eficiente y agradable.</p>
             

@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 // Importa  vistas
 import Landing from '../components/Landing.js'
-import UXUI from '../components/Uxui.js'
+import Uxui from '../components/Uxui.js'
  import Programming from '../components/Programming.js'
  import SobreMi from '../components/SobreMi.js'
  import Games from '../components/Games.js'
@@ -18,8 +18,8 @@ const routes = [
   },
   {
     path: '/uxui',
-    name: 'UXUI',
-    component: UXUI,
+    name: 'Uxui',
+    component: Uxui,
   },
   {
     path: '/programming',

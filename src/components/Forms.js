@@ -1,5 +1,5 @@
 // Contacta.js
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 
 export default {
   name: 'Contacta',
@@ -25,11 +25,53 @@ export default {
         currentStep.value = 2 // Avanza al segundo paso
       }
     }
+    const opcionesDinamicas = computed(() => {
+      switch (form.value.interes) {
+        case 'uxui':
+          return {
+            tipoProyecto: ['E-commerce', 'Blog', 'Otros'],
+            tamanoProyecto: [
+              '10 pantallas o menos',
+              '20 pantallas o menos',
+              '+20 pantallas',
+            ],
+          }
+        case 'programming':
+          return {
+            tipoProyecto: [
+              'Interfaz o Front-end',
+              'Lado servidor o Back-end',
+              'Front y Back-end',
+            ],
+            tamanoProyecto: [
+              '10 pantallas o menos',
+              '20 pantallas o menos',
+              '+20 pantallas',
+            ],
+          }
+        case 'games':
+          return {
+            tipoServicio: [
+              'Documentación, spitch, GDD',
+              'Diseño HUD (prototipado Figma)',
+              'Creación HUD Unreal',
+              'Análisis y test jugabilidad + UX',
+            ],
+          }
+        case 'unreal':
+          return {
+            tipoServicio: ['Cinemáticas corporativas', 'Videojuegos'],
+          }
+        default:
+          return {}
+      }
+    })
 
     return {
       form,
       currentStep,
       nextStep,
+      opcionesDinamicas,
       // enviarFormulario,
     }
   },
@@ -40,9 +82,9 @@ export default {
       <h1 class="visually-hidden ">Contacta</h1>
       
       <!-- Formulario paso 1 (Nombre, Email, Teléfono) -->
-      <form class="p-column-xs flex" @submit.prevent="nextStep" v-if="currentStep === 1"  >
+      <form class="p-column-xs flex align-center" @submit.prevent="nextStep" v-if="currentStep === 1"  >
       
-      <h2>Datos personales</h2>
+      <h2 class="padding-xs p-align">Datos personales</h2>
         <div class="form-input">
           <input
             type="text"
@@ -74,90 +116,69 @@ export default {
             id="phone"
             name="phone"
             placeholder=" "
-            pattern="^\\+?[0-9]{7,}$" 
+            pattern="^\\+?[0-9]{7,}$"
             autocomplete="on"
             v-model="form.telefono">
           <label class="accesible" for="phone" id="phone-label">Teléfono</label>
         </div>
         
-          <button type="submit">Siguiente paso</button>
+          <button type="submit" >Siguiente paso</button>
         
       </form>
 
       <!-- Formulario paso 2 (Me interesa, dinámico, mensaje) -->
       
-      <form class="second-part p-column-sm flex" v-if="currentStep === 2" action="https://formsubmit.co/a551f70ca89a851c4a5030450f868f87" method="POST">
+      <form class="second-part p-column-sm flex align-center" v-if="currentStep === 2" action="https://formsubmit.co/a551f70ca89a851c4a5030450f868f87" method="POST">
      
           <!-- Campos ocultos del primer paso -->
           <input type="hidden" name="nombre" :value="form.nombre">
           <input type="hidden" name="email" :value="form.email">
           <input type="hidden" name="telefono" :value="form.telefono">
 
-          <button type="button" class="back-btn" @click="currentStep--">
-            < Atrás
-          </button>
-          <h2> Sobre tu proyecto</h2>
+          <div class="full-width align-center flex">
+            <button type="button" class="back-btn" @click="currentStep--">
+              ⤺ Atrás
+            </button>
+            <h2 class="p-align"> Sobre tu proyecto</h2>
+          </div>
+          
             <div class="form-input ">
-              <label  for="option" required>Busco: </label>
+              <label  for="option-interes" required>Busco: </label>
               <select v-model="form.interes" id="option-interes" name="option-interes">
+                <option value="">Seleccionar</option>
                 <option value="uxui">Diseñar una Web</option>
                 <option value="programming">Programar una Web</option>
                 <option value="games">Diseñar Videojuegos</option>
                 <option value="unreal">Unreal Engine</option>
               </select>
             </div>
-
-            <div class="div-specific-interest p-column-sm flex padding-xs" v-if="form.interes === 'uxui'">
-            <div class="form-input ">
-                <label for="tipoProyecto">Tipo de Proyecto: </label>
-                <select v-model="form.tipoProyecto" id="option-proyecto" name="option-proyecto">
-                  <option value="ecommerce">E-commerce</option>
-                  <option value="blog">Blog</option>
-                  <option value="otros">Otros</option>
-                </select>
-              </div>
-              <div class="form-input">
-                <label for="tamanoProyecto">Tamaño del Proyecto: </label>
-                <select v-model="form.tamanoProyecto" id="option-tamano" name="option-tamano">
-                  <option value="-10">10 pantallas o menos</option>
-                  <option value="-20">20 pantallas o menos</option>
-                  <option value="+20">+20 pantallas</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="div-specific-interest p-column-sm flex padding-xs"  v-if="form.interes === 'programming'">
-            <div class="form-input">
-                <label for="tipoProyecto">Tipo de Proyecto: </label>
-                <select v-model="form.tipoProyecto" id="option-proyecto" name="option-proyecto">
-                  <option value="front-end">Interfaz o Front-end</option>
-                  <option value="back-end">Bases de datos o Back-end</option>
-                  <option value="full"> Ambas </option>
-                </select>
-              </div>
-              <div class="form-input">
-                <label for="tamanoProyecto">Tamaño del Proyecto: </label>
-                <select v-model="form.tamanoProyecto" id="option-tamano" name="option-tamano">
-                  <option value="-10">10 pantallas o menos</option>
-                  <option value="-20">20 pantallas o menos</option>
-                  <option value="+20">+20 pantallas</option>
-                </select>
-              </div>
-            </div>
-            
-
-            <div class="div-specific-interest p-column-sm flex padding-xs"  v-if="form.interes === 'games'">
-              
-                <div class="form-input">
-                  <label for="tipoServicio">Tipo de servicio: </label>
-                  <select v-model="form.tipoServicio" id="tipoServicio" name="tipoServicio">
-                    <option value="-10">Documentación, spitch, GDD</option>
-                    <option value="-20">Diseño HUD (prototipado)</option>
-                    <option value="+20">Creación HUD Unreal</option>
-                    <option value="+20">Análisis y test jugabilidad + UX</option>
+            <div v-if="form.interes" class="specific-interest p-column-xs flex padding-xs">
+                <div v-if="form.interes && opcionesDinamicas.tipoProyecto" class="form-input">
+                  <label for="tipoProyecto">Tipo de Proyecto:</label>
+                  <select id="tipoProyecto" v-model="form.tipoProyecto">
+                    <option v-for="tipo in opcionesDinamicas.tipoProyecto" :key="tipo" :value="tipo">{{ tipo }}</option>
                   </select>
-              </div>
-              
+                </div>
+
+                <div v-if="form.interes && opcionesDinamicas.tamanoProyecto" class="form-input">
+                  <label for="tamanoProyecto">Tamaño del Proyecto:</label>
+                  <select id="tamanoProyecto" v-model="form.tamanoProyecto">
+                    <option v-for="tamano in opcionesDinamicas.tamanoProyecto" :key="tamano" :value="tamano">{{ tamano }}</option>
+                  </select>
+                </div>
+
+                <div v-if="form.interes === 'games' && opcionesDinamicas.tipoServicio" class="form-input">
+                  <label for="tipoServicio">Tipo de servicio:</label>
+                  <select id="tipoServicio" v-model="form.tipoServicio">
+                    <option v-for="servicio in opcionesDinamicas.tipoServicio" :key="servicio" :value="servicio">{{ servicio }}</option>
+                  </select>
+                </div>
+                <div v-if="form.interes === 'unreal' && opcionesDinamicas.tipoServicio" class="form-input">
+                  <label for="tipoServicio">Tipo de servicio:</label>
+                  <select id="tipoServicio" v-model="form.tipoServicio">
+                    <option v-for="servicio in opcionesDinamicas.tipoServicio" :key="servicio" :value="servicio">{{ servicio }}</option>
+                  </select>
+                </div>
             </div>
           
             <div>
@@ -173,12 +194,12 @@ export default {
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_next" value="http://localhost:3000/thanks">
             
-            <div class="container-btn">
-              <button type="submit">Enviar</button>
-            </div>
+            
+              <button type="submit" class="submit-btn">Enviar</button>
+            
       </form>
        <div class="whatsapp-link">
-      <p>Si prefieres contacta por <a href="https://wa.me/34671303377?text=Hola! Quiero información sobre: " target="_blank">WhatsApp</a></p>
+      <p>Si lo prefieres contacta por <a href="https://wa.me/34671303377?text=Hola! Quiero información sobre: " target="_blank">WhatsApp</a></p>
       
     </div>
     </div>

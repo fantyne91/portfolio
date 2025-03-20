@@ -9,19 +9,38 @@ export default {
                 <div class="flex-row padding-xs">
                         <div class="p-column-sm flex p-align p-med ">
                             <h2>La importancia del UX</h2>
-                            <p>La experiencia del usuario es un factor decisivo que puede determinar el éxito o el fracaso de una tienda online, cuando no se cumple con las expectativas del usuario, el impacto se traduce directamente en la pérdida de ventas y en la deterioración de la reputación de la marca.</p>
+                            <p>La experiencia del usuario es un factor decisivo que puede determinar el éxito o el fracaso de una tienda online o producto, cuando no se cumple con las expectativas del usuario, el impacto se traduce directamente en la pérdida de ventas y en la deterioración de la reputación de la marca.</p>
                             <p> Un buen diseño tiene un impacto directo en el crecimiento de las ventas y la eficiencia operativa, incrementando sus ingresos al mismo tiempo que reduce costes y necesidad de personal.</p>
                             <h3>El equilibrio perfecto entre eficiencia y escalabilidad</h3>
                         </div>
-                        <img class="img-pc" src="/images/Designers.webp" alt="foto-pc-slogan" >
+                        <img class="img-pc" src="/images/Designers.webp" alt="ux-slogan" >
                 </div>
         </section>
-
+          <section class="definicion-ux">
+                <h2 class="p-align"> Pero qué es el UX/UI?</h2>
+                <div class="flex-row padding-Y-xs">
+                        <div class="p-column-sm flex p-med">
+                            <p>El UX/UI está presente en todos los aspectos de nuestra vida, va más allá de lo visual y se enfoca en cómo interactuamos con productos y servicios, asegurando que sean intuitivos, accesibles y satisfactorios.</p>
+                            <p>Un ejemplo UX sería Netflix, con funciones como "Saltar intro", las recomendaciones basadas en preferencias o la posibilidad de retomar una serie donde la dejaste. Todo está diseñado para minimizar la fricción y ahorrar tiempo o pasos innecesarios. En la imagen se puede comparar su evolución -2002 y 2010- de videoclub, a la plataforma streaming que conocemos hoy. </p>
+                            
+                        </div>
+                       <div class="container-img-focus">
+                            <img class="netflix img-focus" src="/images/netflix.webp" width="300" alt="imagen Netflix 2002">
+                        </div>
+                </div>
+                <div class="flex-row ">
+                        <img class="container-img" src="/images/grafico-ux.webp"  alt="meme magic mouse" >
+                        <div class="p-column-sm flex p-med">
+                            <p> Pero también lo podemos encontrar en una lata de refresco, haciendo que ganemos espacio en la nevera con su formato fit, en un mando de videojuegos, haciendo que el agarre sea cómodo y natural, o en una maleta de viaje con ruedas 360° y mango retráctil que mejora la comodidad al moverse sin esfuerzo.</p>
+                            <p> Por otro lado, el UI se encarga de los elementos con los que interactuamos directamente. En un sitio web o una app, el UI se ve en los botones, menús y pantallas que usamos para navegar, asegurándose de que todo esté donde lo esperamos. Pero tambíen lo encotramos en un electrodoméstico o un dispositivo electrónico.</p>
+                        </div>
+                </div>
+                <h3 class="p-align">Un buen UX/UI puede diferenciar a una marca de sus competidores, impulsando su crecimiento y éxito en un mercado cada vez más competitivo.</h3>
+        </section>
         <section class="benefits">
-
                 <div class="container-motivos-ux flex-row padding-xs">
                 
-                    <div class="container-column-md flex">
+                    <div class="container-column-md flex align-center">
                         <h2>¿Cómo ayuda el UX a crecer las ventas? </h2>
                         <ul>
                             <li>
@@ -36,7 +55,7 @@ export default {
                         </ul>
                     </div>
 
-                    <div class="container-column-md flex">
+                    <div class="container-column-md flex align-center">
                         <h2>Reducción de costes a través de UX/UI </h2>
                         <ul>
                             <li>
@@ -48,13 +67,33 @@ export default {
                             <li>
                                 <h3>Diseño eficiente 🢖</h3><p>Un diseño eficiente agiliza procesos y reduce errores del usuario. Esto se traduce en menos consultas de soporte, mayor conversión y fidelización, maximizando el retorno de inversión.</p>
                             </li>
-                        </ul>                        
+                        </ul>
                     </div>
                     
                 </div>
         </section>
+          <section class="ejemplo-ux">
+                <h2 class="p-align"> Si no eres Apple, será mejor que apliques UX/UI...</h2>
+                <div class="flex-row">
+                        <div class="p-column-sm flex p-med">
+                            <p>Desde 2009, una de las decisiones de diseño más criticadas de Apple ha sido el Magic Mouse. Su sistema de carga impide su uso mientras está conectado, un claro problema de UX que pocas marcas podrían permitirse sin afectarle, pero es parte del espíritu de Apple.</p>
+                            <p>Apple ha demostrado en varias ocasiones que prioriza la estética sobre la usabilidad, respaldada por la solidez de su marca y la fidelidad de su ecosistema, esto le permite generar conversación convirtiendo estos casos prácticamente en un meme y manteniendo su presencia en el mercado.</p>
+                        </div>
+                       
+                        <img class="container-img" src="/images/magicmouse.webp"  alt="img magic mouse" >
+                        
+                </div>
+                <div class="flex-row">
+                        <img class="container-img" src="/images/meme.webp"  alt="meme magic mouse" >
+                        <div class="p-column-sm flex p-med">
+                            <p> Sin embargo, esta estrategia puede traer inconvenientes, por ello en 2024 surgieron informes que indican que Apple está trabajando en una versión rediseñada. Aunque el diseño minimalista y la carga rápida del Magic Mouse parecen ventajas, la falta de ergonomía y la interrupción del flujo de trabajo afectan a largo plazo la experiencia del usuario.</p>
+                            <p> Además, desde una perspectiva de accesibilidad, ciertas decisiones de diseño pueden dificultar el uso para personas con necesidades específicas creando la necesidad de complementos de terceros.</p>
+                        </div>
+                </div>
+                <h3 class="p-align">La pregunta clave es: ¿por qué Apple ha tardado tanto en ceder y abordar las quejas de los usuarios, a pesar de la creciente presión para mejorar el diseño de su producto?</h3>
+        </section>
         <section class="services-ux-background">
-            <div class="services-ux-container flex container-column-sm">
+            <div class="services-ux-container flex container-column-sm align-center">
                 <h2> Servicios de Diseño UX/UI </h2>
                 <ul>
                     <li>
@@ -127,7 +166,7 @@ export default {
                                         </figure>
                                     </div>
 
-                                    <p class="p-align padding-xs"><span>Estos conflictos radican en que, aunque los elementos gráficos están bien diseñados, su implementación y organización desde una perspectiva UX/UI no es óptima. En términos de navegación, resulta difícil encontrar un equilibrio entre la cantidad de información que se desea mostrar y la fluidez con la que el usuario puede interactuar con la interfaz.<br> Los flujos de navegación en ocasiones chocan entre las ofertas, como mostrar 50% en un producto que en la ventana rápida de selección no aparece, y que no se aplican al carrito, requiriendo ingresar cupones para productos individuales.</span></p>
+                                    <p class="p-align padding-xs"><span>Estos conflictos radican en que, aunque los elementos gráficos están bien diseñados, su implementación y organización desde una perspectiva UX/UI no es óptima. En términos de navegación, hay que encontrar un equilibrio entre la cantidad de información que se desea mostrar y la fluidez con la que el usuario puede interactuar con la interfaz.<br> Los flujos de navegación en ocasiones chocan entre las ofertas, como mostrar 50% en un producto que en la ventana rápida de selección no aparece, y que no se aplican al carrito, requiriendo ingresar cupones para productos individuales.</span></p>
                                     
                                 </div>
                                 <div class="dark-background flex container-column-sm">
@@ -294,4 +333,5 @@ export default {
                 </div>
         </section>
     `,
+    
 }

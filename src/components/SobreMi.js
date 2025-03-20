@@ -4,7 +4,7 @@ export default {
   name: 'SobreMi',
   template: /*html*/ `
   <section class="about-me">
-      <h1>Un poco de mi</h1>
+      <h1 >Un poco de mi</h1>
       <img src="/images/maria.webp" alt="Imagen 2" class="scroll-item">
       <div class="text scroll-item">
         <p>Hola!</p>
@@ -13,18 +13,19 @@ export default {
           <img src="/images/nubes-medano.webp" alt="Imagen 1"  loading="lazy" class="scroll-item">
 
       <div class="text scroll-item">
-        <p>Me encanta fotografíar el cielo y la luna, dibujar a lápiz y pintar en acrílico.</p>
+        <p>Me gusta fotografíar el cielo y la luna, dibujar a lápiz y pintar en acrílico.</p>
       </div>
       <img src="/images/clouds.webp" alt="Imagen 3" loading="lazy" class="scroll-item">
       <div class="text scroll-item">
-        <p>Disfruto estudiando el porqué de las cosas, y programando pierdo la noción del tiempo.</p>
+        <p>Disfruto estudiando el porqué de las cosas.</p>
       </div>
+      <div class="text scroll-item">
+      <p>Desde pequeña he amado los videojuegos, la estrategia y los retos lógicos.</p>
+    </div>
       
     <img src="/images/chian-temple.webp" alt="Imagen 3" loading="lazy" class="scroll-item">
     
-    <div class="text scroll-item">
-      <p>Desde pequeña he amado los videojuegos, la estrategia y los retos lógicos.</p>
-    </div>
+    
     <div class="text scroll-item">
       <p>Con los años, he desarrollado una gran apreciación por las interfaces bien diseñadas y la usabilidad efectiva.</p>
     </div>
@@ -67,7 +68,7 @@ export default {
         const scale = 0.9 + progress * 0.8
 
         // Movimiento lateral: hacia la izquierda o derecha
-        const translateX = progress * 300 * (distance > 0 ? 1 : -1)
+        const translateX = progress  * (distance > 0 ? 1 : -1)
 
         // Opacidad: 1 en el centro, 0 cuando está en los márgenes
         const opacity = 1.15 - progress

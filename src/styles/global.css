@@ -40,7 +40,7 @@
 
     /**todo: change greys 1-2-3*/
     
-    --color-grey-0: #f1f1f1;
+    --color-grey-0: #f4f4f4;
     --color-grey-1:  #bbbbbb;   
     --color-grey-2: #959595;
     --color-grey-3:#62626F;
@@ -71,15 +71,19 @@ html, body {
     margin: 0;
     padding: 0;      
     font-size:var(--font-size-base);
-    color:var(--color-secondary);
+    
+   
 }
 body { 
     letter-spacing: 0.4px;        
     font-family: 'Barlow', Arial, sans-serif;
-    line-height: 1.5; 
+    line-height: 1.5;
+     background-color: var(--color-secondary); 
+     color:var(--color-primary);
+     user-select: none;
 }
 section{
-    padding: clamp(var(--space-lg), 8vw, var(--space-2xl)) clamp(var(--space-xxs), 5vw, var(--space-xxl))  ;
+    padding: clamp(var(--space-lg), 7vw, var(--space-2xl)) clamp(var(--space-xxs), 5vw, var(--space-xxl))  ;
     display: flex;
     flex-direction: column;
     align-items: center;    
@@ -125,7 +129,7 @@ h5{
 h6{
  font-size: 0.9rem;
 }
-p, label{
+p, label, select{
     font-size: clamp(1rem, 1.2vw, 1.4rem); 
     margin: 0px;
     line-height: 1.5;   
@@ -138,7 +142,8 @@ ul{
     flex-direction: column;
     gap: var(--space-xs);
     padding-left: 20px;    
-    max-width: 750px;     
+    max-width: 750px;   
+    
 }
 li *:not(:last-child){
       margin-bottom: 4px; 
@@ -147,15 +152,22 @@ li *:not(:last-child){
 .black-background{
     background-color: var(--color-blue-black);
 }
+.black-background h2{ 
+    align-self: flex-start;
+    padding-left: 10%;
+    font-size: 2rem;
+}
 .dark-background{    
     border-radius: 10px;
     background-color: var(--color-secondary);
     width: 100%;
-   
+    align-items: center;   
 }
+
 /**FORMAT*/
 .full-width{
     max-width: 100%;
+    width: 100%;
 }
 .padding-Y-xs{
     padding: clamp(var(--space-xs), 3vw, var(--space-sm)) 0;
@@ -169,23 +181,22 @@ li *:not(:last-child){
 
  .p-short{
     max-width: 500px !important;    
-    min-width: 300px;     
+    min-width: 280px;     
  }
  .p-med{
     max-width: 650px !important;    
-    min-width: 300px;     
+        
  }
 .p-align{
     text-align: center;
 }
-.align-left{
-    align-items: unset !important;
+.align-center{
+    align-items: center !important;
 }
 /*flex*/
 .flex{
     display: flex;
-    flex-direction: column;
-    align-items: center;    
+    flex-direction: column;      
 }
 
 .p-column-xxs{    
@@ -222,6 +233,7 @@ li *:not(:last-child){
     align-items: center;
     justify-content: space-evenly;
     gap:var(--space-lg);
+    max-width: 100%;
    
 }
 .flex-row>*{
@@ -231,13 +243,27 @@ li *:not(:last-child){
 }
 /**BUTTONS */
 
-a {
+a, button {
     all:unset;
     cursor: pointer;
-    padding: var(--space-xs) var(--space-sm);
+    padding: var(--space-xxs) var(--space-sm);
     font-size: clamp(1rem, 1.1vw , 2rem); 
+    width: fit-content;
+    border-radius: 5px;
 }
-    
+.btn{
+    position:fixed;    
+    color: var(--color-grey-1);
+    border-radius: 30px;
+    bottom:30px;
+    right: 20px;
+    padding: 8px 16px;
+    opacity: 0;
+ }
+ .btn:hover{
+    transform:scale(1.2);
+    transition:all 0.2s linear;
+ }   
 /*btn general*/
 .big-btn {
     color: var(--color-primary);
@@ -249,9 +275,11 @@ a {
     text-transform: uppercase;  
     border: 3px solid  var(--color-orange);  
     animation: border-move 5s infinite linear ;   
+  
 }
 .big-btn:hover{
     border: 3px solid  var(--color-grey-1); 
+    background-color: var(--color-grey-5);
 }
 
  @keyframes border-move {
@@ -493,8 +521,14 @@ footer {
         display: block;
     }
    .flex-row{
-    flex-direction: column;
+        flex-direction: column;
+      
    }
+   .flex-row *{
+        
+        text-align: left !important;
+   }
+   
 }
 
 
@@ -518,6 +552,10 @@ footer {
     .flex{
         width: 100%;    
     }
+    .black-background h2{ 
+        padding: 0;
+    
+}
 }
 
  /* Elimina vibración por eventos touch */

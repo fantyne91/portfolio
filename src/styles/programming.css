@@ -18,6 +18,7 @@
 /**Beneficios */
 .beneficios{   
     background-color: var(--color-grey-0);
+    color: var(--color-secondary);
     h2{  color:var(--color-med-blue)} ; 
     h3{ color: var(--color-white-blue); };   
 }
@@ -40,7 +41,7 @@
 }
 /**Servicios*/
  .services-programming{
-    user-select: none;  
+     
     background-color: var(--color-dark-blue);  
     color: var(--color-grey-1);
     h2, h3{
@@ -48,70 +49,11 @@
     }
 }
  
- /*primer marco*/
- /* .container-column::before{
-    content: "";
-    position: absolute;
-    width: clamp( 20px,7vw,50px);
-    height: clamp( 20px,7vw,50px);
-    border-radius: 30px;
-    top: clamp(-10px, 3vw, 200px);
-    right: clamp(10px, 5vw, 200px);
-     animation: subtle-move-reverse 5s infinite linear;      
-}  */
- /* .container-column::before {
-  
-} */
- /* .container-column::after {
-    bottom: clamp(0px, 5vw, 200px);
-    left: clamp(10px, 5vw, 200px);
-    animation: subtle-move-reverse 4s infinite linear;
-} */
-/*segundo marco*/
- /* .container-column   h2::before{
-  content: "";
-    position: absolute;
-    width: clamp( 15px,5vw,30px);
-    height: clamp( 15px,5vw,30px);
-    border-radius: 30px;
-    background-color: var(--color-grey-3-blue);
-    top: clamp(5px, 5vw, 240px);
-    right: clamp(10px, 7vw, 240px);
-     animation: subtle-move 5s infinite linear ;  
-     z-index: 1;     
-} */
-
- /* .container-column   h2::before {
-    
-} */
- /* .container-column   h2::after {
-    bottom:clamp(10px, 7vw, 240px);
-    left: clamp(10px, 7vw, 240px);
-    animation: subtle-move 4s infinite linear;
-} */
-/* @keyframes subtle-move {
-    0% {
-        transform: scale(1) rotate(0deg);
-        
-     }
-    50% {
-        border-radius: 13px;
-         box-shadow: 0px 2px 4px var(--color-white-blue); 
-        transform:   scale(1.2) rotate(-180deg);} 
-    100% {transform:  scale(1) rotate(-360deg)  ;
-    
-}
-}
- @keyframes subtle-move-reverse {
-    0% {transform: scale(1) rotate(0deg);}
-    50%{transform:   scale(1.2) rotate(180deg); box-shadow: 0px 2px 4px var(--color-white-blue); } 
-    100% {transform:  scale(1) rotate(360deg);}
-}  */
-
 /**CONTAINER PROYECTO*/
 
 .section-proyect{
     color:var(--color-primary);
+    background-color: var(--color-grey-0);
     h2{color: rgb(255, 227, 145);}
     h3{ font-weight: 600; 
         color: rgb(255, 227, 145);
@@ -143,8 +85,7 @@
 .section-proyect > div:nth-child(2){
     background-color: var(--color-med-blue);
     border-radius: 15px;
-    box-shadow: 1px 1px 6px 0px var(--color-grey-5); 
-    
+    box-shadow: 1px 1px 6px 0px var(--color-grey-5);     
 }
 .section-proyect > div:nth-child(2) > div:nth-child(2){
     flex:0.8 0.8;

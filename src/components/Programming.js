@@ -16,7 +16,6 @@ export default {
                 
                         <h2>Beneficios de contratar un desarrollador para tu web o CMS</h2>
                         <p>Si bien los CMS como WordPress o Shopify ofrecen soluciones rápidas, sus limitaciones pueden afectar la escalabilidad y personalización de tu proyecto.</p>
-                        <p> Al tener un programador, obtienes:</p>
                         
                         <ul class=" full-width">
                                 <li><h3>Personalización avanzada:</h3> <p>Puedes realizar modificaciones avanzadas y ajustar funcionalidades que no están disponibles de manera predeterminada en el CMS.</p></li>
@@ -68,7 +67,7 @@ export default {
                             <img class="img-focus" src="/images/foto-dogfinder.webp" loading="lazy" alt="img app animal" width="500px">
                         </div>
                     </div>
-                    <div class="container-bubble container-column-sm flex">
+                    <div class="container-bubble container-column-sm flex align-center">
                         <p> Algunos de mis pequeños acogidos </p>
                         <img class="bubble" src="/images/duke.webp" loading="lazy" alt=" acogido duke">
                         <img class="bubble" src="/images/luna.webp" loading="lazy" alt=" acogida luna">

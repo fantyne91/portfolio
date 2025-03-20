@@ -49,7 +49,19 @@ const app = createApp({
       this.currentPage = to.name || 'Landing'
 
       if (this.currentPage !== 'Landing') {
-        setTimeout(hideLoadingScreen, 500)
+        setTimeout(hideLoadingScreen, 500)        
+      }
+      const btn = document.querySelector('.btn')
+      if (btn) {
+        if (
+          this.currentPage == 'Uxui' ||
+          this.currentPage == 'Programming' ||
+          this.currentPage == 'Games' 
+        ) {
+          btn.style.opacity = '1' // Hacer el botón visible en las páginas que no sean 'Landing' ni 'Sobremi'
+        } else {
+          btn.style.opacity = '0' // Ocultar el botón en 'Landing' y 'Sobremi'
+        }
       }
     },
     
@@ -58,18 +70,9 @@ const app = createApp({
     console.log('vue montado')
     this.updateScreenSize() // Comprobamos el tamaño al iniciar
     window.addEventListener('resize', this.updateScreenSize) // Detectamos cambios
-    this.currentPage = this.$route.name || 'Landing'
+    // this.currentPage = this.$route.name || 'Landing'
 
-    /*carga-preload*/
-    // if (this.currentPage != 'Landing') {
-    //   setTimeout(() => {
-    //     const loadingScreen = document.getElementById('loading-screen')
-    //     if (loadingScreen) {
-    //       loadingScreen.style.opacity = '0'
-    //       setTimeout(() => loadingScreen.remove(), 500) // Se elimina después de la animación
-    //     }
-    //   }, 500) 
-    // }
+
   },
 
   beforeUnmount() {

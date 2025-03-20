@@ -1,28 +1,29 @@
 /**LANDING*/
+
 /*Placeholder eliminar cls*/
 .image-placeholder {
   width: 100%;
-  height: 700px; 
+  height: 100vh; 
   background: var(--color-secondary); 
 }
-.intro-container {
-    width: 100%;
-    max-height: 700px;
-    position: relative;
-    background-color: var(--color-secondary);
+/*efects*/
+.page-landing h1{
+    opacity: 0;
+    transition: opacity 2s ease;
 }
-.intro-container .portfolio-img{
-    width: 100%;
-    min-height: 400px;
-    object-fit: cover;
-    object-position: center center !important;
-    opacity:1;
-   
-    /* animation: introOff 1s ease 4s forwards; */
+
+#imgHover {
+  position: absolute;
+  max-width: 300px;
+  max-height: 300px;
+  pointer-events: none; 
+  display: none;
+  opacity: 0;
+  transition: opacity 1s linear;
 }
 .intro-container::before {
     content: "";
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -30,130 +31,45 @@
     background: linear-gradient(to top, rgba(0, 0, 0, 0.799) 0%, transparent 100%);
     pointer-events: none;
     z-index: 3;
-    /* animation: fadeOutUp 5s ease-in-out 5s forwards; */
+     /* animation: fadeOutUp 8s ease-in-out 0s forwards;  */
 }
-/* @keyframes fadeOutUp {
-    0% {
-        height: 40%;
-    }
-    100% {
-        height: 100%;
-        background: linear-gradient(to top, rgb(0, 0, 0) 1000%, transparent 100%);
+.intro-container {
+    position: relative;
+    height: 100vh; 
+    display: flex;
+    overflow: hidden;
+   background-color: var(--color-secondary);
+    z-index: -2;
+}
 
-    }
-} */
-.intro-container  .portfolio-img2{
-    width: 100%;
-    min-height: 400px;
-    object-fit: cover;
-    object-position: center;
-    opacity:0;
-    position: absolute;
-    top:0;
-    left:0;
-    z-index: 2;
-   animation: introOn 5s ease ;
-   transform: translateX(0px);
-} 
-
-  /* .intro-container .portfolio-img.inactive{
-    opacity:0;   
-    transition: all 3s linear;
-}  */
-.intro-container  .portfolio-img2.active{
-    opacity:1;  
-    transform: translateX(-300px);  
-    transition: all 4s linear; 
-} 
-  
-   .intro-container::after {
-    content: "";
-    position: absolute;
+.portfolio-img {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 700px;
-    opacity: var(--after-opacity, 0);
-    background-image: url("/images/nubes-medano.webp");
-   background-size: 100vw;
-   z-index:1;
-} 
-/* .portfolio-img2.active .intro-container::after{
-    opacity:0;
-} */
-/* @keyframes introOff{
-    from{
-        
-    }
-    to{
-        opacity:0;
-    }
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1; 
+    opacity: 1;
+    transition: opacity 0.3s linear;
 }
-@keyframes introOn{
-    from{
-        
-    }
-    to{
-
-    }
-} */
-  
-/*
-.intro-container> .texto-entrada {
-    width: 50vw;
-    line-height: 1.1;
-
-    position: absolute;
-    bottom: clamp(var(--space-xs), 5vw, var(--space-xxl));
-    right: clamp(var(--space-xs), 5vw, var(--space-xxl));
-    text-align: right;
-    font-size: clamp(1.6rem, 5vw, 2.8rem);
-    font-weight: 600;
-    text-shadow: 0 0 3px var(--color-primary) ;
-    z-index: 1;
-
-}
-@supports (-webkit-text-stroke: 1px black) {
-    .texto-entrada {
-        color: black;
-        letter-spacing: 1px;
-        -webkit-text-stroke-width: 1.7px;
-        -webkit-text-stroke-color: var(--color-soft-orange-grey);
-    }
-}
-
-@supports not (-webkit-text-stroke: 1px black) {
-    .texto-entrada {
-        text-shadow:
-            -2px -2px 0 var(--color-primary),
-             2px -2px 0 var(--color-primary),
-            -2px  2px 0 var(--color-primary),
-             2px  2px 0 var(--color-primary);
-    }
-}
-        */
 
  /* SERVICIOS -LANDING */
 
-.list-container{
-    align-items: flex-start;
-    /* position: relative; */
-    border-top: 2px solid var(--color-grey-4);
-    background-color: var(--color-blue-black);
-    color: var(--color-grey-1);
-}
 .list-container [hidden] { display: none !important; }
 
 .list-container> .group-list {
     display: flex;
-    padding: clamp(var(--space-xs), 4vw, var(--space-lg)) 0;
+  
     justify-content: center;
     gap: clamp(var(--space-md), 2vw,var(--space-lg));
     flex-wrap: wrap;
     align-items: center;
     width: 100%;
 }
-
+#encabezado-servicios{
+    text-shadow: 0 0 2px var(--color-primary);
+}
 /*List*/
 .group-list > .list {
     max-width: clamp(700px, 1.2vw, 900px) ;
@@ -161,7 +77,7 @@
     gap:var(--space-xs);
     background: var(--color-secondary);
     padding: clamp(var(--space-sm), 3vw, var(--space-md)) clamp(var(--space-sm), 4vw, var(--space-xxl));
-
+    align-items: center;
 }
 .list > p{
     text-align: center;
@@ -172,33 +88,10 @@
     font-size: clamp(1rem, 1.2vw, 1.4rem);
     margin-right: 0.3em;
 }
-.features-list p { color: var(--color-grey-2);
+.features-list p { 
+    color: var(--color-grey-2);
     display:inline !important;
  }
-
-/* .list h3{
-    text-align: center;
-} */
-
-
-
-/* .list .features-list div h3,
-.list .features-list div p {
-    display: inline;
-    margin: 0;
-    padding: 0;
-
-}
-
-.list .features-list div h3 {
-    font-size: clamp(1rem, 1.2vw, 1.4rem);
-    font-weight: 500px;
-    margin-right: 0.3em;
-} */
-
-
-
-
 
 .list:first-child{
     box-shadow: 0px 0px 4px 1px var(--color-orange) inset;
@@ -220,20 +113,13 @@
     h2, h3{  color: #8ac610; }
 }
 
-/*boton contacta*/
-.list-container .contacta{
-    align-self: center;
-    p{
-        color:var(--color-primary);
+/* contacta*/
+.list-container .contacta p{
         font-size: clamp(1.4rem, 4vw, 1.9rem);
         text-align: center;
         font-weight: 600;
         text-transform: uppercase;
-    }
-
 }
-
-
 
 /* *PROYECTO UNICO*/
 /* .container-proyecto-unico{
@@ -321,10 +207,11 @@
 .exito-container{
     background: var(--color-soft-orange-grey);
     font-weight: 500;
+     color: var(--color-secondary);
 }
 
 .exito-container a{
-
+    width: 270px;
     color: var(--color-grey-0);
     display: block;
     background-color: var(--color-secondary);
@@ -338,25 +225,24 @@
 }
 .texto-exito{
     font-size: clamp(1.4rem, 3vw, 2.3rem);
-    font-weight: 600;
-    color: var(--color-secondary);
+    font-weight: 600;    
 }
 
 /**PORTFOLIO*/
 
-.texto-portfolio{
-    color: #c2c1c1;
-    font-size: 38px;
+.portfolio{
+    background-color: white;
+}
+.portfolio > h2{    
+    font-size: var(--space-lg);
     font-style: normal;
-    font-weight: 800;
-
+    font-weight: 800;    
     letter-spacing: 5px;
     text-transform: uppercase;
     align-self: last baseline;
 }
 @supports (-webkit-text-stroke: 1px black) {
-    .texto-portfolio {
-        color: var(--color-grey-1);
+    .portfolio > h2{        
         letter-spacing: 1px;
         -webkit-text-stroke-width: 1.7px;
         -webkit-text-stroke-color: #3f4b54;
@@ -364,7 +250,7 @@
 }
 
 @supports not (-webkit-text-stroke: 1px black) {
-    .texto-portfolio {
+    .portfolio > h2 {
         text-shadow:
             -2px -2px 0 var(--color-primary),
              2px -2px 0 var(--color-primary),
