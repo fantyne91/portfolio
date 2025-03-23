@@ -60,7 +60,7 @@
 
 .list-container> .group-list {
     display: flex;
-  
+   padding: 0;
     justify-content: center;
     gap: clamp(var(--space-md), 2vw,var(--space-lg));
     flex-wrap: wrap;
@@ -70,6 +70,7 @@
 #encabezado-servicios{
     text-shadow: 0 0 2px var(--color-primary);
 }
+
 /*List*/
 .group-list > .list {
     max-width: clamp(700px, 1.2vw, 900px) ;
@@ -119,6 +120,7 @@
         text-align: center;
         font-weight: 600;
         text-transform: uppercase;
+        
 }
 
 /* *PROYECTO UNICO*/

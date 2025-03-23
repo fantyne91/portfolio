@@ -30,7 +30,7 @@ export default {
         <h1 id="encabezado-servicios" itemprop="name">UX/UI, desarrollo web <br> y Unreal Engine</h1>
         <img ref="imgHover" id="imgHover" src="" alt="Imagen flotante">
         
-        <ul class="group-list full-width" itemprop="mainEntity">
+        <ul class="group-list" itemprop="mainEntity">
             <!-- Diseño Web UX/UI -->
             <li class="list flex" itemprop="itemListElement" itemscope itemtype="https://schema.org/Service"
             aria-labelledby="titulo-ux">
@@ -39,12 +39,15 @@ export default {
                 <p class="p-align" id="descripcion-ux" itemprop="description">El diseño UX/UI optimiza la experiencia del
                     usuario aumentando conversiones y ventas.</p>
                 <ul class="features-list flex p-column-xs" aria-label="Características de diseño web">
-                    <li data-img="images/img-hover-ux.webp" @mousemove="moverImagen" @mouseenter="mostrarImagen"
-                        @mouseleave="ocultarImagen" itemscope itemprop="hasOfferCatalog" itemtype="https://schema.org/OfferCatalog">
-                        <h3 itemprop="name"  >Diseño aplicaciones Web o CMS</h3>
-                        <p itemprop="description">como WordPress, Shopify, Ionos... con un enfoque en el éxito de tu empresa
-                            y <span itemprop="keywords">posicionamiento SEO.</span> Obtendrás un diseño interactivo para
-                            mostrar a desarrolladores o inversores.</p>
+                    <li data-img="images/img-hover-ux.webp" @mousemove="moverImagen" @mouseenter="mostrarImagen" @mouseleave="ocultarImagen"
+                        itemscope itemprop="hasOfferCatalog" itemtype="https://schema.org/OfferCatalog">
+                        <h3 itemprop="name">Diseño aplicaciones Web o CMS</h3>
+                        <p itemprop="description">
+                          como WordPress, Shopify, Ionos... con un enfoque en el éxito de tu empresa
+                          y <span itemprop="keywords">posicionamiento SEO</span>. Obtendrás un diseño interactivo
+                          para mostrar a desarrolladores o inversores, así como soluciones adaptadas para
+                          la venta de <span itemprop="keywords">productos digitales</span> y servicios en línea.
+                        </p>
                     </li>
                     <li>
                         <h3 itemprop="name">Auditorías y análisis heurístico</h3>
@@ -282,7 +285,6 @@ export default {
     return {
       imageLoaded: false,
       cachedImage: '/images/portfolio-img.webp?v=1',
-     
     }
   },
   methods: {
@@ -301,7 +303,6 @@ export default {
     },
     mostrarImagen(event) {
       if (this.$refs.imgHover) {
-       
         const nuevaImagen = event.target.getAttribute('data-img')
         this.$refs.imgHover.src = nuevaImagen
         this.$refs.imgHover.style.display = 'block'
@@ -316,7 +317,6 @@ export default {
         this.$refs.imgHover.style.display = 'none'
       }
     },
- 
   },
 
   mounted() {

@@ -7,7 +7,7 @@ export default {
         <section class="header-programming p-align">
                 <h1> Desarrollo web y Personalización de Plataformas CMS.</h1>
                 <div class="flex-row">
-                    <img class="img-pc" src="/images/seo1.webp" alt="foto seo" >
+                    <img  src="/images/seo1.webp" alt="foto seo" >
                     <h2 class="p-med padding-sm"> Contar con una web optimizada no solo mejora la experiencia del usuario, sino que también impacta en el SEO, lo que ayuda a posicionar tu marca y fidelizar clientes.</h2>
                 </div>
         </section>
@@ -17,7 +17,7 @@ export default {
                         <h2>Beneficios de contratar un desarrollador para tu web o CMS</h2>
                         <p>Si bien los CMS como WordPress o Shopify ofrecen soluciones rápidas, sus limitaciones pueden afectar la escalabilidad y personalización de tu proyecto.</p>
                         
-                        <ul class=" full-width">
+                        <ul role="list" class=" full-width">
                                 <li><h3>Personalización avanzada:</h3> <p>Puedes realizar modificaciones avanzadas y ajustar funcionalidades que no están disponibles de manera predeterminada en el CMS.</p></li>
                                 <li><h3> Mejor rendimiento:</h3><p>Un desarrollador puede optimizar la velocidad y eficiencia de tu web, mejorando la experiencia del usuario y el SEO, vitales para cualquier negocio.</p></li>
                                 <li><h3>  Integraciones personalizadas:</h3> <p> Conectar tu CMS a sistemas externos como CRMs, pasarelas de pago o servicios específicos de tu empresa.</p></li>
@@ -25,10 +25,10 @@ export default {
                                 <li><h3> Escalabilidad: </h3> <p>Adaptar el sitio a medida que tu empresa crece o cambia sus necesidades. </p></li>
                         </ul>
         </section>
-            <section class="services-programming">
-                            <h2>Servicios de desarrollo web y CMS</h2>
+            <section class="services-programming" aria-labelledby="servicios-programacion">
+                            <h2 id="servicios-programacion">Servicios de desarrollo web y CMS</h2>
                         
-                            <ul>
+                            <ul role="list" >
                                 <li><h3>Desarrollo web personalizado:</h3> <p>Construyo sitios web desde cero utilizando tecnologías como PHP, JavaScript y Vue.js, garantizando soluciones a medida que se ajustan completamente a tus necesidades. Ya sea una web empresarial, un e-commerce o una plataforma interactiva, desarrollo tanto el Front-end (interfaz y experiencia del usuario) como el Back-end (funcionalidad y base de datos).</p></li>
                                 <li><h3>Personalización de CMS:</h3><p> Si usas WordPress, Shopify u otro CMS, puedo realizar modificaciones avanzadas para que tu sitio no se limite a las funciones estándar. Desde agregar integraciones personalizadas y modificar la apariencia hasta optimizar la gestión de contenido, adapto la plataforma para que cumpla exactamente con lo que necesitas.</p></li>
                                 <!--<li><h4>Integración de sistemas externos:</h4> <p> Conexión de tu web o tienda online con CRMs, pasarelas de pago, y otros servicios.</p></li>-->
@@ -47,8 +47,8 @@ export default {
             <section class="section-proyect">
                 <div class="flex-row">
                             
-                    <div class="container-proyect container-column-sm flex">
-                        <div class="p-column-sm flex">
+                    <div class="container-proyect container-column-xs flex align-center">
+                        <div class="p-column-xs flex">
                             <h2>Mi primer proyecto personal</h2>
                             <p >Mi primer proyecto web surgió de una experiencia personal:<span> las acogidas temporales de animales en situación de vulnerabilidad.</span> A lo largo de los años, he dado hogar a perros con historias complejas, lo que me enseñó la importancia de un sistema eficiente para gestionar acogidas y adopciones</p>
                             <p >Este proyecto en desarrollo tiene como objetivo optimizar y agilizar el proceso de acogida y adopción de animales. La plataforma facilita la conexión entre rescatistas, familias de acogida y adoptantes, ayudando a evitar estafas en propias de redes sociales, mediante verificación de perfiles y una experiencia de usuario intuitiva y accesible.</p>
@@ -67,7 +67,7 @@ export default {
                             <img class="img-focus" src="/images/foto-dogfinder.webp" loading="lazy" alt="img app animal" width="500px">
                         </div>
                     </div>
-                    <div class="container-bubble container-column-sm flex align-center">
+                    <div class="container-bubble align-center">
                         <p> Algunos de mis pequeños acogidos </p>
                         <img class="bubble" src="/images/duke.webp" loading="lazy" alt=" acogido duke">
                         <img class="bubble" src="/images/luna.webp" loading="lazy" alt=" acogida luna">
@@ -93,7 +93,7 @@ export default {
                                 <li><h4>Lenguaje de Programación (PHP y JavaScript)</h4>
                                     <p>PHP (Back-end): Manejo de lógica de negocio, validación de formularios, gestión de usuarios y procesamiento de datos en el servidor.</p>
                                     <p>JavaScript (Front-end): Mejora de la experiencia del usuario con interactividad en tiempo real, validaciones dinámicas y actualizaciones de contenido sin recargar la página.</p>
-                                    <p></p>
+                                    
                                 </li>
                                 <li><h4>Gestión de Perfiles</h4>
                                     <p>Perfiles y funcionalidades específicas para Asociaciones y Usuarios, publicación y gestión de fichas de animales disponibles para adopción y sistema de contacto con asociaciones</p>
@@ -104,15 +104,19 @@ export default {
                                 </li>
                             </ul>
                         </div>
-                        
-                        <div class="p-column-sm flex">                                
-                                <img class="img-focus" src="/images/cod-error.webp" loading="lazy" alt="img errores" width="500px">
-                                <p>Casos de prueba</p>
+                        <div>
+                            <figure  >
+                                    <img class="pg-proyect-img " src="/images/diagrama.webp" loading="lazy" alt="img happypath" >
+                                    <figcaption>Diagrama de flujo</figcaption>
+                            </figure>
+                            <figure  >
+                                    <img class="pg-proyect-img" src="/images/cod-error.webp" loading="lazy" alt="img casos de prueba" width="500px">
+                                    <figcaption>Casos de prueba</figcaption>
+                            </figure>
                         </div>
-                        
                     </div>
-                    <h4>Diagrama de Flujo: </h4>
-                    <img class="img-focus" src="/images/happypath.webp" loading="lazy" alt="img happypath" >
+                  
+                    
                              <!--   
                                 
                                 <div class="container-img-focus">

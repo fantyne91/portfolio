@@ -21,7 +21,7 @@ export default {
                 <div class="flex-row padding-Y-xs">
                         <div class="p-column-sm flex p-med">
                             <p>El UX/UI está presente en todos los aspectos de nuestra vida, va más allá de lo visual y se enfoca en cómo interactuamos con productos y servicios, asegurando que sean intuitivos, accesibles y satisfactorios.</p>
-                            <p>Un ejemplo UX sería Netflix, con funciones como "Saltar intro", las recomendaciones basadas en preferencias o la posibilidad de retomar una serie donde la dejaste. Todo está diseñado para minimizar la fricción y ahorrar tiempo o pasos innecesarios. En la imagen se puede comparar su evolución -2002 y 2010- de videoclub, a la plataforma streaming que conocemos hoy. </p>
+                            <p>Un ejemplo UX sería Netflix, con funciones como "Saltar intro", las recomendaciones basadas en preferencias o la posibilidad de retomar una serie donde la dejaste. Todo está diseñado para minimizar la fricción y ahorrar tiempo o pasos innecesarios. En la imagen se aprecia la evolución -2002 y 2010- de videoclub, a la plataforma streaming que conocemos hoy. </p>
                             
                         </div>
                        <div class="container-img-focus">
@@ -32,7 +32,7 @@ export default {
                         <img class="container-img" src="/images/grafico-ux.webp"  alt="meme magic mouse" >
                         <div class="p-column-sm flex p-med">
                             <p> Pero también lo podemos encontrar en una lata de refresco, haciendo que ganemos espacio en la nevera con su formato fit, en un mando de videojuegos, haciendo que el agarre sea cómodo y natural, o en una maleta de viaje con ruedas 360° y mango retráctil que mejora la comodidad al moverse sin esfuerzo.</p>
-                            <p> Por otro lado, el UI se encarga de los elementos con los que interactuamos directamente. En un sitio web o una app, el UI se ve en los botones, menús y pantallas que usamos para navegar, asegurándose de que todo esté donde lo esperamos. Pero tambíen lo encotramos en un electrodoméstico o un dispositivo electrónico.</p>
+                            <p> Por otro lado, el UI se encarga de los elementos con los que interactuamos directamente. En un sitio web o una app, el UI se ve en los botones, menús y pantallas que usamos para navegar, asegurándose de que todo esté donde lo esperamos. Pero tambíen lo encontramos en electrodomésticos o dispositivos electrónicos.</p>
                         </div>
                 </div>
                 <h3 class="p-align">Un buen UX/UI puede diferenciar a una marca de sus competidores, impulsando su crecimiento y éxito en un mercado cada vez más competitivo.</h3>
@@ -72,30 +72,10 @@ export default {
                     
                 </div>
         </section>
-          <section class="ejemplo-ux">
-                <h2 class="p-align"> Si no eres Apple, será mejor que apliques UX/UI...</h2>
-                <div class="flex-row">
-                        <div class="p-column-sm flex p-med">
-                            <p>Desde 2009, una de las decisiones de diseño más criticadas de Apple ha sido el Magic Mouse. Su sistema de carga impide su uso mientras está conectado, un claro problema de UX que pocas marcas podrían permitirse sin afectarle, pero es parte del espíritu de Apple.</p>
-                            <p>Apple ha demostrado en varias ocasiones que prioriza la estética sobre la usabilidad, respaldada por la solidez de su marca y la fidelidad de su ecosistema, esto le permite generar conversación convirtiendo estos casos prácticamente en un meme y manteniendo su presencia en el mercado.</p>
-                        </div>
-                       
-                        <img class="container-img" src="/images/magicmouse.webp"  alt="img magic mouse" >
-                        
-                </div>
-                <div class="flex-row">
-                        <img class="container-img" src="/images/meme.webp"  alt="meme magic mouse" >
-                        <div class="p-column-sm flex p-med">
-                            <p> Sin embargo, esta estrategia puede traer inconvenientes, por ello en 2024 surgieron informes que indican que Apple está trabajando en una versión rediseñada. Aunque el diseño minimalista y la carga rápida del Magic Mouse parecen ventajas, la falta de ergonomía y la interrupción del flujo de trabajo afectan a largo plazo la experiencia del usuario.</p>
-                            <p> Además, desde una perspectiva de accesibilidad, ciertas decisiones de diseño pueden dificultar el uso para personas con necesidades específicas creando la necesidad de complementos de terceros.</p>
-                        </div>
-                </div>
-                <h3 class="p-align">La pregunta clave es: ¿por qué Apple ha tardado tanto en ceder y abordar las quejas de los usuarios, a pesar de la creciente presión para mejorar el diseño de su producto?</h3>
-        </section>
-        <section class="services-ux-background">
+             <section class="services-ux-background">
             <div class="services-ux-container flex container-column-sm align-center">
                 <h2> Servicios de Diseño UX/UI </h2>
-                <ul>
+                <ul role="list">
                     <li>
                         <h3>Auditorías UX/UI y Optimización de la Conversión (CRO) </h3>
                         <p>Auditorías completas de sitios web o plataformas CMS para detectar áreas de mejora en la experiencia
@@ -132,6 +112,28 @@ export default {
                     >CONTACTAR</button>
             </div>
         </section>
+          <section class="ejemplo-ux">
+                <h2 class="p-align"> Si no eres Apple, será mejor que apliques UX/UI...</h2>
+                <div class="flex-row">
+                        <div class="p-column-sm flex p-med">
+                            <p>Desde 2009, una de las decisiones de diseño más criticadas de Apple ha sido el Magic Mouse. Su sistema de carga impide su uso mientras está conectado, un claro problema de UX que pocas marcas podrían permitirse sin afectarle, pero es parte del espíritu de Apple.</p>
+                            <p>Apple ha demostrado en varias ocasiones que prioriza la estética sobre la usabilidad, respaldada por la solidez de su marca y la fidelidad de su ecosistema, esto le permite generar conversación convirtiendo estos casos prácticamente en un meme y manteniendo su presencia en el mercado.</p>
+                        </div>
+                       <figure>
+            <img class="container-img" src="/images/magicmouse.webp" alt="Magic Mouse de Apple con el puerto de carga en la parte inferior" loading="lazy">
+            <figcaption>El diseño del Magic Mouse impide su uso mientras se carga.</figcaption>
+        </figure>
+                </div>
+                <div class="flex-row">
+                        <img class="container-img" src="/images/meme.webp"  alt="Meme sobre la carga del Magic Mouse" loading="lazy">
+                        <div class="p-column-sm flex p-med">
+                            <p> Sin embargo, esta estrategia puede traer inconvenientes, por ello en 2024 surgieron informes que indican que Apple está trabajando en una versión rediseñada. Aunque el diseño minimalista y la carga rápida del Magic Mouse parecen ventajas, la falta de ergonomía y la interrupción del flujo de trabajo afectan a largo plazo la experiencia del usuario.</p>
+                            <p> Además, desde una perspectiva de accesibilidad, ciertas decisiones de diseño pueden dificultar el uso para personas con necesidades específicas creando la necesidad de complementos de terceros.</p>
+                        </div>
+                </div>
+                <h3 class="p-align">La cuestión es hasta qué punto estos diseños responden a una estrategia meticulosamente planificada por Apple?</h3>
+        </section>
+   
 
             <section class="black-background">
                 <h2>Casos de estudio de UX/UI </h2>
@@ -155,7 +157,7 @@ export default {
                                                 <p>Los iconos principales, tienen diferentes tamaños y formatos, y el banner más relevante para el usuario, que contiene la información clave (como detalles de envíos y precios), es parte del cuerpo de la web perdiéndose en el scroll y pasando totalmente desapercibido. </p>
                                             </div>
                                         </div>
-                                        <figure class="p-column-sm flex">
+                                        <figure class="p-column-sm flex align-center">
                                                 <div class="container-img-focus">
                                                     <img class="img-focus" src="/images/menu-tiendanimal.webp"  alt="imagen original Tiendanimal">
                                                 </div>

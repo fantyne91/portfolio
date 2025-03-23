@@ -19,40 +19,36 @@ export default {
             los videojuegos son una herramienta para el desarrollo y la inclusión.
           </p>
         </div>
-          <iframe  height="315" 
-          src="https://www.youtube.com/embed/ZCwlZc-WG48" 
-          title="YouTube video player" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          <iframe  height="315"
+          src="https://www.youtube.com/embed/ZCwlZc-WG48"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen>
         </iframe>
-        <div class="flex-row padding-Y-xs">
-          <img
-            class="img-pc"
-            src="/images/control-game.webp"
-            alt="img control consola"
-          />
-          <div class="p-short flex p-column-xs p-align">
-          <p class=" p-games">
-            La neurociencia es fundamental en este contexto, ya que proporciona
-            una comprensión más profunda de cómo los jugadores procesan la
-            información, toman decisiones y experimentan emociones durante el
-            juego.
-          </p>
-           <p>
-            Mostrar la información correcta en el momento adecuado en
-            videojuegos es vital, impacta directamente en la experiencia
-            del jugador y su capacidad para tomar decisiones de manera efectiva.
-          </p>
+        
+          <div class=" flex p-column-xs p-align">
+              <p class=" p-games">
+                La neurociencia es fundamental en este contexto, ya que proporciona
+                una comprensión más profunda de cómo los jugadores procesan la
+                información, toman decisiones y experimentan emociones durante el
+                juego.
+              </p>
+              <p>
+                Mostrar la información correcta en el momento adecuado en
+                videojuegos es vital, impacta directamente en la experiencia
+                del jugador y su capacidad para tomar decisiones de manera efectiva.
+              </p>
           </div>
-        </div>
+           
+        
       
       </div>
     </section>
     <section class="unreal-games">
         <div class="p-column-sm flex padding-sm">
           <h2>Que puedes hacer con Unreal Engine?</h2>
-          <ul>
+          <ul role="list">
             <li>
               <h3>Creación de Escenarios y Mapas:</h3>
               <p>
@@ -71,12 +67,14 @@ export default {
           </ul>
         </div>
      
-      <video class="cinematica" loading="lazy" controls muted playsinline itemprop="video" itemscope
-        itemtype="https://schema.org/VideoObject">
+      <!--<video class="cinematica" loading="lazy" controls muted playsinline
+        title="Cinemática creada con Unreal Engine"
+        aria-label="Cinemática creada con Unreal Engine"
+        itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
         <source src="/images/short-cinematik.mp4" type="video/mp4">
-        <meta itemprop="name" content="Diseño UX/UI tienda joyeria" />
+        <meta itemprop="name" content="Diseño UX/UI tienda joyería" />
         <meta itemprop="description" content="Video interactivo de un diseño UX/UI para Photofolio." />
-      </video>
+    </video>-->
     </section>
     <section class="services-games">
       <h2>Servicios para videojuegos</h2>
@@ -92,7 +90,7 @@ export default {
         <li>
           <h3>Asesoría y Análisis de HUD, Diseño Visual y UI</h3>
           <p>
-            Servicios de asesoría y análisis especializados en HUD, diseño
+            Asesoría especializada en HUD, diseño
             visual y UI, adaptados tanto para videojuegos en desarrollo como
             para la optimización de proyectos existentes.
           </p>
@@ -142,8 +140,8 @@ export default {
           </p>
         </li>
       </ul>
-      <button        
-        class="big-btn1 contact-btn" 
+      <button
+        class="big-btn1 contact-btn"
         aria-label="Solicitar servicios y contactar"
         >CONTACTAR</button
       >
@@ -158,20 +156,22 @@ export default {
 
         <div class="dark-background container-column-md flex ">
 
+          
+
+          <div class="flex-row ">
           <div>
               <h4>Contexto</h4>
               <p>
-                Para mí, Frostpunk 1 no es solo un juego, es una obra de arte.
+                Para mí, Frostpunk 1 no es solo un juego, es una obra de arte de la estrategia.
               </p>
-              <p>Como amante de la estrategia, acumulé cientos de horas explorando las mecánicas y conté los minutos hasta el
+              <p>Conté los minutos hasta el
                 lanzamiento de Frostpunk 2. Tras algunos retrasos llegó el gran día, y como en el primero
                 el impresionante diseño visual me fascinó, pero a medida que pasaban los minutos mi entusiasmo se iba
                 desvaneciendo...y como a mí, a muchos de sus fans.
               </p>
+              <p >Frostpunk 1 es un juego en un ambiente apocalíptico donde la estrategia gira entorno a los minutos, una estrategia milimétrica que da una sensación adictiva de acción constante controlada, esa acción-reacción necesaria en el cual habia consecuencias inmediatas visibles en tu comunidad aportando realidad, y resultando en un juego emocional.</p>
           </div>
-
-          <div class="flex-row padding-Y-xs">
-              <p class="p-short">Frostpunk 1 es un juego en un ambiente apocalíptico donde la estrategia gira entorno a los minutos, una estrategia milimétrica que da una sensación adictiva de acción constante controlada, esa acción-reacción necesaria en el cual habia consecuencias inmediatas visibles en tu comunidad aportando realidad, y resultando en un juego emocional.</p>
+              
               <div class="container-img-focus">
                 <img
                   class="img-focus"
@@ -185,7 +185,7 @@ export default {
           <p>En contraste, Frostpunk 2 se siente más como un simulador político. Las facciones se convierten en el eje principal de la estrategia, diluyendo la urgencia y la conexión emocional del original. El enfoque se centra en equilibrar intereses y esperar largos periodos para que algo significativo ocurra, lo que rompe la dinámica de "acción-reacción" que tanto disfruté en el primer juego.</p>
           
           <div class="flex-row padding-Y-xs">
-            <p class="p-short" >El resultado es un juego con un ritmo completamente distinto, que obliga al jugador a adelantar el tiempo, dejando atrás la intensidad estratégica que definió a su predecesor.<span> Si bien la dirección visual sigue siendo magnífica, el cambio de enfoque transforma radicalmente la experiencia, alejándola de lo que hizo al original tan memorable.</span></p>
+            <p  >El resultado es un juego con un ritmo completamente distinto, que obliga al jugador a adelantar el tiempo, dejando atrás la intensidad estratégica que definió a su predecesor.<span> Si bien la dirección visual sigue siendo magnífica, el cambio de enfoque transforma radicalmente la experiencia, alejándola de lo que hizo al original tan memorable.</span></p>
              <div class="container-img-focus">
                 <img
                   class="img-focus"
@@ -195,21 +195,24 @@ export default {
                 />
               </div>
           </div>
-          <div class="p-column-xs flex" >
-                <h4>Datos 4 meses después del lanzamiento</h4>
-                <p> En Gamepass Frostpunk2 tiene una puntuación de 3.2* vs FrostPunk1 con un 4.3*.</p>
-                <p>En Steam Frostpunk2 tiene 15mil comentarios positivos y 5mil comentarios negativos(25%), frente a 120mil comentarios positivos y
-                  9mil negativos(6.98%) de FrostPunk1.</p>
-                <p> En Steam Spy, Frostpunk1 sigue teniendo más jugadores diarios que FrostPunk2.</p>
-                <p> Comentar que 11bit Studios valora enormemente a sus usuarios, y algunos de los problemas detectados han sido
-                  rectificados posteriormente en sus actualizaciones.</p>
-          </div>
-             <img 
+          <div class="flex-row">
+            <div class="p-column-xs flex" >
+                  <h4>Datos 4 meses después del lanzamiento</h4>
+                  <p> En Gamepass Frostpunk2 tiene una puntuación de 3.2* vs FrostPunk1 con un 4.3*.</p>
+                  <p>En Steam Frostpunk2 tiene 15mil comentarios positivos y 5mil comentarios negativos(25%), frente a 120mil comentarios positivos y
+                    9mil negativos(6.98%) de FrostPunk1.</p>
+                  <p> En Steam Spy, Frostpunk1 sigue teniendo más jugadores diarios que FrostPunk2.</p>
+                  <p> Comentar que 11bit Studios valora enormemente a sus usuarios, y algunos de los problemas detectados han sido
+                    rectificados posteriormente en sus actualizaciones.</p>
+            </div>
+             <img
+                  class="img-pc"
                   src="/images/opinion-frost2.webp"
                   loading="lazy"
                   alt=" opinion Frostpunk2"
                   width="300"
              />
+          </div>
         
         
           <div>
@@ -246,38 +249,45 @@ export default {
               <h4>Análisis UX/UI Frostpunk 2:</h4>
               <p>Como ya he comentado el diseño artístico y visual del juego es impresionante, las animaciones realmente aportan vida a los personajes, y la historia sigue siendo increíble, pero enfocándome en la experiencia de usuario y tras analizar tanto el juego, los datos y las opiniones puedo decir que hay mejoras o enfoques que se podrían implementar:</p>
               <ul class="padding-Y-xs">
-                <li>
-                  <p class="text-red padding-xs">Problema: Confusión visual en el sistema de distritos. La falta de tamaños fijos o organización clara en los distritos dificulta la planificación y expansión, obligando al jugador a seleccionar edificio por edificio para verificar su nivel de expansión, o buscar edificios vitales como hospitales, lo que ralentiza la toma de decisiones.</p>
-                  <p class="text-green padding-xs">Solución: Mejorar la visibilidad de los distritos, estableciendo tamaños fijos o formas claras que permitan al jugador identificar rápidamente los niveles de expansión y disposición de los edificios sin necesidad de inspeccionarlos individualmente.</p>
+                <li class="flex p-column-xxs">
+                  <p><span>Visibilidad y confusión visual en distritos 🢖</span></p>
+                  <p class="text-red ">Problema: Confusión visual en el sistema de distritos. La falta de tamaños fijos o organización clara en los distritos dificulta la planificación y expansión, obligando al jugador a seleccionar edificio por edificio para verificar su nivel de expansión, o buscar edificios vitales como hospitales, lo que ralentiza la toma de decisiones.</p>
+                  <p class="text-bg-purple">Solución: Mejorar la visibilidad de los distritos, estableciendo tamaños fijos o formas claras que permitan al jugador identificar rápidamente los niveles de expansión y disposición de los edificios sin necesidad de inspeccionarlos individualmente.</p>
                 </li>
-                <li>
-                  <p class="text-red padding-xs">Problema: Al hacer clic en un edificio, la cámara se desplaza y acerca a cámara lenta hacia él, provocando tiempos de espera y rompiendo la fluidez de la interacción al gestionar múltiples edificios.                  </p>
-                  <p class="text-green padding-xs">Solución: Resaltar  el edificio seleccionado sin moverse de la vista actual, mostrando una miniatura del edificio seleccionado en la interfaz junto a la información. </p>
+                <li class="flex p-column-xxs">
+                  <p><span>Interrupción en el flujo de interacciones 🢖</span></p>
+                  <p class="text-red ">Problema: Al hacer clic en un edificio, la cámara se desplaza y acerca a cámara lenta hacia él, provocando tiempos de espera y rompiendo la fluidez de la interacción al gestionar múltiples edificios.                  </p>
+                  <p class="text-bg-purple">Solución: Resaltar el edificio seleccionado sin moverse de la vista actual, mostrando una miniatura del edificio seleccionado en la interfaz junto a la información. </p>
                 </li>
-                <li>
-                  <p class="text-red padding-xs">Problema: Los íconos relacionados con los enfermos y otros estados críticos (hambre, criminalidad) solo muestra información imprecisa como "leve" o "moderada", lo que genera una sensación de falta de detalle y realismo.</p>
-                  <p class="text-green padding-xs">Solución: Evitar términos genéricos como "leve" o "moderada", ofreciendo información más concreta (por ejemplo, porcentaje de personas afectadas o número exacto de casos) para difuminar la sensación  para mejorar la interacción y la toma de decisiones del jugador.</p>
+                <li class="flex p-column-xxs">
+                  <p><span>Deshumanización del gameplay 🢖</span></p>
+                  <p class="text-red ">Problema: Los íconos relacionados con los enfermos y otros estados críticos (hambre, criminalidad) solo muestra información imprecisa como "leve" o "moderada", lo que genera una sensación de falta de detalle y realismo.</p>
+                  <p class="text-bg-purple">Solución: Evitar términos genéricos como "leve" o "moderada", ofreciendo información más concreta (por ejemplo, porcentaje de personas afectadas o número exacto de casos) para difuminar la sensación  para mejorar la interacción y la toma de decisiones del jugador.</p>
                 </li>
-                <li><p class="text-red padding-xs">Problema: El árbol de desarrollo es difícil de entender, algunos conceptos no se encuentran donde se esperan, no muestran un camino claro llevándote cometer errores, y no se muestra claramente qué elemento está en desarrollo.</p>
-                    <p class="text-green padding-xs">Solución: Usar un color predominante para destacar claramente los elementos que están en desarrollo. Agrupaciones que permitan al jugador ver las tecnologías o mejoras relevantes según categorías y recursos, y ajustar con mejoras más proporcionales según el tipo de recurso.                </p>
+                <li class="flex p-column-xxs">
+                    <p><span>Árbol de desarrollo confuso 🢖</span></p>
+                    <p class="text-red ">Problema: El árbol de desarrollo es difícil de comprender, algunos conceptos no se encuentran donde se esperan, no muestran un camino claro llevándote a cometer errores, y no se muestra claramente qué elemento está en desarrollo.</p>
+                    <p class="text-bg-purple">Solución: Usar un color predominante para destacar claramente los elementos que están en desarrollo. Agrupaciones que permitan al jugador ver las tecnologías o mejoras relevantes según categorías y recursos, y ajustar con mejoras más proporcionales según el tipo de recurso.                </p>
                 </li>
-                <li class="text-red p-column-xs flex padding-xs align-left"><p> Problemas adicionales: </p>
-                    <p>- Actualmente al expandir un edificio industrial, el producto que se está produciendo cambia automáticamente al valor por defecto, perdiendo tiempo de juego vital hasta que te das cuenta de ello.</p>
-                    <p>- En modo expedición no se puede hacer Zoom lo que dificulta la identificación y búsqueda de zonas específicas. *Solucionado</p>
-                    <p>- En los mapas de calor, aparecen datos de consumo de edificios apagados. *Solucionado </p>
+                <li class=" p-column-xs flex  align-left"><p> Problemas adicionales 🢖</p>
+                    <p class="text-red ">- Actualmente al expandir un edificio industrial, el producto que se está produciendo cambia automáticamente al valor por defecto, perdiendo tiempo de juego vital hasta que te das cuenta de ello.</p>
+                    <p class="text-red ">- En modo expedición no se puede hacer Zoom lo que dificulta la identificación y búsqueda de zonas específicas. *Solucionado</p>
+                    <p class="text-red ">- En los mapas de calor, aparecen datos de consumo de edificios apagados. *Solucionado </p>
                 </li>
               </ul>
           </div>
+          
+            
 
-          <h4>Rediseño sugerido "Arbol de ideas"</h4>
-
-          <div class="flex-row padding-Y-xs">
-                <div class="p-short p-column-xs flex">
-                    <p>Sugiero cambiar a nombres más intuitivos y jerárquicos para las ideas generales en la pantalla principal (ej. Invernaderos avanzados II), y posteriormente incluir los nombres específicos según facción, además mostrar el tipo de contrucción (edificio o distrito) incluyendo el área de constucción correspondiente, en conjunto estos cambios facilitan la organización y el espacio visual de las opciones.</p>
-                    <p > Se incluye un icono que marca la idea que se encuentra en desarrollo.  Se agrupan visualmente las ideas compartidas entre facciones.</p>
-                </div>
-                <img class="container-img"src="/images/diseño-frost.webp" loading="lazy" alt="Rediseño arbol ideas Frostpunk2">
-          </div>
+            <div class="flex-row padding-Y-xs">
+                  <div class="p-short p-column-xs flex">
+                    <h4>Rediseño sugerido "Árbol de ideas"</h4>
+                      <p>Sugiero cambiar a nombres más intuitivos y jerárquicos para las ideas generales en la pantalla principal (ej. Invernaderos avanzados II), y posteriormente incluir los nombres específicos según facción, además mostrar el tipo de contrucción (edificio o distrito) incluyendo el área de constucción correspondiente, en conjunto estos cambios facilitan la organización y el espacio visual de las opciones.</p>
+                      <p > Se incluye un icono que marca la idea que se encuentra en desarrollo.  Se agrupan visualmente las ideas compartidas entre facciones.</p>
+                  </div>
+                  <img class="container-img"src="/images/diseño-frost.webp" loading="lazy" alt="Rediseño arbol ideas Frostpunk2">
+            </div>
+          
           <p>
               En resumen, ambos son juegos increíbles, y valoro enormemente la intención del estudio que proporciona entornos de juego muy completos, pero como fan de Frostpunk1 entiendo las reacciones frente su secuela, y espero que lancen más DLC de lo que para mi siempre será una obra maestra.
           </p>

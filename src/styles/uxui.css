@@ -22,13 +22,7 @@
     background-color: var(--color-grey-5);  
 }
 
-/**APPLE*/
-.ejemplo-ux{
-    background-color: var(--color-grey-5);    
-}
-.ejemplo-ux > div{
-    padding:  clamp(0em, 3rem ,var(--space-sm));
-}
+
 /**CONTAINER MOTIVOS*/
 .benefits{
     background-color: var(--color-grey-4);
@@ -63,7 +57,13 @@
     border-radius: 5px;
     height: 100%;
 }
-
+/**APPLE*/
+.ejemplo-ux{
+    background-color: var(--color-grey-5);    
+}
+.ejemplo-ux > div{
+    padding:  clamp(0em, 3rem ,var(--space-sm));
+}
 /**CONTAINER SERVICIOS*/
 .services-ux-background{
     background: #89713f;
@@ -88,12 +88,13 @@
     color: var(--color-grey-1);  
 } 
 .container-casos-ux{    
-    padding: var(--space-xs) 0;
+    padding-top: var(--space-xs) ;
     gap:var(--space-md);    
     width: 100%;
     border-radius: 15px;
     background: var(--color-grey-4); 
-    border: clamp(5px, 4vh, 14px) solid var(--color-grey-4);
+    border: clamp(2px,1vw, 14px) solid var(--color-grey-4);
+    border-top: 14px solid var(--color-grey-4);
     max-width: 1100px;
     align-items: center;
 } 
@@ -124,7 +125,7 @@ video, img{
     .container-motivos-ux ul {
         height: 450px; 
         display:block;
-        justify-content: space-evenly;       
+            
     } 
     .container-motivos-ux li{
         height: 100px;  
@@ -155,12 +156,13 @@ video, img{
     }
     .container-motivos-ux li:hover h3{
         font-size: 1rem;
-       transition: all 0.5s ease;
+       
         position: relative;
        padding: 0;
        align-self: flex-start;
         text-align: unset;
         color: var(--color-orange);
+        
     }
 
 }

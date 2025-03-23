@@ -133,7 +133,7 @@
             <div>
                 <button v-show="isMobileOrTablet" class="menu-toggle" @click="toggleMenu" :aria-label="menuOpen ? 'Cerrar el menú' : 'Abrir el menú'">
                     <!-- Ícono de hamburguesa -->
-                    <span :class="{ open: menuOpen }" class="hamburger-icon" :aria-hidden="menuOpen ? 'false' : 'true'">
+                    <span :class="{ open: menuOpen }" class="hamburger-icon" tabindex="0"  :aria-hidden="menuOpen ? 'false' : 'true'">
                         <span></span>
                         <span></span>
                         <span></span>

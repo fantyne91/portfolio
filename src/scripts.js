@@ -3,7 +3,7 @@ import { createApp, nextTick } from 'vue'
 import { hideLoadingScreen } from './utils/hideLoadingScreen.js'
 import router from './router/index.js';
 
-
+/*funcion botones contacta*/
  export function handleContactClick(page) {   
    localStorage.setItem('fromPage', page)
    router.push({ path: '/contacta' })
@@ -40,11 +40,11 @@ const app = createApp({
         this.menuOpen = false
       }
     },
-
+   
   },
   watch: {
     $route(to, from) {
-      // Asegúrate de que cada ruta tenga un nombre definido
+      
       this.currentPage = to.name || 'Landing'
 
       if (this.currentPage !== 'Landing') {
@@ -95,10 +95,20 @@ const app = createApp({
             handleContactClick(this.currentPage) 
           })
         })
-      })
+        const main= document.querySelector('main')  
+        main.addEventListener('click', () => {           
+           if (this.menuOpen) {
+             this.menuOpen = false
+           }
+         }) 
 
-            
+         
+        
+         
+      })
      
+
+                 
     
     }
   },
@@ -106,6 +116,7 @@ const app = createApp({
     console.log('vue montado')
     this.updateScreenSize() // Comprobamos el tamaño al iniciar
     window.addEventListener('resize', this.updateScreenSize) // Detectamos cambios
+     
 
     
   },

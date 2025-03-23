@@ -52,6 +52,7 @@
 /**CONTAINER PROYECTO*/
 
 .section-proyect{
+    
     color:var(--color-primary);
     background-color: var(--color-grey-0);
     h2{color: rgb(255, 227, 145);}
@@ -66,38 +67,48 @@
     background-color: var(--color-med-blue);     
     border-radius: 15px;    
     box-shadow: 1px 1px 6px 0px var(--color-grey-5);
-    z-index: 10;      
+    z-index: 10;     
+    
 }
 
 .section-proyect > div:nth-child(1){
     align-items: flex-start;
+     max-width: 100%; 
 }
 .container-bubble {
     position: relative;
     font-family: DancingScript;
     color: var(--color-med-blue);
     text-align: center;
+   
+     padding-top: clamp(var(--space-sm), 3vw, var(--space-lg)) ;
     p{
         font-size: 1.6rem ;
+      
     }
 }
 
 .section-proyect > div:nth-child(2){
     background-color: var(--color-med-blue);
     border-radius: 15px;
-    box-shadow: 1px 1px 6px 0px var(--color-grey-5);     
+    box-shadow: 1px 1px 6px 0px var(--color-grey-5); 
+    align-items: start;  
+    
+    max-width: 100%;  
 }
 .section-proyect > div:nth-child(2) > div:nth-child(2){
-    flex:0.8 0.8;
+    
 }
 
 .bubble{
     position:absolute;
-    top:10px;    
+    top:50px;   
+    left: 30%; 
     width:180px;
     height:180px;
     border-radius: 50%;
     z-index: 0;
+   
     box-shadow: 0 0 3px var(--color-grey-3);
    opacity: 0;
    object-fit: cover;   
@@ -181,7 +192,13 @@
         opacity: 0;
     }
 }
-
+.pg-proyect-img{
+    
+    width:100%;
+    bottom: 0px;
+    padding: var(--space-xs);
+    background-color: var(--color-dark-blue); 
+}
 
 @media (max-width: 950px) {
 

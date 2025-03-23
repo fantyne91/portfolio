@@ -53,34 +53,40 @@
     color:var(--color-grey-2);
     border-radius: 15px;
     background: var(--color-calid-purple);    
-    border: 14px solid var(--color-calid-purple);
+    border: clamp(2px,1vw, 14px) solid var(--color-calid-purple);
+    border-top: 14px solid var(--color-calid-purple);
     align-items: center;
     h5{color: var(--color-grey-1);}
     h3,h4{font-weight: 500; color: var(--color-soft-purple); }
 }
 
 .container-casos-games span {
-     color: var(--color-soft-purple);   
+     color: var(--color-grey-1);   
 }
- .analisis-frost  ul{
-    gap: var(--space-md);
- }
+
  .analisis-frost  li{
   list-style: none;
-  border-radius: 5px;    
-   *{
-    margin:0;
-  }
+  border-radius: 10px;
+   border: 2px solid var(--color-calid-purple);
+   padding: var(--space-xs);
 } 
 .text-red{
-    
-    border: 1px solid rgb(123, 19, 52);
-     border-radius: 10px 10px 0 0 ;
-    
+    margin-left: var(--space-xxs);
+
 }
-.text-green{
+.text-bg-purple{
     background-color: var(--color-calid-purple) ;
-    border-radius: 0 0 10px 10px;
+    border-radius: 10px;   
+    padding: var(--space-xxs);
+}
+@media (hover: hover)  {
+     .analisis-frost  li .text-bg-purple, .analisis-frost  li .text-red{
+        display: none;
+     }
+     .analisis-frost  li:hover .text-bg-purple,  .analisis-frost  li:hover .text-red{
+        display: block;       
+     }
+    
 }
 
 @media (max-width: 540px) {
