@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dashboard de Proyectos</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			text-align: center;
+			margin: 20px;
+		}
+
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			margin-top: 20px;
+		}
+
+		th,
+		td {
+			border: 1px solid black;
+			padding: 8px;
+			text-align: left;
+		}
+
+		th {
+			background-color: #f2f2f2;
+		}
+
+		button {
+			padding: 10px 15px;
+			margin-top: 10px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Dashboard de Proyectos</h1>
+	<button id="loadData">Cargar Datos</button>
+	<table id="dataTable">
+		<thead>
+			<tr>
+				<th>Nombre</th>
+				<th>Email</th>
+				<th>Teléfono</th>
+				<th>Interés</th>
+				<th>Tamaño Proyecto</th>
+				<th>Tipo Proyecto</th>
+				<th>Ayuda</th>
+				<th>Mensaje</th>
+				<th>Desde Página</th>
+				<th>Fecha</th>
+			</tr>
+		</thead>
+		<tbody></tbody>
+	</table>
+
+	<script>
+		document.getElementById("loadData").addEventListener("click", () => {
+			fetch("/dashboard")
+				.then(response => response.json())
+				.then(data => {
+					const tableBody = document.querySelector("#dataTable tbody");
+					tableBody.innerHTML = "";
+
+					data.forEach(row => {
+						const tr = document.createElement("tr");
+						tr.innerHTML = `
+                            <td>${row.nombre}</td>
+                            <td>${row.email}</td>
+                            <td>${row.telefono || 'N/A'}</td>
+                            <td>${row.interes || 'N/A'}</td>
+                            <td>${row.tamanoProyecto || 'N/A'}</td>
+                            <td>${row.tipoProyecto || 'N/A'}</td>
+                            <td>${row.help ? 'Sí' : 'No'}</td>
+                            <td>${row.mensaje}</td>
+                            <td>${row.fromPage}</td>
+                            <td>${new Date(row.fecha).toLocaleString()}</td>
+                        `;
+						tableBody.appendChild(tr);
+					});
+				})
+				.catch(error => console.error("Error al cargar datos:", error));
+		});
+	</script>
+</body>
+
+</html>
