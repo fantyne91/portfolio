@@ -7,8 +7,9 @@ export default {
 		if (request.method === 'OPTIONS') {
 			return new Response(null, {
 				headers: {
-					'Access-Control-Allow-Origin': '*', // Reemplaza con tu lista de dominios si quieres restringirlo más
-					'Access-Control-Allow-Methods': 'POST, GET', // Solo los métodos que realmente usas
+					'Access-Control-Allow-Origin': 'https://www.mariadevdesign.com',
+				
+					'Access-Control-Allow-Methods': 'POST, GET, OPTIONS', // Solo los métodos que realmente usas
 					'Access-Control-Allow-Headers': 'Content-Type, Authorization', // Encabezados permitidos
 				},
 			});
@@ -81,6 +82,10 @@ export default {
 	createResponse(body, status, origin, ALLOWED_ORIGINS) {
 		const headers = {
 			'Content-Type': 'application/json',
+			'Access-Control-Allow-Origin': origin, // Permite el origen correcto
+			'Access-Control-Allow-Methods': 'POST, GET', // Los métodos permitidos
+			'Access-Control-Allow-Headers': 'Content-Type, Authorization', // Encabezados permitidos
+			'Access-Control-Allow-Credentials': 'true', // Si estás usando cookies o autenticación
 		};
 
 		
