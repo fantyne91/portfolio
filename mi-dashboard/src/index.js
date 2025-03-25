@@ -9,14 +9,16 @@ export default {
 			'https://portfolio-gq6.pages.dev',
 		];
 
+		const origin = request.headers.get('Origin');
+
 		// Manejo de CORS para preflight requests (OPTIONS)
 		if (request.method === 'OPTIONS') {
 			return new Response(null, {
 				headers: {
-					'Access-Control-Allow-Origin': 'https://www.mariadevdesign.com',
-					'Access-Control-Allow-Credentials': 'true',
-					'Access-Control-Allow-Methods': 'POST, GET, OPTIONS', // Solo los métodos que realmente usas
+					'Access-Control-Allow-Origin': origin || '*', // Permite el origen correcto
+					'Access-Control-Allow-Methods': 'POST, GET, OPTIONS', // Métodos permitidos
 					'Access-Control-Allow-Headers': 'Content-Type, Authorization', // Encabezados permitidos
+					'Access-Control-Allow-Credentials': 'true', // Si usas autenticación o cookies
 				},
 			});
 		}
@@ -43,7 +45,7 @@ export default {
 
 			await env.DB.prepare(
 				`INSERT INTO projects (nombre, email, telefono, interes, tipoProyecto, tamanoProyecto, help, mensaje, fromPage) 
-                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`,
 			)
 				.bind(
 					data.nombre,
@@ -58,7 +60,13 @@ export default {
 				)
 				.run();
 
-			return this.createResponse({ success: true, message: 'Formulario guardado exitosamente' }, 200, origin, ALLOWED_ORIGINS);
+			// Respuesta con redirección a la landing
+			return this.createResponse(
+				{ success: true, message: 'Formulario guardado exitosamente', redirect: 'https://mariadevdesign.com' },
+				200,
+				origin,
+				ALLOWED_ORIGINS,
+			);
 		} catch (error) {
 			return this.createResponse({ success: false, message: 'Error al guardar: ' + error.message }, 500, origin, ALLOWED_ORIGINS);
 		}
@@ -71,13 +79,29 @@ export default {
 		if (!authHeader || !this.authenticateRequest(authHeader, env)) {
 			return this.createResponse({ success: false, message: 'Unauthorized' }, 401, origin, ALLOWED_ORIGINS);
 		}
-		console.log("pasa handle")
+
 		try {
 			const result = await env.DB.prepare('SELECT * FROM projects ORDER BY fecha DESC').all();
-			return this.createResponse(result.results, 200, origin, ALLOWED_ORIGINS);
+
+			// Asigna color de fondo a cada proyecto basado en "interes"
+			const projects = result.results.map((project) => ({
+				...project,
+				backgroundColor: this.getBackgroundColor(project.interes),
+			}));
+
+			return this.createResponse({ success: true, data: projects }, 200, origin, ALLOWED_ORIGINS);
 		} catch (error) {
 			return this.createResponse({ success: false, message: 'Error al obtener datos: ' + error.message }, 500, origin, ALLOWED_ORIGINS);
 		}
+	},
+
+	getBackgroundColor(interes) {
+		const colors = {
+			uxui: '#FFA500', // Naranja
+			programming: '#ADD8E6', // Azul claro
+			games: '#D8BFD8', // Violeta claro
+		};
+		return colors[interes] || '#FFFFFF'; // Blanco por defecto si no hay coincidencia
 	},
 
 	authenticateRequest(authHeader, env) {
@@ -88,17 +112,16 @@ export default {
 	createResponse(body, status, origin, ALLOWED_ORIGINS) {
 		const headers = {
 			'Content-Type': 'application/json',
-			'Access-Control-Allow-Origin': origin, // Permite el origen correcto
-			'Access-Control-Allow-Methods': 'POST, GET', // Los métodos permitidos
+			'Access-Control-Allow-Origin': origin || '*', // Permite el origen correcto
+			'Access-Control-Allow-Methods': 'POST, GET', // Métodos permitidos
 			'Access-Control-Allow-Headers': 'Content-Type, Authorization', // Encabezados permitidos
-			'Access-Control-Allow-Credentials': 'true', // Si estás usando cookies o autenticación
+			'Access-Control-Allow-Credentials': 'true', // Si usas autenticación o cookies
 		};
-console.log('pasa response');
-		
+
+		// Bloquea orígenes no permitidos
 		if (origin && !ALLOWED_ORIGINS.includes(origin)) {
 			return new Response('Forbidden', { status: 403 });
 		}
-
 
 		return new Response(JSON.stringify(body), {
 			status,
