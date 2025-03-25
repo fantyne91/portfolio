@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>María Ortiz PortFolio -Diseño UX/UI, Desarrollo Web, y Videojuegos-</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" >
+
+     <link rel="preload" href="/fonts/Barlow/Barlow-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+     <link rel="preload" href="/fonts/Barlow/Barlow-Medium.woff2" as="font" type="font/woff2"  crossorigin="anonymous">
+     <link rel="preload" href="/fonts/Barlow/Barlow-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous"> 
+  
+    
+    <!--SEO-->
+    <meta name="description" content="Desarrollo de aplicaciones web, diseño UX/UI, diseño y desarrollo de videojuegos con Unreal Engine">
+    <meta property="og:title" content="Portafolio de María Ortiz - Desarrollo Web y Diseño">
+    <meta property="og:type" content="website">    
+    <meta property="og:description" content="Desarrollo web, diseño ux/ui y desarrollo videojuegos">
+    <meta property="keywords" content="Desarrollo web, programador, diseño ux/ui, videojuegos, unreal engine ">
+    <!-- <meta property="og:image" content="/images/og_image.png">  -->
+    <meta name="author" content="Maria Ortiz">
+    <meta name="robots" content="index, follow">
+    <!-- ICON --> 
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/og_image_32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/og_image_16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/og_image_180.png">
+    <!-- PRELOAD -->
+   
+    <link rel="preload" href="/images/portfolio-img.webp" as="image" type="image/webp" fetchpriority="high">
+
+    <style>     
+         
+        @font-face {
+            font-family: 'Barlow';
+            src: url('/fonts/Barlow/Barlow-Regular.woff2') format('woff2');
+            font-weight: 400;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Barlow';
+            src: url('/fonts/Barlow/Barlow-Medium.woff2') format('woff2');
+            font-weight: 500;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Barlow';
+            src: url('/fonts/Barlow/Barlow-SemiBold.woff2') format('woff2');
+            font-weight: 600;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Barlow';
+            src: url('/fonts/Barlow/Barlow-Bold.woff2') format('woff2');
+            font-weight: 700;
+            font-display: swap;
+        }
+
+         
+        [v-cloak] {
+             display: none;
+        }  
+        /*Carga preload*/
+        #loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background: var(--color-secondary);         
+            z-index: 99990; 
+            color: var(--color-primary);    
+            opacity: 1;
+             transition: opacity 1.5s ease-in-out;      
+                
+        }
+        #loading-screen * {            
+            opacity: 0;            
+            animation: fadeIn 5s ease forwards;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;               
+            }
+            to {
+                opacity: 1;                
+            }
+        }
+
+ 
+        .gif {   
+        border-radius: 60%;        
+        }
+
+        .gif-container::before{
+            content:"";
+            box-shadow: inset 0 0 10px 5px var(--color-secondary);    
+            width: 140px;
+            height: 140px;    
+            border-radius: 60%;
+            position: absolute;
+            z-index: 99999;
+        }       
+
+    </style>    
+  <script type="module" crossorigin src="/assets/index-BGjpU73y.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index.css">
+</head>
+
+
+
+<body>
+    <div id="loading-screen" class="flex">
+        <div class="gif-container flex">     
+            <img class="gif" src="/images/gif-carga.webp" alt="Animación en movimiento carga" width="140" height="140">
+            <p>Cargando...</p>
+        </div>          
+    </div>
+
+    <div id="app" class="" v-cloak>
+        
+        <header class="header" role="banner">
+            
+            <router-link to="/" class="logo" aria-label="Ir al inicio">
+                    <img src="/images/logo.webp" alt="Logo del sitio"  height="auto">
+            </router-link>                  
+            
+            
+            <!-- Botón hamburguesa -->
+            <div>
+                <button v-show="isMobileOrTablet" class="menu-toggle" @click="toggleMenu" :aria-label="menuOpen ? 'Cerrar el menú' : 'Abrir el menú'">
+                    <!-- Ícono de hamburguesa -->
+                    <span :class="{ open: menuOpen }" class="hamburger-icon" tabindex="0"  :aria-hidden="menuOpen ? 'false' : 'true'">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>           
+            </div>
+            
+            <!-- llamado  router script vue -->
+            <nav :class="menuOpen ? 'nav-menu open' : 'nav-menu'" @click="toggleMenu" aria-label="Menú principal" >
+            <router-link  to="/" tabindex="0" aria-label="Ir a la página de inicio">Inicio</router-link>
+            <router-link  to="/uxui" tabindex="0" aria-label="Ir a la sección UX/UI">Ux/ui</router-link>
+            <router-link  to="/programming" tabindex="0" aria-label="Ir a la sección de Programación">Programación</router-link>
+            <router-link  to="/games" tabindex="0" aria-label="Ir a la sección de Videojuegos">Videojuegos</router-link>
+            <router-link  to="/sobreMi" tabindex="0" aria-label="Ir a la sección Sobre mí">Sobre mí</router-link>
+            </nav>            
+        </header>
+      
+        <!-- Reflejo de vue-router-->
+        <main :class="currentPageClassComputed">
+             <router-view v-slot="{ Component }">
+                <keep-alive>
+                    <component :is="Component" />
+                </keep-alive>
+            </router-view>
+        </main>
+        
+        <!-- <router-link to="/contacta" class="btn" aria-label="Contactar para servicios de desarrollo web y diseño"
+            itemprop="url" style="opacity:0">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="32px" fill="#62626F">
+                <path
+                    d="M240-400h320v-80H240v80Zm0-120h480v-80H240v80Zm0-120h480v-80H240v80ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z" />
+            </svg>
+        </router-link> -->
+
+        <footer class="footer">
+            <p>Desarrollo y UX/UI 
+            </p>
+        </footer>
+    </div>
+    <div id="image-container" style=" width: 100vw; height: 700px; display: none;">
+    <img 
+        id="preloaded-image"
+        src="/images/portfolio-img.webp" 
+        width="1920" height="700" 
+        loading="eager"
+        alt="Imagen principal"
+    >
+</div>
+</body>
+</html>
