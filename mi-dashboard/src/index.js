@@ -62,7 +62,7 @@ export default {
 
 			// Respuesta con redirección a la landing
 			return this.createResponse(
-				{ success: true, message: 'Formulario guardado exitosamente', redirect: 'https://mariadevdesign.com' },
+				{ success: true, message: 'Formulario guardado exitosamente' },
 				200,
 				origin,
 				ALLOWED_ORIGINS,

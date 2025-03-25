@@ -71,18 +71,18 @@
 						const tr = document.createElement("tr");
 						// Agregar color de fondo
 						const backgroundColor = row.backgroundColor || '#FFFFFF'; 
-						tr.innerHTML = `<div style="background-color: ${backgroundColor};">
+						tr.innerHTML = `
 
                             <td>${row.nombre}</td>
                             <td>${row.email}</td>
                             <td>${row.telefono || ''}</td>
-                            <td>${row.interes || ''}</td>
+                            <td style="background-color: ${backgroundColor};">${row.interes || ''}</td>
                             <td>${row.tamanoProyecto || ''}</td>
                             <td>${row.tipoProyecto || ''}</td>
                             <td>${row.help ? 'Sí' : 'No'}</td>
                             <td>${row.mensaje}</td>
                             <td>${row.fromPage}</td>
-                            <td>${new Date(row.fecha).toLocaleString()}</td> </div>
+                            <td>${new Date(row.fecha).toLocaleString()}</td> 
                         `;
 						tableBody.appendChild(tr);
 					});
