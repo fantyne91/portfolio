@@ -105,7 +105,8 @@ export default {
 	},
 
 	authenticateRequest(authHeader, env) {
-		const validToken = `Bearer ${env.AUTH_TOKEN}`;
+		// const validToken = `Bearer ${env.AUTH_TOKEN}`;
+		const validToken = `Bearer baliybatmanlove`;
 		return authHeader === validToken;
 	},
 
