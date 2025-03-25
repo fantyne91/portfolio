@@ -1,7 +1,7 @@
 export default {
 	async fetch(request, env) {
 		const url = new URL(request.url);
-		const ALLOWED_ORIGINS = ['https://mariadevdesign.com', 'https://admin.mariadevdesign.com', 'https://portfolio-gq6.pages.dev'];
+		const ALLOWED_ORIGINS = ['https://mariadevdesign.com', 'https://admin.mariadevdesign.com','https://mi-dashboard.mjortiz93.workers.dev', 'https://portfolio-gq6.pages.dev'];
 
 		// Manejo de CORS para preflight requests (OPTIONS)
 		if (request.method === 'OPTIONS') {
