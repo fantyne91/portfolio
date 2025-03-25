@@ -7,9 +7,9 @@ export default {
 		if (request.method === 'OPTIONS') {
 			return new Response(null, {
 				headers: {
-					'Access-Control-Allow-Origin': '*',
-					'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
-					'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+					'Access-Control-Allow-Origin': '*', // Reemplaza con tu lista de dominios si quieres restringirlo más
+					'Access-Control-Allow-Methods': 'POST, GET', // Solo los métodos que realmente usas
+					'Access-Control-Allow-Headers': 'Content-Type, Authorization', // Encabezados permitidos
 				},
 			});
 		}

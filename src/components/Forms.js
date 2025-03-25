@@ -74,7 +74,7 @@ export default {
     const submitForm = async () => {
       const formData = { ...form.value } // Copiar los datos del formulario
       try {
-        const response = await fetch('https://admin.mariadevdesign.com', {
+        const response = await fetch('https://admin.mariadevdesign.com/submit', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
