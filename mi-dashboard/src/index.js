@@ -89,7 +89,7 @@ export default {
 				backgroundColor: this.getBackgroundColor(project.interes),
 			}));
 
-			return this.createResponse({ success: true, data: projects }, 200, origin, ALLOWED_ORIGINS);
+			return this.createResponse(projects, 200, origin, ALLOWED_ORIGINS);
 		} catch (error) {
 			return this.createResponse({ success: false, message: 'Error al obtener datos: ' + error.message }, 500, origin, ALLOWED_ORIGINS);
 		}

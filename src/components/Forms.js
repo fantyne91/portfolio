@@ -89,9 +89,9 @@ export default {
         if (result.success) {
           alert('Formulario enviado correctamente')
           form.value = {} // Limpiar el formulario después de enviar
-          if (result.redirect) {
-            window.location.href = result.redirect // Redirige a la landing
-          }
+          // if (result.redirect) {
+          //   window.location.href = result.redirect // Redirige a la landing
+          // }
         } else {
           alert('Error al enviar el formulario')
         }
