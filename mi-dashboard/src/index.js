@@ -65,7 +65,7 @@ export default {
 		if (!authHeader || !this.authenticateRequest(authHeader, env)) {
 			return this.createResponse({ success: false, message: 'Unauthorized' }, 401, origin, ALLOWED_ORIGINS);
 		}
-
+		console.log("pasa handle")
 		try {
 			const result = await env.DB.prepare('SELECT * FROM projects ORDER BY fecha DESC').all();
 			return this.createResponse(result.results, 200, origin, ALLOWED_ORIGINS);
@@ -87,7 +87,7 @@ export default {
 			'Access-Control-Allow-Headers': 'Content-Type, Authorization', // Encabezados permitidos
 			'Access-Control-Allow-Credentials': 'true', // Si estás usando cookies o autenticación
 		};
-
+console.log('pasa response');
 		
 		if (origin && !ALLOWED_ORIGINS.includes(origin)) {
 			return new Response('Forbidden', { status: 403 });
