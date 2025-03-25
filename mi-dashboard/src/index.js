@@ -8,7 +8,7 @@ export default {
 			return new Response(null, {
 				headers: {
 					'Access-Control-Allow-Origin': 'https://www.mariadevdesign.com',
-				
+					'Access-Control-Allow-Credentials': 'true',
 					'Access-Control-Allow-Methods': 'POST, GET, OPTIONS', // Solo los métodos que realmente usas
 					'Access-Control-Allow-Headers': 'Content-Type, Authorization', // Encabezados permitidos
 				},
