@@ -1,7 +1,7 @@
 export default {
 	async fetch(request, env) {
 		const url = new URL(request.url);
-		const ALLOWED_ORIGINS = ['https://mariadevdesign.com', 'https://admin.mariadevdesign.com', 'https://portfolio-gq6.pages.dev/'];
+		const ALLOWED_ORIGINS = ['https://mariadevdesign.com', 'https://admin.mariadevdesign.com', 'https://portfolio-gq6.pages.dev'];
 
 		// Manejo de CORS para preflight requests (OPTIONS)
 		if (request.method === 'OPTIONS') {
@@ -83,9 +83,11 @@ export default {
 			'Content-Type': 'application/json',
 		};
 
-		if (origin && ALLOWED_ORIGINS.includes(origin)) {
-			headers['Access-Control-Allow-Origin'] = origin;
+		
+		if (origin && !ALLOWED_ORIGINS.includes(origin)) {
+			return new Response('Forbidden', { status: 403 });
 		}
+
 
 		return new Response(JSON.stringify(body), {
 			status,
