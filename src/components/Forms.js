@@ -75,7 +75,7 @@ export default {
       const formData = { ...form.value } // Copiar los datos del formulario
       try {
         const response = await fetch(
-          'https://mi-dashboard.mjortiz93.workers.dev/submit',
+          'https://admin.mariadevdesign.com/submit',
           {
             method: 'POST',
             headers: {
