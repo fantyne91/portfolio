@@ -114,9 +114,16 @@
 <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
+
+    // Configurar el Consent Mode en "denied" por defecto
+    gtag('consent', 'default', {
+            'analytics_storage': 'denied'
+        });
     gtag('js', new Date());
 
-    gtag('config', 'G-TG5RNBHJS6');
+    gtag('config', 'G-TG5RNBHJS6' , {
+            'anonymize_ip': true
+        });
 </script>
 
 
