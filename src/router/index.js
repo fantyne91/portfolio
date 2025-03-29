@@ -3,9 +3,9 @@ import { createRouter, createWebHistory } from 'vue-router'
 // Importa  vistas
 import Landing from '../components/Landing.js'
 import Uxui from '../components/Uxui.js'
- import Programming from '../components/Programming.js'
+ import Programacion from '../components/Programacion.js'
  import SobreMi from '../components/SobreMi.js'
- import Games from '../components/Games.js'
+ import Videojuegos from '../components/Videojuegos.js'
 import Forms from '../components/Forms.js'
 import Thanks from '../components/Thanks.js' 
 
@@ -22,18 +22,18 @@ const routes = [
     component: Uxui,
   },
   {
-    path: '/programming',
-    name: 'Programming',
-    component: Programming,
+    path: '/programacion',
+    name: 'Programacion',
+    component: Programacion,
   },
 
   {
-    path: '/games',
-    name: 'Games',
-    component: Games,
+    path: '/videojuegos',
+    name: 'Videojuegos',
+    component: Videojuegos,
   },
   {
-    path: '/sobreMi',
+    path: '/sobre-mi',
     name: 'SobreMi',
     component: SobreMi,
   },

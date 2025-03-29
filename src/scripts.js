@@ -58,7 +58,7 @@ const app = createApp({
           existingBtn.remove()
         }
 
-        if (['Uxui', 'Programming', 'Games'].includes(this.currentPage)) {
+        if (['Uxui', 'Programacion', 'Videojuegos'].includes(this.currentPage)) {
           const btn = document.createElement('button')
           btn.classList.add('btn', 'contact-btn')
 

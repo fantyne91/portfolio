@@ -166,7 +166,7 @@ export default {
                </div>
                <div>
                    <router-link to="/uxui"> Casos de estudio UX/UI </router-link>
-                   <router-link to="/games"> Casos de estudio Videojuegos </router-link>
+                   <router-link to="/videojuegos"> Casos de estudio Videojuegos </router-link>
                </div>
            </div>
            <img class="img-pc" src="/images/psico-ux.png" loading="lazy"

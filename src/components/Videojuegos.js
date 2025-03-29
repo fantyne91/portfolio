@@ -1,7 +1,7 @@
 import '../styles/games.css'
 
 export default {
-  name: 'Games',
+  name: 'Videojuegos',
   template: /*html*/ `
 
     <section class="header-games">

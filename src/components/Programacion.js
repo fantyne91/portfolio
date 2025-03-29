@@ -1,7 +1,7 @@
 import '../styles/programming.css'
 
 export default {
-  name: 'Programming',
+  name: 'Programacion',
   template: /*html*/ `
    
         <section class="header-programming p-align">

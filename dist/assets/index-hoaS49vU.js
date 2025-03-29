@@ -195,7 +195,7 @@
                </div>
                <div>
                    <router-link to="/uxui"> Casos de estudio UX/UI </router-link>
-                   <router-link to="/games"> Casos de estudio Videojuegos </router-link>
+                   <router-link to="/videojuegos"> Casos de estudio Videojuegos </router-link>
                </div>
            </div>
            <img class="img-pc" src="/images/psico-ux.png" loading="lazy"
@@ -639,7 +639,7 @@
                 
                 </div>
         </section>
-    `},Pv={name:"Programming",template:`
+    `},Pv={name:"Programacion",template:`
    
         <section class="header-programming p-align">
                 <h1> Desarrollo web y Personalización de Plataformas CMS.</h1>
@@ -800,7 +800,7 @@
      <div></div>
        
   </section>
-  `,mounted(){const e=document.querySelectorAll(".scroll-item"),t=()=>{const s=window.innerHeight,n=s/2;e.forEach(i=>{const o=i.getBoundingClientRect(),a=o.top+o.height/2-n,l=Math.min(1,Math.abs(a/(s/3))),c=.9+l*.8,f=l*(a>0?1:-1),u=1.15-l;i.style.transform=`scale(${c}) translateX(${f}px)`,i.style.opacity=u})};t(),window.addEventListener("scroll",t)}},Nv={name:"Games",template:`
+  `,mounted(){const e=document.querySelectorAll(".scroll-item"),t=()=>{const s=window.innerHeight,n=s/2;e.forEach(i=>{const o=i.getBoundingClientRect(),a=o.top+o.height/2-n,l=Math.min(1,Math.abs(a/(s/3))),c=.9+l*.8,f=l*(a>0?1:-1),u=1.15-l;i.style.transform=`scale(${c}) translateX(${f}px)`,i.style.opacity=u})};t(),window.addEventListener("scroll",t)}},Nv={name:"Videojuegos",template:`
 
     <section class="header-games">
       <h1 class="p-align">Unreal engine y diseño UX/UI <br>para videojuegos</h1>
@@ -1478,4 +1478,4 @@
   </section>
 
 
-    `},Mv=[{path:"/",name:"Landing",component:Av},{path:"/uxui",name:"Uxui",component:Iv},{path:"/programming",name:"Programming",component:Pv},{path:"/games",name:"Games",component:Nv},{path:"/sobreMi",name:"SobreMi",component:Rv},{path:"/contacta",name:"Contacta",component:kv},{path:"/thanks",name:"Thanks",component:Ov}],Nf=wv({history:ev(),routes:Mv,scrollBehavior(e,t,s){return{top:0,behavior:"smooth"}}});function Lv(e){localStorage.setItem("fromPage",e),Nf.push({path:"/contacta"})}const kf=Ni({data(){return{currentPage:"Landing",menuOpen:!1,isMobileOrTablet:!1,isLoading:!0}},computed:{currentPageClassComputed(){return`page-${this.currentPage.toLowerCase()}`}},methods:{toggleMenu(){this.menuOpen=!this.menuOpen},updateScreenSize(){this.isMobileOrTablet=window.innerWidth<=950,this.isMobileOrTablet||(this.menuOpen=!1)}},watch:{$route(e,t){this.currentPage=e.name||"Landing",this.currentPage!=="Landing"&&setTimeout(yf,500),Qs(()=>{const s=document.querySelector(".btn");if(s&&s.remove(),["Uxui","Programming","Games"].includes(this.currentPage)){const o=document.createElement("button");o.classList.add("btn","contact-btn");const r=document.createElementNS("http://www.w3.org/2000/svg","svg");r.setAttribute("xmlns","http://www.w3.org/2000/svg"),r.setAttribute("height","24px"),r.setAttribute("viewBox","0 -960 960 960"),r.setAttribute("width","32px"),r.setAttribute("fill","#62626F");const a=document.createElementNS("http://www.w3.org/2000/svg","path");a.setAttribute("d","M240-400h320v-80H240v80Zm0-120h480v-80H240v80Zm0-120h480v-80H240v80ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z"),r.appendChild(a),o.appendChild(r),document.body.appendChild(o)}document.querySelectorAll(".contact-btn").forEach(o=>{o.addEventListener("click",r=>{console.log(`desde ${this.currentPage}`),r.preventDefault(),Lv(this.currentPage)})}),document.querySelector("main").addEventListener("click",()=>{this.menuOpen&&(this.menuOpen=!1)})})}},mounted(){console.log("vue montado"),this.updateScreenSize(),window.addEventListener("resize",this.updateScreenSize)},beforeUnmount(){window.removeEventListener("resize",this.updateScreenSize)}});kf.use(Nf);kf.mount("#app");
+    `},Mv=[{path:"/",name:"Landing",component:Av},{path:"/uxui",name:"Uxui",component:Iv},{path:"/programacion",name:"Programacion",component:Pv},{path:"/videojuegos",name:"Videojuegos",component:Nv},{path:"/sobre-mi",name:"SobreMi",component:Rv},{path:"/contacta",name:"Contacta",component:kv},{path:"/thanks",name:"Thanks",component:Ov}],Nf=wv({history:ev(),routes:Mv,scrollBehavior(e,t,s){return{top:0,behavior:"smooth"}}});function Lv(e){localStorage.setItem("fromPage",e),Nf.push({path:"/contacta"})}const kf=Ni({data(){return{currentPage:"Landing",menuOpen:!1,isMobileOrTablet:!1,isLoading:!0}},computed:{currentPageClassComputed(){return`page-${this.currentPage.toLowerCase()}`}},methods:{toggleMenu(){this.menuOpen=!this.menuOpen},updateScreenSize(){this.isMobileOrTablet=window.innerWidth<=950,this.isMobileOrTablet||(this.menuOpen=!1)}},watch:{$route(e,t){this.currentPage=e.name||"Landing",this.currentPage!=="Landing"&&setTimeout(yf,500),Qs(()=>{const s=document.querySelector(".btn");if(s&&s.remove(),["Uxui","Programacion","Videojuegos"].includes(this.currentPage)){const o=document.createElement("button");o.classList.add("btn","contact-btn");const r=document.createElementNS("http://www.w3.org/2000/svg","svg");r.setAttribute("xmlns","http://www.w3.org/2000/svg"),r.setAttribute("height","24px"),r.setAttribute("viewBox","0 -960 960 960"),r.setAttribute("width","32px"),r.setAttribute("fill","#62626F");const a=document.createElementNS("http://www.w3.org/2000/svg","path");a.setAttribute("d","M240-400h320v-80H240v80Zm0-120h480v-80H240v80Zm0-120h480v-80H240v80ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z"),r.appendChild(a),o.appendChild(r),document.body.appendChild(o)}document.querySelectorAll(".contact-btn").forEach(o=>{o.addEventListener("click",r=>{console.log(`desde ${this.currentPage}`),r.preventDefault(),Lv(this.currentPage)})}),document.querySelector("main").addEventListener("click",()=>{this.menuOpen&&(this.menuOpen=!1)})})}},mounted(){console.log("vue montado"),this.updateScreenSize(),window.addEventListener("resize",this.updateScreenSize)},beforeUnmount(){window.removeEventListener("resize",this.updateScreenSize)}});kf.use(Nf);kf.mount("#app");

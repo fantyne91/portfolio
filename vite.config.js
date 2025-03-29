@@ -8,10 +8,12 @@ export default defineConfig({
     sitemap({
       hostname: 'https://mariadevdesign.com',
       routes: [
-        '/', 
-        '/proyectos', 
-        '/contacto', 
-        '/sobre-mi'
+          '/',         
+        '/contacta', 
+        '/sobre-mi', 
+        '/uxui', 
+        '/programacion',
+        '/videojuegos',        
       ],
     }),
   ],

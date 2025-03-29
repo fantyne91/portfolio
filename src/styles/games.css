@@ -1,4 +1,4 @@
-.page-games::after{
+.page-videojuegos::after{
     content:"";
     position: fixed;
     top: 0;
@@ -44,7 +44,7 @@
 
 
 /**Casos*/
-.page-games .black-background h2{
+.page-videojuegos .black-background h2{
     color: var(--color-soft-purple);
 }
 .container-casos-games{
