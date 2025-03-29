@@ -7,7 +7,7 @@ export default {
         <section class="header-programming p-align">
                 <h1> Desarrollo web y Personalización de Plataformas CMS.</h1>
                 <div class="flex-row">
-                    <img  src="/images/seo1.webp" alt="foto seo" >
+                    <img  src="/images/seo1.webp" alt="imagen el SEO es vital" >
                     <h2 class="p-med padding-sm"> Contar con una web optimizada no solo mejora la experiencia del usuario, sino que también impacta en el SEO, lo que ayuda a posicionar tu marca y fidelizar clientes.</h2>
                 </div>
         </section>
@@ -64,22 +64,22 @@ export default {
                             </ul>
                         </div>
                         <div class="container-img-focus">
-                            <img class="img-focus" src="/images/foto-dogfinder.webp" loading="lazy" alt="img app animal" width="500px">
+                            <img class="img-focus" src="/images/foto-dogfinder.webp" loading="lazy" alt="imagen app web animal" width="500px">
                         </div>
                     </div>
                     <div class="container-bubble align-center">
                         <p> Algunos de mis pequeños acogidos </p>
-                        <img class="bubble" src="/images/duke.webp" loading="lazy" alt=" acogido duke">
-                        <img class="bubble" src="/images/luna.webp" loading="lazy" alt=" acogida luna">
-                        <img class="bubble" src="/images/baby.webp" loading="lazy" alt=" acogido baby">
-                        <img class="bubble" src="/images/boni.webp" loading="lazy" alt=" acogida boni">
-                        <img class="bubble" src="/images/bebes.webp" loading="lazy" alt="acogido duke y boni">
+                        <img class="bubble" src="/images/duke.webp" loading="lazy" alt=" perro acogido duke">
+                        <img class="bubble" src="/images/luna.webp" loading="lazy" alt=" perra acogida luna">
+                        <img class="bubble" src="/images/baby.webp" loading="lazy" alt=" perra acogida baby">
+                        <img class="bubble" src="/images/boni.webp" loading="lazy" alt=" perra acogida boni">
+                        <img class="bubble" src="/images/bebes.webp" loading="lazy" alt="perros acogidos duke y boni">
 
-                        <img class="bubble" src="/images/bebeses.webp" loading="lazy" alt="  acogidos bebes">
-                        <img class="bubble" src="/images/toby.webp" loading="lazy" alt=" acogido toby">
-                        <img class="bubble" src="/images/bali.webp" loading="lazy" alt=" acogida bali">
-                        <img class="bubble" src="/images/bruce.webp" loading="lazy" alt=" acogido bruce">
-                        <img class="bubble" src="/images/gorda.webp" loading="lazy" alt=" acogida gorda">
+                        <img class="bubble" src="/images/bebeses.webp" loading="lazy" alt=" perros acogidos bebes">
+                        <img class="bubble" src="/images/toby.webp" loading="lazy" alt=" perro acogido toby">
+                        <img class="bubble" src="/images/bali.webp" loading="lazy" alt=" perra adoptada bali">
+                        <img class="bubble" src="/images/bruce.webp" loading="lazy" alt="perro acogido bruce">
+                        <img class="bubble" src="/images/gorda.webp" loading="lazy" alt=" perra acogida gorda">
                     </div>
                 </div>
                    <div class="flex-row padding-sm">
@@ -106,24 +106,16 @@ export default {
                         </div>
                         <div>
                             <figure  >
-                                    <img class="pg-proyect-img " src="/images/diagrama.webp" loading="lazy" alt="img happypath" >
+                                    <img class="pg-proyect-img " src="/images/diagrama.webp" loading="lazy" alt=" diagrama de flujo app web" >
                                     <figcaption>Diagrama de flujo</figcaption>
                             </figure>
                             <figure  >
-                                    <img class="pg-proyect-img" src="/images/cod-error.webp" loading="lazy" alt="img casos de prueba" width="500px">
+                                    <img class="pg-proyect-img" src="/images/cod-error.webp" loading="lazy" alt=" casos de prueba app web" width="500px">
                                     <figcaption>Casos de prueba</figcaption>
                             </figure>
                         </div>
                     </div>
-                  
-                    
-                             <!--   
-                                
-                                <div class="container-img-focus">
-                                <img class="img-focus" src="/images/cod3.webp" loading="lazy" alt="img codigo php" width="500px">
-                            </div>
-                            <div class="container-img-focus">
-                                <img class="img-focus" src="/images/cod2.webp" loading="lazy" alt="img codigo php" width="100">-->
+                                      
                    
             </section>
     `,

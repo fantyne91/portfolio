@@ -49,15 +49,13 @@
         <!--Img cargada-->
         <img v-show="imageLoaded" :src="cachedImage" class="portfolio-img" alt="imagen nubes presentación Maria"
             @load="onImageLoad" width="1920" height="700">
-        <!--<img  class="portfolio-img2" src="/images/portfolio-img2.webp" alt="imagen nubes presentación Maria"  width="1920"
-            height="700" >
-            <p class= "texto-entrada">Diseño y programación<br> para empresas y videojuegos</p>-->
+   
     </div>
 
     <section lang="es" class="list-container" itemscope itemtype="https://schema.org/ItemList"
         aria-labelledby="encabezado-servicios">
-        <h1 id="encabezado-servicios" itemprop="name">UX/UI, desarrollo web <br> y Unreal Engine</h1>
-        <img ref="imgHover" id="imgHover" src="" alt="Imagen flotante">
+        <h1 id="encabezado-servicios" itemprop="name">Diseño UX/UI, desarrollo web <br> y videojuegos con Unreal Engine</h1>
+        <img ref="imgHover" id="imgHover" src="" alt="Imagen flotante hover">
         
         <ul class="group-list" itemprop="mainEntity">
             <!-- Diseño Web UX/UI -->
@@ -225,46 +223,46 @@
                    
                     <!-- Imagen Tienda -->
                     <div class="img-portfolio">
-                        <img src="/images/bag.webp" loading="lazy" alt="Diseño UX/UI" itemprop="image" />
+                        <img src="/images/bag.webp" loading="lazy" alt="Diseño web UX/UI tienda online" itemprop="image" />
                     </div>
 
                     <!-- Imagen Casas -->
                     <div >
-                        <img class="casa" src="/images/casa.webp" loading="lazy" alt="Diseño UX/UI casas" itemprop="image" />
+                        <img class="casa" src="/images/casa.webp" loading="lazy" alt="Diseño web UX/UI casas prefabricadas" itemprop="image" />
                     </div>
 
                      <!-- Imagen Juegos -->
                     <div class="img-portfolio">
-                        <img src="/images/games.webp" loading="lazy" alt="Diseño UX/UI tienda gamer" itemprop="image" />
+                        <img src="/images/games.webp" loading="lazy" alt="Diseño web UX/UI tienda gamer" itemprop="image" />
                     </div>
 
                     <!-- Imagen Plantas -->
                     <div class="img-portfolio">
-                        <img src="/images/plant.webp" loading="lazy" alt="Diseño UX/UI tienda plantas" itemprop="image" />
+                        <img src="/images/plant.webp" loading="lazy" alt="Diseño web UX/UI tienda plantas" itemprop="image" />
                     </div>
                    
                     <!-- Video Photofolio -->                    
                     <div class="img-portfolio">
-                        <img src="/images/photofolio.webp" loading="lazy" alt="Diseño UX/UI app bancaria" itemprop="image" />
+                        <img src="/images/photofolio.webp" loading="lazy" alt="Diseño web UX/UI photofolio" itemprop="image" />
                     </div>
                     <!-- Imagen Bancaria -->
                     <div class="img-portfolio">
-                        <img src="/images/bank.webp" loading="lazy" alt="Diseño UX/UI app bancaria" itemprop="image" />
+                        <img src="/images/bank.webp" loading="lazy" alt="Diseño web UX/UI app bancaria" itemprop="image" />
                     </div>
 
                     <!-- Imagen Zen -->
                     <div class="img-portfolio">
-                        <img src="/images/zen.webp" loading="lazy" alt="Diseño UX/UI app Zen" itemprop="image" />
+                        <img src="/images/zen.webp" loading="lazy" alt="Diseño web UX/UI app Zen" itemprop="image" />
                     </div>
 
                     <!-- Imagen Lolli -->
                     <div class="img-portfolio">
-                        <img src="/images/lolli.webp" loading="lazy" alt="Diseño UX/UI landing Lolli" itemprop="image" />
+                        <img src="/images/lolli.webp" loading="lazy" alt="Diseño web UX/UI landing Lolli" itemprop="image" />
                     </div>
 
                     <!-- Imagen Mind -->
                     <div class="img-portfolio">
-                        <img src="/images/mind.webp" loading="lazy" alt="Diseño UX/UI app Mind" itemprop="image" />
+                        <img src="/images/mind.webp" loading="lazy" alt="Diseño web UX/UI app Mind" itemprop="image" />
                     </div>
 
                     <!-- Video Omega -->
@@ -320,7 +318,7 @@
                             <p> Un buen diseño tiene un impacto directo en el crecimiento de las ventas y la eficiencia operativa, incrementando sus ingresos al mismo tiempo que reduce costes y necesidad de personal.</p>
                             <h3>El equilibrio perfecto entre eficiencia y escalabilidad</h3>
                         </div>
-                        <img class="img-pc" src="/images/Designers.webp" alt="ux-slogan" >
+                        <img class="img-pc" src="/images/Designers.webp" alt="El Ux/ui es vital para cualquier empresa" >
                 </div>
         </section>
           <section class="definicion-ux">
@@ -328,7 +326,7 @@
                 <div class="flex-row padding-Y-xs">
                         <div class="p-column-sm flex p-med">
                             <p>El UX/UI está presente en todos los aspectos de nuestra vida, va más allá de lo visual y se enfoca en cómo interactuamos con productos y servicios, asegurando que sean intuitivos, accesibles y satisfactorios.</p>
-                            <p>Un ejemplo UX sería Netflix, con funciones como "Saltar intro", las recomendaciones basadas en preferencias o la posibilidad de retomar una serie donde la dejaste. Todo está diseñado para minimizar la fricción y ahorrar tiempo o pasos innecesarios. En la imagen se aprecia la evolución -2002 y 2010- de videoclub, a la plataforma streaming que conocemos hoy. </p>
+                            <p>Un ejemplo UX sería Netflix, con funciones como "Saltar intro", las recomendaciones basadas en preferencias o la posibilidad de retomar una serie donde la dejaste. Todo está diseñado para minimizar la fricción y ahorrando miles de segundos o pasos innecesarios a sus usuarios. En la imagen se aprecia la evolución -2002 y 2010- de videoclub, a la plataforma streaming que conocemos hoy. </p>
                             
                         </div>
                        <div class="container-img-focus">
@@ -495,7 +493,7 @@
                                             </ul>
                                         </div>
                                         <figure class="container-img-focus">
-                                            <img class="img-focus" src="/images/tien-foto.webp" loading="lazy" alt="imagen rediseño proyecto tienda">
+                                            <img class="img-focus" src="/images/tien-foto.webp" loading="lazy" alt=" rediseño proyecto tiendanimal">
                                         </figure>
                                     </div>
                                     <div class="container-column-xxs">
@@ -540,7 +538,7 @@
                                     <p>La interfaz tiene un <span>enfoque minimalista</span> con un diseño oscuro para reducir la fatiga visual especialmente en sesiones prolongadas, mientras que los colores de acento en naranja resaltan la información más relevante. Este contraste destaca gráficos o botones clave sinturar la vista del usuario.</p>
                                 </div>
                             </div>
-                            <img class="container-img" src="/images/bank.webp" loading="lazy" alt="imagen inicio sesión proyecto tienda" >
+                            <img class="container-img" src="/images/bank.webp" loading="lazy" alt="imagen inicio sesión proyecto tienda online" >
                         </div>
 
                         <div class=" p-column-xs flex p-align padding-Y-xs">
@@ -580,7 +578,7 @@
                                         <p>La organización de los elementos está pensada para proporcionar una experiencia de navegación fluida y jerárquica, donde cada sección guía al usuario hacia la siguiente sin distracciones. Los elementos visuales están diseñados para reducir la carga cognitiva, asegurando que el usuario pueda encontrar rápidamente lo que busca.</p>
                                     </div>
                             </div>
-                            <img src="/images/video-omega.webp" loading="lazy" width="600" alt="video tienda omega">
+                            <img src="/images/video-omega.webp" loading="lazy" width="600" alt="video tienda online omega">
                         </div>                                
                         <div>
                                     <h4> Página de Inicio</h4>
@@ -616,7 +614,7 @@
                         </div>
                         <div class="flex-row">
                                 <div class="container-img-focus">
-                                    <img class="img-focus" src="/images/omega.webp" loading="lazy" alt="imagen inicio sesión proyecto tienda" style="border:2px solid #373737"> 
+                                    <img class="img-focus" src="/images/omega.webp" loading="lazy" alt="imagen inicio sesión proyecto tienda online" style="border:2px solid #373737"> 
                                 </div>
                                 <div>   
                                     <h4>Formulario de Inicio de Sesión </h4>                               
@@ -646,7 +644,7 @@
         <section class="header-programming p-align">
                 <h1> Desarrollo web y Personalización de Plataformas CMS.</h1>
                 <div class="flex-row">
-                    <img  src="/images/seo1.webp" alt="foto seo" >
+                    <img  src="/images/seo1.webp" alt="imagen el SEO es vital" >
                     <h2 class="p-med padding-sm"> Contar con una web optimizada no solo mejora la experiencia del usuario, sino que también impacta en el SEO, lo que ayuda a posicionar tu marca y fidelizar clientes.</h2>
                 </div>
         </section>
@@ -703,22 +701,22 @@
                             </ul>
                         </div>
                         <div class="container-img-focus">
-                            <img class="img-focus" src="/images/foto-dogfinder.webp" loading="lazy" alt="img app animal" width="500px">
+                            <img class="img-focus" src="/images/foto-dogfinder.webp" loading="lazy" alt="imagen app web animal" width="500px">
                         </div>
                     </div>
                     <div class="container-bubble align-center">
                         <p> Algunos de mis pequeños acogidos </p>
-                        <img class="bubble" src="/images/duke.webp" loading="lazy" alt=" acogido duke">
-                        <img class="bubble" src="/images/luna.webp" loading="lazy" alt=" acogida luna">
-                        <img class="bubble" src="/images/baby.webp" loading="lazy" alt=" acogido baby">
-                        <img class="bubble" src="/images/boni.webp" loading="lazy" alt=" acogida boni">
-                        <img class="bubble" src="/images/bebes.webp" loading="lazy" alt="acogido duke y boni">
+                        <img class="bubble" src="/images/duke.webp" loading="lazy" alt=" perro acogido duke">
+                        <img class="bubble" src="/images/luna.webp" loading="lazy" alt=" perra acogida luna">
+                        <img class="bubble" src="/images/baby.webp" loading="lazy" alt=" perra acogida baby">
+                        <img class="bubble" src="/images/boni.webp" loading="lazy" alt=" perra acogida boni">
+                        <img class="bubble" src="/images/bebes.webp" loading="lazy" alt="perros acogidos duke y boni">
 
-                        <img class="bubble" src="/images/bebeses.webp" loading="lazy" alt="  acogidos bebes">
-                        <img class="bubble" src="/images/toby.webp" loading="lazy" alt=" acogido toby">
-                        <img class="bubble" src="/images/bali.webp" loading="lazy" alt=" acogida bali">
-                        <img class="bubble" src="/images/bruce.webp" loading="lazy" alt=" acogido bruce">
-                        <img class="bubble" src="/images/gorda.webp" loading="lazy" alt=" acogida gorda">
+                        <img class="bubble" src="/images/bebeses.webp" loading="lazy" alt=" perros acogidos bebes">
+                        <img class="bubble" src="/images/toby.webp" loading="lazy" alt=" perro acogido toby">
+                        <img class="bubble" src="/images/bali.webp" loading="lazy" alt=" perra adoptada bali">
+                        <img class="bubble" src="/images/bruce.webp" loading="lazy" alt="perro acogido bruce">
+                        <img class="bubble" src="/images/gorda.webp" loading="lazy" alt=" perra acogida gorda">
                     </div>
                 </div>
                    <div class="flex-row padding-sm">
@@ -745,24 +743,16 @@
                         </div>
                         <div>
                             <figure  >
-                                    <img class="pg-proyect-img " src="/images/diagrama.webp" loading="lazy" alt="img happypath" >
+                                    <img class="pg-proyect-img " src="/images/diagrama.webp" loading="lazy" alt=" diagrama de flujo app web" >
                                     <figcaption>Diagrama de flujo</figcaption>
                             </figure>
                             <figure  >
-                                    <img class="pg-proyect-img" src="/images/cod-error.webp" loading="lazy" alt="img casos de prueba" width="500px">
+                                    <img class="pg-proyect-img" src="/images/cod-error.webp" loading="lazy" alt=" casos de prueba app web" width="500px">
                                     <figcaption>Casos de prueba</figcaption>
                             </figure>
                         </div>
                     </div>
-                  
-                    
-                             <!--   
-                                
-                                <div class="container-img-focus">
-                                <img class="img-focus" src="/images/cod3.webp" loading="lazy" alt="img codigo php" width="500px">
-                            </div>
-                            <div class="container-img-focus">
-                                <img class="img-focus" src="/images/cod2.webp" loading="lazy" alt="img codigo php" width="100">-->
+                                      
                    
             </section>
     `},Rv={name:"SobreMi",template:`
@@ -773,12 +763,12 @@
         <p>Hola!</p>
         <p>Soy María.</p>
       </div>
-          <img src="/images/nubes-medano.webp" alt="Imagen 1"  loading="lazy" class="scroll-item">
+          <img src="/images/nubes-medano.webp" alt="Imagen presentación Maria"  loading="lazy" class="scroll-item">
 
       <div class="text scroll-item">
         <p>Me gusta fotografíar el cielo y la luna, dibujar a lápiz y pintar en acrílico.</p>
       </div>
-      <img src="/images/clouds.webp" alt="Imagen 3" loading="lazy" class="scroll-item">
+      <img src="/images/clouds.webp" alt=" nubes en Canarias" loading="lazy" class="scroll-item">
       <div class="text scroll-item">
         <p>Disfruto estudiando el porqué de las cosas.</p>
       </div>
@@ -786,7 +776,7 @@
       <p>Desde pequeña he amado los videojuegos, la estrategia y los retos lógicos.</p>
     </div>
       
-    <img src="/images/chian-temple.webp" alt="Imagen 3" loading="lazy" class="scroll-item">
+    <img src="/images/chian-temple.webp" alt="Templo Tailandia Chian rai" loading="lazy" class="scroll-item">
     
     
     <div class="text scroll-item">
@@ -796,7 +786,7 @@
       <p>Esta pasión también me ha convertido en una crítica atenta a los detalles.</p>
     </div>
     
-    <img src="/images/srilanka.webp" alt="Imagen 3" loading="lazy" class="scroll-item">
+    <img src="/images/srilanka.webp" alt="mochileando por Srilanka" loading="lazy" class="scroll-item">
      <div class="text scroll-item">
       <p>Final Fantasy, World of Warcraft, Skyrim, Half-Life y Frostpunk1  han inspirado mi enfoque, mostrándome la importancia de las comunidades y la conexión significativa entre usuarios y experiencias.</p>
     </div>
@@ -804,7 +794,7 @@
      <div class="text scroll-item">
       <p>Hoy, diseño y desarrollo aplicaciones web y videojuegos, combinando arte y tecnología.</p>
     </div>
-          <img src="/images/chian.webp" alt="Imagen 2" class="scroll-item">
+          <img src="/images/chian.webp" alt="vistas arcoiris en Tailandia" class="scroll-item">
             <!-- <img src="/images/breda.webp" alt="Imagen 3" loading="lazy" class="scroll-item">-->
 
      <div></div>
@@ -813,7 +803,7 @@
   `,mounted(){const e=document.querySelectorAll(".scroll-item"),t=()=>{const s=window.innerHeight,n=s/2;e.forEach(i=>{const o=i.getBoundingClientRect(),a=o.top+o.height/2-n,l=Math.min(1,Math.abs(a/(s/3))),c=.9+l*.8,f=l*(a>0?1:-1),u=1.15-l;i.style.transform=`scale(${c}) translateX(${f}px)`,i.style.opacity=u})};t(),window.addEventListener("scroll",t)}},Nv={name:"Games",template:`
 
     <section class="header-games">
-      <h1 class="p-align">Unreal engine y UX/UI <br>para videojuegos</h1>
+      <h1 class="p-align">Unreal engine y diseño UX/UI <br>para videojuegos</h1>
       <div class="container-header container-column-md flex align-center">
 
         <h2>El UX/UI en videojuegos es el vestíbulo del jugador.</h2>
@@ -985,7 +975,7 @@
                   class="img-focus"
                   src="/images/frostpunk1.webp"
                   loading="lazy"
-                  alt=" HUD Frostpunk1"
+                  alt=" HUD y diseño Frostpunk1"
                 />
               </div>
           </div>
@@ -999,7 +989,7 @@
                   class="img-focus"
                   src="/images/frostpunk2.webp"
                   loading="lazy"
-                  alt=" HUD Frostpunk2"
+                  alt=" HUD y diseño Frostpunk2"
                 />
               </div>
           </div>
@@ -1017,7 +1007,7 @@
                   class="img-pc"
                   src="/images/opinion-frost2.webp"
                   loading="lazy"
-                  alt=" opinion Frostpunk2"
+                  alt=" opinion videojuego Frostpunk2"
                   width="300"
              />
           </div>
@@ -1185,7 +1175,7 @@
               class="img-pc"
               src="/images/flow1.webp"
               loading="lazy"
-              alt="flow juegos"
+              alt="flow videojuegos"
             />
           </div>
 
@@ -1254,7 +1244,7 @@
               class="img-pc"
               src="/images/skylines2.webp"
               loading="lazy"
-              alt="UI skylines2"
+              alt="UI cities skylines2"
             />
           </div>
 
@@ -1288,7 +1278,7 @@
               class="img-pc"
               src="/images/opinion-skylines2.webp"
               loading="lazy"
-              alt=" opiniones citiesSkyline2"
+              alt=" opiniones y puntuacion cities Skylines 2"
             />
           </div>
           <div class="container-img-focus">
@@ -1296,7 +1286,7 @@
               class="img-focus"
               src="/images/opiniones-sky.webp"
               loading="lazy"
-              alt="opiniones citiesSkylines2"
+              alt="opiniones cities Skylines 2"
             />
           </div>
           <!--<video class= "video-bank"  autoplay loop muted playsinline>
@@ -1322,7 +1312,7 @@
                 class="container-img"
                 src="/images/skylines.webp"
                 loading="lazy"
-                alt="rediseño citiesSkylines2"
+                alt="rediseño cities Skylines2"
               />
             </div>
             <ul>
@@ -1345,7 +1335,7 @@
                 class="container-img"
                 src="/images/skylines1.webp"
                 loading="lazy"
-                alt="rediseño citiesSkylines2"
+                alt="rediseño cities Skylines2"
               />
               <div class="p-short flex p-column-xxs padding-Y-xs">
                 <ul>

@@ -5,7 +5,7 @@ export default {
   template: /*html*/ `
 
     <section class="header-games">
-      <h1 class="p-align">Unreal engine y UX/UI <br>para videojuegos</h1>
+      <h1 class="p-align">Unreal engine y diseño UX/UI <br>para videojuegos</h1>
       <div class="container-header container-column-md flex align-center">
 
         <h2>El UX/UI en videojuegos es el vestíbulo del jugador.</h2>
@@ -177,7 +177,7 @@ export default {
                   class="img-focus"
                   src="/images/frostpunk1.webp"
                   loading="lazy"
-                  alt=" HUD Frostpunk1"
+                  alt=" HUD y diseño Frostpunk1"
                 />
               </div>
           </div>
@@ -191,7 +191,7 @@ export default {
                   class="img-focus"
                   src="/images/frostpunk2.webp"
                   loading="lazy"
-                  alt=" HUD Frostpunk2"
+                  alt=" HUD y diseño Frostpunk2"
                 />
               </div>
           </div>
@@ -209,7 +209,7 @@ export default {
                   class="img-pc"
                   src="/images/opinion-frost2.webp"
                   loading="lazy"
-                  alt=" opinion Frostpunk2"
+                  alt=" opinion videojuego Frostpunk2"
                   width="300"
              />
           </div>
@@ -377,7 +377,7 @@ export default {
               class="img-pc"
               src="/images/flow1.webp"
               loading="lazy"
-              alt="flow juegos"
+              alt="flow videojuegos"
             />
           </div>
 
@@ -446,7 +446,7 @@ export default {
               class="img-pc"
               src="/images/skylines2.webp"
               loading="lazy"
-              alt="UI skylines2"
+              alt="UI cities skylines2"
             />
           </div>
 
@@ -480,7 +480,7 @@ export default {
               class="img-pc"
               src="/images/opinion-skylines2.webp"
               loading="lazy"
-              alt=" opiniones citiesSkyline2"
+              alt=" opiniones y puntuacion cities Skylines 2"
             />
           </div>
           <div class="container-img-focus">
@@ -488,7 +488,7 @@ export default {
               class="img-focus"
               src="/images/opiniones-sky.webp"
               loading="lazy"
-              alt="opiniones citiesSkylines2"
+              alt="opiniones cities Skylines 2"
             />
           </div>
           <!--<video class= "video-bank"  autoplay loop muted playsinline>
@@ -514,7 +514,7 @@ export default {
                 class="container-img"
                 src="/images/skylines.webp"
                 loading="lazy"
-                alt="rediseño citiesSkylines2"
+                alt="rediseño cities Skylines2"
               />
             </div>
             <ul>
@@ -537,7 +537,7 @@ export default {
                 class="container-img"
                 src="/images/skylines1.webp"
                 loading="lazy"
-                alt="rediseño citiesSkylines2"
+                alt="rediseño cities Skylines2"
               />
               <div class="p-short flex p-column-xxs padding-Y-xs">
                 <ul>

@@ -13,7 +13,7 @@ export default {
                             <p> Un buen diseño tiene un impacto directo en el crecimiento de las ventas y la eficiencia operativa, incrementando sus ingresos al mismo tiempo que reduce costes y necesidad de personal.</p>
                             <h3>El equilibrio perfecto entre eficiencia y escalabilidad</h3>
                         </div>
-                        <img class="img-pc" src="/images/Designers.webp" alt="ux-slogan" >
+                        <img class="img-pc" src="/images/Designers.webp" alt="El Ux/ui es vital para cualquier empresa" >
                 </div>
         </section>
           <section class="definicion-ux">
@@ -21,7 +21,7 @@ export default {
                 <div class="flex-row padding-Y-xs">
                         <div class="p-column-sm flex p-med">
                             <p>El UX/UI está presente en todos los aspectos de nuestra vida, va más allá de lo visual y se enfoca en cómo interactuamos con productos y servicios, asegurando que sean intuitivos, accesibles y satisfactorios.</p>
-                            <p>Un ejemplo UX sería Netflix, con funciones como "Saltar intro", las recomendaciones basadas en preferencias o la posibilidad de retomar una serie donde la dejaste. Todo está diseñado para minimizar la fricción y ahorrar tiempo o pasos innecesarios. En la imagen se aprecia la evolución -2002 y 2010- de videoclub, a la plataforma streaming que conocemos hoy. </p>
+                            <p>Un ejemplo UX sería Netflix, con funciones como "Saltar intro", las recomendaciones basadas en preferencias o la posibilidad de retomar una serie donde la dejaste. Todo está diseñado para minimizar la fricción y ahorrando miles de segundos o pasos innecesarios a sus usuarios. En la imagen se aprecia la evolución -2002 y 2010- de videoclub, a la plataforma streaming que conocemos hoy. </p>
                             
                         </div>
                        <div class="container-img-focus">
@@ -188,7 +188,7 @@ export default {
                                             </ul>
                                         </div>
                                         <figure class="container-img-focus">
-                                            <img class="img-focus" src="/images/tien-foto.webp" loading="lazy" alt="imagen rediseño proyecto tienda">
+                                            <img class="img-focus" src="/images/tien-foto.webp" loading="lazy" alt=" rediseño proyecto tiendanimal">
                                         </figure>
                                     </div>
                                     <div class="container-column-xxs">
@@ -233,7 +233,7 @@ export default {
                                     <p>La interfaz tiene un <span>enfoque minimalista</span> con un diseño oscuro para reducir la fatiga visual especialmente en sesiones prolongadas, mientras que los colores de acento en naranja resaltan la información más relevante. Este contraste destaca gráficos o botones clave sinturar la vista del usuario.</p>
                                 </div>
                             </div>
-                            <img class="container-img" src="/images/bank.webp" loading="lazy" alt="imagen inicio sesión proyecto tienda" >
+                            <img class="container-img" src="/images/bank.webp" loading="lazy" alt="imagen inicio sesión proyecto tienda online" >
                         </div>
 
                         <div class=" p-column-xs flex p-align padding-Y-xs">
@@ -273,7 +273,7 @@ export default {
                                         <p>La organización de los elementos está pensada para proporcionar una experiencia de navegación fluida y jerárquica, donde cada sección guía al usuario hacia la siguiente sin distracciones. Los elementos visuales están diseñados para reducir la carga cognitiva, asegurando que el usuario pueda encontrar rápidamente lo que busca.</p>
                                     </div>
                             </div>
-                            <img src="/images/video-omega.webp" loading="lazy" width="600" alt="video tienda omega">
+                            <img src="/images/video-omega.webp" loading="lazy" width="600" alt="video tienda online omega">
                         </div>                                
                         <div>
                                     <h4> Página de Inicio</h4>
@@ -309,7 +309,7 @@ export default {
                         </div>
                         <div class="flex-row">
                                 <div class="container-img-focus">
-                                    <img class="img-focus" src="/images/omega.webp" loading="lazy" alt="imagen inicio sesión proyecto tienda" style="border:2px solid #373737"> 
+                                    <img class="img-focus" src="/images/omega.webp" loading="lazy" alt="imagen inicio sesión proyecto tienda online" style="border:2px solid #373737"> 
                                 </div>
                                 <div>   
                                     <h4>Formulario de Inicio de Sesión </h4>                               

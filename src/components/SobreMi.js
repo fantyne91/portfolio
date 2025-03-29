@@ -10,12 +10,12 @@ export default {
         <p>Hola!</p>
         <p>Soy María.</p>
       </div>
-          <img src="/images/nubes-medano.webp" alt="Imagen 1"  loading="lazy" class="scroll-item">
+          <img src="/images/nubes-medano.webp" alt="Imagen presentación Maria"  loading="lazy" class="scroll-item">
 
       <div class="text scroll-item">
         <p>Me gusta fotografíar el cielo y la luna, dibujar a lápiz y pintar en acrílico.</p>
       </div>
-      <img src="/images/clouds.webp" alt="Imagen 3" loading="lazy" class="scroll-item">
+      <img src="/images/clouds.webp" alt=" nubes en Canarias" loading="lazy" class="scroll-item">
       <div class="text scroll-item">
         <p>Disfruto estudiando el porqué de las cosas.</p>
       </div>
@@ -23,7 +23,7 @@ export default {
       <p>Desde pequeña he amado los videojuegos, la estrategia y los retos lógicos.</p>
     </div>
       
-    <img src="/images/chian-temple.webp" alt="Imagen 3" loading="lazy" class="scroll-item">
+    <img src="/images/chian-temple.webp" alt="Templo Tailandia Chian rai" loading="lazy" class="scroll-item">
     
     
     <div class="text scroll-item">
@@ -33,7 +33,7 @@ export default {
       <p>Esta pasión también me ha convertido en una crítica atenta a los detalles.</p>
     </div>
     
-    <img src="/images/srilanka.webp" alt="Imagen 3" loading="lazy" class="scroll-item">
+    <img src="/images/srilanka.webp" alt="mochileando por Srilanka" loading="lazy" class="scroll-item">
      <div class="text scroll-item">
       <p>Final Fantasy, World of Warcraft, Skyrim, Half-Life y Frostpunk1  han inspirado mi enfoque, mostrándome la importancia de las comunidades y la conexión significativa entre usuarios y experiencias.</p>
     </div>
@@ -41,7 +41,7 @@ export default {
      <div class="text scroll-item">
       <p>Hoy, diseño y desarrollo aplicaciones web y videojuegos, combinando arte y tecnología.</p>
     </div>
-          <img src="/images/chian.webp" alt="Imagen 2" class="scroll-item">
+          <img src="/images/chian.webp" alt="vistas arcoiris en Tailandia" class="scroll-item">
             <!-- <img src="/images/breda.webp" alt="Imagen 3" loading="lazy" class="scroll-item">-->
 
      <div></div>

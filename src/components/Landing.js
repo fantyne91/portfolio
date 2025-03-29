@@ -20,15 +20,13 @@ export default {
         <!--Img cargada-->
         <img v-show="imageLoaded" :src="cachedImage" class="portfolio-img" alt="imagen nubes presentación Maria"
             @load="onImageLoad" width="1920" height="700">
-        <!--<img  class="portfolio-img2" src="/images/portfolio-img2.webp" alt="imagen nubes presentación Maria"  width="1920"
-            height="700" >
-            <p class= "texto-entrada">Diseño y programación<br> para empresas y videojuegos</p>-->
+   
     </div>
 
     <section lang="es" class="list-container" itemscope itemtype="https://schema.org/ItemList"
         aria-labelledby="encabezado-servicios">
-        <h1 id="encabezado-servicios" itemprop="name">UX/UI, desarrollo web <br> y Unreal Engine</h1>
-        <img ref="imgHover" id="imgHover" src="" alt="Imagen flotante">
+        <h1 id="encabezado-servicios" itemprop="name">Diseño UX/UI, desarrollo web <br> y videojuegos con Unreal Engine</h1>
+        <img ref="imgHover" id="imgHover" src="" alt="Imagen flotante hover">
         
         <ul class="group-list" itemprop="mainEntity">
             <!-- Diseño Web UX/UI -->
@@ -196,46 +194,46 @@ export default {
                    
                     <!-- Imagen Tienda -->
                     <div class="img-portfolio">
-                        <img src="/images/bag.webp" loading="lazy" alt="Diseño UX/UI" itemprop="image" />
+                        <img src="/images/bag.webp" loading="lazy" alt="Diseño web UX/UI tienda online" itemprop="image" />
                     </div>
 
                     <!-- Imagen Casas -->
                     <div >
-                        <img class="casa" src="/images/casa.webp" loading="lazy" alt="Diseño UX/UI casas" itemprop="image" />
+                        <img class="casa" src="/images/casa.webp" loading="lazy" alt="Diseño web UX/UI casas prefabricadas" itemprop="image" />
                     </div>
 
                      <!-- Imagen Juegos -->
                     <div class="img-portfolio">
-                        <img src="/images/games.webp" loading="lazy" alt="Diseño UX/UI tienda gamer" itemprop="image" />
+                        <img src="/images/games.webp" loading="lazy" alt="Diseño web UX/UI tienda gamer" itemprop="image" />
                     </div>
 
                     <!-- Imagen Plantas -->
                     <div class="img-portfolio">
-                        <img src="/images/plant.webp" loading="lazy" alt="Diseño UX/UI tienda plantas" itemprop="image" />
+                        <img src="/images/plant.webp" loading="lazy" alt="Diseño web UX/UI tienda plantas" itemprop="image" />
                     </div>
                    
                     <!-- Video Photofolio -->                    
                     <div class="img-portfolio">
-                        <img src="/images/photofolio.webp" loading="lazy" alt="Diseño UX/UI app bancaria" itemprop="image" />
+                        <img src="/images/photofolio.webp" loading="lazy" alt="Diseño web UX/UI photofolio" itemprop="image" />
                     </div>
                     <!-- Imagen Bancaria -->
                     <div class="img-portfolio">
-                        <img src="/images/bank.webp" loading="lazy" alt="Diseño UX/UI app bancaria" itemprop="image" />
+                        <img src="/images/bank.webp" loading="lazy" alt="Diseño web UX/UI app bancaria" itemprop="image" />
                     </div>
 
                     <!-- Imagen Zen -->
                     <div class="img-portfolio">
-                        <img src="/images/zen.webp" loading="lazy" alt="Diseño UX/UI app Zen" itemprop="image" />
+                        <img src="/images/zen.webp" loading="lazy" alt="Diseño web UX/UI app Zen" itemprop="image" />
                     </div>
 
                     <!-- Imagen Lolli -->
                     <div class="img-portfolio">
-                        <img src="/images/lolli.webp" loading="lazy" alt="Diseño UX/UI landing Lolli" itemprop="image" />
+                        <img src="/images/lolli.webp" loading="lazy" alt="Diseño web UX/UI landing Lolli" itemprop="image" />
                     </div>
 
                     <!-- Imagen Mind -->
                     <div class="img-portfolio">
-                        <img src="/images/mind.webp" loading="lazy" alt="Diseño UX/UI app Mind" itemprop="image" />
+                        <img src="/images/mind.webp" loading="lazy" alt="Diseño web UX/UI app Mind" itemprop="image" />
                     </div>
 
                     <!-- Video Omega -->

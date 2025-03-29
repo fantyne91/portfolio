@@ -1,5 +1,10 @@
 User-agent: *
 Disallow: /admin/
 Disallow: /privado/
+
 Allow: /
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
 Sitemap: https://mariadevdesign.com/sitemap.xml
