@@ -47,9 +47,15 @@ const app = createApp({
       
       this.currentPage = to.name || 'Landing'
 
-      if (this.currentPage !== 'Landing') {
-        setTimeout(hideLoadingScreen, 500)
-      }
+     if (
+       this.currentPage == 'Programacion' ||
+       this.currentPage == 'SobreMi' ||
+       this.currentPage == 'Videojuegos' ||
+       this.currentPage == 'Uxui'
+     ) {
+       setTimeout(hideLoadingScreen, 500)
+     }
+
 
       nextTick(() => {
         // El código dentro de nextTick se ejecutará después de que Vue haya terminado de renderizar

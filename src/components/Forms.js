@@ -179,8 +179,8 @@ export default {
             <select v-model="form.interes" id="option-interes" name="option-interes">
               <option value="">Seleccionar</option>
               <option value="uxui">Diseñar una Web</option>
-              <option value="programming">Programar una Web</option>
-              <option value="games">Diseñar Videojuegos</option>
+              <option value="programacion">Programar una Web</option>
+              <option value="videojuegos">Diseñar Videojuegos</option>
               <option value="unreal">Unreal Engine</option>
             </select>
           </div>

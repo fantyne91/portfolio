@@ -98,8 +98,9 @@ export default {
 	getBackgroundColor(interes) {
 		const colors = {
 			uxui: '#FFA500', // Naranja
-			programming: '#ADD8E6', // Azul claro
-			games: '#D8BFD8', // Violeta claro
+			programacion: '#ADD8E6', // Azul claro
+			videojuegos: '#D8BFD8', // Violeta claro
+			unreal: '#adf78c',
 		};
 		return colors[interes] || '#FFFFFF'; // Blanco por defecto si no hay coincidencia
 	},

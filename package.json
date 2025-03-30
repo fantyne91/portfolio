@@ -22,8 +22,7 @@
     "globals": "^15.13.0",
     "prettier": "^3.5.3",
     "prettier-plugin-vue": "^1.1.6",
-    "vite": "^6.0.6",
-    "vite-plugin-sitemap": "^0.7.1"
+    "vite": "^6.0.6"
   },
   "dependencies": {
     "@vitejs/plugin-vue": "^5.2.1",

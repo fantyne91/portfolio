@@ -18,7 +18,7 @@ export default {
         </div>
         <div v-if="!imageLoaded" class="image-placeholder"> </div>
         <!--Img cargada-->
-        <img v-show="imageLoaded" :src="cachedImage" class="portfolio-img" alt="imagen nubes presentación Maria"
+        <img v-show="imageLoaded" :src="cachedImage" class="portfolio-img" alt="imagen principal nubes Canarias Maria"
             @load="onImageLoad" width="1920" height="700">
    
     </div>
