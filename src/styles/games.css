@@ -15,9 +15,15 @@
     border-radius: 20px; 
     margin-top: var(--space-xs); 
 }
-.header-games iframe {
-    width: 100%;
-    max-width: 600px;   
+.header-games .beneficios-games {
+    color:white; 
+    font-weight: 400;
+}
+
+.header-games .iframe {    
+    max-width: 600px; 
+     
+    
 }
 
 .container-header  .p-games { 
@@ -63,7 +69,7 @@
 .container-casos-games span {
      color: var(--color-grey-1);   
 }
-
+ 
  .analisis-frost  li{
   list-style: none;
   border-radius: 10px;
@@ -79,16 +85,61 @@
     border-radius: 10px;   
     padding: var(--space-xxs);
 }
-@media (hover: hover)  {
-     .analisis-frost  li .text-bg-purple, .analisis-frost  li .text-red{
-        display: none;
-     }
-     .analisis-frost  li:hover .text-bg-purple,  .analisis-frost  li:hover .text-red{
-        display: block;       
-     }
+@media (hover: hover) {
+    .analisis-frost ul {
+        height: 100%;
+        position: relative;
+    }
     
+    .analisis-frost li {
+        cursor: pointer;
+        height: fit-content;
+        transition: all 0.3s ease;
+        position: relative; /* Contenedor para los textos absolutos */
+    }
+    
+    .analisis-frost li:hover {
+        z-index: 3;
+        transform: scale(1.05);
+    }
+    
+    .analisis-frost li .text-bg-purple,
+    .analisis-frost li .text-red {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        pointer-events: none; /* Evita interferencias con el hover */
+        margin:0;
+    }
+    
+    /* Texto 1: Se posiciona en la base del li (encima del texto 2) */
+    .analisis-frost li .text-bg-purple {
+        bottom: 0; /* Base del li */
+        transform: translateY(100%); /* Mueve hacia abajo exactamente su altura */
+        border-top-left-radius: 0;
+         border-top-right-radius: 0;
+    }
+    
+    /* Texto 2: Se posiciona debajo del texto 1 */
+    .analisis-frost li .text-red {
+        bottom: 0; /* Misma base que text-bg-purple */
+        transform: translateY(0); /* 100% + altura del texto 1 (0px si quieres pegados) */
+        background-color: var(--color-secondary);
+        padding: var(--space-xxs);
+        border: 1px solid #8d448b;
+         border-top-left-radius: 10px;
+         border-top-right-radius: 10px;
+    }
+    
+    .analisis-frost li:hover .text-bg-purple,
+    .analisis-frost li:hover .text-red {
+        opacity: 1;
+        width: 100%;
+    }
 }
-
 @media (max-width: 540px) {
     .container-row{
         padding: 0;

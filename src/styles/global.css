@@ -15,6 +15,9 @@
   background: #292525; /* Fondo tipo wireframe */
   z-index: 9999;
 }
+.gif-container{
+    align-items: center;
+}
 *,
 *::before,
 *::after {
@@ -275,6 +278,7 @@ a, button {
     border-radius: 50px;
     box-shadow: 0 0 10px var(--color-orange);
     text-transform: uppercase;  
+    
     border: 3px solid  var(--color-orange);  
     animation: border-move 5s infinite linear ;   
   
@@ -523,7 +527,7 @@ footer {
         padding-bottom: var(--space-xxs);
     }    
     .nav-menu a {
-        width: 100%; 
+       
         padding: var(--space-xxs) 0  ;    
         text-align: center;
     }    
@@ -563,8 +567,7 @@ footer {
         width: 100%;    
     }
     .black-background h2{ 
-        padding: 0;
-    
+        padding: 0;    
 }
 }
 

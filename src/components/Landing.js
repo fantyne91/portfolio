@@ -180,16 +180,14 @@ export default {
               </svg>
            </div>
 
-           <section class="portfolio" itemscope itemtype="https://schema.org/ItemList"> 
+           <section class="portfolio" itemscope itemtype="https://schema.org/ItemList">
                              
                 <h2 itemprop="name">PORTFOLIO</h2>
                 <div class="imgs padding-Y-xs" itemprop="itemListElement" itemscope itemtype="https://schema.org/ImageGallery">
                     
                     <!-- Video Cupcake -->
-                   <video class="video" preload="none" loading="lazy"autoplay loop muted playsinline itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
-                        <source src="/images/cupcakes.mp4" type="video/mp4">
-                        <meta itemprop="name" content="Diseño UX/UI tienda joyeria" />
-                        <meta itemprop="description" content="Video interactivo de un diseño UX/UI para Photofolio." />
+                   <video class="video" preload="none" loading="lazy"autoplay loop muted playsinline>                        
+                        <source src="/images/cupcakes.mp4" type="video/mp4">                        
                     </video>
                    
                     <!-- Imagen Tienda -->
@@ -212,7 +210,7 @@ export default {
                         <img src="/images/plant.webp" loading="lazy" alt="Diseño web UX/UI tienda plantas" itemprop="image" />
                     </div>
                    
-                    <!-- Video Photofolio -->                    
+                    <!-- Video Photofolio -->
                     <div class="img-portfolio">
                         <img src="/images/photofolio.webp" loading="lazy" alt="Diseño web UX/UI photofolio" itemprop="image" />
                     </div>
@@ -237,10 +235,8 @@ export default {
                     </div>
 
                     <!-- Video Omega -->
-                    <video class="video" preload="none" loading="lazy"autoplay loop muted playsinline itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
-                        <source src="/images/intro-omega.mp4" type="video/mp4">
-                        <meta itemprop="name" content="Diseño UX/UI tienda joyeria" />
-                        <meta itemprop="description" content="Video interactivo de un diseño UX/UI para Photofolio." />
+                    <video class="video" preload="none" loading="lazy"autoplay loop muted playsinline>                    
+                        <source src="/images/intro-omega.mp4" type="video/mp4">                        
                     </video>
                  
                     <!-- Imagen Hotel -->

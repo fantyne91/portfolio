@@ -4,29 +4,38 @@ export default {
   name: 'Videojuegos',
   template: /*html*/ `
 
-    <section class="header-games">
-      <h1 class="p-align">Unreal engine y diseño UX/UI <br>para videojuegos</h1>
-      <div class="container-header container-column-md flex align-center">
+    <section class="header-games" itemscope itemtype="https://schema.org/CreativeWork">
+      <h1 class="p-align" itemprop="headline">Unreal engine y diseño UX/UI <br>para videojuegos</h1>
+      <div class="container-header container-column-md flex align-center" itemprop="text">
 
-        <h2>El UX/UI en videojuegos es el vestíbulo del jugador.</h2>
-        <div class="p-column-sm flex p-align padding-sm">
-          <p class="p-games">
+        <h2 itemprop="alternativeHeadline">El UX/UI en videojuegos es el vestíbulo del jugador.</h2>
+        <div class="p-column-sm flex  padding-sm">
+          <p class="p-games p-align" itemprop="description">
             Los videojuegos no solo divierten, también estimulan la memoria, la creatividad y la toma de decisiones.
           </p>
-          <p>
-            La neurociencia confirma su impacto positivo en todas las edades: desde mejorar el aprendizaje en niños hasta
-            retrasar el deterioro cognitivo en mayores. Además, son clave en accesibilidad, con experiencias adaptadas para personas con necesidades especiales. Más que ocio,
-            los videojuegos son una herramienta para el desarrollo y la inclusión.
-          </p>
+          <div class="p-column-xxs flex">
+              <h3 class="beneficios-games">Beneficios cognitivos</h3>
+              <p itemprop="articleBody">
+                La neurociencia confirma su impacto positivo en todas las edades: desde mejorar el aprendizaje en niños hasta
+                retrasar el deterioro cognitivo en mayores. Además, son clave en accesibilidad, con experiencias adaptadas para personas con necesidades especiales. Más que ocio,
+                los videojuegos son una herramienta para el desarrollo y la inclusión.
+              </p>
+          </div>
         </div>
-          <iframe  height="315"
-          src="https://www.youtube.com/embed/ZCwlZc-WG48"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
-        
+
+        <div class=" iframe full-width" itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
+          <meta itemprop="name" content="Beneficios diseño UX/UI para videojuegos y Unreal Engine">
+          <meta itemprop="description" content="Ejemplos y beneficios de interfaces de usuario en videojuegos desarrollados con Unreal Engine">
+          <meta itemprop="thumbnailUrl" content="https://img.youtube.com/vi/ZCwlZc-WG48/maxresdefault.jpg">
+          <meta itemprop="uploadDate" content="2023-01-01">
+          <iframe class="full-width" height="415"
+            src="https://www.youtube.com/embed/ZCwlZc-WG48"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+         </div>
           <div class=" flex p-column-xs p-align">
               <p class=" p-games">
                 La neurociencia es fundamental en este contexto, ya que proporciona
@@ -270,9 +279,8 @@ export default {
                     <p class="text-bg-purple">Solución: Usar un color predominante para destacar claramente los elementos que están en desarrollo. Agrupaciones que permitan al jugador ver las tecnologías o mejoras relevantes según categorías y recursos, y ajustar con mejoras más proporcionales según el tipo de recurso.                </p>
                 </li>
                 <li class=" p-column-xs flex  align-left"><p> Problemas adicionales 🢖</p>
-                    <p class="text-red ">- Actualmente al expandir un edificio industrial, el producto que se está produciendo cambia automáticamente al valor por defecto, perdiendo tiempo de juego vital hasta que te das cuenta de ello.</p>
-                    <p class="text-red ">- En modo expedición no se puede hacer Zoom lo que dificulta la identificación y búsqueda de zonas específicas. *Solucionado</p>
-                    <p class="text-red ">- En los mapas de calor, aparecen datos de consumo de edificios apagados. *Solucionado </p>
+                    <p class="text-red ">- Actualmente al expandir un edificio industrial, el producto que se está produciendo cambia automáticamente al valor por defecto, perdiendo tiempo de juego vital hasta que eres consciente de ello.</p>
+                   
                 </li>
               </ul>
           </div>

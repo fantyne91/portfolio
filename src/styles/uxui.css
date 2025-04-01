@@ -145,14 +145,14 @@ video, img{
         border-radius: 30px;        
         height: auto;
         margin: 0;
-        transition: border-radius 0.2s linear;                 
+        transition: border-radius 0.5s linear;                 
     }
     .container-motivos-ux li:hover p{
         opacity: 1;
         visibility: visible;           
         color: var(--color-secondary);
         font-weight: 500;
-        transition: all 1.5s ease; 
+        transition: all 0.5s linear; 
     }
     .container-motivos-ux li:hover h3{
         font-size: 1rem;

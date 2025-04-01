@@ -44,19 +44,29 @@ const app = createApp({
   },
   watch: {
     $route(to, from) {
+      //verifica rutas erronas si no estan en router y redirect a /
+      if (!to.name) {
+        this.$router.replace('/') 
+        return 
+      }
       
-      this.currentPage = to.name || 'Landing'
+      this.currentPage = to.name 
 
-     if (
-       this.currentPage == 'Programacion' ||
-       this.currentPage == 'SobreMi' ||
-       this.currentPage == 'Videojuegos' ||
-       this.currentPage == 'Uxui'
-     ) {
-       setTimeout(hideLoadingScreen, 500)
-     }
+      // Elimina loading Screen
+      const validRoutes = [ 'Programacion', 'SobreMi', 'Videojuegos', 'Uxui', 'Contacta' ]
+      
+      if (this.currentPage === 'Landing') {
+        return
+      }
+      else if (validRoutes.includes(this.currentPage)) {
+        setTimeout(hideLoadingScreen, 500) // Rutas válidas (no Landing)
+      }   
+      else { 
+        hideLoadingScreen() // Rutas no válidas 
+        
+      }
 
-
+      //Crea boton flotante contactar
       nextTick(() => {
         // El código dentro de nextTick se ejecutará después de que Vue haya terminado de renderizar
         const existingBtn = document.querySelector('.btn')
