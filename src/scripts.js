@@ -46,35 +46,42 @@ const app = createApp({
     $route(to, from) {
       //verifica rutas erronas si no estan en router y redirect a /
       if (!to.name) {
-        this.$router.replace('/') 
-        return 
-      }
-      
-      this.currentPage = to.name 
-
-      // Elimina loading Screen
-      const validRoutes = [ 'Programacion', 'SobreMi', 'Videojuegos', 'Uxui', 'Contacta' ]
-      
-      if (this.currentPage === 'Landing') {
+        this.$router.replace('/')
         return
       }
-      else if (validRoutes.includes(this.currentPage)) {
-        setTimeout(hideLoadingScreen, 500) // Rutas válidas (no Landing)
-      }   
-      else { 
-        hideLoadingScreen() // Rutas no válidas 
-        
-      }
 
-      //Crea boton flotante contactar
+      this.currentPage = to.name
+
+      // Elimina loading Screen
+      const validRoutes = [
+        'Programacion',
+        'SobreMi',
+        'Videojuegos',
+        'Uxui',
+        'Contacta',
+      ]
+
+      if (this.currentPage === 'Landing') {
+        return
+      } else if (validRoutes.includes(this.currentPage)) {
+        setTimeout(hideLoadingScreen, 500) // Rutas válidas
+      } else {
+        // Rutas no válidas
+        hideLoadingScreen()
+      }
+      // El código dentro de nextTick se ejecutará después de que Vue haya terminado de renderizar
+      
       nextTick(() => {
-        // El código dentro de nextTick se ejecutará después de que Vue haya terminado de renderizar
+        //Si al navegar entre paginas button existe se elimina y muestra dependiendo ruta
         const existingBtn = document.querySelector('.btn')
         if (existingBtn) {
           existingBtn.remove()
         }
 
-        if (['Uxui', 'Programacion', 'Videojuegos'].includes(this.currentPage)) {
+        //Crea boton flotante contactar + contact-btn en todos, para añadir push router
+        if (
+          ['Uxui', 'Programacion', 'Videojuegos'].includes(this.currentPage)
+        ) {
           const btn = document.createElement('button')
           btn.classList.add('btn', 'contact-btn')
 
@@ -101,31 +108,25 @@ const app = createApp({
           btn.appendChild(svg)
           document.body.appendChild(btn)
         }
-
-        const contactButtons = document.querySelectorAll('.contact-btn')     
+        
+        //añade la funcion push en buttons
+        const contactButtons = document.querySelectorAll('.contact-btn')
 
         contactButtons.forEach((button) => {
           button.addEventListener('click', (event) => {
-            console.log(`desde ${this.currentPage}`)
-            event.preventDefault() 
-            handleContactClick(this.currentPage) 
+            event.preventDefault()
+            handleContactClick(this.currentPage)
           })
         })
-        const main= document.querySelector('main')  
-        main.addEventListener('click', () => {           
-           if (this.menuOpen) {
-             this.menuOpen = false
-           }
-         }) 
 
-         
-        
-         
+        //Esconde menu open si se hace click fuera
+        const main = document.querySelector('main')
+        main.addEventListener('click', () => {
+          if (this.menuOpen) {
+            this.menuOpen = false
+          }
+        })
       })
-     
-
-                 
-    
     }
   },
   mounted() {

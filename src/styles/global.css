@@ -258,16 +258,18 @@ a, button {
 }
 .btn{
     position:fixed;    
-    color: var(--color-grey-1);
+    
     border-radius: 30px;
-    bottom:30px;
+    bottom:40px;
     right: 20px;
     padding: 8px 16px;
    
  }
  .btn:hover{
     transform:scale(1.2);
+   
     transition:all 0.2s linear;
+
  }   
 /*btn general*/
 .big-btn {
