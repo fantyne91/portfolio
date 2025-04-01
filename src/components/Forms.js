@@ -39,7 +39,7 @@ export default {
               '+20 pantallas',
             ],
           }
-        case 'programming':
+        case 'programacion':
           return {
             tipoProyecto: [
               'Interfaz o Front-end',
@@ -52,7 +52,7 @@ export default {
               '+20 pantallas',
             ],
           }
-        case 'games':
+        case 'videojuegos':
           return {
             tipoProyecto: [
               'Documentación, spitch, GDD',
