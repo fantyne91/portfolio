@@ -25,7 +25,7 @@ export default {
 
     <section lang="es" class="list-container" itemscope itemtype="https://schema.org/ItemList"
         aria-labelledby="encabezado-servicios">
-        <h1 id="encabezado-servicios" itemprop="name">Diseño UX/UI, desarrollo web <br> y videojuegos con Unreal Engine</h1>
+        <h1 id="encabezado-servicios" itemprop="name">Diseño UX/UI, desarrollo web y videojuegos con Unreal Engine</h1>
         <img ref="imgHover" id="imgHover" src="" alt="Imagen flotante hover">
         
         <ul class="group-list" itemprop="mainEntity">

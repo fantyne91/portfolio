@@ -4,11 +4,11 @@ export default {
   name: 'Programacion',
   template: /*html*/ `
    
-        <section class="header-programming p-align">
+        <section class="header-programming ">
                 <h1> Desarrollo web y Personalización de Plataformas CMS.</h1>
                 <div class="flex-row">
                     <img  src="/images/seo1.webp" alt="imagen el SEO es vital" >
-                    <h2 class="p-med padding-sm"> Contar con una web optimizada no solo mejora la experiencia del usuario, sino que también impacta en el SEO, lo que ayuda a posicionar tu marca y fidelizar clientes.</h2>
+                    <h2 class="p-med padding-sm"> Contar con una web optimizada no solo mejora la experiencia del usuario, sino que también impacta en el SEO,  <span> posicionando tu marca.</span></h2>
                 </div>
         </section>
 
@@ -121,7 +121,8 @@ export default {
     `,
   metaInfo() {
     return {
-      title: 'Desarrollo Web, optimización y mantenimiento web - María Dev Design',
+      title:
+        'Desarrollo Web, optimización y mantenimiento web - María Dev Design',
       link: [
         {
           rel: 'canonical',

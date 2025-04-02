@@ -1,3 +1,5 @@
+
+/*INTRO*/ 
 .page-videojuegos::after{
     content:"";
     position: fixed;
@@ -8,7 +10,8 @@
     z-index: -1;
 }
 .header-games h3, .container-casos-games h2, .unreal-games h3, .services-games h3 { 
-    color: var(--color-soft-purple);}
+    color: var(--color-soft-purple);
+}
 
 .header-games .container-header{    
     border:4px solid #8d448b;    
@@ -22,14 +25,11 @@
 
 .header-games .iframe {    
     max-width: 600px; 
-     
-    
 }
 
 .container-header  .p-games { 
      color:var(--color-soft-purple)    ;
-     font-size: 1.4rem;   
-     
+     font-size: 1.4rem; 
 }
 
 .container-header .p-column-sm, .unreal-games .p-column-sm{

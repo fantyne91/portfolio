@@ -5,7 +5,7 @@ export default {
   template: /*html*/ `
 
     <section class="header-games" itemscope itemtype="https://schema.org/CreativeWork">
-      <h1 class="p-align" itemprop="headline">Unreal engine y diseño UX/UI <br>para videojuegos</h1>
+      <h1 itemprop="headline">Unreal engine y diseño UX/UI <br>para videojuegos</h1>
       <div class="container-header container-column-md flex align-center" itemprop="text">
 
         <h2 itemprop="alternativeHeadline">El UX/UI en videojuegos es el vestíbulo del jugador.</h2>
@@ -572,7 +572,7 @@ export default {
   `,
   metaInfo() {
     return {
-      title: 'Videojuegos',
+      title: '-Diseño de videojuegos y Unreal Engine - María Dev Design',
       link: [
         {
           rel: 'canonical',
