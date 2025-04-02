@@ -48,17 +48,36 @@ export default {
        
   </section>
   `,
-  metaInfo() {
-    return {
-      title: 'Sobre mí - María Dev Design',
-      link: [
-        {
-          rel: 'canonical',
-          href: 'https://www.mariadevdesign.com/sobre-mi',
-        },
-      ],
-    }
-  },
+ metaInfo() {
+  return {
+    title: 'Sobre Mí | María Dev Design - Desarrolladora y Diseñadora',
+    meta: [
+      {
+        name: 'description',
+        content:
+          'Hola, soy María. Diseñadora UX/UI y desarrolladora web con pasión por crear soluciones digitales impactantes.',
+      },
+      {
+        property: 'og:url',
+        content: 'https://www.mariadevdesign.com/sobre-mi',
+      },
+      {
+        property: 'og:image',
+        content: 'https://www.mariadevdesign.com/images/landing-preview.png',
+      },
+      {
+        name: 'keywords',
+        content: 'sobre mí, portfolio diseñadora, desarrolladora web freelance',
+      },
+    ],
+    link: [
+      {
+        rel: 'canonical',
+        href: 'https://www.mariadevdesign.com/sobre-mi',
+      },
+    ],
+  }
+},
   mounted() {
     const items = document.querySelectorAll('.scroll-item')
 

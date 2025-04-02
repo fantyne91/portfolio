@@ -232,4 +232,35 @@ export default {
       </div>
     </section>
   `,
+  metaInfo() {
+    return {
+      title: 'Contacto | María Dev Design - Trabajemos Juntos',
+      meta: [
+        {
+          name: 'description',
+          content:
+            '¿Listo para empezar tu proyecto? Contáctame para desarrollo web, diseño UX/UI o creación de videojuegos.',
+        },
+        {
+          property: 'og:url',
+          content: 'https://www.mariadevdesign.com/contacta',
+        },
+        {
+          property: 'og:image',
+          content: 'https://www.mariadevdesign.com/images/landing-preview.png',
+        },
+        {
+          name: 'keywords',
+          content:
+            'contacto desarrollador web, presupuesto diseño ux, freelance programadora',
+        },
+      ],
+      link: [
+        {
+          rel: 'canonical',
+          href: 'https://www.mariadevdesign.com/contacta',
+        },
+      ],
+    }
+  },
 }

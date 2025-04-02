@@ -121,8 +121,27 @@ export default {
     `,
   metaInfo() {
     return {
-      title:
-        'Desarrollo Web, optimización y mantenimiento web - María Dev Design',
+      title: 'Desarrollo Web Personalizado | María Dev Design',
+      meta: [
+        {
+          name: 'description',
+          content:
+            'Desarrollo de sitios web, aplicaciones y sistemas a medida con  Vue.js, Js, PHP ',
+        },
+        {
+          property: 'og:url',
+          content: 'https://www.mariadevdesign.com/programacion',
+        },
+        {
+          property: 'og:image',
+          content: 'https://www.mariadevdesign.com/images/landing-preview.png',
+        },
+        {
+          name: 'keywords',
+          content:
+            'desarrollo web, programador freelance, javascript, vue, php, cms',
+        },
+      ],
       link: [
         {
           rel: 'canonical',

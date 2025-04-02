@@ -572,7 +572,27 @@ export default {
   `,
   metaInfo() {
     return {
-      title: '-Diseño de videojuegos y Unreal Engine - María Dev Design',
+      title: 'Desarrollo de Videojuegos | Unreal Engine',
+      meta: [
+        {
+          name: 'description',
+          content:
+            'Creación de videojuegos 2d y 3d con Unreal Engine. Diseño de mecánicas, niveles y narrativas inmersivas.',
+        },
+        {
+          property: 'og:url',
+          content: 'https://www.mariadevdesign.com/videojuegos',
+        },
+        {
+          property: 'og:image',
+          content: 'https://www.mariadevdesign.com/images/landing-preview.png',
+        },
+        {
+          name: 'keywords',
+          content:
+            'desarrollo videojuegos, unreal engine, diseño de niveles, diseño ux/ui videojuegos, documentación videojuegos',
+        },
+      ],
       link: [
         {
           rel: 'canonical',

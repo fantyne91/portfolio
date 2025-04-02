@@ -337,8 +337,27 @@ export default {
     `,
   metaInfo() {
     return {
-      title:
-        'Experiencias de usuario y diseño web Ux/ui o CMS - María Dev Design',
+      title: 'Diseño UX/UI | Experiencias Digitales Intuitivas',
+      meta: [
+        {
+          name: 'description',
+          content:
+            'Diseño de interfaces centrado en el usuario. Prototipado, investigación y testeos para productos digitales fáciles de usar.',
+        },
+        {
+          property: 'og:url',
+          content: 'https://www.mariadevdesign.com/uxui',
+        },
+        {
+          property: 'og:image',
+          content: 'https://www.mariadevdesign.com/images/landing-preview.png',
+        },
+        {
+          name: 'keywords',
+          content:
+            'diseño ux, diseño ui, experiencia de usuario, figma, wireframes, prototipado',
+        },
+      ],
       link: [
         {
           rel: 'canonical',

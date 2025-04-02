@@ -275,17 +275,47 @@ export default {
             
         </section>
     `,
-  metaInfo() {
-    return {
-      title: 'Landing - María Dev Design',
-      link: [
-        {
-          rel: 'canonical',
-          href: 'https://www.mariadevdesign.com/',
-        },
-      ],
-    }
-  },
+metaInfo() {
+  return {
+    title: 'María Dev Design | Desarrollo Web, Diseño UX/UI y Videojuegos',
+    meta: [
+      {
+        name: 'description',
+        content:
+          'Desarrollo web personalizado y diseño de experiencias de usuario. Soluciones digitales creativas y funcionales para tu negocio.',
+      },
+      {
+        property: 'og:title',
+        content:
+          'María Dev Design | Desarrollo Web, Diseño UX/UI y Videojuegos',
+      },
+      {
+        property: 'og:description',
+        content:
+          'Transformo ideas en experiencias digitales únicas con código limpio y diseño centrado en el usuario.',
+      },
+      {
+        property: 'og:url',
+        content: 'https://www.mariadevdesign.com/',
+      },
+      {
+        property: 'og:image',
+        content: 'https://www.mariadevdesign.com/images/landing-preview.png',
+      },
+      {
+        name: 'keywords',
+        content:
+          'desarrollo web, diseño ux ui, cms, portfolio programador, creador de páginas web, unreal engine, diseño videojuegos,',
+      },
+    ],
+    link: [
+      {
+        rel: 'canonical',
+        href: 'https://www.mariadevdesign.com/',
+      },
+    ],
+  }
+},
   data() {
     return {
       imageLoaded: false,

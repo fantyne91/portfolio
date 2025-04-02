@@ -2,7 +2,7 @@
 export default {
   name: 'NotFound',
   template: `
-    <div class="not-found" style="height:100vh">
+    <div class="not-found" style="height:100vh; justify-items:center; align-content:center">
       <h1>404 - Página no encontrada</h1>
       <p>Redirigiendo a la página principal...</p>
     </div>
