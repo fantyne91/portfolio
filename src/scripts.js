@@ -2,6 +2,7 @@
 import { createApp, nextTick } from 'vue'
 import { hideLoadingScreen } from './utils/hideLoadingScreen.js'
 import router from './router/index.js';
+import { createHead } from '@vueuse/head'
 
 /*funcion botones contacta*/
  export function handleContactClick(page) {   
@@ -44,11 +45,7 @@ const app = createApp({
   },
   watch: {
     $route(to, from) {
-      //verifica rutas erronas si no estan en router y redirect a /
-      if (!to.name) {
-        this.$router.replace('/')
-        return
-      }
+ 
 
       this.currentPage = to.name
 
@@ -62,17 +59,19 @@ const app = createApp({
       ]
 
       if (this.currentPage === 'Landing') {
-        return
+        return // No hagas nada en Landing
       } else if (validRoutes.includes(this.currentPage)) {
         setTimeout(hideLoadingScreen, 500) // Rutas válidas
+      } else if (this.currentPage === 'NotFound') {
+        hideLoadingScreen() // Ruta inválida (404)
       } else {
-        // Rutas no válidas
-        hideLoadingScreen()
+        hideLoadingScreen() // Backup
       }
+  
       // El código dentro de nextTick se ejecutará después de que Vue haya terminado de renderizar
       
       nextTick(() => {
-        //Si al navegar entre paginas button existe se elimina y muestra dependiendo ruta
+        // BUTTON Si al navegar entre paginas button existe se elimina y muestra dependiendo ruta
         const existingBtn = document.querySelector('.btn')
         if (existingBtn) {
           existingBtn.remove()
@@ -143,10 +142,10 @@ const app = createApp({
   },
 })
 
-
+const head = createHead()
 
 
 
 app.use(router); // Usa el router importado
-
+app.use(head) // Registra el plugin head
 app.mount('#app')// Montar la aplicación Vue en el elemento con id="app"

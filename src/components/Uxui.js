@@ -335,4 +335,16 @@ export default {
                 </div>
         </section>
     `,
+  metaInfo() {
+    return {
+      title:
+        'Experiencias de usuario y diseño web Ux/ui o CMS - María Dev Design',
+      link: [
+        {
+          rel: 'canonical',
+          href: 'https://www.mariadevdesign.com/uxui',
+        },
+      ],
+    }
+  },
 }

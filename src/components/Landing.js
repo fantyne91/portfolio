@@ -275,6 +275,17 @@ export default {
             
         </section>
     `,
+  metaInfo() {
+    return {
+      title: 'Landing - María Dev Design',
+      link: [
+        {
+          rel: 'canonical',
+          href: 'https://www.mariadevdesign.com/',
+        },
+      ],
+    }
+  },
   data() {
     return {
       imageLoaded: false,

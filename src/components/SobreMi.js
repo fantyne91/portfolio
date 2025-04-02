@@ -48,7 +48,17 @@ export default {
        
   </section>
   `,
-
+  metaInfo() {
+    return {
+      title: 'Sobre mí - María Dev Design',
+      link: [
+        {
+          rel: 'canonical',
+          href: 'https://www.mariadevdesign.com/sobre-mi',
+        },
+      ],
+    }
+  },
   mounted() {
     const items = document.querySelectorAll('.scroll-item')
 
@@ -68,7 +78,7 @@ export default {
         const scale = 0.9 + progress * 0.8
 
         // Movimiento lateral: hacia la izquierda o derecha
-        const translateX = progress  * (distance > 0 ? 1 : -1)
+        const translateX = progress * (distance > 0 ? 1 : -1)
 
         // Opacidad: 1 en el centro, 0 cuando está en los márgenes
         const opacity = 1.15 - progress

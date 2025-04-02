@@ -8,7 +8,7 @@ import Uxui from '../components/Uxui.js'
  import Videojuegos from '../components/Videojuegos.js'
 import Forms from '../components/Forms.js'
 import Thanks from '../components/Thanks.js' 
-
+import NotFound from '../components/NotFound.js'; // Asegúrate de que la ruta sea correcta
 // Define las rutas
 const routes = [
   {
@@ -46,6 +46,11 @@ const routes = [
     path: '/thanks',
     name: 'Thanks',
     component: Thanks,
+  },
+  {
+    path: '/:pathMatch(.*)*', // Captura TODAS las rutas no definidas
+    name: 'NotFound',
+    component: NotFound,
   },
 ]
 

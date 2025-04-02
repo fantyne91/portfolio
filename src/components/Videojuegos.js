@@ -570,4 +570,15 @@ export default {
       </div>
     </section>
   `,
+  metaInfo() {
+    return {
+      title: 'Videojuegos',
+      link: [
+        {
+          rel: 'canonical',
+          href: 'https://www.mariadevdesign.com/videojuegos',
+        },
+      ],
+    }
+  },
 }

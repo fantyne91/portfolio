@@ -119,4 +119,15 @@ export default {
                    
             </section>
     `,
+  metaInfo() {
+    return {
+      title: 'Desarrollo Web, optimización y mantenimiento web - María Dev Design',
+      link: [
+        {
+          rel: 'canonical',
+          href: 'https://www.mariadevdesign.com/programacion',
+        },
+      ],
+    }
+  },
 }
