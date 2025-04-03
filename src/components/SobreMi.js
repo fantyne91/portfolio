@@ -61,10 +61,10 @@ export default {
         property: 'og:url',
         content: 'https://www.mariadevdesign.com/sobre-mi',
       },
-      {
-        property: 'og:image',
-        content: 'https://www.mariadevdesign.com/images/landing-preview.png',
-      },
+      // {
+      //   property: 'og:image',
+      //   content: 'https://www.mariadevdesign.com/images/landing-preview.png',
+      // },
       {
         name: 'keywords',
         content: 'sobre mí, portfolio diseñadora, desarrolladora web freelance',

@@ -348,10 +348,10 @@ export default {
           property: 'og:url',
           content: 'https://www.mariadevdesign.com/uxui',
         },
-        {
-          property: 'og:image',
-          content: 'https://www.mariadevdesign.com/images/landing-preview.png',
-        },
+        // {
+        //   property: 'og:image',
+        //   content: 'https://www.mariadevdesign.com/images/landing-preview.png',
+        // },
         {
           name: 'keywords',
           content:
