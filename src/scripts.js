@@ -132,9 +132,6 @@ const app = createApp({
     console.log('vue montado')
     this.updateScreenSize() // Comprobamos el tamaño al iniciar
     window.addEventListener('resize', this.updateScreenSize) // Detectamos cambios
-     
-
-    
   },
 
   beforeUnmount() {
