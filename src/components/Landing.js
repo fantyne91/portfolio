@@ -1,7 +1,7 @@
 //creacion páginas
 
 import '../styles/forms.css'
-import { hideLoadingScreen } from '../utils/hideLoadingScreen.js'
+// import { hideLoadingScreen } from '../utils/hideLoadingScreen.js'
 
 
 
@@ -10,17 +10,17 @@ export default {
 
   template: /*html*/ `
     <div class="intro-container">
-        <div v-if="!imageLoaded" id="loading-screen">
+        <!--<div v-if="!imageLoaded" id="loading-screen">
             <div class="gif-container flex">
                 <img class="gif" src="/images/gif-carga.webp" alt="Animación en movimiento carga" width="140" height="140">
                 <p>Cargando...</p>
             </div>
         </div>
         <div v-if="!imageLoaded" class="image-placeholder"> </div>
-        <!--Img cargada-->
+        
         <img v-show="imageLoaded" :src="cachedImage" class="portfolio-img" alt="imagen principal nubes Canarias Maria"
-            @load="onImageLoad" width="1920" height="700">
-   
+            @load="onImageLoad" width="1920" height="700">-->
+    <img src="/images/portfolio-img.webp " class="portfolio-img" alt="imagen principal nubes Canarias Maria"   width="1920" height="700">
     </div>
 
     <section lang="es" class="list-container" itemscope itemtype="https://schema.org/ItemList"
@@ -275,47 +275,47 @@ export default {
             
         </section>
     `,
-metaInfo() {
-  return {
-    title: 'María Dev Design | Desarrollo Web, Diseño UX/UI y Videojuegos',
-    meta: [
-      {
-        name: 'description',
-        content:
-          'Desarrollo web personalizado y diseño de experiencias de usuario. Soluciones digitales creativas y funcionales para tu negocio.',
-      },
-      {
-        property: 'og:title',
-        content:
-          'María Dev Design | Desarrollo Web, Diseño UX/UI y Videojuegos',
-      },
-      {
-        property: 'og:description',
-        content:
-          'Transformo ideas en experiencias digitales únicas con código limpio y diseño centrado en el usuario.',
-      },
-      {
-        property: 'og:url',
-        content: 'https://www.mariadevdesign.com/',
-      },
-      {
-        property: 'og:image',
-        content: 'https://www.mariadevdesign.com/images/landing-preview.png',
-      },
-      {
-        name: 'keywords',
-        content:
-          'desarrollo web, diseño ux ui, cms, portfolio programador, creador de páginas web, unreal engine, diseño videojuegos,',
-      },
-    ],
-    link: [
-      {
-        rel: 'canonical',
-        href: 'https://www.mariadevdesign.com/',
-      },
-    ],
-  }
-},
+  metaInfo() {
+    return {
+      title: 'María Dev Design | Desarrollo Web, Diseño UX/UI y Videojuegos',
+      meta: [
+        {
+          name: 'description',
+          content:
+            'Desarrollo web personalizado y diseño de experiencias de usuario. Soluciones digitales creativas y funcionales para tu negocio.',
+        },
+        {
+          property: 'og:title',
+          content:
+            'María Dev Design | Desarrollo Web, Diseño UX/UI y Videojuegos',
+        },
+        {
+          property: 'og:description',
+          content:
+            'Transformo ideas en experiencias digitales únicas con código limpio y diseño centrado en el usuario.',
+        },
+        {
+          property: 'og:url',
+          content: 'https://www.mariadevdesign.com/',
+        },
+        {
+          property: 'og:image',
+          content: 'https://www.mariadevdesign.com/images/landing-preview.png',
+        },
+        {
+          name: 'keywords',
+          content:
+            'desarrollo web, diseño ux ui, cms, portfolio programador, creador de páginas web, unreal engine, diseño videojuegos,',
+        },
+      ],
+      link: [
+        {
+          rel: 'canonical',
+          href: 'https://www.mariadevdesign.com/',
+        },
+      ],
+    }
+  },
   data() {
     return {
       imageLoaded: false,
@@ -324,11 +324,11 @@ metaInfo() {
   },
   methods: {
     /*carga img landing*/
-    onImageLoad() {
-      console.log('Imagen cargada')
-      this.imageLoaded = true
-      hideLoadingScreen()
-    },
+    // onImageLoad() {
+    //   console.log('Imagen cargada')
+    //   this.imageLoaded = true
+    //   hideLoadingScreen()
+    // },
     /*efecto img animation */
     moverImagen(event) {
       if (this.$refs.imgHover) {

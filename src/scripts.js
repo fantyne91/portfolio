@@ -1,85 +1,52 @@
-/**IMPORT vue y vue router */
-import { createApp, nextTick } from 'vue'
-import { hideLoadingScreen } from './utils/hideLoadingScreen.js'
-import router from './router/index.js';
+import { createApp, computed, nextTick, ref, watch } from 'vue'
+// import { hideLoadingScreen } from './utils/hideLoadingScreen.js'
+import router from './router/index.js'
 import { createHead } from '@vueuse/head'
 
-/*funcion botones contacta*/
- export function handleContactClick(page) {   
-   localStorage.setItem('fromPage', page)
-   router.push({ path: '/contacta' })
- }
-
-//Instanciar vue 
 const app = createApp({
-  //Datos que van a ser reactivos
-  data() {
-    return {
-      currentPage: 'Landing',
-      menuOpen: false,
-      isMobileOrTablet: false,
-      isLoading: true,
+  setup() {
+    // Datos reactivos
+    const currentPage = ref('Landing')
+    const menuOpen = ref(false)
+    const isMobileOrTablet = ref(false)
+    const isLoading = ref(true) // Estado de carga global
+    const cachedImage = '/images/portfolio-img.webp?v=1' // Imagen a cargar
+    const imageLoaded = ref(false) // Estado de la imagen cargada
+
+    // Propiedad computada para clase dinámica
+    const currentPageClassComputed = computed(() => {
+      return `page-${currentPage.value.toLowerCase()}`
+    })
+
+    // Métodos
+    const toggleMenu = () => {
+      menuOpen.value = !menuOpen.value
     }
-  },
-  computed: {
-    //  Computed property para generar la clase dinámica
 
-    currentPageClassComputed() {
-      return `page-${this.currentPage.toLowerCase()}`
-    },
-  },
-
-  //funciones que hacen reaccion
-  methods: {
-    toggleMenu() {
-      this.menuOpen = !this.menuOpen
-    },
-
-    updateScreenSize() {
-      this.isMobileOrTablet = window.innerWidth <= 950
-      if (!this.isMobileOrTablet) {
-        this.menuOpen = false
+    const updateScreenSize = () => {
+      isMobileOrTablet.value = window.innerWidth <= 950
+      if (!isMobileOrTablet.value) {
+        menuOpen.value = false
       }
-    },
-   
-  },
-  watch: {
-    $route(to, from) {
- 
+    }
 
-      this.currentPage = to.name
+    // Función para manejar el clic en el botón de contacto
+    const handleContactClick = (page) => {
+      localStorage.setItem('fromPage', page)
+      router.push({ path: '/contacta' })
+    }
 
-      // Elimina loading Screen
-      const validRoutes = [
-        'Programacion',
-        'SobreMi',
-        'Videojuegos',
-        'Uxui',
-        'Contacta',
-      ]
-
-      if (this.currentPage === 'Landing') {
-        return // No hagas nada en Landing
-      } else if (validRoutes.includes(this.currentPage)) {
-        setTimeout(hideLoadingScreen, 500) // Rutas válidas
-      } else if (this.currentPage === 'NotFound') {
-        hideLoadingScreen() // Ruta inválida (404)
-      } else {
-        hideLoadingScreen() // Backup
-      }
-  
-      // El código dentro de nextTick se ejecutará después de que Vue haya terminado de renderizar
-      
+    // Lógica de creación de botones flotantes
+    const createFloatingButton = () => {
       nextTick(() => {
-        // BUTTON Si al navegar entre paginas button existe se elimina y muestra dependiendo ruta
         const existingBtn = document.querySelector('.btn')
         if (existingBtn) {
-          existingBtn.remove()
+          existingBtn.remove() // Elimina el botón existente si lo hay
         }
 
-        //Crea boton flotante contactar + contact-btn en todos, para añadir push router
+        // Crear el botón solo en rutas específicas
         if (
-          ['Uxui', 'Programacion', 'Videojuegos'].includes(this.currentPage)
+          ['Uxui', 'Programacion', 'Videojuegos'].includes(currentPage.value)
         ) {
           const btn = document.createElement('button')
           btn.classList.add('btn', 'contact-btn')
@@ -102,47 +69,104 @@ const app = createApp({
             'd',
             'M240-400h320v-80H240v80Zm0-120h480v-80H240v80Zm0-120h480v-80H240v80ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z'
           )
-
           svg.appendChild(path)
           btn.appendChild(svg)
           document.body.appendChild(btn)
         }
-        
-        //añade la funcion push en buttons
-        const contactButtons = document.querySelectorAll('.contact-btn')
 
+        // Añadir la funcionalidad de clic al botón de contacto
+        const contactButtons = document.querySelectorAll('.contact-btn')
         contactButtons.forEach((button) => {
           button.addEventListener('click', (event) => {
             event.preventDefault()
-            handleContactClick(this.currentPage)
+            handleContactClick(currentPage.value)
           })
-        })
-
-        //Esconde menu open si se hace click fuera
-        const main = document.querySelector('main')
-        main.addEventListener('click', () => {
-          if (this.menuOpen) {
-            this.menuOpen = false
-          }
         })
       })
     }
-  },
-  mounted() {
-    console.log('vue montado')
-    this.updateScreenSize() // Comprobamos el tamaño al iniciar
-    window.addEventListener('resize', this.updateScreenSize) // Detectamos cambios
-  },
+    //elimina loading
+ const hideLoadingScreen = () => {
+   const loadingScreen = document.getElementById('loading-screen')
+   if (loadingScreen) {
+     loadingScreen.style.display = 'none'
+     // Se elimina después de la animación
+   }
+ }
 
-  beforeUnmount() {
-    window.removeEventListener('resize', this.updateScreenSize) // Limpiamos el evento
+ // Función para mostrar la pantalla de carga
+ const showLoadingScreen = () => {
+   const loadingScreen = document.getElementById('loading-screen')
+   if (loadingScreen) {
+     loadingScreen.style.display = 'block'
+   }
+ }
+
+ // Función para cargar la imagen solo en Landing
+ const loadImage = () => {
+   const img = new Image()
+   img.src = cachedImage
+   img.onload = img.onerror = () => {
+     // Unifica onload y onerror
+     imageLoaded.value = true
+     setTimeout(hideLoadingScreen, 500)
+   }
+ }
+    // Watcher para las rutas
+    watch(
+      () => router.currentRoute.value,
+      (to, from) => {
+
+        currentPage.value = to.name
+        showLoadingScreen() // Activa el loading en cualquier cambio de ruta
+
+        if (to.name === 'Landing') {
+          loadImage() // En Landing, esperar la carga de la imagen
+        } else {
+          setTimeout(hideLoadingScreen, 500) // En otras rutas, ocultar sin esperar imagen
+        }
+    
+        // Crear el botón flotante si es necesario
+        createFloatingButton()
+
+        // Cierra el menú si se hace clic fuera de él
+        const main = document.querySelector('main')
+        main.addEventListener('click', () => {
+          if (menuOpen.value) {
+            menuOpen.value = false
+          }
+        })
+      }
+    )
+
+    // Método para actualizar el tamaño de la pantalla
+    const mounted = () => {
+      updateScreenSize() // Comprobamos el tamaño al iniciar
+      window.addEventListener('resize', updateScreenSize) // Detectamos cambios
+    }
+
+    const beforeUnmount = () => {
+      window.removeEventListener('resize', updateScreenSize) // Limpiamos el evento
+    }
+
+    // Llamar a la función `mounted` al montar el componente
+    mounted()
+
+    return {
+      currentPage,
+      currentPageClassComputed,
+      menuOpen,
+      isMobileOrTablet,
+      isLoading,
+      toggleMenu,
+      updateScreenSize,
+      handleContactClick,
+      mounted,
+      beforeUnmount,
+    }
   },
 })
 
 const head = createHead()
-
-
-
-app.use(router); // Usa el router importado
-app.use(head) // Registra el plugin head
-app.mount('#app')// Montar la aplicación Vue en el elemento con id="app"
+app.use(router)
+app.use(head)
+app.mount('#app')
