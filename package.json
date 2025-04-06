@@ -15,7 +15,6 @@
   "license": "ISC",
   "devDependencies": {
     "@eslint/js": "^9.16.0",
-    "@vitejs/plugin-legacy": "^6.0.2",
     "esbuild": "0.25.2",
     "eslint": "^9.16.0",
     "eslint-config-prettier": "^9.1.0",
