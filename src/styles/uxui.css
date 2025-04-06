@@ -17,10 +17,7 @@
      font-weight: 500; 
    }
 }
-/*definicion*/
-.definicion-ux{
-    background-color: var(--color-grey-5);  
-}
+
 
 
 /**CONTAINER MOTIVOS*/
@@ -40,14 +37,14 @@
     background-color: var(--color-secondary); 
     border-radius: 10px;    
     box-shadow: 0 1px 5px var(--color-grey-5);
-   
+    
 }
 .container-motivos-ux ul{
     list-style: none;
     padding: 0;
     height: 100%;
 }
-/*cards*/
+
 .container-motivos-ux li{  
     position: relative;  
     display: flex;
@@ -57,12 +54,9 @@
     border-radius: 5px;
     height: 100%;
 }
-/**APPLE*/
-.ejemplo-ux{
+/*definicion*/
+.definicion-ux{
     background-color: var(--color-grey-5);    
-}
-.ejemplo-ux > div{
-    padding:  clamp(0em, 3rem ,var(--space-sm));
 }
 /**CONTAINER SERVICIOS*/
 .services-ux-background{
@@ -78,7 +72,13 @@
     color:var(--color-orange);
     text-align: center;    
 } 
-
+/**APPLE*/
+.ejemplo-ux{
+    background-color: var(--color-grey-5);    
+}
+.ejemplo-ux > div{
+    padding:  clamp(0em, 3rem ,var(--space-sm));
+}
 /**CONTAINER CASOS UX*/
 
 .container-casos-ux  h3{
@@ -106,12 +106,9 @@ video, img{
     max-width: 300px;
 }   
 
-
 .container-casos-ux span{
     color: var(--color-soft-orange-grey)
 }
-
-
 
 @media (hover: hover)  {
    
@@ -123,17 +120,30 @@ video, img{
         
     }
     .container-motivos-ux ul {
-        height: 450px; 
+        height: 400px; 
         display:block;
-            
+        position: relative;   
+        width: 100%;
     } 
     .container-motivos-ux li{
-        height: 100px;  
-        margin: 5%;
+        height: 120px;  
+        
         padding: var(--space-xs);
         align-items: center;   
         justify-content: center;    
     } 
+    .container-motivos-ux li:nth-child(1){ 
+    position: absolute;
+    top:0;
+}
+ .container-motivos-ux li:nth-child(2){ 
+    position: absolute;
+    top:130px;
+}
+ .container-motivos-ux li:nth-child(3){ 
+    position: absolute;
+    top:260px;
+}
     .container-motivos-ux p{
         opacity: 0;
         visibility: hidden;
@@ -145,14 +155,16 @@ video, img{
         border-radius: 30px;        
         height: auto;
         margin: 0;
-        transition: border-radius 0.5s linear;                 
+        z-index: 3;
+        transform: translateY(-10%);
+        transition: border-radius 0.3s linear;                 
     }
     .container-motivos-ux li:hover p{
         opacity: 1;
         visibility: visible;           
         color: var(--color-secondary);
         font-weight: 500;
-        transition: all 0.5s linear; 
+        transition: all 0.3s linear; 
     }
     .container-motivos-ux li:hover h3{
         font-size: 1rem;

@@ -3,21 +3,7 @@
 128, 136, 144, 152, 160, 168, 176, 184, 192, 200
 */
 
-.loading-screen{
-      position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #292525; /* Fondo tipo wireframe */
-  z-index: 9999;
-}
-.gif-container{
-    align-items: center;
-}
+
 *,
 *::before,
 *::after {
@@ -47,7 +33,7 @@
     --color-grey-1:  #bbbbbb;   
     --color-grey-2: #959595;
     --color-grey-3:#62626F;
-    --color-grey-4: #3d3b36;    
+    --color-grey-4: #403d36;    
     --color-grey-5:#232323;
 
     --color-blue-black:#0a0a0f;
@@ -257,17 +243,7 @@ a, button {
     width: fit-content;
     border-radius: 5px;
 }
-.btn{
-    position:fixed;     
-    border-radius: 30px;
-    bottom:50px;
-    right: 20px;
-    padding: 8px 16px;   
- }
- .btn:hover{
-    transform:scale(1.2);   
-    transition:all 0.2s linear;
- }   
+
 /*btn general*/
 .big-btn {
     color: var(--color-primary);
@@ -493,13 +469,7 @@ figure{
 
 
 /**FOOTER*/
-footer {
-    background-color: var(--color-blue-black);
-    color: #ffed76;
-    font-weight: 600;
-    padding: 15px;
-    z-index: 1;
-}
+
 @media (max-width: 950px) {
  
     .nav-menu {

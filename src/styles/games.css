@@ -81,65 +81,57 @@
 
 }
 .text-bg-purple{
-    background-color: var(--color-calid-purple) ;
+    background-color: var(--color-med-purple) ;
     border-radius: 10px;   
     padding: var(--space-xxs);
 }
 @media (hover: hover) {
     .analisis-frost ul {
-        height: 100%;
-        position: relative;
+    
     }
     
     .analisis-frost li {
-        cursor: pointer;
-        height: fit-content;
-        transition: all 0.3s ease;
-        position: relative; /* Contenedor para los textos absolutos */
+        cursor: pointer;      
+         position: relative;
+        font-weight: 500;
+        
+       
     }
     
-    .analisis-frost li:hover {
-        z-index: 3;
-        transform: scale(1.05);
-    }
     
-    .analisis-frost li .text-bg-purple,
-    .analisis-frost li .text-red {
-        position: absolute;
-        left: 0;
-        width: 100%;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        opacity: 0;
-        transition: opacity 0.3s ease;
-        pointer-events: none; /* Evita interferencias con el hover */
-        margin:0;
+    .analisis-frost li:hover> p{
+        margin: var(--space-xs);
+        span{ color: var(--color-soft-purple);      }
     }
+    .shadow-container{     
+       display:none ;
+      
+}
+.analisis-frost li:hover .shadow-container{
+     width: calc(100% + 3px);
+    position: absolute;
+    flex-direction: column;
+    transform: translateY(42px) translateX(-1.5px); 
+    display:flex ;
+    background-color: var(--color-secondary);
+    top:0;
+    z-index: 2;
+    pointer-events: none; 
+     box-shadow: 0px 8px 50px  var(--color-secondary);
+     border: 2px solid var(--color-calid-purple);
+     border-top: 0;
+     border-radius: 0 0 15px 15px;
+     padding: var(--space-xxs);
+     gap:var(--space-xxs);     
     
-    /* Texto 1: Se posiciona en la base del li (encima del texto 2) */
-    .analisis-frost li .text-bg-purple {
-        bottom: 0; /* Base del li */
-        transform: translateY(100%); /* Mueve hacia abajo exactamente su altura */
-        border-top-left-radius: 0;
-         border-top-right-radius: 0;
-    }
+}
     
-    /* Texto 2: Se posiciona debajo del texto 1 */
-    .analisis-frost li .text-red {
-        bottom: 0; /* Misma base que text-bg-purple */
-        transform: translateY(0); /* 100% + altura del texto 1 (0px si quieres pegados) */
-        background-color: var(--color-secondary);
-        padding: var(--space-xxs);
-        border: 1px solid #8d448b;
-         border-top-left-radius: 10px;
-         border-top-right-radius: 10px;
-    }
-    
-    .analisis-frost li:hover .text-bg-purple,
-    .analisis-frost li:hover .text-red {
-        opacity: 1;
-        width: 100%;
+    .analisis-frost li:hover  {
+         padding: 0;
+         
     }
 }
+
 @media (max-width: 540px) {
     .container-row{
         padding: 0;

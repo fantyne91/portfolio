@@ -5,13 +5,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <meta name="description" content="Desarrollo de aplicaciones web, diseño UX/UI, diseño y desarrollo de videojuegos con Unreal Engine">
-
+<!--styles-->
 <link rel="preload" href="/fonts/Barlow/Barlow-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 <link rel="preload" href="/fonts/Barlow/Barlow-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 <link rel="preload" href="/fonts/Barlow/Barlow-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 <link rel="stylesheet" href="/src/styles/global.css">
 <link rel="stylesheet" href="/src/styles/landing.css">
-<script type="module"  src="/src/scripts.js"></script> 
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chat" />
+
+<script type="module"  src="/src/main.js"></script> 
     
     <!--SEO-->
 <meta property="og:title" content="Portafolio María Ortiz - Desarrollo Web y Diseño UX/UI">
@@ -58,58 +61,16 @@
             font-weight: 700;
             font-display: swap;
         }
-
          
         [v-cloak] {
              display: none;
         }  
         /*Carga preload*/
-        #loading-screen {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100vh;
-            justify-content: center;
-            align-items: center;
-            background: var(--color-secondary);         
-            z-index: 99990; 
-            color: var(--color-primary);    
-            opacity: 1;
-             transition: opacity 1.5s ease-in-out;      
-                
-        }
-        #loading-screen * {            
-            opacity: 0;            
-            animation: fadeIn 5s ease forwards;
-        }
-        
-        @keyframes fadeIn {
-            from {
-                opacity: 0;               
-            }
-            to {
-                opacity: 1;                
-            }
-        }
-
- 
-        .gif {   
-        border-radius: 60%;        
-        }
-
-        .gif-container::before{
-            content:"";
-            box-shadow: inset 0 0 10px 5px var(--color-secondary);    
-            width: 140px;
-            height: 140px;    
-            border-radius: 60%;
-            position: absolute;
-            z-index: 99999;
-        }       
+       
 
     </style>    
 </head>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-TG5RNBHJS6"></script>
 <script>
@@ -129,61 +90,17 @@
 
 
 <body>
-    <div id="loading-screen" class="flex">
+    <!-- <div id="loading-screen" class="flex">
         <div class="gif-container flex">     
             <img class="gif" src="/images/gif-carga.webp" alt="Animación en movimiento carga " width="140" height="140">
             <p>Cargando...</p>
         </div>          
-    </div>
+    </div> -->
 
     <div id="app" class="" v-cloak>
-        
-        <header class="header" role="banner">
-            
-            <router-link to="/" class="logo" aria-label="Ir al inicio">
-                    <img src="/images/logo.webp" alt="Logo de María Ortiz, diseñado UX/UI y desarrollo web" height="auto">
-            </router-link>                  
-            
-            
-            <!-- Botón hamburguesa -->
-            <div>
-                <button v-show="isMobileOrTablet" class="menu-toggle" @click="toggleMenu" :aria-label="menuOpen ? 'Cerrar el menú' : 'Abrir el menú'">
-                    <!-- Ícono de hamburguesa -->
-                    <span :class="{ open: menuOpen }" class="hamburger-icon" tabindex="0"  :aria-hidden="menuOpen ? 'false' : 'true'">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </span>
-                </button>           
-            </div>
-            
-            <!-- llamado  router script vue -->
-            <nav :class="menuOpen ? 'nav-menu open' : 'nav-menu'" @click="toggleMenu" aria-label="Menú principal" >
-            <router-link  to="/" tabindex="0" aria-label="Ir a la página de inicio">Inicio</router-link>
-            <router-link  to="/uxui" tabindex="0" aria-label="Ir a la sección UX/UI">Ux/ui</router-link>
-            <router-link to="/programacion" tabindex="0" aria-label="Ir a la sección de Programación">Programación</router-link>
-            <router-link  to="/videojuegos" tabindex="0" aria-label="Ir a la sección de Videojuegos">Videojuegos</router-link>
-            <router-link  to="/sobre-mi" tabindex="0" aria-label="Ir a la sección Sobre mí">Sobre mí</router-link>
-            <router-link to="/contacta" tabindex="0" aria-label="Ir a la sección Sobre mí">Contacto</router-link>
-            </nav>            
-        </header>
-      
-        <!-- Reflejo de vue-router-->
-        <main :class="currentPageClassComputed">
-             <router-view v-slot="{ Component }">
-                <keep-alive>
-                    <component :is="Component" />
-                </keep-alive>
-            </router-view>
-        </main>
-        
-       
 
-        <footer class="footer">
-            <p>Desarrollado con  ♡
-            </p>
-        </footer>
     </div>
+    
     <div id="image-container" style=" width: 100vw; height: 700px; display: none;">
         <img id="preloaded-image" src="/images/portfolio-img.webp" width="1920" height="700" loading="eager"
         alt="Imagen principal">
