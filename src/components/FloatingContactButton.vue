@@ -14,8 +14,8 @@
     bottom: 50px;
     right: clamp(0px, 2vw ,54px);
     padding: 8px ;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     background-color: var(--color-secondary);
     z-index: 100;
     box-shadow: 0 0 4px  var(--color-grey-3);
