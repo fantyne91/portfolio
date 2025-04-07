@@ -13,12 +13,15 @@
     border-radius: 100%;
     bottom: 50px;
     right: clamp(0px, 2vw ,54px);
-    padding: 8px ;
-    width: 35px;
-    height: 35px;
+ 
+    padding: 0;
+    max-height: 50px;
+    width: 48px;
+    height: 48px;
     background-color: var(--color-secondary);
     z-index: 100;
     box-shadow: 0 0 4px  var(--color-grey-3);
+    
     
 }
 
@@ -27,6 +30,7 @@
     transition: all 0.2s linear;
 }
 .contactIcon {
+   
     font-family: 'Material Symbols Outlined';
     font-variation-settings:
         'FILL' 0,
@@ -34,13 +38,14 @@
         'GRAD' 0,
         'opsz' 40;
     color: #62626F;      
-        font-size: 30px;
+        font-size: 26px;
+       margin-top:6px;
     
 }
 @media (max-width: 540px) {
-    .floating-btn{
-        padding: 0px;   
-    }
+        .floating-btn {
+            
+        }
         .contactIcon {
             color: var(--color-grey-4);
         }

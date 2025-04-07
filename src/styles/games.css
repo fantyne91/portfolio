@@ -29,7 +29,7 @@
 
 .container-header  .p-games { 
      color:var(--color-soft-purple)    ;
-     font-size: 1.4rem; 
+     font-size: clamp(1.1rem, 1.3vw, 1.4rem); 
 }
 
 .container-header .p-column-sm, .unreal-games .p-column-sm{
