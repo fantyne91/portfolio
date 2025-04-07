@@ -307,7 +307,7 @@ useHead({
             se podrían implementar:</p>
           <ul class="padding-Y-xs">
             <li class="flex p-column-xxs">
-              <p><span>Visibilidad y confusión visual en distritos 🢖</span></p>
+              <p><span>Visibilidad y confusión visual en distritos <i class="fa-solid fa-angle-right"></i></span></p>
               <div class="shadow-container ">
                 <p class="text-red ">Problema: Confusión visual en el sistema de distritos. La falta de tamaños fijos o
                   organización clara en los distritos dificulta la planificación y expansión, obligando al jugador a
@@ -322,7 +322,7 @@ useHead({
               </div>
             </li>
             <li class="flex p-column-xxs">
-              <p><span>Interrupción en el flujo de interacciones 🢖</span></p>
+              <p><span>Interrupción en el flujo de interacciones  <i class="fa-solid fa-angle-right"></i></span></p>
               <div class="shadow-container">
                 <p class="text-red ">Problema: Al hacer clic en un edificio, la cámara se desplaza y acerca a cámara
                   lenta
@@ -333,7 +333,7 @@ useHead({
               </div>
             </li>
             <li class="flex p-column-xxs">
-              <p><span>Deshumanización del gameplay 🢖</span></p>
+              <p><span>Deshumanización del gameplay <i class="fa-solid fa-angle-right"></i></span></p>
               <div class="shadow-container">
                 <p class="text-red ">Problema: Los íconos relacionados con los enfermos y otros estados críticos
                   (hambre,
@@ -345,7 +345,7 @@ useHead({
               </div>
             </li>
             <li class="flex p-column-xxs">
-              <p><span>Árbol de desarrollo confuso 🢖</span></p>
+              <p><span>Árbol de desarrollo confuso <i class="fa-solid fa-angle-right"></i></span></p>
               <div class="shadow-container">
                 <p class="text-red ">Problema: El árbol de desarrollo es difícil de comprender, algunos conceptos no se
                   encuentran donde se esperan, no muestran un camino claro llevándote a cometer errores, y no se muestra
@@ -358,7 +358,7 @@ useHead({
               </div>
             </li>
             <li class=" p-column-xs flex  align-left">
-              <p> Problemas adicionales 🢖</p>
+              <p> Problemas adicionales <i class="fa-solid fa-angle-right"></i></p>
               <div class="shadow-container">
                 <p class="text-red ">- Actualmente al expandir un edificio industrial, el producto que se está
                   produciendo

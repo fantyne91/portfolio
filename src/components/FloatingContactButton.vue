@@ -11,7 +11,7 @@
 .floating-btn {
     position: fixed;
     border-radius: 100%;
-    bottom: 50px;
+    bottom: 60px;
     right: clamp(0px, 2vw ,54px);
  
     padding: 0;
@@ -39,12 +39,12 @@
         'opsz' 40;
     color: #62626F;      
         font-size: 26px;
-       margin-top:6px;
+       margin-top:7px;
     
 }
 @media (max-width: 540px) {
         .floating-btn {
-            
+            bottom: 40px;
         }
         .contactIcon {
             color: var(--color-grey-4);

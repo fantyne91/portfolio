@@ -125,7 +125,9 @@ p, label, select{
     line-height: 1.5;   
     max-width: 750px;
 }
-
+.fa-solid{
+   font-size: 10px;
+}
 ul{
     margin: 0px;
     display: flex;

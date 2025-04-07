@@ -87,20 +87,21 @@
 }
 @media (hover: hover) {
     .analisis-frost ul {
-    
+     height: 428px;
     }
     
     .analisis-frost li {
         cursor: pointer;      
          position: relative;
-        font-weight: 500;
-        
-       
+        font-weight: 500;     
     }
-    
-    
+    .analisis-frost li:hover  {
+         padding: 0 ;
+         
+    }   
     .analisis-frost li:hover> p{
-        margin: var(--space-xs);
+        margin: var(--space-xs)   ;
+        margin-bottom: calc(var(--space-xs) + 4px);
         span{ color: var(--color-soft-purple);      }
     }
     .shadow-container{     
@@ -123,15 +124,9 @@
      border-radius: 0 0 15px 15px;
      padding: var(--space-xxs);
      gap:var(--space-xxs);     
-    
+    transition: display 1s linear;   
 }
-    
-    .analisis-frost li:hover  {
-         padding: 0;
-         
-    }
 }
-
 @media (max-width: 540px) {
     .container-row{
         padding: 0;

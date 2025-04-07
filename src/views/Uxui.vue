@@ -63,19 +63,19 @@ useHead({
                     <h2>¿Cómo ayuda el UX a crecer las ventas? </h2>
                     <ul>
                         <li>
-                            <h3>Mejora la conversión 🢖</h3>
+                            <h3>Mejora la conversión <i class="fa-solid fa-angle-right"></i></h3>
                             <p>Simplifica procesos, reduciendo fricciones que pueden llevar a la pérdida de clientes.
                                 Con una navegación intuitiva, los usuarios tienen menos probabilidades de abandonar sus
                                 carritos y más probabilidades de completar la compra. </p>
                         </li>
                         <li>
-                            <h3>Aumenta la retención de clientes 🢖</h3>
+                            <h3>Aumenta la retención de clientes <i class="fa-solid fa-angle-right"></i></h3>
                             <p>Una experiencia positiva hace que los usuarios regresen. La retención de clientes es
                                 clave para el crecimiento sostenible de las ventas, y es mucho más económico mantener a
                                 un cliente que adquirir uno nuevo.</p>
                         </li>
                         <li>
-                            <h3>Optimiza la personalización 🢖</h3>
+                            <h3>Optimiza la personalización <i class="fa-solid fa-angle-right"></i></h3>
                             <p>Aprovechar el análisis de datos y ofrecer una experiencia de compra personalizada para
                                 cada cliente, aumenta el ticket promedio por cliente sin necesidad de ampliar tu
                                 catálogo de productos. </p>
@@ -83,23 +83,23 @@ useHead({
                     </ul>
                 </div>
 
-                <div class="container-column-md flex align-center">
+                <div class="container-column-md flex  align-center">
                     <h2>Reducción de costes a través de UX/UI </h2>
                     <ul>
                         <li>
-                            <h3>Optimización del flujo de trabajo interno 🢖</h3>
+                            <h3>Optimización del flujo de trabajo interno <i class="fa-solid fa-angle-right"></i></h3>
                             <p> Tener interfaces administrativas claras y procesos automatizados de gestión permiten que
                                 el personal trabaje de manera más eficiente, evitando duplicación de tareas y posibles
                                 errores humanos.</p>
                         </li>
                         <li>
-                            <h3>Automatización de procesos 🢖</h3>
-                            <p> Un diseño UX eficiente puede reducir la dependencia de personal de atención al cliente
+                            <h3>Automatización de procesos <i class="fa-solid fa-angle-right"></i></h3>
+                            <p> Un buen diseño UX puede reducir la dependencia de personal de atención al cliente
                                 al ofrecer herramientas donde los clientes resuelven sus problemas o consultas
                                 fácilmente.</p>
                         </li>
                         <li>
-                            <h3>Diseño eficiente 🢖</h3>
+                            <h3>Diseño eficiente <i class="fa-solid fa-angle-right"></i></h3>
                             <p>Un diseño eficiente agiliza procesos y reduce errores del usuario. Esto se traduce en
                                 menos consultas de soporte, mayor conversión y fidelización, maximizando el retorno de
                                 inversión.</p>
@@ -325,8 +325,7 @@ useHead({
                             </li>
                             <li>
                                 <p> Uso de <span>descuentos aplicados al carrito de forma asíncrona</span> sin necesidad
-                                    de ingresar cupones
-                                    en productos individules.</p>
+                                    de ingresar cupones en productos individules.</p>
                             </li>
                             <li>
                                 <p> Optimización del banner de información clave: El banner que contenía los detalles de
@@ -373,7 +372,7 @@ useHead({
                             alt="imagen inicio sesión proyecto tienda online">
                     </div>
 
-                    <div class=" p-column-xs flex p-align padding-Y-xs">
+                    <div class=" componentes-bank p-column-xs flex p-align padding-Y-xs">
                         <h4>Componentes del diseño </h4>
                         <p>Se emplea una tipografía sans-serif con una jerarquía clara de tamaños para asegurar la
                             legibilidad de los datos financieros y los elementos interactivos en cualquier dispositivo.
