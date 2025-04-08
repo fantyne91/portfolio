@@ -1,26 +1,26 @@
 
-  .background-form{
-    
+  .background-form{    
     background-color: var(--color-primary);
     height: 100% ;
     min-height: 100vh;
   }
+  /*linkedin*/
   .linkedin-card{
     position: relative;
     color:var(--color-secondary);
     background-color: white;
     border-radius: 30px;
-    
+    max-width: 550px;
+   gap:clamp(0px, 1vw, var(--space-xs))
   }
-   .profile-img{
-    
+   .profile-img{    
     border-radius: 30px;
-    width: 100%;
-    
+    width: 100%;    
   }
+ 
   .profile-info > a{
       position: absolute;
-      right: 10%;
+      right: clamp(7%, 4vw, 10%);
       bottom: 25%;
       color: var(--color-secondary);
       text-transform: none;
@@ -33,7 +33,7 @@
     }    
  
  
-  
+  /*form*/
   .contact-form-1 {
       background: white;       
       border-radius: 10px;
@@ -42,7 +42,7 @@
       border: 2px solid #007BFF;
       color: var(--color-secondary);
       max-width: 450px;
-      width: 100%;
+      
   }
    
   .visually-hidden {
@@ -148,7 +148,8 @@
     
 @media (max-width: 545px) {
   .profile-info > a{
-    position: relative;
+    position: relative;     
+      right: auto;
   }
 }
  
