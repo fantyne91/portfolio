@@ -13,11 +13,11 @@ useHead({
     },
     {
       property: 'og:url',
-      content: 'https://www.mariadevdesign.com/programacion',
+      content: 'https://mariadevdesign.com/programacion',
     },
     {
       property: 'og:image',
-      content: 'https://www.mariadevdesign.com/images/landing-preview.png',
+      content: 'https://mariadevdesign.com/images/landing-preview.png',
     },
     {
       name: 'keywords',
@@ -28,7 +28,7 @@ useHead({
   link: [
     {
       rel: 'canonical',
-      href: 'https://www.mariadevdesign.com/programacion',
+      href: 'https://mariadevdesign.com/programacion',
     },
   ],
   })   

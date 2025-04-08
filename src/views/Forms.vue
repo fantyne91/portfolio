@@ -11,14 +11,14 @@ useHead({
     { name: 'description', content: 'Conoce más sobre mí, mi experiencia en diseño UX/UI y desarrollo web.' },
     { property: 'og:title', content: 'Acerca de - María Ortiz | Diseñadora UX/UI y Desarrolladora Web' },
     { property: 'og:description', content: 'Mi trayectoria como diseñadora UX/UI y desarrolladora web. Estoy aquí para ayudarte a llevar tus proyectos digitales al siguiente nivel.' },
-    { property: 'og:image', content: 'https://www.mariadevdesign.com/images/card-linkdin.webp' },
-    { property: 'og:url', content: 'https://www.mariadevdesign.com/acerca-de' },
+    { property: 'og:image', content: 'https://mariadevdesign.com/images/card-linkdin.webp' },
+    { property: 'og:url', content: 'https://mariadevdesign.com/acerca-de' },
     { property: 'og:type', content: 'website' },     
   ],
     link: [
     {
       rel: 'canonical',
-      href: 'https://www.mariadevdesign.com/contacta',
+        href: 'https://mariadevdesign.com/contacta',
     },
   ],
 })

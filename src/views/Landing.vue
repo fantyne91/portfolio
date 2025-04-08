@@ -8,16 +8,11 @@ import { useHead } from '@vueuse/head'
 
 
 useHead({
-  title: 'Landing - Mi Portafolio',
-  meta: [
-    { name: 'description', content: 'Bienvenido a mi portafolio. Explora mis proyectos de UX/UI y desarrollo.' },
-    { property: 'og:title', content: 'Landing - Mi Portafolio' },
-    { property: 'og:description', content: 'Explora mis proyectos de UX/UI y desarrollo web.' }
-    ],
+  
     link: [
     {
       rel: 'canonical',
-      href: 'https://www.mariadevdesign.com/',
+      href: 'https://mariadevdesign.com/',
     },
   ],
 })

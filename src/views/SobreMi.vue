@@ -14,7 +14,7 @@ useHead({
       },
       {
         property: 'og:url',
-        content: 'https://www.mariadevdesign.com/sobre-mi',
+        content: 'https://mariadevdesign.com/sobre-mi',
       },
       // {
       //   property: 'og:image',
@@ -28,7 +28,7 @@ useHead({
       link: [
         {
           rel: 'canonical',
-          href: 'https://www.mariadevdesign.com/sobre-mi',
+          href: 'https://mariadevdesign.com/sobre-mi',
         },
       ],
 })

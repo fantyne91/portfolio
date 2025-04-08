@@ -12,11 +12,11 @@ useHead({
             },
             {
                 property: 'og:url',
-                content: 'https://www.mariadevdesign.com/uxui',
+                content: 'https://mariadevdesign.com/uxui',
             },
              {
                property: 'og:image',
-               content: 'https://www.mariadevdesign.com/images/landing-preview.png',
+                 content: 'https://mariadevdesign.com/images/landing-preview.png',
              },
             {
                 name: 'keywords',
@@ -27,7 +27,7 @@ useHead({
             link: [
                 {
                     rel: 'canonical',
-                    href: 'https://www.mariadevdesign.com/uxui',
+                    href: 'https://mariadevdesign.com/uxui',
                 },
             ],
 }) 

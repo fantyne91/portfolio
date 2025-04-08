@@ -14,7 +14,7 @@ useHead({
     },
     {
       property: 'og:url',
-      content: 'https://www.mariadevdesign.com/videojuegos',
+      content: 'https://mariadevdesign.com/videojuegos',
     },
     { property: 'og:description', content: 'Explora mis proyectos de UX/UI y desarrollo web.' },
     {
@@ -26,7 +26,7 @@ useHead({
   link: [
     {
       rel: 'canonical',
-      href: 'https://www.mariadevdesign.com/videojuegos',
+      href: 'https://mariadevdesign.com/videojuegos',
     },
   ],
 });
