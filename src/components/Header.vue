@@ -4,7 +4,7 @@
       <img src="/images/logo.webp" alt="Logo de María Ortiz, diseñado UX/UI y desarrollo web" height="auto">
     </router-link>
 
-    <div>
+    
       <button v-show="isMobileOrTablet" class="menu-toggle" @click="toggleMenu" :aria-label="menuOpen ? 'Cerrar el menú' : 'Abrir el menú'">
         <span :class="{ open: menuOpen }" class="hamburger-icon" tabindex="0" >
           <span></span>
@@ -12,7 +12,7 @@
           <span></span>
         </span>
       </button>
-    </div>
+    
 
     <nav :class="menuOpen ? 'nav-menu open' : 'nav-menu'" @click="toggleMenu" aria-label="Menú principal">
       <router-link to="/" tabindex="0" aria-label="Ir a la página de inicio">Inicio</router-link>

@@ -109,9 +109,18 @@ video, img{
     .container-motivos-ux h3{
         position: absolute;            
         font-size: 1.2rem;    
-        text-align: center;
+        text-align: left;
         padding: 0 var(--space-sm) ;       
-        
+        width: max-content;
+    }
+     
+    .container-motivos-ux li:hover h3{
+        font-size: 1rem;       
+        position: relative;
+       padding: 0;
+       align-self: flex-start;
+        text-align: unset;
+        color: rgb(255, 212, 84);        
     }
     .container-motivos-ux ul {
         height: 400px; 
@@ -120,22 +129,23 @@ video, img{
         width: 100%;
     } 
     .container-motivos-ux li{
+        position: absolute;
         height: 120px;  
-        
+        width: 100%;
         padding: var(--space-xs);
         align-items: center;   
         justify-content: center;    
     } 
     .container-motivos-ux li:nth-child(1){ 
-    position: absolute;
+    
     top:0;
 }
  .container-motivos-ux li:nth-child(2){ 
-    position: absolute;
+    
     top:130px;
 }
  .container-motivos-ux li:nth-child(3){ 
-    position: absolute;
+    
     top:260px;
 }
     .container-motivos-ux p{
@@ -156,22 +166,10 @@ video, img{
     .container-motivos-ux li:hover p{
         opacity: 1;
         visibility: visible;           
-        color: var(--color-secondary);
-        
+        color: var(--color-secondary);        
         transition: all 0.3s linear; 
     }
-    .container-motivos-ux  h3{
-        width: max-content;
-    }
-    .container-motivos-ux li:hover h3{
-        font-size: 1rem;
-       
-        position: relative;
-       padding: 0;
-       align-self: flex-start;
-        text-align: unset;
-        color: rgb(255, 205, 112);        
-    }
+  
 }
 /* Versión móvil/tablet corregida */
 @media (max-width: 799px) {   

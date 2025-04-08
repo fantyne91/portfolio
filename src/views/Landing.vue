@@ -77,7 +77,7 @@ const handleScroll = () => {
 
 // Eventos al montar el componente
 onMounted(() => {
-  
+    window.prerenderReady = false
     
     window.addEventListener('scroll', handleScroll)
 })

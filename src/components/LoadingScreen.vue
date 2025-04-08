@@ -9,6 +9,10 @@ const isLoading = ref(true)
 const imageLoaded = ref(false)
 const cachedImage = '/images/portfolio-img.webp?v=1'
 
+onMounted(() => {
+    window.prerenderReady = false
+})
+
 // Función para ocultar el loading
 const hideLoadingScreen = () => {
     const loadingScreen = document.getElementById('loading-screen')
@@ -16,7 +20,11 @@ const hideLoadingScreen = () => {
         loadingScreen.style.opacity = '0'
         setTimeout(() => {
             loadingScreen.style.display = 'none'
+            window.prerenderReady = true
         }, 500) 
+    } else {
+        // Por si no encuentra el elemento, igual lo marcamos como listo
+        window.prerenderReady = true
     }
 }
 
@@ -40,6 +48,7 @@ const loadImage = () => {
 watch(() => router.currentRoute.value, (to) => {
     currentPage.value = to.name
     isLoading.value = true // Mostrar loading al cambiar de ruta
+    window.prerenderReady = false
 
     if (to.name === 'Landing') {
         loadImage() // En Landing, cargar la imagen principal

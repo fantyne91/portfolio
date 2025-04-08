@@ -62,7 +62,7 @@ useMetaData({
                 </div>
 
                 <div class="container-column-md flex  align-center">
-                    <h2>Reducción de costes a través de UX/UI </h2>
+                    <h2>¿Cómo reducir costes a través de UX/UI? </h2>
                     <ul>
                         <li>
                             <h3>Optimización del flujo de trabajo interno <i class="fa-solid fa-angle-right"></i></h3>
