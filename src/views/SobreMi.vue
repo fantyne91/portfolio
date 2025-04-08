@@ -2,36 +2,14 @@
 <script setup>
 import '../styles/sobremi.css'
 import { onMounted } from 'vue'
-import { useHead } from '@vueuse/head'
+import { useMetaData } from '@/composables/useMetaData'
 
-useHead({
+useMetaData({
   title: 'Sobre Mí | María Dev Design - Desarrolladora y Diseñadora',
-    meta: [
-      {
-        name: 'description',
-        content:
-          'Hola, soy María. Diseñadora UX/UI y desarrolladora web con pasión por crear soluciones digitales impactantes.',
-      },
-      {
-        property: 'og:url',
-        content: 'https://mariadevdesign.com/sobre-mi',
-      },
-      // {
-      //   property: 'og:image',
-      //   content: 'https://www.mariadevdesign.com/images/landing-preview.png',
-      // },
-      {
-        name: 'keywords',
-        content: 'sobre mí, portfolio diseñadora, desarrolladora web freelance',
-      },
-    ],
-      link: [
-        {
-          rel: 'canonical',
-          href: 'https://mariadevdesign.com/sobre-mi',
-        },
-      ],
+  description: 'Hola, soy María. Diseñadora UX/UI y desarrolladora de webs y videojuegos',
+  path: '/sobre-mi'
 })
+
 
 onMounted(() => {  
   const items = document.querySelectorAll('.scroll-item')

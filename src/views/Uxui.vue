@@ -1,36 +1,14 @@
 <script setup>
 import '../styles/uxui.css'
-import { useHead } from '@vueuse/head'
+
 import FloatingContactButton from '../components/FloatingContactButton.vue';
-useHead({
-    title: 'Diseño UX/UI | Experiencias Digitales Intuitivas',
-        meta: [
-            {
-                name: 'description',
-                content:
-                    'Diseño de interfaces centrado en el usuario. Prototipado, investigación y testeos para productos digitales fáciles de usar.',
-            },
-            {
-                property: 'og:url',
-                content: 'https://mariadevdesign.com/uxui',
-            },
-             {
-               property: 'og:image',
-                 content: 'https://mariadevdesign.com/images/landing-preview.png',
-             },
-            {
-                name: 'keywords',
-                content:
-                    'diseño ux, diseño ui, experiencia de usuario, figma, wireframes, prototipado',
-            },
-        ],
-            link: [
-                {
-                    rel: 'canonical',
-                    href: 'https://mariadevdesign.com/uxui',
-                },
-            ],
-}) 
+import { useMetaData } from '@/composables/useMetaData'
+
+useMetaData({
+    title: 'UX/UI Design Web | María Portfolio',
+    description: 'Diseño de interfaces intuitivas y accesibles.',
+    path: '/uxui'
+})
 
 </script>
 

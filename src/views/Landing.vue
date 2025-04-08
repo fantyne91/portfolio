@@ -4,18 +4,15 @@
 <script setup>
 import '../styles/forms.css'
 import { onMounted, onUnmounted } from 'vue'
-import { useHead } from '@vueuse/head'
 
+import { useMetaData } from '@/composables/useMetaData'
 
-useHead({
-  
-    link: [
-    {
-      rel: 'canonical',
-      href: 'https://mariadevdesign.com/',
-    },
-  ],
+useMetaData({
+    title: 'Diseño UX/UI, Desarrollo Web, y Videojuegos con Unreal Engine',
+    description: 'Explora mi portfolio de diseño UX/UI, desarrollo web y videojuegos con Unreal Engine.',
+    path: '/'
 })
+
 
 // Funciones para efecto hover de imágenes
 const moverImagen = (event) => {

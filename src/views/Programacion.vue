@@ -1,37 +1,15 @@
 <script setup>
 import '../styles/programming.css'
-import { useHead } from '@vueuse/head'
-import FloatingContactButton from '../components/FloatingContactButton.vue';
 
-useHead({
+import FloatingContactButton from '../components/FloatingContactButton.vue';
+import { useMetaData } from '@/composables/useMetaData'
+
+useMetaData({
   title: 'Desarrollo Web Personalizado | María Dev Design',
-  meta: [
-    {
-      name: 'description',
-      content:
-        'Desarrollo de sitios web, aplicaciones y sistemas a medida con  Vue.js, Js, PHP ',
-    },
-    {
-      property: 'og:url',
-      content: 'https://mariadevdesign.com/programacion',
-    },
-    {
-      property: 'og:image',
-      content: 'https://mariadevdesign.com/images/landing-preview.png',
-    },
-    {
-      name: 'keywords',
-      content:
-        'desarrollo web, programador freelance, javascript, vue, php, cms',
-    },
-  ],
-  link: [
-    {
-      rel: 'canonical',
-      href: 'https://mariadevdesign.com/programacion',
-    },
-  ],
-  })   
+  description: 'Desarrollo de sitios web, aplicaciones y sistemas a medida con  Vue.js, Js, PHP ',
+  path: '/programacion'
+})
+  
 
 </script>
 

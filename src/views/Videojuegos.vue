@@ -5,31 +5,19 @@ import { useHead } from '@vueuse/head'
 import FloatingContactButton from '../components/FloatingContactButton.vue';
 
 useHead({
-  title: 'Desarrollo de Videojuegos | Unreal Engine',
+  title: 'Desarrollo de Videojuegos con Unreal Engine | María Ortiz',
   meta: [
-    {
-      name: 'description',
-      content:
-        'Creación de videojuegos 2d y 3d con Unreal Engine. Diseño de mecánicas, niveles y narrativas inmersivas.',
-    },
-    {
-      property: 'og:url',
-      content: 'https://mariadevdesign.com/videojuegos',
-    },
-    { property: 'og:description', content: 'Explora mis proyectos de UX/UI y desarrollo web.' },
-    {
-      name: 'keywords',
-      content:
-        'Desarrollo videojuegos, unreal engine, diseño de niveles, diseño ux/ui videojuegos, documentación videojuegos',
-    },
+    { name: 'description', content: 'Proyectos de desarrollo de videojuegos con Unreal Engine. Diseño y programación de experiencias interactivas.' },
+    { property: 'og:title', content: 'Desarrollo de Videojuegos con Unreal Engine | María Ortiz' },
+    { property: 'og:description', content: 'Explora mis videojuegos creados con Unreal Engine.' },
+    { property: 'og:image', content: '/images/og-image-1200x630.webp' },
+    { property: 'og:type', content: 'website' }
   ],
   link: [
-    {
-      rel: 'canonical',
-      href: 'https://mariadevdesign.com/videojuegos',
-    },
-  ],
-});
+    { rel: 'canonical', href: 'https://mariadevdesign.com/videojuegos' }
+  ]
+})
+
 
 
 </script>
