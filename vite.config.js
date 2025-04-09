@@ -8,7 +8,7 @@ export default defineConfig({
   
   ],
 
-  base: '/', // Ruta relativa para servidores locales como XAMPP
+  base: '/', // Ruta relativa para servidores 
   server: {
     host: 'localhost',
     port: 3000,
