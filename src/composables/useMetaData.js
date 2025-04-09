@@ -2,7 +2,7 @@
 import { useHead } from '@vueuse/head'
 
 export function useMetaData({ title, description, path, noindex = false }) {
-  const baseUrl = 'https://mariadevdesign.com'
+  const baseUrl = 'https://www.mariadevdesign.com'
   const fullUrl = path ? `${baseUrl}${path}` : baseUrl
 
   useHead({
