@@ -8,7 +8,7 @@ const router = useRouter()
 onMounted(() => {
     // Redirige después de 2s (solo para usuarios, no bots)
         if (!navigator.userAgent.match(/bot|crawl|spider|googlebot/i)) {
-          setTimeout(() => router.replace('/'), 7000)
+          setTimeout(() => router.replace('/'), 3000)
         }
     })
 
