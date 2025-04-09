@@ -4,13 +4,19 @@
     height: 100% ;
     min-height: 100vh;
   }
+    .background-form > div {
+      align-items: flex-start;
+      justify-content: flex-start;
+      width: 100%;
+    }
   /*linkedin*/
   .linkedin-card{
     position: relative;
     color:var(--color-secondary);
     background-color: white;
     border-radius: 30px;
-    max-width: 550px;
+    
+    max-width: 450px;
    gap:clamp(0px, 1vw, var(--space-xs))
   }
    .profile-img{    
