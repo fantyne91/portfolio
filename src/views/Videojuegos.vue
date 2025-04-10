@@ -8,7 +8,13 @@ import { useMetaData } from '@/composables/useMetaData'
 useMetaData({
   title: 'Desarrollo de Videojuegos con Unreal Engine | María Ortiz',
   description: 'Diseño de interfaces y videojuegos intuitivos y accesibles.',
-  path: '/videojuegos'
+  path: '/videojuegos',
+  video: {
+    name: 'Beneficios diseño UX/UI para videojuegos y Unreal Engine',
+    description: 'Ejemplos y beneficios de interfaces de usuario en videojuegos desarrollados con Unreal Engine',
+    videoId: 'ZCwlZc-WG48',
+    uploadDate: '2023-01-01T00:00:00+00:00',
+  }
 })
 </script>
 
