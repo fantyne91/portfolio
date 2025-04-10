@@ -1,23 +1,26 @@
 <template>
   <header class="header" role="banner">
     <router-link to="/" class="logo" aria-label="Ir al inicio">
-      <img src="/images/logo.webp" alt="Logo de María Ortiz, diseñado UX/UI y desarrollo web" height="auto">
+      <img src="https://www.mariadevdesign.com/images/logo.webp"
+        alt="Logo de María Ortiz, diseñado UX/UI y desarrollo web" width="150" height="auto">
     </router-link>
 
-    
-      <button v-show="isMobileOrTablet" class="menu-toggle" @click="toggleMenu" :aria-label="menuOpen ? 'Cerrar el menú' : 'Abrir el menú'">
-        <span :class="{ open: menuOpen }" class="hamburger-icon" tabindex="0" >
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-      </button>
-    
+
+    <button v-show="isMobileOrTablet" class="menu-toggle" @click="toggleMenu"
+      :aria-label="menuOpen ? 'Cerrar el menú' : 'Abrir el menú'">
+      <span :class="{ open: menuOpen }" class="hamburger-icon" tabindex="0">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </button>
+
 
     <nav :class="menuOpen ? 'nav-menu open' : 'nav-menu'" @click="toggleMenu" aria-label="Menú principal">
       <router-link to="/" tabindex="0" aria-label="Ir a la página de inicio">Inicio</router-link>
       <router-link to="/uxui" tabindex="0" aria-label="Ir a la sección UX/UI">Ux/ui</router-link>
-      <router-link to="/programacion" tabindex="0" aria-label="Ir a la sección de Programación">Programación</router-link>
+      <router-link to="/programacion" tabindex="0"
+        aria-label="Ir a la sección de Programación">Programación</router-link>
       <router-link to="/videojuegos" tabindex="0" aria-label="Ir a la sección de Videojuegos">Videojuegos</router-link>
       <router-link to="/sobre-mi" tabindex="0" aria-label="Ir a la sección Sobre mí">Sobre mí</router-link>
       <router-link to="/contacta" tabindex="0" aria-label="Ir a la sección Contacto">Contacto</router-link>
