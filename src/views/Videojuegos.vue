@@ -41,18 +41,14 @@ useMetaData({
         </div>
       </div>
 
-      <div class=" iframe full-width" itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
-        <meta itemprop="name" content="Beneficios diseño UX/UI para videojuegos y Unreal Engine">
-        <meta itemprop="description"
-          content="Ejemplos y beneficios de interfaces de usuario en videojuegos desarrollados con Unreal Engine">
-        <meta itemprop="thumbnailUrl" content="https://img.youtube.com/vi/ZCwlZc-WG48/maxresdefault.jpg">
-        <meta itemprop="uploadDate" content="2023-01-01">
+      <div class="iframe full-width">
         <iframe class="full-width" height="415" src="https://www.youtube.com/embed/ZCwlZc-WG48"
           title="YouTube video player" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen>
         </iframe>
       </div>
+
       <div class=" flex p-column-xs p-align">
         <p class=" p-games">
           La neurociencia es fundamental en este contexto, ya que proporciona
@@ -377,7 +373,7 @@ useMetaData({
             <p> Se incluye un icono que marca la idea que se encuentra en desarrollo. Se agrupan visualmente las ideas
               compartidas entre facciones.</p>
           </div>
-          <img class="container-img" src="/images/diseño-frost.webp" loading="lazy"
+          <img class="container-img" src="/images/diseno-frost.webp" loading="lazy"
             alt="Rediseño arbol ideas Frostpunk2">
         </div>
 
