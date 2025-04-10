@@ -88,7 +88,7 @@ useMetaData({
       </li>
     </ul>
 
-    <button class="big-btn1 contact-btn" aria-label="Solicitar servicios y contactar">CONTACTAR</button>
+    <button class="big-btn1 contact-btn" role="link" aria-label="Solicitar servicios y contactar">CONTACTAR</button>
 
   </section>
 

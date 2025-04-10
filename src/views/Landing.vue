@@ -210,8 +210,8 @@ onUnmounted(() => {
         <div class="contacta container-column-sm flex align-center" role="region" aria-label="Sección de contacto"
             itemscope itemtype="https://schema.org/ContactPoint">
             <p role="alert">¡Cada proyecto es único!</p>
-            <button class="big-btn contact-btn" aria-label="Contactar para servicios de desarrollo web y diseño"
-                itemprop="url">
+            <button class="big-btn contact-btn" role="link"
+                 aria-label="Contactar para servicios de desarrollo web y diseño" itemprop="url">
                 Contactar Ahora
             </button>
             <span hidden itemprop="email">contacto@tudominio.com</span>
@@ -222,23 +222,6 @@ onUnmounted(() => {
 
 
     <section class="exito-container">
-
-        <!-- <div class= "container-proyecto-unico">
-                    <div class="container-list-footer">
-                                    <p > CADA </p>
-                                    <p >PROYECTO  </p>
-                                    <p > ES ÚNICO!</p>
-                    </div>
-                    <div class="btn-footer">
-                                    <div>
-                                        
-                                        <h3> Ajustándome a tu presupuesto trabajaremos juntos para hacer realidad tu visión.</h3>
-                                    </div>
-                                    <div>
-                                           <router-link to="/contacta" class="btn0" rel="noopener noreferrer">CONTACTAR</router-link>
-                                    </div>
-                    </div>
-                </div>-->
 
         <div class="flex-row">
             <div class=" p-column-sm flex">
