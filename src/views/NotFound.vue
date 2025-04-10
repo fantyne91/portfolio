@@ -20,7 +20,9 @@ useMetaData({
    noindex: true
 })
    
-      
+if (import.meta.env.SSR && typeof document === 'undefined') {
+  throw new Error('404'); // Esto funciona con prerender.io
+}      
 </script>
   
 
