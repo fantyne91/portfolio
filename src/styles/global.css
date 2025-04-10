@@ -126,7 +126,8 @@ p, label, select{
     max-width: 750px;
 }
 .fa-solid{
-   font-size: 10px;
+   font-size: 11px;
+   width: 10px;
 }
 ul{
     margin: 0px;

@@ -1,25 +1,15 @@
 
 <script setup>
 import '../styles/games.css'
-import { useHead } from '@vueuse/head'
+
 import FloatingContactButton from '../components/FloatingContactButton.vue';
+import { useMetaData } from '@/composables/useMetaData'
 
-useHead({
+useMetaData({
   title: 'Desarrollo de Videojuegos con Unreal Engine | María Ortiz',
-  meta: [
-    { name: 'description', content: 'Proyectos de desarrollo de videojuegos con Unreal Engine. Diseño y programación de experiencias interactivas.' },
-    { property: 'og:title', content: 'Desarrollo de Videojuegos con Unreal Engine | María Ortiz' },
-    { property: 'og:description', content: 'Explora mis videojuegos creados con Unreal Engine.' },
-    { property: 'og:image', content: '/images/og-image-1200x630.webp' },
-    { property: 'og:type', content: 'website' }
-  ],
-  link: [
-    { rel: 'canonical', href: 'https://mariadevdesign.com/videojuegos' }
-  ]
+  description: 'Diseño de interfaces y videojuegos intuitivos y accesibles.',
+  path: '/videojuegos'
 })
-
-
-
 </script>
 
 <template>

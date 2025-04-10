@@ -50,6 +50,9 @@
 
 
 /**Casos*/
+.page-videojuegos .black-background{
+    padding: clamp(var(--space-lg), 7vw, var(--space-2xl)) clamp(0px, 4vw, 600px)  ;
+}
 .page-videojuegos .black-background h2{
     color: var(--color-soft-purple);
 }
@@ -59,7 +62,7 @@
     color:var(--color-grey-2);
     border-radius: 15px;
     background: var(--color-calid-purple);    
-    border: clamp(2px,1vw, 14px) solid var(--color-calid-purple);
+    border: clamp(2px,2vw, 14px) solid var(--color-calid-purple);
     border-top: 14px solid var(--color-calid-purple);
     align-items: center;
     h5{color: var(--color-grey-1);}
@@ -98,7 +101,10 @@
     .analisis-frost li:hover  {
          padding: 0 ;
          
-    }   
+    }  
+    /* .analisis-frost i{
+        color: var(--color-soft-purple);
+    }  */
     .analisis-frost li:hover> p{
         margin: var(--space-xs)   ;
         margin-bottom: calc(var(--space-xs) + 4px);
