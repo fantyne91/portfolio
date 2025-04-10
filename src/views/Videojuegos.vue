@@ -285,7 +285,9 @@ useMetaData({
             se podrían implementar:</p>
           <ul class="padding-Y-xs">
             <li class="flex p-column-xxs">
-              <p><span>Visibilidad y confusión visual en distritos <i class="fa-solid fa-angle-right"></i></span></p>
+              <p><span>Visibilidad y confusión visual en distritos <span class="material-symbols-rounded">
+                    arrow_forward_ios
+                  </span></span></p>
               <div class="shadow-container ">
                 <p class="text-red ">Problema: Confusión visual en el sistema de distritos. La falta de tamaños fijos o
                   organización clara en los distritos dificulta la planificación y expansión, obligando al jugador a
@@ -300,30 +302,9 @@ useMetaData({
               </div>
             </li>
             <li class="flex p-column-xxs">
-              <p><span>Interrupción en el flujo de interacciones  <i class="fa-solid fa-angle-right"></i></span></p>
-              <div class="shadow-container">
-                <p class="text-red ">Problema: Al hacer clic en un edificio, la cámara se desplaza y acerca a cámara
-                  lenta
-                  hacia él, provocando tiempos de espera y rompiendo la fluidez de la interacción al gestionar múltiples
-                  edificios. </p>
-                <p class="text-bg-purple">Solución: Resaltar el edificio seleccionado sin moverse de la vista actual,
-                  mostrando una miniatura del edificio seleccionado en la interfaz junto a la información. </p>
-              </div>
-            </li>
-            <li class="flex p-column-xxs">
-              <p><span>Deshumanización del gameplay <i class="fa-solid fa-angle-right"></i></span></p>
-              <div class="shadow-container">
-                <p class="text-red ">Problema: Los íconos relacionados con los enfermos y otros estados críticos
-                  (hambre,
-                  criminalidad) solo muestra información imprecisa como "leve" o "moderada", lo que genera una sensación
-                  de falta de detalle y realismo.</p>
-                <p class="text-bg-purple">Solución: Evitar términos genéricos como "leve" o "moderada", ofreciendo
-                  información más concreta (por ejemplo, porcentaje de personas afectadas o número exacto de casos) para
-                  difuminar la sensación para mejorar la interacción y la toma de decisiones del jugador.</p>
-              </div>
-            </li>
-            <li class="flex p-column-xxs">
-              <p><span>Árbol de desarrollo confuso <i class="fa-solid fa-angle-right"></i></span></p>
+              <p><span>Árbol de desarrollo confuso <span class="material-symbols-rounded">
+                    arrow_forward_ios
+                  </span></span></p>
               <div class="shadow-container">
                 <p class="text-red ">Problema: El árbol de desarrollo es difícil de comprender, algunos conceptos no se
                   encuentran donde se esperan, no muestran un camino claro llevándote a cometer errores, y no se muestra
@@ -335,8 +316,38 @@ useMetaData({
                   categorías y recursos, y ajustar con mejoras más proporcionales según el tipo de recurso. </p>
               </div>
             </li>
+
+            <li class="flex p-column-xxs">
+              <p><span>Deshumanización del gameplay <span class="material-symbols-rounded">
+                    arrow_forward_ios
+                  </span></span></p>
+              <div class="shadow-container">
+                <p class="text-red ">Problema: Los íconos relacionados con los enfermos y otros estados críticos
+                  (hambre,
+                  criminalidad) solo muestra información imprecisa como "leve" o "moderada", lo que genera una sensación
+                  de falta de detalle y realismo.</p>
+                <p class="text-bg-purple">Solución: Evitar términos genéricos como "leve" o "moderada", ofreciendo
+                  información más concreta (por ejemplo, porcentaje de personas afectadas o número exacto de casos) para
+                  difuminar la sensación para mejorar la interacción y la toma de decisiones del jugador.</p>
+              </div>
+            </li>
+            <li class="flex p-column-xxs">
+              <p><span>Interrupción en el flujo de interacciones <span class="material-symbols-rounded">
+                    arrow_forward_ios
+                  </span></span></p>
+              <div class="shadow-container">
+                <p class="text-red ">Problema: Al hacer clic en un edificio, la cámara se desplaza y acerca a cámara
+                  lenta
+                  hacia él, provocando tiempos de espera y rompiendo la fluidez de la interacción al gestionar múltiples
+                  edificios. </p>
+                <p class="text-bg-purple">Solución: Resaltar el edificio seleccionado sin moverse de la vista actual,
+                  mostrando una miniatura del edificio seleccionado en la interfaz junto a la información. </p>
+              </div>
+            </li>
             <li class=" p-column-xs flex  align-left">
-              <p> Problemas adicionales <i class="fa-solid fa-angle-right"></i></p>
+              <p> Problemas adicionales <span class="material-symbols-rounded">
+                  arrow_forward_ios
+                </span></p>
               <div class="shadow-container">
                 <p class="text-red ">- Actualmente al expandir un edificio industrial, el producto que se está
                   produciendo
@@ -350,7 +361,7 @@ useMetaData({
 
 
 
-        <div class="flex-row padding-Y-xs">
+        <div class="flex-row padding-Y-sm">
           <div class="p-short p-column-xs flex">
             <h4>Rediseño sugerido "Árbol de ideas"</h4>
             <p>Sugiero cambiar a nombres más intuitivos y jerárquicos para las ideas generales en la pantalla principal

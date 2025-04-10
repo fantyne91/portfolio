@@ -14,7 +14,7 @@ export function useMetaData({ title, description, path, noindex = false }) {
       { property: 'og:description', content: description },
       { property: 'og:type', content: 'website' },
       { property: 'og:url', content: fullUrl },
-      //   ...(image ? [{ property: 'og:image', content: image }] : []),
+    
     ],
     link: [{ rel: 'canonical', href: fullUrl }],
     script: [

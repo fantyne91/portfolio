@@ -21,8 +21,7 @@
     background-color: var(--color-secondary);
     z-index: 100;
     box-shadow: 0 0 4px  var(--color-grey-3);
-    
-    
+        
 }
 
 .floating-btn:hover {

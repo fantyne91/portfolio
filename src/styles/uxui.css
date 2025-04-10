@@ -49,6 +49,10 @@
     border-radius: 5px;
     height: 100%;
 }
+.container-motivos-ux .material-symbols-rounded {   
+   font-size: 13px; 
+   font-weight: 700;
+}
 /*definicion*/
 .definicion-ux{
     background-color: var(--color-grey-5);    
@@ -120,7 +124,7 @@ video, img{
        padding: 0;
        align-self: flex-start;
         text-align: unset;
-        color: rgb(255, 212, 84);        
+        color: rgb(100, 53, 0);        
     }
     .container-motivos-ux ul {
         height: 400px; 
@@ -136,16 +140,13 @@ video, img{
         align-items: center;   
         justify-content: center;    
     } 
-    .container-motivos-ux li:nth-child(1){ 
-    
+    .container-motivos-ux li:nth-child(1){     
     top:0;
 }
- .container-motivos-ux li:nth-child(2){ 
-    
+ .container-motivos-ux li:nth-child(2){     
     top:130px;
 }
- .container-motivos-ux li:nth-child(3){ 
-    
+ .container-motivos-ux li:nth-child(3){     
     top:260px;
 }
     .container-motivos-ux p{
@@ -163,6 +164,10 @@ video, img{
         transform: translateY(-10%);
         transition: border-radius 0.3s linear;                 
     }
+    .container-motivos-ux li:hover .material-symbols-rounded {   
+   font-size: 11px; 
+   
+}
     .container-motivos-ux li:hover p{
         opacity: 1;
         visibility: visible;           

@@ -68,20 +68,18 @@
     h5{color: var(--color-grey-1);}
     h3,h4{font-weight: 500; color: var(--color-soft-purple); }
 }
-
-.container-casos-games span {
-     color: var(--color-grey-1);   
-}
- 
  .analisis-frost  li{
   list-style: none;
   border-radius: 10px;
    border: 2px solid var(--color-calid-purple);
    padding: var(--space-xs);
 } 
+
+.analisis-frost .material-symbols-rounded {   
+   font-size: 10px; 
+}
 .text-red{
     margin-left: var(--space-xxs);
-
 }
 .text-bg-purple{
     background-color: var(--color-med-purple) ;
@@ -99,8 +97,7 @@
         font-weight: 500;     
     }
     .analisis-frost li:hover  {
-         padding: 0 ;
-         
+         padding: 0 ;         
     }  
     /* .analisis-frost i{
         color: var(--color-soft-purple);
@@ -124,13 +121,19 @@
     top:0;
     z-index: 2;
     pointer-events: none; 
-     box-shadow: 0px 8px 50px  var(--color-secondary);
+     box-shadow: 0px 12px 20px  rgb(42, 5, 42);
      border: 2px solid var(--color-calid-purple);
      border-top: 0;
      border-radius: 0 0 15px 15px;
      padding: var(--space-xxs);
      gap:var(--space-xxs);     
     transition: display 1s linear;   
+}
+.analisis-frost .material-symbols-rounded {   
+   font-size: 11px; 
+}
+.analisis-frost li:hover .material-symbols-rounded {
+    font-weight: 700; 
 }
 }
 @media (max-width: 540px) {

@@ -41,19 +41,25 @@ useMetaData({
                     <h2>¿Cómo ayuda el UX a crecer las ventas? </h2>
                     <ul>
                         <li>
-                            <h3>Mejora la conversión <i class="fa-solid fa-angle-right"></i></h3>
+                            <h3>Mejora la conversión <span class="material-symbols-rounded">
+                                    arrow_forward_ios
+                                </span></h3>
                             <p>Simplifica procesos, reduciendo fricciones que pueden llevar a la pérdida de clientes.
                                 Con una navegación intuitiva, los usuarios tienen menos probabilidades de abandonar sus
                                 carritos y más probabilidades de completar la compra. </p>
                         </li>
                         <li>
-                            <h3>Aumenta la retención de clientes <i class="fa-solid fa-angle-right"></i></h3>
+                            <h3>Aumenta la retención de clientes <span class="material-symbols-rounded">
+                                    arrow_forward_ios
+                                </span></h3>
                             <p>Una experiencia positiva hace que los usuarios regresen. La retención de clientes es
                                 clave para el crecimiento sostenible de las ventas, y es mucho más económico mantener a
                                 un cliente que adquirir uno nuevo.</p>
                         </li>
                         <li>
-                            <h3>Optimiza la personalización <i class="fa-solid fa-angle-right"></i></h3>
+                            <h3>Optimiza la personalización <span class="material-symbols-rounded">
+                                    arrow_forward_ios
+                                </span></h3>
                             <p>Aprovechar el análisis de datos y ofrecer una experiencia de compra personalizada para
                                 cada cliente, aumenta el ticket promedio por cliente sin necesidad de ampliar tu
                                 catálogo de productos. </p>
@@ -65,19 +71,25 @@ useMetaData({
                     <h2>¿Cómo reducir costes a través de UX/UI? </h2>
                     <ul>
                         <li>
-                            <h3>Optimización del flujo de trabajo interno <i class="fa-solid fa-angle-right"></i></h3>
+                            <h3>Optimización del flujo de trabajo interno <span class="material-symbols-rounded">
+                                    arrow_forward_ios
+                                </span></h3>
                             <p> Tener interfaces administrativas claras y procesos automatizados de gestión permiten que
                                 el personal trabaje de manera más eficiente, evitando duplicación de tareas y posibles
                                 errores humanos.</p>
                         </li>
                         <li>
-                            <h3>Automatización de procesos <i class="fa-solid fa-angle-right"></i></h3>
+                            <h3>Automatización de procesos <span class="material-symbols-rounded">
+                                    arrow_forward_ios
+                                </span></h3>
                             <p> Un buen diseño UX puede reducir la dependencia de personal de atención al cliente
                                 al ofrecer herramientas donde los clientes resuelven sus problemas o consultas
                                 fácilmente.</p>
                         </li>
                         <li>
-                            <h3>Diseño eficiente <i class="fa-solid fa-angle-right"></i></h3>
+                            <h3>Diseño eficiente <span class="material-symbols-rounded">
+                                    arrow_forward_ios
+                                </span></h3>
                             <p>Un diseño eficiente agiliza procesos y reduce errores del usuario. Esto se traduce en
                                 menos consultas de soporte, mayor conversión y fidelización, maximizando el retorno de
                                 inversión.</p>
