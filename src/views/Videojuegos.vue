@@ -10,7 +10,7 @@ useMetaData({
   description: 'Diseño de interfaces y videojuegos intuitivos y accesibles.',
   path: '/videojuegos',
   video: {
-    name: 'Beneficios diseño UX/UI para videojuegos y Unreal Engine',
+    name: 'Beneficios del diseño UX/UI para videojuegos y Unreal Engine',
     description: 'Ejemplos y beneficios de interfaces de usuario en videojuegos desarrollados con Unreal Engine',
     videoId: 'ZCwlZc-WG48',
     uploadDate: '2023-01-01T00:00:00+00:00',
@@ -24,7 +24,77 @@ useMetaData({
       rel: 'stylesheet',
       href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chat'
     }
-  ]
+  ],
+  jsonLd: {    
+    "mainEntity": [
+      {
+        "@type": "Service",
+        "serviceType": "Soporte en creación de pitch's y GDD",
+        "description": "Estos documentos son esenciales para comunicar de manera clara y persuasiva las ideas detrás de un videojuego, ya sea a inversores, desarrolladores o equipos de trabajo.",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://www.mariadevdesign.com/uxui#soporte-pitch-gdd",
+          "priceCurrency": "EUR",
+          "price": "Consultar"
+        }
+      },
+      {
+        "@type": "Service",
+        "serviceType": "Asesoría y Análisis de HUD, Diseño Visual y UI",
+        "description": "Asesoría especializada en HUD, diseño visual y UI, adaptados tanto para videojuegos en desarrollo como para la optimización de proyectos existentes.",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://www.mariadevdesign.com/uxui#asesoria-hud-ui",
+          "priceCurrency": "EUR",
+          "price": "Consultar"
+        }
+      },
+      {
+        "@type": "Service",
+        "serviceType": "UR y prototipado",
+        "description": "Desarrollo wireframes y prototipos interactivos que permiten visualizar y probar la interfaz antes de la implementación, asegurando que cada elemento tenga un propósito claro. Los prototipos son herramientas fundamentales para la validación de la experiencia de usuario, y son ideales para convencer a desarrolladores o inversores al mostrar una visión del producto.",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://www.mariadevdesign.com/uxui#ur-prototipado",
+          "priceCurrency": "EUR",
+          "price": "Consultar"
+        }
+      },
+      {
+        "@type": "Service",
+        "serviceType": "Diseño Visual",
+        "description": "Diseños centrados en la armonía entre la estética general del videojuego y la Interfaz, HUD, menús y interacciones para ofrecer una experiencia fluida y envolvente que conecta al jugador con la narrativa y el ambiente del juego.",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://www.mariadevdesign.com/uxui#diseno-visual",
+          "priceCurrency": "EUR",
+          "price": "Consultar"
+        }
+      },
+      {
+        "@type": "Service",
+        "serviceType": "Pruebas de Usabilidad",
+        "description": "Pruebas de usabilidad con jugadores para identificar áreas de mejora y optimizar la experiencia, asegurando que cada elemento de la interfaz contribuya al disfrute del juego.",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://www.mariadevdesign.com/uxui#pruebas-usabilidad",
+          "priceCurrency": "EUR",
+          "price": "Consultar"
+        }
+      },
+      {
+        "@type": "Service",
+        "serviceType": "Desarrollo en Unreal Engine",
+        "description": "Utilizando la potencia de Unreal Engine diseño y construyo escenarios inmersivos implementando assets para lograr una alta calidad visual, aplicando tecnologías avanzadas como Lumen para iluminación realista. También trabajo con Metahumans para desarrollar personajes detallados y realistas. Estas opciones se pueden adaptar tanto a empresas que buscan incorporar elementos de gamificación como a desarrolladores de videojuegos, ofreciendo soluciones flexibles según las necesidades del proyecto.",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://www.mariadevdesign.com/uxui#desarrollo-unreal-engine",
+          "priceCurrency": "EUR",
+          "price": "Consultar"
+        }
+      }
+    ]
+  }
 })
 </script>
 
@@ -111,7 +181,7 @@ useMetaData({
   <section class="services-games">
     <h2>Servicios para videojuegos</h2>
     <ul>
-      <li>
+      <li id="soporte-pitch-gdd">
         <h3>Soporte en creación de pitch's y GDD</h3>
         <p>
           Estos documentos son esenciales para comunicar de manera clara y
@@ -119,7 +189,7 @@ useMetaData({
           desarrolladores o equipos de trabajo.
         </p>
       </li>
-      <li>
+      <li id="asesoria-hud-ui">
         <h3>Asesoría y Análisis de HUD, Diseño Visual y UI</h3>
         <p>
           Asesoría especializada en HUD, diseño
@@ -127,7 +197,7 @@ useMetaData({
           para la optimización de proyectos existentes.
         </p>
       </li>
-      <li>
+      <li id="ur-prototipado">
         <h3>UR y prototipado</h3>
         <p>
           Desarrollo wireframes y prototipos interactivos que permiten
@@ -138,7 +208,7 @@ useMetaData({
           desarrolladores o inversores al mostrar una visión del producto.
         </p>
       </li>
-      <li>
+      <li id="diseno-visual">
         <h3>Diseño Visual</h3>
         <p>
           Diseños centrados en la armonía entre la estética general del
@@ -147,7 +217,7 @@ useMetaData({
           narrativa y el ambiente del juego.
         </p>
       </li>
-      <li>
+      <li id="pruebas-usabilidad">
         <h3>Pruebas de Usabilidad</h3>
         <p>
           Pruebas de usabilidad con jugadores para identificar áreas de mejora
@@ -155,7 +225,7 @@ useMetaData({
           interfaz contribuya al disfrute del juego.
         </p>
       </li>
-      <li>
+      <li id="desarrollo-unreal-engine">
         <h3>Desarrollo en Unreal Engine</h3>
         <p>
           Utilizando la potencia de Unreal Engine diseño y construyo
@@ -163,19 +233,19 @@ useMetaData({
           calidad visual, aplicando tecnologías avanzadas como Lumen para
           iluminación realista.
         </p>
-        <p>
+        <!-- <p>
           También trabajo con Metahumans para desarrollar personajes
           detallados y realistas. Estas opciones se pueden adaptar tanto a
           empresas que buscan incorporar elementos de gamificación como a
           desarrolladores de videojuegos, ofreciendo soluciones flexibles
           según las necesidades del proyecto.
-        </p>
+        </p> -->
       </li>
     </ul>
-    <button class="big-btn1 contact-btn" role="link"  aria-label="Solicitar servicios y contactar">CONTACTAR</button>
+    <button class="big-btn1 contact-btn" role="link" aria-label="Solicitar servicios y contactar">CONTACTAR</button>
   </section>
 
-  <section class="black-background">
+  <section id="casos-games" class=" black-background">
     <h2>Análisis y diseño de videojuegos</h2>
     <div class="container-casos-games flex">
       <h3>

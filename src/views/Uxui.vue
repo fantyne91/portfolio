@@ -8,6 +8,7 @@ useMetaData({
     title: 'UX/UI Design Web | María Portfolio',
     description: 'Diseño de interfaces intuitivas y accesibles.',
     path: '/uxui',
+
     additionalLinks: [
         {
             rel: 'stylesheet',
@@ -17,7 +18,66 @@ useMetaData({
             rel: 'stylesheet',
             href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chat'
         }
-    ]
+    ],
+    jsonLd: {
+        "mainEntity": [
+            {
+                "@type": "Service",
+                "serviceType": "Auditorías UX/UI y Optimización de la Conversión (CRO)",
+                "description": "Auditorías completas de sitios web o plataformas CMS para detectar áreas de mejora en la experiencia de usuario y la interfaz visual.",
+                "offers": {
+                    "@type": "Offer",
+                    "url": "https://www.mariadevdesign.com/uxui#auditorias-cro",
+                    "priceCurrency": "EUR",
+                    "price": "Consultar",                    
+                }
+            },
+            {
+                "@type": "Service",
+                "serviceType": "Diseño de Interfaces Personalizadas",
+                "description": "Diseño interfaces visuales atractivas y funcionales para mejorar la interacción del usuario.",
+                "offers": {
+                    "@type": "Offer",
+                    "url": "https://www.mariadevdesign.com/uxui#diseno-interfaces",
+                    "priceCurrency": "EUR",
+                    "price": "Consultar",                    
+                }
+            },
+            {
+                "@type": "Service",
+                "serviceType": "Integración y Personalización en CMS",
+                "description": "Implemento diseños optimizados en plataformas como WordPress o Shopify.",
+                "offers": {
+                    "@type": "Offer",
+                    "url": "https://www.mariadevdesign.com/uxui#integracion-cms",
+                    "priceCurrency": "EUR",
+                    "price": "Consultar",                   
+                }
+            },
+            {
+                "@type": "Service",
+                "serviceType": "Diseño Responsive",
+                "description": "Aseguro que cada diseño funcione perfectamente en dispositivos móviles y de escritorio.",
+                "offers": {
+                    "@type": "Offer",
+                    "url": "https://www.mariadevdesign.com/uxui#diseno-responsive",
+                    "priceCurrency": "EUR",
+                    "price": "Consultar",                 
+                }
+            },
+            {
+                "@type": "Service",
+                "serviceType": "Pruebas de Usuario y Validación",
+                "description": "Conduzco pruebas de usuario y validación continua para asegurar que las soluciones respondan a las necesidades reales de los clientes.",
+                "offers": {
+                    "@type": "Offer",
+                    "url": "https://www.mariadevdesign.com/uxui#pruebas-usuario",
+                    "priceCurrency": "EUR",
+                    "price": "Consultar",                    
+                }
+            }
+        ]
+    }
 })
 
 </script>
@@ -148,7 +208,7 @@ useMetaData({
             <div class="services-ux-container flex container-column-sm align-center">
                 <h2> Servicios de Diseño UX/UI </h2>
                 <ul role="list">
-                    <li>
+                    <li id="auditorias-cro">
                         <h3>Auditorías UX/UI y Optimización de la Conversión (CRO) </h3>
                         <p>Auditorías completas de sitios web o plataformas CMS para detectar áreas de mejora en la
                             experiencia
@@ -156,7 +216,7 @@ useMetaData({
                             diseño y
                             funcionalidad para aumentar la conversión y reducir la tasa de abandono.</p>
                     </li>
-                    <li>
+                    <li id="diseno-interfaces">
                         <h3> Diseño de Interfaces Personalizadas </h3>
                         <p>Diseño interfaces visuales atractivas y funcionales para mejorar la interacción del usuario.
                             Obtén
@@ -166,20 +226,20 @@ useMetaData({
                             a
                             desarrollo o compartirlo con potenciales inversores.</p>
                     </li>
-                    <li>
+                    <li id="integracion-cms">
                         <h3> Integración y Personalización en CMS:</h3>
                         <p> Implemento diseños optimizados en plataformas como WordPress o Shopify, Workflow, Ionos...
                             personalizando plantillas y funcionalidades para adaptarlas a las necesidades específicas
                             del
                             negocio.</p>
                     </li>
-                    <li>
+                    <li id="diseno-responsive">
                         <h3> Diseño Responsive:</h3>
                         <p>Aseguro que cada diseño funcione perfectamente en dispositivos móviles y de escritorio,
                             proporcionando una experiencia fluida independientemente del dispositivo que el usuario
                             elija.</p>
                     </li>
-                    <li>
+                    <li id="pruebas-usuario">
                         <h3> Pruebas de Usuario y Validación:</h3>
                         <p>Conduzco pruebas de usuario y validación continua para asegurar que las soluciones
                             implementadas
@@ -228,13 +288,13 @@ useMetaData({
         </section>
 
 
-        <section class="black-background">
+        <section id="casos-uxui" class="black-background">
             <h2>Casos de estudio de UX/UI </h2>
-            <div class="container-casos-ux  flex ">
+            <div class="container-casos-ux flex ">
 
                 <h3>Análisis y propuesta de rediseño Tiendanimal </h3>
 
-                <div class="dark-background flex container-column-sm">
+                <div class=" dark-background flex container-column-sm">
 
                     <div class="flex-row">
                         <div class="p-column-sm flex">

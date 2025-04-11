@@ -8,28 +8,60 @@ export function useMetaData({
   noindex = false,
   video = null,
   additionalLinks = [],
+  jsonLd = null,// null por defecto
 }) {
-  /**variables dinamicas */
+
+  // Variables dinámicas
   const baseUrl = 'https://www.mariadevdesign.com'
   const fullUrl = path ? `${baseUrl}${path}` : baseUrl
-  
-  /**variables dinamicas para json */
-  const schemaData = {
+
+  // esquema básico (WebPage)
+  const basicSchemaData = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
     name: title,
     url: fullUrl,
     description: description,
+    author: {
+      '@type': 'Person',
+      name: 'María Ortiz',
+      url: 'https://www.mariadevdesign.com/sobremi',
+    },
+    inLanguage: 'es',
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'customer service',
+      url: 'https://www.mariadevdesign.com/contacta',
+    },
+    
+    // Si hay video,(no main entity)-> tipo a VideoObject
+    ...(video && {
+      ...(video && {
+        hasPart: {
+          '@type': 'VideoObject',
+          name: video.name,
+          description: video.description,
+          thumbnailUrl: `https://img.youtube.com/vi/${video.videoId}/maxresdefault.jpg`,
+          uploadDate: video.uploadDate,
+          embedUrl: `https://www.youtube.com/embed/${video.videoId}`,
+        },
+      }),
+    }),
   }
-  if (video) {
-    schemaData['@type'] = 'VideoObject'
-    schemaData.name = video.name
-    schemaData.description = video.description
-    schemaData.thumbnailUrl = `https://img.youtube.com/vi/${video.videoId}/maxresdefault.jpg`
-    schemaData.uploadDate = video.uploadDate
-    schemaData.embedUrl = `https://www.youtube.com/embed/${video.videoId}`
-  }
-  /*metas dinamicos*/
+
+  
+ 
+
+  // Si se pasa jsonLd, lo combinamos sin duplicar campos base
+  const finalJsonLd = jsonLd
+    ? {
+        ...basicSchemaData,
+        ...jsonLd,
+        // opcional: sobreescribir solo los campos necesarios del jsonLd pasado
+      }
+    : basicSchemaData // Si no se pasa jsonLd, usamos el esquema básico
+
+  // Metas dinámicas
   useHead({
     title,
     meta: [
@@ -40,14 +72,14 @@ export function useMetaData({
       },
       { property: 'og:title', content: title },
       { property: 'og:description', content: description },
-      { property: 'og:type', content: 'website' },
+      { property: 'og:type', content: 'website' }, // Open Graph type
       { property: 'og:url', content: fullUrl },
     ],
     link: [{ rel: 'canonical', href: fullUrl }, ...additionalLinks],
     script: [
       {
         type: 'application/ld+json',
-        children: JSON.stringify(schemaData),
+        children: JSON.stringify(finalJsonLd), // Usamos el jsonLd combinado
       },
     ],
   })

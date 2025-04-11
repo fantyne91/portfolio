@@ -1,6 +1,5 @@
-
 <script setup>
-import '../styles/sobremi.css'
+
 import { onMounted } from 'vue'
 import { useMetaData } from '@/composables/useMetaData'
 
@@ -10,50 +9,75 @@ useMetaData({
   path: '/sobre-mi'
 })
 
+onMounted(() => {
+  const items = document.querySelectorAll('.scroll-item');
 
-onMounted(() => {  
-  const items = document.querySelectorAll('.scroll-item')
+  // Inicializamos: la primera imagen se queda sin efectos y los demás se inician en su estado "naciente"
+  items.forEach((item, index) => {
+    if (index === 0) {
+      item.style.transform = 'scale(1)';
+      item.style.opacity = '1';
+    } else {
+      // Inicia muy pequeño y casi invisible
+      item.style.transform = 'scale(0.1)';
+      item.style.opacity = '0';
+    }
+  });
 
   const applyScrollEffect = () => {
-    const vh = window.innerHeight // Altura de la pantalla
-    const centerScreen = vh / 2 // Centro de la pantalla
+    const vh = window.innerHeight;
+    const centerScreen = vh / 2;
+    // Definimos un umbral para que el efecto se complete al alejarse del centro
+    const threshold = vh / 1; // Ajusta este valor según el efecto deseado
 
-    items.forEach((item) => {
-      const rect = item.getBoundingClientRect()
-      const itemCenter = rect.top + rect.height / 2
-      const distance = itemCenter - centerScreen
+    items.forEach((item, index) => {
+      const rect = item.getBoundingClientRect();
+      const itemCenter = rect.top + rect.height / 2;
+      const distance = Math.abs(itemCenter - centerScreen);
 
-      // Normalizar el progreso (0 en el centro, 1 en los laterales)
-      const progress = Math.min(1, Math.abs(distance / (vh / 3)))
+      // Progreso: 0 en el centro, 1 en o más allá del umbral
+      let progress = distance / threshold;
+      if (progress > 1) progress = 1;
 
-      // Escala: comienza en 0.5 y crece hasta 1.3
-      const scale = 0.9 + progress * 0.8
+      // Si es la primera imagen, la dejamos en tamaño completo
+      if (index === 0) {
+        item.style.transform = 'scale(1)';
+        item.style.opacity = '1';
+      } else {
+        // Queremos que los elementos "nazcan" desde el centro:
+        // - Empiecen en scale cerca de 0.1 y se escalen hasta 1 cuando estén en el centro.
+        // - Luego, al alejarse, vuelvan a reducirse (o se desplacen fuera de la pantalla).
+        // 
+        // Aquí la idea es que al estar en el centro (progress ~ 0) el elemento alcance su tamaño máximo (1).
+        // Y a medida que avanza el progreso (al alejarse), disminuya (por ejemplo, a 0.3).
+        const minScale = 0.3;  // Escala mínima cuando ya está lejos del centro
+        const scale = (1 - progress) * (1 - minScale) + minScale;
 
-      // Movimiento lateral: hacia la izquierda o derecha
-      const translateX = progress * (distance > 0 ? 1 : -1)
+        // Para el desplazamiento lateral: queremos que cuando el elemento esté en el centro, translateX sea 0
+        // Y a medida que se aleje, se desplace suavemente hacia los lados.
+        // Usamos la dirección del elemento dependiendo si está por arriba o por debajo del centro.
+        const direction = (itemCenter - centerScreen) >= 0 ? 1 : -1;
+        // Máximo desplazamiento en píxeles
+        const translateX = progress *  direction;
 
-      // Opacidad: 1 en el centro, 0 cuando está en los márgenes
-      const opacity = 1.15 - progress
+        // La opacidad: máxima (1) en el centro y se reduce conforme se aleja
+        const opacity = 1 - progress;
 
-      // Aplicar transformaciones
-      item.style.transform = `scale(${scale}) translateX(${translateX}px)`
-      item.style.opacity = opacity
-    })
-  }
+        item.style.transform = `scale(${scale}) translateX(${translateX}px)`;
+        item.style.opacity = opacity;
+      }
+    });
+  };
 
-  // Aplicar efecto al cargar la página
-  applyScrollEffect()
+  // Ejecutamos la función al cargar la página
+  applyScrollEffect();
 
-  // Agregar el evento de scroll
-  window.addEventListener('scroll', applyScrollEffect)
-
-})
- 
+  // Y la actualizamos al hacer scroll
+  window.addEventListener('scroll', applyScrollEffect);
+});
 </script>
 
-
 <template>
-
   <section class="about-me">
     <h1>Un poco de mi</h1>
     <img src="/images/maria.webp" alt="Imagen 2" class="scroll-item">
@@ -61,21 +85,22 @@ onMounted(() => {
       <p>Hola!</p>
       <p>Soy María.</p>
     </div>
-    <img src="/images/nubes-medano.webp" alt="Imagen presentación Maria" loading="lazy" class="scroll-item">
-
-    <div class="text scroll-item">
-      <p>Me gusta fotografíar el cielo y la luna, dibujar a lápiz y pintar en acrílico.</p>
+    <div class="text scroll-item flex-row ">
+      <p>Me encanta fotografiar el cielo y la luna, dibujar a lápiz y pintar en acrílico.</p>
+      <img src="/images/nubes-medano.webp" alt="Imagen presentación Maria" loading="lazy" class="scroll-item">
     </div>
-    <img src="/images/clouds.webp" alt=" nubes en Canarias" loading="lazy" class="scroll-item">
-    <div class="text scroll-item">
+
+
+
+
+    <div class="text scroll-item flex">
+      <img src="/images/clouds.webp" alt="nubes en Canarias" loading="lazy" class="scroll-item">
       <p>Disfruto estudiando el porqué de las cosas.</p>
     </div>
-    <div class="text scroll-item">
+    <div class="text scroll-item flex-row">
+      <img src="/images/chian-temple.webp" alt="Templo Tailandia Chian rai" loading="lazy" class="scroll-item">
       <p>Desde pequeña he amado los videojuegos, la estrategia y los retos lógicos.</p>
     </div>
-
-    <img src="/images/chian-temple.webp" alt="Templo Tailandia Chian rai" loading="lazy" class="scroll-item">
-
 
     <div class="text scroll-item">
       <p>Con los años, he desarrollado una gran apreciación por las interfaces bien diseñadas y la usabilidad efectiva.
@@ -85,19 +110,72 @@ onMounted(() => {
       <p>Esta pasión también me ha convertido en una crítica atenta a los detalles.</p>
     </div>
 
-    <img src="/images/srilanka.webp" alt="mochileando por Srilanka" loading="lazy" class="scroll-item">
-    <div class="text scroll-item">
-      <p>Final Fantasy, World of Warcraft, Skyrim, Half-Life y Frostpunk1 han inspirado mi enfoque, mostrándome la
+
+    <div class="text scroll-item flex-row">
+
+      <p>Videojuegos como Final Fantasy y World of Warcraft, han inspirado mi enfoque, mostrándome la
         importancia de las comunidades y la conexión significativa entre usuarios y experiencias.</p>
+      <img src="/images/srilanka.webp" alt="Mochileando por Srilanka" loading="lazy" class="scroll-item">
     </div>
-    <div class="text scroll-item">
+    <div class="text scroll-item flex-row">
+      <img src="/images/chian.webp" alt="Vistas arcoíris en Tailandia" loading="lazy" class="scroll-item">
       <p>Hoy, diseño y desarrollo aplicaciones web y videojuegos, combinando arte y tecnología.</p>
     </div>
-    <img src="/images/chian.webp" alt="vistas arcoiris en Tailandia" loading="lazy" class="scroll-item">
-
-    <div></div>
 
   </section>
-
 </template>
 
+<style scoped>
+
+/* Imágenes con tamaño moderado */
+
+.about-me {
+  gap: 5rem;
+  overflow: hidden;
+  background-color: var(--color-blue-black);
+  color: var(--color-primary);
+  text-align: center;
+}
+
+.page-sobremi .flex-row {
+  max-width: max-content;
+
+}
+
+/* .about-me h1{
+  opacity:0.5;
+} */
+
+.section.reverse {
+  flex-direction: row-reverse;
+}
+
+.scroll-item {
+  opacity: 0;
+  transition: transform 0.3s linear, opacity 0.1s linear;
+
+}
+
+.scroll-item img {
+  max-width: 700px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 10px;
+}
+.text {
+  color: var(--color-primary);
+  line-height: 1.8;
+}
+
+.text * {
+  font-size: clamp(1.5rem, 4vw, 2.6rem) !important;
+  font-weight: 500;
+}
+
+@media (max-width: 540px) {
+  .page-sobremi img {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>

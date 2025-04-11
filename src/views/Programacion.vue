@@ -8,6 +8,7 @@ useMetaData({
   title: 'Desarrollo Web Personalizado | María Dev Design',
   description: 'Desarrollo de sitios web, aplicaciones y sistemas a medida con  Vue.js, Js, PHP ',
   path: '/programacion',
+  
   additionalLinks: [
     {
       rel: 'stylesheet',
@@ -17,7 +18,27 @@ useMetaData({
       rel: 'stylesheet',
       href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chat'
     }
-  ]
+  ],
+  jsonLd: {
+    
+    '@type': 'WebSite',  
+    description: 'Sitio desarrollado con enfoque en SEO, rendimiento y diseño UX. Uso de Vue 3, Composition API, Prettier, Prerender.io, Cloudflare Workers, Figma, Lighthouse, Squoosh, ezgif, Google Fonts y más.',
+    
+    keywords: [
+      'Vue.js',
+      'JavaScript',
+      'UX/UI',
+      'Cloudflare',
+      'SEO',
+      'Prettier',
+      'Figma',
+      'Prerender.io',
+      'Unreal Engine',
+      'Desarrollo Web',
+      'PHP',
+      'JSON-LD'
+    ]
+  }
 })
   
 
@@ -205,8 +226,62 @@ useMetaData({
         </figure>
       </div>
     </div>
-
-
   </section>
+
+  <section id="sobre-la-web">
+    <h2>🛠️ Sobre esta Web: mariadevdesign.com</h2>
+
+    <p>
+      Esta web ha sido desarrollada con foco en velocidad, accesibilidad y posicionamiento en buscadores (SEO),
+      cuidando tanto el código como la experiencia visual en cada sección.
+    </p>
+
+    <h3>🔧 Tecnologías y herramientas usadas</h3>
+    <ul>
+      <li><strong>Vue 3 (Composition API)</strong>: Arquitectura modular y reactiva que facilita la creación de
+        componentes reutilizables y mejora el rendimiento en la carga.</li>
+      <li><strong>Cloudflare Workers</strong>: Permite la redirección, control de caché y prerenderizado para bots,
+        mejorando la velocidad de carga y la indexación en buscadores.</li>
+      <li><strong>Figma</strong>: Herramienta de diseño utilizada para crear prototipos visuales interactivos,
+        optimizados para una experiencia de usuario fluida y personalizada en cada sección (UX/UI, Programación, Juegos,
+        Sobre mí).</li>
+      <li><strong>Prerender.io</strong>: Utilizada para renderizar el contenido de la página antes de que sea enviado a
+        los motores de búsqueda, lo que mejora la indexación por parte de bots como Google, Ahrefs y otros.</li>
+      <li><strong>Prettier</strong>: Herramienta que asegura un formato de código coherente, lo que mejora la
+        legibilidad y mantenibilidad del código.</li>
+      <li><strong>Google Fonts</strong>: Tipografías optimizadas que no solo mejoran la estética, sino también la
+        velocidad de carga de la web.</li>
+      <li><strong>Squoosh / EZGif</strong>: Herramientas de compresión de imágenes que ayudan a reducir el tamaño de los
+        archivos y mejorar los tiempos de carga.</li>
+      <li><strong>Lighthouse</strong>: Herramienta de Google que evalúa la calidad de la web, con puntuaciones de
+        rendimiento, accesibilidad y SEO al 100%.</li>
+      <li><strong>Google Analytics</strong>: Herramienta para el seguimiento del comportamiento de los usuarios y el
+        rendimiento de la web, permitiendo hacer ajustes basados en datos reales.</li>
+      <li><strong>Vite</strong>: Herramienta de empaquetado y compilación moderna que mejora la velocidad de desarrollo
+        y la carga de la página en producción.</li>
+      <li><strong>JSON-LD</strong>: Formato para incrustar metadatos estructurados, utilizado para mejorar la indexación
+        SEO de la página con datos más ricos, como descripciones, autores y palabras clave.</li>
+      <li><strong>Metas dinámicas</strong>: Implementación de metaetiquetas que se actualizan automáticamente según el
+        contenido de cada página, usando <code>useMetaHead</code>, para garantizar que cada sección sea optimizada para
+        SEO y redes sociales.</li>
+    </ul>
+
+    <h3>📈 Impacto SEO y rendimiento</h3>
+    <ul>
+      <li>🚀 <strong>Carga rápida</strong> gracias al control de caché, compresión de imágenes, y CDN con Cloudflare.
+      </li>
+      <li>👁️‍🗨️ <strong>Metaetiquetas OG y SEO</strong> configuradas por página con <code>useMetaHead</code>.</li>
+      <li>🔍 <strong>Indexación</strong> en Google Search Console y Ahrefs con rutas claras
+        (<code>www.mariadevdesign.com</code>).</li>
+      <li>📂 <strong>Sitemap</strong> y archivo <code>robots.txt</code> activos.</li>
+      <li>🤖 <strong>Renderizado para bots</strong> mediante Prerender.io + headers <code>no-store</code> para evitar
+        caching en versiones de bots.</li>
+    
+    </ul>
+
+    <h3>📊 Resultado Lighthouse</h3>
+    <!-- <img src="/img/lighthouse-100.png" alt="Resultados Lighthouse: 100/100" style="max-width:100%;" loading="lazy" /> -->
+  </section>
+
 </template>
     

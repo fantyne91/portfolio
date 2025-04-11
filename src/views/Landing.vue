@@ -9,8 +9,45 @@ import { useMetaData } from '@/composables/useMetaData'
 
 useMetaData({
     title: 'Diseño UX/UI, Desarrollo Web, y Videojuegos con Unreal Engine',
-    description: 'Explora mi portfolio de diseño UX/UI, desarrollo web y videojuegos con Unreal Engine.',
-    path: '/'
+    description: 'Diseño UX/UI, desarrollo web y videojuegos con Unreal Engine.',
+    path: '/',
+    
+    jsonLd: {
+           
+            "mainEntity": {
+                "@type": "ItemList",
+                "name": "Servicios ofrecidos",
+                "itemListElement": [
+                    {
+                        "@type": "Service",
+                        "name": "Diseño Web UX/UI",
+                        "description": "Optimización de la experiencia del usuario, aumentando conversiones y ventas a través de un diseño atractivo y funcional.",
+                        "serviceType": "Diseño de aplicaciones Web o CMS, auditorías UX."
+                },
+                    {
+                        "@type": "Service",
+                        "name": "Desarrollo Web",
+                        "description": "Soluciones personalizadas con tecnologías como JavaScript, Vue, PHP y CSS para crear aplicaciones web interactivas.",
+                        "serviceType": "Desarrollo Front-end y Back-end, gestión de bases de datos."
+                },
+                    {
+                        "@type": "Service",
+                        "name": "Diseño de Videojuegos",
+                        "description": "Mejora de la experiencia del jugador mediante auditorías UX y diseño de interfaces, creando documentación como Pitchs y GDD.",
+                        "serviceType": "Auditorías UX, diseño de HUD y pruebas de jugabilidad."
+                },
+                    {
+                        "@type": "Service",
+                        "name": "Unreal Engine",
+                        "description": "Creación de experiencias inmersivas con Unreal Engine, desarrollo de videojuegos y presentaciones visuales dinámicas.",
+                        "serviceType": "Desarrollo de escenarios, Metahumans, Blueprints, cinemáticas."
+                }
+                ]
+            },
+            
+        }
+  
+
 })
 
 
@@ -240,8 +277,8 @@ onUnmounted(() => {
                         éxito del negocio a largo plazo. </p>
                 </div>
                 <div>
-                    <router-link to="/uxui"> Casos de estudio UX/UI </router-link>
-                    <router-link to="/videojuegos"> Casos de estudio Videojuegos </router-link>
+                    <a href="https://www.mariadevdesign.com/uxui#casos-uxui">Casos de estudio UX/UI </a>
+                    <a href="https://www.mariadevdesign.com/uxui#casos-games">Casos de estudio Videojuegos </a>                   
                 </div>
             </div>
             <img class="img-pc" src="/images/psico-ux.webp" loading="lazy"

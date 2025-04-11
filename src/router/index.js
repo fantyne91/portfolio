@@ -58,7 +58,10 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
-    scrollBehavior(to, from, savedPosition) {
+  scrollBehavior(to, from, savedPosition) {
+      if (to.hash) {
+        return { selector: to.hash } // esto permite hacer scroll hacia el id en la URL
+      }
       return { top: 0, behavior: 'smooth' }
     },
 })
