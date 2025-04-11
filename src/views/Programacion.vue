@@ -7,7 +7,17 @@ import { useMetaData } from '@/composables/useMetaData'
 useMetaData({
   title: 'Desarrollo Web Personalizado | María Dev Design',
   description: 'Desarrollo de sitios web, aplicaciones y sistemas a medida con  Vue.js, Js, PHP ',
-  path: '/programacion'
+  path: '/programacion',
+  additionalLinks: [
+    {
+      rel: 'stylesheet',
+      href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward_ios'
+    },
+    {
+      rel: 'stylesheet',
+      href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chat'
+    }
+  ]
 })
   
 

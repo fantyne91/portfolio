@@ -90,12 +90,10 @@ onMounted(() => {
       <p>Final Fantasy, World of Warcraft, Skyrim, Half-Life y Frostpunk1 han inspirado mi enfoque, mostrándome la
         importancia de las comunidades y la conexión significativa entre usuarios y experiencias.</p>
     </div>
-    <!--<img src="/images/tene.webp" alt="Imagen 3" loading="lazy" class="scroll-item">-->
     <div class="text scroll-item">
       <p>Hoy, diseño y desarrollo aplicaciones web y videojuegos, combinando arte y tecnología.</p>
     </div>
-    <img src="/images/chian.webp" alt="vistas arcoiris en Tailandia" class="scroll-item">
-    <!-- <img src="/images/breda.webp" alt="Imagen 3" loading="lazy" class="scroll-item">-->
+    <img src="/images/chian.webp" alt="vistas arcoiris en Tailandia" loading="lazy" class="scroll-item">
 
     <div></div>
 

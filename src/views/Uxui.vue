@@ -7,7 +7,17 @@ import { useMetaData } from '@/composables/useMetaData'
 useMetaData({
     title: 'UX/UI Design Web | María Portfolio',
     description: 'Diseño de interfaces intuitivas y accesibles.',
-    path: '/uxui'
+    path: '/uxui',
+    additionalLinks: [
+        {
+            rel: 'stylesheet',
+            href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward_ios'
+        },
+        {
+            rel: 'stylesheet',
+            href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chat'
+        }
+    ]
 })
 
 </script>
@@ -114,11 +124,12 @@ useMetaData({
 
                 </div>
                 <div class="container-img-focus">
-                    <img class="netflix img-focus" src="/images/netflix.webp" width="300" alt="imagen Netflix 2002">
+                    <img class="netflix img-focus" loading="lazy" src="/images/netflix.webp" width="300"
+                        alt="imagen Netflix 2002">
                 </div>
             </div>
             <div class="flex-row ">
-                <img class="container-img" src="/images/grafico-ux.webp" alt="meme magic mouse">
+                <img class="container-img" src="/images/grafico-ux.webp" loading="lazy" alt="meme magic mouse">
                 <div class="p-column-sm flex p-med">
                     <p> Pero también lo podemos encontrar en una lata de refresco, haciendo que ganemos espacio en la
                         nevera con su formato fit, en un mando de videojuegos, haciendo que el agarre sea cómodo y
@@ -178,7 +189,7 @@ useMetaData({
                 <h4> Optimiza tu presencia online con soluciones personalizadas. </h4>
 
                 <button class="big-btn2 contact-btn" role="link"
-                     aria-label="Solicitar servicios y contactar">CONTACTAR</button>
+                    aria-label="Solicitar servicios y contactar">CONTACTAR</button>
             </div>
         </section>
 
@@ -255,12 +266,12 @@ useMetaData({
                         <figure class="p-column-sm flex align-center">
                             <div class="container-img-focus">
                                 <img class="img-focus" src="/images/menu-tiendanimal.webp"
-                                    alt="imagen original Tiendanimal">
+                                    alt="imagen original Tiendanimal" loading="lazy">
                             </div>
                             <figcaption> Imágenes originales Tiendanimal</figcaption>
                             <div class="container-img-focus">
-                                <img class="img-focus" src="/images/tianimal-foto.png"
-                                    alt="imagen original Tiendanimal">
+                                <img class="img-focus" src="/images/tianimal-foto.png" alt="imagen original Tiendanimal"
+                                    loading="lazy">
                             </div>
                         </figure>
                     </div>

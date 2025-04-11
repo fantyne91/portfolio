@@ -107,7 +107,7 @@ onUnmounted(() => {
     <section lang="es" class="list-container" itemscope itemtype="https://schema.org/ItemList"
         aria-labelledby="encabezado-servicios">
         <h1 id="encabezado-servicios" itemprop="name">Diseño UX/UI, desarrollo web y videojuegos con Unreal Engine</h1>
-        <img ref="imgHover" id="imgHover" src="" alt="Imagen flotante hover">
+        <img ref="imgHover" loading="lazy" id="imgHover" src="" alt="Imagen flotante hover">
 
         <ul class="group-list" itemprop="mainEntity">
             <!-- Diseño Web UX/UI -->
@@ -211,7 +211,7 @@ onUnmounted(() => {
             itemscope itemtype="https://schema.org/ContactPoint">
             <p role="alert">¡Cada proyecto es único!</p>
             <button class="big-btn contact-btn" role="link"
-                 aria-label="Contactar para servicios de desarrollo web y diseño" itemprop="url">
+                aria-label="Contactar para servicios de desarrollo web y diseño" itemprop="url">
                 Contactar Ahora
             </button>
             <span hidden itemprop="email">contacto@tudominio.com</span>
@@ -244,8 +244,8 @@ onUnmounted(() => {
                     <router-link to="/videojuegos"> Casos de estudio Videojuegos </router-link>
                 </div>
             </div>
-            <img class="img-pc" src="/images/psico-ux.png" loading="lazy"
-                alt="imagen usabilidad,empativa y psicologia en ux/ui" width="300px" />
+            <img class="img-pc" src="/images/psico-ux.webp" loading="lazy"
+                alt="imagen usabilidad,empativa y psicologia en ux/ui" width="300px" height="250" />
         </div>
     </section>
 
