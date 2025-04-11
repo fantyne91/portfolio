@@ -214,9 +214,11 @@
 }
 #sobre-la-web a{
     padding: inherit;
+    font-weight: 600;
+   
 }
-#sobre-la-web a:hover{
-    color: var(--color-white-blue);
+#sobre-la-web strong{
+     color: var(--color-white-blue);
 }
 
 @media (max-width: 950px) {
