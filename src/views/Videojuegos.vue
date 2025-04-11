@@ -178,7 +178,7 @@ useMetaData({
         <meta itemprop="description" content="Video interactivo de un diseño UX/UI para Photofolio." />
     </video>-->
   </section>
-  <section class="services-games">
+  <section class="services-games" aria-labelledby="servicios-videojuegos">
     <h2>Servicios para videojuegos</h2>
     <ul>
       <li id="soporte-pitch-gdd">

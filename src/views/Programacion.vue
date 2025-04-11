@@ -5,10 +5,10 @@ import FloatingContactButton from '../components/FloatingContactButton.vue';
 import { useMetaData } from '@/composables/useMetaData'
 
 useMetaData({
-  title: 'Desarrollo Web Personalizado | María Dev Design',
+  title: 'Desarrollo Web, CMS y SEO Personalizado | María Dev Design',
   description: 'Desarrollo de sitios web, aplicaciones y sistemas a medida con  Vue.js, Js, PHP ',
   path: '/programacion',
-  
+
   additionalLinks: [
     {
       rel: 'stylesheet',
@@ -19,25 +19,53 @@ useMetaData({
       href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chat'
     }
   ],
-  jsonLd: {
-    
+  jsonLd: {    
     '@type': 'WebSite',  
-    description: 'Sitio desarrollado con enfoque en SEO, rendimiento y diseño UX. Uso de Vue 3, Composition API, Prettier, Prerender.io, Cloudflare Workers, Figma, Lighthouse, Squoosh, ezgif, Google Fonts y más.',
-    
-    keywords: [
-      'Vue.js',
-      'JavaScript',
-      'UX/UI',
-      'Cloudflare',
-      'SEO',
-      'Prettier',
-      'Figma',
-      'Prerender.io',
-      'Unreal Engine',
-      'Desarrollo Web',
-      'PHP',
-      'JSON-LD'
-    ]
+    'description': 'Desarrollo web y personalización de CMS como WordPress y Shopify con tecnologías como PHP, JavaScript y Vue.js, con enfoque en SEO, rendimiento y diseño UX. Uso de Vue 3, Composition API, Prettier, Prerender.io, Cloudflare Workers, Figma, Lighthouse, Squoosh, ezgif, Google Fonts y más.',
+    "serviceType": [
+      "Desarrollo web personalizado",
+      "Personalización de CMS",
+      "Optimización de rendimiento web",
+      "Mantenimiento y soporte web"
+    ],    
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Servicios de desarrollo",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Desarrollo web personalizado",
+            "description": "Sitios web desde cero con PHP, JavaScript y Vue.js, adaptados a las necesidades del cliente."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Personalización de CMS",
+            "description": "Modificaciones avanzadas en WordPress, Shopify u otros CMS para adaptarse totalmente al negocio."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Optimización de rendimiento",
+            "description": "Mejoras en velocidad de carga, SEO técnico y experiencia de usuario."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Mantenimiento y soporte",
+            "description": "Actualizaciones, correcciones y mejoras constantes para garantizar el correcto funcionamiento del sitio."
+          }
+        }
+      ]
+    }
   }
 })
   
@@ -238,14 +266,26 @@ useMetaData({
 
     <h3>🔧 Tecnologías y herramientas usadas</h3>
     <ul>
-      <li><strong>Vue 3 (Composition API)</strong>: Arquitectura modular y reactiva que facilita la creación de
+      <li><strong><a href="https://vuejs.org" target="_blank" rel="noopener noreferrer">Vue 3 (Composition
+            API)</a></strong>: Arquitectura modular y reactiva que facilita la creación de
         componentes reutilizables y mejora el rendimiento en la carga.</li>
-      <li><strong>Cloudflare Workers</strong>: Permite la redirección, control de caché y prerenderizado para bots,
+      <li><strong><a href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">Vite</a></strong>: Herramienta
+        de empaquetado y compilación moderna...</li>
+      <li><strong><a href="https://json-ld.org" target="_blank" rel="noopener noreferrer">JSON-LD</a></strong>: Formato
+        para incrustar metadatos estructurados, utilizado para mejorar la indexación
+        SEO de la página con datos más ricos, como descripciones, autores y palabras clave.</li>
+      <li><strong>Metas dinámicas</strong>: Implementación de metaetiquetas que se actualizan automáticamente según el
+        contenido de cada página, usando <code>useMetaHead</code>, para garantizar que cada sección sea optimizada para
+        SEO y redes sociales.</li>
+      <li><strong><a href="https://developers.cloudflare.com/workers/" target="_blank"
+            rel="noopener noreferrer">Cloudflare Workers</a></strong>: Permite la redirección, control de caché y
+        prerenderizado para bots,
         mejorando la velocidad de carga y la indexación en buscadores.</li>
-      <li><strong>Figma</strong>: Herramienta de diseño utilizada para crear prototipos visuales interactivos,
-        optimizados para una experiencia de usuario fluida y personalizada en cada sección (UX/UI, Programación, Juegos,
-        Sobre mí).</li>
-      <li><strong>Prerender.io</strong>: Utilizada para renderizar el contenido de la página antes de que sea enviado a
+      <li><strong><a href="https://www.figma.com" target="_blank" rel="noopener noreferrer">Figma</a></strong>:
+        Herramienta de diseño utilizada para crear prototipos visuales interactivos,
+        optimizados para una experiencia de usuario fluida y personalizada en cada sección.</li>
+      <li><strong><a href="https://prerender.io" target="_blank" rel="noopener noreferrer">Prerender.io</a></strong>:
+        Utilizada para renderizar el contenido de la página antes de que sea enviado a
         los motores de búsqueda, lo que mejora la indexación por parte de bots como Google, Ahrefs y otros.</li>
       <li><strong>Prettier</strong>: Herramienta que asegura un formato de código coherente, lo que mejora la
         legibilidad y mantenibilidad del código.</li>
@@ -253,17 +293,20 @@ useMetaData({
         velocidad de carga de la web.</li>
       <li><strong>Squoosh / EZGif</strong>: Herramientas de compresión de imágenes que ayudan a reducir el tamaño de los
         archivos y mejorar los tiempos de carga.</li>
-      <li><strong>Lighthouse</strong>: Herramienta de Google que evalúa la calidad de la web, con puntuaciones de
+      <li><strong><a href="https://developer.chrome.com/docs/lighthouse" target="_blank"
+            rel="noopener noreferrer">Google Lighthouse</a></strong>: Herramienta de Google que evalúa la calidad de la
+        web, con puntuaciones de
         rendimiento, accesibilidad y SEO al 100%.</li>
       <li><strong>Google Analytics</strong>: Herramienta para el seguimiento del comportamiento de los usuarios y el
         rendimiento de la web, permitiendo hacer ajustes basados en datos reales.</li>
-      <li><strong>Vite</strong>: Herramienta de empaquetado y compilación moderna que mejora la velocidad de desarrollo
-        y la carga de la página en producción.</li>
-      <li><strong>JSON-LD</strong>: Formato para incrustar metadatos estructurados, utilizado para mejorar la indexación
-        SEO de la página con datos más ricos, como descripciones, autores y palabras clave.</li>
-      <li><strong>Metas dinámicas</strong>: Implementación de metaetiquetas que se actualizan automáticamente según el
-        contenido de cada página, usando <code>useMetaHead</code>, para garantizar que cada sección sea optimizada para
-        SEO y redes sociales.</li>
+      <li><strong><a href="https://search.google.com/search-console" target="_blank" rel="noopener noreferrer">Google
+            Search Console</a></strong>: Plataforma esencial para monitorizar la visibilidad de la web en los
+        resultados de búsqueda de Google, detectar errores de indexación y mejorar el posicionamiento SEO.</li>
+      <li><strong><a href="https://ahrefs.com" target="_blank" rel="noopener noreferrer">Ahrefs</a></strong>:
+        Herramienta avanzada de análisis SEO que permite auditar el sitio, investigar
+        palabras clave, analizar backlinks y observar a la competencia para mejorar la estrategia de posicionamiento.
+      </li>
+
     </ul>
 
     <h3>📈 Impacto SEO y rendimiento</h3>
@@ -271,12 +314,11 @@ useMetaData({
       <li>🚀 <strong>Carga rápida</strong> gracias al control de caché, compresión de imágenes, y CDN con Cloudflare.
       </li>
       <li>👁️‍🗨️ <strong>Metaetiquetas OG y SEO</strong> configuradas por página con <code>useMetaHead</code>.</li>
-      <li>🔍 <strong>Indexación</strong> en Google Search Console y Ahrefs con rutas claras
-        (<code>www.mariadevdesign.com</code>).</li>
-      <li>📂 <strong>Sitemap</strong> y archivo <code>robots.txt</code> activos.</li>
+      <li>🔍 <strong>Indexación</strong> en Google Search Console y Ahrefs.</li>
+      <li>📂 <strong>Sitemap</strong> y archivo <code>robots.txt</code></li>
       <li>🤖 <strong>Renderizado para bots</strong> mediante Prerender.io + headers <code>no-store</code> para evitar
         caching en versiones de bots.</li>
-    
+
     </ul>
 
     <h3>📊 Resultado Lighthouse</h3>
