@@ -2,9 +2,9 @@
 // Importa el componente Header
 import Header from '@/components/Header.vue';
 import LoadingScreen from './components/LoadingScreen.vue';
-
 import Footer from '@/components/Footer.vue';
-import { ref, computed, watch } from 'vue';      // Herramientas para reactividad
+
+import { computed} from 'vue';      // Herramientas para reactividad
 import { useRoute } from 'vue-router'; // Herramienta para manejar rutas
 
 const route = useRoute();
@@ -14,6 +14,8 @@ const currentPage = computed(() => route.name || 'Landing')
 const currentPageClassComputed = computed(() => {
     return `page-${currentPage.value.toLowerCase()}`
 })
+
+
 </script>
 
 <template>
