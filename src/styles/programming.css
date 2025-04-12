@@ -210,7 +210,7 @@
     background-color: var(--color-dark-blue);
 }
 #sobre-la-web h3{
-    color:var(--color-white-blue)
+    color:var(--color-white-blue);
 }
 #sobre-la-web a{
     padding: inherit;

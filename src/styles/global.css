@@ -49,7 +49,7 @@
     --color-soft-purple:#cf8dce;
     --color-calid-purple: #401e52;
     --color-med-purple: #351e52;
-        
+       --color-med-purple: #4917d2; 
 }
 
 /* Asegurar de que el body y el html no tengan márgenes */
@@ -123,18 +123,6 @@ p, label, select{
     line-height: 1.5;   
     max-width: 750px;
 }
-/* .fa-solid{
-   font-size: 11px;
-   width: 10px;
-} */
-
-/* .material-symbols-rounded {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
-} */
 
 ul{
     margin: 0px;
