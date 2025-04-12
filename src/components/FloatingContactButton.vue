@@ -40,7 +40,7 @@
     color: #62626F;      
         font-size: 26px;
         align-content: center;
-        padding-top:2px ;
+        padding-top:3px ;
       
     
 }

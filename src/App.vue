@@ -4,7 +4,7 @@ import Header from '@/components/Header.vue';
 import LoadingScreen from './components/LoadingScreen.vue';
 import Footer from '@/components/Footer.vue';
 
-import { computed} from 'vue';      // Herramientas para reactividad
+import { ref, computed, watch } from 'vue';     // Herramientas para reactividad
 import { useRoute } from 'vue-router'; // Herramienta para manejar rutas
 
 const route = useRoute();
