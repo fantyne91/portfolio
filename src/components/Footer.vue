@@ -29,7 +29,7 @@
 
         <div class="icons">
             <a href="https://www.linkedin.com/in/maria-ortiz91" target="_blank">
-                <svg viewBox="10 50 400 400" height="30px" width="30px" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg viewBox="10 50 400 400" height="32px" width="32px" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                     <g id="SVGRepo_iconCarrier">
@@ -52,7 +52,7 @@
                 </svg>
             </a>
             <a href="https://github.com/fantyne91" target="_blank">
-                <svg viewBox="0 0 24 24" height="21px" width="21px" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg viewBox="0 0 24 24" height="22px" width="22px" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                     <g id="SVGRepo_iconCarrier">
@@ -74,12 +74,12 @@
         background-color: var(--color-blue-black);
         color: #e2a755;
         font-weight: 600;
-        padding: var(--space-xxs) var(--space-md);
+        padding: var(--space-xxs) var(--space-xxl);
         z-index: 1;
         justify-content: space-between;
         display: flex;
-        align-items: center;
-    
+        align-items: center;  
+        
     }
     footer a{
         padding: 0;
@@ -93,12 +93,10 @@
     }
     footer .texto{
         display: flex;
-            gap: 6px;
+         gap: 6px;
+        align-items: center;
     }
-    /* .fa-heart{
-        font-size: 17px;
-        padding-left: 4px;
-    } */
+  
     .cls-1 {
         fill: #000000;
     }
