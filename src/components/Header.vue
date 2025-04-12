@@ -2,7 +2,8 @@
   <header class="header" role="banner">
     <router-link to="/" class="logo" aria-label="Ir al inicio">
       <img src="https://www.mariadevdesign.com/images/logo.webp"
-        alt="Logo de María Ortiz, diseñado UX/UI y desarrollo web" width="150" height="49">
+        alt="Logo de María Ortiz, diseñado UX/UI y desarrollo web" width="150" height="49" loading="eager"
+         >
     </router-link>
 
 
