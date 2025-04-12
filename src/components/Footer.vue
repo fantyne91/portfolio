@@ -71,6 +71,7 @@
 
 <style scoped>
     footer {
+        box-shadow:0 0 5px  var(--color-grey-4);
         background-color: var(--color-blue-black);
         color: #e2a755;
         font-weight: 600;
@@ -79,7 +80,7 @@
         justify-content: space-between;
         display: flex;
         align-items: center;
-        height: 46px;
+        height: 48px;
     }
 
     footer a {
@@ -107,7 +108,7 @@
     }
     .cls-1 {
         fill: #000000;
-        stroke-width: 12px;
+        stroke-width: 10px;
     }
 </style>
 

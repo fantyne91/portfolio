@@ -321,7 +321,7 @@ useMetaData({
 
     </ul>
 
-    <h3>📊 Resultado Lighthouse</h3>
+    <!-- <h3>📊 Resultado Lighthouse</h3> -->
     <!-- <img src="/img/lighthouse-100.png" alt="Resultados Lighthouse: 100/100" style="max-width:100%;" loading="lazy" /> -->
   </section>
 
