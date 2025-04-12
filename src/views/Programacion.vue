@@ -270,7 +270,7 @@ useMetaData({
             API)</a></strong>: Arquitectura modular y reactiva que facilita la creación de
         componentes reutilizables y mejora el rendimiento en la carga.</li>
       <li><strong><a href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">Vite</a></strong>: Herramienta
-        de empaquetado y compilación moderna...</li>
+        de empaquetado y compilación moderna.</li>
       <li><strong><a href="https://json-ld.org" target="_blank" rel="noopener noreferrer">JSON-LD</a></strong>: Formato
         para incrustar metadatos estructurados, utilizado para mejorar la indexación
         SEO de la página con datos más ricos, como descripciones, autores y palabras clave.</li>
