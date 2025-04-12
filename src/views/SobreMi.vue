@@ -135,27 +135,18 @@ onMounted(() => {
   background-color: var(--color-blue-black);
   color: var(--color-primary);
   text-align: center;
+  padding-bottom: 0;
 }
-
 .page-sobremi .flex-row {
   max-width: max-content;
-
 }
-
-/* .about-me h1{
-  opacity:0.5;
-} */
-
 .section.reverse {
   flex-direction: row-reverse;
 }
-
 .scroll-item {
   opacity: 0;
   transition: transform 0.3s linear, opacity 0.1s linear;
-
 }
-
 .scroll-item img {
   max-width: 700px;
   margin: 0 auto;
@@ -166,7 +157,6 @@ onMounted(() => {
   color: var(--color-primary);
   line-height: 1.8;
 }
-
 .text * {
   font-size: clamp(1.5rem, 4vw, 2.6rem) !important;
   font-weight: 500;
