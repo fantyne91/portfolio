@@ -2,7 +2,7 @@
     <footer class="footer">
         <div class="texto">
             <p>Desarrollado con </p>
-            <svg width="23px" height="23px" viewBox="-18.03 -18.03 174.77 174.77" xmlns="http://www.w3.org/2000/svg"
+            <svg width="24px" height="24px" viewBox="-18.03 -18.03 174.77 174.77" xmlns="http://www.w3.org/2000/svg"
                 fill="#e2a755" stroke="#e2a755" transform="rotate(0)" stroke-width="0.0013871">
                 <g id="SVGRepo_bgCarrier" stroke-width="0">
                     <path transform="translate(-18.03, -18.03), scale(5.4615625)"
@@ -107,6 +107,7 @@
     }
     .cls-1 {
         fill: #000000;
+        stroke-width: 12px;
     }
 </style>
 
