@@ -29,7 +29,8 @@
     transition: all 0.2s linear;
 }
 .contactIcon {
-   
+   height: 100%;
+   width: 100%;
     font-family: 'Material Symbols Outlined';
     font-variation-settings:
         'FILL' 0,
@@ -38,7 +39,9 @@
         'opsz' 40;
     color: #62626F;      
         font-size: 26px;
-       margin-top:7px;
+        align-content: center;
+        padding-top:2px ;
+      
     
 }
 @media (max-width: 540px) {
