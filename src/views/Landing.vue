@@ -4,7 +4,6 @@
 <script setup>
 import '../styles/forms.css'
 import { onMounted, onUnmounted } from 'vue'
-
 import { useMetaData } from '@/composables/useMetaData'
 
 useMetaData({
@@ -43,10 +42,8 @@ useMetaData({
                         "serviceType": "Desarrollo de escenarios, Metahumans, Blueprints, cinemáticas."
                 }
                 ]
-            },
-            
-        }
-  
+            },            
+        }  
 
 })
 
@@ -67,8 +64,8 @@ const mostrarImagen = (event) => {
     imgHover.src = nuevaImagen
     imgHover.style.display = 'block'
     setTimeout(() => {
-      imgHover.style.opacity = '1'
-    }, 10)
+        imgHover.style.opacity = '1'        
+    }, 1)
   }
 }
 
@@ -127,103 +124,106 @@ onUnmounted(() => {
 
 <template>
     <div class="intro-container">
-        <!--<div v-if="!imageLoaded" id="loading-screen">
-            <div class="gif-container flex">
-                <img class="gif" src="/images/gif-carga.webp" alt="Animación en movimiento carga" width="140" height="140">
-                <p>Cargando...</p>
-            </div>
-        </div>
-        <div v-if="!imageLoaded" class="image-placeholder"> </div>
-        
-        <img v-show="imageLoaded" :src="cachedImage" class="portfolio-img" alt="imagen principal nubes Canarias Maria"
-            @load="onImageLoad" width="1920" height="700">-->
+
         <img src="https://www.mariadevdesign.com/images/portfolio-img.webp" class="portfolio-img"
             alt="imagen principal nubes Canarias Maria" width="1920" height="700">
     </div>
 
     <section lang="es" class="list-container" aria-labelledby="encabezado-servicios">
         <h1 id="encabezado-servicios">Diseño UX/UI, desarrollo web y videojuegos con Unreal Engine</h1>
-        <img ref="imgHover" loading="lazy" id="imgHover" src="" alt="Imagen flotante hover">
+        <img ref="imgHover" loading="lazy" id="imgHover" class="img-hover" src="" alt="Imagen flotante hover">
 
         <ul class="group-list">
             <!-- Diseño Web UX/UI -->
-            <li class="list flex" aria-labelledby="titulo-ux">
-                <h2 id="titulo-ux">Diseño Web UX/UI</h2>
-                <p class="p-align" id="descripcion-ux">
-                    El diseño UX/UI optimiza la experiencia del usuario aumentando conversiones y ventas.
-                </p>
-                <ul class="features-list flex p-column-xs" aria-label="Características de diseño web">
-                    <li data-img="images/img-hover-ux.webp" @mousemove="moverImagen" @mouseenter="mostrarImagen"
-                        @mouseleave="ocultarImagen">
-                        <h3>Diseño aplicaciones Web o CMS</h3>
-                        <p>
-                            como WordPress, Shopify, Ionos... con un enfoque en el éxito de tu empresa
-                            y <span>posicionamiento SEO</span>. Obtendrás un diseño interactivo
-                            para mostrar a desarrolladores o inversores, así como soluciones adaptadas para
-                            la venta de <span>productos digitales</span> y servicios en línea.
-                        </p>
-                    </li>
-                    <li>
-                        <h3>Auditorías y análisis heurístico</h3>
-                        <p>para mejorar la experiencia del usuario de tu web y aumentar tus resultados.</p>
-                    </li>
-                </ul>
+            <li class="list flex" aria-labelledby="titulo-ux" aria-label="Sección de Diseño UX/UI">
+                <a class="flex" href="https://www.mariadevdesign.com/uxui">
+                    <h2 id="titulo-ux">Diseño Web UX/UI</h2>
+                    <p class="p-align" id="descripcion-ux">
+                        El diseño UX/UI optimiza la experiencia del usuario aumentando conversiones y ventas.
+                    </p>
+                    <ul class="features-list flex p-column-xs" aria-label="Características de diseño web">
+                        <li data-img="images/img-hover-ux.webp" @mousemove="moverImagen" @mouseenter="mostrarImagen"
+                            @mouseleave="ocultarImagen">
+                            <h3>Diseño aplicaciones Web o CMS</h3>
+                            <p>
+                                como WordPress, Shopify, Ionos... con un enfoque en el éxito de tu empresa
+                                y <span>posicionamiento SEO</span>. Obtendrás un diseño interactivo
+                                para mostrar a desarrolladores o inversores, así como soluciones adaptadas para
+                                la venta de <span>productos digitales</span> y servicios en línea.
+                            </p>
+                        </li>
+                        <li>
+                            <h3>Auditorías y análisis heurístico</h3>
+                            <p>para mejorar la experiencia del usuario de tu web y aumentar tus resultados.</p>
+                        </li>
+                    </ul>
+                </a>
             </li>
 
             <!-- Desarrollo Web -->
-            <li class="list flex" aria-labelledby="titulo-web">
-                <h2 id="titulo-web">Desarrollo Web</h2>
-                <p id="descripcion-web">Creación de soluciones personalizadas con JavaScript, Vue, PHP y CSS:</p>
-                <ul class="features-list flex p-column-xs" aria-label="Detalles de desarrollo">
-                    <li>
-                        <h3>Trabajo en el Front-end</h3>
-                        <p>el diseño visual interactivo y atractivo que los usuarios ven e interactúan, como botones y
-                            menús.</p>
-                    </li>
-                    <li data-img="images/cod2.webp" @mousemove="moverImagen" @mouseenter="mostrarImagen"
-                        @mouseleave="ocultarImagen">
-                        <h3>Back-end</h3>
-                        <p>gestión y programación interna de la aplicación web, <span>bases de datos y servidores</span>
-                            para optimizar la funcionalidad de tiendas online.</p>
-                    </li>
-                </ul>
+            <li class="list flex" aria-labelledby="titulo-web" aria-label="Sección de Desarrollo web">
+                <a class="flex" href="https://www.mariadevdesign.com/programacion">
+                    <h2 id="titulo-web">Desarrollo Web</h2>
+                    <p id="descripcion-web">Creación de soluciones personalizadas con JavaScript, Vue, PHP y CSS:</p>
+                    <ul class="features-list flex p-column-xs" aria-label="Detalles de desarrollo">
+                        <li>
+                            <h3>Trabajo en el Front-end</h3>
+                            <p>el diseño visual interactivo y atractivo que los usuarios ven e interactúan, como botones
+                                y
+                                menús.</p>
+                        </li>
+                        <li data-img="images/cod2.webp" @mousemove="moverImagen" @mouseenter="mostrarImagen"
+                            @mouseleave="ocultarImagen">
+                            <h3>Back-end</h3>
+                            <p>gestión y programación interna de la aplicación web, <span>bases de datos y
+                                    servidores</span>
+                                para optimizar la funcionalidad de tiendas online.</p>
+                        </li>
+                    </ul>
+                </a>
             </li>
 
             <!-- Diseño de Videojuegos -->
-            <li class="list flex" aria-labelledby="titulo-videojuegos">
-                <h2 id="titulo-videojuegos">Diseño de Videojuegos</h2>
-                <p id="descripcion-videojuegos">Mejoro la experiencia de los jugadores evaluando la jugabilidad,
-                    navegación y diseño visual:</p>
-                <ul class="features-list flex p-column-xs" aria-label="Elementos de videojuegos">
-                    <li>
-                        <h3>Auditorías UX y pruebas de jugabilidad</h3>
-                        <p>para optimizar la interacción intuitiva, eliminando frustraciones del jugador.</p>
-                    </li>
-                    <li>
-                        <h3>Diseño de interfaces y HUD</h3>
-                        <p>que prioricen la jugabilidad y inmersión del jugador. Colaboración en la creación de
-                            documentación como <span>Pitchs y GDD.</span></p>
-                    </li>
-                </ul>
+            <li class="list flex" aria-labelledby="titulo-videojuegos" aria-label="Sección videojuegos">
+                <a class="flex" href="https://www.mariadevdesign.com/videojuegos">
+                    <h2 id="titulo-videojuegos">Diseño de Videojuegos</h2>
+                    <p id="descripcion-videojuegos">Mejoro la experiencia de los jugadores evaluando la jugabilidad,
+                        navegación y diseño visual:</p>
+                    <ul class="features-list flex p-column-xs" aria-label="Elementos de videojuegos">
+                        <li>
+                            <h3>Auditorías UX y pruebas de jugabilidad</h3>
+                            <p>para optimizar la interacción intuitiva, eliminando frustraciones del jugador.</p>
+                        </li>
+                        <li>
+                            <h3>Diseño de interfaces y HUD</h3>
+                            <p>que prioricen la jugabilidad y inmersión del jugador. Colaboración en la creación de
+                                documentación como <span>Pitchs y GDD.</span></p>
+                        </li>
+                    </ul>
+                </a>
             </li>
 
             <!-- Unreal Engine -->
-            <li class="list flex" aria-labelledby="titulo-unreal">
-                <h2 id="titulo-unreal">Unreal Engine</h2>
-                <p id="descripcion-unreal">Uso de Unreal Engine para crear experiencias visuales y narrativas
-                    inmersivas:</p>
-                <ul class="features-list flex p-column-xs" aria-label="Características Unreal Engine">
-                    <li>
-                        <h3>Desarrollo de videojuegos</h3>
-                        <p>desde creación de escenarios, Metahumans, y programación de Blueprints, a diseño, creación y
-                            programación de HUDs o interfaces.</p>
-                    </li>
-                    <li>
-                        <h3>Desarrollo de presentaciones visuales dinámicas o cinemáticas</h3>
-                        <p>para clientes corporativos.</p>
-                    </li>
-                </ul>
+            <li class="list flex" aria-labelledby="titulo-unreal" aria-label="Sección Unreal Engine">
+                <a class="flex" href="https://www.mariadevdesign.com/videojuegos#unreal-games">
+                    <h2 id="titulo-unreal">Unreal Engine</h2>
+                    <p id="descripcion-unreal">Uso de Unreal Engine para crear experiencias visuales y narrativas
+                        inmersivas:</p>
+                    <ul class="features-list flex p-column-xs" aria-label="Características Unreal Engine">
+                        <li>
+                            <h3>Desarrollo de videojuegos</h3>
+                            <p>desde creación de escenarios, Metahumans, y programación de Blueprints, a diseño,
+                                creación y
+                                programación de HUDs o interfaces.</p>
+                        </li>
+                        <li>
+                            <h3>Desarrollo de presentaciones visuales dinámicas o cinemáticas</h3>
+                            <p>para clientes corporativos.</p>
+                        </li>
+                    </ul>
+                </a>
             </li>
+
         </ul>
 
         <div class="contacta container-column-sm flex align-center" role="region" aria-label="Sección de contacto">
@@ -241,7 +241,7 @@ onUnmounted(() => {
 
         <div class="flex-row">
             <div class=" p-column-sm flex">
-                <p class="texto-exito"> El éxito de cualquier empresa nace de la satisfacción de sus usuarios </p>
+                <h2 class="texto-exito"> El éxito de cualquier empresa nace de la satisfacción de sus usuarios </h2>
                 <div>
                     <p> Ya sea un servicio, un sitio web o videojuego, el éxito dependerá de una comprensión de las
                         necesidades
@@ -279,7 +279,8 @@ onUnmounted(() => {
         <div class="imgs padding-Y-xs" itemprop="itemListElement" itemscope itemtype="https://schema.org/ImageGallery">
 
             <!-- Video Cupcake -->
-            <video class="video" preload="none" loading="lazy" autoplay loop muted playsinline>
+            <video class="video" preload="none" loading="lazy" role="presentation" autoplay loop muted playsinline
+                alt="Diseño web UX/UI tienda online">
                 <source src="/images/cupcakes.mp4" type="video/mp4">
             </video>
 
@@ -329,7 +330,8 @@ onUnmounted(() => {
             </div>
 
             <!-- Video Omega -->
-            <video class="video" preload="none" loading="lazy" autoplay loop muted playsinline>
+            <video class="video" preload="none" loading="lazy" role="presentation" autoplay loop muted playsinline
+                alt="Diseño web UX/UI joyeria">
                 <source src="/images/intro-omega.mp4" type="video/mp4">
             </video>
 

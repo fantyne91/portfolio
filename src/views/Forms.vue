@@ -153,7 +153,7 @@ const submitForm = async () => {
             <label class="accesible" for="phone" id="phone-label">Teléfono</label>
           </div>
 
-          <button type="submit">Siguiente paso</button>
+          <button type="submit" aria-label="siguiente paso">Último paso</button>
         </form>
 
         <!-- Formulario paso 2 (Me interesa, dinámico, mensaje) -->
@@ -165,7 +165,7 @@ const submitForm = async () => {
           <input type="hidden" v-model="form.fromPage" />
 
           <div class="full-width align-center flex">
-            <button type="button" class="back-btn" @click="currentStep--">
+            <button type="button" class="back-btn" @click="currentStep--" aria-label="Volver atrás">
               ⤺ Atrás
             </button>
             <h2 class="p-align">Sobre tu proyecto</h2>
@@ -210,7 +210,7 @@ const submitForm = async () => {
             <label for="help">Tengo una idea, pero no sé por dónde empezar...</label>
           </div>
 
-          <button type="submit" class="submit-btn">Enviar</button>
+          <button type="submit" class="submit-btn" aria-label="Enviar formulario">Enviar</button>
         </form>
 
 
