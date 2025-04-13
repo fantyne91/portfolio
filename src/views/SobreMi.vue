@@ -163,6 +163,9 @@ onMounted(() => {
 }
 
 @media (max-width: 540px) {
+  .about-me{
+    padding-bottom: var(--space-xs);
+  }
   .page-sobremi img {
     width: 100%;
     height: auto;
