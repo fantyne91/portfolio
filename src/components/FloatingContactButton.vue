@@ -45,9 +45,7 @@
     
 }
 @media (max-width: 540px) {
-        .floating-btn {
-            bottom: 40px;
-        }
+       
         .contactIcon {
             color: var(--color-grey-4);
         }

@@ -55,7 +55,7 @@
     color: var(--color-soft-purple);
 }
 .container-casos-games{
-    padding: var(--space-xs) 0; 
+    padding-top: var(--space-xs); 
     gap: var(--space-md);
     color:var(--color-grey-2);
     border-radius: 15px;
