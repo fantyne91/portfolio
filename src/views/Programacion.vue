@@ -73,7 +73,7 @@ useMetaData({
 </script>
 
 <template>
-  <FloatingContactButton />
+
   <section class="header-programming ">
     <h1> Desarrollo web y Personalización de Plataformas CMS.</h1>
     <div class="flex-row">
@@ -324,6 +324,6 @@ useMetaData({
     <!-- <h3>📊 Resultado Lighthouse</h3> -->
     <!-- <img src="/img/lighthouse-100.png" alt="Resultados Lighthouse: 100/100" style="max-width:100%;" loading="lazy" /> -->
   </section>
-
+  <FloatingContactButton />
 </template>
     

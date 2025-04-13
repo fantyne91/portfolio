@@ -99,7 +99,7 @@ useMetaData({
 </script>
 
 <template>
-  <FloatingContactButton />
+
   <section class="header-games" itemscope itemtype="https://schema.org/CreativeWork">
     <h1 itemprop="headline"> Unreal engine y diseño UX/UI <br>para videojuegos</h1>
     <div class="container-header container-column-md flex align-center" itemprop="text">
@@ -724,6 +724,6 @@ useMetaData({
       </div>
     </div>
   </section>
-
+  <FloatingContactButton />
 </template>
   

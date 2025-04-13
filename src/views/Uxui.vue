@@ -85,7 +85,7 @@ useMetaData({
 
 
     <template>
-        <FloatingContactButton />
+
         <section class="header-ux">
             <h1> Diseño web UX/UI </h1>
             <div class="flex-row padding-xs">
@@ -589,7 +589,7 @@ useMetaData({
 
             </div>
         </section>
-
+        <FloatingContactButton />
     </template>
    
   
