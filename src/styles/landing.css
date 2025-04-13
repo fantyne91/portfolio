@@ -76,13 +76,16 @@
 .group-list  .list {
     max-width: clamp(700px, 1.2vw, 900px) ;
     border-radius: 10px;    
-    background: var(--color-secondary);       
+    background: var(--color-secondary);   
+    width: 100%;  
+     
 }
 .list-container a{
     padding: 0;
     gap:var(--space-xs);
     align-items: center;
     padding: clamp(var(--space-sm), 3vw, var(--space-md)) clamp(var(--space-sm), 4vw, var(--space-xxl));
+    width: fit-content; 
 }
 
 .list > p{
@@ -220,9 +223,15 @@ video{
          overflow: hidden;
          max-height: 650px;
     }
-    .intro-container> img{
+    .intro-container> .portfolio-img{
         width: 130%;
-
+        overflow: hidden;
+        height: 100vh;
+        top:auto;
+    }
+    .exito-container * {
+        text-align: center;
+        align-items: center;
     }
 }
 @media (max-width: 400px) {

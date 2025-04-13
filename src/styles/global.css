@@ -59,8 +59,9 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;      
-    font-size:var(--font-size-base);
+    font-size:var(--font-size-base);  
 }
+
 body { 
     letter-spacing: 0.4px;        
     font-family: 'Barlow', Arial, sans-serif;
@@ -75,6 +76,7 @@ section{
     flex-direction: column;
     align-items: center;    
     gap: clamp(var(--space-sm),3vw, var(--space-xl));
+    width: 100%;
 }
 
 div:not([class]){
@@ -225,7 +227,7 @@ li *:not(:last-child){
     align-items: center;
     justify-content: space-evenly;
     gap:var(--space-lg);
-    max-width: 1000px;
+    max-width: 100%;
    
 }
 .flex-row>*{
@@ -384,7 +386,7 @@ figure{
         flex-direction: column;      
    }
    .flex-row *{        
-        text-align: left !important;
+        text-align: left ;
    }   
 }
 

@@ -126,7 +126,7 @@ onUnmounted(() => {
     <div class="intro-container">
 
         <img src="https://www.mariadevdesign.com/images/portfolio-img.webp" class="portfolio-img"
-            alt="imagen principal nubes Canarias Maria" width="1920" height="700">
+            alt="imagen principal nubes Canarias Maria" width="100vw" height="700">
     </div>
 
     <section lang="es" class="list-container" aria-labelledby="encabezado-servicios">

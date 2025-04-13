@@ -28,6 +28,8 @@
     border-radius: 15px;
     align-items: normal;
     gap:var(--space-xs); 
+    max-width: 1200px;
+  
 }
 .container-motivos-ux> div{ 
     background-color: var(--color-secondary); 
@@ -91,7 +93,7 @@
     width: 100%;
     border-radius: 15px;
     background: var(--color-grey-4); 
-    border: clamp(2px,1vw, 14px) solid var(--color-grey-4);
+    border: clamp(4px,1vw, 14px) solid var(--color-grey-4);
     border-top: 14px solid var(--color-grey-4);
     max-width: 1100px;
     align-items: center;
@@ -113,9 +115,9 @@ video, img{
     .container-motivos-ux h3{
         position: absolute;            
         font-size: 1.2rem;    
-        text-align: left;
+        text-align: center;
         padding: 0 var(--space-sm) ;       
-        width: max-content;
+        width: 100%;
     }
      
     .container-motivos-ux li:hover h3{
@@ -191,6 +193,7 @@ video, img{
   
    .container-casos-ux{
      padding-top: 17px; 
+     gap:var(--space-xxs)
      
    } 
 }
