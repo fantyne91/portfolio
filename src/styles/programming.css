@@ -21,6 +21,9 @@
     align-items: center;
     margin-left: var(--space-xxs);
 }
+.header-programming img{
+    object-fit: contain;
+}
  /**INTRO*/
 
 

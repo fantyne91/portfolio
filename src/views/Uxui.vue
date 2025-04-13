@@ -9,16 +9,16 @@ useMetaData({
     description: 'Diseño de interfaces intuitivas y accesibles.',
     path: '/uxui',
 
-    additionalLinks: [
-        {
-            rel: 'stylesheet',
-            href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward_ios'
-        },
-        {
-            rel: 'stylesheet',
-            href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chat'
-        }
-    ],
+    // additionalLinks: [
+    //     {
+    //         rel: 'stylesheet',
+    //         href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward_ios'
+    //     },
+    //     {
+    //         rel: 'stylesheet',
+    //         href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chat'
+    //     }
+    // ],
     jsonLd: {
         "mainEntity": [
             {

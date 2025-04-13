@@ -9,16 +9,16 @@ useMetaData({
   description: 'Desarrollo de sitios web, aplicaciones y sistemas a medida con  Vue.js, Js, PHP ',
   path: '/programacion',
 
-  additionalLinks: [
-    {
-      rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward_ios'
-    },
-    {
-      rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chat'
-    }
-  ],
+  // additionalLinks: [
+  //   {
+  //     rel: 'stylesheet',
+  //     href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward_ios'
+  //   },
+  //   {
+  //     rel: 'stylesheet',
+  //     href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chat'
+  //   }
+  // ],
   jsonLd: {    
     '@type': 'WebSite',  
     'description': 'Desarrollo web y personalización de CMS como WordPress y Shopify con tecnologías como PHP, JavaScript y Vue.js, con enfoque en SEO, rendimiento y diseño UX. Uso de Vue 3, Composition API, Prettier, Prerender.io, Cloudflare Workers, Figma, Lighthouse, Squoosh, ezgif, Google Fonts y más.',
@@ -73,13 +73,13 @@ useMetaData({
 </script>
 
 <template>
-
+  
   <section class="header-programming ">
     <h1> Desarrollo web y Personalización de Plataformas CMS.</h1>
     <div class="flex-row">
       <h2 class="p-med padding-sm"> Contar con una web optimizada no solo mejora la experiencia del usuario, sino que
         también impacta en el SEO, <span> posicionando tu marca.</span></h2>
-      <img src="/images/seo1.webp" alt="imagen el SEO es vital">
+      <img src="/images/seo1.webp" alt="imagen el SEO es vital" width="599" height="258">
     </div>
   </section>
 
@@ -324,6 +324,6 @@ useMetaData({
     <!-- <h3>📊 Resultado Lighthouse</h3> -->
     <!-- <img src="/img/lighthouse-100.png" alt="Resultados Lighthouse: 100/100" style="max-width:100%;" loading="lazy" /> -->
   </section>
-  <FloatingContactButton />
+<FloatingContactButton />
 </template>
     
