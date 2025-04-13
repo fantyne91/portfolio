@@ -1,10 +1,4 @@
-<template>
-    <button v-if="showButton" role="link" class="floating-btn p-align flex" @click="goToContact">
-        <span class="contactIcon">
-            chat
-        </span>
-    </button>
-</template> 
+
 
 <style scoped>
 
@@ -74,3 +68,10 @@ onMounted(() => {
     });
 });
 </script>
+<template>
+    <button v-if="showButton" role="link" class="floating-btn p-align flex" @click="goToContact">
+        <span class="contactIcon">
+            chat
+        </span>
+    </button>
+</template>

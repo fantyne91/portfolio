@@ -34,7 +34,11 @@ const currentPageClassComputed = computed(() => {
         </router-view>
     </main>  -->
     <main :class="currentPageClassComputed">
-        <router-view />
+        <router-view v-slot="{ Component }">
+            <keep-alive exclude="Contacta">
+                <component :is="Component" />
+            </keep-alive>
+        </router-view>
     </main>
     <Footer></Footer>
 

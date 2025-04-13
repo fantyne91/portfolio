@@ -138,7 +138,7 @@ onUnmounted(() => {
             <li class="list flex" aria-labelledby="titulo-ux" aria-label="Sección de Diseño UX/UI">
                 <a class="flex" href="https://www.mariadevdesign.com/uxui">
                     <h2 id="titulo-ux">Diseño Web UX/UI</h2>
-                    <p class="p-align" id="descripcion-ux">
+                    <p id="descripcion-ux">
                         El diseño UX/UI optimiza la experiencia del usuario aumentando conversiones y ventas.
                     </p>
                     <ul class="features-list flex p-column-xs" aria-label="Características de diseño web">
@@ -240,8 +240,8 @@ onUnmounted(() => {
     <section class="exito-container">
 
         <div class="flex-row">
-            <div class=" p-column-sm flex">
-                <h2 class="texto-exito"> El éxito de cualquier empresa nace de la satisfacción de sus usuarios </h2>
+            <div class="texto-exito p-column-sm flex">
+                <h2 > El éxito de cualquier empresa nace de la satisfacción de sus usuarios </h2>
                 <div>
                     <p> Ya sea un servicio, un sitio web o videojuego, el éxito dependerá de una comprensión de las
                         necesidades

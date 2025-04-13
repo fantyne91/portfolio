@@ -87,8 +87,7 @@
     padding: clamp(var(--space-sm), 3vw, var(--space-md)) clamp(var(--space-sm), 4vw, var(--space-xxl));
     width: fit-content; 
 }
-
-.list > p{
+.list-container a > p{
     text-align: center;
 }
 
@@ -162,8 +161,14 @@
     transition: transform 0.1s linear;
 }
 .texto-exito{
+  max-width: 800px;
+}
+.texto-exito h2{
     font-size: clamp(1.4rem, 3vw, 2.3rem);
-    font-weight: 600;    
+    max-width: 80%;  
+}
+.texto-exito> div{
+    width: fit-content;
 }
 
 /**PORTFOLIO*/
