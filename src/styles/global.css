@@ -92,7 +92,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1{
-       font-size: clamp(1.4rem, 4vw, 2.3rem); 
+       font-size: clamp(1.6rem, 4vw, 2.3rem); 
        font-weight: 600; 
        letter-spacing: 3px;
        text-transform: uppercase;
@@ -124,6 +124,7 @@ p, label, select{
     margin: 0px;
     line-height: 1.5;   
     max-width: 750px;
+    
 }
 
 ul{
@@ -399,7 +400,7 @@ figure{
         gap:var(--space-sm);
     } 
     h1,h2,h3,h4,h5,h6 {     
-        max-width: 70vw; 
+        max-width: 80vw; 
         
     }
     .flex{

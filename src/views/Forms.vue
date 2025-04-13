@@ -120,7 +120,7 @@ const submitForm = async () => {
     <div class="flex-row">
 
       <div class="linkedin-card flex ">
-        <img src="/images/card-linkdin.webp" alt="Maria ortiz Dev Design" class="profile-img">
+        <img src="/images/card-linkdin.webp" alt="Maria ortiz Dev Design" class="profile-img" width="450">
         <div class="profile-info flex p-column-xs padding-sm align-center">
           <a href="https://www.linkedin.com/in/maria-ortiz91" target="_blank" class="big-btn1">
             Conectar en LinkedIn

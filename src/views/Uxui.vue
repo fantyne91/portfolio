@@ -89,7 +89,7 @@ useMetaData({
         <section class="header-ux">
             <h1> Diseño web UX/UI </h1>
             <div class="flex-row padding-xs">
-                <div class="p-column-sm flex p-align p-med ">
+                <div class="p-column-sm flex p-align  ">
                     <h2>La importancia del UX</h2>
                     <p>La experiencia del usuario es un factor decisivo que puede determinar el éxito o el fracaso de
                         una tienda online o producto, cuando no se cumple con las expectativas del usuario, el impacto
