@@ -260,8 +260,8 @@ onUnmounted(() => {
                     <a href="https://www.mariadevdesign.com/uxui#casos-games">Casos de estudio Videojuegos </a>
                 </div>
             </div>
-            <img class="img-pc" src="/images/psico-ux.webp" loading="lazy"
-                alt="imagen usabilidad,empativa y psicologia en ux/ui" width="300px" height="250" />
+            <img  src="/images/psico-ux.webp" loading="lazy"
+                alt="imagen usabilidad,empativa y psicologia en ux/ui" width="400px" height="auto" />
         </div>
     </section>
 

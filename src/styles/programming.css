@@ -71,6 +71,7 @@
     h3{ font-weight: 600; 
         color: rgb(255, 227, 145);
         text-align: center;
+        max-width: 100% !important;
     }   
     span {color: rgb(255, 227, 145);}
 }
@@ -91,12 +92,10 @@
     position: relative;
     font-family: DancingScript;
     color: var(--color-med-blue);
-    text-align: center;
-   
      padding-top: clamp(var(--space-sm), 3vw, var(--space-lg)) ;
     p{
         font-size: 1.6rem ;
-      
+        text-align: center;      
     }
 }
 
@@ -105,14 +104,14 @@
     border-radius: 15px;
     box-shadow: 1px 1px 6px 0px var(--color-grey-5); 
     align-items: start;  
-    
+    z-index: 2;
     max-width: 100%;  
 }
 
 
 .bubble{
     position:absolute;
-    top:50px;   
+    top:15px;   
     left: 30%; 
     width:180px;
     height:180px;

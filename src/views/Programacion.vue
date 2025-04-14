@@ -154,7 +154,7 @@ useMetaData({
   <section class="section-proyect">
     <div class="flex-row">
 
-      <div class="container-proyect container-column-xs flex align-center">
+      <div class="container-proyect container-column-sm flex align-center">
         <div class="p-column-xs flex">
           <h2>Mi primer proyecto personal</h2>
           <p>Mi primer proyecto web surgió de una experiencia personal:<span> las acogidas temporales de animales en
