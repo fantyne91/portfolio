@@ -73,7 +73,7 @@ useMetaData({
 </script>
 
 <template>
-  
+
   <section class="header-programming ">
     <h1> Desarrollo web y Personalización de Plataformas CMS.</h1>
     <div class="flex-row">
@@ -158,10 +158,12 @@ useMetaData({
         <div class="p-column-xs flex">
           <h2>Mi primer proyecto personal</h2>
           <p>Mi primer proyecto web surgió de una experiencia personal:<span> las acogidas temporales de animales en
-              situación de vulnerabilidad.</span> A lo largo de los años, he dado hogar a perros con historias
+              situación de vulnerabilidad, con énfasis en el reencuentro entre animales perdidos y sus familias.</span>
+            A lo largo de los años, he dado hogar a perros con historias
             complejas, lo que me enseñó la importancia de un sistema eficiente para gestionar acogidas y adopciones</p>
           <p>Este proyecto en desarrollo tiene como objetivo optimizar y agilizar el proceso de acogida y adopción de
-            animales. La plataforma facilita la conexión entre rescatistas, familias de acogida y adoptantes, ayudando a
+            animales, y la comunicación de animales perdidos en tiempo real. La plataforma facilita la conexión entre
+            rescatistas, familias de acogida y adoptantes, ayudando a
             evitar estafas en propias de redes sociales, mediante verificación de perfiles y una experiencia de usuario
             intuitiva y accesible.</p>
           <h3> Contexto y Necesidad </h3>
@@ -189,10 +191,7 @@ useMetaData({
             </li>
           </ul>
         </div>
-        <div class="container-img-focus">
-          <img class="img-focus" src="/images/foto-dogfinder.webp" loading="lazy" alt="imagen app web animal"
-            width="500px">
-        </div>
+
       </div>
       <div class="container-bubble align-center">
         <p> Algunos de mis pequeños acogidos </p>
@@ -209,49 +208,61 @@ useMetaData({
         <img class="bubble" src="/images/gorda.webp" loading="lazy" alt=" perra acogida gorda">
       </div>
     </div>
-    <div class="flex-row padding-sm">
-      <div class="p-column-sm flex">
+    <div class="card-tecnologias flex-row">
+      <div class="container-column-sm flex">
         <h3>Arquitectura y Tecnologías Utilizadas</h3>
-        <ul>
-          <li>
-            <h4>Base de Datos (SQL - MySQL)</h4>
-            <p>Estructuración de datos para gestionar perfiles de usuarios, asociaciones, animales y solicitudes de
-              adopción.</p>
-            <p>Relaciones y consultas bien definidas y optimizadas entre entidades como usuarios, animales y estados de
-              adopción</p>
-          </li>
-          <li>
-            <h4>Lenguaje de Programación (PHP y JavaScript)</h4>
-            <p>PHP (Back-end): Manejo de lógica de negocio, validación de formularios, gestión de usuarios y
-              procesamiento de datos en el servidor.</p>
-            <p>JavaScript (Front-end): Mejora de la experiencia del usuario con interactividad en tiempo real,
-              validaciones dinámicas y actualizaciones de contenido sin recargar la página.</p>
-
-          </li>
-          <li>
-            <h4>Gestión de Perfiles</h4>
-            <p>Perfiles y funcionalidades específicas para Asociaciones y Usuarios, publicación y gestión de fichas de
-              animales disponibles para adopción y sistema de contacto con asociaciones</p>
-          </li>
+        <ul class=" flex">
           <li>
             <h4>Funcionalidades Clave</h4>
-            <p>Panel de administración para asociaciones y gestores, con herramientas para actualizar información sobre
-              animales y adopciones.</p>
-            <p>Sistema de búsqueda y filtros para que los usuarios encuentren fácilmente animales según ubicación,
-              tamaño, edad y necesidades especiales.</p>
+            <p>La plataforma permite que asociaciones y gestores accedan a un panel personalizado, donde pueden publicar
+              y actualizar fichas de animales en busca de acogida o adopción, gestionando también los formularios de
+              contacto y seguimiento.</p>
+            <p>Los usuarios pueden filtrar animales según criterios como ubicación, tamaño, edad o si requieren cuidados
+              especiales, algo clave en casos como el de Boni, que fue usada para cría y tenía miedos específicos.</p>
+          </li>
+
+          <li>
+            <h4>Lenguaje de Programación (PHP y JavaScript)</h4>
+            <p>PHP se emplea para gestionar la lógica del servidor, como validar formularios de solicitud de adopción o
+              acogida, enviar notificaciones a asociaciones, y mantener una base de datos segura con los perfiles
+              verificados.</p>
+            <p>Con JavaScript, se mejoró la experiencia del usuario permitiendo interacciones como validar en tiempo
+              real los formularios o mostrar resultados de animales sin recargar la página, haciendo más fluida la
+              navegación para quienes buscan adoptar o acoger.</p>
+          </li>
+
+          <li>
+            <h4>Base de Datos (SQL - MySQL)</h4>
+            <p>La base de datos estructura información de usuarios, animales, asociaciones y solicitudes. Esto permite
+              registrar casos como el de Duke, un perro usado como sparring, asegurando que su perfil incluya notas
+              específicas sobre su comportamiento y necesidades.</p>
+            <p>Con relaciones bien definidas entre entidades, se pueden hacer búsquedas eficientes y rastrear el
+              historial de adopciones o acogidas, facilitando la trazabilidad y confianza en el sistema.</p>
+          </li>
+
+          <li>
+            <h4>Gestión de Perfiles</h4>
+            <p>Existen perfiles diferenciados para asociaciones, rescatistas y familias de acogida, con accesos
+              adaptados. Por ejemplo, una asociación puede publicar varios casos urgentes.</p>
+            <p>También se facilita el contacto entre usuarios y entidades mediante formularios con verificación, lo que
+              reduce el riesgo de estafas comunes en redes sociales.</p>
           </li>
         </ul>
       </div>
-      <div>
-        <figure>
-          <img class="pg-proyect-img " src="/images/diagrama.webp" loading="lazy" alt=" diagrama de flujo app web">
-          <figcaption>Diagrama de flujo</figcaption>
-        </figure>
-        <figure>
-          <img class="pg-proyect-img" src="/images/cod-error.webp" loading="lazy" alt=" casos de prueba app web"
+
+      <div class="imgs-tecnologias ">
+        <!-- <div class="container-img-focus">
+          <img class="img-focus" src="/images/foto-dogfinder.webp" loading="lazy" alt="imagen app web animal"
             width="500px">
-          <figcaption>Casos de prueba</figcaption>
-        </figure>
+        </div> -->
+
+        <img src="/images/animal.webp" loading="lazy" alt="imagen app web animal" width="500px">
+        <img src="/images/busqueda.webp" loading="lazy" alt="imagen app web animal" width="500px">
+        <img src="/images/landing-animal.webp" loading="lazy" alt="imagen app web animal" width="500px">
+        <!-- <figure class="container-img-focus">
+        <img class="img-focus" src=" /images/diagrama-flujo.webp" loading="lazy" alt=" diagrama de flujo app web" width="600">
+        <figcaption>Diagrama de flujo</figcaption>
+      </figure> -->
       </div>
     </div>
   </section>
@@ -324,6 +335,6 @@ useMetaData({
     <!-- <h3>📊 Resultado Lighthouse</h3> -->
     <!-- <img src="/img/lighthouse-100.png" alt="Resultados Lighthouse: 100/100" style="max-width:100%;" loading="lazy" /> -->
   </section>
-<FloatingContactButton />
+  <FloatingContactButton />
 </template>
     

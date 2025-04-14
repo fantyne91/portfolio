@@ -5,7 +5,7 @@
     min-height: 100vh;
   }
     .background-form > .flex-row {
-      align-items: center;
+      align-items: start;
       justify-content: center;
       width: 100%;
     }
@@ -155,7 +155,12 @@
       font-size: 16px;
     } 
   /**todo: flecha atras dentro form, abrir form pagina nueva,patterns y size input */
-    
+@media (max-width: 950px) {
+  .background-form > .flex-row {
+      align-items: center;
+      
+    }
+}    
 @media (max-width: 545px) {
    .profile-info > a{
     /* position: relative;     

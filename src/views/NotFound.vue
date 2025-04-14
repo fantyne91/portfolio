@@ -16,13 +16,15 @@ onMounted(() => {
 useMetaData({
   title: 'Página no encontrada | María Portfolio',
   description: 'La página solicitada no existe en este sitio',
-  path: '/404',
+  
    noindex: true
 })
-   
+ //marca la respuesta como 404 sin romper prerender ni el SSR, y Prerender.io
 if (import.meta.env.SSR && typeof document === 'undefined') {
-  throw new Error('404'); // Esto funciona con prerender.io
-}      
+  if (typeof context !== 'undefined' && context.res) {
+    context.res.statusCode = 404;
+  }
+} 
 </script>
   
 
