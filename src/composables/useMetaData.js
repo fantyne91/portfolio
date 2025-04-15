@@ -8,7 +8,7 @@ export function useMetaData({
   noindex = false,
   video = null,
   additionalLinks = [],
-  jsonLd = null,// null por defecto
+  jsonLd = null,
 }) {
 
   // Variables dinámicas

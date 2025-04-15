@@ -6,8 +6,8 @@ import FloatingContactButton from '../components/FloatingContactButton.vue';
 import { useMetaData } from '@/composables/useMetaData'
 
 useMetaData({
-  title: 'Desarrollo de Videojuegos con Unreal Engine | María Ortiz',
-  description: 'Diseño de interfaces y videojuegos intuitivos y accesibles.',
+  title: 'Diseño y Desarrollo de Videojuegos con Unreal Engine',
+  description: 'Diseño de interfaces y videojuegos intuitivos y accesibles con Unreal Engine y Figma.',
   path: '/videojuegos',
   video: {
     name: 'Beneficios del diseño UX/UI para videojuegos y Unreal Engine',
