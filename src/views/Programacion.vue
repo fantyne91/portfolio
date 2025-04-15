@@ -6,7 +6,7 @@ import { useMetaData } from '@/composables/useMetaData'
 
 useMetaData({
   title: 'Desarrollo Web, CMS y SEO Personalizado | María Dev Design',
-  description: 'Desarrollo de sitios web, aplicaciones y sistemas a medida con  Vue.js, Js, PHP ',
+  description: 'Desarrollo de sitios web, aplicaciones y sistemas a medida con  Vue.js, Js o PHP con foco en SEO',
   path: '/programacion',
 
   // additionalLinks: [

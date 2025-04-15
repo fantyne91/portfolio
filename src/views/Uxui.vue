@@ -5,8 +5,8 @@ import FloatingContactButton from '../components/FloatingContactButton.vue';
 import { useMetaData } from '@/composables/useMetaData'
 
 useMetaData({
-    title: 'UX/UI Design Web | María Portfolio',
-    description: 'Diseño de interfaces intuitivas y accesibles.',
+    title: 'UX/UI Design Web | Product design |Portfolio',
+    description: 'Diseño de interfaces intuitivas y accesibles con Figma y Framer para webs y videojuegos.',
     path: '/uxui',
 
     // additionalLinks: [

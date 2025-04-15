@@ -25,7 +25,7 @@ export function useMetaData({
     author: {
       '@type': 'Person',
       name: 'María Ortiz',
-      url: 'https://www.mariadevdesign.com/sobremi',
+      url: 'https://www.mariadevdesign.com/sobre-mi',
     },
     inLanguage: 'es',
     contactPoint: {
