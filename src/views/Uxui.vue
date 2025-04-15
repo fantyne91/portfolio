@@ -7,7 +7,7 @@ import { useMetaData } from '@/composables/useMetaData'
 
 useMetaData({
     title: 'UX/UI Design Web | Product design | Portfolio',
-    description: 'Diseño de interfaces intuitivas y accesibles con Figma y Framer para webs y videojuegos.',
+    description: 'Diseño de experiencias de usuario y interfaces para webs y videojuegos con Figma y Framer. Accesibilidad, usabilidad y estética en cada proyecto',
     path: '/uxui',
 
     // additionalLinks: [

@@ -63,9 +63,11 @@ watch(menuOpen, () => {
   } else {
     main.value.removeEventListener('click', closeClickOutside);
   }
-}); 
-
+});
+//test hidrate 
+const hydrated = ref(false);
 onMounted(() => { 
+  hydrated.value = true
   updateScreenSize() // Comprobamos el tamaño al iniciar
   window.addEventListener('resize', updateScreenSize) // Detectamos cambios
 

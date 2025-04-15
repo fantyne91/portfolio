@@ -8,7 +8,7 @@ import { useMetaData } from '@/composables/useMetaData'
 
 useMetaData({
   title: 'Contacto | María Ortiz - Diseño UX/UI, Desarrollo Web y videojuegos',
-  description: 'Ponte en contacto para colaborar en proyectos de desarrollo web o diseño UX/UI.',
+  description: 'Te ayudo a orientar, diseñar y desarrollar tu proyecto web o videojuego con enfoque UX y visión creativa.',
   path: '/contacta'
 })
 
@@ -141,7 +141,7 @@ const submitForm = async () => {
       </div>
 
       <div class="contact-form-1 container-column-md flex ">
-        <h1 class="visually-hidden ">Contacta</h1>
+        <h1 class="visually-hidden ">Contacta para obtener informacion sobre UX/UI, desarrollo web o videojuegos</h1>
 
         <!-- Formulario paso 1 (Nombre, Email, Teléfono) -->
         <form class="p-column-xs flex align-center" @submit.prevent="nextStep" v-if="currentStep === 1">

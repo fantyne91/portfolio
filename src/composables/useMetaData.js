@@ -26,14 +26,13 @@ export function useMetaData({
       '@type': 'Person',
       name: 'María Ortiz',
       url: 'https://www.mariadevdesign.com/sobre-mi',
+      sameAs: [
+        'https://www.linkedin.com/in/maria-ortiz91',
+        'https://github.com/fantyne91',
+      ],
     },
     inLanguage: 'es',
-    contactPoint: {
-      '@type': 'ContactPoint',
-      contactType: 'customer service',
-      url: 'https://www.mariadevdesign.com/contacta',
-    },
-    
+
     // Si hay video,(no main entity)-> tipo a VideoObject
     ...(video && {
       ...(video && {

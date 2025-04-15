@@ -6,7 +6,7 @@ import { useMetaData } from '@/composables/useMetaData'
 
 useMetaData({
   title: 'Desarrollo Web, CMS y SEO Personalizado | María Dev Design',
-  description: 'Desarrollo de sitios web, aplicaciones y sistemas a medida con  Vue.js, Js o PHP con foco en SEO',
+  description: 'Diseño y desarrollo de sitios web, aplicaciones y sistemas a medida con  Vue.js, Js o PHP con foco en SEO y crecimiento de tu empresa',
   path: '/programacion',
 
   // additionalLinks: [
@@ -289,7 +289,7 @@ onMounted(() => {
       <li><strong><a href="https://vuejs.org" target="_blank" rel="noopener noreferrer">Vue 3 (Composition
             API)</a></strong>: Arquitectura modular y reactiva que facilita la creación de
         componentes reutilizables y mejora el rendimiento en la carga.</li>
-      <li><strong><a href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">Vite</a></strong>: Herramienta
+      <li><strong><a href="https://vite.dev" target="_blank" rel="noopener noreferrer">Vite</a></strong>: Herramienta
         de empaquetado y compilación moderna.</li>
       <li><strong><a href="https://json-ld.org" target="_blank" rel="noopener noreferrer">JSON-LD</a></strong>: Formato
         para incrustar metadatos estructurados, utilizado para mejorar la indexación

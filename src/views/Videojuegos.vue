@@ -7,7 +7,7 @@ import { useMetaData } from '@/composables/useMetaData'
 
 useMetaData({
   title: 'Diseño y Desarrollo de Videojuegos con Unreal Engine',
-  description: 'Diseño de interfaces y videojuegos intuitivos y accesibles con Unreal Engine y Figma.',
+  description: 'Diseño UX/UI y desarrollo con blueprints para videojuegos y webs con Unreal Engine y Figma. Experiencias accesibles e inmersivas.',
   path: '/videojuegos',
   video: {
     name: 'Beneficios del diseño UX/UI para videojuegos y Unreal Engine',

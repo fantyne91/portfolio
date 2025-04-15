@@ -8,7 +8,7 @@ import { useMetaData } from '@/composables/useMetaData'
 
 useMetaData({
     title: 'Diseño UX/UI, Desarrollo Web, y Videojuegos con Unreal Engine',
-    description: 'Diseño UX/UI, desarrollo web y videojuegos con Unreal Engine.',
+    description: 'UX/UI Designer y Desarrolladora Web especializada en frontend, usabilidad y diseño interactivo para empresas y videojuegos.',
     path: '/',
     
     jsonLd: {
@@ -269,7 +269,7 @@ onUnmounted(() => {
                 </div>
             </div>
             <img  src="/images/psico-ux.webp" loading="lazy"
-                alt="imagen usabilidad,empativa y psicologia en ux/ui" width="400px" height="auto" />
+                alt="imagen usabilidad,empativa y psicologia en ux/ui" width="350" height="300" />
         </div>
     </section>
 
@@ -287,7 +287,7 @@ onUnmounted(() => {
         <div class="imgs padding-Y-xs" itemprop="itemListElement" itemscope itemtype="https://schema.org/ImageGallery">
 
             <!-- Video Cupcake -->
-            <video class="video" preload="none" loading="lazy" role="presentation" autoplay loop muted playsinline
+            <video class="video" preload="none" loading="lazy"  autoplay loop muted playsinline
                 alt="Diseño web UX/UI tienda online">
                 <source src="/images/cupcakes.mp4" type="video/mp4">
             </video>
@@ -338,7 +338,7 @@ onUnmounted(() => {
             </div>
 
             <!-- Video Omega -->
-            <video class="video" preload="none" loading="lazy" role="presentation" autoplay loop muted playsinline
+            <video class="video" preload="none" loading="lazy" r autoplay loop muted playsinline
                 alt="Diseño web UX/UI joyeria">
                 <source src="/images/intro-omega.mp4" type="video/mp4">
             </video>
