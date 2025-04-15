@@ -116,7 +116,7 @@ onMounted(() => {
             setTimeout(() => {
                 window.prerenderReady = true
                 console.log('✅ Prerender ready for', window.location.pathname)
-            }, 100)
+            }, 200)
         })
    
 

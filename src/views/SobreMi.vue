@@ -44,16 +44,13 @@ onMounted(() => {
         item.style.transform = 'scale(1)';
         item.style.opacity = '1';
       } else {
-        // Queremos que los elementos "nazcan" desde el centro:
-        // - Empiecen en scale cerca de 0.1 y se escalen hasta 1 cuando estén en el centro.
-        // - Luego, al alejarse, vuelvan a reducirse (o se desplacen fuera de la pantalla).
-        // 
-        // Aquí la idea es que al estar en el centro (progress ~ 0) el elemento alcance su tamaño máximo (1).
+       
+        // la idea es que al estar en el centro (progress ~ 0) el elemento alcance su tamaño máximo (1).
         // Y a medida que avanza el progreso (al alejarse), disminuya (por ejemplo, a 0.3).
         const minScale = 0.3;  // Escala mínima cuando ya está lejos del centro
         const scale = (1 - progress) * (1 - minScale) + minScale;
 
-        // Para el desplazamiento lateral: queremos que cuando el elemento esté en el centro, translateX sea 0
+        //cuando el elemento esté en el centro, translateX sea 0
         // Y a medida que se aleje, se desplace suavemente hacia los lados.
         // Usamos la dirección del elemento dependiendo si está por arriba o por debajo del centro.
         const direction = (itemCenter - centerScreen) >= 0 ? 1 : -1;
@@ -80,7 +77,7 @@ onMounted(() => {
       setTimeout(() => {
         window.prerenderReady = true
         console.log('✅ Prerender ready for', window.location.pathname)
-      }, 100)
+      }, 200)
     })
   
 

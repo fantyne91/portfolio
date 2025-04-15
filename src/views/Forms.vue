@@ -7,7 +7,7 @@ import { ref, onMounted, computed, nextTick } from 'vue'
 import { useMetaData } from '@/composables/useMetaData'
 
 useMetaData({
-  title: 'Contacto | María Ortiz - Diseño y Desarrollo Web',
+  title: 'Contacto | María Ortiz - Diseño UX/UI, Desarrollo Web y videojuegos',
   description: 'Ponte en contacto para colaborar en proyectos de desarrollo web o diseño UX/UI.',
   path: '/contacta'
 })
@@ -29,14 +29,14 @@ const form = ref({
 
 onMounted(() => {
   form.value.fromPage = localStorage.getItem('fromPage') || 'Desconocido'
-  onMounted(() => {
+  
     nextTick(() => {
       setTimeout(() => {
         window.prerenderReady = true
         console.log('✅ Prerender ready for', window.location.pathname)
-      }, 100)
+      }, 200)
     })
-  })
+  
 
 })
 
