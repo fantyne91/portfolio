@@ -3,7 +3,7 @@
 
 <script setup>
 import '../styles/forms.css'
-import { onMounted, onUnmounted } from 'vue'
+import { onMounted, onUnmounted, nextTick } from 'vue'
 import { useMetaData } from '@/composables/useMetaData'
 
 useMetaData({
@@ -111,7 +111,15 @@ const handleScroll = () => {
 
 // Eventos al montar el componente
 onMounted(() => {
-    window.prerenderReady = false
+    
+        nextTick(() => {
+            setTimeout(() => {
+                window.prerenderReady = true
+                console.log('✅ Prerender ready for', window.location.pathname)
+            }, 100)
+        })
+   
+
     
     window.addEventListener('scroll', handleScroll)
 })

@@ -1,6 +1,7 @@
 <script setup>
 import '../styles/uxui.css'
 
+import {onMounted, nextTick} from 'vue'
 import FloatingContactButton from '../components/FloatingContactButton.vue';
 import { useMetaData } from '@/composables/useMetaData'
 
@@ -78,6 +79,14 @@ useMetaData({
             }
         ]
     }
+})
+onMounted(() => {
+    nextTick(() => {
+        setTimeout(() => {
+            window.prerenderReady = true
+            console.log('✅ Prerender ready for', window.location.pathname)
+        }, 100)
+    })
 })
 
 </script>

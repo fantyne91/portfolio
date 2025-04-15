@@ -2,7 +2,7 @@
 
 <script setup >
 
-import { ref, onMounted, computed } from 'vue'
+import { ref, onMounted, computed, nextTick } from 'vue'
 
 import { useMetaData } from '@/composables/useMetaData'
 
@@ -29,6 +29,15 @@ const form = ref({
 
 onMounted(() => {
   form.value.fromPage = localStorage.getItem('fromPage') || 'Desconocido'
+  onMounted(() => {
+    nextTick(() => {
+      setTimeout(() => {
+        window.prerenderReady = true
+        console.log('✅ Prerender ready for', window.location.pathname)
+      }, 100)
+    })
+  })
+
 })
 
 const currentStep = ref(1) // Estado para controlar el paso actual
@@ -136,7 +145,7 @@ const submitForm = async () => {
 
         <!-- Formulario paso 1 (Nombre, Email, Teléfono) -->
         <form class="p-column-xs flex align-center" @submit.prevent="nextStep" v-if="currentStep === 1">
-          <h2 class="padding-xs p-align">Datos personales</h2>
+          <h2 class=" p-align">DATOS PERSONALES</h2>
           <div class="form-input">
             <input type="text" id="name" name="name" placeholder=" " required v-model="form.nombre" autocomplete="on">
             <label class="accesible" for="name" id="name-label">Nombre completo*</label>

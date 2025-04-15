@@ -1,6 +1,6 @@
 <script setup>
 
-import { onMounted } from 'vue'
+import { onMounted,nextTick } from 'vue'
 import { useMetaData } from '@/composables/useMetaData'
 
 useMetaData({
@@ -74,6 +74,16 @@ onMounted(() => {
 
   // Y la actualizamos al hacer scroll
   window.addEventListener('scroll', applyScrollEffect);
+
+  /*prerender*/
+    nextTick(() => {
+      setTimeout(() => {
+        window.prerenderReady = true
+        console.log('✅ Prerender ready for', window.location.pathname)
+      }, 100)
+    })
+  
+
 });
 </script>
 

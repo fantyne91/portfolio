@@ -21,11 +21,11 @@ const hideLoadingScreen = () => {
         loadingScreen.style.opacity = '0'
         setTimeout(() => {
             loadingScreen.style.display = 'none'
-            window.prerenderReady = true
+            
         }, 500) 
     } else {
         // Por si no encuentra el elemento, igual lo marcamos como listo
-        window.prerenderReady = true
+        
     }
 }
 
@@ -47,7 +47,7 @@ const loadImage = () => {
 
 onMounted(() => {
    
-    window.prerenderReady = false
+   
     
 })
 
