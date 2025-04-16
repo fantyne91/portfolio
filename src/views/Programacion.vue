@@ -260,18 +260,11 @@ onMounted(() => {
       </div>
 
       <div class="imgs-tecnologias ">
-        <!-- <div class="container-img-focus">
-          <img class="img-focus" src="/images/foto-dogfinder.webp" loading="lazy" alt="imagen app web animal"
-            width="500px">
-        </div> -->
 
-        <img src="/images/animal.webp" loading="lazy" alt="imagen app web animal" width="500px">
-        <img src="/images/busqueda.webp" loading="lazy" alt="imagen app web animal" width="500px">
-        <img src="/images/landing-animal.webp" loading="lazy" alt="imagen app web animal" width="500px">
-        <!-- <figure class="container-img-focus">
-        <img class="img-focus" src=" /images/diagrama-flujo.webp" loading="lazy" alt=" diagrama de flujo app web" width="600">
-        <figcaption>Diagrama de flujo</figcaption>
-      </figure> -->
+        <img src="/images/animal.webp" loading="lazy" alt="imagen app web perfil animal" width="400">
+        <img src="/images/busqueda.webp" loading="lazy" alt="imagen app web animal" width="400">
+        <img src="/images/landing-animal.webp" loading="lazy" alt="imagen app landing web animal" width="400" >
+       
       </div>
     </div>
   </section>
