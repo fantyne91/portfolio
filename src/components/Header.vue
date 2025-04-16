@@ -17,7 +17,7 @@
     </button>
 
 
-    <nav v-if="hydrated" :class="menuOpen ? 'nav-menu open' : 'nav-menu'" @click="toggleMenu" aria-label="Menú principal">
+    <nav :class="menuOpen ? 'nav-menu open' : 'nav-menu'" @click="toggleMenu" aria-label="Menú principal">
       <router-link to="/" tabindex="0" aria-label="Ir a la página de inicio">Inicio</router-link>
       <router-link to="/uxui" tabindex="0" aria-label="Ir a la sección UX/UI">Ux/ui</router-link>
       <router-link to="/programacion" tabindex="0"
@@ -36,6 +36,7 @@ import { ref, onMounted, watch, onUnmounted } from 'vue';
 const menuOpen = ref(false);
 const isMobileOrTablet = ref(false);
 const main = ref(null);
+
 
 //methods
 const toggleMenu = () => {
@@ -65,9 +66,9 @@ watch(menuOpen, () => {
   }
 });
 //test hidrate 
-const hydrated = ref(false);
+
 onMounted(() => { 
-  hydrated.value = true
+
   updateScreenSize() // Comprobamos el tamaño al iniciar
   window.addEventListener('resize', updateScreenSize) // Detectamos cambios
 
@@ -192,8 +193,8 @@ onUnmounted(() => {
                 @media (max-width: 950px) {
         
                   .nav-menu {
-                    /* display: none; */
-                    visibility: hidden;
+                     display: none; 
+                    /* visibility: hidden; */
                     position: absolute;
                     top: 100%;
                     left: 0;
