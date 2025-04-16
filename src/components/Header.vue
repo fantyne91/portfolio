@@ -17,7 +17,7 @@
     </button>
 
 
-    <nav :class="menuOpen ? 'nav-menu open' : 'nav-menu'" @click="toggleMenu" aria-label="Menú principal">
+    <nav v-if="hydrated" :class="menuOpen ? 'nav-menu open' : 'nav-menu'" @click="toggleMenu" aria-label="Menú principal">
       <router-link to="/" tabindex="0" aria-label="Ir a la página de inicio">Inicio</router-link>
       <router-link to="/uxui" tabindex="0" aria-label="Ir a la sección UX/UI">Ux/ui</router-link>
       <router-link to="/programacion" tabindex="0"

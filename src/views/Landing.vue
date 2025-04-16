@@ -338,7 +338,7 @@ onUnmounted(() => {
             </div>
 
             <!-- Video Omega -->
-            <video class="video" preload="none" loading="lazy" r autoplay loop muted playsinline
+            <video class="video" preload="none" loading="lazy"  autoplay loop muted playsinline
                 alt="Diseño web UX/UI joyeria">
                 <source src="/images/intro-omega.mp4" type="video/mp4">
             </video>
