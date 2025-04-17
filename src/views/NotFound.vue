@@ -19,12 +19,7 @@ useMetaData({
   
    noindex: true
 })
- //marca la respuesta como 404 sin romper prerender ni el SSR, y Prerender.io
-if (import.meta.env.SSR && typeof document === 'undefined') {
-  if (typeof context !== 'undefined' && context.res) {
-    context.res.statusCode = 404;
-  }
-} 
+
 </script>
   
 
