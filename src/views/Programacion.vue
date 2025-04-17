@@ -223,6 +223,9 @@ onMounted(() => {
         <ul class=" flex">
           <li>
             <h4>Funcionalidades Clave</h4>
+            <p>El diseño de la web está pensado con un estilo visual amigable y cercano, accesible para todo tipo de
+              usuarios, incluso personas con pocos conocimientos digitales. Su navegación es clara, intuitiva
+              y enfocada en facilitar cada paso, desde la búsqueda hasta el contacto.</p>
             <p>La plataforma permite que asociaciones y gestores accedan a un panel personalizado, donde pueden publicar
               y actualizar fichas de animales en busca de acogida o adopción, gestionando también los formularios de
               contacto y seguimiento.</p>
@@ -261,10 +264,10 @@ onMounted(() => {
 
       <div class="imgs-tecnologias ">
 
-        <img src="/images/animal.webp" loading="lazy" alt="imagen app web perfil animal" width="400">
-        <img src="/images/busqueda.webp" loading="lazy" alt="imagen app web animal" width="400">
-        <img src="/images/landing-animal.webp" loading="lazy" alt="imagen app landing web animal" width="400" >
-       
+        <img src="/images/animal.webp" loading="lazy" alt="imagen app web perfil animal" width="300">
+        <img src="/images/busqueda.webp" loading="lazy" alt="imagen app web animal" width="300">
+        <img src="/images/landing-animal.webp" loading="lazy" alt="imagen app landing web animal" width="300">
+
       </div>
     </div>
   </section>

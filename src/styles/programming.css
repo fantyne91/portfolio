@@ -132,52 +132,54 @@
 }
 .imgs-tecnologias{    
     position: relative;
-    min-height: 700px;
+   
 }
 .imgs-tecnologias *{
 position: absolute;
-width: 300px;
-right:clamp(0px, 6vw, 40%);
-top:-200px;
+width: 275px;
+left:clamp(0px, 2vw, 30%);
+top:-520px;
+border-radius: 25px;
+border: 1px solid var(--color-grey-2);
 
 }
+.imgs-tecnologias img:nth-child(1){
+box-shadow: 0 0 10px var(--color-grey-3);
+border-radius: 25px;
+}
 .imgs-tecnologias img:nth-child(3){
-    animation: change-img 10s infinite ease;
+    animation: change-img 11s infinite ease;
     animation-delay: 0s;
-    z-index: 4;
+    
 }
 .imgs-tecnologias img:nth-child(2){
-    animation: change-img 10s infinite ease;
-    animation-delay: 3s;
-    z-index: 4;
+    animation: change-img 11s infinite linear;
+    animation-delay: 3s;    
 }
-/* .imgs-tecnologias img:nth-child(1){
-    animation: change-img 10s infinite ease;
-    animation-delay: 10s;
-    z-index: 4;
-} */
+
 @keyframes change-img{
     0%{
-        opacity: 1;
-        visibility: visible;
-        z-index: 4;
-    }
-    10%{
-        opacity: 1;        
-    }
-    30%{
-        opacity: 1;
-        visibility: visible;
-        transform: translate(0px, 00px) ;
+      opacity:1;
+        visibility: visible;        
+    }   
+    32%{     
+       opacity:1;
+       transform: translate(0px, 0px) ; 
+       
+       
     }    
-    35%{
-        transform: translate(90px, 250px) scale(0.2);
-        visibility: hidden;
-    }
+     40%{    
+      opacity:0;
+        transform: translate(50px, 50px) scale(0.9) rotate(10deg);
+        
+    }    
     100%{
+        opacity:0;
         visibility: hidden;
+       
     }
 }
+
 
 /*bubbles*/
 .container-bubble {
@@ -334,11 +336,41 @@ top:-200px;
             opacity: 0;
         }    
     }
- 
+
+    /*img-proyecto*/
+    .imgs-tecnologias{
+          min-height: 620px;   
+overflow:hidden;
+    }
+
     
  .imgs-tecnologias *{
     top: 0px;
-    right:4%;
+    left: 50%;  
+inset: 0;
+  margin: auto;
+   
 } 
+/* .imgs-tecnologias img:nth-child(2){
+    animation: change-img2 10s infinite ease;
+    animation-delay: 0.1s; 
+} */
+
+/* @keyframes change-img{
+    0%{
+      
+        visibility: visible;        
+    }   
+    30%{     
+        transform: translate(0px, 00px) ;
+    }    
+    35%{
+        transform: translate(100px, 270px) scale(0.1);
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+} */
 
 }
