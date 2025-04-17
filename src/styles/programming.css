@@ -132,20 +132,24 @@
 }
 .imgs-tecnologias{    
     position: relative;
-   
+    min-height: 620px; 
+    overflow:hidden;
+   top:-300px;
 }
 .imgs-tecnologias *{
+    
 position: absolute;
 width: 275px;
-left:clamp(0px, 2vw, 30%);
-top:-520px;
+inset: 0;
+  margin: auto;
+top:0px;
 border-radius: 25px;
-border: 1px solid var(--color-grey-2);
+
 
 }
 .imgs-tecnologias img:nth-child(1){
 box-shadow: 0 0 10px var(--color-grey-3);
-border-radius: 25px;
+
 }
 .imgs-tecnologias img:nth-child(3){
     animation: change-img 11s infinite ease;
@@ -174,6 +178,7 @@ border-radius: 25px;
         
     }    
     100%{
+        transform: scale(1);
         opacity:0;
         visibility: hidden;
        
@@ -339,8 +344,8 @@ border-radius: 25px;
 
     /*img-proyecto*/
     .imgs-tecnologias{
-          min-height: 620px;   
-overflow:hidden;
+            
+
     }
 
     

@@ -109,18 +109,18 @@ onMounted(() => {
 
 <template>
 
-  <section class="header-games" itemscope itemtype="https://schema.org/CreativeWork">
+  <section class="header-games" >
     <h1 itemprop="headline"> Unreal engine y diseño UX/UI <br>para videojuegos</h1>
-    <div class="container-header container-column-md flex align-center" itemprop="text">
+    <div class="container-header container-column-md flex align-center" >
 
-      <h2 itemprop="alternativeHeadline"> El UX/UI en videojuegos es el vestíbulo del jugador.</h2>
+      <h2 > El UX/UI en videojuegos es el vestíbulo del jugador.</h2>
       <div class="p-column-sm flex  padding-sm">
-        <p class="p-games p-align" itemprop="description">
+        <p class="p-games p-align" >
           Los videojuegos no solo divierten, también estimulan la memoria, la creatividad y la toma de decisiones.
         </p>
         <div class="p-column-xxs flex">
           <h3 class="beneficios-games">Beneficios cognitivos</h3>
-          <p itemprop="articleBody">
+          <p >
             La neurociencia confirma su impacto positivo en todas las edades: desde mejorar el aprendizaje en niños
             hasta
             retrasar el deterioro cognitivo en mayores. Además, son clave en accesibilidad, con experiencias adaptadas
