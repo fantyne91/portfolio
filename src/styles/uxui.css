@@ -61,13 +61,13 @@
 }
 /**CONTAINER SERVICIOS*/
 .services-ux-background{
-    background: #715d32;   
+    background: #7d683c;   
 }
 .services-ux-container{    
     background-color: var(--color-secondary); 
     border-radius: 15px;
     box-shadow: 0 1px 5px var(--color-grey-5);
-    color: var(--color-grey-3);   
+       
 }
 .services-ux-container h4{      
     color:var(--color-orange);
@@ -81,7 +81,6 @@
     padding:  clamp(0em, 3rem ,var(--space-sm));
 }
 /**CONTAINER CASOS UX*/
-
 .container-casos-ux  h3{
     color: var(--color-orange);
     padding-bottom: var(--space-xs);
@@ -90,7 +89,7 @@
     color: var(--color-grey-1);  
 } 
 .container-casos-ux p{
-    color: var(--color-grey-3);     
+    color: var(--color-grey-2);     
 }
 .container-casos-ux{    
     padding-top: var(--space-xs) ;

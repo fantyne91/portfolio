@@ -32,9 +32,11 @@
     background-color: var(--color-grey-0);
     color: var(--color-secondary);
     h2{  color:var(--color-med-blue)} ; 
-    h3{ color: var(--color-white-blue); max-width: 100%; };   
+    h3{ color: var(--color-white-blue); max-width: 100%; };     
 }
-
+.beneficios p{
+    font-weight: 500;
+}
 .beneficios ul{
    align-items: normal;
    justify-content: center;

@@ -64,7 +64,7 @@ html, body {
 
 body { 
     letter-spacing: 0.4px;        
-    font-family: 'Barlow';
+    font-family: 'Barlow', Arial, sans-serif;
     line-height: 1.5;
      background-color: var(--color-secondary); 
      color:var(--color-primary);
