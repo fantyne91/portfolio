@@ -1,9 +1,8 @@
 <template>
   <header class="header" role="banner">
     <router-link to="/" class="logo" aria-label="Ir al inicio">
-      <img src="/images/logo.webp"
-        alt="Logo de María Ortiz, diseñadora UX/UI y desarrollo web" width="150" height="49" loading="eager"
-         >
+      <img src="/images/logo.webp" alt="Logo de María Ortiz, diseñadora UX/UI y desarrollo web" width="150" height="49"
+        loading="eager" fetchpriority="high">
     </router-link>
 
 

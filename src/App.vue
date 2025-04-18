@@ -26,13 +26,6 @@ const currentPageClassComputed = computed(() => {
     <LoadingScreen />
     <Header></Header>
 
-    <!-- <main :class="currentPageClassComputed">
-        <router-view v-slot="{ Component }">
-            <keep-alive>
-                <component :is="Component" />
-            </keep-alive>
-        </router-view>
-    </main>  -->
     <main :class="currentPageClassComputed">
         <router-view v-slot="{ Component }">
             <keep-alive exclude="Contacta">
