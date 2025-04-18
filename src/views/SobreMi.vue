@@ -5,7 +5,7 @@ import { useMetaData } from '@/composables/useMetaData'
 
 useMetaData({
   title: 'Sobre Mí | María Dev Design - Desarrolladora y Diseñadora',
-  description: 'Soy María Ortiz, diseñadora UX/UI y desarrolladora de videojuegos y sitios web centrados en el usuario.',
+  description: 'Soy María Ortiz, diseñadora UX/UI y desarrolladora de webs y videojuegos, centrados en el usuario.',
   path: '/sobre-mi'
 })
 

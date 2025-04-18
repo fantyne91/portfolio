@@ -21,9 +21,7 @@
 .benefits{
     background-color: var(--color-grey-4);   
 }
-.benefits h2{
-    max-width: 60%;
-}
+
 .container-motivos-ux{   
     background-color: var(--color-sat-orange);
     box-shadow: 0 1px 5px var(--color-grey-5);
@@ -63,12 +61,13 @@
 }
 /**CONTAINER SERVICIOS*/
 .services-ux-background{
-    background: #89713f;   
+    background: #7d683c;   
 }
 .services-ux-container{    
     background-color: var(--color-secondary); 
     border-radius: 15px;
-    box-shadow: 0 1px 5px var(--color-grey-5);   
+    box-shadow: 0 1px 5px var(--color-grey-5);
+    color: var(--color-grey-3);   
 }
 .services-ux-container h4{      
     color:var(--color-orange);
@@ -85,10 +84,14 @@
 
 .container-casos-ux  h3{
     color: var(--color-orange);
+    padding-bottom: var(--space-xs);
 }
 .container-casos-ux  h4{
     color: var(--color-grey-1);  
 } 
+.container-casos-ux p{
+    color: var(--color-grey-3);     
+}
 .container-casos-ux{    
     padding-top: var(--space-xs) ;
     gap:var(--space-xxs);    
