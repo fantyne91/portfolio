@@ -150,6 +150,6 @@
             position: absolute;
             height: 100px;
             width: 100px;           
-            left: 0;
+            left: -4px;
          }
 </style>
