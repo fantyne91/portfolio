@@ -5,7 +5,7 @@
 .floating-btn {
     position: fixed;
     border-radius: 100%;
-    bottom: 60px;
+    bottom: 120px;
     right: clamp(0px, 2vw ,54px);
  
     padding: 0;

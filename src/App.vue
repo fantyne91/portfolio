@@ -3,6 +3,7 @@
 import Header from '@/components/Header.vue';
 import LoadingScreen from './components/LoadingScreen.vue';
 import Footer from '@/components/Footer.vue';
+import Cookie from '@/components/Cookie.vue';
 
 import { onMounted, computed, watch } from 'vue';     // Herramientas para reactividad
 import { useRoute } from 'vue-router'; // Herramienta para manejar rutas
@@ -35,7 +36,7 @@ const currentPageClassComputed = computed(() => {
     </main>
     <Footer></Footer>
 
-
+    <Cookie></Cookie>
 </template>
 
 

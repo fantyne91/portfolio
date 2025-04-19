@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Diseño UX/UI, Desarrollo Web, y Videojuegos con Unreal Engine</title>
@@ -8,7 +9,7 @@
         content="Desarrollo de aplicaciones web, diseño UX/UI, diseño y desarrollo de videojuegos con Unreal Engine.">
     <meta name="robots" content="index, follow">
     <meta name="author" content="María Ortiz">
-    
+
     <meta property="og:image" content="https://www.mariadevdesign.com/images/og-image-1200x630.webp">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -22,7 +23,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon" sizes="any">
-    
+
     <!--styles-->
     <link rel="preload" href="/fonts/Barlow/Barlow-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="/fonts/Barlow/Barlow-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -31,152 +32,224 @@
 
     <link rel="stylesheet" href="/src/styles/global.css">
     <link rel="stylesheet" href="/src/styles/landing.css">
-    
+
     <link id="material-outlined" rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400..700,0..1,0..200"
         media="none" onload="this.media='all'">
-    
+
     <link id="material-rounded" rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400..700,0..1,0..200"
         media="none" onload="this.media='all'">
 
 
-    <!--scripts-->      
-    <script type="module"  src="/src/main.js"></script> 
+    <!--scripts-->
+    <script type="module" src="/src/main.js"></script>
     <script>
         window.prerenderReady = false;
     </script>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         (function (c, l, a, r, i, t, y) {
             c[ a ] = c[ a ] || function () { (c[ a ].q = c[ a ].q || []).push(arguments) };
             t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
             y = l.getElementsByTagName(r)[ 0 ]; y.parentNode.insertBefore(t, y);
         })(window, document, "clarity", "script", "r6jlijmo5b");
-    </script>
-    
-   
+    </script> -->
 
-    <!-- PRELOAD -->   
-    <link rel="preload" href="https://www.mariadevdesign.com/images/portfolio-img.webp" as="image" type="image/webp" fetchpriority="high">
-    <link rel="preload" href="/images/logo.webp" as="image" type="image/webp"/>
 
-    <style>     
-         
+
+    <!-- PRELOAD -->
+    <link rel="preload" href="https://www.mariadevdesign.com/images/portfolio-img.webp" as="image" type="image/webp"
+        fetchpriority="high">
+    <link rel="preload" href="/images/logo.webp" as="image" type="image/webp" />
+
+    <style>
         @font-face {
             font-family: 'Barlow';
             src: url('/fonts/Barlow/Barlow-Regular.woff2') format('woff2');
             font-weight: 400;
             font-display: swap;
         }
+
         @font-face {
             font-family: 'Barlow';
             src: url('/fonts/Barlow/Barlow-Medium.woff2') format('woff2');
             font-weight: 500;
             font-display: swap;
         }
+
         @font-face {
             font-family: 'Barlow';
             src: url('/fonts/Barlow/Barlow-SemiBold.woff2') format('woff2');
             font-weight: 600;
             font-display: swap;
         }
+
         @font-face {
             font-family: 'Barlow';
             src: url('/fonts/Barlow/Barlow-Bold.woff2') format('woff2');
             font-weight: 700;
             font-display: swap;
         }
-         
+
         [v-cloak] {
-             display: none;
-        }  
+            display: none;
+        }
+
         /*Carga preload*/
         #loading-screen {
-                     position: fixed;
-                     top: 51px;
-                     left: 0;
-                     width: 100%;
-                     height: 100vh;
-                     justify-content: center;
-                     align-items: center;
-                     background: var(--color-secondary);
-                     z-index: 99990;
-                     color: var(--color-primary);
-                     opacity: 1;
-                     transition: opacity 1.5s ease-in-out;        
-                 }
-        
-                 #loading-screen * {
-                     opacity: 0;
-                     animation: fadeIn 5s ease forwards;
-                 }
-        
-                 @keyframes fadeIn {
-                     from {
-                         opacity: 0;
-                     }
-        
-                     to {
-                         opacity: 1;
-                     }
-                 }
-        
-        
-                 .gif {
-                     border-radius: 60%;
-                 }
-        
-                 .gif-container {
-                     align-items: center;
-                 }
-        
-                 .gif-container::before {
-                     content: "";
-                     box-shadow: inset 0 0 10px 5px var(--color-secondary);
-                     width: 140px;
-                     height: 140px;
-                     border-radius: 60%;
-                     position: absolute;
-                     z-index: 99999;
-                 }
+            position: fixed;
+            top: 51px;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background: var(--color-secondary);
+            z-index: 99990;
+            color: var(--color-primary);
+            opacity: 1;
+            transition: opacity 1.5s ease-in-out;
+        }
 
-    </style>    
+        #loading-screen * {
+            opacity: 0;
+            animation: fadeIn 5s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+
+        .gif {
+            border-radius: 60%;
+        }
+
+        .gif-container {
+            align-items: center;
+        }
+
+        .gif-container::before {
+            content: "";
+            box-shadow: inset 0 0 10px 5px var(--color-secondary);
+            width: 140px;
+            height: 140px;
+            border-radius: 60%;
+            position: absolute;
+            z-index: 99999;
+        }
+
+    </style>
 </head>
 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TG5RNBHJS6"></script>
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-TG5RNBHJS6"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
 
     // Configurar el Consent Mode en "denied" por defecto
     gtag('consent', 'default', {
-            'analytics_storage': 'denied'
-        });
+        'analytics_storage': 'denied'
+    });
     gtag('js', new Date());
 
-    gtag('config', 'G-TG5RNBHJS6' , {
-            'anonymize_ip': true
-        });
-</script>
+    gtag('config', 'G-TG5RNBHJS6', {
+        'anonymize_ip': true
+    });
+</script> -->
 
 
 <body>
+    <!--Loading screen -->
     <div id="loading-screen" class="flex">
         <div class="gif-container flex">
             <img class="gif" src="/images/gif-carga.webp" alt="Animación en movimiento carga " width="140" height="140">
             <p>Cargando...</p>
         </div>
     </div>
+
     <div id="app" class="" v-cloak>
     </div>
-    
+    <!--carga img preloads -->
     <div id="image-container" style="z-index:-1; display: none;">
-        <img src="/images/logo.webp" alt="Logo de María Ortiz" width="150" height="49" loading="eager" fetchpriority="high"
-            aria-hidden="true" />
-            
+        <img src="/images/logo.webp" alt="Logo de María Ortiz" width="150" height="49" loading="eager"
+            fetchpriority="high" aria-hidden="true" />
+
         <img id="preloaded-image" src="/images/portfolio-img.webp" width="1920" height="700" loading="eager"
-        alt="Imagen principal">
+            alt="Imagen principal">
     </div>
+
+    <!-- Banner cookies -->
+ 
+
+    <!-- Script que lanza GA y/o Clarity solo si acepta -->
+    <script>
+        // setTimeout(() => {
+        //     const cookie = document.getElementById('cookie-banner'); 
+        //     cookie.style.opacity = 1; // Cambia la opacidad a 1 para mostrar el banner
+         
+        // }, 12000);
+
+        // document.getElementById('accept-cookies')?.addEventListener('click', function () {
+        //     // Oculta banner
+        //     document.getElementById('cookie-banner').style.display = 'none';
+        // });
+        // document.getElementById('accept-cookies')?.addEventListener('click', function () {
+        //         // Oculta banner
+        //         document.getElementById('cookie-banner').style.display = 'none';
+
+        //         // Google Analytics
+        //         const ga = document.createElement('script');
+        //         ga.async = true;
+        //         ga.src = "https://www.googletagmanager.com/gtag/js?id=G-TG5RNBHJS6";
+        //         document.head.appendChild(ga);
+
+        //         ga.onload = function () {
+        //             window.dataLayer = window.dataLayer || [];
+        //             function gtag() { dataLayer.push(arguments); }
+        //             gtag('js', new Date());
+        //             gtag('config', 'G-TG5RNBHJS6', { anonymize_ip: true });
+        //         };
+
+        //         // Microsoft Clarity
+        //         const clarity = document.createElement('script');
+        //         clarity.async = true;
+        //         clarity.src = "https://www.clarity.ms/tag/r6jlijmo5b";
+        //         document.head.appendChild(clarity);
+        //     });
+
+        // document.getElementById('accept-cookies')?.addEventListener('click', function () {
+        //     // Oculta banner
+        //     document.getElementById('cookie-banner').style.display = 'none';
+
+        //     // Google Analytics
+        //     const ga = document.createElement('script');
+        //     ga.async = true;
+        //     ga.src = "https://www.googletagmanager.com/gtag/js?id=G-TG5RNBHJS6";
+        //     document.head.appendChild(ga);
+
+        //     ga.onload = function () {
+        //         window.dataLayer = window.dataLayer || [];
+        //         function gtag() { dataLayer.push(arguments); }
+        //         gtag('js', new Date());
+        //         gtag('config', 'G-TG5RNBHJS6', { anonymize_ip: true });
+        //     };
+
+        //     // Microsoft Clarity
+        //     const clarity = document.createElement('script');
+        //     clarity.async = true;
+        //     clarity.src = "https://www.clarity.ms/tag/r6jlijmo5b";
+        //     document.head.appendChild(clarity);
+        // });
+    </script>
+
 </body>
+
 </html>
