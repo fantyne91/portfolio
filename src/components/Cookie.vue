@@ -32,10 +32,14 @@
                 };
 
                 // Microsoft Clarity
-                const clarity = document.createElement('script');
-                clarity.async = true;
-                clarity.src = "https://www.clarity.ms/tag/r6jlijmo5b";
-                document.head.appendChild(clarity);
+               try {
+                    const clarity = document.createElement('script');
+                    clarity.async = true;
+                    clarity.src = "https://www.clarity.ms/tag/r6jlijmo5b";
+                    document.head.appendChild(clarity);
+                } catch (e) {
+                    console.error('Clarity no pudo cargarse...:', e);
+                } 
 
                 ActiveCookie=false;
             });
