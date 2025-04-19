@@ -123,8 +123,7 @@
     gap: var(--space-xxs);
     border-radius: 10px;
     box-shadow: 0 0 10px var(--color-grey-4);    
-     font-weight:500;
-   
+     font-weight:500;  
     
 }
 .card-tecnologias  h4{
@@ -136,18 +135,15 @@
     position: relative;
     min-height: 620px; 
     overflow:hidden;
-   top:-300px;
+   top:0px;
 }
-.imgs-tecnologias *{
-    
+.imgs-tecnologias *{    
 position: absolute;
 width: 275px;
 inset: 0;
   margin: auto;
 top:0px;
 border-radius: 25px;
-
-
 }
 .imgs-tecnologias img:nth-child(1){
 box-shadow: 0 0 10px var(--color-grey-3);
@@ -186,7 +182,16 @@ box-shadow: 0 0 10px var(--color-grey-3);
        
     }
 }
-
+.donacion-plataforma p {
+   color: var(--color-med-blue);
+    font-size: clamp(0.9rem, 1vw, 1.2rem); 
+    margin-bottom:  var(--space-md) ;
+    border: 1px solid var(--color-med-blue);
+    padding: var(--space-xxs) var(--space-xs);
+    border-radius: 20px;
+    font-weight: 500;
+    width: 100%;
+}
 
 /*bubbles*/
 .container-bubble {

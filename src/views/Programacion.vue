@@ -73,7 +73,7 @@ onMounted(() => {
   nextTick(() => {
     setTimeout(() => {
       window.prerenderReady = true
-      console.log('✅ Prerender ready for', window.location.pathname)
+      
     }, 200)
   })
 })
@@ -261,15 +261,20 @@ onMounted(() => {
           </li>
         </ul>
       </div>
-
-      <div class="imgs-tecnologias ">
-
-        <img src="/images/animal.webp" loading="lazy" alt="imagen app web perfil animal" width="300">
-        <img src="/images/busqueda.webp" loading="lazy" alt="imagen app web animal" width="300">
-        <img src="/images/landing-animal.webp" loading="lazy" alt="imagen app landing web animal" width="300">
-
+      <div>
+          <div class="imgs-tecnologias ">
+            <img src="/images/animal.webp" loading="lazy" alt="imagen app web perfil animal" width="300">
+            <img src="/images/busqueda.webp" loading="lazy" alt="imagen app web animal" width="300">
+            <img src="/images/landing-animal.webp" loading="lazy" alt="imagen app landing web animal" width="300">
+          </div>
+          <div class="donacion-plataforma ">
+            <p>Mi objetivo a largo plazo es un mundo más justo, donde los animales en zonas de pocos recursos puedan sobrevivir y ser adoptados, mientras personas que se lucran haciendo criar animales en paises desarrollados y estimulando el abandono sean limitados. Para ello, es necesaria una estructura firme y global, un desarrollo y mantenimiento continuo, y sobretodo personas... Por eso, te invito a colaborar como puedas! Si donas, o conoces a alguien que quiera aportar( desarrollo web, legal, marketing) podríamos cambiar el mundo juntos!</p>
+            <iframe id='kofiframe' src='https://ko-fi.com/mariadevdesign/?hidefeed=true&widget=true&embed=true&preview=true' style='border:2px solid #0A526E;border-radius:20px ;width:100%;padding:4px;background:#f9f9f9;' height='570' title='mariadevdesign'></iframe>
+          </div>
+          
       </div>
     </div>
+    
   </section>
 
   <section id="sobre-la-web">
@@ -294,9 +299,8 @@ onMounted(() => {
         contenido de cada página, usando <code>useMetaHead</code>, para garantizar que cada sección sea optimizada para
         SEO y redes sociales.</li>
       <li><strong><a href="https://developers.cloudflare.com/workers/" target="_blank"
-            rel="noopener noreferrer">Cloudflare Workers</a></strong>: Permite la redirección, control de caché y
-        prerenderizado para bots,
-        mejorando la velocidad de carga y la indexación en buscadores.</li>
+            rel="noopener noreferrer">Cloudflare Workers</a></strong>:  Permite la redirección, control de caché y la gestión personalizada de peticiones, incluyendo 
+<code>fetch</code> para formularios, prerendering para bots y reglas según la URL o el <code>User-Agent</code>.</li>
       <li><strong><a href="https://www.figma.com" target="_blank" rel="noopener noreferrer">Figma</a></strong>:
         Herramienta de diseño utilizada para crear prototipos visuales interactivos,
         optimizados para una experiencia de usuario fluida y personalizada en cada sección.</li>

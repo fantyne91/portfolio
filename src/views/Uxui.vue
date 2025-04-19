@@ -84,7 +84,7 @@ onMounted(() => {
     nextTick(() => {
         setTimeout(() => {
             window.prerenderReady = true
-            console.log('✅ Prerender ready for', window.location.pathname)
+           
         }, 200)
     })
 })
