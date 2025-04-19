@@ -264,8 +264,10 @@ onUnmounted(() => {
                         éxito del negocio a largo plazo. </p>
                 </div>
                 <div>
-                    <a href="https://www.mariadevdesign.com/uxui#casos-uxui">Casos de estudio UX/UI </a>
-                    <a href="https://www.mariadevdesign.com/uxui#casos-games">Casos de estudio Videojuegos </a>
+                    <a href="https://www.mariadevdesign.com/uxui#casos-uxui" aria-label="casos estudio UXUI">Casos de estudio UX/UI </a>
+                    <a href="https://www.mariadevdesign.com/videojuegos#casos-games" aria-label="casos estudio videojuegos">Casos de estudio Videojuegos </a>
+                    <a href="https://www.mariadevdesign.com/programacion#donacion-plataforma" aria-label="Apoya proyecto animales">Ayúdame a salvar perritos ♡  </a>
+
                 </div>
             </div>
             <img  src="/images/psico-ux.webp" loading="lazy"

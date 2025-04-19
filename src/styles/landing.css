@@ -158,6 +158,13 @@
     text-align: center;
     padding: var(--space-xxs)var(--space-xs);
 }
+.exito-container a:nth-child(3){
+border: 3px solid var(--color-secondary);
+background-color: var(--color-soft-orange-grey);
+color:  var(--color-secondary);
+font-weight: 700;
+    
+}
 .exito-container a:hover{
     transform: scale(1.1);
     transition: transform 0.1s linear;
