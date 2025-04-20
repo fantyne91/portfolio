@@ -266,7 +266,7 @@ onUnmounted(() => {
                 <div>
                     <a href="https://www.mariadevdesign.com/uxui#casos-uxui" aria-label="casos estudio UXUI">Casos de estudio UX/UI </a>
                     <a href="https://www.mariadevdesign.com/videojuegos#casos-games" aria-label="casos estudio videojuegos">Casos de estudio Videojuegos </a>
-                    <a href="https://www.mariadevdesign.com/programacion#donacion-plataforma" aria-label="Apoya proyecto animales">Ayúdame a salvar perritos ♡  </a>
+                    <a href="https://www.mariadevdesign.com/programacion#futuro-animal" aria-label="Apoya proyecto animales">Ayúdame a salvar perritos ♡  </a>
 
                 </div>
             </div>

@@ -180,7 +180,7 @@ box-shadow: 0 0 10px var(--color-grey-3);
        
     }
 }
-.donacion-plataforma p {
+.futuro-animal p {
    color: var(--color-med-blue);
     font-size: clamp(0.9rem, 1vw, 1.2rem); 
     margin-bottom:  var(--space-md) ;
