@@ -232,6 +232,7 @@ onMounted(() => {
               contacto y seguimiento.</p>
             <p>Los usuarios pueden filtrar animales según criterios como ubicación, tamaño, edad o si requieren cuidados
               especiales, algo clave en casos como el de Boni, que fue usada para cría y tenía miedos específicos.</p>
+              <p> Y muchas más...</p>
           </li>
 
           <li>
