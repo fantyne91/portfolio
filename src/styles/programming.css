@@ -115,7 +115,7 @@
 .card-tecnologias  li{
     list-style: none;
     color: var(--color-dark-blue);
-    background-color:  rgb(237, 229, 201);
+    background-color:  rgb(245, 240, 221);
     padding: clamp(var(--space-xxs), 3vw, var(--space-sm));
     align-items: center;
     display: flex;
@@ -184,7 +184,7 @@ box-shadow: 0 0 10px var(--color-grey-3);
    color: var(--color-med-blue);
     font-size: clamp(0.9rem, 1vw, 1.2rem); 
     margin-bottom:  var(--space-md) ;
-    border: 1px solid var(--color-med-blue);
+    border: 2px solid var(--color-med-blue);
     padding: var(--space-xxs) var(--space-xs);
     border-radius: 20px;
     font-weight: 500;

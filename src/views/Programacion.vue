@@ -232,7 +232,7 @@ onMounted(() => {
               contacto y seguimiento.</p>
             <p>Los usuarios pueden filtrar animales según criterios como ubicación, tamaño, edad o si requieren cuidados
               especiales, algo clave en casos como el de Boni, que fue usada para cría y tenía miedos específicos.</p>
-              <p> Y muchas más...</p>
+            <p> Y muchas más...</p>
           </li>
 
           <li>
@@ -268,19 +268,21 @@ onMounted(() => {
           <img src="/images/animal.webp" loading="lazy" alt="imagen app web perfil animal" width="300">
           <img src="/images/busqueda.webp" loading="lazy" alt="imagen app web animal" width="300">
           <img src="/images/landing-animal.webp" loading="lazy" alt="imagen app landing web animal" width="300">
-      </div>
-      <div class="futuro-animal ">
-        <p>Mi objetivo a largo plazo es conseguir un sistema más justo. Mientras que en jaulas y calles hay demasiados
-          animales esperando una familia, algunos se lucran explotando animales, estimulando el abandono. Para arreglar
-          esto, es necesaria una estructura firme y global, un desarrollo y mantenimiento continuo, y sobretodo
-          personas... Por eso, te invito a colaborar como puedas! Si donas, o conoces a alguien que quiera aportar(
-          desarrollo web, legal, marketing...) podríamos conseguir el cambio juntos!</p>
-        <iframe id='kofiframe' src='https://ko-fi.com/mariadevdesign/?hidefeed=true&widget=true&embed=true&preview=true'
-          style='border:2px solid #0A526E;border-radius:20px ;width:100%;padding:4px;background:#f9f9f9;' height='570'
-          title='mariadevdesign'></iframe>
-      </div>
+        </div>
+        <div class="futuro-animal ">
+          <p>Mi objetivo a largo plazo es conseguir un sistema más justo. Mientras que en jaulas y calles hay demasiados
+            animales esperando una familia, algunos se lucran explotando animales, estimulando el abandono. Para
+            arreglar
+            esto, es necesaria una estructura firme y global, un desarrollo y mantenimiento continuo, y sobretodo
+            personas... Por eso, te invito a colaborar como puedas! Si conoces a alguien que quiera aportar(
+            desarrollo web, legal, marketing...)o donas, podríamos conseguir el cambio juntos!</p>
+          <iframe id='kofiframe'
+            src='https://ko-fi.com/mariadevdesign/?hidefeed=true&widget=true&embed=true&preview=true'
+            style='border:1px solid #0A526E;border-radius:20px ;width:100%;padding:4px;background:#f9f9f9;' height='570'
+            title='mariadevdesign'></iframe>
+        </div>
 
-    </div>
+      </div>
     </div>
 
   </section>
