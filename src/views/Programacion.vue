@@ -248,7 +248,7 @@ onMounted(() => {
           <li>
             <h4>Base de Datos (SQL - MySQL)</h4>
             <p>La base de datos estructura información de usuarios, animales, asociaciones y solicitudes. Esto permite
-              registrar casos como el de Duke, un perro usado como sparring, asegurando que su perfil incluya notas
+              registrar casos como el de Duke,asegurando que su perfil incluya notas
               específicas sobre su comportamiento y necesidades.</p>
             <p>Con relaciones bien definidas entre entidades, se pueden hacer búsquedas eficientes y rastrear el
               historial de adopciones o acogidas, facilitando la trazabilidad y confianza en el sistema.</p>
