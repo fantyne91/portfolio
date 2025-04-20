@@ -20,7 +20,8 @@ useMetaData({
   //   }
   // ],
   jsonLd: {    
-    "@type": "ProfessionalService", 
+    "@type": "Person",
+    "name": "María Ortiz",
     'description': 'Desarrollo web y personalización de CMS como WordPress y Shopify con tecnologías como PHP, JavaScript y Vue.js, con enfoque en SEO, rendimiento y diseño UX. Uso de Vue 3, Composition API, Prettier, Prerender.io, Cloudflare Workers, Figma, Lighthouse, Squoosh, ezgif, Google Fonts y más.',
     "serviceType": [
       "Desarrollo web personalizado",

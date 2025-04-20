@@ -44,7 +44,7 @@
                 ActiveCookie=false;
             });
         }
-        }, 10000);
+        }, 13000);
         
 
 </script>
@@ -118,7 +118,7 @@
             height: 70px;
             width: 400px;
          background-color: var(--color-secondary);
-            gap:var(--space-xxs);
+            gap:var(--space-xs);
             z-index: 6;
             text-align: center;
             justify-content: center;
