@@ -118,7 +118,7 @@
             height: 70px;
             width: 400px;
          background-color: var(--color-secondary);
-            gap:var(--space-xs);
+            gap:var(--space-xxs);
             z-index: 6;
             text-align: center;
             justify-content: center;
@@ -134,7 +134,8 @@
         }
         .cookie-buttons {
             display: flex;
-            width: fit-content;            
+            width: fit-content;
+            gap:var(--space-xxs);            
         }
         .cookie-buttons button{
             padding:var(--space-xxs);   
