@@ -125,7 +125,7 @@
             border-radius: 20px 0 0 20px;
             align-items: center;     
             padding-left: 80px;     
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
 
         }
         #cookie-banner p, .cookie-buttons button{
