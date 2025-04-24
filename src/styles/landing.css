@@ -172,11 +172,13 @@ font-weight: 700;
 .texto-exito{
   max-width: 800px;
   align-items: center;
+  
 }
 .texto-exito h2{
     font-size: clamp(1.4rem, 3vw, 2.3rem);
     max-width: 80%;
-    align-self: flex-start;  
+    text-align: center;
+    
 }
 .exito-container img{
     max-width: 350px;
