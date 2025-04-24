@@ -291,10 +291,11 @@ onUnmounted(() => {
         <h2 itemprop="name">PORTFOLIO</h2>
         <div class="imgs padding-Y-xs" itemprop="itemListElement" itemscope itemtype="https://schema.org/ImageGallery">
 
-            <div class="img-portfolio">
-                <img src="/images/designflow.webp" loading="lazy" alt="Diseño web UX/UI design and dev"
-                    itemprop="image" />
-            </div>
+            <video class="video" preload="none" loading="lazy" autoplay loop muted playsinline
+                alt="Diseño web UX/UI design flow">
+                <source src="/images/designflow.mp4" type="video/mp4">
+            </video>
+
             <!-- Imagen Tienda -->
             <div class="img-portfolio">
                 <img src="/images/bag.webp" loading="lazy" alt="Diseño web UX/UI tienda online" itemprop="image" />
@@ -304,12 +305,6 @@ onUnmounted(() => {
                 <img class="casa" src="/images/casa.webp" loading="lazy" alt="Diseño web UX/UI casas prefabricadas"
                     itemprop="image" />
             </div>
-            <!-- Video Cupcake -->
-            <video class="video" preload="none" loading="lazy" autoplay loop muted playsinline
-                alt="Diseño web UX/UI tienda online">
-                <source src="/images/cupcakes.mp4" type="video/mp4">
-            </video>
-
 
 
 
@@ -318,7 +313,10 @@ onUnmounted(() => {
             <div class="img-portfolio">
                 <img src="/images/games.webp" loading="lazy" alt="Diseño web UX/UI tienda gamer" itemprop="image" />
             </div>
-
+            <video class="video" preload="none" loading="lazy" autoplay loop muted playsinline
+                alt="Diseño web UX/UI candle shop">
+                <source src="/images/candleseason.mp4" type="video/mp4">
+            </video>
             <!-- Imagen Plantas -->
             <div class="img-portfolio">
                 <img src="/images/plant.webp" loading="lazy" alt="Diseño web UX/UI tienda plantas" itemprop="image" />
@@ -332,7 +330,11 @@ onUnmounted(() => {
             <div class="img-portfolio">
                 <img src="/images/bank.webp" loading="lazy" alt="Diseño web UX/UI app bancaria" itemprop="image" />
             </div>
-
+            <!-- Video Cupcake -->
+            <video class="covervideo" preload="none" loading="lazy" autoplay loop muted playsinline
+                alt="Diseño web UX/UI tienda online cupcakes">
+                <source src="/images/cupcakes.mp4" type="video/mp4">
+            </video>
             <!-- Imagen Zen -->
             <div class="img-portfolio">
                 <img src="/images/zen.webp" loading="lazy" alt="Diseño web UX/UI app Zen" itemprop="image" />
@@ -349,7 +351,7 @@ onUnmounted(() => {
             </div>
 
             <!-- Video Omega -->
-            <video class="video" preload="none" loading="lazy" autoplay loop muted playsinline
+            <video class="covervideo" preload="none" loading="lazy" autoplay loop muted playsinline
                 alt="Diseño web UX/UI joyeria">
                 <source src="/images/intro-omega.mp4" type="video/mp4">
             </video>

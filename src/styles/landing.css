@@ -225,13 +225,17 @@ font-weight: 700;
     height:290.81px;
     border-radius: 5px;
 }
-video{
-  object-fit: cover;
+.video{
+  object-fit: contain;
+  background-color: black;
 }
 
 .imgs .casa {
     height: 315px;
     margin-bottom: -20px;
+}
+.covervideo{
+    object-fit: cover;
 }
 
 @media (max-width: 799px) {

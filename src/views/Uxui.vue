@@ -109,7 +109,7 @@ onMounted(() => {
                     </p>
                     <h3>El equilibrio perfecto entre eficiencia y escalabilidad</h3>
                 </div>
-                <img class="img-pc" src="/images/Designers.webp" alt="El Ux/ui es vital para cualquier empresa">
+                <img class="img-pc" src="/images/designers.png" alt="El Ux/ui es vital para cualquier empresa">
             </div>
         </section>
 
