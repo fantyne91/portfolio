@@ -148,8 +148,14 @@
     font-weight: 500;
      color: var(--color-secondary);
 }
-
+.exito-container .casos{
+    display: flex;
+   flex-direction: column;
+    gap: var(--space-xs);
+    max-width: 400px;
+}
 .exito-container a{
+    border: 3px solid var(--color-secondary);
     width: 250px;
     color: var(--color-grey-0);
     display: block;
@@ -159,7 +165,7 @@
     padding: var(--space-xxs)var(--space-xs);
 }
 .exito-container a:nth-child(3){
-border: 3px solid var(--color-secondary);
+
 background-color: var(--color-soft-orange-grey);
 color:  var(--color-secondary);
 font-weight: 700;
@@ -169,8 +175,7 @@ font-weight: 700;
     transform: scale(1.1);
     transition: transform 0.1s linear;
 }
-.texto-exito{
-  max-width: 800px;
+.texto-exito{  
   align-items: center;
   
 }
@@ -180,9 +185,8 @@ font-weight: 700;
     text-align: center;
     
 }
-.exito-container img{
-    max-width: 350px;
-}
+
+
 
 /**PORTFOLIO*/
 .portfolio{

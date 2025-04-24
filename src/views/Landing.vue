@@ -247,35 +247,35 @@ onUnmounted(() => {
 
     <section class="exito-container">
 
-        <div class="flex-row">
+
+        <div class=" flex-row ">
+
             <div class="texto-exito p-column-sm flex">
                 <h2> El éxito de cualquier empresa nace de la satisfacción de sus usuarios </h2>
-                <div>
-                    <p> Ya sea un servicio, un sitio web o videojuego, el éxito dependerá de una comprensión de las
-                        necesidades
-                        del usuario.</p>
-                    <p> Tener una plataforma visualmente atractiva es solo parte del desafío, lo vital es asegurar que
-                        los
-                        usuarios puedan interactuar con facilidad, sin obstáculos que generen frustración o abandono.
-                    </p>
-                    <p> Identificar y corregir esos puntos de fricción es clave para aumentar la satisfacción del
-                        usuario
-                        y el
-                        éxito del negocio a largo plazo. </p>
-                </div>
-                <div>
-                    <a href="https://www.mariadevdesign.com/uxui#casos-uxui" aria-label="casos estudio UXUI">Casos de
-                        estudio UX/UI </a>
-                    <a href="https://www.mariadevdesign.com/videojuegos#casos-games"
-                        aria-label="casos estudio videojuegos">Casos de estudio Videojuegos </a>
-                    <a href="https://www.mariadevdesign.com/programacion#futuro-animal"
-                        aria-label="Apoya proyecto animales">Ayúdame a salvar perritos ♡ </a>
-
-                </div>
+                <p> Ya sea un servicio, un sitio web o videojuego, el éxito dependerá de una comprensión de las
+                    necesidades
+                    del usuario.</p>
+                <p> Tener una plataforma visualmente atractiva es solo parte del desafío, lo vital es asegurar que
+                    los
+                    usuarios puedan interactuar con facilidad, sin obstáculos que generen frustración o abandono.
+                </p>
+                <p> Identificar y corregir esos puntos de fricción es clave para aumentar la satisfacción del
+                    usuario
+                    y el
+                    éxito del negocio a largo plazo. </p>
             </div>
-            <img src="/images/psico-ux.webp" loading="lazy" alt="imagen usabilidad,empativa y psicologia en ux/ui"
-                width="350" height="300" />
+            <div class=" casos">
+                <a href="https://www.mariadevdesign.com/uxui#casos-uxui" aria-label="casos estudio UXUI">Casos de
+                    estudio UX/UI </a>
+                <a href="https://www.mariadevdesign.com/videojuegos#casos-games"
+                    aria-label="casos estudio videojuegos">Casos de estudio Videojuegos </a>
+                <a href="https://www.mariadevdesign.com/programacion#futuro-animal"
+                    aria-label="Apoya proyecto animales">Ayúdame a salvar perritos ♡ </a>
+
+            </div>
         </div>
+
+
     </section>
 
     <div class="wave-container">
