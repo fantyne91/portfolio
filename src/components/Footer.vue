@@ -84,6 +84,7 @@
         display: flex;
         align-items: center;
         height: 48px;
+        bottom:0;
     }
 
     footer a {

@@ -7,7 +7,8 @@ import Uxui from '../views/Uxui.vue'
  import SobreMi from '../views/SobreMi.vue'
  import Videojuegos from '../views/Videojuegos.vue'
 import Forms from '../views/Forms.vue'
-import Thanks from '../components/Thanks.vue' 
+import Thanks from '../components/Thanks.vue'
+import CoopAnimalista from '../views/CoopAnimalista.vue' 
  import NotFound from '../views/NotFound.vue'; // Asegúrate de que la ruta sea correcta
 // Define las rutas
 const routes = [
@@ -47,11 +48,16 @@ const routes = [
     name: 'Thanks',
     component: Thanks,
   },
-   {
-     path: '/:pathMatch(.*)*', // Captura TODAS las rutas no definidas
-     name: 'NotFound',
-     component: NotFound,
-   },
+  {
+    path: '/coopAnimalista',
+    name: 'CoopAnimalista',
+    component: CoopAnimalista,
+  },
+  {
+    path: '/:pathMatch(.*)*', // Captura TODAS las rutas no definidas
+    name: 'NotFound',
+    component: NotFound,
+  },
 ]
 
 // Configura el router

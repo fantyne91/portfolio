@@ -249,7 +249,7 @@ onUnmounted(() => {
 
         <div class="flex-row">
             <div class="texto-exito p-column-sm flex">
-                <h2 > El éxito de cualquier empresa nace de la satisfacción de sus usuarios </h2>
+                <h2> El éxito de cualquier empresa nace de la satisfacción de sus usuarios </h2>
                 <div>
                     <p> Ya sea un servicio, un sitio web o videojuego, el éxito dependerá de una comprensión de las
                         necesidades
@@ -264,14 +264,17 @@ onUnmounted(() => {
                         éxito del negocio a largo plazo. </p>
                 </div>
                 <div>
-                    <a href="https://www.mariadevdesign.com/uxui#casos-uxui" aria-label="casos estudio UXUI">Casos de estudio UX/UI </a>
-                    <a href="https://www.mariadevdesign.com/videojuegos#casos-games" aria-label="casos estudio videojuegos">Casos de estudio Videojuegos </a>
-                    <a href="https://www.mariadevdesign.com/programacion#futuro-animal" aria-label="Apoya proyecto animales">Ayúdame a salvar perritos ♡  </a>
+                    <a href="https://www.mariadevdesign.com/uxui#casos-uxui" aria-label="casos estudio UXUI">Casos de
+                        estudio UX/UI </a>
+                    <a href="https://www.mariadevdesign.com/videojuegos#casos-games"
+                        aria-label="casos estudio videojuegos">Casos de estudio Videojuegos </a>
+                    <a href="https://www.mariadevdesign.com/programacion#futuro-animal"
+                        aria-label="Apoya proyecto animales">Ayúdame a salvar perritos ♡ </a>
 
                 </div>
             </div>
-            <img  src="/images/psico-ux.webp" loading="lazy"
-                alt="imagen usabilidad,empativa y psicologia en ux/ui" width="350" height="300" />
+            <img src="/images/psico-ux.webp" loading="lazy" alt="imagen usabilidad,empativa y psicologia en ux/ui"
+                width="350" height="300" />
         </div>
     </section>
 
@@ -288,22 +291,28 @@ onUnmounted(() => {
         <h2 itemprop="name">PORTFOLIO</h2>
         <div class="imgs padding-Y-xs" itemprop="itemListElement" itemscope itemtype="https://schema.org/ImageGallery">
 
-            <!-- Video Cupcake -->
-            <video class="video" preload="none" loading="lazy"  autoplay loop muted playsinline
-                alt="Diseño web UX/UI tienda online">
-                <source src="/images/cupcakes.mp4" type="video/mp4">
-            </video>
-
+            <div class="img-portfolio">
+                <img src="/images/designflow.webp" loading="lazy" alt="Diseño web UX/UI design and dev"
+                    itemprop="image" />
+            </div>
             <!-- Imagen Tienda -->
             <div class="img-portfolio">
                 <img src="/images/bag.webp" loading="lazy" alt="Diseño web UX/UI tienda online" itemprop="image" />
             </div>
-
             <!-- Imagen Casas -->
             <div>
                 <img class="casa" src="/images/casa.webp" loading="lazy" alt="Diseño web UX/UI casas prefabricadas"
                     itemprop="image" />
             </div>
+            <!-- Video Cupcake -->
+            <video class="video" preload="none" loading="lazy" autoplay loop muted playsinline
+                alt="Diseño web UX/UI tienda online">
+                <source src="/images/cupcakes.mp4" type="video/mp4">
+            </video>
+
+
+
+
 
             <!-- Imagen Juegos -->
             <div class="img-portfolio">
@@ -340,7 +349,7 @@ onUnmounted(() => {
             </div>
 
             <!-- Video Omega -->
-            <video class="video" preload="none" loading="lazy"  autoplay loop muted playsinline
+            <video class="video" preload="none" loading="lazy" autoplay loop muted playsinline
                 alt="Diseño web UX/UI joyeria">
                 <source src="/images/intro-omega.mp4" type="video/mp4">
             </video>
