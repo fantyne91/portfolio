@@ -164,7 +164,7 @@
     text-align: center;
     padding: var(--space-xxs)var(--space-xs);
 }
-.exito-container a:nth-child(3){
+.exito-container a:nth-child(4){
 
 background-color: var(--color-soft-orange-grey);
 color:  var(--color-secondary);
@@ -185,7 +185,17 @@ font-weight: 700;
     text-align: center;
     
 }
-
+.exito-container .calendar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-xs);
+    margin-bottom: var(--space-md);
+   
+}
+.exito-container .calendar svg{
+    width: 50px;
+}
 
 
 /**PORTFOLIO*/
