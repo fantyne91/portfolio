@@ -130,7 +130,7 @@ video, img{
        padding: 0;
        align-self: flex-start;
         text-align: unset;
-        color: rgb(80, 44, 3);        
+                
     }
     .container-motivos-ux ul {
         height: 400px; 
@@ -158,18 +158,18 @@ video, img{
     .container-motivos-ux p{
         opacity: 0;
         visibility: hidden;
-       color: var(--color-secondary);
+ 
        font-weight: 500;
     }
     .container-motivos-ux li:hover{
-        background-color: rgb(142, 125, 88);
-        border-radius: 30px;        
+        
+        border-radius: 20px;        
         height: auto;
         margin: 0;
         z-index: 3;
         transform: translateY(-10%);
-        transition: border-radius 0.3s linear;  
-        box-shadow: 0 0 150px var(--color-grey-5);               
+        transition: border-radius 0.2s linear;  
+        box-shadow: 0 0 10px var(--color-orange);               
     }
     .container-motivos-ux li:hover .material-symbols-rounded {   
    font-size: 10px; 
@@ -178,7 +178,7 @@ video, img{
     .container-motivos-ux li:hover p{
         opacity: 1;
         visibility: visible;           
-        color: var(--color-secondary);        
+              
         transition: all 0.3s linear; 
     }
   
