@@ -157,18 +157,19 @@
 .exito-container a{
     border: 3px solid var(--color-secondary);
     width: 250px;
-    color: var(--color-grey-0);
+    color: var(--color-grey-1);
     display: block;
     background-color: var(--color-secondary);
     border-radius: 15px;
     text-align: center;
     padding: var(--space-xxs)var(--space-xs);
+    
 }
 .exito-container a:nth-child(4){
-
+font-weight: 700;
 background-color: var(--color-soft-orange-grey);
 color:  var(--color-secondary);
-font-weight: 700;
+
     
 }
 .exito-container a:hover{
@@ -191,6 +192,7 @@ font-weight: 700;
     align-items: center;
     gap: var(--space-xs);
     margin-bottom: var(--space-md);
+    color:var(--color-grey-0)
    
 }
 .exito-container .calendar svg{
