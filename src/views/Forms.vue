@@ -35,7 +35,7 @@ onMounted(() => {
         window.prerenderReady = true       
       }, 200)
     })
-  
+  console.log('mounted')
 
 })
 

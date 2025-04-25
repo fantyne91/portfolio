@@ -3,7 +3,8 @@
 
 <script setup>
 import '../styles/forms.css'
-import { onMounted, onUnmounted, nextTick } from 'vue'
+import { onMounted, nextTick, onActivated, onDeactivated } from 'vue'
+
 import { useMetaData } from '@/composables/useMetaData'
 
 useMetaData({
@@ -46,6 +47,7 @@ useMetaData({
         }  
 
 })
+
 
 
 // Funciones para efecto hover de imágenes
@@ -118,16 +120,18 @@ onMounted(() => {
                 
             }, 200)
         })
-   
-
-    
+})
+onActivated(() => {
+    // Resetea el scroll y aplica opacidad desde el inicio
+    window.scrollTo({ top: 0, behavior: 'auto' })
+    handleScroll()
     window.addEventListener('scroll', handleScroll)
 })
-
-// Limpiar eventos al desmontar
-onUnmounted(() => {
-  window.removeEventListener('scroll', handleScroll)
+onDeactivated(() => {
+    window.removeEventListener('scroll', handleScroll)
 })
+
+
 </script>
 
 <template>
@@ -266,19 +270,7 @@ onUnmounted(() => {
 
             </div>
             <div class=" casos">
-                <a class="calendar" href="https://calendly.com/mjortiz93" aria-label="Solicitar llamada calendar">
-                    Solicitar una reunión
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                        <g id="SVGRepo_iconCarrier">
-                            <path
-                                d="M3 9H21M17 13.0014L7 13M10.3333 17.0005L7 17M7 3V5M17 3V5M6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V8.2C21 7.07989 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21Z"
-                                stroke="#be8d4e" stroke-width="0.792" stroke-linecap="round" stroke-linejoin="round">
-                            </path>
-                        </g>
-                    </svg>
-                </a>
+
                 <a href="https://www.mariadevdesign.com/uxui#casos-uxui" aria-label="casos estudio UXUI">Casos de
                     estudio UX/UI </a>
                 <a href="https://www.mariadevdesign.com/videojuegos#casos-games"
@@ -299,6 +291,38 @@ onUnmounted(() => {
             </path>
         </svg>
     </div>
+    <section class="why-container" role="region" aria-label="Sección de reunion">
+        <div class="flex-row">
+            <div>
+                <h2 class="contacta">¿Por qué trabajar conmigo?</h2>
+                <ul>
+                    <li>
+                        <p>Porque estarás acompañado en todo el proceso, estemos diseñando o programando me enfocaré en que
+                            tu
+                            proyecto sea un éxito. Para ello me involucro al 100% en cada
+                            proyecto.</p>
+                    </li>
+                    <li>
+                        <p>Porque me gusta lo que hago y disfruto cada día aprendiendo y mejorando mis habilidades.</p>
+                    </li>
+
+                </ul>
+            </div>
+            <a class="calendar" href="https://calendly.com/mjortiz93" aria-label="Solicitar llamada calendar">
+                Solicitar una reunión
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M3 9H21M17 13.0014L7 13M10.3333 17.0005L7 17M7 3V5M17 3V5M6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V8.2C21 7.07989 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21Z"
+                            stroke="#19191c" stroke-width="0.792" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                    </g>
+                </svg>
+            </a>
+        </div>
+    </section>
 
     <section class="portfolio" itemscope itemtype="https://schema.org/ItemList">
 
