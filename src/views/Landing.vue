@@ -267,7 +267,7 @@ onUnmounted(() => {
             </div>
             <div class=" casos">
                 <a class="calendar" href="https://calendly.com/mjortiz93" aria-label="Solicitar llamada calendar">
-                    Solicitar una cita
+                    Solicitar una reunión
                     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
