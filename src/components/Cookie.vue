@@ -5,7 +5,7 @@
     if (ActiveCookie===true){
             const cookie = document.getElementById('cookie-banner'); 
             cookie.style.opacity = 1; // Cambia la opacidad a 1 para mostrar el banner
-            cookie.style.transform = 'translateX(-100px)'; // Cambia la transformación para mostrar el banner
+            cookie.style.transform = 'translateX(-100px)'; 
             cookie.style.transition= 'all 2s ease-in'; // Añade una transición suave
 
             
