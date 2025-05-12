@@ -2,7 +2,7 @@
 import '../styles/uxui.css'
 
 import {onMounted, nextTick} from 'vue'
-import FloatingContactButton from '../components/FloatingContactButton.vue';
+
 import { useMetaData } from '@/composables/useMetaData'
 
 useMetaData({
@@ -598,7 +598,7 @@ onMounted(() => {
 
             </div>
         </section>
-        <FloatingContactButton />
+       
     </template>
    
   

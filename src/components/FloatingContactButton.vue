@@ -48,25 +48,25 @@
 </style>
 
 <script setup>
-import { computed, onMounted } from 'vue';
-import { useRouter, useRoute } from 'vue-router';
+// import { computed, onMounted } from 'vue';
+// import { useRouter, useRoute } from 'vue-router';
 
-const router = useRouter();
-const route = useRoute();
+// const router = useRouter();
+// const route = useRoute();
 
-const showButton = computed(() =>
-    [ 'Uxui', 'Programacion', 'Videojuegos' ].includes(route.name)
-);
-const goToContact = () => {
-    localStorage.setItem('fromPage', route.name); 
-    router.push('/contacta');                    
-};
+// const showButton = computed(() =>
+//     [ 'Uxui', 'Programacion', 'Videojuegos' ].includes(route.name)
+// );
+// const goToContact = () => {
+//     localStorage.setItem('fromPage', route.name); 
+//     router.push('/contacta');                    
+// };
 
-onMounted(() => {
-    document.querySelectorAll('.contact-btn').forEach(button => {
-        button.addEventListener('click', goToContact);
-    });
-});
+// onMounted(() => {
+//     document.querySelectorAll('.contact-btn').forEach(button => {
+//         button.addEventListener('click', goToContact);
+//     });
+// });
 </script>
 <template>
     <button v-if="showButton" role="link" class="floating-btn p-align flex" @click="goToContact">

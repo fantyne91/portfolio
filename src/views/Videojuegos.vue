@@ -2,7 +2,7 @@
 <script setup>
 import '../styles/games.css'
 import { onMounted, nextTick } from 'vue'
-import FloatingContactButton from '../components/FloatingContactButton.vue';
+
 import { useMetaData } from '@/composables/useMetaData'
 
 useMetaData({
@@ -733,6 +733,6 @@ onMounted(() => {
       </div>
     </div>
   </section>
-  <FloatingContactButton />
+  
 </template>
   

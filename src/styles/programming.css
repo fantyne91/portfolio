@@ -67,7 +67,7 @@
 
 .section-proyect{    
     color:var(--color-primary);
-    background-color: var(--color-grey-0);
+    background-color: white;
     align-items: start;
     h2{color: rgb(255, 227, 145);}
     h3{ font-weight: 600; 

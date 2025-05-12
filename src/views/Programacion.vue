@@ -1,7 +1,7 @@
 <script setup>
 import '../styles/programming.css'
 import { onMounted, nextTick } from 'vue'
-import FloatingContactButton from '../components/FloatingContactButton.vue';
+
 import { useMetaData } from '@/composables/useMetaData'
 
 useMetaData({
@@ -278,7 +278,7 @@ onMounted(() => {
             desarrollo web, legal, marketing...)o donas, podríamos conseguir el cambio juntos!</p>
           <iframe id='kofiframe'
             src='https://ko-fi.com/mariadevdesign/?hidefeed=true&widget=true&embed=true&preview=true'
-            style='border:1px solid #0A526E;border-radius:20px ;width:100%;padding:4px;background:#f9f9f9;' height='570'
+            style='border:none;border-radius:20px ;width:100%;padding:4px;background:#f9f9f9;' height='570'
             title='mariadevdesign'></iframe>
         </div>
 
@@ -356,6 +356,6 @@ onMounted(() => {
     <!-- <h3>📊 Resultado Lighthouse</h3> -->
     <!-- <img src="/img/lighthouse-100.png" alt="Resultados Lighthouse: 100/100" style="max-width:100%;" loading="lazy" /> -->
   </section>
-  <FloatingContactButton />
+
 </template>
     

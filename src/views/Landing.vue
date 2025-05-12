@@ -120,6 +120,7 @@ onMounted(() => {
                 
             }, 200)
         })
+
 })
 onActivated(() => {
     // Resetea el scroll y aplica opacidad desde el inicio
@@ -240,13 +241,48 @@ onDeactivated(() => {
 
         <div class="contacta container-column-sm flex align-center" role="region" aria-label="Sección de contacto">
             <p role="alert">¡Cada proyecto es único!</p>
-            <button class="big-btn contact-btn" role="link"
+            <button class="big-btn contact-btn" role="link" @click="goToContact"
                 aria-label="Contactar para servicios de desarrollo web y diseño">
                 Contactar Ahora
             </button>
         </div>
     </section>
+    <section class="last-project">
+        <div class="flex-row">
+            <div>
+                <h2>Mi último proyecto</h2>
 
+                <h3>Web modular con Vue 3 y objetos 3D interactivos</h3>
+                <p>
+                    Desarrollé una aplicación web modular para la exploración de plantas y huertos urbanos, estructurada
+                    con
+                    <strong>componentes reutilizables en Vue 3</strong> y <strong>rutado dinámico</strong> para cada
+                    sección
+                    temática.
+                </p>
+                <p>
+                    Incorporé objetos <strong>3D interactivos con Three.js</strong> para enriquecer la experiencia
+                    visual.
+                </p>
+                <p>
+                    La interfaz UX se diseñó con un enfoque claro y accesible, implementando filtros por categoría de
+                    plantas "fáciles".
+                    El código se organizó en módulos escalables, facilitando el mantenimiento y la expansión del
+                    proyecto.
+                </p>
+                <p>
+                    Tecnologías utilizadas: <strong>Vue 3 (Composition API)</strong>, <strong>Three.js</strong>,
+                    <strong>CSS
+                        modular</strong>, lazy loading, y renderizado optimizado para despliegue web.
+                </p>
+            </div>
+            <a href="https://plantaycome.netlify.app/" class="button-primary" aria-label="Ver proyecto Plantas"
+                target="_blank">
+                Ver Proyecto Plantas
+            </a>
+        </div>
+
+    </section>
 
 
     <section class="exito-container">
@@ -271,11 +307,12 @@ onDeactivated(() => {
             </div>
             <div class=" casos">
 
-                <a href="https://www.mariadevdesign.com/uxui#casos-uxui" aria-label="casos estudio UXUI">Casos de
+                <a class="button-primary" href="https://www.mariadevdesign.com/uxui#casos-uxui"
+                    aria-label="casos estudio UXUI">Casos de
                     estudio UX/UI </a>
-                <a href="https://www.mariadevdesign.com/videojuegos#casos-games"
+                <a class="button-primary" href="https://www.mariadevdesign.com/videojuegos#casos-games"
                     aria-label="casos estudio videojuegos">Casos de estudio Videojuegos </a>
-                <a href="https://www.mariadevdesign.com/programacion#futuro-animal"
+                <a class="button-secondary" href="https://www.mariadevdesign.com/programacion#futuro-animal"
                     aria-label="Apoya proyecto animales">Ayúdame a salvar perritos ♡ </a>
 
             </div>
@@ -286,7 +323,7 @@ onDeactivated(() => {
 
     <div class="wave-container">
         <svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-            <path fill="#ffffff"
+            <path fill="#ffd27f"
                 d="M0,40 C180,60 360,70 540,50 C720,30 900,10 1080,20 C1260,30 1440,60 1440,60 L1440,100 L0,100 Z">
             </path>
         </svg>
@@ -297,7 +334,8 @@ onDeactivated(() => {
                 <h2 class="contacta">¿Por qué trabajar conmigo?</h2>
                 <ul>
                     <li>
-                        <p>Porque estarás acompañado en todo el proceso, estemos diseñando o programando me enfocaré en que
+                        <p>Porque estarás acompañado en todo el proceso, estemos diseñando o programando me enfocaré en
+                            que
                             tu
                             proyecto sea un éxito. Para ello me involucro al 100% en cada
                             proyecto.</p>
@@ -323,7 +361,13 @@ onDeactivated(() => {
             </a>
         </div>
     </section>
-
+    <div class="wave-container2">
+        <svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path fill="#ffffff"
+                d="M0,40 C180,60 360,70 540,50 C720,30 900,10 1080,20 C1260,30 1440,60 1440,60 L1440,100 L0,100 Z">
+            </path>
+        </svg>
+    </div>
     <section class="portfolio" itemscope itemtype="https://schema.org/ItemList">
 
         <h2 itemprop="name">PORTFOLIO</h2>
