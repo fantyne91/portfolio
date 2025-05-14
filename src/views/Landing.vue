@@ -276,10 +276,17 @@ onDeactivated(() => {
                         modular</strong>, lazy loading, y renderizado optimizado para despliegue web.
                 </p>
             </div>
-            <a href="https://plantaycome.netlify.app/" class="button-primary" aria-label="Ver proyecto Plantas"
-                target="_blank">
-                Ver Proyecto Plantas
-            </a>
+            <div class="video-lastProject flex">
+                <video class="video" preload="none" loading="lazy" width="500" autoplay loop muted playsinline
+                    alt="Diseño web 3D plantas">
+                    <source src="/images/video-plants.mp4" type="video/mp4">
+                </video>
+                <a href="https://plantaycome.netlify.app/" class="button-primary" aria-label="Ver proyecto Plantas"
+                    target="_blank">
+                    Ver Proyecto Plantas
+                </a>
+            </div>
+
         </div>
 
     </section>

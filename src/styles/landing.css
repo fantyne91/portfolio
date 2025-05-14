@@ -155,7 +155,11 @@
     height:200px;
     z-index: -1;
 }
-
+.last-project .video-lastProject{
+    align-items:center;
+    justify-items: center;
+    gap: 24px;
+}
 
 /*EXITO LANDING*/
 .exito-container{
