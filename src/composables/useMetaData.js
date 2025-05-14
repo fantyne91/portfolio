@@ -29,6 +29,7 @@ export function useMetaData({
       sameAs: [
         'https://www.linkedin.com/in/maria-ortiz91',
         'https://github.com/fantyne91',
+        'https://x.com/MariaDevDesign',
       ],
     },
     inLanguage: 'es',
