@@ -143,7 +143,7 @@
     border-radius:0 150px 150px 0 ;
     position: relative;
     font-weight: 500;
-    box-shadow: 0px 0px 4px var(--color-grey-4);
+    
     
 }.last-project::after{
     content:"" ;
@@ -159,6 +159,11 @@
     align-items:center;
     justify-items: center;
     gap: 24px;
+    width: 100%;
+}
+.video-lastProject video{
+    max-width:500px;
+    width: 100%;
 }
 
 /*EXITO LANDING*/
@@ -199,7 +204,7 @@
   display: block;
   width: 100%;
   height: 60px;
-  
+  filter: drop-shadow(0 -10px 4px rgba(145, 116, 71, 0.732));
 }
 .wave-container2 svg {
     display: block;
@@ -214,8 +219,8 @@
     font-weight: 500;   
 }
 .why-container h2{
-    font-size: clamp(1.4rem, 3vw, 2.3rem);
-    max-width: 80%;
+    font-size: clamp(1.7rem, 3vw, 2.3rem);
+    max-width: 100%;
     text-align: center;
     margin-bottom: var(--space-md);
     font-family: DancingScript;

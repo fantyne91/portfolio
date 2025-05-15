@@ -234,7 +234,7 @@ li *:not(:last-child){
     max-width: 100%;
    
 }
-.flex-row>*{
+.flex-row > *{
     flex: 1 0.5;
     min-width: 280px; 
     width: 100%;
@@ -340,7 +340,12 @@ a, button {
     border-radius: 15px;
     text-align: center;
     padding: var(--space-xxs)var(--space-xs);
-    
+    align-items: center;
+    justify-items: center;
+}
+.button-primary:hover, .button-secondary:hover{
+    transform: scale(1.1);
+    transition: transform 0.1s linear;
 }
 .button-secondary{
     font-weight: 700;   
@@ -352,10 +357,7 @@ a, button {
     text-align: center;
     padding: var(--space-xxs)var(--space-xs);
     }
-    .button-primary:hover, .button-secondary:hover{
-        transform: scale(1.1);
-        transition: transform 0.1s linear;
-    }
+   
 /**IMG*/
 .container-img {    
   max-width: 450px; 
@@ -414,7 +416,7 @@ figure{
    .flex-row{
         flex-direction: column;      
    }
-   .flex-row *{        
+   .flex-row *:not(a){        
         text-align: left ;
    }   
 }

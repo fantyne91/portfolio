@@ -277,7 +277,7 @@ onDeactivated(() => {
                 </p>
             </div>
             <div class="video-lastProject flex">
-                <video class="video" preload="none" loading="lazy" width="500" autoplay loop muted playsinline
+                <video class="video" preload="none" loading="lazy"  autoplay loop muted playsinline
                     alt="Diseño web 3D plantas">
                     <source src="/images/video-plants.mp4" type="video/mp4">
                 </video>

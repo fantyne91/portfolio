@@ -109,18 +109,18 @@ onMounted(() => {
 
 <template>
 
-  <section class="header-games" >
+  <section class="header-games">
     <h1 itemprop="headline"> Unreal engine y diseño UX/UI <br>para videojuegos</h1>
-    <div class="container-header container-column-md flex align-center" >
+    <div class="container-header container-column-md flex align-center">
 
-      <h2 > El UX/UI en videojuegos es el vestíbulo del jugador.</h2>
+      <h2> El UX/UI en videojuegos es el vestíbulo del jugador.</h2>
       <div class="p-column-sm flex  padding-sm">
-        <p class="p-games p-align" >
+        <p class="p-games p-align">
           Los videojuegos no solo divierten, también estimulan la memoria, la creatividad y la toma de decisiones.
         </p>
         <div class="p-column-xxs flex">
           <h3 class="beneficios-games">Beneficios cognitivos</h3>
-          <p >
+          <p>
             La neurociencia confirma su impacto positivo en todas las edades: desde mejorar el aprendizaje en niños
             hasta
             retrasar el deterioro cognitivo en mayores. Además, son clave en accesibilidad, con experiencias adaptadas
@@ -267,12 +267,13 @@ onMounted(() => {
           <div>
             <h4>Contexto</h4>
             <p>
-              Para mí, Frostpunk 1 no es solo un juego, es una obra de arte de la estrategia.
+              Para mí, Frostpunk 1 no es solo un juego, es una obra de arte en todos los sentidos, historia, métricas y
+              estrategia.
             </p>
-            <p>Conté los minutos hasta el
-              lanzamiento de Frostpunk 2. Tras algunos retrasos llegó el gran día, y como en el primero
+            <p>Conté los minutos hasta el lanzamiento de Frostpunk 2. Tras algunos retrasos llegó el gran día, y como en
+              el primero
               el impresionante diseño visual me fascinó, pero a medida que pasaban los minutos mi entusiasmo se iba
-              desvaneciendo...y como a mí, a muchos de sus fans.
+              desvaneciendo...
             </p>
             <p>Frostpunk 1 es un juego en un ambiente apocalíptico donde la estrategia gira entorno a los minutos, una
               estrategia milimétrica que da una sensación adictiva de acción constante controlada, esa acción-reacción
@@ -289,7 +290,8 @@ onMounted(() => {
 
         <div class="flex-row padding-Y-xs">
           <div>
-            <p>En contraste, Frostpunk 2 se siente más como un simulador político. Las facciones se convierten en el eje
+            <p>En contraste, Frostpunk 2 para mí se siente más como un simulador político. Las facciones se convierten
+              en el eje
               principal de la estrategia, diluyendo la urgencia y la conexión emocional del original. El enfoque se
               centra
               en equilibrar intereses y esperar largos periodos para que algo significativo ocurra, lo que rompe la
@@ -315,9 +317,10 @@ onMounted(() => {
               comentarios positivos y
               9mil negativos(6.98%) de FrostPunk1.</p>
             <p> En Steam Spy, Frostpunk1 sigue teniendo más jugadores diarios que FrostPunk2.</p>
-            <p> Comentar que 11bit Studios valora enormemente a sus usuarios, y algunos de los problemas detectados han
+            <p> Destacar que 11bit Studios ha demostrado valorar enormemente a sus usuarios, y algunos de los problemas
+              detectados han
               sido
-              rectificados posteriormente en sus actualizaciones.</p>
+              rectificados muy rápidamente en sus actualizaciones.</p>
           </div>
           <img class="img-pc" src="/images/opinion-frost2.webp" loading="lazy" alt=" opinion videojuego Frostpunk2"
             width="300" />
@@ -341,11 +344,12 @@ onMounted(() => {
             videojuegos- es
             un robot que puede hacer trabajos de humano con ciertas características, es decir una herramienta que juega
             con unas
-            normas propias y según la estrategia te puede interesar, o no. Qué es un autómata en Frostpunk2? Un autómata
-            = 800
+            normas propias y según la estrategia te puede interesar, o no. En cambio en Frostpunk2 un autómata es
+            igual sumar 800
             habitantes.</p>
           <h5>Tiempos de Construcción y Recursos Desproporcionados:</h5>
-          <p>Una partida que comienza con 8000 habitantes, de los cuales pueden trabajar 4800 (adultos), temperatura
+          <p>Situación:Una partida que comienza con 8000 habitantes, de los cuales pueden trabajar 4800 (adultos),
+            temperatura
             exterior a
             menos -20º en un ambiente apocalíptico.</p>
           <ul>
@@ -360,7 +364,7 @@ onMounted(() => {
                 4 meses-, aparece la necesidad constante de adelantar el tiempo, combinados con la falta de
                 consecuencias inmediatas, rompen la inmersión. En un apocalipsis donde el tiempo es vital, pasar meses
                 sin comida, calor o techo debería tener un impacto significativo en la población, pero en Frostpunk 2,
-                estas decisiones parecen carecer de peso real, además de la sensación de desproporción en el % de
+                estas decisiones parecen carecer de peso real, además de la sensación de desproporción en
                 empleados y recursos obtenidos.</p>
             </li>
           </ul>
@@ -442,8 +446,7 @@ onMounted(() => {
               <div class="shadow-container">
                 <p class="text-red ">- Actualmente al expandir un edificio industrial, el producto que se está
                   produciendo
-                  cambia automáticamente al valor por defecto, perdiendo tiempo de juego vital hasta que eres consciente
-                  de ello.</p>
+                  cambia automáticamente al valor por defecto, perdiendo tiempo de juego vital.</p>
               </div>
 
             </li>
@@ -468,7 +471,7 @@ onMounted(() => {
 
         <p>
           En resumen, ambos son juegos increíbles, y valoro enormemente la intención del estudio que proporciona
-          entornos de juego muy completos, pero como fan de Frostpunk1 entiendo las reacciones frente su secuela, y
+          entornos de juego muy completos, pero como fan de Frostpunk 1 entiendo las reacciones frente su secuela, y
           espero que lancen más DLC de lo que para mi siempre será una obra maestra.
         </p>
 
@@ -503,7 +506,7 @@ onMounted(() => {
         <div>
           <h4>Análisis Cities: Skylines 1 - Simulación Urbana Compleja</h4>
           <p>
-            Analizando el juego base (sin LCd) que tanto triunfó, tengo
+            Analizando el juego base que tanto triunfó (sin LCd), tengo
             opiniones encontradas sobre Cities: Skylines 1:
           </p>
 
@@ -583,7 +586,7 @@ onMounted(() => {
           <p>
             Analizando la secuela un año después de su lanzamiento, he
             encontrado inconsistencias en el diseño, bugs y errores en capas
-            o construcción y sin ambargo ya hay DLC de pago.
+            o construcción, y sin ambargo ya han lanzado DLC de pago.
 
           </p>
         </div>
@@ -733,6 +736,6 @@ onMounted(() => {
       </div>
     </div>
   </section>
-  
+
 </template>
   
