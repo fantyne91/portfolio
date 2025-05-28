@@ -32,6 +32,7 @@
 <script setup>
 import { ref, onMounted, watch, onUnmounted } from 'vue';
 
+
 const menuOpen = ref(false);
 const isMobileOrTablet = ref(false);
 const main = ref(null);
@@ -55,6 +56,21 @@ const closeClickOutside = (event) => {
   }
 };
 
+let headerHasBackground = false; // estado persistente
+
+const handleScrollHeader = () => {
+  const threshold = 100;
+  const header = document.querySelector('header');
+  if (!header) return;
+
+  const scrollY = window.scrollY;
+
+  if (scrollY > threshold && !headerHasBackground) {
+    header.style.backgroundColor = 'var(--color-blue-black)';
+    header.style.transition = 'background-color 0.9s ease';
+    headerHasBackground = true;
+  }
+}
 watch(menuOpen, () => {
   if (!main.value) return;
 
@@ -67,7 +83,8 @@ watch(menuOpen, () => {
 //test hidrate 
 
 onMounted(() => { 
-
+  handleScrollHeader() // Comprobamos el scroll al iniciar
+  window.addEventListener('scroll', handleScrollHeader);
   updateScreenSize() // Comprobamos el tamaño al iniciar
   window.addEventListener('resize', updateScreenSize) // Detectamos cambios
 
@@ -100,11 +117,22 @@ onUnmounted(() => {
           /* Fuerza capa GPU */
           left: 0;
           z-index: 1000;
-          background: var(--color-blue-black);
-          box-shadow: 0px 1px 3px var(--color-grey-4);
+     text-shadow: 0 1px 2px rgba(0, 0, 0, 1); 
+          
           color: var(--color-primary);
         }
-    
+         /* .header::before{
+          content:"";
+          position: absolute;
+          width: 100%;
+          height:50px;
+          left:0;
+          top:0;
+          
+          filter:drop-shadow(0 0 1px rgba(0, 0, 0, 0.5));
+          background-color: rgba(0, 0, 0, 0.136);
+          z-index: -1;
+        }  */
         .logo {
           all: unset;
           display: flex;
@@ -116,6 +144,7 @@ onUnmounted(() => {
           width: 150px;
           height: auto;
           flex-shrink: 0;
+          filter: drop-shadow(0 0 2px rgba(0, 0, 0, 1));
         }
     
         /*nav list*/
@@ -128,9 +157,11 @@ onUnmounted(() => {
         }
     
         .nav-menu a {
+          color:rgb(255, 255, 255);
           padding: var(--space-xxs) var(--space-xs);
           white-space: nowrap;
           transition: color 0.5s ease;
+          filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 1));
         }
     
         .nav-menu a:hover {
