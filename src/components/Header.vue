@@ -66,8 +66,8 @@ const handleScrollHeader = () => {
   const scrollY = window.scrollY;
 
   if (scrollY > threshold && !headerHasBackground) {
-    header.style.backgroundColor = 'var(--color-blue-black)';
-    header.style.transition = 'background-color 0.9s ease';
+    header.style.opacity= 1;
+    header.style.transition =' opacity 1.3s ease';
     headerHasBackground = true;
   }
 }
@@ -114,10 +114,11 @@ onUnmounted(() => {
           padding: 2px var(--space-md);
           position: sticky;
           transform: translateZ(0);
-          /* Fuerza capa GPU */
+          background-color: var(--color-blue-black);
           left: 0;
           z-index: 1000;
-     text-shadow: 0 1px 2px rgba(0, 0, 0, 1); 
+          opacity:0;
+     /* text-shadow: 0 1px 2px rgba(0, 0, 0, 1);  */
           
           color: var(--color-primary);
         }
