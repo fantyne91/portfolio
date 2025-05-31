@@ -109,7 +109,7 @@ onMounted(() => {
 
 <template>
 
-  <section class="header-games">
+  <section class="first-section header-games">
     <h1 itemprop="headline"> Unreal engine y diseño UX/UI <br>para videojuegos</h1>
     <div class="container-header container-column-md flex align-center">
 

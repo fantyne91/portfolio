@@ -51,40 +51,40 @@ useMetaData({
 
 
 // Funciones para efecto hover de imágenes
-const moverImagen = (event) => {
-  const imgHover = document.querySelector('.img-hover')
-  if (imgHover) {
-    imgHover.style.left = `${event.pageX + 10}px`
-    imgHover.style.top = `${event.pageY + 10}px`
-  }
-}
+// const moverImagen = (event) => {
+//   const imgHover = document.querySelector('.img-hover')
+//   if (imgHover) {
+//     imgHover.style.left = `${event.pageX + 10}px`
+//     imgHover.style.top = `${event.pageY + 10}px`
+//   }
+// }
 
-const mostrarImagen = (event) => {
-  const imgHover = document.querySelector('.img-hover')
-  if (imgHover) {
-    const nuevaImagen = event.target.getAttribute('data-img')
-    imgHover.src = nuevaImagen
-    imgHover.style.display = 'block'
-    setTimeout(() => {
-        imgHover.style.opacity = '1'        
-    }, 1)
-  }
-}
+// const mostrarImagen = (event) => {
+//   const imgHover = document.querySelector('.img-hover')
+//   if (imgHover) {
+//     const nuevaImagen = event.target.getAttribute('data-img')
+//     imgHover.src = nuevaImagen
+//     imgHover.style.display = 'block'
+//     setTimeout(() => {
+//         imgHover.style.opacity = '1'        
+//     }, 1)
+//   }
+// }
 
-const ocultarImagen = () => {
-  const imgHover = document.querySelector('.img-hover')
-  if (imgHover) {
-    imgHover.style.opacity = '0'
-    setTimeout(() => {
-      imgHover.style.display = 'none'
-    }, 300)
-  }
-}
+// const ocultarImagen = () => {
+//   const imgHover = document.querySelector('.img-hover')
+//   if (imgHover) {
+//     imgHover.style.opacity = '0'
+//     setTimeout(() => {
+//       imgHover.style.display = 'none'
+//     }, 300)
+//   }
+// }
 
 // Lógica de opacidad con scroll
 const handleScroll = () => {
   const fadeStart = 80
-  const fadeEnd = 500
+  const fadeEnd = 300
   const fadeRange = fadeEnd - fadeStart
   const portfolioImg = document.querySelector('.portfolio-img')
   const h1 = document.querySelector('h1')
@@ -99,8 +99,8 @@ const handleScroll = () => {
   } else if (scrollY > fadeStart && scrollY < fadeEnd) {
     let opacity = 1 - (scrollY - fadeStart) / fadeRange
     portfolioImg.style.opacity = opacity.toFixed(2)
-    let opacityReverse = (scrollY - fadeStart) / fadeRange
-    h1.style.opacity = opacityReverse.toFixed(2)
+    //  let opacityReverse = (scrollY - fadeStart) / fadeRange
+    //  h1.style.opacity = opacityReverse.toFixed(2)
   } else if (
       scrollY >= fadeEnd &&
       scrollY < fadeEnd + secondSection.offsetHeight - 350
@@ -116,8 +116,7 @@ onMounted(() => {
     
         nextTick(() => {
             setTimeout(() => {
-                window.prerenderReady = true
-                
+                window.prerenderReady = true                
             }, 200)
         })
 
@@ -132,20 +131,23 @@ onDeactivated(() => {
     window.removeEventListener('scroll', handleScroll)
 })
 
-
 </script>
 
 <template>
     <div class="intro-container">
-
+        <p class="name">Bienvenid@! Mi nombre es María</p>
         <img src="https://www.mariadevdesign.com/images/portfolio-img.webp" class="portfolio-img"
             alt="imagen principal nubes Canarias Maria" width="100vw" height="700">
     </div>
 
-    <section lang="es" class="list-container" aria-labelledby="encabezado-servicios">
-        <h1 id="encabezado-servicios">Diseño UX/UI, desarrollo web y videojuegos con Unreal Engine</h1>
-        <img ref="imgHover" loading="lazy" id="imgHover" class="img-hover" src="" alt="Imagen flotante hover">
+    <section lang="es" class="first-section list-container" aria-labelledby="encabezado-servicios">
+        <div>
 
+            <h1 id="encabezado-servicios">Product & UX/UI designer <br>Desarrollo webs y videojuegos </h1>
+        </div>
+
+        <!-- <img ref="imgHover" loading="lazy" id="imgHover" class="img-hover" src="" alt="Imagen flotante hover"> -->
+        <!-- <p>Qué puedo  hacer por ti?</p> -->
         <ul class="group-list">
             <!-- Diseño Web UX/UI -->
             <li class="list flex" aria-labelledby="titulo-ux" aria-label="Sección de Diseño UX/UI">
@@ -159,14 +161,13 @@ onDeactivated(() => {
                             @mouseleave="ocultarImagen">
                             <h3>Diseño aplicaciones Web o CMS</h3>
                             <p>
-                                como WordPress, Shopify, Ionos... con un enfoque en el éxito de tu empresa
+                                como WordPress o Shopify con enfoque en el éxito de tu empresa
                                 y <span>posicionamiento SEO</span>. Obtendrás un diseño interactivo
-                                para mostrar a desarrolladores o inversores, así como soluciones adaptadas para
-                                la venta de <span>productos digitales</span> y servicios en línea.
+                                para mostrar a desarrolladores o inversores.
                             </p>
                         </li>
                         <li>
-                            <h3>Auditorías y análisis heurístico</h3>
+                            <h3>Auditorías</h3>
                             <p>para mejorar la experiencia del usuario de tu web y aumentar tus resultados.</p>
                         </li>
                     </ul>
@@ -243,7 +244,7 @@ onDeactivated(() => {
             <p role="alert">¡Cada proyecto es único!</p>
             <button class="big-btn contact-btn" role="link" @click="goToContact"
                 aria-label="Contactar para servicios de desarrollo web y diseño">
-                Contactar Ahora
+                Contactar
             </button>
         </div>
     </section>
@@ -277,7 +278,7 @@ onDeactivated(() => {
                 </p>
             </div>
             <div class="video-lastProject flex">
-                <video class="video" preload="none" loading="lazy"  autoplay loop muted playsinline
+                <video class="video" preload="none" loading="lazy" autoplay loop muted playsinline
                     alt="Diseño web 3D plantas">
                     <source src="/images/video-plants.mp4" type="video/mp4">
                 </video>
@@ -291,12 +292,65 @@ onDeactivated(() => {
 
     </section>
 
-
-    <section class="exito-container">
-
-
+    <section class=" why-container">
         <div class=" flex-row ">
+            <div>
+                <h2 class="contacta">¿Por qué trabajar conmigo?</h2>
+                <ul>
+                    <li>
+                        <p>Te acompaño en todo el proceso, desde la investigación hasta la entrega final. Me involucro
+                            al 100% en cada proyecto para asegurar que cada decisión esté alineada con tus objetivos.
+                        </p>
+                    </li>
+                    <li>
+                        <p>Domino herramientas modernas de diseño UX/UI y tecnologías como Vue, PHP y JavaScript, y
+                            siempre aplico buenas prácticas de accesibilidad, rendimiento y SEO técnico.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Trabajo de forma colaborativa, abierta y honesta. Me adapto a equipos multidisciplinares y
+                            valoro tanto el feedback como el aprendizaje continuo.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Me aseguro de que cada entrega esté bien documentada, sea escalable y fácil de mantener,
+                            para que tu proyecto no dependa innecesariamente de terceros.
+                        </p>
+                    </li>
 
+                </ul>
+            </div>
+            <a class="calendar big-btn1" href="https://calendly.com/mjortiz93"
+                aria-label="Solicitar llamada calendar">
+                Solicitar una reunión
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M3 9H21M17 13.0014L7 13M10.3333 17.0005L7 17M7 3V5M17 3V5M6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V8.2C21 7.07989 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21Z"
+                            stroke="#19191c" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                    </g>
+                </svg>
+            </a>
+
+        </div>
+
+
+    </section>
+
+    <div class="wave-container">
+        <svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path fill="#ffe19c"
+                d="M0,40 C180,60 360,70 540,50 C720,30 900,10 1080,20 C1260,30 1440,60 1440,60 L1440,100 L0,100 Z">
+            </path>
+        </svg>
+    </div>
+    <section class="exito-container" role="region" aria-label="Sección de reunion">
+        <div class="flex-row">
             <div class="texto-exito p-column-sm flex">
                 <h2> El éxito de cualquier empresa nace de la satisfacción de sus usuarios </h2>
                 <p> Ya sea un servicio, un sitio web o videojuego, el éxito dependerá de una comprensión de las
@@ -310,10 +364,8 @@ onDeactivated(() => {
                     usuario
                     y el
                     éxito del negocio a largo plazo. </p>
-
             </div>
             <div class=" casos">
-
                 <a class="button-primary" href="https://www.mariadevdesign.com/uxui#casos-uxui"
                     aria-label="casos estudio UXUI">Casos de
                     estudio UX/UI </a>
@@ -323,49 +375,6 @@ onDeactivated(() => {
                     aria-label="Apoya proyecto animales">Ayúdame a salvar perritos ♡ </a>
 
             </div>
-        </div>
-
-
-    </section>
-
-    <div class="wave-container">
-        <svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-            <path fill="#ffd27f"
-                d="M0,40 C180,60 360,70 540,50 C720,30 900,10 1080,20 C1260,30 1440,60 1440,60 L1440,100 L0,100 Z">
-            </path>
-        </svg>
-    </div>
-    <section class="why-container" role="region" aria-label="Sección de reunion">
-        <div class="flex-row">
-            <div>
-                <h2 class="contacta">¿Por qué trabajar conmigo?</h2>
-                <ul>
-                    <li>
-                        <p>Porque estarás acompañado en todo el proceso, estemos diseñando o programando me enfocaré en
-                            que
-                            tu
-                            proyecto sea un éxito. Para ello me involucro al 100% en cada
-                            proyecto.</p>
-                    </li>
-                    <li>
-                        <p>Porque me gusta lo que hago y disfruto cada día aprendiendo y mejorando mis habilidades.</p>
-                    </li>
-
-                </ul>
-            </div>
-            <a class="calendar" href="https://calendly.com/mjortiz93" aria-label="Solicitar llamada calendar">
-                Solicitar una reunión
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                    <g id="SVGRepo_iconCarrier">
-                        <path
-                            d="M3 9H21M17 13.0014L7 13M10.3333 17.0005L7 17M7 3V5M17 3V5M6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V8.2C21 7.07989 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21Z"
-                            stroke="#19191c" stroke-width="0.792" stroke-linecap="round" stroke-linejoin="round">
-                        </path>
-                    </g>
-                </svg>
-            </a>
         </div>
     </section>
     <div class="wave-container2">
@@ -394,9 +403,6 @@ onDeactivated(() => {
                 <img class="casa" src="/images/casa.webp" loading="lazy" alt="Diseño web UX/UI casas prefabricadas"
                     itemprop="image" />
             </div>
-
-
-
 
             <!-- Imagen Juegos -->
             <div class="img-portfolio">
@@ -449,12 +455,7 @@ onDeactivated(() => {
             <div class="img-portfolio">
                 <img src="/images/hotel.webp" loading="lazy" alt="Diseño UX/UI hotel" itemprop="image" />
             </div>
-
-
-
         </div>
-
-
         <!--
             <div class="contact-form-2" >
                 <h2> Obtén tu diseño personalizado desde 300€! </h2>
@@ -474,17 +475,11 @@ onDeactivated(() => {
                             </div>
                             <button  type="submit">Enviar</button>
                                                
-                        </form>  
-                                                                              
+                        </form>                                                                                
                 </div>-->
-
-
     </section>
 </template>
 
-<style scoped>
-/* Agrega estilos si es necesario */
-</style>
 
 
 

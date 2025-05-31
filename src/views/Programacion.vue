@@ -84,7 +84,7 @@ onMounted(() => {
 
 <template>
 
-  <section class="header-programming ">
+  <section class="first-section header-programming ">
     <h1> Desarrollo web y Personalización de Plataformas CMS.</h1>
     <div class="flex-row">
       <h2 class="p-med padding-sm"> Contar con una web optimizada no solo mejora la experiencia del usuario, sino que
@@ -276,10 +276,10 @@ onMounted(() => {
             esto, es necesaria una estructura firme y global, un desarrollo y mantenimiento continuo, y sobretodo
             personas... Por eso, te invito a colaborar como puedas! Si conoces a alguien que quiera aportar(
             desarrollo web, legal, marketing...)o donas, podríamos conseguir el cambio juntos!</p>
-          <iframe id='kofiframe'
+          <!-- <iframe id='kofiframe'
             src='https://ko-fi.com/mariadevdesign/?hidefeed=true&widget=true&embed=true&preview=true'
             style='border:none;border-radius:20px ;width:100%;padding:4px;background:#f9f9f9;' height='570'
-            title='mariadevdesign'></iframe>
+            title='mariadevdesign'></iframe> -->
         </div>
 
       </div>

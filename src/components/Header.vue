@@ -1,9 +1,9 @@
 <template>
   <header class="header" role="banner">
-    <router-link to="/" class="logo" aria-label="Ir al inicio">
+   <router-link to="/" class="logo" aria-label="Ir al inicio" v-if="isMobileOrTablet">
       <img src="/images/logo.webp" alt="Logo de María Ortiz, diseñadora UX/UI y desarrollo web" width="150" height="49"
         loading="eager" fetchpriority="high">
-    </router-link>
+    </router-link> 
 
 
     <button v-show="isMobileOrTablet" class="menu-toggle" @click="toggleMenu"
@@ -57,20 +57,40 @@ const closeClickOutside = (event) => {
 };
 
 let headerHasBackground = false; // estado persistente
+let lastScrollY = window.scrollY; // Para detectar dirección
 
 const handleScrollHeader = () => {
-  const threshold = 100;
+  const threshold = 80;
   const header = document.querySelector('header');
+  const nav = document.querySelector('.nav-menu');
+  const currentScrollY = window.scrollY;
   if (!header) return;
 
-  const scrollY = window.scrollY;
+  
+  //opacity inicial
+  if (currentScrollY <= threshold  && window.innerWidth > 950) {
+    nav.style.backgroundColor = "rgba(0, 0, 0, 0.5)";   
+    nav.style.transition = 'opacity 2s ease';
 
-  if (scrollY > threshold && !headerHasBackground) {
-    header.style.opacity= 1;
-    header.style.transition =' opacity 1.3s ease';
-    headerHasBackground = true;
+    setTimeout(() => {
+      nav.style.opacity = 1; // 
+    }, 3000);
+
+   } else if (currentScrollY >= threshold  && window.innerWidth > 950) { 
+    nav.style.backgroundColor = "rgba(25, 25, 28, 0.94)"; 
+   }
+
+  // --- Mostrar/Ocultar header según dirección ---
+  if (currentScrollY > lastScrollY && window.innerWidth > 950) {
+    // Scroll hacia abajo → ocultar header
+    header.style.transform = 'translateY(-120%)';
+  } else {
+    // Scroll hacia arriba → mostrar header
+    header.style.transform = 'translateY(0)';
   }
-}
+
+  lastScrollY = currentScrollY;
+};
 watch(menuOpen, () => {
   if (!main.value) return;
 
@@ -80,11 +100,13 @@ watch(menuOpen, () => {
     main.value.removeEventListener('click', closeClickOutside);
   }
 });
-//test hidrate 
+
+window.addEventListener('scroll', handleScrollHeader);
 
 onMounted(() => { 
+  
   handleScrollHeader() // Comprobamos el scroll al iniciar
-  window.addEventListener('scroll', handleScrollHeader);
+  
   updateScreenSize() // Comprobamos el tamaño al iniciar
   window.addEventListener('resize', updateScreenSize) // Detectamos cambios
 
@@ -102,167 +124,165 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
-        /** HEADER index*/
-    
-        header {
-          top: 0;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          max-height: 74px;
-          width: 100%;
-          padding: 2px var(--space-md);
-          position: sticky;
-          transform: translateZ(0);
-          background-color: var(--color-blue-black);
-          left: 0;
-          z-index: 1000;
-          opacity:0;
-     /* text-shadow: 0 1px 2px rgba(0, 0, 0, 1);  */
-          
-          color: var(--color-primary);
-        }
-         /* .header::before{
-          content:"";
-          position: absolute;
-          width: 100%;
-          height:50px;
-          left:0;
-          top:0;
-          
-          filter:drop-shadow(0 0 1px rgba(0, 0, 0, 0.5));
-          background-color: rgba(0, 0, 0, 0.136);
-          z-index: -1;
-        }  */
-        .logo {
-          all: unset;
-          display: flex;
-          justify-content: center;
-          cursor: pointer
-        }
-    
-        .logo img {
-          width: 150px;
-          height: auto;
-          flex-shrink: 0;
-          filter: drop-shadow(0 0 2px rgba(0, 0, 0, 1));
-        }
-    
-        /*nav list*/
-        .nav-menu {
-          display: flex;
-          gap: clamp(var(--space-xs), 2vw, var(--space-md));
-          align-items: center;
-          width: 100%;
-          justify-content: end;
-        }
-    
-        .nav-menu a {
-          color:rgb(255, 255, 255);
-          padding: var(--space-xxs) var(--space-xs);
-          white-space: nowrap;
-          transition: color 0.5s ease;
-          filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 1));
-        }
-    
-        .nav-menu a:hover {
-          color: #f8d06a;
-          transform: scale(1.1);
-          width: auto;
-          transition: all 0.1s linear;
-    
-        }
-    
-        /*focus nav*/
-        .nav-menu a:focus {
-          color: #f8d06a;
-        }
-    
-        .hamburger-icon:focus span {
-          background-color: #f8d06a;
-        }
-    
-        /*toggle*/
-        .menu-toggle {
-          display: none;
-          background: none;
-          border: none;
-          padding: 0px;
-          cursor: pointer;
-          width: 26px;
-          height: 18px;
-          position: relative;
-        }
-    
-        .hamburger-icon {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          width: 100%;
-          height: 100%;
-        }
-    
-        .hamburger-icon span {
-          height: 2px;
-          background: var(--color-primary);
-          border-radius: 2px;
-          transition: 0.3s ease;
-        }
-    
-        /* Estado abierto del menú hamburguesa */
-        .hamburger-icon.open span:first-child {
-          transform: translateY(8px) rotate(45deg);
-        }
-    
-        .hamburger-icon.open span:nth-child(2) {
-          opacity: 0;
-        }
-    
-        .hamburger-icon.open span:last-child {
-          transform: translateY(-8px) rotate(-45deg);
-        }
-                @media (max-width: 950px) {
-        
-                  .nav-menu {
-                     display: none; 
-                    /* visibility: hidden; */
-                    position: absolute;
-                    top: 100%;
-                    left: 0;
-                    right: 0;
-                    background: var(--color-blue-black);
-                    flex-direction: column;
-                    gap: 0;
-                    box-shadow: 0 2px 3px var(--color-shadow-middle-gray);
-                    opacity: 0;
-                    z-index: 9999;
-                  }
-        
-                  .nav-menu.open {
-                    /* width: 100%; */
-                    visibility: visible;
-                    display: flex;
-                    opacity: 1;
-                    transform: translateY(0);
-                    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
-                    padding-bottom: var(--space-xxs);
-                  }
-        
-                  .nav-menu a {
-        
-                    padding: var(--space-xxs) 0;
-                    text-align: center;
-                  }
-                .menu-toggle {
-                  display: block;
-                }
-                }
-        
-                @media (max-width: 400px) {
-                  .header {
-                    position: fixed;
-                    top: env(safe-area-inset-top);
-                    padding-top: env(safe-area-inset-top);
-                  }
-                }
+/** HEADER index*/
+
+header {
+  top: 10px;
+  display: flex;
+  align-items: center;
+  max-height: 74px;
+  width: 100%;
+  padding: 2px var(--space-md);
+  position: fixed;
+  transform: translateZ(0);
+  transition: transform 0.3s ease;
+  justify-content: center;
+  left: 0;
+  z-index: 1000;
+  text-shadow: 0 1px 8px  rgb(0, 0, 0);
+  color: var(--color-primary);
+}
+
+.logo {
+  all: unset;
+  display: flex;
+  justify-content: center;
+  cursor: pointer
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+  flex-shrink: 0;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 1));
+}
+
+/*nav list*/
+.nav-menu {
+  display: flex;
+  gap: clamp(var(--space-xs), 2vw, var(--space-md));
+  align-items: center;
+  border-radius: 15px;
+  width: min-content;  
+  opacity:0;
+  padding: 3px var(--space-xs);
+}
+
+.nav-menu a {
+  text-transform: uppercase;
+  padding: var(--space-xxs) var(--space-xs);
+  white-space: nowrap;
+  transition: color 0.5s ease;
+  font-weight: 500;
+  /* filter: drop-shadow(0 0px 8px  rgb(0, 0, 0)); */
+ 
+}
+
+.nav-menu a:hover {
+  color: #f8d06a; 
+  width: auto;
+  transition: all 0.1s linear;
+
+}
+
+/*focus nav*/
+.nav-menu a:focus {
+  color: #f8d06a;
+}
+
+.hamburger-icon:focus span {
+  background-color: #f8d06a;
+}
+
+/*toggle*/
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  padding: 0px;
+  cursor: pointer;
+  width: 26px;
+  height: 18px;
+  position: relative;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.hamburger-icon span {
+  height: 2px;
+  background: var(--color-primary);
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
+
+/* Estado abierto del menú hamburguesa */
+.hamburger-icon.open span:first-child {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (max-width: 950px) {
+  header {
+    justify-content: space-between;
+    background-color: var(--color-blue-black);
+    opacity: 1;
+    top:0;
+  }
+
+  .nav-menu {
+    display: none;    
+    position: absolute;
+    width: 100%;
+    top:50px;
+    left: 0;
+    border-radius: 0 0 15px 15px;
+    background: var(--color-blue-black);
+    flex-direction: column;
+    gap: 0;
+    box-shadow: 0 2px 3px var(--color-shadow-middle-gray);
+    opacity: 0;
+    z-index: 9999;
+  }
+
+  .nav-menu.open {
+    /* width: 100%; */
+    visibility: visible;
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+    padding-bottom: var(--space-xxs);
+  }
+
+  .nav-menu a {
+
+    padding: var(--space-xxs) 0;
+    text-align: center;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+@media (max-width: 400px) {
+  .header {
+
+    top: env(safe-area-inset-top);
+    padding-top: env(safe-area-inset-top);
+  }
+}
 </style>
