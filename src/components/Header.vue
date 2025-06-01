@@ -30,13 +30,14 @@
 
 
 <script setup>
-import { ref, onMounted, watch, onUnmounted } from 'vue';
-
+import { ref, onMounted, watch, onUnmounted, computed } from 'vue';
+import { useRoute } from 'vue-router';
 
 const menuOpen = ref(false);
 const isMobileOrTablet = ref(false);
 const main = ref(null);
-
+const route = useRoute();
+const page = computed(() => route.name || 'Landing') // Nombre de la página actual
 
 //methods
 const toggleMenu = () => {
@@ -72,9 +73,14 @@ const handleScrollHeader = () => {
     nav.style.backgroundColor = "rgba(0, 0, 0, 0.5)";   
     nav.style.transition = 'opacity 2s ease';
 
-    setTimeout(() => {
-      nav.style.opacity = 1; // 
-    }, 3000);
+    if (page.value === "Landing") {
+      setTimeout(() => {
+        nav.style.opacity = 1; // 
+      }, 3000);
+    } else {
+      nav.style.opacity = 1; 
+    }
+   
 
    } else if (currentScrollY >= threshold  && window.innerWidth > 950) { 
     nav.style.backgroundColor = "rgba(25, 25, 28, 0.94)"; 

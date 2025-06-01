@@ -17,6 +17,7 @@
     border:4px solid #8d448b;    
     border-radius: 20px; 
     margin-top: var(--space-xs); 
+    width: 100%;
 }
 .header-games .beneficios-games {
     color:white; 
@@ -24,12 +25,13 @@
 }
 
 .header-games .iframe {    
-    max-width: 600px; 
+    max-width: 100%; 
 }
 
 .container-header  .p-games { 
      color:var(--color-soft-purple)    ;
-     font-size: clamp(1.1rem, 1.4vw, 1.8rem); 
+     font-size: var(--font-med-special);
+     font-family: Handlee, sans-serif;
 }
 
 .container-header .p-column-sm, .unreal-games .p-column-sm{
@@ -94,7 +96,7 @@
     .analisis-frost li {
         cursor: pointer;      
          position: relative;
-        font-weight: 500;     
+            
     }
     .analisis-frost li:hover  {
          padding: 0 ;         

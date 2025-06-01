@@ -6,9 +6,6 @@
   height: 100vh; 
   background: var(--color-secondary); 
 } */
-/*efects*/
-
-
 /* #imgHover {
   position: absolute;
   max-width: 300px;
@@ -18,6 +15,7 @@
   opacity: 0;
   transition: opacity 2s linear ;
 } */
+ /*intro img*/
 .intro-container::before {
     content: "";
     position: fixed;
@@ -27,15 +25,13 @@
     height: 20%;
     background: linear-gradient(to top, rgba(50, 40, 31, 0.799) 0%, transparent 100%);
     pointer-events: none;
-    z-index: 3;
-     /* animation: fadeOutUp 8s ease-in-out 0s forwards;  */
+    z-index: 3;     
 }
 .intro-container {
     position: relative;
     height: 100vh; 
     display: flex;
-    overflow: hidden;
-   /* background-color: var(--color-secondary); */
+    overflow: hidden;   
     z-index: -2;
 }
 
@@ -49,10 +45,11 @@
     z-index: -1; 
     opacity: 1;
     transition: opacity 0.3s linear;
+    filter:contrast(1.2)
 }
 /*Text*/
  .name{
-    font-size: clamp(1.6rem, 5vw, 3.5rem); 
+    font-size: var(--font-special); 
     font-family: Handlee, sans-serif;
     bottom:300px;
     font-weight: 500;
@@ -72,7 +69,7 @@
         opacity: 0;
          transform: translateX(-50%) translateY(0px) ; 
     }
-    20%{
+    40%{
         opacity: 1;        
         transform: translateX(-50%) translateY(0px) scale(1.4) ;
         filter: contrast(3) brightness(1.2) drop-shadow(0 0 10px var(--color-secondary));
@@ -81,23 +78,19 @@
         transform: translateX(-50%) translateY(0px) scale(1.4) ;        
     }
     100% {        
-        transform: translateX(-50%) translateY(200px);
+        transform: translateX(-50%) translateY(250px);
     }
 }
-.page-landing h1{
-
-    /* text-shadow: 0 0 2px var(--color-primary); */
+.page-landing h1{   
     background: linear-gradient(70deg, var(--vibe-orange), var( --color-purple)); /* Puedes personalizar */
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  
+    -webkit-text-fill-color: transparent;  
     /* Para navegadores modernos (algunos aún necesitan prefijos) */
     background-clip: text;
     color: transparent;
 }
  /* SERVICIOS -LANDING */
-
-.list-container [hidden] { display: none !important; }
+/* .list-container [hidden] { display: none !important; } */
 .list-container{
     padding-top:0;
 }
@@ -112,8 +105,10 @@
     min-width: 100%;
     align-items: stretch;
 }
-
-/*List*/
+.group-list h2{
+    font-size: var(--font-med-special);
+}
+/*indv List*/
 .group-list  .list {
     max-width: 450px;
     min-width: 280px;
@@ -155,7 +150,6 @@
     text-align: center;
     font-weight: 500;
 }
-
   .features-list h3 {
     display:inline !important;
     font-size: clamp(1rem, 1.2vw, 1.4rem);
@@ -186,19 +180,19 @@
 .list:nth-child(3)::before{
     background: linear-gradient(90deg,  var(--color-soft-purple), #4b328c);
 }
+
 .list:nth-child(4){   
-    h2, h3{  color: #8ac610; }
+    h2, h3{  color: var(--color-lemon-green); }
 }
 .list:nth-child(4)::before{
-    background: linear-gradient(90deg,  #8ac610, #25784b);
+    background: linear-gradient(90deg, var(--color-lemon-green), #25784b);
 }
 /* contacta*/
 .list-container .contacta p{
-        font-size: clamp(1.4rem, 4vw, 1.9rem);
+        font-size: var(--font-special);
         text-align: center;
         font-weight: 500;        
-        font-family: Handlee;
-        
+        font-family: Handlee;        
 }
 /*LAST*/
 .last-project{
@@ -210,7 +204,7 @@
 }
 .last-project h2{
     font-family: Handlee, sans-serif;
-    font-size:  clamp(1.6rem, 4vw, 2.5rem);
+    font-size: var(--font-special);
 }
 .last-project::after{
     content:"" ;
@@ -250,8 +244,7 @@
   align-items: center;
   max-width: 800px;  
 }
-.texto-exito h2{
-    font-size:  clamp(1.6rem, 4vw, 2.5rem);    
+.texto-exito h2{     
     text-align: center;
     font-family: Handlee;    
 }
@@ -282,8 +275,7 @@
     font-weight: 500;
     background: #ffffff;   
 }
-.why-container h2{
-    font-size: clamp(1.7rem, 3vw, 2.3rem);
+.why-container h2{    
     max-width: 100%;
     text-align: center;
     margin-bottom: var(--space-md);

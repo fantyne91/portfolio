@@ -13,6 +13,8 @@
 :root {
     /* Tamaño base */
     --font-size-base: 16px;   
+    --font-special: clamp(1.6rem, 5vw, 3.5rem); 
+    --font-med-special: clamp(1.5rem, 2vw, 2.5rem); 
     --space-unit: 0.5rem; /* 8px base */    
     /* Escala  */
     --space-xxs:  calc(var(--space-unit) * 1);  /* 8px */
@@ -53,6 +55,8 @@
     --color-calid-purple: #401e52;
     --color-med-purple: #351e52;
        --color-vibe-purple: #4917d2; 
+    /*green*/
+    --color-lemon-green:#8ac610;
 }
 
 /* Asegurar de que el body y el html no tengan márgenes */
@@ -109,7 +113,7 @@ h1{
         
 }
 h2{
-    font-size: clamp(1.3rem, 1.8vw, 2rem);
+    font-size: clamp(1.4rem, 2.5vw, 3rem);
     font-weight: 600;
 }
 h3{

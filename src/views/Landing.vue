@@ -142,7 +142,6 @@ onDeactivated(() => {
 
     <section lang="es" class="first-section list-container" aria-labelledby="encabezado-servicios">
         <div>
-
             <h1 id="encabezado-servicios">Product & UX/UI designer <br>Desarrollo webs y videojuegos </h1>
         </div>
 

@@ -86,15 +86,14 @@ onMounted(() => {
 
   <section class="first-section header-programming ">
     <h1> Desarrollo web y Personalización de Plataformas CMS.</h1>
-    <div class="flex-row">
+    <div class="flex-row p-align">
       <h2 class="p-med padding-sm"> Contar con una web optimizada no solo mejora la experiencia del usuario, sino que
-        también impacta en el SEO, <span> posicionando tu marca.</span></h2>
+        también impacta en el SEO <span> posicionando tu marca!</span></h2>
       <img src="/images/seo1.webp" alt="imagen el SEO es vital" width="599" height="258">
     </div>
   </section>
 
   <section class="beneficios p-align">
-
     <h2>Beneficios de contratar un desarrollador para tu web o CMS</h2>
     <p>Si bien los CMS como WordPress o Shopify ofrecen soluciones rápidas, sus limitaciones pueden afectar la
       escalabilidad y personalización de tu proyecto.</p>

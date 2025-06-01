@@ -44,7 +44,7 @@
                 ActiveCookie=false;
             });
         }
-        }, 13000);
+        }, 19000);
         
 
 </script>

@@ -2,21 +2,21 @@
  background-color: var(--color-med-blue);
 }
 
-        /**todo */
-
-.header-programming{       
-    background-color:var(--color-med-blue); 
+.header-programming{           
     color: var(--color-grey-0);
 }
-
+.header-programming h2{   
+    font-weight: 500;
+    font-size: var(--font-med-special);
+}
 .header-programming h2 span{
-    font-size: clamp(2rem, 2.6vw, 2.8rem);
+    font-size: var(--font-special);
     color: var(--color-white-blue);
     font-family:Handlee, sans-serif;
     font-weight: 400;
-    line-height: 1;
-    align-items: center;
+    line-height: 1.2;    
     margin-left: var(--space-xxs);
+    text-wrap: wrap;
 }
 .header-programming img{
     object-fit: contain;

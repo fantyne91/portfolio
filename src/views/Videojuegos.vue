@@ -113,7 +113,7 @@ onMounted(() => {
     <h1 itemprop="headline"> Unreal engine y diseño UX/UI <br>para videojuegos</h1>
     <div class="container-header container-column-md flex align-center">
 
-      <h2> El UX/UI en videojuegos es el vestíbulo del jugador.</h2>
+
       <div class="p-column-sm flex  padding-sm">
         <p class="p-games p-align">
           Los videojuegos no solo divierten, también estimulan la memoria, la creatividad y la toma de decisiones.
@@ -130,21 +130,22 @@ onMounted(() => {
         </div>
       </div>
 
-      <div class="iframe full-width">
+      <div class="iframe full-width flex-row">
         <iframe class="full-width" height="415" src="https://www.youtube.com/embed/ZCwlZc-WG48"
           title="YouTube video player" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen>
         </iframe>
-      </div>
-
-      <div class=" flex p-column-xs p-align">
         <p class=" p-games">
           La neurociencia es fundamental en este contexto, ya que proporciona
           una comprensión más profunda de cómo los jugadores procesan la
           información, toman decisiones y experimentan emociones durante el
           juego.
         </p>
+      </div>
+
+      <div class=" flex p-column-sm p-align padding-sm align-center">
+        <h2> El UX/UI en videojuegos es el vestíbulo del jugador.</h2>
         <p>
           Mostrar la información correcta en el momento adecuado en
           videojuegos es vital, impacta directamente en la experiencia
@@ -345,10 +346,10 @@ onMounted(() => {
             un robot que puede hacer trabajos de humano con ciertas características, es decir una herramienta que juega
             con unas
             normas propias y según la estrategia te puede interesar, o no. En cambio en Frostpunk2 un autómata es
-            igual sumar 800
+            igual a sumar 800
             habitantes.</p>
           <h5>Tiempos de Construcción y Recursos Desproporcionados:</h5>
-          <p>Situación:Una partida que comienza con 8000 habitantes, de los cuales pueden trabajar 4800 (adultos),
+          <p>Situación: Una partida que comienza con 8000 habitantes, de los cuales pueden trabajar 4800 (adultos),
             temperatura
             exterior a
             menos -20º en un ambiente apocalíptico.</p>
