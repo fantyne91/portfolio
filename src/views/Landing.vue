@@ -80,27 +80,38 @@ useMetaData({
 //     }, 300)
 //   }
 // }
-
+let hash1 = false;
 // Lógica de opacidad con scroll
 const handleScroll = () => {
-  const fadeStart = 80
+  const fadeStart = 20
   const fadeEnd = 300
   const fadeRange = fadeEnd - fadeStart
-  const portfolioImg = document.querySelector('.portfolio-img')
-  const h1 = document.querySelector('h1')
+    const portfolioImg = document.querySelector('.portfolio-img')
     const secondSection = document.querySelector('.list-container')
-  
-  if (!portfolioImg || !h1) return
+       
+    
+    
+  if (!portfolioImg ) return
 
   const scrollY = window.scrollY
 
   if (scrollY < fadeStart) {
-    portfolioImg.style.opacity = '1'
-  } else if (scrollY > fadeStart && scrollY < fadeEnd) {
+      portfolioImg.style.opacity = '1'
+      if (!hash1) {
+          hash1 = true
+
+          const div = document.querySelector(".animation")
+          const p = document.createElement('p')
+          p.classList = 'name'
+          p.innerHTML = 'Bienvenid@! Mi nombre es María'
+          const h1 = document.createElement('h1')
+          h1.innerHTML = 'Product & UX/UI designer <br>Desarrollo webs y videojuegos'
+          div.append(p, h1)
+      }
+  } else if (scrollY > fadeStart && scrollY < fadeEnd) {      
     let opacity = 1 - (scrollY - fadeStart) / fadeRange
-    portfolioImg.style.opacity = opacity.toFixed(2)
-    //  let opacityReverse = (scrollY - fadeStart) / fadeRange
-    //  h1.style.opacity = opacityReverse.toFixed(2)
+      portfolioImg.style.opacity = opacity.toFixed(2)   
+      
   } else if (
       scrollY >= fadeEnd &&
       scrollY < fadeEnd + secondSection.offsetHeight - 350
@@ -119,7 +130,6 @@ onMounted(() => {
                 window.prerenderReady = true                
             }, 200)
         })
-
 })
 onActivated(() => {
     // Resetea el scroll y aplica opacidad desde el inicio
@@ -130,19 +140,22 @@ onActivated(() => {
 onDeactivated(() => {
     window.removeEventListener('scroll', handleScroll)
 })
-
 </script>
 
 <template>
-    <div class="intro-container">
-        <p class="name">Bienvenid@! Mi nombre es María</p>
+    <div class="intro-container ">
         <img src="https://www.mariadevdesign.com/images/portfolio-img.webp" class="portfolio-img"
             alt="imagen principal nubes Canarias Maria" width="100vw" height="700">
+        <div class="animation flex align-center">
+            <!-- <p class="name">Bienvenid@! Mi nombre es María</p>
+            <h1 id="encabezado-servicios">Product & UX/UI designer <br>Desarrollo webs y videojuegos </h1> -->
+        </div>
+
     </div>
 
     <section lang="es" class="first-section list-container" aria-labelledby="encabezado-servicios">
         <div>
-            <h1 id="encabezado-servicios">Product & UX/UI designer <br>Desarrollo webs y videojuegos </h1>
+
         </div>
 
         <!-- <img ref="imgHover" loading="lazy" id="imgHover" class="img-hover" src="" alt="Imagen flotante hover"> -->
@@ -321,8 +334,7 @@ onDeactivated(() => {
 
                 </ul>
             </div>
-            <a class="calendar big-btn1" href="https://calendly.com/mjortiz93"
-                aria-label="Solicitar llamada calendar">
+            <a class="calendar big-btn1" href="https://calendly.com/mjortiz93" aria-label="Solicitar llamada calendar">
                 Solicitar una reunión
                 <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>

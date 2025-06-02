@@ -70,13 +70,13 @@ const handleScrollHeader = () => {
   
   //opacity inicial
   if (currentScrollY <= threshold  && window.innerWidth > 950) {
-    nav.style.backgroundColor = "rgba(0, 0, 0, 0.5)";   
+    nav.style.backgroundColor = "rgba(0, 0, 0, 0.6)";   
     nav.style.transition = 'opacity 2s ease';
 
     if (page.value === "Landing") {
       setTimeout(() => {
         nav.style.opacity = 1; // 
-      }, 3000);
+      }, 1000);
     } else {
       nav.style.opacity = 1; 
     }

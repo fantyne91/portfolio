@@ -16,6 +16,17 @@
   transition: opacity 2s linear ;
 } */
  /*intro img*/
+ .portfolio-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;   
+    opacity: 1;
+    transition: opacity 0.3s linear;
+    filter:contrast(1.2)
+}
 .intro-container::before {
     content: "";
     position: fixed;
@@ -32,55 +43,19 @@
     height: 100vh; 
     display: flex;
     overflow: hidden;   
-    z-index: -2;
 }
-
-.portfolio-img {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    z-index: -1; 
-    opacity: 1;
-    transition: opacity 0.3s linear;
-    filter:contrast(1.2)
+.animation{   
+     width: 100%;
+     height: 100%; 
+     opacity:1;
+     justify-content: end;
+     gap:50px;    
 }
 /*Text*/
- .name{
-    font-size: var(--font-special); 
-    font-family: Handlee, sans-serif;
-    bottom:300px;
-    font-weight: 500;
-    left:50%;
-   transform: translateX(-50%);
-    position:absolute;   
-    z-index:4;    
-    text-shadow: 0 1px 12px var(--color-blue-black);
-    padding: var(--space-xxs) var(--space-sm);
-    background: linear-gradient(90deg, rgba(48, 36, 21, 0.3), rgb(29, 26, 17, 0.5));    
-     min-width: 100%;
-     text-align: center;
-     animation: name 3s linear forwards;    
+ .name{    font-size: var(--font-special); 
+    font-family: Handlee, sans-serif;    
 }
-@keyframes name {
-    0% {
-        opacity: 0;
-         transform: translateX(-50%) translateY(0px) ; 
-    }
-    40%{
-        opacity: 1;        
-        transform: translateX(-50%) translateY(0px) scale(1.4) ;
-        filter: contrast(3) brightness(1.2) drop-shadow(0 0 10px var(--color-secondary));
-    }
-    70%{
-        transform: translateX(-50%) translateY(0px) scale(1.4) ;        
-    }
-    100% {        
-        transform: translateX(-50%) translateY(250px);
-    }
-}
+
 .page-landing h1{   
     background: linear-gradient(70deg, var(--vibe-orange), var( --color-purple)); /* Puedes personalizar */
     -webkit-background-clip: text;

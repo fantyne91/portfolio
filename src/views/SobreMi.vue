@@ -13,22 +13,22 @@ onMounted(() => {
   const items = document.querySelectorAll('.scroll-item');
 
   // Inicializamos: la primera imagen se queda sin efectos y los demás se inician en su estado "naciente"
-  items.forEach((item, index) => {
-    if (index === 0) {
-      item.style.transform = 'scale(1)';
-      item.style.opacity = '1';
-    } else {
-      // Inicia muy pequeño y casi invisible
-      item.style.transform = 'scale(0.1)';
-      item.style.opacity = '0';
-    }
-  });
+  // items.forEach((item, index) => {
+  //   if (index === 0) {
+  //     item.style.transform = 'scale(1)';
+  //     item.style.opacity = '1';
+  //   } else {
+  //     // Inicia muy pequeño y casi invisible
+  //     item.style.transform = 'scale(0.1)';
+  //     item.style.opacity = '0';
+  //   }
+  // });
 
   const applyScrollEffect = () => {
     const vh = window.innerHeight;
     const centerScreen = vh / 2;
     // Definimos un umbral para que el efecto se complete al alejarse del centro
-    const threshold = vh / 1; // Ajusta este valor según el efecto deseado
+    // const threshold = vh / 3;
 
     items.forEach((item, index) => {
       const rect = item.getBoundingClientRect();
@@ -36,7 +36,7 @@ onMounted(() => {
       const distance = Math.abs(itemCenter - centerScreen);
 
       // Progreso: 0 en el centro, 1 en o más allá del umbral
-      let progress = distance / threshold;
+      let progress = distance / vh;
       if (progress > 1) progress = 1;
 
       // Si es la primera imagen, la dejamos en tamaño completo
@@ -47,7 +47,7 @@ onMounted(() => {
        
         // la idea es que al estar en el centro (progress ~ 0) el elemento alcance su tamaño máximo (1).
         // Y a medida que avanza el progreso (al alejarse), disminuya (por ejemplo, a 0.3).
-        const minScale = 0.3;  // Escala mínima cuando ya está lejos del centro
+        const minScale = 0.5;  // Escala mínima cuando ya está lejos del centro
         const scale = (1 - progress) * (1 - minScale) + minScale;
 
         //cuando el elemento esté en el centro, translateX sea 0
@@ -55,13 +55,14 @@ onMounted(() => {
         // Usamos la dirección del elemento dependiendo si está por arriba o por debajo del centro.
         const direction = (itemCenter - centerScreen) >= 0 ? 1 : -1;
         // Máximo desplazamiento en píxeles
-        const translateX = progress *  direction;
+        const translateX = progress *  direction/100;
 
         // La opacidad: máxima (1) en el centro y se reduce conforme se aleja
         const opacity = 1 - progress;
 
         item.style.transform = `scale(${scale}) translateX(${translateX}px)`;
         item.style.opacity = opacity;
+       
       }
     });
   };
@@ -75,8 +76,7 @@ onMounted(() => {
   /*prerender*/
     nextTick(() => {
       setTimeout(() => {
-        window.prerenderReady = true
-      
+        window.prerenderReady = true      
       }, 200)
     })
   
@@ -87,7 +87,7 @@ onMounted(() => {
 <template>
   <section class="about-me">
     <h1>Un poco de mi</h1>
-    <img src="/images/maria.webp" alt="Imagen 2" class="scroll-item">
+    <img src="/images/main-maria.webp" alt="Imagen 2" class="scroll-item med">
     <div class="text scroll-item">
       <p>Hola!</p>
       <p>Soy María.</p>
@@ -97,15 +97,12 @@ onMounted(() => {
       <img src="/images/nubes-medano.webp" alt="Imagen presentación Maria" loading="lazy" class="scroll-item">
     </div>
 
-
-
-
     <div class="text scroll-item flex">
       <img src="/images/clouds.webp" alt="nubes en Canarias" loading="lazy" class="scroll-item">
       <p>Disfruto estudiando el porqué de las cosas.</p>
     </div>
     <div class="text scroll-item flex-row">
-      <img src="/images/chian-temple.webp" alt="Templo Tailandia Chian rai" loading="lazy" class="scroll-item">
+      <img src="/images/chian-temple.webp" alt="Templo Tailandia Chian rai" loading="lazy" class="scroll-item med">
       <p>Desde pequeña he amado los videojuegos, la estrategia y los retos lógicos.</p>
     </div>
 
@@ -168,7 +165,10 @@ onMounted(() => {
   font-size: clamp(1.5rem, 4vw, 2.6rem) !important;
   font-weight: 500;
 }
-
+.med{
+  max-width:500px;
+  filter:contrast(1.1) brightness(1.1);
+}
 @media (max-width: 540px) {
   .about-me{
     padding-bottom: var(--space-xs);
