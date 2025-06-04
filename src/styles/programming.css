@@ -112,7 +112,7 @@
 .card-tecnologias  li{
     list-style: none;
     color: var(--color-dark-blue);
-    background-color:  rgb(245, 240, 221);
+    background-color:  var(--color-grey-0);
     padding: clamp(var(--space-xxs), 3vw, var(--space-sm));
     align-items: center;
     display: flex;

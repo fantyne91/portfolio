@@ -133,7 +133,7 @@ const submitForm = async () => {
           <a href="https://www.linkedin.com/in/maria-ortiz91" target="_blank" class="big-btn1">
             Conectar en LinkedIn
           </a>
-          <p class="whatsapp-link ">Si lo prefieres contacta por <a
+          <p class="whatsapp-link flex align-center ">Si lo prefieres contacta por <a
               href="https://wa.me/34671303377?text=Hola! Quiero información sobre: " target="_blank">WhatsApp</a></p>
 
         </div>

@@ -13,8 +13,10 @@
 :root {
     /* Tamaño base */
     --font-size-base: 16px;   
-    --font-special: clamp(1.6rem, 5vw, 3.5rem); 
+    --font-big-special: clamp(2rem, 5vw, 4rem); 
+    --font-special: clamp(1.9rem, 5vw, 3.5rem); 
     --font-med-special: clamp(1.5rem, 2vw, 2.5rem); 
+    
     --space-unit: 0.5rem; /* 8px base */    
     /* Escala  */
     --space-xxs:  calc(var(--space-unit) * 1);  /* 8px */
@@ -104,13 +106,11 @@ h1,h2,h3,h4,h5,h6 {
     margin: 0; 
    max-width: 70vw; 
 }
-
 h1{
        font-size: clamp(1.6rem, 4vw, 3.7rem); 
        font-weight: 600; 
        letter-spacing: 2.4px;       
-       line-height: 1.4;
-        
+       line-height: 1.4;        
 }
 h2{
     font-size: clamp(1.4rem, 2.5vw, 3rem);
@@ -120,8 +120,7 @@ h3{
     font-size: clamp(1.2rem, 1.4vw, 1.6rem);
     font-weight: 500;
 }
-h4{
-    
+h4{    
     font-weight: 500;
     font-size: clamp(1.1rem, 1.3vw, 1.4rem); 
 } 
@@ -130,7 +129,7 @@ h5{
     font-size: clamp(1rem, 1.2vw, 1.4rem); 
 }
 h6{
- font-size: 0.9rem;
+    font-size: 0.9rem;
 }
 p, label, select{
     font-size: clamp(1rem, 1.2vw, 1.4rem); 
@@ -238,16 +237,14 @@ li *:not(:last-child){
     display: flex;
     flex-flow: row wrap;    
     align-items: center;
-    justify-content: space-evenly;
+   justify-content: center;
     gap:var(--space-lg);
     max-width: 100%;
-   
 }
 .flex-row > *{
     flex: 1 0.5;
     min-width: 280px; 
-    width: 100%;
-    
+    width: 100%;    
 }
 /**BUTTONS */
 
@@ -275,6 +272,7 @@ a, button {
     display: flex;
     align-items: center;
     justify-content: center;
+   
 }
 .big-btn:hover{
     border: 3px solid  var(--color-grey-1); 
@@ -341,6 +339,10 @@ a, button {
     text-transform: uppercase;  
     border: 3px solid  var(--color-soft-orange-grey);
     color: var(--color-primary);     
+    max-width: fit-content;
+    display:flex;
+    justify-content: center;
+    align-items: center;    
 }
 .big-btn2:hover{
     border: 3px solid var(--color-sat-orange) ; 
@@ -431,11 +433,10 @@ figure{
     margin:0;
     justify-items: center;
 }
-
-
-
 @media (max-width: 950px) { 
-  
+    main{
+        margin-top: var(--space-sm);
+    }
    .flex-row{
         flex-direction: column;      
    }
@@ -446,9 +447,7 @@ figure{
 
 @media (max-width: 400px) {
    
-    main{
-        margin-top: 49.98px;
-    }
+   
     .flex-row{
         gap:var(--space-sm);
     } 
@@ -456,9 +455,7 @@ figure{
         max-width: 80vw; 
         
     }
-    /* .flex{
-        width: 100%;    
-    } */
+   
     .black-background h2{ 
         padding: 0;    
 }

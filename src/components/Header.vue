@@ -30,14 +30,14 @@
 
 
 <script setup>
-import { ref, onMounted, watch, onUnmounted, computed } from 'vue';
-import { useRoute } from 'vue-router';
+import { ref, onMounted, watch, onUnmounted } from 'vue';
+
 
 const menuOpen = ref(false);
 const isMobileOrTablet = ref(false);
 const main = ref(null);
-const route = useRoute();
-const page = computed(() => route.name || 'Landing') // Nombre de la página actual
+
+
 
 //methods
 const toggleMenu = () => {
@@ -57,7 +57,6 @@ const closeClickOutside = (event) => {
   }
 };
 
-let headerHasBackground = false; // estado persistente
 let lastScrollY = window.scrollY; // Para detectar dirección
 
 const handleScrollHeader = () => {
@@ -65,27 +64,19 @@ const handleScrollHeader = () => {
   const header = document.querySelector('header');
   const nav = document.querySelector('.nav-menu');
   const currentScrollY = window.scrollY;
-  if (!header) return;
+  
+  if (!header  ) return;
 
   
   //opacity inicial
-  if (currentScrollY <= threshold  && window.innerWidth > 950) {
-    nav.style.backgroundColor = "rgba(0, 0, 0, 0.6)";   
-    nav.style.transition = 'opacity 2s ease';
+  if (currentScrollY <= threshold && !isMobileOrTablet.value) {
 
-    if (page.value === "Landing") {
-      setTimeout(() => {
-        nav.style.opacity = 1; // 
-      }, 1000);
-    } else {
-      nav.style.opacity = 1; 
-    }
-   
-
-   } else if (currentScrollY >= threshold  && window.innerWidth > 950) { 
-    nav.style.backgroundColor = "rgba(25, 25, 28, 0.94)"; 
-   }
-
+    setTimeout(() => {
+      nav.style.opacity = 1;
+      nav.style.transition = 'opacity 1s ease';
+    }, 1500);
+  
+  } 
   // --- Mostrar/Ocultar header según dirección ---
   if (currentScrollY > lastScrollY && window.innerWidth > 950) {
     // Scroll hacia abajo → ocultar header
@@ -98,6 +89,7 @@ const handleScrollHeader = () => {
   lastScrollY = currentScrollY;
 };
 watch(menuOpen, () => {
+  
   if (!main.value) return;
 
   if (menuOpen.value) {
@@ -107,14 +99,13 @@ watch(menuOpen, () => {
   }
 });
 
-window.addEventListener('scroll', handleScrollHeader);
 
-onMounted(() => { 
-  
-  handleScrollHeader() // Comprobamos el scroll al iniciar
-  
-  updateScreenSize() // Comprobamos el tamaño al iniciar
-  window.addEventListener('resize', updateScreenSize) // Detectamos cambios
+
+onMounted(() => {   
+  handleScrollHeader() 
+  window.addEventListener('scroll', handleScrollHeader);
+  updateScreenSize() 
+  window.addEventListener('resize', updateScreenSize) 
 
   main.value = document.querySelector('main');
 });
@@ -140,11 +131,12 @@ header {
   width: 100%;
   padding: 2px var(--space-md);
   position: fixed;
-  transform: translateZ(0);
-  transition: transform 0.3s ease;
+  /* transform: translateZ(0);
+  transition: transform 0.3s ease; */
   justify-content: center;
   left: 0;
   z-index: 1000;
+  
   text-shadow: 0 1px 8px  rgb(0, 0, 0);
   color: var(--color-primary);
 }
@@ -170,8 +162,11 @@ header {
   align-items: center;
   border-radius: 15px;
   width: min-content;  
-  opacity:0;
+ opacity: 0;
+  position:relative;
   padding: 3px var(--space-xs);
+  background-color:rgba(25, 25, 28, 0.8);
+  backdrop-filter: blur(6px);
 }
 
 .nav-menu a {
@@ -180,15 +175,12 @@ header {
   white-space: nowrap;
   transition: color 0.5s ease;
   font-weight: 500;
-  /* filter: drop-shadow(0 0px 8px  rgb(0, 0, 0)); */
- 
 }
 
 .nav-menu a:hover {
   color: #f8d06a; 
   width: auto;
   transition: all 0.1s linear;
-
 }
 
 /*focus nav*/

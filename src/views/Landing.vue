@@ -1,10 +1,6 @@
-//creacion páginas
-
-
 <script setup>
 import '../styles/forms.css'
 import { onMounted, nextTick, onActivated, onDeactivated } from 'vue'
-
 import { useMetaData } from '@/composables/useMetaData'
 
 useMetaData({
@@ -12,8 +8,7 @@ useMetaData({
     description: 'UX/UI Designer y Desarrolladora Web especializada en frontend, usabilidad y diseño interactivo para empresas y videojuegos.',
     path: '/',
     
-    jsonLd: {
-           
+    jsonLd: {           
             "mainEntity": {
                 "@type": "ItemList",
                 "name": "Servicios ofrecidos",
@@ -47,9 +42,8 @@ useMetaData({
         }  
 
 })
-
-
-
+ const hola = ()=>{
+    console.log('Hola desde el botón de contacto')}
 // Funciones para efecto hover de imágenes
 // const moverImagen = (event) => {
 //   const imgHover = document.querySelector('.img-hover')
@@ -80,51 +74,45 @@ useMetaData({
 //     }, 300)
 //   }
 // }
-let hash1 = false;
+
 // Lógica de opacidad con scroll
 const handleScroll = () => {
-  const fadeStart = 20
-  const fadeEnd = 300
-  const fadeRange = fadeEnd - fadeStart
+    const fadeStart = 1
+    const fadeMed = 134
+    const fadeEnd = 400
+    const fadeRange = fadeEnd - fadeStart
     const portfolioImg = document.querySelector('.portfolio-img')
     const secondSection = document.querySelector('.list-container')
-       
-    
-    
-  if (!portfolioImg ) return
+    const p = document.querySelector('#animation')
+    const service = document.querySelector('.service')
+    if (!portfolioImg) return
 
-  const scrollY = window.scrollY
+    const scrollY = window.scrollY
 
-  if (scrollY < fadeStart) {
-      portfolioImg.style.opacity = '1'
-      if (!hash1) {
-          hash1 = true
+    if (scrollY < fadeStart) {
+        portfolioImg.style.opacity = '0.1'
+        p.style.opacity = "1";
 
-          const div = document.querySelector(".animation")
-          const p = document.createElement('p')
-          p.classList = 'name'
-          p.innerHTML = 'Bienvenid@! Mi nombre es María'
-          const h1 = document.createElement('h1')
-          h1.innerHTML = 'Product & UX/UI designer <br>Desarrollo webs y videojuegos'
-          div.append(p, h1)
-      }
-  } else if (scrollY > fadeStart && scrollY < fadeEnd) {      
-    let opacity = 1 - (scrollY - fadeStart) / fadeRange
-      portfolioImg.style.opacity = opacity.toFixed(2)   
-      
-  } else if (
-      scrollY >= fadeEnd &&
-      scrollY < fadeEnd + secondSection.offsetHeight - 350
-  ) {
-      portfolioImg.style.opacity = '0.09'
-  } else {
-    portfolioImg.style.opacity = '0'
-  }
+    } else if (scrollY >= fadeStart && scrollY < fadeMed) {
+        portfolioImg.style.opacity = '1';
+        p.style.opacity = "0";
+        service.style.opacity = "0";
+
+    } else if (scrollY > fadeMed && scrollY < fadeEnd) {
+        let opacity = 1 - (scrollY - fadeStart) / fadeRange
+        portfolioImg.style.opacity = opacity.toFixed(2)
+        service.style.opacity = "1";
+    } else if (
+        scrollY >= fadeEnd &&
+        scrollY < fadeEnd + secondSection.offsetHeight - 350
+    ) {
+        portfolioImg.style.opacity = '0.09'
+    } else {
+        portfolioImg.style.opacity = '0'
+    }
 }
-
 // Eventos al montar el componente
-onMounted(() => {
-    
+onMounted(() => {    
         nextTick(() => {
             setTimeout(() => {
                 window.prerenderReady = true                
@@ -146,20 +134,24 @@ onDeactivated(() => {
     <div class="intro-container ">
         <img src="https://www.mariadevdesign.com/images/portfolio-img.webp" class="portfolio-img"
             alt="imagen principal nubes Canarias Maria" width="100vw" height="700">
-        <div class="animation flex align-center">
-            <!-- <p class="name">Bienvenid@! Mi nombre es María</p>
-            <h1 id="encabezado-servicios">Product & UX/UI designer <br>Desarrollo webs y videojuegos </h1> -->
-        </div>
+        <div class="animation flex align-center" id="animation">
+            <h1 id="encabezado-servicios" class="h1style"> Product & UX/UI design <br> Desarrollo de webs y videojuegos
+            </h1>
+            <div class="presentation">
+                <p class="name flex p-align"><span>Bienvenid@, mi nombre es</span><span class="h1style">María</span>
+                </p>
 
+                <img src="/images/maria.webp" alt="María Ortiz Dev Design" class="profile-img1" width="180"
+                    height="180">
+            </div>
+        </div>
     </div>
 
     <section lang="es" class="first-section list-container" aria-labelledby="encabezado-servicios">
-        <div>
 
-        </div>
-
+        <p class="name service">Lo que puedo hacer por ti:</p>
         <!-- <img ref="imgHover" loading="lazy" id="imgHover" class="img-hover" src="" alt="Imagen flotante hover"> -->
-        <!-- <p>Qué puedo  hacer por ti?</p> -->
+
         <ul class="group-list">
             <!-- Diseño Web UX/UI -->
             <li class="list flex" aria-labelledby="titulo-ux" aria-label="Sección de Diseño UX/UI">
@@ -190,7 +182,8 @@ onDeactivated(() => {
             <li class="list flex" aria-labelledby="titulo-web" aria-label="Sección de Desarrollo web">
                 <a class="flex" href="https://www.mariadevdesign.com/programacion">
                     <h2 id="titulo-web">Desarrollo Web</h2>
-                    <p id="descripcion-web">Creación de soluciones personalizadas con JavaScript, Vue, PHP y CSS:</p>
+                    <p id="descripcion-web">Creación de soluciones personalizadas con JavaScript, Vue, PHP, CSS y SCSS:
+                    </p>
                     <ul class="features-list flex p-column-xs" aria-label="Detalles de desarrollo">
                         <li>
                             <h3>Trabajo en el Front-end</h3>
@@ -253,8 +246,8 @@ onDeactivated(() => {
         </ul>
 
         <div class="contacta container-column-sm flex align-center" role="region" aria-label="Sección de contacto">
-            <p role="alert">¡Cada proyecto es único!</p>
-            <button class="big-btn contact-btn" role="link" @click="goToContact"
+            <p>¡Cada proyecto es único!</p>
+            <button class="big-btn contact-btn" role="link"
                 aria-label="Contactar para servicios de desarrollo web y diseño">
                 Contactar
             </button>
@@ -334,7 +327,7 @@ onDeactivated(() => {
 
                 </ul>
             </div>
-            <a class="calendar big-btn1" href="https://calendly.com/mjortiz93" aria-label="Solicitar llamada calendar">
+            <a class="calendar big-btn2" href="https://calendly.com/mjortiz93" aria-label="Solicitar llamada calendar">
                 Solicitar una reunión
                 <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
