@@ -50,6 +50,7 @@
     /* Para navegadores modernos  */
     background-clip: text;
     color: transparent; 
+    font-weight: 600;
    font-size: var(--font-big-special);
 }
 .presentation{
@@ -337,6 +338,10 @@
         height: 100vh;
         top:auto;
     }
+    .presentation{
+        padding: 0px var(--space-xxs);
+        gap:var(--space-xs)
+    }
     .exito-container * {
         text-align: center;
         align-items: center;
@@ -349,6 +354,9 @@
     }
     .list-container{
         align-items: center;
+    }
+    .presentation{
+        gap:8px !important;
     }
     .imgs img, .imgs video {
         width:100%;
