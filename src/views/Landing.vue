@@ -135,10 +135,10 @@ onDeactivated(() => {
         <img src="https://www.mariadevdesign.com/images/portfolio-img.webp" class="portfolio-img"
             alt="imagen principal nubes Canarias Maria" width="100vw" height="700">
         <div class="animation flex align-center" id="animation">
-            <h1 id="encabezado-servicios" class="h1style"> Product & UX/UI design. <br> Desarrollo de webs y videojuegos.
+            <h1 id="encabezado-servicios" class="h1style"> Product & UX/UI design | <br> Desarrollo de webs y videojuegos
             </h1>
             <div class="presentation">
-                <p class="name flex p-align"><span>Bienvenid@, mi nombre es</span><span class="h1style">María</span>
+                <p class="name flex p-align"><span>Bienvenid@, mi nombre es</span><span class="h1style">María!</span>
                 </p>
 
                 <img src="/images/maria_3.png" alt="María Ortiz Dev Design" class="profile-img1" width="180"

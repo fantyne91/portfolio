@@ -57,6 +57,8 @@
     display:flex;
     align-items: center;
     gap:40px;
+    padding: var(--space-xs) var(--space-md);
+    position:relative;
 }
 /*Text*/
  .name{    font-size: var(--font-special); 
@@ -73,7 +75,7 @@
  /* SERVICIOS -LANDING */
  .list-container [hidden] { display: none !important; } 
 .list-container{
-    padding-top:0px;
+    padding-top:var(--space-xl);
 }
 .list-container> .group-list {
     display: flex;
@@ -339,7 +341,7 @@
         top:auto;
     }
     .presentation{
-        padding: 0px var(--space-xxs);
+       
         gap:var(--space-xs)
     }
     .exito-container * {
@@ -357,6 +359,14 @@
     }
     .presentation{
         gap:8px !important;
+    }
+    .presentation span{
+        text-align: start;
+    }
+    .presentation .profile-img1 {
+        position:absolute;
+        bottom:-50px;
+        right:5vw;
     }
     .imgs img, .imgs video {
         width:100%;

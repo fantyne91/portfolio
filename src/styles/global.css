@@ -233,6 +233,10 @@ li *:not(:last-child){
      gap:clamp(var(--space-sm), 3vw, var(--space-md) ); 
     padding: clamp(var(--space-sm), 3vw, var(--space-lg)) clamp(var(--space-xxs), 3vw, var(--space-lg));
 }
+.container-column-xl{    
+    gap:clamp(var(--space-md), 3vw, var(--space-xl) ); 
+   padding: clamp(var(--space-sm), 3vw, var(--space-lg)) clamp(var(--space-xs), 3vw, var(--space-lg));
+}
 .flex-row{
     display: flex;
     flex-flow: row wrap;    

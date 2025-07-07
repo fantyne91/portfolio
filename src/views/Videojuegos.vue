@@ -111,7 +111,7 @@ onMounted(() => {
 
   <section class="first-section header-games">
     <h1 itemprop="headline"> Unreal engine y diseño UX/UI <br>para videojuegos</h1>
-    <div class="container-header container-column-md flex align-center">
+    <div class="container-header container-column-xl flex align-center">
 
 
       <div class="p-column-sm flex  padding-sm">
