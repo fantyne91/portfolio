@@ -4,8 +4,8 @@ import { onMounted, nextTick, onActivated, onDeactivated } from 'vue'
 import { useMetaData } from '@/composables/useMetaData'
 
 useMetaData({
-    title: 'Diseño web UX/UI, Desarrollo Webs, y Videojuegos con Unreal Engine',
-    description: 'UX/UI web Designer y Desarrolladora Web especializada en frontend, usabilidad y diseño interactivo para empresas y videojuegos.',
+    title: 'Diseño UX/UI y Desarrollo Web | Videojuegos con Unreal Engine',
+    description: 'Diseñadora UX/UI y desarrolladora web freelance en España. Frontend, usabilidad y Unreal Engine para webs, apps y videojuegos',
     path: '/',
     
     jsonLd: {           
@@ -149,8 +149,7 @@ onDeactivated(() => {
 
     <section lang="es" class="first-section list-container" aria-labelledby="encabezado-servicios">
 
-        <p class="name service p-align">Potencia tu proyecto digital con soluciones a medida, escalables y orientadas a
-            resultados reales</p>
+        <p class="name service p-align">Potencia tu proyecto digital con soluciones medida, escalables y orientadas a resultados reales</p>
         <!-- <img ref="imgHover" loading="lazy" id="imgHover" class="img-hover" src="" alt="Imagen flotante hover"> -->
 
         <ul class="group-list">

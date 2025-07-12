@@ -4,8 +4,8 @@ import { onMounted,nextTick } from 'vue'
 import { useMetaData } from '@/composables/useMetaData'
 
 useMetaData({
-  title: 'Sobre Mí | María Dev Design - Desarrolladora y Diseñadora',
-  description: 'Soy María Ortiz, diseñadora UX/UI y desarrolladora de webs y videojuegos, centrados en el usuario. Sueño con crear una plataforma que cambie el mundo de los animales ',
+  title: 'Sobre Mí | María Ortiz - Desarrolladora y UX/UI Designer',
+  description: 'Soy María Ortiz, diseñadora UX/UI y desarrolladora freelance de webs y videojuegos. Creo experiencias digitales centradas en el usuario y optimizadas para resultados',
   path: '/sobre-mi'
 })
 

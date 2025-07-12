@@ -7,8 +7,8 @@ import { ref, onMounted, computed, nextTick } from 'vue'
 import { useMetaData } from '@/composables/useMetaData'
 
 useMetaData({
-  title: 'Contacto | María Ortiz - Diseño UX/UI, Desarrollo Web y videojuegos',
-  description: 'Te ayudo a orientar, diseñar y desarrollar tu proyecto web o videojuego con enfoque UX y visión creativa.',
+  title: 'Contacto | María Ortiz - Diseño UX/UI y Web en España',
+  description: 'Soy María Ortiz, diseñadora UX/UI y desarrolladora web en España. Escríbeme para crear tu web o videojuego a medida',
   path: '/contacta'
 })
 

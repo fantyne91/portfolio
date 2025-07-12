@@ -6,8 +6,8 @@ import {onMounted, nextTick} from 'vue'
 import { useMetaData } from '@/composables/useMetaData'
 
 useMetaData({
-    title: 'UX/UI Design Web, Product design, Servicios freelance de diseño web y User experience',
-    description: 'Diseño Web UX/UI para empresas y eCommerce. Diseño de experiencias de usuario, diseño interfaces para webs y videojuegos con Figma y Framer. Accesibilidad, usabilidad y estética en cada proyecto. Auditorias diseño UXUI  y servicios en España',
+    title: 'Diseño UX/UI Freelance | Web, Apps y Videojuegos en España',
+    description: 'Diseño UX/UI para webs, apps y videojuegos. Interfaces atractivas, accesibles y optimizadas para SEO. Freelance en España',
     path: '/uxui',
 
 
