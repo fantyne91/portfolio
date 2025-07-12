@@ -5,7 +5,7 @@ import { useMetaData } from '@/composables/useMetaData'
 
 useMetaData({
     title: 'Diseño UX/UI y Desarrollo Web | Videojuegos con Unreal Engine',
-    description: 'Diseñadora UX/UI y desarrolladora web freelance en España. Frontend, usabilidad y Unreal Engine para webs, apps y videojuegos',
+    description: 'Diseñadora UX/UI y desarrolladora web freelance en España. Frontend y Unreal Engine para webs, apps y videojuegos',
     path: '/',
     
     jsonLd: {           
