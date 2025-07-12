@@ -8,10 +8,9 @@ import { useMetaData } from '@/composables/useMetaData'
 
 useMetaData({
   title: 'Contacto | María Ortiz - Diseño UX/UI y Web en España',
-  description: 'Soy María Ortiz, diseñadora UX/UI y desarrolladora web en España. Escríbeme para crear tu web o videojuego a medida',
+  description: 'Diseño UX/UI y desarrollo web en España para empresas y videojuegos. Contacta con María Ortiz y crea tu proyecto a medida',
   path: '/contacta'
 })
-
 
 
 

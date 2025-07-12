@@ -5,7 +5,7 @@ import { useMetaData } from '@/composables/useMetaData'
 
 useMetaData({
   title: 'Sobre Mí | María Ortiz - Desarrolladora y UX/UI Designer',
-  description: 'Soy María Ortiz, diseñadora UX/UI y desarrolladora freelance de webs y videojuegos. Creo experiencias digitales centradas en el usuario y optimizadas para resultados',
+  description: 'Soy María Ortiz, diseñadora UX/UI y desarrolladora web freelance en España. Experiencias digitales centradas en el usuario',
   path: '/sobre-mi'
 })
 
