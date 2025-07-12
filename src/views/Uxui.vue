@@ -86,7 +86,7 @@ onMounted(() => {
             <h1> Diseño web UX/UI para Empresas</h1>
             <div class="flex-row padding-xs">
                 <div class="p-column-sm flex p-align  ">
-                    <h2>¿Por Qué es Importante el Diseño UX/UI en Negocios Digitales?</h2>
+                    <h2>¿Por qué es importante el Diseño UX/UI en Negocios Digitales?</h2>
                     <p>La experiencia del usuario es un factor decisivo que puede determinar el éxito o el fracaso de
                         cualquier web, eCommerce o app, cuando no se cumple con las expectativas del usuario, el
                         impacto
@@ -189,7 +189,7 @@ onMounted(() => {
         </section>
         <section class="services-ux-background">
             <div class="services-ux-container flex container-column-sm align-center">
-                <h2> Servicios Profesionales de Diseño UX/UI para Web y eCommerce </h2>
+                <h2> Servicios profesionales de Diseño UX/UI para Web y eCommerce </h2>
                 <ul role="list">
                     <li id="auditorias-cro">
                         <h3>Auditorías UX/UI y Optimización de la Conversión (CRO) </h3>

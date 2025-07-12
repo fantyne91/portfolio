@@ -74,6 +74,7 @@
 
  /* SERVICIOS -LANDING */
  .list-container [hidden] { display: none !important; } 
+
 .list-container{
     padding-top:var(--space-xl);
 }

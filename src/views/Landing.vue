@@ -134,7 +134,8 @@ onDeactivated(() => {
         <img src="https://www.mariadevdesign.com/images/portfolio-img.webp" class="portfolio-img"
             alt="imagen sobre las nubes, servicios en España" width="100vw" height="700">
         <div class="animation flex align-center" id="animation">
-            <h1 id="encabezado-servicios" class="h1style"> Product & UX/UI design | <br> Desarrollo de webs y videojuegos
+            <h1 id="encabezado-servicios" class="h1style"> Product & UX/UI design | <br> Desarrollo de webs y
+                videojuegos
             </h1>
             <div class="presentation">
                 <p class="name flex p-align"><span>Bienvenid@, mi nombre es</span><span class="h1style">María!</span>
@@ -148,7 +149,8 @@ onDeactivated(() => {
 
     <section lang="es" class="first-section list-container" aria-labelledby="encabezado-servicios">
 
-        <p class="name service">Lo que puedo hacer por ti:</p>
+        <p class="name service p-align">Potencia tu proyecto digital con soluciones a medida, escalables y orientadas a
+            resultados reales</p>
         <!-- <img ref="imgHover" loading="lazy" id="imgHover" class="img-hover" src="" alt="Imagen flotante hover"> -->
 
         <ul class="group-list">
