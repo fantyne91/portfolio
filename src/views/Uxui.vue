@@ -6,20 +6,11 @@ import {onMounted, nextTick} from 'vue'
 import { useMetaData } from '@/composables/useMetaData'
 
 useMetaData({
-    title: 'UX/UI Design Web | Product design | Portfolio',
-    description: 'Diseño de experiencias de usuario y interfaces para webs y videojuegos con Figma y Framer. Accesibilidad, usabilidad y estética en cada proyecto',
+    title: 'UX/UI Design Web, Product design, Servicios freelance de diseño web y User experience',
+    description: 'Diseño Web UX/UI para empresas y eCommerce. Diseño de experiencias de usuario, diseño interfaces para webs y videojuegos con Figma y Framer. Accesibilidad, usabilidad y estética en cada proyecto. Auditorias diseño UXUI  y servicios en España',
     path: '/uxui',
 
-    // additionalLinks: [
-    //     {
-    //         rel: 'stylesheet',
-    //         href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward_ios'
-    //     },
-    //     {
-    //         rel: 'stylesheet',
-    //         href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chat'
-    //     }
-    // ],
+
     jsonLd: {
         "mainEntity": [
             {
@@ -92,12 +83,13 @@ onMounted(() => {
 </script>
     <template>
         <section class="first-section header-ux">
-            <h1> Diseño web UX/UI </h1>
+            <h1> Diseño web UX/UI para Empresas</h1>
             <div class="flex-row padding-xs">
                 <div class="p-column-sm flex p-align  ">
-                    <h2>La importancia del UX</h2>
+                    <h2>¿Por Qué es Importante el Diseño UX/UI en Negocios Digitales?</h2>
                     <p>La experiencia del usuario es un factor decisivo que puede determinar el éxito o el fracaso de
-                        una tienda online o producto, cuando no se cumple con las expectativas del usuario, el impacto
+                        cualquier web, eCommerce o app, cuando no se cumple con las expectativas del usuario, el
+                        impacto
                         se traduce directamente en la pérdida de ventas y en la deterioración de la reputación de la
                         marca.</p>
                     <p> Un buen diseño tiene un impacto directo en el crecimiento de las ventas y la eficiencia
@@ -113,11 +105,8 @@ onMounted(() => {
             <div class="container-column-md flex align-center">
                 <h2>¿Cómo ayuda el UX a crecer las ventas? </h2>
                 <ul>
-                    <!-- <span class="material-symbols-rounded">
-                        arrow_forward_ios
-                    </span> -->
                     <li>
-                        <h3>Mejora la conversión </h3>
+                        <h3>Mejora la conversión y la Eficiencia Empresarial</h3>
                         <p>Simplifica procesos, reduciendo fricciones que pueden llevar a la pérdida de clientes.
                             Con una navegación intuitiva, los usuarios tienen menos probabilidades de abandonar sus
                             carritos y más probabilidades de completar la compra. </p>
@@ -164,7 +153,7 @@ onMounted(() => {
 
         </section>
         <section class="definicion-ux">
-            <h2 class="p-align"> Pero qué es el UX/UI?</h2>
+            <h2 class="p-align"> ¿Qué es el Diseño UX/UI y cómo impacta en tu negocio?</h2>
             <div class="flex-row padding-Y-xs">
                 <div class="p-column-sm flex p-med">
                     <p>El UX/UI está presente en todos los aspectos de nuestra vida, va más allá de lo visual y se
@@ -200,7 +189,7 @@ onMounted(() => {
         </section>
         <section class="services-ux-background">
             <div class="services-ux-container flex container-column-sm align-center">
-                <h2> Servicios de Diseño UX/UI </h2>
+                <h2> Servicios Profesionales de Diseño UX/UI para Web y eCommerce </h2>
                 <ul role="list">
                     <li id="auditorias-cro">
                         <h3>Auditorías UX/UI y Optimización de la Conversión (CRO) </h3>
@@ -211,7 +200,7 @@ onMounted(() => {
                             funcionalidad para aumentar la conversión y reducir la tasa de abandono.</p>
                     </li>
                     <li id="diseno-interfaces">
-                        <h3> Diseño de Interfaces Personalizadas </h3>
+                        <h3> Diseño de Interfaces UX/UI Personalizadas para Web y Apps </h3>
                         <p>Diseño interfaces visuales atractivas y funcionales para mejorar la interacción del usuario.
                             Obtén
                             tus prototipos interactivos con flujos de navegación que se adaptan a las necesidades de
@@ -241,7 +230,7 @@ onMounted(() => {
                     </li>
                 </ul>
                 <h4> Optimiza tu presencia online con soluciones personalizadas. </h4>
-              
+
                 <button class="big-btn2 contact-btn" role="link"
                     aria-label="Solicitar servicios y contactar">CONTACTAR</button>
             </div>

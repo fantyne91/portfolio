@@ -9,11 +9,16 @@ export function useMetaData({
   video = null,
   additionalLinks = [],
   jsonLd = null,
+  image = null,
 }) {
-
   // Variables dinámicas
   const baseUrl = 'https://www.mariadevdesign.com'
   const fullUrl = path ? `${baseUrl}${path}` : baseUrl
+  // Imagen por defecto, si no se pasa ninguna
+  const defaultOgImage =
+    'https://www.mariadevdesign.com/images/public/images/og-image-1200x630.webp'
+  // Si se pasa una imagen, la usamos, sino la por defecto
+  const ogImage = image || defaultOgImage
 
   // esquema básico (WebPage)
   const basicSchemaData = {
@@ -36,7 +41,7 @@ export function useMetaData({
 
     // Si hay video,(no main entity)-> tipo a VideoObject
     ...(video && {
-      ...(video && {
+      
         hasPart: {
           '@type': 'VideoObject',
           name: video.name,
@@ -46,11 +51,8 @@ export function useMetaData({
           embedUrl: `https://www.youtube.com/embed/${video.videoId}`,
         },
       }),
-    }),
+    
   }
-
-  
- 
 
   // Si se pasa jsonLd, lo combinamos sin duplicar campos base
   const finalJsonLd = jsonLd
@@ -74,6 +76,16 @@ export function useMetaData({
       { property: 'og:description', content: description },
       { property: 'og:type', content: 'website' }, // Open Graph type
       { property: 'og:url', content: fullUrl },
+      { property: 'og:image', content: ogImage },
+      { property: 'og:image:width', content: '1200' },
+      { property: 'og:image:height', content: '630' },
+      { property: 'og:locale', content: 'es_ES' },
+      // ✅ Twitter Cards
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:title', content: title },
+      { name: 'twitter:description', content: description },
+      { name: 'twitter:image', content: ogImage },
+      { name: 'twitter:creator', content: '@MariaDevDesign' },
     ],
     link: [{ rel: 'canonical', href: fullUrl }, ...additionalLinks],
     script: [

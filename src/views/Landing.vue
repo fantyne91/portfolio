@@ -4,8 +4,8 @@ import { onMounted, nextTick, onActivated, onDeactivated } from 'vue'
 import { useMetaData } from '@/composables/useMetaData'
 
 useMetaData({
-    title: 'Diseño UX/UI, Desarrollo Web, y Videojuegos con Unreal Engine',
-    description: 'UX/UI Designer y Desarrolladora Web especializada en frontend, usabilidad y diseño interactivo para empresas y videojuegos.',
+    title: 'Diseño web UX/UI, Desarrollo Webs, y Videojuegos con Unreal Engine',
+    description: 'UX/UI web Designer y Desarrolladora Web especializada en frontend, usabilidad y diseño interactivo para empresas y videojuegos.',
     path: '/',
     
     jsonLd: {           
@@ -42,8 +42,7 @@ useMetaData({
         }  
 
 })
- const hola = ()=>{
-    console.log('Hola desde el botón de contacto')}
+ 
 // Funciones para efecto hover de imágenes
 // const moverImagen = (event) => {
 //   const imgHover = document.querySelector('.img-hover')
@@ -133,7 +132,7 @@ onDeactivated(() => {
 <template>
     <div class="intro-container ">
         <img src="https://www.mariadevdesign.com/images/portfolio-img.webp" class="portfolio-img"
-            alt="imagen principal nubes Canarias Maria" width="100vw" height="700">
+            alt="imagen sobre las nubes, servicios en España" width="100vw" height="700">
         <div class="animation flex align-center" id="animation">
             <h1 id="encabezado-servicios" class="h1style"> Product & UX/UI design | <br> Desarrollo de webs y videojuegos
             </h1>
