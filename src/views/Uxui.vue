@@ -84,8 +84,9 @@ onMounted(() => {
     <template>
         <section class="first-section header-ux">
             <h1> Diseño web UX/UI para empresas</h1>
+
             <div class="flex-row padding-xs">
-                <div class="p-column-sm flex p-align  ">
+                <div class="intro-ux p-column-xs flex p-align padding-sm ">
                     <h2>La importancia del UX/UI en negocios digitales</h2>
                     <p>La experiencia del usuario es un factor decisivo que puede determinar el éxito o el fracaso de
                         cualquier web, eCommerce o app, cuando no se cumple con las expectativas del usuario, el
@@ -101,56 +102,58 @@ onMounted(() => {
             </div>
         </section>
 
-        <section class="benefits flex-row">
-            <div class="container-column-md flex align-center">
-                <h2>¿Cómo ayuda el UX a crecer las ventas? </h2>
-                <ul>
-                    <li>
-                        <h3>Mejora la conversión y la Eficiencia Empresarial</h3>
-                        <p>Simplifica procesos, reduciendo fricciones que pueden llevar a la pérdida de clientes.
-                            Con una navegación intuitiva, los usuarios tienen menos probabilidades de abandonar sus
-                            carritos y más probabilidades de completar la compra. </p>
-                    </li>
-                    <li>
-                        <h3>Aumenta la retención de clientes </h3>
-                        <p>Una experiencia positiva hace que los usuarios regresen. La retención de clientes es
-                            clave para el crecimiento sostenible de las ventas, y es mucho más económico mantener a
-                            un cliente que adquirir uno nuevo.</p>
-                    </li>
-                    <li>
-                        <h3>Optimiza la personalización </h3>
-                        <p>Aprovechar el análisis de datos y ofrecer una experiencia de compra personalizada para
-                            cada cliente, aumenta el ticket promedio por cliente sin necesidad de ampliar tu
-                            catálogo de productos. </p>
-                    </li>
-                </ul>
+        <section class="benefits ">
+            <div class="flex-row">
+                <div class="row-benefits container-column-md flex align-center">
+                    <h2>¿Cómo ayuda el UX a crecer las ventas? </h2>
+                    <ul>
+                        <li>
+                            <h3>Mejora la conversión y la Eficiencia Empresarial</h3>
+                            <p>Simplifica procesos, reduciendo fricciones que pueden llevar a la pérdida de clientes.
+                                Con una navegación intuitiva, los usuarios tienen menos probabilidades de abandonar sus
+                                carritos y más probabilidades de completar la compra. </p>
+                        </li>
+                        <li>
+                            <h3>Aumenta la retención de clientes </h3>
+                            <p>Una experiencia positiva hace que los usuarios regresen. La retención de clientes es
+                                clave para el crecimiento sostenible de las ventas, y es mucho más económico mantener a
+                                un cliente que adquirir uno nuevo.</p>
+                        </li>
+                        <li>
+                            <h3>Optimiza la personalización </h3>
+                            <p>Aprovechar el análisis de datos y ofrecer una experiencia de compra personalizada para
+                                cada cliente, aumenta el ticket promedio por cliente sin necesidad de ampliar tu
+                                catálogo de productos. </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class=" row-benefits container-column-md flex  align-center">
+                    <h2>¿Cómo reducir costes gracias al UX/UI? </h2>
+                    <ul>
+                        <li>
+                            <h3>Optimización del flujo de trabajo interno</h3>
+                            <p> Tener interfaces administrativas claras y procesos automatizados de gestión permiten que
+                                el personal trabaje de manera más eficiente, evitando duplicación de tareas y posibles
+                                errores humanos.</p>
+                        </li>
+                        <li>
+                            <h3>Automatización de procesos </h3>
+                            <p> Un buen diseño UX puede reducir la dependencia de personal de atención al cliente
+                                al ofrecer herramientas donde los clientes resuelven sus problemas o consultas
+                                fácilmente.</p>
+                        </li>
+                        <li>
+                            <h3>Diseño eficiente </h3>
+                            <p>Un diseño eficiente agiliza procesos y reduce errores del usuario. Esto se traduce en
+                                menos consultas de soporte, mayor conversión y fidelización, maximizando el retorno de
+                                inversión.</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
-
-            <div class="container-column-md flex  align-center">
-                <h2>¿Cómo reducir costes gracias al UX/UI? </h2>
-                <ul>
-                    <li>
-                        <h3>Optimización del flujo de trabajo interno</h3>
-                        <p> Tener interfaces administrativas claras y procesos automatizados de gestión permiten que
-                            el personal trabaje de manera más eficiente, evitando duplicación de tareas y posibles
-                            errores humanos.</p>
-                    </li>
-                    <li>
-                        <h3>Automatización de procesos </h3>
-                        <p> Un buen diseño UX puede reducir la dependencia de personal de atención al cliente
-                            al ofrecer herramientas donde los clientes resuelven sus problemas o consultas
-                            fácilmente.</p>
-                    </li>
-                    <li>
-                        <h3>Diseño eficiente </h3>
-                        <p>Un diseño eficiente agiliza procesos y reduce errores del usuario. Esto se traduce en
-                            menos consultas de soporte, mayor conversión y fidelización, maximizando el retorno de
-                            inversión.</p>
-                    </li>
-                </ul>
-            </div>
-
-
+            <button class="big-btn2 contact-btn" role="link" aria-label="Solicitar servicios y contactar">Solicita tu
+                diseño</button>
         </section>
         <section class="definicion-ux">
             <h2 class="p-align"> ¿Qué es el Diseño UX/UI y cómo impacta en tu negocio?</h2>
@@ -189,7 +192,7 @@ onMounted(() => {
         </section>
         <section class="services-ux-background">
             <div class="services-ux-container flex container-column-sm align-center">
-                <h2> Servicios profesionales de Diseño UX/UI para Web y eCommerce </h2>
+                <h2> Servicios profesionales de Diseño UX/UI <br> para Web y eCommerce </h2>
                 <ul role="list">
                     <li id="auditorias-cro">
                         <h3>Auditorías UX/UI y Optimización de la Conversión (CRO) </h3>
@@ -232,7 +235,7 @@ onMounted(() => {
                 <h4> Optimiza tu presencia online con soluciones personalizadas. </h4>
 
                 <button class="big-btn2 contact-btn" role="link"
-                    aria-label="Solicitar servicios y contactar">CONTACTAR</button>
+                    aria-label="Solicitar servicios y contactar">Solicitar presupuesto</button>
             </div>
         </section>
 
@@ -273,8 +276,83 @@ onMounted(() => {
 
         <section id="casos-uxui" class="black-background">
             <h2>Casos de estudio de UX/UI </h2>
-            <div class="container-casos-ux flex ">
 
+            <div class="container-casos-ux  flex ">
+                <h3>Diseño de App Bancaria </h3>
+                <div class="dark-background flex container-column-sm ">
+                    <div class="flex-row">
+                        <div class="p-column-sm flex ">
+
+                            <p>El proyecto App bancaria se centra en optimizar la accesibilidad a información financiera
+                                en un entorno de <span>dark mode.</span> El objetivo principal fue reducir la carga
+                                cognitiva de los usuarios, permitiendo que accedan a sus productos financieros, saldos y
+                                gastos de forma rápida y clara.</p>
+                            <div>
+                                <h4>Estética visual</h4>
+                                <p>La interfaz tiene un <span>enfoque minimalista</span> con un diseño oscuro para
+                                    reducir la fatiga visual especialmente en sesiones prolongadas, mientras que los
+                                    colores de acento en naranja resaltan la información más relevante. Este contraste
+                                    destaca gráficos o botones clave sinturar la vista del usuario.</p>
+                            </div>
+                        </div>
+                        <img class="container-img" src="/images/bank.webp" loading="lazy"
+                            alt="imagen inicio sesión proyecto tienda online">
+                    </div>
+
+                    <div class=" componentes-bank p-column-xs flex p-align padding-Y-xs">
+                        <h4>Componentes del diseño </h4>
+                        <p>Se emplea una tipografía sans-serif con una jerarquía clara de tamaños para asegurar la
+                            legibilidad de los datos financieros y los elementos interactivos en cualquier dispositivo.
+                            La estructura está optimizada mediante Auto Layout en Figma y Flexbox en CSS, permitiendo
+                            una <span>adaptación fluida a diferentes pantallas</span>. Además, las imágenes y los
+                            elementos interactivos cuentan con transiciones suaves, mejorando la experiencia de
+                            navegación.</p>
+                    </div>
+
+                    <div class="flex-row">
+                        <div>
+                            <h4>Organización Visual y Jerarquía</h4>
+                            <ul>
+                                <li>
+                                    <p> Tus productos: La parte superior de la pantalla agrupa las cuentas y tarjetas
+                                        del usuario, presentando la información más importante de manera inmediata:
+                                        saldo, estado y detalles rápidos de cada producto financiero. <span>Incluye modo
+                                            privacidad para esconder datos sensibles</span>.</p>
+                                </li>
+                                <li>
+                                    <p> Tu saldo total: El saldo total del usuario se muestra de forma prominente con un
+                                        gráfico para <span>resaltar la evolución mensual de los fondos.</span> Este
+                                        enfoque visual ayuda al usuario a interpretar rápidamente los cambios sin
+                                        necesidad de leer datos numéricos extensos.</p>
+                                </li>
+                                <li>
+                                    <p> Controla tus gastos: Los gastos se dividen en categorías simples como
+                                        <span>suscripciones y recibos,</span> con colores asignados a cada categoría.
+                                        Esto permite una fácil comprensión de los gastos mensuales y su seguimiento a lo
+                                        largo del tiempo.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p> Navegación simple e intuitiva: El menú inferior fijo proporciona un acceso
+                                        rápido a las secciones más importantes: home, transacciones, productos y resumen
+                                        financiero. Este diseño facilita la navegación rápida entre las funciones sin
+                                        saturar la pantalla principal.</p>
+                                </li>
+                                <li>
+                                    <p> Accesibilidad: El diseño sigue principios de accesibilidad, asegurando que los
+                                        contrastes entre el texto y el fondo cumplen con los <span>estándares AA y AAA
+                                            de accesibilidad,</span> lo que lo hace más usable para personas con baja
+                                        visión o sensibilidad a la luz. </p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <img class="video-bank" src="/images/bank-video.webp" loading="lazy"
+                            alt="imagen inicio sesión Banca online">
+                    </div>
+                </div>
+            </div>
+            <div class="container-casos-ux flex ">
                 <h3>Análisis y propuesta de rediseño Tiendanimal </h3>
 
                 <div class=" dark-background flex container-column-sm">
@@ -391,82 +469,6 @@ onMounted(() => {
                                     usuario.</p>
                             </li>
                         </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container-casos-ux  flex ">
-                <h3>Diseño de App Bancaria </h3>
-                <div class="dark-background flex container-column-sm ">
-                    <div class="flex-row">
-                        <div class="p-column-sm flex ">
-
-                            <p>El proyecto App bancaria se centra en optimizar la accesibilidad a información financiera
-                                en un entorno de <span>dark mode.</span> El objetivo principal fue reducir la carga
-                                cognitiva de los usuarios, permitiendo que accedan a sus productos financieros, saldos y
-                                gastos de forma rápida y clara.</p>
-                            <div>
-                                <h4>Estética visual</h4>
-                                <p>La interfaz tiene un <span>enfoque minimalista</span> con un diseño oscuro para
-                                    reducir la fatiga visual especialmente en sesiones prolongadas, mientras que los
-                                    colores de acento en naranja resaltan la información más relevante. Este contraste
-                                    destaca gráficos o botones clave sinturar la vista del usuario.</p>
-                            </div>
-                        </div>
-                        <img class="container-img" src="/images/bank.webp" loading="lazy"
-                            alt="imagen inicio sesión proyecto tienda online">
-                    </div>
-
-                    <div class=" componentes-bank p-column-xs flex p-align padding-Y-xs">
-                        <h4>Componentes del diseño </h4>
-                        <p>Se emplea una tipografía sans-serif con una jerarquía clara de tamaños para asegurar la
-                            legibilidad de los datos financieros y los elementos interactivos en cualquier dispositivo.
-                            La estructura está optimizada mediante Auto Layout en Figma y Flexbox en CSS, permitiendo
-                            una <span>adaptación fluida a diferentes pantallas</span>. Además, las imágenes y los
-                            elementos interactivos cuentan con transiciones suaves, mejorando la experiencia de
-                            navegación.</p>
-                    </div>
-
-                    <div class="flex-row">
-                        <div>
-                            <h4>Organización Visual y Jerarquía</h4>
-                            <ul>
-                                <li>
-                                    <p> Tus productos: La parte superior de la pantalla agrupa las cuentas y tarjetas
-                                        del usuario, presentando la información más importante de manera inmediata:
-                                        saldo, estado y detalles rápidos de cada producto financiero. <span>Incluye modo
-                                            privacidad para esconder datos sensibles</span>.</p>
-                                </li>
-                                <li>
-                                    <p> Tu saldo total: El saldo total del usuario se muestra de forma prominente con un
-                                        gráfico para <span>resaltar la evolución mensual de los fondos.</span> Este
-                                        enfoque visual ayuda al usuario a interpretar rápidamente los cambios sin
-                                        necesidad de leer datos numéricos extensos.</p>
-                                </li>
-                                <li>
-                                    <p> Controla tus gastos: Los gastos se dividen en categorías simples como
-                                        <span>suscripciones y recibos,</span> con colores asignados a cada categoría.
-                                        Esto permite una fácil comprensión de los gastos mensuales y su seguimiento a lo
-                                        largo del tiempo.
-                                    </p>
-                                </li>
-                                <li>
-                                    <p> Navegación simple e intuitiva: El menú inferior fijo proporciona un acceso
-                                        rápido a las secciones más importantes: home, transacciones, productos y resumen
-                                        financiero. Este diseño facilita la navegación rápida entre las funciones sin
-                                        saturar la pantalla principal.</p>
-                                </li>
-                                <li>
-                                    <p> Accesibilidad: El diseño sigue principios de accesibilidad, asegurando que los
-                                        contrastes entre el texto y el fondo cumplen con los <span>estándares AA y AAA
-                                            de accesibilidad,</span> lo que lo hace más usable para personas con baja
-                                        visión o sensibilidad a la luz. </p>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <img class="video-bank" src="/images/bank-video.webp" loading="lazy"
-                            alt="imagen inicio sesión Banca online">
                     </div>
                 </div>
             </div>

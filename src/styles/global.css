@@ -91,7 +91,7 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;    
-    gap: clamp(var(--space-sm),3vw, var(--space-xl));
+    gap: clamp(var(--space-md),4vw, var(--space-xxl));
     width: 100%;
 }
 
@@ -255,7 +255,7 @@ li *:not(:last-child){
 a, button {
     all:unset;
     cursor: pointer;
-    padding: var(--space-xxs) var(--space-sm);
+    padding: var(--space-xs) var(--space-sm);
     font-size: clamp(1rem, 1.1vw , 2rem); 
     width: fit-content;
     border-radius: 15px;
@@ -266,7 +266,7 @@ a, button {
     color: var(--color-primary);
     font-size: 1.2rem;
     font-weight: 700;
-    padding: var(--space-xs) var(--space-sm);
+  
     border-radius: 50px;
     box-shadow: 0 0 10px var(--color-orange);
     text-transform: uppercase;  
@@ -305,7 +305,7 @@ a, button {
     font-size: 1.2rem;
     font-weight: 700;    
     border-radius: 50px;     
-    padding: var(--space-xs) var(--space-sm);
+    
     border: 3px solid  var(--color-white-blue); 
     animation: border-move-1 5s infinite linear ; 
     display: flex;
@@ -335,7 +335,7 @@ a, button {
 } 
  
 .big-btn2 {
-    padding: var(--space-xs);
+   
     font-size: 1.2rem;
     font-weight: 700;    
     border-radius: 50px;
