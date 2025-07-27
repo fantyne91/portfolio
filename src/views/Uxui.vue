@@ -83,10 +83,10 @@ onMounted(() => {
 </script>
     <template>
         <section class="first-section header-ux">
-            <h1> Diseño web UX/UI para Empresas</h1>
+            <h1> Diseño web UX/UI para empresas</h1>
             <div class="flex-row padding-xs">
                 <div class="p-column-sm flex p-align  ">
-                    <h2>¿Por qué es importante el Diseño UX/UI en Negocios Digitales?</h2>
+                    <h2>La importancia del UX/UI en negocios digitales</h2>
                     <p>La experiencia del usuario es un factor decisivo que puede determinar el éxito o el fracaso de
                         cualquier web, eCommerce o app, cuando no se cumple con las expectativas del usuario, el
                         impacto

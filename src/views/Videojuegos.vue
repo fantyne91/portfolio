@@ -111,24 +111,15 @@ onMounted(() => {
 
   <section class="first-section header-games">
     <h1 itemprop="headline"> Unreal engine y diseño UX/UI <br>para videojuegos</h1>
+
+    <div class="purple-back p-column-sm flex  padding-sm">
+      <p class="p-games p-align">
+        Los videojuegos no solo divierten, también estimulan la memoria, la creatividad y la toma de decisiones.
+      </p>
+
+    </div>
+
     <div class="container-header container-column-xl flex align-center">
-
-
-      <div class="p-column-sm flex  padding-sm">
-        <p class="p-games p-align">
-          Los videojuegos no solo divierten, también estimulan la memoria, la creatividad y la toma de decisiones.
-        </p>
-        <div class="p-column-xxs flex">
-          <h3 class="beneficios-games">Beneficios cognitivos</h3>
-          <p>
-            La neurociencia confirma su impacto positivo en todas las edades: desde mejorar el aprendizaje en niños
-            hasta
-            retrasar el deterioro cognitivo en mayores. Además, son clave en accesibilidad, con experiencias adaptadas
-            para personas con necesidades especiales. Más que ocio,
-            los videojuegos son una herramienta para el desarrollo y la inclusión.
-          </p>
-        </div>
-      </div>
 
       <div class="iframe full-width flex-row">
         <iframe class="full-width" height="415" src="https://www.youtube.com/embed/ZCwlZc-WG48"
@@ -144,20 +135,30 @@ onMounted(() => {
         </p>
       </div>
 
-      <div class=" flex p-column-sm p-align padding-sm align-center">
+      <div class=" purple-back flex p-column-sm p-align padding-sm align-center">
         <h2> El UX/UI en videojuegos es el vestíbulo del jugador.</h2>
         <p>
           Mostrar la información correcta en el momento adecuado en
           videojuegos es vital, impacta directamente en la experiencia
           del jugador y su capacidad para tomar decisiones de manera efectiva.
         </p>
+        <div class="p-column-xxs flex">
+          <h3 class="beneficios-games">Beneficios cognitivos</h3>
+          <p>
+            La neurociencia confirma su impacto positivo en todas las edades: desde mejorar el aprendizaje en niños
+            hasta
+            retrasar el deterioro cognitivo en mayores. Además, son clave en accesibilidad, con experiencias adaptadas
+            para personas con necesidades especiales. Más que ocio,
+            los videojuegos son una herramienta para el desarrollo y la inclusión.
+          </p>
+        </div>
       </div>
 
 
 
     </div>
   </section>
-  <section id="unreal-games" class="unreal-games">
+  <section id="unreal-games" class=" purple-back unreal-games">
     <div class="p-column-sm flex padding-sm">
       <h2>Que puedes hacer con Unreal Engine?</h2>
       <ul role="list">

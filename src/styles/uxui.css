@@ -4,15 +4,16 @@
 .page-uxui h1, .page-uxui h2{     
     color: var(--color-orange);
 } 
+ .page-uxui h2{
+    font-family: Handlee, sans-serif;
+ }
 .page-uxui h3{
     color: var(--color-soft-orange-grey);
 }
 /**HEADER*/
-.header-ux{
-    background: var(--color-secondary);     
-    p{
+.header-ux p{        
      font-weight: 500; 
-   }
+   
 }
 .header-ux h3{    
     color: var(--color-orange);
@@ -118,75 +119,6 @@ video, img{
     color: var(--color-soft-orange-grey)
 }
 
-/* @media (hover: hover) and (pointer: fine)  {
-   
-    .container-motivos-ux h3{
-        position: absolute;            
-        font-size: 1.2rem;    
-        text-align: center;
-        padding: 0 var(--space-sm) ;       
-        width: 100%;
-    }
-     
-    .container-motivos-ux li:hover h3{
-        font-size: 1rem;       
-        position: relative;
-       padding: 0;
-       align-self: flex-start;
-        text-align: unset;
-                
-    }
-    .container-motivos-ux ul {
-        height: 400px; 
-        display:block;
-        position: relative;   
-        width: 100%;
-    } 
-    .container-motivos-ux li{
-        position: absolute;
-        height: 120px;  
-        width: 100%;
-        padding: var(--space-xs);
-        align-items: center;   
-        justify-content: center;    
-    } 
-    .container-motivos-ux li:nth-child(1){     
-    top:0;
-}
- .container-motivos-ux li:nth-child(2){     
-    top:130px;
-}
- .container-motivos-ux li:nth-child(3){     
-    top:260px;
-}
-    .container-motivos-ux p{
-        opacity: 0;
-        visibility: hidden;
- 
-       font-weight: 500;
-    }
-    .container-motivos-ux li:hover{
-        
-        border-radius: 20px;        
-        height: auto;
-        margin: 0;
-        z-index: 3;
-        transform: translateY(-10%);
-        transition: border-radius 0.2s linear;  
-        box-shadow: 0 0 10px var(--color-orange);               
-    }
-    .container-motivos-ux li:hover .material-symbols-rounded {   
-   font-size: 10px; 
-   
-}
-    .container-motivos-ux li:hover p{
-        opacity: 1;
-        visibility: visible;           
-              
-        transition: all 0.3s linear; 
-    }
-  
-} */
 /* Versión móvil/tablet corregida */
 @media (max-width: 799px) {   
    .componentes-bank{

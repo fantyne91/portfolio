@@ -28,13 +28,13 @@
     max-width: 100%; 
 }
 
-.container-header  .p-games { 
+  .p-games { 
      color:var(--color-soft-purple)    ;
      font-size: var(--font-med-special);
      font-family: Handlee, sans-serif;
 }
 
-.container-header .p-column-sm, .unreal-games .p-column-sm{
+.purple-back{
     background-color: var(--color-calid-purple);    
     border-radius: 15px;
     box-shadow: 1px 1px 3px var(--color-grey-5);

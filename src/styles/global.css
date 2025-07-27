@@ -84,7 +84,7 @@ body {
     top:0;
 } */
  .first-section{
-    padding-top: clamp(var(--space-xl), 7vw, var(--space-2xl));
+    padding-top: clamp(var(--space-xxl), 8vw, var(--space-2xl));
  }
 section{
     padding: clamp(var(--space-lg), 7vw, var(--space-2xl)) clamp(var(--space-xxs), 5vw, var(--space-xxl))  ;
