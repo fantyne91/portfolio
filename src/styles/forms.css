@@ -21,6 +21,7 @@
     border-radius: 30px;
     box-shadow: 0 1px 5px var(--color-grey-3);
     max-width: 450px;
+    max-height: 491px;
    gap:clamp(0px, 1vw, var(--space-xs))
   }
    .profile-img{    

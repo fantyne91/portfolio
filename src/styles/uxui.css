@@ -15,17 +15,21 @@
     background-color: var(--color-soft-orange-grey);
     border-radius: 15px;
     color: var(--color-secondary);
+    font-weight: 500;  
 }
 .header-ux p{        
      font-weight: 500;  
      
 }
+.header-ux h2{
+     font-size:var(--font-med-special);
+    filter: drop-shadow(0 0 2px rgb(255, 179, 0));
+   
+}
 .header-ux h3, .header-ux h2{    
     color: var(--color-secondary);
     font-family: Handlee;
-    font-size:var(--font-med-special);
-    filter: drop-shadow(0 0 1px var(--color-primary));
-    font-weight: 600;
+     font-weight: 600;   
 }
 
 

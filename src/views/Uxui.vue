@@ -89,7 +89,7 @@ onMounted(() => {
                 <div class="intro-ux p-column-xs flex p-align padding-sm ">
                     <h2>La importancia del UX/UI en negocios digitales</h2>
                     <p>La experiencia del usuario es un factor decisivo que puede determinar el éxito o el fracaso de
-                        cualquier web, eCommerce o app, cuando no se cumple con las expectativas del usuario, el
+                        cualquier web, eCommerce o app. Cuando no se cumple con las expectativas del usuario, el
                         impacto
                         se traduce directamente en la pérdida de ventas y en la deterioración de la reputación de la
                         marca.</p>

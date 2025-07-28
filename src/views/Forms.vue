@@ -143,7 +143,7 @@ const submitForm = async () => {
 
         <!-- Formulario paso 1 (Nombre, Email, Teléfono) -->
         <form class="p-column-xs flex align-center" @submit.prevent="nextStep" v-if="currentStep === 1">
-          <h2 class=" p-align">DATOS PERSONALES</h2>
+          <h2 class=" p-align">SOLICITAR PRESUPUESTO</h2>
           <div class="form-input">
             <input type="text" id="name" name="name" placeholder=" " required v-model="form.nombre" autocomplete="on">
             <label class="accesible" for="name" id="name-label">Nombre completo*</label>
