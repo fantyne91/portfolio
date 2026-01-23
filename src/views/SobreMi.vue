@@ -90,7 +90,7 @@ onMounted(() => {
     <img src="/images/main-maria.webp" alt="Imagen 2" class="scroll-item med">
     <div class="text scroll-item">
       <p>Hola!</p>
-      <p>Soy María.</p>
+      <p>Soy María Ortiz</p>
     </div>
     <div class="text scroll-item flex-row ">
       <p>Me encanta fotografiar el cielo y la luna, dibujar a lápiz y pintar en acrílico.</p>

@@ -134,28 +134,27 @@ onDeactivated(() => {
         <img src="https://www.mariadevdesign.com/images/portfolio-img.webp" class="portfolio-img"
             alt="imagen sobre las nubes, servicios en España" width="100vw" height="700">
         <div class="animation flex align-center" id="animation">
-            <h1 id="encabezado-servicios" class="h1style"> Product & UX/UI design | <br> Desarrollo de webs y
-                videojuegos
+            <h1 id="encabezado-servicios" class="h1style"> Product & UX/UI design |<br> Desarrollo web 
             </h1>
-            <div class="presentation">
-                <p class="name flex p-align"><span>Bienvenid@, mi nombre es</span><span class="h1style">María!</span>
+           <div class="flex-row">
+                 <p class="name mobile-hidden flex p-align">Bienvenid@, me llamo <span class="h1style"> María</span>
                 </p>
 
-                <img src="/images/maria_3.png" alt="María Ortiz Dev Design" class="profile-img1" width="180"
-                    height="180">
+               <img src="/images/maria_portrait_webp.webp" alt="María Ortiz Dev Design" class="profile-img1" width="280"
+                    height="280"> 
             </div>
         </div>
     </div>
 
     <section lang="es" class="first-section list-container" aria-labelledby="encabezado-servicios">
 
-        <p class="name service p-align">Potencia tu proyecto digital con soluciones medida, escalables y orientadas a resultados reales</p>
+        <p class="name p-align">Potencia tu proyecto digital con soluciones a medida y orientadas a resultados reales</p>
         <!-- <img ref="imgHover" loading="lazy" id="imgHover" class="img-hover" src="" alt="Imagen flotante hover"> -->
 
-        <ul class="group-list">
+        <ul id="servicios"class="group-list">
             <!-- Diseño Web UX/UI -->
             <li class="list flex" aria-labelledby="titulo-ux" aria-label="Sección de Diseño UX/UI">
-                <a class="flex" href="https://www.mariadevdesign.com/uxui">
+                <!-- <a class="flex" href="https://www.mariadevdesign.com/uxui"> -->
                     <h2 id="titulo-ux">Diseño Web UX/UI</h2>
                     <p id="descripcion-ux">
                         El diseño UX/UI optimiza la experiencia del usuario aumentando conversiones y ventas.
@@ -175,12 +174,12 @@ onDeactivated(() => {
                             <p>para mejorar la experiencia del usuario de tu web y aumentar tus resultados.</p>
                         </li>
                     </ul>
-                </a>
+                <!-- </a> -->
             </li>
 
             <!-- Desarrollo Web -->
             <li class="list flex" aria-labelledby="titulo-web" aria-label="Sección de Desarrollo web">
-                <a class="flex" href="https://www.mariadevdesign.com/programacion">
+                <!-- <a class="flex" href="https://www.mariadevdesign.com/programacion"> -->
                     <h2 id="titulo-web">Desarrollo Web</h2>
                     <p id="descripcion-web">Creación de soluciones personalizadas con JavaScript, Vue, PHP, CSS y SCSS:
                     </p>
@@ -199,12 +198,12 @@ onDeactivated(() => {
                                 para optimizar la funcionalidad de tiendas online.</p>
                         </li>
                     </ul>
-                </a>
+                <!-- </a> -->
             </li>
 
             <!-- Diseño de Videojuegos -->
             <li class="list flex" aria-labelledby="titulo-videojuegos" aria-label="Sección videojuegos">
-                <a class="flex" href="https://www.mariadevdesign.com/videojuegos">
+                <!-- <a class="flex" href="https://www.mariadevdesign.com/videojuegos"> -->
                     <h2 id="titulo-videojuegos">Diseño de Videojuegos</h2>
                     <p id="descripcion-videojuegos">Mejoro la experiencia de los jugadores evaluando la jugabilidad,
                         navegación y diseño visual:</p>
@@ -219,12 +218,12 @@ onDeactivated(() => {
                                 documentación como <span>Pitchs y GDD.</span></p>
                         </li>
                     </ul>
-                </a>
+                <!-- </a> -->
             </li>
 
             <!-- Unreal Engine -->
             <li class="list flex" aria-labelledby="titulo-unreal" aria-label="Sección Unreal Engine">
-                <a class="flex" href="https://www.mariadevdesign.com/videojuegos#unreal-games">
+                <!-- <a class="flex" href="https://www.mariadevdesign.com/videojuegos#unreal-games"> -->
                     <h2 id="titulo-unreal">Unreal Engine</h2>
                     <p id="descripcion-unreal">Uso de Unreal Engine para crear experiencias visuales y narrativas
                         inmersivas:</p>
@@ -240,17 +239,18 @@ onDeactivated(() => {
                             <p>para clientes corporativos.</p>
                         </li>
                     </ul>
-                </a>
+                <!-- </a> -->
             </li>
 
         </ul>
 
         <div class="contacta container-column-sm flex align-center" role="region" aria-label="Sección de contacto">
             <p>¡Cada proyecto es único!</p>
-            <button class="big-btn contact-btn" role="link"
+                  <a class="big-btn contact-btn" href="/#contacto"  aria-label="Contactar para servicios de desarrollo web y diseño">Contactar</a>
+            <!-- <button class="big-btn contact-btn" role="link"
                 aria-label="Contactar para servicios de desarrollo web y diseño">
                 Contactar
-            </button>
+            </button> -->
         </div>
     </section>
     <section class="last-project">
@@ -297,7 +297,39 @@ onDeactivated(() => {
 
     </section>
 
-    <section class=" why-container">
+  
+   <section id="pawify" class="exito-container" role="region" aria-label="Sección de reunion">
+        <div class="flex-row">
+            <div class="texto-exito p-column-sm flex">
+                <h2>Una herramienta gratuita para dar más visibilidad a adopciones y acogidas</h2>
+                <p> Mi nombre es María Ortiz. Llevo años rescatando y siendo casa de acogida; actualmente convivo con dos perros rescatados, uno de ellos lo rescaté en Bali.
+Conozco bien lo difícil que es gestionar adopciones y, sobre todo, acogidas, cuando hay poco tiempo y demasiados frentes abiertos.</p>
+                <p> Por esa razón he co-desarrollado Pawify, una plataforma 100% gratuita pensada para apoyar a protectoras y asociaciones, poniendo especial foco en dar visibilidad real a las acogidas, que tantas veces quedan en segundo plano.
+                </p>
+                
+            </div>
+            <div class=" casos">
+                <!-- <a class="button-primary" href="https://www.mariadevdesign.com/uxui#casos-uxui"
+                    aria-label="casos estudio UXUI">Casos de
+                    estudio UX/UI </a>
+                <a class="button-primary" href="https://www.mariadevdesign.com/videojuegos#casos-games"
+                    aria-label="casos estudio videojuegos">Casos de estudio Videojuegos </a>
+                <a class="button-secondary" href="https://www.mariadevdesign.com/programacion#futuro-animal"
+                    aria-label="Apoya proyecto animales">Ayúdame a salvar perritos ♡ </a> -->
+                    <a class="button-primary" href="https://pawify.dev"
+                    aria-label="casos estudio videojuegos">Ayúdame a salvar perritos ♡ </a>
+
+            </div>
+        </div>
+    </section>
+    <div class="wave-container">
+        <svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path fill="#ffe19c"
+                d="M0,40 C180,60 360,70 540,50 C720,30 900,10 1080,20 C1260,30 1440,60 1440,60 L1440,100 L0,100 Z">
+            </path>
+        </svg>
+    </div>
+   <section id="contacto" class=" why-container">
         <div class=" flex-row ">
             <div>
                 <h2 class="contacta">¿Por qué trabajar conmigo?</h2>
@@ -327,7 +359,8 @@ onDeactivated(() => {
 
                 </ul>
             </div>
-            <a class="calendar big-btn2" href="https://calendly.com/mjortiz93" aria-label="Solicitar llamada calendar">
+            <div class="align-center flex">
+                <a class="calendar big-btn2" href="https://calendly.com/mjortiz93" aria-label="Solicitar llamada calendar">
                 Solicitar una reunión
                 <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -340,46 +373,14 @@ onDeactivated(() => {
                     </g>
                 </svg>
             </a>
+                <p class="calendar big-btn2"> <a
+              href="https://wa.me/34671303377?text=Hola! Quiero información sobre: " target="_blank">WhatsApp</a></p>
+            </div>
+            
 
         </div>
 
 
-    </section>
-
-    <div class="wave-container">
-        <svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-            <path fill="#ffe19c"
-                d="M0,40 C180,60 360,70 540,50 C720,30 900,10 1080,20 C1260,30 1440,60 1440,60 L1440,100 L0,100 Z">
-            </path>
-        </svg>
-    </div>
-    <section class="exito-container" role="region" aria-label="Sección de reunion">
-        <div class="flex-row">
-            <div class="texto-exito p-column-sm flex">
-                <h2> El éxito de cualquier empresa nace de la satisfacción de sus usuarios </h2>
-                <p> Ya sea un servicio, un sitio web o videojuego, el éxito dependerá de una comprensión de las
-                    necesidades
-                    del usuario.</p>
-                <p> Tener una plataforma visualmente atractiva es solo parte del desafío, lo vital es asegurar que
-                    los
-                    usuarios puedan interactuar con facilidad, sin obstáculos que generen frustración o abandono.
-                </p>
-                <p> Identificar y corregir esos puntos de fricción es clave para aumentar la satisfacción del
-                    usuario
-                    y el
-                    éxito del negocio a largo plazo. </p>
-            </div>
-            <div class=" casos">
-                <a class="button-primary" href="https://www.mariadevdesign.com/uxui#casos-uxui"
-                    aria-label="casos estudio UXUI">Casos de
-                    estudio UX/UI </a>
-                <a class="button-primary" href="https://www.mariadevdesign.com/videojuegos#casos-games"
-                    aria-label="casos estudio videojuegos">Casos de estudio Videojuegos </a>
-                <a class="button-secondary" href="https://www.mariadevdesign.com/programacion#futuro-animal"
-                    aria-label="Apoya proyecto animales">Ayúdame a salvar perritos ♡ </a>
-
-            </div>
-        </div>
     </section>
     <div class="wave-container2">
         <svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
@@ -390,7 +391,7 @@ onDeactivated(() => {
     </div>
     <section class="portfolio" itemscope itemtype="https://schema.org/ItemList">
 
-        <h2 itemprop="name">PORTFOLIO</h2>
+        <h2 itemprop="name">PROYECTOS</h2>
         <div class="imgs padding-Y-xs" itemprop="itemListElement" itemscope itemtype="https://schema.org/ImageGallery">
 
             <video class="video" preload="none" loading="lazy" autoplay loop muted playsinline

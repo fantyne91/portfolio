@@ -1,9 +1,9 @@
 <template>
   <header class="header" role="banner">
-   <router-link to="/" class="logo" aria-label="Ir al inicio" v-if="isMobileOrTablet">
+   <!-- <router-link to="/" class="logo" aria-label="Ir al inicio" v-if="isMobileOrTablet">
       <img src="/images/logo.webp" alt="Logo de María Ortiz, diseñadora UX/UI y desarrollo web" width="150" height="49"
         loading="eager" fetchpriority="high">
-    </router-link> 
+    </router-link>  -->
 
 
     <button v-show="isMobileOrTablet" class="menu-toggle" @click="toggleMenu"
@@ -17,13 +17,17 @@
 
 
     <nav :class="menuOpen ? 'nav-menu open' : 'nav-menu'" @click="toggleMenu" aria-label="Menú principal">
-      <router-link to="/" tabindex="0" aria-label="Ir a la página de inicio">Inicio</router-link>
+      <!-- <router-link to="/" tabindex="0" aria-label="Ir a la página de inicio">Inicio</router-link>
       <router-link to="/uxui" tabindex="0" aria-label="Ir a la sección UX/UI">Ux/ui</router-link>
       <router-link to="/programacion" tabindex="0"
         aria-label="Ir a la sección de Programación">Programación</router-link>
       <router-link to="/videojuegos" tabindex="0" aria-label="Ir a la sección de Videojuegos">Videojuegos</router-link>
       <router-link to="/sobre-mi" tabindex="0" aria-label="Ir a la sección Sobre mí">Sobre mí</router-link>
-      <router-link to="/contacta" tabindex="0" aria-label="Ir a la sección Contacto">Contacto</router-link>
+      <router-link to="/contacta" tabindex="0" aria-label="Ir a la sección Contacto">Contacto</router-link> -->
+        <router-link to="/" tabindex="0" aria-label="Ir a la página de inicio">Inicio</router-link>
+      <a class="flex" href="/#servicios">Servicios</a>      
+      <a class="flex" href="/#pawify">Pawify</a>
+      <a class="flex" href="/#contacto">Contacto</a>
     </nav>
   </header>
 </template>
@@ -234,8 +238,8 @@ header {
 
 @media (max-width: 950px) {
   header {
-    justify-content: space-between;
-    background-color: var(--color-blue-black);
+    justify-content:end;
+    background:none;
     opacity: 1;
     top:0;
   }
@@ -260,6 +264,9 @@ header {
     visibility: visible;
     display: flex;
     opacity: 1;
+    position:absolute;
+    top:0;
+    z-index:-2;
     transform: translateY(0);
     transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
     padding-bottom: var(--space-xxs);
@@ -273,6 +280,7 @@ header {
 
   .menu-toggle {
     display: block;
+    margin-top:16px;
   }
 }
 

@@ -13,7 +13,7 @@
 :root {
     /* Tamaño base */
     --font-size-base: 16px;   
-    --font-big-special: clamp(2rem, 5vw, 4rem); 
+    --font-big-special: clamp(4rem, 5vw, 5rem); 
     --font-special: clamp(1.9rem, 5vw, 3.5rem); 
     --font-med-special: clamp(1.5rem, 2vw, 2.5rem); 
     
@@ -79,6 +79,7 @@ body {
      color:var(--color-primary);
      user-select: none;
 }
+
 /* main{
     position: absolute;
     top:0;
@@ -255,7 +256,7 @@ li *:not(:last-child){
 a, button {
     all:unset;
     cursor: pointer;
-    padding: var(--space-xs) var(--space-sm);
+    padding: var(--space-xxs) var(--space-sm);
     font-size: clamp(1rem, 1.1vw , 2rem); 
     width: fit-content;
     border-radius: 15px;
@@ -386,7 +387,22 @@ a, button {
     transform: scale(1);
     transition: transform 0.3s ease;
     }
+  .button-terciary{
+  display:flex;
+    font-weight: 700;   
+    color:  var(--color-secondary);
    
+    
+   
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-xxs)var(--space-xs);
+    transform: scale(1);
+    transition: transform 0.3s ease;
+    background-color:white;
+  } 
 /**IMG*/
 .container-img {    
   max-width: 450px; 
@@ -439,7 +455,7 @@ figure{
 }
 @media (max-width: 950px) { 
     main{
-        margin-top: var(--space-sm);
+      
     }
    .flex-row{
         flex-direction: column;      
@@ -451,7 +467,9 @@ figure{
 
 @media (max-width: 400px) {
    
-   
+   .mobile-hidden{
+    display:none
+}
     .flex-row{
         gap:var(--space-sm);
     } 

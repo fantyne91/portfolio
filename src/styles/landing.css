@@ -43,6 +43,7 @@
      justify-content: center;
      gap:50px;    
 }
+
 .page-landing .h1style{   
     background: linear-gradient(70deg, var(--vibe-orange), var( --color-purple)); /* Puedes personalizar */
     -webkit-background-clip: text;
@@ -52,14 +53,15 @@
     color: transparent; 
     font-weight: 600;
    font-size: var(--font-big-special);
+
 }
-.presentation{
+/* .presentation{
     display:flex;
     align-items: center;
     gap:40px;
     padding: var(--space-xs) var(--space-md);
     position:relative;
-}
+} */
 /*Text*/
  .name{    font-size: var(--font-special); 
     font-family: Handlee, sans-serif; 
@@ -68,8 +70,8 @@
     position: relative;
     object-fit: cover;
     object-position: center top;
-    border-radius: 100%;     
-    z-index: 0;
+    border-radius: 10%;     
+    z-index: 1;
 }
 
  /* SERVICIOS -LANDING */
@@ -77,6 +79,9 @@
 
 .list-container{
     padding-top:var(--space-xl);
+    p{
+        max-width: 100%;
+    }
 }
 .list-container> .group-list {
     display: flex;
@@ -91,6 +96,7 @@
 }
 .group-list h2{
     font-size: var(--font-med-special);
+    text-align:center;
 }
 /*indv List*/
 .group-list  .list {
@@ -101,7 +107,10 @@
     width: 100%;  
     color: var(--color-grey-2);  
     position: relative;
+    padding:32px;
  z-index: 0;
+ gap:16px;
+ 
 }
 /*border neon*/
 .list::before{
@@ -127,7 +136,7 @@
 .list-container a{
     gap:var(--space-xs);
     align-items: center; 
-    padding: clamp(var(--space-xs), 3vw, var(--space-md)) ;
+    padding: clamp(var(--space-xxs), 2vw, var(--space-md)) ;
     max-width: 100%;
 }
 .list-container a > p{
@@ -214,7 +223,7 @@
 .why-container{
     color: var(--color-secondary);
     font-weight: 500;
-    background: #ffffff;   
+    background: #ffe19c;   
 }
 .why-container h2{    
     max-width: 100%;
@@ -226,6 +235,8 @@
     gap: var(--space-xs); 
     color: var(--color-secondary);
     text-transform: inherit;
+    background:white;
+    margin-bottom:16px;
 }
 .why-container .calendar svg{
     width: 40px;
@@ -233,7 +244,7 @@
 
 /*EXITO LANDING*/
 .exito-container{
-    background-color: #ffe19c;
+    background-color: white;
     font-weight: 500;
      color: var(--color-secondary);
 }
@@ -285,7 +296,7 @@
     letter-spacing: 5px;
     text-transform: uppercase;
     align-self: last baseline;
-    font-family: Handlee;
+  
 }
 @supports (-webkit-text-stroke: 1px black) {
     .portfolio > h2{        
@@ -333,7 +344,9 @@
     .intro-container{
         /* overflow-x: hidden; */
          overflow: hidden;
-         max-height: 650px;
+         
+         
+        
     }
     .intro-container> .portfolio-img{
         width: 130%;
@@ -354,21 +367,20 @@
 
     .texto-entrada{
         /* letter-spacing: 1.2px; */
+      
     }
     .list-container{
         align-items: center;
     }
-    .presentation{
+    /* .presentation{
         gap:8px !important;
-    }
-    .presentation span{
-        text-align: start;
-    }
-    .presentation .profile-img1 {
+    } */
+  
+    /* .presentation .profile-img1 {
         position:absolute;
         bottom:-50px;
         right:5vw;
-    }
+    } */
     .imgs img, .imgs video {
         width:100%;
         height: auto !important;
